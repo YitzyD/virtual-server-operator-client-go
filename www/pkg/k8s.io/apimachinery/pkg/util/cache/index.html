@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>cache - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package cache
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/cache"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#Clock">type Clock</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Expiring">type Expiring</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewExpiring">func NewExpiring() *Expiring</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewExpiringWithClock">func NewExpiringWithClock(clock utilclock.Clock) *Expiring</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Expiring.Delete">func (c *Expiring) Delete(key interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Expiring.Get">func (c *Expiring) Get(key interface{}) (val interface{}, ok bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Expiring.Len">func (c *Expiring) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Expiring.Set">func (c *Expiring) Set(key interface{}, val interface{}, ttl time.Duration)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#LRUExpireCache">type LRUExpireCache</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewLRUExpireCache">func NewLRUExpireCache(maxSize int) *LRUExpireCache</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewLRUExpireCacheWithClock">func NewLRUExpireCacheWithClock(maxSize int, clock Clock) *LRUExpireCache</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#LRUExpireCache.Add">func (c *LRUExpireCache) Add(key interface{}, value interface{}, ttl time.Duration)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#LRUExpireCache.Get">func (c *LRUExpireCache) Get(key interface{}) (interface{}, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#LRUExpireCache.Keys">func (c *LRUExpireCache) Keys() []interface{}</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#LRUExpireCache.Remove">func (c *LRUExpireCache) Remove(key interface{})</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go">expiring.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go">lruexpirecache.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="Clock">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=711:752#L17">Clock</a>
+				<a class="permalink" href="index.html#Clock">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Clock defines an interface for obtaining the current time
+</p>
+
+			<pre>type Clock interface {
+    Now() <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Expiring">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go?s=1127:1866#L32">Expiring</a>
+				<a class="permalink" href="index.html#Expiring">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Expiring is a map whose entries expire after a per-entry timeout.
+</p>
+
+			<pre>type Expiring struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewExpiring">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go?s=735:763#L18">NewExpiring</a>
+					<a class="permalink" href="index.html#NewExpiring">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewExpiring() *<a href="index.html#Expiring">Expiring</a></pre>
+				<p>
+NewExpiring returns an initialized expiring cache.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewExpiringWithClock">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go?s=918:976#L24">NewExpiringWithClock</a>
+					<a class="permalink" href="index.html#NewExpiringWithClock">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewExpiringWithClock(clock <a href="../clock/index.html">utilclock</a>.<a href="../clock/index.html#Clock">Clock</a>) *<a href="index.html#Expiring">Expiring</a></pre>
+				<p>
+NewExpiringWithClock is like NewExpiring but allows passing in a custom
+clock for testing.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Expiring.Delete">func (*Expiring) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go?s=3098:3140#L101">Delete</a>
+					<a class="permalink" href="index.html#Expiring.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Expiring">Expiring</a>) Delete(key interface{})</pre>
+				<p>
+Delete deletes an entry in the map.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Expiring.Get">func (*Expiring) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go?s=1995:2061#L59">Get</a>
+					<a class="permalink" href="index.html#Expiring.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Expiring">Expiring</a>) Get(key interface{}) (val interface{}, ok <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Get looks up an entry in the cache.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Expiring.Len">func (*Expiring) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go?s=3849:3877#L126">Len</a>
+					<a class="permalink" href="index.html#Expiring.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Expiring">Expiring</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Len returns the number of items in the cache.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Expiring.Set">func (*Expiring) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/expiring.go?s=2610:2685#L75">Set</a>
+					<a class="permalink" href="index.html#Expiring.Set">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Expiring">Expiring</a>) Set(key interface{}, val interface{}, ttl <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)</pre>
+				<p>
+Set sets a key/value/expiry entry in the map, overwriting any previous entry
+with the same key. The entry expires at the given expiry time, but its TTL
+may be lengthened or shortened by additional calls to Set(). Garbage
+collection of expired entries occurs during calls to Set(), however calls to
+Get() will not return expired entries that have not yet been garbage
+collected.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="LRUExpireCache">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=1044:1169#L28">LRUExpireCache</a>
+				<a class="permalink" href="index.html#LRUExpireCache">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+LRUExpireCache is a cache that ensures the mostly recently accessed keys are returned with
+a ttl beyond which keys are forcibly expired.
+</p>
+
+			<pre>type LRUExpireCache struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewLRUExpireCache">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=1238:1289#L37">NewLRUExpireCache</a>
+					<a class="permalink" href="index.html#NewLRUExpireCache">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewLRUExpireCache(maxSize <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#LRUExpireCache">LRUExpireCache</a></pre>
+				<p>
+NewLRUExpireCache creates an expiring cache with the given size
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewLRUExpireCacheWithClock">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=1483:1556#L42">NewLRUExpireCacheWithClock</a>
+					<a class="permalink" href="index.html#NewLRUExpireCacheWithClock">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewLRUExpireCacheWithClock(maxSize <a href="http://localhost:6060/pkg/builtin/#int">int</a>, clock <a href="index.html#Clock">Clock</a>) *<a href="index.html#LRUExpireCache">LRUExpireCache</a></pre>
+				<p>
+NewLRUExpireCacheWithClock creates an expiring cache with the given size, using the specified clock to obtain the current time.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="LRUExpireCache.Add">func (*LRUExpireCache) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=1868:1951#L57">Add</a>
+					<a class="permalink" href="index.html#LRUExpireCache.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#LRUExpireCache">LRUExpireCache</a>) Add(key interface{}, value interface{}, ttl <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)</pre>
+				<p>
+Add adds the value to the cache at key with the specified maximum duration.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="LRUExpireCache.Get">func (*LRUExpireCache) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=2172:2237#L65">Get</a>
+					<a class="permalink" href="index.html#LRUExpireCache.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#LRUExpireCache">LRUExpireCache</a>) Get(key interface{}) (interface{}, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Get returns the value at the specified key from the cache if it exists and is not
+expired, or returns false.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="LRUExpireCache.Keys">func (*LRUExpireCache) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=2814:2859#L88">Keys</a>
+					<a class="permalink" href="index.html#LRUExpireCache.Keys">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#LRUExpireCache">LRUExpireCache</a>) Keys() []interface{}</pre>
+				<p>
+Keys returns all the keys in the cache, even if they are expired. Subsequent calls to
+get may return not found. It returns all keys from oldest to newest.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="LRUExpireCache.Remove">func (*LRUExpireCache) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/cache/lruexpirecache.go?s=2540:2588#L80">Remove</a>
+					<a class="permalink" href="index.html#LRUExpireCache.Remove">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#LRUExpireCache">LRUExpireCache</a>) Remove(key interface{})</pre>
+				<p>
+Remove removes the specified key from the cache if it exists
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

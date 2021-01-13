@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>conversion - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package conversion
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/conversion"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package conversion provides go object versioning.
+</p>
+<p>
+Specifically, conversion provides a way for you to define multiple versions
+of the same object. You may write functions which implement conversion logic,
+but for the fields which did not change, copying is automated. This makes it
+easy to modify the structures you use in memory without affecting the format
+you store on disk or respond to in your external API calls.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Convert_Slice_byte_To_Slice_byte">func Convert_Slice_byte_To_Slice_byte(in *[]byte, out *[]byte, s Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#EnforcePtr">func EnforcePtr(obj interface{}) (reflect.Value, error)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#ConversionFunc">type ConversionFunc</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ConversionFuncs">type ConversionFuncs</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewConversionFuncs">func NewConversionFuncs() ConversionFuncs</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConversionFuncs.AddUntyped">func (c ConversionFuncs) AddUntyped(a, b interface{}, fn ConversionFunc) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConversionFuncs.Merge">func (c ConversionFuncs) Merge(other ConversionFuncs) ConversionFuncs</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Converter">type Converter</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewConverter">func NewConverter(nameFn NameFunc) *Converter</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Converter.Convert">func (c *Converter) Convert(src, dest interface{}, meta *Meta) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Converter.DefaultMeta">func (c *Converter) DefaultMeta(t reflect.Type) *Meta</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Converter.RegisterGeneratedUntypedConversionFunc">func (c *Converter) RegisterGeneratedUntypedConversionFunc(a, b interface{}, fn ConversionFunc) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Converter.RegisterIgnoredConversion">func (c *Converter) RegisterIgnoredConversion(from, to interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Converter.RegisterUntypedConversionFunc">func (c *Converter) RegisterUntypedConversionFunc(a, b interface{}, fn ConversionFunc) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Converter.WithConversions">func (c *Converter) WithConversions(fns ConversionFuncs) *Converter</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Equalities">type Equalities</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EqualitiesOrDie">func EqualitiesOrDie(funcs ...interface{}) Equalities</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Meta">type Meta</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#NameFunc">type NameFunc</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Scope">type Scope</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go">converter.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/deep_equal.go">deep_equal.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/helper.go">helper.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var <span id="DefaultNameFunc">DefaultNameFunc</span> = func(t <a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Type">Type</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a> { return t.<a href="index.html#Name">Name</a>() }</pre>
+			
+		
+		
+			
+			
+			<h2 id="Convert_Slice_byte_To_Slice_byte">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=2875:2952#L78">Convert_Slice_byte_To_Slice_byte</a>
+				<a class="permalink" href="index.html#Convert_Slice_byte_To_Slice_byte">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_Slice_byte_To_Slice_byte(in *[]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, out *[]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, s <a href="index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_Slice_byte_To_Slice_byte prevents recursing into every byte
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EnforcePtr">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/helper.go?s=822:877#L17">EnforcePtr</a>
+				<a class="permalink" href="index.html#EnforcePtr">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EnforcePtr(obj interface{}) (<a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Value">Value</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+EnforcePtr ensures that obj is a pointer of some sort. Returns a reflect.Value
+of the dereferenced pointer, ensuring that it is settable/addressable.
+Returns an error if this is not possible.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="ConversionFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=1119:1180#L27">ConversionFunc</a>
+				<a class="permalink" href="index.html#ConversionFunc">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ConversionFunc converts the object a into the object b, reusing arrays or objects
+or pointers if necessary. It should return an error if the object cannot be converted
+or if some data is invalid. If you do not wish a and b to share fields or nested
+objects, you must copy a before calling this function.
+</p>
+
+			<pre>type ConversionFunc func(a, b interface{}, scope <a href="index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ConversionFuncs">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=3758:3826#L106">ConversionFuncs</a>
+				<a class="permalink" href="index.html#ConversionFuncs">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConversionFuncs struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewConversionFuncs">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=3637:3678#L100">NewConversionFuncs</a>
+					<a class="permalink" href="index.html#NewConversionFuncs">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewConversionFuncs() <a href="index.html#ConversionFuncs">ConversionFuncs</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="ConversionFuncs.AddUntyped">func (ConversionFuncs) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=4053:4131#L113">AddUntyped</a>
+					<a class="permalink" href="index.html#ConversionFuncs.AddUntyped">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c <a href="index.html#ConversionFuncs">ConversionFuncs</a>) AddUntyped(a, b interface{}, fn <a href="index.html#ConversionFunc">ConversionFunc</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+AddUntyped adds the provided conversion function to the lookup table for the types that are
+supplied as a and b. a and b must be pointers or an error is returned. This method overwrites
+previously defined functions.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ConversionFuncs.Merge">func (ConversionFuncs) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=4622:4691#L127">Merge</a>
+					<a class="permalink" href="index.html#ConversionFuncs.Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c <a href="index.html#ConversionFuncs">ConversionFuncs</a>) Merge(other <a href="index.html#ConversionFuncs">ConversionFuncs</a>) <a href="index.html#ConversionFuncs">ConversionFuncs</a></pre>
+				<p>
+Merge returns a new ConversionFuncs that contains all conversions from
+both other and c, with other conversions taking precedence.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Converter">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=1237:1843#L30">Converter</a>
+				<a class="permalink" href="index.html#Converter">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Converter knows how to convert one type to another.
+</p>
+
+			<pre>type Converter struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewConverter">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=1893:1938#L47">NewConverter</a>
+					<a class="permalink" href="index.html#NewConverter">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewConverter(nameFn <a href="index.html#NameFunc">NameFunc</a>) *<a href="index.html#Converter">Converter</a></pre>
+				<p>
+NewConverter creates a new Converter object.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Converter.Convert">func (*Converter) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=7341:7409#L196">Convert</a>
+					<a class="permalink" href="index.html#Converter.Convert">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Converter">Converter</a>) Convert(src, dest interface{}, meta *<a href="index.html#Meta">Meta</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Convert will translate src to dest if it knows how. Both must be pointers.
+If no conversion func is registered and the default copying mechanism
+doesn&#39;t work on this type pair, an error will be returned.
+&#39;meta&#39; is given to allow you to pass information to conversion functions,
+it is not used by Convert() other than storing it in the scope.
+Not safe for objects with cyclic references!
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Converter.DefaultMeta">func (*Converter) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=2729:2782#L73">DefaultMeta</a>
+					<a class="permalink" href="index.html#Converter.DefaultMeta">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Converter">Converter</a>) DefaultMeta(t <a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Type">Type</a>) *<a href="index.html#Meta">Meta</a></pre>
+				<p>
+DefaultMeta returns meta for a given type.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Converter.RegisterGeneratedUntypedConversionFunc">func (*Converter) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=6090:6191#L170">RegisterGeneratedUntypedConversionFunc</a>
+					<a class="permalink" href="index.html#Converter.RegisterGeneratedUntypedConversionFunc">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Converter">Converter</a>) RegisterGeneratedUntypedConversionFunc(a, b interface{}, fn <a href="index.html#ConversionFunc">ConversionFunc</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+RegisterGeneratedUntypedConversionFunc registers a function that converts between a and b by passing objects of those
+types to the provided function. The function *must* accept objects of a and b - this machinery will not enforce
+any other guarantee.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Converter.RegisterIgnoredConversion">func (*Converter) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=6384:6457#L176">RegisterIgnoredConversion</a>
+					<a class="permalink" href="index.html#Converter.RegisterIgnoredConversion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Converter">Converter</a>) RegisterIgnoredConversion(from, to interface{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+RegisterIgnoredConversion registers a &#34;no-op&#34; for conversion, where any requested
+conversion between from and to is ignored.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Converter.RegisterUntypedConversionFunc">func (*Converter) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=5685:5777#L163">RegisterUntypedConversionFunc</a>
+					<a class="permalink" href="index.html#Converter.RegisterUntypedConversionFunc">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Converter">Converter</a>) RegisterUntypedConversionFunc(a, b interface{}, fn <a href="index.html#ConversionFunc">ConversionFunc</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+RegisterUntypedConversionFunc registers a function that converts between a and b by passing objects of those
+types to the provided function. The function *must* accept objects of a and b - this machinery will not enforce
+any other guarantee.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Converter.WithConversions">func (*Converter) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=2525:2592#L66">WithConversions</a>
+					<a class="permalink" href="index.html#Converter.WithConversions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Converter">Converter</a>) WithConversions(fns <a href="index.html#ConversionFuncs">ConversionFuncs</a>) *<a href="index.html#Converter">Converter</a></pre>
+				<p>
+WithConversions returns a Converter that is a copy of c but with the additional
+fns merged on top.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Equalities">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/deep_equal.go?s=804:850#L15">Equalities</a>
+				<a class="permalink" href="index.html#Equalities">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+The code for this type must be located in third_party, since it forks from
+go std lib. But for convenience, we expose the type here, too.
+</p>
+
+			<pre>type Equalities struct {
+    <a href="../../third_party/forked/golang/reflect/index.html">reflect</a>.<a href="../../third_party/forked/golang/reflect/index.html#Equalities">Equalities</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="EqualitiesOrDie">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/deep_equal.go?s=889:942#L20">EqualitiesOrDie</a>
+					<a class="permalink" href="index.html#EqualitiesOrDie">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func EqualitiesOrDie(funcs ...interface{}) <a href="index.html#Equalities">Equalities</a></pre>
+				<p>
+For convenience, panics on errors
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="Meta">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=4918:5051#L139">Meta</a>
+				<a class="permalink" href="index.html#Meta">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Meta is supplied by Scheme, when it calls Convert.
+</p>
+
+			<pre>type Meta struct {
+<span id="Meta.Context"></span>    <span class="comment">// Context is an optional field that callers may use to pass info to conversion functions.</span>
+    Context interface{}
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="NameFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=689:730#L19">NameFunc</a>
+				<a class="permalink" href="index.html#NameFunc">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type NameFunc func(t <a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Type">Type</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Scope">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/conversion/converter.go?s=3331:3635#L91">Scope</a>
+				<a class="permalink" href="index.html#Scope">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Scope is passed to conversion funcs to allow them to continue an ongoing conversion.
+If multiple converters exist in the system, Scope will allow you to use the correct one
+from a conversion function--that is, the one your conversion function was called by.
+</p>
+
+			<pre>type Scope interface {
+    <span class="comment">// Call Convert to convert sub-objects. Note that if you call it with your own exact</span>
+    <span class="comment">// parameters, you&#39;ll run out of stack space before anything useful happens.</span>
+    Convert(src, dest interface{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    <span class="comment">// Meta returns any information originally passed to Convert.</span>
+    Meta() *<a href="index.html#Meta">Meta</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="queryparams/index.html">queryparams</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						Package queryparams provides conversion from versioned runtime objects to URL query values
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

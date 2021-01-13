@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>cmpopts - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package cmpopts
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/google/go-cmp/cmp/cmpopts"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package cmpopts provides common options for the cmp package.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#AcyclicTransformer">func AcyclicTransformer(name string, xformFunc interface{}) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#EquateApprox">func EquateApprox(fraction, margin float64) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#EquateApproxTime">func EquateApproxTime(margin time.Duration) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#EquateEmpty">func EquateEmpty() cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#EquateErrors">func EquateErrors() cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#EquateNaNs">func EquateNaNs() cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreFields">func IgnoreFields(typ interface{}, names ...string) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreInterfaces">func IgnoreInterfaces(ifaces interface{}) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreMapEntries">func IgnoreMapEntries(discardFunc interface{}) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreSliceElements">func IgnoreSliceElements(discardFunc interface{}) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreTypes">func IgnoreTypes(typs ...interface{}) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreUnexported">func IgnoreUnexported(typs ...interface{}) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#SortMaps">func SortMaps(lessFunc interface{}) cmp.Option</a></dd>
+			
+				
+				<dd><a href="index.html#SortSlices">func SortSlices(lessFunc interface{}) cmp.Option</a></dd>
+			
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/equate.go">equate.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/ignore.go">ignore.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/sort.go">sort.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/struct_filter.go">struct_filter.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/xform.go">xform.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+AnyError is an error that matches any non-nil error.
+</p>
+
+				<pre>var <span id="AnyError">AnyError</span> anyError</pre>
+			
+		
+		
+			
+			
+			<h2 id="AcyclicTransformer">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/xform.go?s=929:999#L22">AcyclicTransformer</a>
+				<a class="permalink" href="index.html#AcyclicTransformer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AcyclicTransformer(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, xformFunc interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+AcyclicTransformer returns a Transformer with a filter applied that ensures
+that the transformer cannot be recursively applied upon its own output.
+</p>
+<p>
+An example use case is a transformer that splits a string by lines:
+</p>
+<pre>AcyclicTransformer(&#34;SplitLines&#34;, func(s string) []string{
+	return strings.Split(s, &#34;\n&#34;)
+})
+</pre>
+<p>
+Had this been an unfiltered Transformer instead, this would result in an
+infinite cycle converting a string to []string to [][]string and so on.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EquateApprox">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/equate.go?s=1701:1755#L38">EquateApprox</a>
+				<a class="permalink" href="index.html#EquateApprox">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EquateApprox(fraction, margin <a href="http://localhost:6060/pkg/builtin/#float64">float64</a>) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+EquateApprox returns a Comparer option that determines float32 or float64
+values to be equal if they are within a relative fraction or absolute margin.
+This option is not used when either x or y is NaN or infinite.
+</p>
+<p>
+The fraction determines that the difference of two values must be within the
+smaller fraction of the two values, while the margin determines that the two
+values must be within some absolute margin.
+To express only a fraction or only a margin, use 0 for the other parameter.
+The fraction and margin must be non-negative.
+</p>
+<p>
+The mathematical expression used is equivalent to:
+</p>
+<pre>|x-y| ≤ max(fraction*min(|x|, |y|), margin)
+</pre>
+<p>
+EquateApprox can be used in conjunction with EquateNaNs.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EquateApproxTime">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/equate.go?s=3404:3458#L87">EquateApproxTime</a>
+				<a class="permalink" href="index.html#EquateApproxTime">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EquateApproxTime(margin <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+EquateApproxTime returns a Comparer option that determines two non-zero
+time.Time values to be equal if they are within some margin of one another.
+If both times have a monotonic clock reading, then the monotonic time
+difference will be used. The margin must be non-negative.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EquateEmpty">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/equate.go?s=625:654#L13">EquateEmpty</a>
+				<a class="permalink" href="index.html#EquateEmpty">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EquateEmpty() <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+EquateEmpty returns a Comparer option that determines all maps and slices
+with a length of zero to be equal, regardless of whether they are nil.
+</p>
+<p>
+EquateEmpty can be used in conjunction with SortSlices and SortMaps.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EquateErrors">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/equate.go?s=4567:4597#L126">EquateErrors</a>
+				<a class="permalink" href="index.html#EquateErrors">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EquateErrors() <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+EquateErrors returns a Comparer option that determines errors to be equal
+if errors.Is reports them to match. The AnyError error can be used to
+match any non-nil error.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EquateNaNs">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/equate.go?s=2772:2800#L69">EquateNaNs</a>
+				<a class="permalink" href="index.html#EquateNaNs">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EquateNaNs() <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+EquateNaNs returns a Comparer option that determines float32 and float64
+NaN values to be equal.
+</p>
+<p>
+EquateNaNs can be used in conjunction with EquateApprox.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreFields">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/ignore.go?s=728:790#L14">IgnoreFields</a>
+				<a class="permalink" href="index.html#IgnoreFields">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreFields(typ interface{}, names ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+IgnoreFields returns an Option that ignores fields of the
+given names on a single struct type. It respects the names of exported fields
+that are forwarded due to struct embedding.
+The struct type is specified by passing in a value of that type.
+</p>
+<p>
+The name may be a dot-delimited string (e.g., &#34;Foo.Bar&#34;) to ignore a
+specific sub-field that is embedded or nested within the parent struct.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreInterfaces">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/ignore.go?s=1992:2044#L56">IgnoreInterfaces</a>
+				<a class="permalink" href="index.html#IgnoreInterfaces">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreInterfaces(ifaces interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+IgnoreInterfaces returns an Option that ignores all values or references of
+values assignable to certain interface types. These interfaces are specified
+by passing in an anonymous struct with the interface types embedded in it.
+For example, to ignore sync.Locker, pass in struct{sync.Locker}{}.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreMapEntries">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/ignore.go?s=5740:5797#L173">IgnoreMapEntries</a>
+				<a class="permalink" href="index.html#IgnoreMapEntries">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreMapEntries(discardFunc interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+IgnoreMapEntries returns an Option that ignores entries of map[K]V.
+The discard function must be of the form &#34;func(T, R) bool&#34; which is used to
+ignore map entries of type K and V, where K and V are assignable to T and R.
+Entries are ignored if the function reports true.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreSliceElements">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/ignore.go?s=4807:4867#L145">IgnoreSliceElements</a>
+				<a class="permalink" href="index.html#IgnoreSliceElements">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreSliceElements(discardFunc interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+IgnoreSliceElements returns an Option that ignores elements of []V.
+The discard function must be of the form &#34;func(T) bool&#34; which is used to
+ignore slice elements of type V, where V is assignable to T.
+Elements are ignored if the function reports true.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreTypes">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/ignore.go?s=1027:1075#L21">IgnoreTypes</a>
+				<a class="permalink" href="index.html#IgnoreTypes">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreTypes(typs ...interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+IgnoreTypes returns an Option that ignores all values assignable to
+certain types, which are specified by passing in a value of each type.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreUnexported">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/ignore.go?s=3678:3731#L109">IgnoreUnexported</a>
+				<a class="permalink" href="index.html#IgnoreUnexported">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreUnexported(typs ...interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+IgnoreUnexported returns an Option that only ignores the immediate unexported
+fields of a struct, including anonymous fields of unexported types.
+In particular, unexported fields within the struct&#39;s exported fields
+of struct types, including anonymous fields, will not be ignored unless the
+type of the field itself is also passed to IgnoreUnexported.
+</p>
+<p>
+Avoid ignoring unexported fields of a type which you do not control (i.e. a
+type from another repository), as changes to the implementation of such types
+may change how the comparison behaves. Prefer a custom Comparer instead.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SortMaps">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/sort.go?s=3572:3618#L90">SortMaps</a>
+				<a class="permalink" href="index.html#SortMaps">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SortMaps(lessFunc interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+SortMaps returns a Transformer option that flattens map[K]V types to be a
+sorted []struct{K, V}. The less function must be of the form
+&#34;func(T, T) bool&#34; which is used to sort any map with key K that is
+assignable to T.
+</p>
+<p>
+Flattening the map into a slice has the property that cmp.Equal is able to
+use Comparers on K or the K.Equal method if it exists.
+</p>
+<p>
+The less function must be:
+</p>
+<pre>• Deterministic: less(x, y) == less(x, y)
+• Irreflexive: !less(x, x)
+• Transitive: if !less(x, y) and !less(y, z), then !less(x, z)
+• Total: if x != y, then either less(x, y) or less(y, x)
+</pre>
+<p>
+SortMaps can be used in conjunction with EquateEmpty.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SortSlices">func <a href="http://localhost:6060/src/github.com/google/go-cmp/cmp/cmpopts/sort.go?s=904:952#L19">SortSlices</a>
+				<a class="permalink" href="index.html#SortSlices">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SortSlices(lessFunc interface{}) <a href="../index.html">cmp</a>.<a href="../index.html#Option">Option</a></pre>
+			<p>
+SortSlices returns a Transformer option that sorts all []V.
+The less function must be of the form &#34;func(T, T) bool&#34; which is used to
+sort any slice with element type V that is assignable to T.
+</p>
+<p>
+The less function must be:
+</p>
+<pre>• Deterministic: less(x, y) == less(x, y)
+• Irreflexive: !less(x, x)
+• Transitive: if !less(x, y) and !less(y, z), then !less(x, z)
+</pre>
+<p>
+The less function does not have to be &#34;total&#34;. That is, if !less(x, y) and
+!less(y, x) for two elements x and y, their relative order is maintained.
+</p>
+<p>
+SortSlices can be used in conjunction with EquateEmpty.
+</p>
+
+			
+			
+
+		
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

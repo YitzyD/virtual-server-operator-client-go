@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>validation - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package validation
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/kube-openapi/pkg/util/proto/validation"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#ValidateModel">func ValidateModel(obj interface{}, schema proto.Schema, name string) []error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#InvalidObjectTypeError">type InvalidObjectTypeError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InvalidObjectTypeError.Error">func (e InvalidObjectTypeError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#InvalidTypeError">type InvalidTypeError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InvalidTypeError.Error">func (e InvalidTypeError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#MissingRequiredFieldError">type MissingRequiredFieldError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MissingRequiredFieldError.Error">func (e MissingRequiredFieldError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UnknownFieldError">type UnknownFieldError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnknownFieldError.Error">func (e UnknownFieldError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ValidationError">type ValidationError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ValidationError.Error">func (e ValidationError) Error() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go">errors.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/types.go">types.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/validation.go">validation.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="ValidateModel">func <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/validation.go?s=641:718#L13">ValidateModel</a>
+				<a class="permalink" href="index.html#ValidateModel">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateModel(obj interface{}, schema <a href="../index.html">proto</a>.<a href="../index.html#Schema">Schema</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			
+			
+			
+
+		
+		
+			
+			
+			<h2 id="InvalidObjectTypeError">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=1553:1617#L62">InvalidObjectTypeError</a>
+				<a class="permalink" href="index.html#InvalidObjectTypeError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type InvalidObjectTypeError struct {
+<span id="InvalidObjectTypeError.Path"></span>    Path <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="InvalidObjectTypeError.Type"></span>    Type <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InvalidObjectTypeError.Error">func (InvalidObjectTypeError) <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=1619:1665#L67">Error</a>
+					<a class="permalink" href="index.html#InvalidObjectTypeError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#InvalidObjectTypeError">InvalidObjectTypeError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="InvalidTypeError">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=957:1040#L34">InvalidTypeError</a>
+				<a class="permalink" href="index.html#InvalidTypeError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type InvalidTypeError struct {
+<span id="InvalidTypeError.Path"></span>    Path     <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="InvalidTypeError.Expected"></span>    Expected <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="InvalidTypeError.Actual"></span>    Actual   <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InvalidTypeError.Error">func (InvalidTypeError) <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=1042:1082#L40">Error</a>
+					<a class="permalink" href="index.html#InvalidTypeError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#InvalidTypeError">InvalidTypeError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MissingRequiredFieldError">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=1182:1251#L44">MissingRequiredFieldError</a>
+				<a class="permalink" href="index.html#MissingRequiredFieldError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MissingRequiredFieldError struct {
+<span id="MissingRequiredFieldError.Path"></span>    Path  <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="MissingRequiredFieldError.Field"></span>    Field <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="MissingRequiredFieldError.Error">func (MissingRequiredFieldError) <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=1253:1302#L49">Error</a>
+					<a class="permalink" href="index.html#MissingRequiredFieldError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#MissingRequiredFieldError">MissingRequiredFieldError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UnknownFieldError">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=1380:1441#L53">UnknownFieldError</a>
+				<a class="permalink" href="index.html#UnknownFieldError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type UnknownFieldError struct {
+<span id="UnknownFieldError.Path"></span>    Path  <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="UnknownFieldError.Field"></span>    Field <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UnknownFieldError.Error">func (UnknownFieldError) <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=1443:1484#L58">Error</a>
+					<a class="permalink" href="index.html#UnknownFieldError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#UnknownFieldError">UnknownFieldError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ValidationError">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=792:848#L25">ValidationError</a>
+				<a class="permalink" href="index.html#ValidationError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ValidationError struct {
+<span id="ValidationError.Path"></span>    Path <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="ValidationError.Err"></span>    Err  <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ValidationError.Error">func (ValidationError) <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/util/proto/validation/errors.go?s=850:889#L30">Error</a>
+					<a class="permalink" href="index.html#ValidationError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#ValidationError">ValidationError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

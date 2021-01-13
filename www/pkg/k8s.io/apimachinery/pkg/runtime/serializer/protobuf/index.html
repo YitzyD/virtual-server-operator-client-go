@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>protobuf - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package protobuf
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/runtime/serializer/protobuf"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package protobuf provides a Kubernetes serializer for the protobuf format.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#IsNotMarshalable">func IsNotMarshalable(err error) bool</a></dd>
+			
+			
+				
+				<dd><a href="index.html#RawSerializer">type RawSerializer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewRawSerializer">func NewRawSerializer(creater runtime.ObjectCreater, typer runtime.ObjectTyper) *RawSerializer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RawSerializer.Decode">func (s *RawSerializer) Decode(originalData []byte, gvk *schema.GroupVersionKind, into runtime.Object) (runtime.Object, *schema.GroupVersionKind, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RawSerializer.Encode">func (s *RawSerializer) Encode(obj runtime.Object, w io.Writer) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RawSerializer.Identifier">func (s *RawSerializer) Identifier() runtime.Identifier</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Serializer">type Serializer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewSerializer">func NewSerializer(creater runtime.ObjectCreater, typer runtime.ObjectTyper) *Serializer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Serializer.Decode">func (s *Serializer) Decode(originalData []byte, gvk *schema.GroupVersionKind, into runtime.Object) (runtime.Object, *schema.GroupVersionKind, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Serializer.Encode">func (s *Serializer) Encode(obj runtime.Object, w io.Writer) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Serializer.Identifier">func (s *Serializer) Identifier() runtime.Identifier</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Serializer.RecognizesData">func (s *Serializer) RecognizesData(peek io.Reader) (bool, bool, error)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go">protobuf.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+LengthDelimitedFramer is exported variable of type lengthDelimitedFramer
+</p>
+
+				<pre>var <span id="LengthDelimitedFramer">LengthDelimitedFramer</span> = lengthDelimitedFramer{}</pre>
+			
+		
+		
+			
+			
+			<h2 id="IsNotMarshalable">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=2153:2190#L55">IsNotMarshalable</a>
+				<a class="permalink" href="index.html#IsNotMarshalable">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsNotMarshalable(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsNotMarshalable checks the type of error, returns a boolean true if error is not nil and not marshalable false otherwise
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="RawSerializer">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=10784:10873#L306">RawSerializer</a>
+				<a class="permalink" href="index.html#RawSerializer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+RawSerializer encodes and decodes objects without adding a runtime.Unknown wrapper (objects are encoded without identifying
+type).
+</p>
+
+			<pre>type RawSerializer struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewRawSerializer">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=10482:10576#L297">NewRawSerializer</a>
+					<a class="permalink" href="index.html#NewRawSerializer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewRawSerializer(creater <a href="../../index.html">runtime</a>.<a href="../../index.html#ObjectCreater">ObjectCreater</a>, typer <a href="../../index.html">runtime</a>.<a href="../../index.html#ObjectTyper">ObjectTyper</a>) *<a href="index.html#RawSerializer">RawSerializer</a></pre>
+				<p>
+NewRawSerializer creates a Protobuf serializer that handles encoding versioned objects into the proper wire form. If typer
+is not nil, the object has the group, version, and kind fields set. This serializer does not provide type information for the
+encoded object, and thus is not self describing (callers must know what type is being described in order to decode).
+</p>
+<p>
+This encoding scheme is experimental, and is subject to change at any time.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="RawSerializer.Decode">func (*RawSerializer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=11703:11855#L321">Decode</a>
+					<a class="permalink" href="index.html#RawSerializer.Decode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#RawSerializer">RawSerializer</a>) Decode(originalData []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, gvk *<a href="../../schema/index.html">schema</a>.<a href="../../schema/index.html#GroupVersionKind">GroupVersionKind</a>, into <a href="../../index.html">runtime</a>.<a href="../../index.html#Object">Object</a>) (<a href="../../index.html">runtime</a>.<a href="../../index.html#Object">Object</a>, *<a href="../../schema/index.html">schema</a>.<a href="../../schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Decode attempts to convert the provided data into a protobuf message, extract the stored schema kind, apply the provided default
+gvk, and then load that data into an object matching the desired schema kind or the provided into. If into is *runtime.Unknown,
+the raw data will be extracted and no decoding will be performed. If into is not registered with the typer, then the object will
+be straight decoded using normal protobuf unmarshalling (the MarshalTo interface). If into is provided and the original data is
+not fully qualified with kind/version/group, the type of the into will be used to alter the returned gvk. On success or most
+errors, the method will return the calculated schema kind.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RawSerializer.Encode">func (*RawSerializer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=14416:14485#L398">Encode</a>
+					<a class="permalink" href="index.html#RawSerializer.Encode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#RawSerializer">RawSerializer</a>) Encode(obj <a href="../../index.html">runtime</a>.<a href="../../index.html#Object">Object</a>, w <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Writer">Writer</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Encode serializes the provided object to the given writer. Overrides is ignored.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RawSerializer.Identifier">func (*RawSerializer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=15740:15795#L448">Identifier</a>
+					<a class="permalink" href="index.html#RawSerializer.Identifier">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#RawSerializer">RawSerializer</a>) Identifier() <a href="../../index.html">runtime</a>.<a href="../../index.html#Identifier">Identifier</a></pre>
+				<p>
+Identifier implements runtime.Encoder interface.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Serializer">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=2830:2932#L72">Serializer</a>
+				<a class="permalink" href="index.html#Serializer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Serializer handles encoding versioned objects into the proper wire form
+</p>
+
+			<pre>type Serializer struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewSerializer">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=2567:2655#L63">NewSerializer</a>
+					<a class="permalink" href="index.html#NewSerializer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewSerializer(creater <a href="../../index.html">runtime</a>.<a href="../../index.html#ObjectCreater">ObjectCreater</a>, typer <a href="../../index.html">runtime</a>.<a href="../../index.html#ObjectTyper">ObjectTyper</a>) *<a href="index.html#Serializer">Serializer</a></pre>
+				<p>
+NewSerializer creates a Protobuf serializer that handles encoding versioned objects into the proper wire form. If a typer
+is passed, the encoded object will have group, version, and kind fields set. If typer is nil, the objects will be written
+as-is (any type info passed with the object will be used).
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Serializer.Decode">func (*Serializer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=3804:3953#L89">Decode</a>
+					<a class="permalink" href="index.html#Serializer.Decode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#Serializer">Serializer</a>) Decode(originalData []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, gvk *<a href="../../schema/index.html">schema</a>.<a href="../../schema/index.html#GroupVersionKind">GroupVersionKind</a>, into <a href="../../index.html">runtime</a>.<a href="../../index.html#Object">Object</a>) (<a href="../../index.html">runtime</a>.<a href="../../index.html#Object">Object</a>, *<a href="../../schema/index.html">schema</a>.<a href="../../schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Decode attempts to convert the provided data into a protobuf message, extract the stored schema kind, apply the provided default
+gvk, and then load that data into an object matching the desired schema kind or the provided into. If into is *runtime.Unknown,
+the raw data will be extracted and no decoding will be performed. If into is not registered with the typer, then the object will
+be straight decoded using normal protobuf unmarshalling (the MarshalTo interface). If into is provided and the original data is
+not fully qualified with kind/version/group, the type of the into will be used to alter the returned gvk. On success or most
+errors, the method will return the calculated schema kind.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Serializer.Encode">func (*Serializer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=6154:6220#L155">Encode</a>
+					<a class="permalink" href="index.html#Serializer.Encode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#Serializer">Serializer</a>) Encode(obj <a href="../../index.html">runtime</a>.<a href="../../index.html#Object">Object</a>, w <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Writer">Writer</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Encode serializes the provided object to the given writer.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Serializer.Identifier">func (*Serializer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=8153:8205#L233">Identifier</a>
+					<a class="permalink" href="index.html#Serializer.Identifier">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#Serializer">Serializer</a>) Identifier() <a href="../../index.html">runtime</a>.<a href="../../index.html#Identifier">Identifier</a></pre>
+				<p>
+Identifier implements runtime.Encoder interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Serializer.RecognizesData">func (*Serializer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/protobuf/protobuf.go?s=8303:8374#L238">RecognizesData</a>
+					<a class="permalink" href="index.html#Serializer.RecognizesData">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s *<a href="index.html#Serializer">Serializer</a>) RecognizesData(peek <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>) (<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+RecognizesData implements the RecognizingDecoder interface.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

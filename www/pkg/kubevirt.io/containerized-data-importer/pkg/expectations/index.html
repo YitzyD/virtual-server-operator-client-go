@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>expectations - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package expectations
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/expectations"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#NoResyncPeriodFunc">func NoResyncPeriodFunc() time.Duration</a></dd>
+			
+			
+				
+				<dd><a href="index.html#ControlleeExpectations">type ControlleeExpectations</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControlleeExpectations.Add">func (exp *ControlleeExpectations) Add(add, del int64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControlleeExpectations.Fulfilled">func (exp *ControlleeExpectations) Fulfilled() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControlleeExpectations.GetExpectations">func (exp *ControlleeExpectations) GetExpectations() (int64, int64)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ControllerExpectations">type ControllerExpectations</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewControllerExpectations">func NewControllerExpectations() *ControllerExpectations</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.CreationObserved">func (r *ControllerExpectations) CreationObserved(controllerKey string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.DeleteExpectations">func (r *ControllerExpectations) DeleteExpectations(controllerKey string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.DeletionObserved">func (r *ControllerExpectations) DeletionObserved(controllerKey string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.ExpectCreations">func (r *ControllerExpectations) ExpectCreations(controllerKey string, adds int) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.ExpectDeletions">func (r *ControllerExpectations) ExpectDeletions(controllerKey string, dels int) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.GetExpectations">func (r *ControllerExpectations) GetExpectations(controllerKey string) (*ControlleeExpectations, bool, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.LowerExpectations">func (r *ControllerExpectations) LowerExpectations(controllerKey string, add, del int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.RaiseExpectations">func (r *ControllerExpectations) RaiseExpectations(controllerKey string, add, del int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.SatisfiedExpectations">func (r *ControllerExpectations) SatisfiedExpectations(controllerKey string) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ControllerExpectations.SetExpectations">func (r *ControllerExpectations) SetExpectations(controllerKey string, add, del int) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ControllerExpectationsInterface">type ControllerExpectationsInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Expectations">type Expectations</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ResyncPeriodFunc">type ResyncPeriodFunc</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StaticResyncPeriodFunc">func StaticResyncPeriodFunc(resyncPeriod time.Duration) ResyncPeriodFunc</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UIDSet">type UIDSet</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UIDTrackingControllerExpectations">type UIDTrackingControllerExpectations</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewUIDTrackingControllerExpectations">func NewUIDTrackingControllerExpectations(ce ControllerExpectationsInterface) *UIDTrackingControllerExpectations</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UIDTrackingControllerExpectations.DeleteExpectations">func (u *UIDTrackingControllerExpectations) DeleteExpectations(rcKey string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UIDTrackingControllerExpectations.DeletionObserved">func (u *UIDTrackingControllerExpectations) DeletionObserved(rcKey, deleteKey string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UIDTrackingControllerExpectations.ExpectDeletions">func (u *UIDTrackingControllerExpectations) ExpectDeletions(rcKey string, deletedKeys []string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UIDTrackingControllerExpectations.GetUIDs">func (u *UIDTrackingControllerExpectations) GetUIDs(controllerKey string) sets.String</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go">expectations.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span class="comment">// ExpectationsTimeout sets a constant timeout value to 5 minutes</span>
+    <span class="comment">// If a watch drops a delete event for a pod, it&#39;ll take this long</span>
+    <span class="comment">// before a dormant controller waiting for those packets is woken up anyway. It is</span>
+    <span class="comment">// specifically targeted at the case where some problem prevents an update</span>
+    <span class="comment">// of expectations, without it the controller could stay asleep forever. This should</span>
+    <span class="comment">// be set based on the expected latency of watch events.</span>
+    <span class="comment">//</span>
+    <span class="comment">// Currently a controller can service (create *and* observe the watch events for said</span>
+    <span class="comment">// creation) about 10 pods a second, so it takes about 1 min to service</span>
+    <span class="comment">// 500 pods. Just creation is limited to 20qps, and watching happens with ~10-30s</span>
+    <span class="comment">// latency/pod at the scale of 3000 pods over 100 nodes.</span>
+    <span id="ExpectationsTimeout">ExpectationsTimeout</span> = 5 * <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Minute">Minute</a>
+)</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+ExpKeyFunc to parse out the key from a ControlleeExpectation
+</p>
+
+				<pre>var <span id="ExpKeyFunc">ExpKeyFunc</span> = func(obj interface{}) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>) {
+    if e, ok := obj.(*<a href="index.html#ControlleeExpectations">ControlleeExpectations</a>); ok {
+        return e.key, <a href="http://localhost:6060/pkg/builtin/#nil">nil</a>
+    }
+    return &#34;&#34;, <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;Could not find key for obj %#v&#34;, obj)
+}</pre>
+			
+				
+				<pre>var (
+    <span class="comment">// KeyFunc is a variable holding cache.DeletionHandlingMetaNamespaceKeyFunc</span>
+    <span id="KeyFunc">KeyFunc</span> = <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#DeletionHandlingMetaNamespaceKeyFunc">DeletionHandlingMetaNamespaceKeyFunc</a>
+)</pre>
+			
+				<p>
+UIDSetKeyFunc to parse out the key from a UIDSet.
+</p>
+
+				<pre>var <span id="UIDSetKeyFunc">UIDSetKeyFunc</span> = func(obj interface{}) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>) {
+    if u, ok := obj.(*<a href="index.html#UIDSet">UIDSet</a>); ok {
+        return u.key, <a href="http://localhost:6060/pkg/builtin/#nil">nil</a>
+    }
+    return &#34;&#34;, <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;Could not find key for obj %#v&#34;, obj)
+}</pre>
+			
+				<p>
+UpdateTaintBackoff provides a variable to hold a wait.Backoff item
+</p>
+
+				<pre>var <span id="UpdateTaintBackoff">UpdateTaintBackoff</span> = <a href="../../../../k8s.io/apimachinery/pkg/util/wait/index.html">wait</a>.<a href="../../../../k8s.io/apimachinery/pkg/util/wait/index.html#Backoff">Backoff</a>{
+    <a href="../../../../k8s.io/apimachinery/pkg/util/wait/index.html#Backoff.Steps">Steps</a>:    5,
+    <a href="../../../../k8s.io/apimachinery/pkg/util/wait/index.html#Backoff.Duration">Duration</a>: 100 * <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Millisecond">Millisecond</a>,
+    <a href="../../../../k8s.io/apimachinery/pkg/util/wait/index.html#Backoff.Jitter">Jitter</a>:   1.0,
+}</pre>
+			
+		
+		
+			
+			
+			<h2 id="NoResyncPeriodFunc">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=2512:2551#L62">NoResyncPeriodFunc</a>
+				<a class="permalink" href="index.html#NoResyncPeriodFunc">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NoResyncPeriodFunc() <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a></pre>
+			<p>
+NoResyncPeriodFunc returns 0 for resyncPeriod in case resyncing is not needed.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="ControlleeExpectations">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=9746:10064#L225">ControlleeExpectations</a>
+				<a class="permalink" href="index.html#ControlleeExpectations">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ControlleeExpectations track controllee creates/deletes.
+</p>
+
+			<pre>type ControlleeExpectations struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ControlleeExpectations.Add">func (*ControlleeExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=10110:10164#L235">Add</a>
+					<a class="permalink" href="index.html#ControlleeExpectations.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (exp *<a href="index.html#ControlleeExpectations">ControlleeExpectations</a>) Add(add, del <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				<p>
+Add increments the add and del counters.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControlleeExpectations.Fulfilled">func (*ControlleeExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=10300:10351#L241">Fulfilled</a>
+					<a class="permalink" href="index.html#ControlleeExpectations.Fulfilled">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (exp *<a href="index.html#ControlleeExpectations">ControlleeExpectations</a>) Fulfilled() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Fulfilled returns true if this expectation has been fulfilled.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControlleeExpectations.GetExpectations">func (*ControlleeExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=10571:10638#L247">GetExpectations</a>
+					<a class="permalink" href="index.html#ControlleeExpectations.GetExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (exp *<a href="index.html#ControlleeExpectations">ControlleeExpectations</a>) GetExpectations() (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				<p>
+GetExpectations returns the add and del expectations of the controllee.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ControllerExpectations">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=4780:4831#L114">ControllerExpectations</a>
+				<a class="permalink" href="index.html#ControllerExpectations">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ControllerExpectations is a cache mapping controllers to what they expect to see before being woken up for a sync.
+</p>
+
+			<pre>type ControllerExpectations struct {
+    <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#Store">Store</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewControllerExpectations">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=10780:10836#L252">NewControllerExpectations</a>
+					<a class="permalink" href="index.html#NewControllerExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewControllerExpectations() *<a href="index.html#ControllerExpectations">ControllerExpectations</a></pre>
+				<p>
+NewControllerExpectations returns a store for ControllerExpectations.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="ControllerExpectations.CreationObserved">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=9243:9314#L210">CreationObserved</a>
+					<a class="permalink" href="index.html#ControllerExpectations.CreationObserved">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) CreationObserved(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+CreationObserved atomically decrements the `add` expectation count of the given controller.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.DeleteExpectations">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=5261:5334#L128">DeleteExpectations</a>
+					<a class="permalink" href="index.html#ControllerExpectations.DeleteExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) DeleteExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+DeleteExpectations deletes the expectations of the given controller from the TTLStore.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.DeletionObserved">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=9457:9528#L215">DeletionObserved</a>
+					<a class="permalink" href="index.html#ControllerExpectations.DeletionObserved">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) DeletionObserved(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+DeletionObserved atomically decrements the `del` expectation count of the given controller.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.ExpectCreations">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=7915:8001#L182">ExpectCreations</a>
+					<a class="permalink" href="index.html#ControllerExpectations.ExpectCreations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) ExpectCreations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, adds <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+ExpectCreations wraps SetExpectations for the receiver controller specified, setting creates
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.ExpectDeletions">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=8155:8241#L187">ExpectDeletions</a>
+					<a class="permalink" href="index.html#ControllerExpectations.ExpectDeletions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) ExpectDeletions(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, dels <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+ExpectDeletions wraps SetExpectations for the receiver controller specified, setting deletions
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.GetExpectations">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=4912:5021#L119">GetExpectations</a>
+					<a class="permalink" href="index.html#ControllerExpectations.GetExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) GetExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#ControlleeExpectations">ControlleeExpectations</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+GetExpectations returns the ControlleeExpectations of the given controller.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.LowerExpectations">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=8377:8463#L192">LowerExpectations</a>
+					<a class="permalink" href="index.html#ControllerExpectations.LowerExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) LowerExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, add, del <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				<p>
+LowerExpectations decrements the expectation counts of the given controller.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.RaiseExpectations">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=8804:8890#L201">RaiseExpectations</a>
+					<a class="permalink" href="index.html#ControllerExpectations.RaiseExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) RaiseExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, add, del <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				<p>
+RaiseExpectations increments the expectation counts of the given controller.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.SatisfiedExpectations">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=5797:5878#L139">SatisfiedExpectations</a>
+					<a class="permalink" href="index.html#ControllerExpectations.SatisfiedExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) SatisfiedExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+SatisfiedExpectations returns true if the required adds/dels for the given controller have been observed.
+Add/del counts are established by the controller at sync time, and updated as controllees are observed by the controller
+manager.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ControllerExpectations.SetExpectations">func (*ControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=7532:7622#L175">SetExpectations</a>
+					<a class="permalink" href="index.html#ControllerExpectations.SetExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ControllerExpectations">ControllerExpectations</a>) SetExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, add, del <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+SetExpectations registers new expectations for the given controller. Forgets existing expectations.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ControllerExpectationsInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=4081:4660#L100">ControllerExpectationsInterface</a>
+				<a class="permalink" href="index.html#ControllerExpectationsInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ControllerExpectationsInterface is an interface that allows users to set and wait on expectations.
+Only abstracted out for testing.
+Warning: if using KeyFunc it is not safe to use a single ControllerExpectationsInterface with different
+types of controllers, because the keys might conflict across types.
+</p>
+
+			<pre>type ControllerExpectationsInterface interface {
+    GetExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#ControlleeExpectations">ControlleeExpectations</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SatisfiedExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+    DeleteExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)
+    SetExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, add, del <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    ExpectCreations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, adds <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    ExpectDeletions(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, dels <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    CreationObserved(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)
+    DeletionObserved(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)
+    RaiseExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, add, del <a href="http://localhost:6060/pkg/builtin/#int">int</a>)
+    LowerExpectations(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, add, del <a href="http://localhost:6060/pkg/builtin/#int">int</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Expectations">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=9635:9684#L220">Expectations</a>
+				<a class="permalink" href="index.html#Expectations">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Expectations are either fulfilled, or expire naturally.
+</p>
+
+			<pre>type Expectations interface {
+    Fulfilled() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ResyncPeriodFunc">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=2386:2428#L59">ResyncPeriodFunc</a>
+				<a class="permalink" href="index.html#ResyncPeriodFunc">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ResyncPeriodFunc creates a function type
+</p>
+
+			<pre>type ResyncPeriodFunc func() <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="StaticResyncPeriodFunc">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=2629:2701#L67">StaticResyncPeriodFunc</a>
+					<a class="permalink" href="index.html#StaticResyncPeriodFunc">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func StaticResyncPeriodFunc(resyncPeriod <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#ResyncPeriodFunc">ResyncPeriodFunc</a></pre>
+				<p>
+StaticResyncPeriodFunc returns the resync period specified
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="UIDSet">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=11282:11329#L267">UIDSet</a>
+				<a class="permalink" href="index.html#UIDSet">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UIDSet holds a key and a set of UIDs. Used by the
+UIDTrackingControllerExpectations to remember which UID it has seen/still
+waiting for.
+</p>
+
+			<pre>type UIDSet struct {
+    <a href="../../../../k8s.io/apimachinery/pkg/util/sets/index.html">sets</a>.<a href="../../../../k8s.io/apimachinery/pkg/util/sets/index.html#String">String</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UIDTrackingControllerExpectations">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=11750:12135#L278">UIDTrackingControllerExpectations</a>
+				<a class="permalink" href="index.html#UIDTrackingControllerExpectations">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UIDTrackingControllerExpectations tracks the UID of the pods it deletes.
+This cache is needed over plain old expectations to safely handle graceful
+deletion. The desired behavior is to treat an update that sets the
+DeletionTimestamp on an object as a delete. To do so consistently, one needs
+to remember the expected deletes so they aren&#39;t double counted.
+TODO: RTCTimerTrack creates as well (#22599)
+</p>
+
+			<pre>type UIDTrackingControllerExpectations struct {
+    <a href="index.html#ControllerExpectationsInterface">ControllerExpectationsInterface</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewUIDTrackingControllerExpectations">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=14416:14528#L346">NewUIDTrackingControllerExpectations</a>
+					<a class="permalink" href="index.html#NewUIDTrackingControllerExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewUIDTrackingControllerExpectations(ce <a href="index.html#ControllerExpectationsInterface">ControllerExpectationsInterface</a>) *<a href="index.html#UIDTrackingControllerExpectations">UIDTrackingControllerExpectations</a></pre>
+				<p>
+NewUIDTrackingControllerExpectations returns a wrapper around
+ControllerExpectations that is aware of deleteKeys.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="UIDTrackingControllerExpectations.DeleteExpectations">func (*UIDTrackingControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=13874:13950#L332">DeleteExpectations</a>
+					<a class="permalink" href="index.html#UIDTrackingControllerExpectations.DeleteExpectations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UIDTrackingControllerExpectations">UIDTrackingControllerExpectations</a>) DeleteExpectations(rcKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+DeleteExpectations deletes the UID set and invokes DeleteExpectations on the
+underlying ControllerExpectationsInterface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UIDTrackingControllerExpectations.DeletionObserved">func (*UIDTrackingControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=13366:13451#L318">DeletionObserved</a>
+					<a class="permalink" href="index.html#UIDTrackingControllerExpectations.DeletionObserved">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UIDTrackingControllerExpectations">UIDTrackingControllerExpectations</a>) DeletionObserved(rcKey, deleteKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+DeletionObserved records the given deleteKey as a deletion, for the given rc.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UIDTrackingControllerExpectations.ExpectDeletions">func (*UIDTrackingControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=12631:12732#L299">ExpectDeletions</a>
+					<a class="permalink" href="index.html#UIDTrackingControllerExpectations.ExpectDeletions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UIDTrackingControllerExpectations">UIDTrackingControllerExpectations</a>) ExpectDeletions(rcKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, deletedKeys []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+ExpectDeletions records expectations for the given deleteKeys, against the given controller.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UIDTrackingControllerExpectations.GetUIDs">func (*UIDTrackingControllerExpectations) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/expectations/expectations.go?s=12316:12401#L291">GetUIDs</a>
+					<a class="permalink" href="index.html#UIDTrackingControllerExpectations.GetUIDs">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UIDTrackingControllerExpectations">UIDTrackingControllerExpectations</a>) GetUIDs(controllerKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../../../../k8s.io/apimachinery/pkg/util/sets/index.html">sets</a>.<a href="../../../../k8s.io/apimachinery/pkg/util/sets/index.html#String">String</a></pre>
+				<p>
+GetUIDs is a convenience method to avoid exposing the set of expected uids.
+The returned set is not thread safe, all modifications must be made holding
+the uidStoreLock.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

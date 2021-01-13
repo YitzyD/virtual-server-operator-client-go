@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>fake - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package fake
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+This package has the automatically generated fake clientset.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#Clientset">type Clientset</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewSimpleClientset">func NewSimpleClientset(objects ...runtime.Object) *Clientset</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Clientset.CdiV1alpha1">func (c *Clientset) CdiV1alpha1() cdiv1alpha1.CdiV1alpha1Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Clientset.CdiV1beta1">func (c *Clientset) CdiV1beta1() cdiv1beta1.CdiV1beta1Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Clientset.Discovery">func (c *Clientset) Discovery() discovery.DiscoveryInterface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Clientset.Tracker">func (c *Clientset) Tracker() testing.ObjectTracker</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Clientset.UploadV1alpha1">func (c *Clientset) UploadV1alpha1() uploadv1alpha1.UploadV1alpha1Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Clientset.UploadV1beta1">func (c *Clientset) UploadV1beta1() uploadv1beta1.UploadV1beta1Interface</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go">clientset_generated.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/register.go">register.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+AddToScheme adds all types of this clientset into the given scheme. This allows composition
+of clientsets, like in:
+</p>
+<pre>import (
+  &#34;k8s.io/client-go/kubernetes&#34;
+  clientsetscheme &#34;k8s.io/client-go/kubernetes/scheme&#34;
+  aggregatorclientsetscheme &#34;k8s.io/kube-aggregator/pkg/client/clientset_generated/clientset/scheme&#34;
+)
+
+kclientset, _ := kubernetes.NewForConfig(c)
+_ = aggregatorclientsetscheme.AddToScheme(clientsetscheme.Scheme)
+</pre>
+<p>
+After this, RawExtensions in Kubernetes types will serialize kube-aggregator types
+correctly.
+</p>
+
+				<pre>var <span id="AddToScheme">AddToScheme</span> = localSchemeBuilder.<a href="index.html#AddToScheme">AddToScheme</a></pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="Clientset">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=2973:3085#L59">Clientset</a>
+				<a class="permalink" href="index.html#Clientset">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Clientset implements clientset.Interface. Meant to be embedded into a
+struct to get a default implementation. This makes faking out just the method
+you want to test easier.
+</p>
+
+			<pre>type Clientset struct {
+    <a href="http://localhost:6060/pkg/k8s.io/client-go/testing/">testing</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/testing/#Fake">Fake</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewSimpleClientset">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=2140:2201#L32">NewSimpleClientset</a>
+					<a class="permalink" href="index.html#NewSimpleClientset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewSimpleClientset(objects ...<a href="../../../../../../../k8s.io/apimachinery/pkg/runtime/index.html">runtime</a>.<a href="../../../../../../../k8s.io/apimachinery/pkg/runtime/index.html#Object">Object</a>) *<a href="index.html#Clientset">Clientset</a></pre>
+				<p>
+NewSimpleClientset returns a clientset that will respond with the provided objects.
+It&#39;s backed by a very simple object tracker that processes creates, updates and deletions as-is,
+without applying any validations and/or defaults. It shouldn&#39;t be considered a replacement
+for a real clientset and is mostly useful in simple unit tests.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Clientset.CdiV1alpha1">func (*Clientset) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=3337:3403#L76">CdiV1alpha1</a>
+					<a class="permalink" href="index.html#Clientset.CdiV1alpha1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Clientset">Clientset</a>) CdiV1alpha1() <a href="../typed/core/v1alpha1/index.html">cdiv1alpha1</a>.<a href="../typed/core/v1alpha1/index.html#CdiV1alpha1Interface">CdiV1alpha1Interface</a></pre>
+				<p>
+CdiV1alpha1 retrieves the CdiV1alpha1Client
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Clientset.CdiV1beta1">func (*Clientset) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=3510:3573#L81">CdiV1beta1</a>
+					<a class="permalink" href="index.html#Clientset.CdiV1beta1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Clientset">Clientset</a>) CdiV1beta1() <a href="../typed/core/v1beta1/index.html">cdiv1beta1</a>.<a href="../typed/core/v1beta1/index.html#CdiV1beta1Interface">CdiV1beta1Interface</a></pre>
+				<p>
+CdiV1beta1 retrieves the CdiV1beta1Client
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Clientset.Discovery">func (*Clientset) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=3087:3147#L65">Discovery</a>
+					<a class="permalink" href="index.html#Clientset.Discovery">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Clientset">Clientset</a>) Discovery() <a href="http://localhost:6060/pkg/k8s.io/client-go/discovery/">discovery</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/discovery/#DiscoveryInterface">DiscoveryInterface</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Clientset.Tracker">func (*Clientset) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=3173:3224#L69">Tracker</a>
+					<a class="permalink" href="index.html#Clientset.Tracker">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Clientset">Clientset</a>) Tracker() <a href="http://localhost:6060/pkg/k8s.io/client-go/testing/">testing</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/testing/#ObjectTracker">ObjectTracker</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Clientset.UploadV1alpha1">func (*Clientset) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=3686:3761#L86">UploadV1alpha1</a>
+					<a class="permalink" href="index.html#Clientset.UploadV1alpha1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Clientset">Clientset</a>) UploadV1alpha1() <a href="../typed/upload/v1alpha1/index.html">uploadv1alpha1</a>.<a href="../typed/upload/v1alpha1/index.html#UploadV1alpha1Interface">UploadV1alpha1Interface</a></pre>
+				<p>
+UploadV1alpha1 retrieves the UploadV1alpha1Client
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Clientset.UploadV1beta1">func (*Clientset) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/fake/clientset_generated.go?s=3880:3952#L91">UploadV1beta1</a>
+					<a class="permalink" href="index.html#Clientset.UploadV1beta1">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#Clientset">Clientset</a>) UploadV1beta1() <a href="../typed/upload/v1beta1/index.html">uploadv1beta1</a>.<a href="../typed/upload/v1beta1/index.html#UploadV1beta1Interface">UploadV1beta1Interface</a></pre>
+				<p>
+UploadV1beta1 retrieves the UploadV1beta1Client
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

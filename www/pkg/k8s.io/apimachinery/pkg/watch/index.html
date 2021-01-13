@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>watch - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package watch
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/watch"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package watch contains a generic watchable interface, and a fake for
+testing code that uses the watch interface.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#Broadcaster">type Broadcaster</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewBroadcaster">func NewBroadcaster(queueLength int, fullChannelBehavior FullChannelBehavior) *Broadcaster</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Broadcaster.Action">func (m *Broadcaster) Action(action EventType, obj runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Broadcaster.Shutdown">func (m *Broadcaster) Shutdown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Broadcaster.Watch">func (m *Broadcaster) Watch() Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Broadcaster.WatchWithPrefix">func (m *Broadcaster) WatchWithPrefix(queuedEvents []Event) Interface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Decoder">type Decoder</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Event">type Event</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Event.DeepCopy">func (in *Event) DeepCopy() *Event</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Event.DeepCopyInto">func (in *Event) DeepCopyInto(out *Event)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#EventType">type EventType</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#FakeWatcher">type FakeWatcher</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewFake">func NewFake() *FakeWatcher</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewFakeWithChanSize">func NewFakeWithChanSize(size int, blocking bool) *FakeWatcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.Action">func (f *FakeWatcher) Action(action EventType, obj runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.Add">func (f *FakeWatcher) Add(obj runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.Delete">func (f *FakeWatcher) Delete(lastValue runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.Error">func (f *FakeWatcher) Error(errValue runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.IsStopped">func (f *FakeWatcher) IsStopped() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.Modify">func (f *FakeWatcher) Modify(obj runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.Reset">func (f *FakeWatcher) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.ResultChan">func (f *FakeWatcher) ResultChan() &lt;-chan Event</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeWatcher.Stop">func (f *FakeWatcher) Stop()</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FilterFunc">type FilterFunc</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#FullChannelBehavior">type FullChannelBehavior</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Interface">type Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Filter">func Filter(w Interface, f FilterFunc) Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewEmptyWatch">func NewEmptyWatch() Interface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ProxyWatcher">type ProxyWatcher</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewProxyWatcher">func NewProxyWatcher(ch chan Event) *ProxyWatcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ProxyWatcher.ResultChan">func (pw *ProxyWatcher) ResultChan() &lt;-chan Event</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ProxyWatcher.Stop">func (pw *ProxyWatcher) Stop()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ProxyWatcher.StopChan">func (pw *ProxyWatcher) StopChan() &lt;-chan struct{}</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ProxyWatcher.Stopping">func (pw *ProxyWatcher) Stopping() bool</a></dd>
+				
+			
+				
+				<dd><a href="index.html#RaceFreeFakeWatcher">type RaceFreeFakeWatcher</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewRaceFreeFake">func NewRaceFreeFake() *RaceFreeFakeWatcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.Action">func (f *RaceFreeFakeWatcher) Action(action EventType, obj runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.Add">func (f *RaceFreeFakeWatcher) Add(obj runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.Delete">func (f *RaceFreeFakeWatcher) Delete(lastValue runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.Error">func (f *RaceFreeFakeWatcher) Error(errValue runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.IsStopped">func (f *RaceFreeFakeWatcher) IsStopped() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.Modify">func (f *RaceFreeFakeWatcher) Modify(obj runtime.Object)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.Reset">func (f *RaceFreeFakeWatcher) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.ResultChan">func (f *RaceFreeFakeWatcher) ResultChan() &lt;-chan Event</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RaceFreeFakeWatcher.Stop">func (f *RaceFreeFakeWatcher) Stop()</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Recorder">type Recorder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewRecorder">func NewRecorder(w Interface) *Recorder</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Recorder.Events">func (r *Recorder) Events() []Event</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Reporter">type Reporter</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#StreamWatcher">type StreamWatcher</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewStreamWatcher">func NewStreamWatcher(d Decoder, r Reporter) *StreamWatcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StreamWatcher.ResultChan">func (sw *StreamWatcher) ResultChan() &lt;-chan Event</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StreamWatcher.Stop">func (sw *StreamWatcher) Stop()</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/filter.go">filter.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go">mux.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/streamwatcher.go">streamwatcher.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go">watch.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var (
+    <span id="DefaultChanSize">DefaultChanSize</span> <a href="http://localhost:6060/pkg/builtin/#int32">int32</a> = 100
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="Broadcaster">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go?s=1282:1938#L32">Broadcaster</a>
+				<a class="permalink" href="index.html#Broadcaster">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Broadcaster distributes event notifications among any number of watchers. Every event
+is delivered to every watcher.
+</p>
+
+			<pre>type Broadcaster struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewBroadcaster">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go?s=2235:2325#L54">NewBroadcaster</a>
+					<a class="permalink" href="index.html#NewBroadcaster">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewBroadcaster(queueLength <a href="http://localhost:6060/pkg/builtin/#int">int</a>, fullChannelBehavior <a href="index.html#FullChannelBehavior">FullChannelBehavior</a>) *<a href="index.html#Broadcaster">Broadcaster</a></pre>
+				<p>
+NewBroadcaster creates a new Broadcaster. queueLength is the maximum number of events to queue per watcher.
+It is guaranteed that events will be distributed in the order in which they occur,
+but the order in which a single event is distributed among all of the watchers is unspecified.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Broadcaster.Action">func (*Broadcaster) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go?s=6134:6200#L187">Action</a>
+					<a class="permalink" href="index.html#Broadcaster.Action">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Broadcaster">Broadcaster</a>) Action(action <a href="index.html#EventType">EventType</a>, obj <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Action distributes the given event among all watchers.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Broadcaster.Shutdown">func (*Broadcaster) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go?s=6713:6745#L197">Shutdown</a>
+					<a class="permalink" href="index.html#Broadcaster.Shutdown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Broadcaster">Broadcaster</a>) Shutdown()</pre>
+				<p>
+Shutdown disconnects all watchers (but any queued events will still be distributed).
+You must not call Action or Watch* after calling Shutdown. This call blocks
+until all events have been distributed through the outbound channels. Note
+that since they can be buffered, this means that the watchers might not
+have received the data yet as it can remain sitting in the buffered
+channel. It will block until the broadcaster stop request is actually executed
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Broadcaster.Watch">func (*Broadcaster) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go?s=3855:3894#L109">Watch</a>
+					<a class="permalink" href="index.html#Broadcaster.Watch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Broadcaster">Broadcaster</a>) Watch() <a href="index.html#Interface">Interface</a></pre>
+				<p>
+Watch adds a new watcher to the list and returns an Interface for it.
+Note: new watchers will only receive new events. They won&#39;t get an entire history
+of previous events. It will block until the watcher is actually added to the
+broadcaster.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Broadcaster.WatchWithPrefix">func (*Broadcaster) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go?s=4742:4811#L135">WatchWithPrefix</a>
+					<a class="permalink" href="index.html#Broadcaster.WatchWithPrefix">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Broadcaster">Broadcaster</a>) WatchWithPrefix(queuedEvents []<a href="index.html#Event">Event</a>) <a href="index.html#Interface">Interface</a></pre>
+				<p>
+WatchWithPrefix adds a new watcher to the list and returns an Interface for it. It sends
+queuedEvents down the new watch before beginning to send ordinary events from Broadcaster.
+The returned watch will have a queue length that is at least large enough to accommodate
+all of the items in queuedEvents. It will block until the watcher is actually added to
+the broadcaster.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Decoder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/streamwatcher.go?s=850:1365#L22">Decoder</a>
+				<a class="permalink" href="index.html#Decoder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Decoder allows StreamWatcher to watch any stream for which a Decoder can be written.
+</p>
+
+			<pre>type Decoder interface {
+    <span class="comment">// Decode should return the type of event, the decoded object, or an error.</span>
+    <span class="comment">// An error will cause StreamWatcher to call Close(). Decode should block until</span>
+    <span class="comment">// it has data or an error occurs.</span>
+    Decode() (action <a href="index.html#EventType">EventType</a>, object <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+    <span class="comment">// Close should close the underlying io.Reader, signalling to the source of</span>
+    <span class="comment">// the stream that it is no longer being watched. Close() must cause any</span>
+    <span class="comment">// outstanding call to Decode() to return with an error of some sort.</span>
+    Close()
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Event">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=1492:2089#L47">Event</a>
+				<a class="permalink" href="index.html#Event">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Event represents a single event to a watched resource.
++k8s:deepcopy-gen=true
+</p>
+
+			<pre>type Event struct {
+<span id="Event.Type"></span>    Type <a href="index.html#EventType">EventType</a>
+
+<span id="Event.Object"></span>    <span class="comment">// Object is:</span>
+    <span class="comment">//  * If Type is Added or Modified: the new state of the object.</span>
+    <span class="comment">//  * If Type is Deleted: the state of the object immediately before deletion.</span>
+    <span class="comment">//  * If Type is Bookmark: the object (instance of a type being watched) where</span>
+    <span class="comment">//    only ResourceVersion field is set. On successful restart of watch from a</span>
+    <span class="comment">//    bookmark resourceVersion, client is guaranteed to not get repeat event</span>
+    <span class="comment">//    nor miss any events.</span>
+    <span class="comment">//  * If Type is Error: *api.Status is recommended; other types may make sense</span>
+    <span class="comment">//    depending on context.</span>
+    Object <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Event.DeepCopy">func (*Event) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/zz_generated.deepcopy.go?s=1008:1042#L23">DeepCopy</a>
+					<a class="permalink" href="index.html#Event.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Event">Event</a>) DeepCopy() *<a href="index.html#Event">Event</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new Event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Event.DeepCopyInto">func (*Event) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/zz_generated.deepcopy.go?s=778:819#L14">DeepCopyInto</a>
+					<a class="permalink" href="index.html#Event.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Event">Event</a>) DeepCopyInto(out *<a href="index.html#Event">Event</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="EventType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=1178:1199#L31">EventType</a>
+				<a class="permalink" href="index.html#EventType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+EventType defines the possible types of events.
+</p>
+
+			<pre>type EventType <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="Added">Added</span>    <a href="index.html#EventType">EventType</a> = &#34;ADDED&#34;
+    <span id="Modified">Modified</span> <a href="index.html#EventType">EventType</a> = &#34;MODIFIED&#34;
+    <span id="Deleted">Deleted</span>  <a href="index.html#EventType">EventType</a> = &#34;DELETED&#34;
+    <span id="Bookmark">Bookmark</span> <a href="index.html#EventType">EventType</a> = &#34;BOOKMARK&#34;
+    <span id="Error">Error</span>    <a href="index.html#EventType">EventType</a> = &#34;ERROR&#34;
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="FakeWatcher">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=2658:2731#L83">FakeWatcher</a>
+				<a class="permalink" href="index.html#FakeWatcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FakeWatcher lets you test anything that consumes a watch.Interface; threadsafe.
+</p>
+
+			<pre>type FakeWatcher struct {
+    <a href="http://localhost:6060/pkg/sync/">sync</a>.<a href="http://localhost:6060/pkg/sync/#Mutex">Mutex</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewFake">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=2733:2760#L89">NewFake</a>
+					<a class="permalink" href="index.html#NewFake">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewFake() *<a href="index.html#FakeWatcher">FakeWatcher</a></pre>
+				
+				
+				
+			
+				
+				<h3 id="NewFakeWithChanSize">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=2819:2881#L95">NewFakeWithChanSize</a>
+					<a class="permalink" href="index.html#NewFakeWithChanSize">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewFakeWithChanSize(size <a href="http://localhost:6060/pkg/builtin/#int">int</a>, blocking <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) *<a href="index.html#FakeWatcher">FakeWatcher</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="FakeWatcher.Action">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=4019:4085#L151">Action</a>
+					<a class="permalink" href="index.html#FakeWatcher.Action">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) Action(action <a href="index.html#EventType">EventType</a>, obj <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Action sends an event of the requested type, for table-based testing.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.Add">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=3488:3533#L131">Add</a>
+					<a class="permalink" href="index.html#FakeWatcher.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) Add(obj <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Add sends an add event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.Delete">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=3722:3776#L141">Delete</a>
+					<a class="permalink" href="index.html#FakeWatcher.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) Delete(lastValue <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Delete sends a delete event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.Error">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=3852:3904#L146">Error</a>
+					<a class="permalink" href="index.html#FakeWatcher.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) Error(errValue <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Error sends an Error event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.IsStopped">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=3146:3184#L112">IsStopped</a>
+					<a class="permalink" href="index.html#FakeWatcher.IsStopped">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) IsStopped() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.Modify">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=3602:3650#L136">Modify</a>
+					<a class="permalink" href="index.html#FakeWatcher.Modify">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) Modify(obj <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Modify sends a modify event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.Reset">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=3280:3309#L119">Reset</a>
+					<a class="permalink" href="index.html#FakeWatcher.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) Reset()</pre>
+				<p>
+Reset prepares the watcher to be reused.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.ResultChan">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=3391:3438#L126">ResultChan</a>
+					<a class="permalink" href="index.html#FakeWatcher.ResultChan">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) ResultChan() &lt;-chan <a href="index.html#Event">Event</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="FakeWatcher.Stop">func (*FakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=2983:3011#L102">Stop</a>
+					<a class="permalink" href="index.html#FakeWatcher.Stop">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeWatcher">FakeWatcher</a>) Stop()</pre>
+				<p>
+Stop implements Interface.Stop().
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FilterFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/filter.go?s=764:817#L15">FilterFunc</a>
+				<a class="permalink" href="index.html#FilterFunc">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FilterFunc should take an event, possibly modify it in some way, and return
+the modified event. If the event should be ignored, then return keep=false.
+</p>
+
+			<pre>type FilterFunc func(in <a href="index.html#Event">Event</a>) (out <a href="index.html#Event">Event</a>, keep <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="FullChannelBehavior">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/mux.go?s=784:812#L18">FullChannelBehavior</a>
+				<a class="permalink" href="index.html#FullChannelBehavior">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FullChannelBehavior controls how the Broadcaster reacts if a watcher&#39;s watch
+channel is full.
+</p>
+
+			<pre>type FullChannelBehavior <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="WaitIfChannelFull">WaitIfChannelFull</span> <a href="index.html#FullChannelBehavior">FullChannelBehavior</a> = <a href="http://localhost:6060/pkg/builtin/#iota">iota</a>
+    <span id="DropIfChannelFull">DropIfChannelFull</span>
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Interface">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=756:1125#L19">Interface</a>
+				<a class="permalink" href="index.html#Interface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Interface can be implemented by anything that knows how to watch and report changes.
+</p>
+
+			<pre>type Interface interface {
+    <span class="comment">// Stops watching. Will close the channel returned by ResultChan(). Releases</span>
+    <span class="comment">// any resources used by the watch.</span>
+    Stop()
+
+    <span class="comment">// Returns a chan which will receive all the events. If an error occurs</span>
+    <span class="comment">// or Stop() is called, the implementation will close this channel and</span>
+    <span class="comment">// release any resources used by the watch.</span>
+    ResultChan() &lt;-chan <a href="index.html#Event">Event</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="Filter">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/filter.go?s=1274:1322#L26">Filter</a>
+					<a class="permalink" href="index.html#Filter">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Filter(w <a href="index.html#Interface">Interface</a>, f <a href="index.html#FilterFunc">FilterFunc</a>) <a href="index.html#Interface">Interface</a></pre>
+				<p>
+Filter passes all events through f before allowing them to pass on.
+Putting a filter on a watch, as an unavoidable side-effect due to the way
+go channels work, effectively causes the watch&#39;s event channel to have its
+queue length increased by one.
+</p>
+<p>
+WARNING: filter has a fatal flaw, in that it can&#39;t properly update the
+Type field (Add/Modified/Deleted) to reflect items beginning to pass the
+filter when they previously didn&#39;t.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewEmptyWatch">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=2312:2342#L67">NewEmptyWatch</a>
+					<a class="permalink" href="index.html#NewEmptyWatch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewEmptyWatch() <a href="index.html#Interface">Interface</a></pre>
+				<p>
+NewEmptyWatch returns a watch interface that returns no results and is closed.
+May be used in certain error conditions where no information is available but
+an error is not warranted.
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="ProxyWatcher">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=6433:6537#L270">ProxyWatcher</a>
+				<a class="permalink" href="index.html#ProxyWatcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ProxyWatcher lets you wrap your channel in watch Interface. threadsafe.
+</p>
+
+			<pre>type ProxyWatcher struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewProxyWatcher">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=6640:6689#L281">NewProxyWatcher</a>
+					<a class="permalink" href="index.html#NewProxyWatcher">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewProxyWatcher(ch chan <a href="index.html#Event">Event</a>) *<a href="index.html#ProxyWatcher">ProxyWatcher</a></pre>
+				<p>
+NewProxyWatcher creates new ProxyWatcher by wrapping a channel
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="ProxyWatcher.ResultChan">func (*ProxyWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=7145:7194#L307">ResultChan</a>
+					<a class="permalink" href="index.html#ProxyWatcher.ResultChan">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pw *<a href="index.html#ProxyWatcher">ProxyWatcher</a>) ResultChan() &lt;-chan <a href="index.html#Event">Event</a></pre>
+				<p>
+ResultChan implements Interface
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ProxyWatcher.Stop">func (*ProxyWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=6815:6845#L290">Stop</a>
+					<a class="permalink" href="index.html#ProxyWatcher.Stop">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pw *<a href="index.html#ProxyWatcher">ProxyWatcher</a>) Stop()</pre>
+				<p>
+Stop implements Interface
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ProxyWatcher.StopChan">func (*ProxyWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=7251:7301#L312">StopChan</a>
+					<a class="permalink" href="index.html#ProxyWatcher.StopChan">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pw *<a href="index.html#ProxyWatcher">ProxyWatcher</a>) StopChan() &lt;-chan struct{}</pre>
+				<p>
+StopChan returns stop channel
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ProxyWatcher.Stopping">func (*ProxyWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=7004:7043#L300">Stopping</a>
+					<a class="permalink" href="index.html#ProxyWatcher.Stopping">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pw *<a href="index.html#ProxyWatcher">ProxyWatcher</a>) Stopping() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Stopping returns true if Stop() has been called
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="RaceFreeFakeWatcher">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=4214:4295#L156">RaceFreeFakeWatcher</a>
+				<a class="permalink" href="index.html#RaceFreeFakeWatcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+RaceFreeFakeWatcher lets you test anything that consumes a watch.Interface; threadsafe.
+</p>
+
+			<pre>type RaceFreeFakeWatcher struct {
+<span id="RaceFreeFakeWatcher.Stopped"></span>    Stopped <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+    <a href="http://localhost:6060/pkg/sync/">sync</a>.<a href="http://localhost:6060/pkg/sync/#Mutex">Mutex</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewRaceFreeFake">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=4297:4340#L162">NewRaceFreeFake</a>
+					<a class="permalink" href="index.html#NewRaceFreeFake">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewRaceFreeFake() *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="RaceFreeFakeWatcher.Action">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=6118:6192#L256">Action</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.Action">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) Action(action <a href="index.html#EventType">EventType</a>, obj <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Action sends an event of the requested type, for table-based testing.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.Add">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=5043:5096#L200">Add</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) Add(obj <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Add sends an add event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.Delete">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=5549:5611#L228">Delete</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) Delete(lastValue <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Delete sends a delete event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.Error">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=5815:5875#L242">Error</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) Error(errValue <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Error sends an Error event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.IsStopped">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=4632:4678#L179">IsStopped</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.IsStopped">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) IsStopped() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.Modify">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=5293:5349#L214">Modify</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.Modify">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) Modify(obj <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>)</pre>
+				<p>
+Modify sends a modify event.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.Reset">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=4774:4811#L186">Reset</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) Reset()</pre>
+				<p>
+Reset prepares the watcher to be reused.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.ResultChan">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=4910:4965#L193">ResultChan</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.ResultChan">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) ResultChan() &lt;-chan <a href="index.html#Event">Event</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="RaceFreeFakeWatcher.Stop">func (*RaceFreeFakeWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/watch.go?s=4461:4497#L169">Stop</a>
+					<a class="permalink" href="index.html#RaceFreeFakeWatcher.Stop">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#RaceFreeFakeWatcher">RaceFreeFakeWatcher</a>) Stop()</pre>
+				<p>
+Stop implements Interface.Stop().
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Recorder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/filter.go?s=2130:2201#L64">Recorder</a>
+				<a class="permalink" href="index.html#Recorder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Recorder records all events that are sent from the watch until it is closed.
+</p>
+
+			<pre>type Recorder struct {
+    <a href="index.html#Interface">Interface</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewRecorder">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/filter.go?s=2308:2347#L74">NewRecorder</a>
+					<a class="permalink" href="index.html#NewRecorder">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewRecorder(w <a href="index.html#Interface">Interface</a>) *<a href="index.html#Recorder">Recorder</a></pre>
+				<p>
+NewRecorder wraps an Interface and records any changes sent across it.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Recorder.Events">func (*Recorder) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/filter.go?s=2683:2718#L89">Events</a>
+					<a class="permalink" href="index.html#Recorder.Events">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#Recorder">Recorder</a>) Events() []<a href="index.html#Event">Event</a></pre>
+				<p>
+Events returns a copy of the events sent across this recorder.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Reporter">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/streamwatcher.go?s=1537:1680#L36">Reporter</a>
+				<a class="permalink" href="index.html#Reporter">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Reporter hides the details of how an error is turned into a runtime.Object for
+reporting on a watch stream since this package may not import a higher level report.
+</p>
+
+			<pre>type Reporter interface {
+    <span class="comment">// AsObject must convert err into a valid runtime.Object for the watch stream.</span>
+    AsObject(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="../runtime/index.html">runtime</a>.<a href="../runtime/index.html#Object">Object</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="StreamWatcher">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/streamwatcher.go?s=1787:1901#L43">StreamWatcher</a>
+				<a class="permalink" href="index.html#StreamWatcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+StreamWatcher turns any stream for which you can write a Decoder interface
+into a watch.Interface.
+</p>
+
+			<pre>type StreamWatcher struct {
+    <a href="http://localhost:6060/pkg/sync/">sync</a>.<a href="http://localhost:6060/pkg/sync/#Mutex">Mutex</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewStreamWatcher">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/streamwatcher.go?s=1971:2030#L52">NewStreamWatcher</a>
+					<a class="permalink" href="index.html#NewStreamWatcher">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewStreamWatcher(d <a href="index.html#Decoder">Decoder</a>, r <a href="index.html#Reporter">Reporter</a>) *<a href="index.html#StreamWatcher">StreamWatcher</a></pre>
+				<p>
+NewStreamWatcher creates a StreamWatcher from the given decoder.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="StreamWatcher.ResultChan">func (*StreamWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/streamwatcher.go?s=2337:2387#L66">ResultChan</a>
+					<a class="permalink" href="index.html#StreamWatcher.ResultChan">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sw *<a href="index.html#StreamWatcher">StreamWatcher</a>) ResultChan() &lt;-chan <a href="index.html#Event">Event</a></pre>
+				<p>
+ResultChan implements Interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="StreamWatcher.Stop">func (*StreamWatcher) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/watch/streamwatcher.go?s=2441:2472#L71">Stop</a>
+					<a class="permalink" href="index.html#StreamWatcher.Stop">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sw *<a href="index.html#StreamWatcher">StreamWatcher</a>) Stop()</pre>
+				<p>
+Stop implements Interface.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

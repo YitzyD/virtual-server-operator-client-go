@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>v1 - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package v1
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/apis/testapigroup/v1"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Convert_testapigroup_CarpCondition_To_v1_CarpCondition">func Convert_testapigroup_CarpCondition_To_v1_CarpCondition(in *testapigroup.CarpCondition, out *CarpCondition, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_testapigroup_CarpList_To_v1_CarpList">func Convert_testapigroup_CarpList_To_v1_CarpList(in *testapigroup.CarpList, out *CarpList, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_testapigroup_CarpSpec_To_v1_CarpSpec">func Convert_testapigroup_CarpSpec_To_v1_CarpSpec(in *testapigroup.CarpSpec, out *CarpSpec, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_testapigroup_CarpStatus_To_v1_CarpStatus">func Convert_testapigroup_CarpStatus_To_v1_CarpStatus(in *testapigroup.CarpStatus, out *CarpStatus, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_testapigroup_Carp_To_v1_Carp">func Convert_testapigroup_Carp_To_v1_Carp(in *testapigroup.Carp, out *Carp, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_v1_CarpCondition_To_testapigroup_CarpCondition">func Convert_v1_CarpCondition_To_testapigroup_CarpCondition(in *CarpCondition, out *testapigroup.CarpCondition, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_v1_CarpList_To_testapigroup_CarpList">func Convert_v1_CarpList_To_testapigroup_CarpList(in *CarpList, out *testapigroup.CarpList, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_v1_CarpSpec_To_testapigroup_CarpSpec">func Convert_v1_CarpSpec_To_testapigroup_CarpSpec(in *CarpSpec, out *testapigroup.CarpSpec, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_v1_CarpStatus_To_testapigroup_CarpStatus">func Convert_v1_CarpStatus_To_testapigroup_CarpStatus(in *CarpStatus, out *testapigroup.CarpStatus, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_v1_Carp_To_testapigroup_Carp">func Convert_v1_Carp_To_testapigroup_Carp(in *Carp, out *testapigroup.Carp, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Kind">func Kind(kind string) schema.GroupKind</a></dd>
+			
+				
+				<dd><a href="index.html#RegisterConversions">func RegisterConversions(s *runtime.Scheme) error</a></dd>
+			
+				
+				<dd><a href="index.html#RegisterDefaults">func RegisterDefaults(scheme *runtime.Scheme) error</a></dd>
+			
+				
+				<dd><a href="index.html#Resource">func Resource(resource string) schema.GroupResource</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Carp">type Carp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.DeepCopy">func (in *Carp) DeepCopy() *Carp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.DeepCopyInto">func (in *Carp) DeepCopyInto(out *Carp)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.DeepCopyObject">func (in *Carp) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.Descriptor">func (*Carp) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.Marshal">func (m *Carp) Marshal() (dAtA []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.MarshalTo">func (m *Carp) MarshalTo(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.MarshalToSizedBuffer">func (m *Carp) MarshalToSizedBuffer(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.ProtoMessage">func (*Carp) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.Reset">func (m *Carp) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.Size">func (m *Carp) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.String">func (this *Carp) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.Unmarshal">func (m *Carp) Unmarshal(dAtA []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.XXX_DiscardUnknown">func (m *Carp) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.XXX_Marshal">func (m *Carp) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.XXX_Merge">func (m *Carp) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.XXX_Size">func (m *Carp) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.XXX_Unmarshal">func (m *Carp) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpCondition">type CarpCondition</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.DeepCopy">func (in *CarpCondition) DeepCopy() *CarpCondition</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.DeepCopyInto">func (in *CarpCondition) DeepCopyInto(out *CarpCondition)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.Descriptor">func (*CarpCondition) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.Marshal">func (m *CarpCondition) Marshal() (dAtA []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.MarshalTo">func (m *CarpCondition) MarshalTo(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.MarshalToSizedBuffer">func (m *CarpCondition) MarshalToSizedBuffer(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.ProtoMessage">func (*CarpCondition) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.Reset">func (m *CarpCondition) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.Size">func (m *CarpCondition) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.String">func (this *CarpCondition) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.Unmarshal">func (m *CarpCondition) Unmarshal(dAtA []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.XXX_DiscardUnknown">func (m *CarpCondition) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.XXX_Marshal">func (m *CarpCondition) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.XXX_Merge">func (m *CarpCondition) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.XXX_Size">func (m *CarpCondition) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.XXX_Unmarshal">func (m *CarpCondition) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpConditionType">type CarpConditionType</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#CarpList">type CarpList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.DeepCopy">func (in *CarpList) DeepCopy() *CarpList</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.DeepCopyInto">func (in *CarpList) DeepCopyInto(out *CarpList)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.DeepCopyObject">func (in *CarpList) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.Descriptor">func (*CarpList) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.Marshal">func (m *CarpList) Marshal() (dAtA []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.MarshalTo">func (m *CarpList) MarshalTo(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.MarshalToSizedBuffer">func (m *CarpList) MarshalToSizedBuffer(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.ProtoMessage">func (*CarpList) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.Reset">func (m *CarpList) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.Size">func (m *CarpList) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.String">func (this *CarpList) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.Unmarshal">func (m *CarpList) Unmarshal(dAtA []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.XXX_DiscardUnknown">func (m *CarpList) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.XXX_Marshal">func (m *CarpList) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.XXX_Merge">func (m *CarpList) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.XXX_Size">func (m *CarpList) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.XXX_Unmarshal">func (m *CarpList) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpPhase">type CarpPhase</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#CarpSpec">type CarpSpec</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.DeepCopy">func (in *CarpSpec) DeepCopy() *CarpSpec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.DeepCopyInto">func (in *CarpSpec) DeepCopyInto(out *CarpSpec)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.Descriptor">func (*CarpSpec) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.Marshal">func (m *CarpSpec) Marshal() (dAtA []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.MarshalTo">func (m *CarpSpec) MarshalTo(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.MarshalToSizedBuffer">func (m *CarpSpec) MarshalToSizedBuffer(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.ProtoMessage">func (*CarpSpec) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.Reset">func (m *CarpSpec) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.Size">func (m *CarpSpec) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.String">func (this *CarpSpec) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.Unmarshal">func (m *CarpSpec) Unmarshal(dAtA []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.XXX_DiscardUnknown">func (m *CarpSpec) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.XXX_Marshal">func (m *CarpSpec) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.XXX_Merge">func (m *CarpSpec) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.XXX_Size">func (m *CarpSpec) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.XXX_Unmarshal">func (m *CarpSpec) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpStatus">type CarpStatus</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.DeepCopy">func (in *CarpStatus) DeepCopy() *CarpStatus</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.DeepCopyInto">func (in *CarpStatus) DeepCopyInto(out *CarpStatus)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.Descriptor">func (*CarpStatus) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.Marshal">func (m *CarpStatus) Marshal() (dAtA []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.MarshalTo">func (m *CarpStatus) MarshalTo(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.MarshalToSizedBuffer">func (m *CarpStatus) MarshalToSizedBuffer(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.ProtoMessage">func (*CarpStatus) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.Reset">func (m *CarpStatus) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.Size">func (m *CarpStatus) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.String">func (this *CarpStatus) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.Unmarshal">func (m *CarpStatus) Unmarshal(dAtA []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.XXX_DiscardUnknown">func (m *CarpStatus) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.XXX_Marshal">func (m *CarpStatus) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.XXX_Merge">func (m *CarpStatus) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.XXX_Size">func (m *CarpStatus) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.XXX_Unmarshal">func (m *CarpStatus) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConditionStatus">type ConditionStatus</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RestartPolicy">type RestartPolicy</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/conversion.go">conversion.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/defaults.go">defaults.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go">generated.pb.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/register.go">register.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go">types.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go">zz_generated.conversion.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.defaults.go">zz_generated.defaults.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<p>
+GroupName is the group name use in this package
+</p>
+
+				<pre>const <span id="GroupName">GroupName</span> = &#34;testapigroup.apimachinery.k8s.io&#34;</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var (
+    <span id="ErrInvalidLengthGenerated">ErrInvalidLengthGenerated</span>        = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: negative length found during unmarshaling&#34;)
+    <span id="ErrIntOverflowGenerated">ErrIntOverflowGenerated</span>          = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: integer overflow&#34;)
+    <span id="ErrUnexpectedEndOfGroupGenerated">ErrUnexpectedEndOfGroupGenerated</span> = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: unexpected end of group&#34;)
+)</pre>
+			
+				
+				<pre>var (
+    <span class="comment">// TODO: move SchemeBuilder with zz_generated.deepcopy.go to k8s.io/api.</span>
+    <span class="comment">// localSchemeBuilder and AddToScheme will stay in k8s.io/kubernetes.</span>
+    <span id="SchemeBuilder">SchemeBuilder</span> <a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#SchemeBuilder">SchemeBuilder</a>
+
+    <span id="AddToScheme">AddToScheme</span> = localSchemeBuilder.<a href="index.html#AddToScheme">AddToScheme</a>
+)</pre>
+			
+				<p>
+SchemeGroupVersion is group version used to register these objects
+</p>
+
+				<pre>var <span id="SchemeGroupVersion">SchemeGroupVersion</span> = <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersion">GroupVersion</a>{<a href="../../../runtime/schema/index.html#GroupVersion.Group">Group</a>: <a href="index.html#GroupName">GroupName</a>, <a href="../../../runtime/schema/index.html#GroupVersion.Version">Version</a>: &#34;v1&#34;}</pre>
+			
+		
+		
+			
+			
+			<h2 id="Convert_testapigroup_CarpCondition_To_v1_CarpCondition">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=6456:6593#L140">Convert_testapigroup_CarpCondition_To_v1_CarpCondition</a>
+				<a class="permalink" href="index.html#Convert_testapigroup_CarpCondition_To_v1_CarpCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_testapigroup_CarpCondition_To_v1_CarpCondition(in *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpCondition">CarpCondition</a>, out *<a href="index.html#CarpCondition">CarpCondition</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_testapigroup_CarpCondition_To_v1_CarpCondition is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_testapigroup_CarpList_To_v1_CarpList">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=7909:8026#L182">Convert_testapigroup_CarpList_To_v1_CarpList</a>
+				<a class="permalink" href="index.html#Convert_testapigroup_CarpList_To_v1_CarpList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_testapigroup_CarpList_To_v1_CarpList(in *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpList">CarpList</a>, out *<a href="index.html#CarpList">CarpList</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_testapigroup_CarpList_To_v1_CarpList is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_testapigroup_CarpSpec_To_v1_CarpSpec">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=9961:10078#L222">Convert_testapigroup_CarpSpec_To_v1_CarpSpec</a>
+				<a class="permalink" href="index.html#Convert_testapigroup_CarpSpec_To_v1_CarpSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_testapigroup_CarpSpec_To_v1_CarpSpec(in *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpSpec">CarpSpec</a>, out *<a href="index.html#CarpSpec">CarpSpec</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_testapigroup_CarpSpec_To_v1_CarpSpec is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_testapigroup_CarpStatus_To_v1_CarpStatus">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=11389:11514#L254">Convert_testapigroup_CarpStatus_To_v1_CarpStatus</a>
+				<a class="permalink" href="index.html#Convert_testapigroup_CarpStatus_To_v1_CarpStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_testapigroup_CarpStatus_To_v1_CarpStatus(in *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpStatus">CarpStatus</a>, out *<a href="index.html#CarpStatus">CarpStatus</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_testapigroup_CarpStatus_To_v1_CarpStatus is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_testapigroup_Carp_To_v1_Carp">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=5092:5193#L110">Convert_testapigroup_Carp_To_v1_Carp</a>
+				<a class="permalink" href="index.html#Convert_testapigroup_Carp_To_v1_Carp">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_testapigroup_Carp_To_v1_Carp(in *<a href="../index.html">testapigroup</a>.<a href="../index.html#Carp">Carp</a>, out *<a href="index.html#Carp">Carp</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_testapigroup_Carp_To_v1_Carp is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_v1_CarpCondition_To_testapigroup_CarpCondition">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=5760:5897#L125">Convert_v1_CarpCondition_To_testapigroup_CarpCondition</a>
+				<a class="permalink" href="index.html#Convert_v1_CarpCondition_To_testapigroup_CarpCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_v1_CarpCondition_To_testapigroup_CarpCondition(in *<a href="index.html#CarpCondition">CarpCondition</a>, out *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpCondition">CarpCondition</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_v1_CarpCondition_To_testapigroup_CarpCondition is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_v1_CarpList_To_testapigroup_CarpList">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=7204:7321#L161">Convert_v1_CarpList_To_testapigroup_CarpList</a>
+				<a class="permalink" href="index.html#Convert_v1_CarpList_To_testapigroup_CarpList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_v1_CarpList_To_testapigroup_CarpList(in *<a href="index.html#CarpList">CarpList</a>, out *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpList">CarpList</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_v1_CarpList_To_testapigroup_CarpList is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_v1_CarpSpec_To_testapigroup_CarpSpec">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=9064:9181#L204">Convert_v1_CarpSpec_To_testapigroup_CarpSpec</a>
+				<a class="permalink" href="index.html#Convert_v1_CarpSpec_To_testapigroup_CarpSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_v1_CarpSpec_To_testapigroup_CarpSpec(in *<a href="index.html#CarpSpec">CarpSpec</a>, out *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpSpec">CarpSpec</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_v1_CarpSpec_To_testapigroup_CarpSpec is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_v1_CarpStatus_To_testapigroup_CarpStatus">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=10682:10807#L238">Convert_v1_CarpStatus_To_testapigroup_CarpStatus</a>
+				<a class="permalink" href="index.html#Convert_v1_CarpStatus_To_testapigroup_CarpStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_v1_CarpStatus_To_testapigroup_CarpStatus(in *<a href="index.html#CarpStatus">CarpStatus</a>, out *<a href="../index.html">testapigroup</a>.<a href="../index.html#CarpStatus">CarpStatus</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_v1_CarpStatus_To_testapigroup_CarpStatus is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_v1_Carp_To_testapigroup_Carp">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=4460:4561#L94">Convert_v1_Carp_To_testapigroup_Carp</a>
+				<a class="permalink" href="index.html#Convert_v1_Carp_To_testapigroup_Carp">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_v1_Carp_To_testapigroup_Carp(in *<a href="index.html#Carp">Carp</a>, out *<a href="../index.html">testapigroup</a>.<a href="../index.html#Carp">Carp</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_v1_Carp_To_testapigroup_Carp is an autogenerated conversion function.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Kind">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/register.go?s=1047:1086#L22">Kind</a>
+				<a class="permalink" href="index.html#Kind">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Kind(kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupKind">GroupKind</a></pre>
+			<p>
+Kind takes an unqualified kind and returns a Group qualified GroupKind
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RegisterConversions">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.conversion.go?s=1073:1122#L28">RegisterConversions</a>
+				<a class="permalink" href="index.html#RegisterConversions">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RegisterConversions(s *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+RegisterConversions adds conversion functions to the given scheme.
+Public to allow building arbitrary schemes.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RegisterDefaults">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.defaults.go?s=906:957#L20">RegisterDefaults</a>
+				<a class="permalink" href="index.html#RegisterDefaults">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RegisterDefaults(scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+RegisterDefaults adds defaulters functions to the given scheme.
+Public to allow building arbitrary schemes.
+All generated defaulters are covering - they call all nested defaulters.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Resource">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/register.go?s=1232:1283#L27">Resource</a>
+				<a class="permalink" href="index.html#Resource">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Resource(resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupResource">GroupResource</a></pre>
+			<p>
+Resource takes an unqualified resource and returns a Group qualified GroupResource
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Carp">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=931:1818#L23">Carp</a>
+				<a class="permalink" href="index.html#Carp">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Carp is a collection of containers, used as either input (create, update) or as output (list, get).
+</p>
+
+			<pre>type Carp struct {
+    <a href="../../meta/v1/index.html">metav1</a>.<a href="../../meta/v1/index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+    <span class="comment">// Standard object&#39;s metadata.</span>
+    <span class="comment">// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</span>
+    <span class="comment">// +optional</span>
+    <a href="../../meta/v1/index.html">metav1</a>.<a href="../../meta/v1/index.html#ObjectMeta">ObjectMeta</a> `json:&#34;metadata,omitempty&#34; protobuf:&#34;bytes,1,opt,name=metadata&#34;`
+
+    <span class="comment">// Specification of the desired behavior of the carp.</span>
+    <span class="comment">// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status</span>
+    <span class="comment">// +optional</span>
+<span id="Carp.Spec"></span>    Spec <a href="index.html#CarpSpec">CarpSpec</a> `json:&#34;spec,omitempty&#34; protobuf:&#34;bytes,2,opt,name=spec&#34;`
+
+    <span class="comment">// Most recently observed status of the carp.</span>
+    <span class="comment">// This data may not be up to date.</span>
+    <span class="comment">// Populated by the system.</span>
+    <span class="comment">// Read-only.</span>
+    <span class="comment">// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status</span>
+    <span class="comment">// +optional</span>
+<span id="Carp.Status"></span>    Status <a href="index.html#CarpStatus">CarpStatus</a> `json:&#34;status,omitempty&#34; protobuf:&#34;bytes,3,opt,name=status&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Carp.DeepCopy">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=1132:1164#L28">DeepCopy</a>
+					<a class="permalink" href="index.html#Carp.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Carp">Carp</a>) DeepCopy() *<a href="index.html#Carp">Carp</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new Carp.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Carp.DeepCopyInto">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=830:869#L18">DeepCopyInto</a>
+					<a class="permalink" href="index.html#Carp.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Carp">Carp</a>) DeepCopyInto(out *<a href="index.html#Carp">Carp</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Carp.DeepCopyObject">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=1364:1411#L38">DeepCopyObject</a>
+					<a class="permalink" href="index.html#Carp.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Carp">Carp</a>) DeepCopyObject() <a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Carp.Descriptor">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=1521:1562#L40">Descriptor</a>
+					<a class="permalink" href="index.html#Carp.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#Carp">Carp</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.Marshal">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=12444:12493#L261">Marshal</a>
+					<a class="permalink" href="index.html#Carp.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) Marshal() (dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.MarshalTo">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=12651:12701#L271">MarshalTo</a>
+					<a class="permalink" href="index.html#Carp.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) MarshalTo(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.MarshalToSizedBuffer">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=12769:12830#L276">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#Carp.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) MarshalToSizedBuffer(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.ProtoMessage">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=1490:1517#L39">ProtoMessage</a>
+					<a class="permalink" href="index.html#Carp.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#Carp">Carp</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.Reset">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=1446:1468#L38">Reset</a>
+					<a class="permalink" href="index.html#Carp.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.Size">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=20551:20580#L631">Size</a>
+					<a class="permalink" href="index.html#Carp.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.String">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=23387:23420#L759">String</a>
+					<a class="permalink" href="index.html#Carp.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (this *<a href="index.html#Carp">Carp</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.Unmarshal">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=27523:27566#L863">Unmarshal</a>
+					<a class="permalink" href="index.html#Carp.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) Unmarshal(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.XXX_DiscardUnknown">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2011:2046#L60">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#Carp.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.XXX_Marshal">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=1689:1761#L46">XXX_Marshal</a>
+					<a class="permalink" href="index.html#Carp.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.XXX_Merge">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=1876:1919#L54">XXX_Merge</a>
+					<a class="permalink" href="index.html#Carp.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) XXX_Merge(src <a href="../../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.XXX_Size">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=1960:1989#L57">XXX_Size</a>
+					<a class="permalink" href="index.html#Carp.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Carp.XXX_Unmarshal">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=1617:1661#L43">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#Carp.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Carp">Carp</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpCondition">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=3469:4680#L77">CarpCondition</a>
+				<a class="permalink" href="index.html#CarpCondition">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CarpCondition struct {
+<span id="CarpCondition.Type"></span>    <span class="comment">// Type is the type of the condition.</span>
+    <span class="comment">// Currently only Ready.</span>
+    <span class="comment">// More info: http://kubernetes.io/docs/user-guide/carp-states#carp-conditions</span>
+    Type <a href="index.html#CarpConditionType">CarpConditionType</a> `json:&#34;type&#34; protobuf:&#34;bytes,1,opt,name=type,casttype=CarpConditionType&#34;`
+<span id="CarpCondition.Status"></span>    <span class="comment">// Status is the status of the condition.</span>
+    <span class="comment">// Can be True, False, Unknown.</span>
+    <span class="comment">// More info: http://kubernetes.io/docs/user-guide/carp-states#carp-conditions</span>
+    Status <a href="index.html#ConditionStatus">ConditionStatus</a> `json:&#34;status&#34; protobuf:&#34;bytes,2,opt,name=status,casttype=ConditionStatus&#34;`
+    <span class="comment">// Last time we probed the condition.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.LastProbeTime"></span>    LastProbeTime <a href="../../meta/v1/index.html">metav1</a>.<a href="../../meta/v1/index.html#Time">Time</a> `json:&#34;lastProbeTime,omitempty&#34; protobuf:&#34;bytes,3,opt,name=lastProbeTime&#34;`
+    <span class="comment">// Last time the condition transitioned from one status to another.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.LastTransitionTime"></span>    LastTransitionTime <a href="../../meta/v1/index.html">metav1</a>.<a href="../../meta/v1/index.html#Time">Time</a> `json:&#34;lastTransitionTime,omitempty&#34; protobuf:&#34;bytes,4,opt,name=lastTransitionTime&#34;`
+    <span class="comment">// Unique, one-word, CamelCase reason for the condition&#39;s last transition.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.Reason"></span>    Reason <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;reason,omitempty&#34; protobuf:&#34;bytes,5,opt,name=reason&#34;`
+    <span class="comment">// Human-readable message indicating details about last transition.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.Message"></span>    Message <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;message,omitempty&#34; protobuf:&#34;bytes,6,opt,name=message&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpCondition.DeepCopy">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=1891:1941#L54">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpCondition.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpCondition">CarpCondition</a>) DeepCopy() *<a href="index.html#CarpCondition">CarpCondition</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpCondition.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.DeepCopyInto">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=1593:1650#L46">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpCondition.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpCondition">CarpCondition</a>) DeepCopyInto(out *<a href="index.html#CarpCondition">CarpCondition</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.Descriptor">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2246:2296#L68">Descriptor</a>
+					<a class="permalink" href="index.html#CarpCondition.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpCondition">CarpCondition</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.Marshal">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=13457:13515#L314">Marshal</a>
+					<a class="permalink" href="index.html#CarpCondition.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) Marshal() (dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.MarshalTo">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=13673:13732#L324">MarshalTo</a>
+					<a class="permalink" href="index.html#CarpCondition.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) MarshalTo(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.MarshalToSizedBuffer">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=13800:13870#L329">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#CarpCondition.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) MarshalToSizedBuffer(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.ProtoMessage">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2206:2242#L67">ProtoMessage</a>
+					<a class="permalink" href="index.html#CarpCondition.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpCondition">CarpCondition</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.Reset">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2144:2175#L66">Reset</a>
+					<a class="permalink" href="index.html#CarpCondition.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.Size">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=20822:20860#L646">Size</a>
+					<a class="permalink" href="index.html#CarpCondition.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.String">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=23894:23936#L771">String</a>
+					<a class="permalink" href="index.html#CarpCondition.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (this *<a href="index.html#CarpCondition">CarpCondition</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.Unmarshal">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=30779:30831#L1015">Unmarshal</a>
+					<a class="permalink" href="index.html#CarpCondition.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) Unmarshal(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.XXX_DiscardUnknown">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2790:2834#L88">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#CarpCondition.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.XXX_Marshal">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2432:2513#L74">XXX_Marshal</a>
+					<a class="permalink" href="index.html#CarpCondition.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.XXX_Merge">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2628:2680#L82">XXX_Merge</a>
+					<a class="permalink" href="index.html#CarpCondition.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) XXX_Merge(src <a href="../../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.XXX_Size">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2730:2768#L85">XXX_Size</a>
+					<a class="permalink" href="index.html#CarpCondition.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.XXX_Unmarshal">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2351:2404#L71">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#CarpCondition.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpCondition">CarpCondition</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpConditionType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=676:700#L15">CarpConditionType</a>
+				<a class="permalink" href="index.html#CarpConditionType">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CarpConditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CarpList">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=8959:9393#L176">CarpList</a>
+				<a class="permalink" href="index.html#CarpList">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CarpList is a list of Carps.
+</p>
+
+			<pre>type CarpList struct {
+    <a href="../../meta/v1/index.html">metav1</a>.<a href="../../meta/v1/index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+    <span class="comment">// Standard list metadata.</span>
+    <span class="comment">// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</span>
+    <span class="comment">// +optional</span>
+    <a href="../../meta/v1/index.html">metav1</a>.<a href="../../meta/v1/index.html#ListMeta">ListMeta</a> `json:&#34;metadata,omitempty&#34; protobuf:&#34;bytes,1,opt,name=metadata&#34;`
+
+    <span class="comment">// List of carps.</span>
+    <span class="comment">// More info: http://kubernetes.io/docs/user-guide/carps</span>
+<span id="CarpList.Items"></span>    Items []<a href="index.html#Carp">Carp</a> `json:&#34;items&#34; protobuf:&#34;bytes,2,rep,name=items&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpList.DeepCopy">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=2551:2591#L79">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpList.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpList">CarpList</a>) DeepCopy() *<a href="index.html#CarpList">CarpList</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpList.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpList.DeepCopyInto">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=2155:2202#L64">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpList.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpList">CarpList</a>) DeepCopyInto(out *<a href="index.html#CarpList">CarpList</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpList.DeepCopyObject">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=2795:2846#L89">DeepCopyObject</a>
+					<a class="permalink" href="index.html#CarpList.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpList">CarpList</a>) DeepCopyObject() <a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpList.Descriptor">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3037:3082#L96">Descriptor</a>
+					<a class="permalink" href="index.html#CarpList.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpList">CarpList</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.Marshal">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=14831:14884#L377">Marshal</a>
+					<a class="permalink" href="index.html#CarpList.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) Marshal() (dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.MarshalTo">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=15042:15096#L387">MarshalTo</a>
+					<a class="permalink" href="index.html#CarpList.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) MarshalTo(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.MarshalToSizedBuffer">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=15164:15229#L392">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#CarpList.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) MarshalToSizedBuffer(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.ProtoMessage">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3002:3033#L95">ProtoMessage</a>
+					<a class="permalink" href="index.html#CarpList.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpList">CarpList</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.Reset">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=2950:2976#L94">Reset</a>
+					<a class="permalink" href="index.html#CarpList.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.Size">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=21287:21320#L667">Size</a>
+					<a class="permalink" href="index.html#CarpList.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.String">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=24533:24570#L786">String</a>
+					<a class="permalink" href="index.html#CarpList.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (this *<a href="index.html#CarpList">CarpList</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.Unmarshal">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=36347:36394#L1262">Unmarshal</a>
+					<a class="permalink" href="index.html#CarpList.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) Unmarshal(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.XXX_DiscardUnknown">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3551:3590#L116">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#CarpList.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.XXX_Marshal">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3213:3289#L102">XXX_Marshal</a>
+					<a class="permalink" href="index.html#CarpList.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.XXX_Merge">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3404:3451#L110">XXX_Merge</a>
+					<a class="permalink" href="index.html#CarpList.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) XXX_Merge(src <a href="../../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.XXX_Size">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3496:3529#L113">XXX_Size</a>
+					<a class="permalink" href="index.html#CarpList.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpList.XXX_Unmarshal">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3137:3185#L99">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#CarpList.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpList">CarpList</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpPhase">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=702:726#L16">CarpPhase</a>
+				<a class="permalink" href="index.html#CarpPhase">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CarpPhase <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CarpSpec">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=4721:8853#L101">CarpSpec</a>
+				<a class="permalink" href="index.html#CarpSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CarpSpec is a description of a carp
+</p>
+
+			<pre>type CarpSpec struct {
+    <span class="comment">// Restart policy for all containers within the carp.</span>
+    <span class="comment">// One of Always, OnFailure, Never.</span>
+    <span class="comment">// Default to Always.</span>
+    <span class="comment">// More info: http://kubernetes.io/docs/user-guide/carp-states#restartpolicy</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.RestartPolicy"></span>    RestartPolicy <a href="index.html#RestartPolicy">RestartPolicy</a> `json:&#34;restartPolicy,omitempty&#34; protobuf:&#34;bytes,3,opt,name=restartPolicy,casttype=RestartPolicy&#34;`
+    <span class="comment">// Optional duration in seconds the carp needs to terminate gracefully. May be decreased in delete request.</span>
+    <span class="comment">// Value must be non-negative integer. The value zero indicates delete immediately.</span>
+    <span class="comment">// If this value is nil, the default grace period will be used instead.</span>
+    <span class="comment">// The grace period is the duration in seconds after the processes running in the carp are sent</span>
+    <span class="comment">// a termination signal and the time when the processes are forcibly halted with a kill signal.</span>
+    <span class="comment">// Set this value longer than the expected cleanup time for your process.</span>
+    <span class="comment">// Defaults to 30 seconds.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.TerminationGracePeriodSeconds"></span>    TerminationGracePeriodSeconds *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a> `json:&#34;terminationGracePeriodSeconds,omitempty&#34; protobuf:&#34;varint,4,opt,name=terminationGracePeriodSeconds&#34;`
+    <span class="comment">// Optional duration in seconds the carp may be active on the node relative to</span>
+    <span class="comment">// StartTime before the system will actively try to mark it failed and kill associated containers.</span>
+    <span class="comment">// Value must be a positive integer.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.ActiveDeadlineSeconds"></span>    ActiveDeadlineSeconds *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a> `json:&#34;activeDeadlineSeconds,omitempty&#34; protobuf:&#34;varint,5,opt,name=activeDeadlineSeconds&#34;`
+<span id="CarpSpec.NodeSelector"></span>    <span class="comment">// NodeSelector is a selector which must be true for the carp to fit on a node.</span>
+    <span class="comment">// Selector which must match a node&#39;s labels for the carp to be scheduled on that node.</span>
+    <span class="comment">// More info: http://kubernetes.io/docs/user-guide/node-selection/README</span>
+    <span class="comment">// +optional</span>
+    NodeSelector map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;nodeSelector,omitempty&#34; protobuf:&#34;bytes,7,rep,name=nodeSelector&#34;`
+
+<span id="CarpSpec.ServiceAccountName"></span>    <span class="comment">// ServiceAccountName is the name of the ServiceAccount to use to run this carp.</span>
+    <span class="comment">// More info: https://git.k8s.io/community/contributors/design-proposals/auth/service_accounts.md</span>
+    <span class="comment">// +optional</span>
+    ServiceAccountName <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;serviceAccountName,omitempty&#34; protobuf:&#34;bytes,8,opt,name=serviceAccountName&#34;`
+<span id="CarpSpec.DeprecatedServiceAccount"></span>    <span class="comment">// DeprecatedServiceAccount is a depreciated alias for ServiceAccountName.</span>
+    <span class="comment">// Deprecated: Use serviceAccountName instead.</span>
+    <span class="comment">// +k8s:conversion-gen=false</span>
+    <span class="comment">// +optional</span>
+    DeprecatedServiceAccount <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;serviceAccount,omitempty&#34; protobuf:&#34;bytes,9,opt,name=serviceAccount&#34;`
+
+<span id="CarpSpec.NodeName"></span>    <span class="comment">// NodeName is a request to schedule this carp onto a specific node. If it is non-empty,</span>
+    <span class="comment">// the scheduler simply schedules this carp onto that node, assuming that it fits resource</span>
+    <span class="comment">// requirements.</span>
+    <span class="comment">// +optional</span>
+    NodeName <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;nodeName,omitempty&#34; protobuf:&#34;bytes,10,opt,name=nodeName&#34;`
+    <span class="comment">// Host networking requested for this carp. Use the host&#39;s network namespace.</span>
+    <span class="comment">// If this option is set, the ports that will be used must be specified.</span>
+    <span class="comment">// Default to false.</span>
+    <span class="comment">// +k8s:conversion-gen=false</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.HostNetwork"></span>    HostNetwork <a href="http://localhost:6060/pkg/builtin/#bool">bool</a> `json:&#34;hostNetwork,omitempty&#34; protobuf:&#34;varint,11,opt,name=hostNetwork&#34;`
+    <span class="comment">// Use the host&#39;s pid namespace.</span>
+    <span class="comment">// Optional: Default to false.</span>
+    <span class="comment">// +k8s:conversion-gen=false</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.HostPID"></span>    HostPID <a href="http://localhost:6060/pkg/builtin/#bool">bool</a> `json:&#34;hostPID,omitempty&#34; protobuf:&#34;varint,12,opt,name=hostPID&#34;`
+    <span class="comment">// Use the host&#39;s ipc namespace.</span>
+    <span class="comment">// Optional: Default to false.</span>
+    <span class="comment">// +k8s:conversion-gen=false</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.HostIPC"></span>    HostIPC <a href="http://localhost:6060/pkg/builtin/#bool">bool</a> `json:&#34;hostIPC,omitempty&#34; protobuf:&#34;varint,13,opt,name=hostIPC&#34;`
+    <span class="comment">// Specifies the hostname of the Carp</span>
+    <span class="comment">// If not specified, the carp&#39;s hostname will be set to a system-defined value.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.Hostname"></span>    Hostname <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;hostname,omitempty&#34; protobuf:&#34;bytes,16,opt,name=hostname&#34;`
+    <span class="comment">// If specified, the fully qualified Carp hostname will be &#34;&lt;hostname&gt;.&lt;subdomain&gt;.&lt;carp namespace&gt;.svc.&lt;cluster domain&gt;&#34;.</span>
+    <span class="comment">// If not specified, the carp will not have a domainname at all.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.Subdomain"></span>    Subdomain <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;subdomain,omitempty&#34; protobuf:&#34;bytes,17,opt,name=subdomain&#34;`
+    <span class="comment">// If specified, the carp will be dispatched by specified scheduler.</span>
+    <span class="comment">// If not specified, the carp will be dispatched by default scheduler.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.SchedulerName"></span>    SchedulerName <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;schedulername,omitempty&#34; protobuf:&#34;bytes,19,opt,name=schedulername&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpSpec.DeepCopy">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=3688:3728#L120">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpSpec.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpSpec">CarpSpec</a>) DeepCopy() *<a href="index.html#CarpSpec">CarpSpec</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpSpec.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.DeepCopyInto">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=3028:3075#L97">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpSpec.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpSpec">CarpSpec</a>) DeepCopyInto(out *<a href="index.html#CarpSpec">CarpSpec</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.Descriptor">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3783:3828#L124">Descriptor</a>
+					<a class="permalink" href="index.html#CarpSpec.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpSpec">CarpSpec</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.Marshal">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=15783:15836#L424">Marshal</a>
+					<a class="permalink" href="index.html#CarpSpec.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) Marshal() (dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.MarshalTo">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=15994:16048#L434">MarshalTo</a>
+					<a class="permalink" href="index.html#CarpSpec.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) MarshalTo(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.MarshalToSizedBuffer">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=16116:16181#L439">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#CarpSpec.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) MarshalToSizedBuffer(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.ProtoMessage">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3748:3779#L123">ProtoMessage</a>
+					<a class="permalink" href="index.html#CarpSpec.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpSpec">CarpSpec</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.Reset">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3696:3722#L122">Reset</a>
+					<a class="permalink" href="index.html#CarpSpec.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.Size">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=21560:21593#L684">Size</a>
+					<a class="permalink" href="index.html#CarpSpec.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.String">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=25066:25103#L802">String</a>
+					<a class="permalink" href="index.html#CarpSpec.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (this *<a href="index.html#CarpSpec">CarpSpec</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.Unmarshal">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=38939:38986#L1382">Unmarshal</a>
+					<a class="permalink" href="index.html#CarpSpec.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) Unmarshal(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.XXX_DiscardUnknown">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4297:4336#L144">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#CarpSpec.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.XXX_Marshal">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3959:4035#L130">XXX_Marshal</a>
+					<a class="permalink" href="index.html#CarpSpec.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.XXX_Merge">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4150:4197#L138">XXX_Merge</a>
+					<a class="permalink" href="index.html#CarpSpec.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) XXX_Merge(src <a href="../../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.XXX_Size">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4242:4275#L141">XXX_Size</a>
+					<a class="permalink" href="index.html#CarpSpec.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.XXX_Unmarshal">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=3883:3931#L127">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#CarpSpec.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpSpec">CarpSpec</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpStatus">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=1935:3467#L46">CarpStatus</a>
+				<a class="permalink" href="index.html#CarpStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CarpStatus represents information about the status of a carp. Status may trail the actual
+state of a system.
+</p>
+
+			<pre>type CarpStatus struct {
+    <span class="comment">// Current condition of the carp.</span>
+    <span class="comment">// More info: http://kubernetes.io/docs/user-guide/carp-states#carp-phase</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Phase"></span>    Phase <a href="index.html#CarpPhase">CarpPhase</a> `json:&#34;phase,omitempty&#34; protobuf:&#34;bytes,1,opt,name=phase,casttype=CarpPhase&#34;`
+    <span class="comment">// Current service state of carp.</span>
+    <span class="comment">// More info: http://kubernetes.io/docs/user-guide/carp-states#carp-conditions</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Conditions"></span>    Conditions []<a href="index.html#CarpCondition">CarpCondition</a> `json:&#34;conditions,omitempty&#34; patchStrategy:&#34;merge&#34; patchMergeKey:&#34;type&#34; protobuf:&#34;bytes,2,rep,name=conditions&#34;`
+    <span class="comment">// A human readable message indicating details about why the carp is in this condition.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Message"></span>    Message <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;message,omitempty&#34; protobuf:&#34;bytes,3,opt,name=message&#34;`
+    <span class="comment">// A brief CamelCase message indicating details about why the carp is in this state.</span>
+    <span class="comment">// e.g. &#39;DiskPressure&#39;</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Reason"></span>    Reason <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;reason,omitempty&#34; protobuf:&#34;bytes,4,opt,name=reason&#34;`
+
+    <span class="comment">// IP address of the host to which the carp is assigned. Empty if not yet scheduled.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.HostIP"></span>    HostIP <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;hostIP,omitempty&#34; protobuf:&#34;bytes,5,opt,name=hostIP&#34;`
+    <span class="comment">// IP address allocated to the carp. Routable at least within the cluster.</span>
+    <span class="comment">// Empty if not yet allocated.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.CarpIP"></span>    CarpIP <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;carpIP,omitempty&#34; protobuf:&#34;bytes,6,opt,name=carpIP&#34;`
+
+    <span class="comment">// RFC 3339 date and time at which the object was acknowledged by the Kubelet.</span>
+    <span class="comment">// This is before the Kubelet pulled the container image(s) for the carp.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.StartTime"></span>    StartTime *<a href="../../meta/v1/index.html">metav1</a>.<a href="../../meta/v1/index.html#Time">Time</a> `json:&#34;startTime,omitempty&#34; protobuf:&#34;bytes,7,opt,name=startTime&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpStatus.DeepCopy">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=4392:4436#L147">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpStatus.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpStatus">CarpStatus</a>) DeepCopy() *<a href="index.html#CarpStatus">CarpStatus</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpStatus.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.DeepCopyInto">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/zz_generated.deepcopy.go?s=3937:3988#L130">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpStatus.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpStatus">CarpStatus</a>) DeepCopyInto(out *<a href="index.html#CarpStatus">CarpStatus</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.Descriptor">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4535:4582#L152">Descriptor</a>
+					<a class="permalink" href="index.html#CarpStatus.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpStatus">CarpStatus</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.Marshal">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=18679:18734#L546">Marshal</a>
+					<a class="permalink" href="index.html#CarpStatus.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) Marshal() (dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.MarshalTo">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=18892:18948#L556">MarshalTo</a>
+					<a class="permalink" href="index.html#CarpStatus.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) MarshalTo(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.MarshalToSizedBuffer">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=19016:19083#L561">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#CarpStatus.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) MarshalToSizedBuffer(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.ProtoMessage">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4498:4531#L151">ProtoMessage</a>
+					<a class="permalink" href="index.html#CarpStatus.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#CarpStatus">CarpStatus</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.Reset">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4442:4470#L150">Reset</a>
+					<a class="permalink" href="index.html#CarpStatus.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.Size">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=22601:22636#L724">Size</a>
+					<a class="permalink" href="index.html#CarpStatus.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.String">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=26518:26557#L834">String</a>
+					<a class="permalink" href="index.html#CarpStatus.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (this *<a href="index.html#CarpStatus">CarpStatus</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.Unmarshal">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=50628:50677#L1886">Unmarshal</a>
+					<a class="permalink" href="index.html#CarpStatus.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) Unmarshal(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.XXX_DiscardUnknown">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=5061:5102#L172">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#CarpStatus.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.XXX_Marshal">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4715:4793#L158">XXX_Marshal</a>
+					<a class="permalink" href="index.html#CarpStatus.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.XXX_Merge">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4908:4957#L166">XXX_Merge</a>
+					<a class="permalink" href="index.html#CarpStatus.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) XXX_Merge(src <a href="../../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.XXX_Size">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=5004:5039#L169">XXX_Size</a>
+					<a class="permalink" href="index.html#CarpStatus.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.XXX_Unmarshal">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/generated.pb.go?s=4637:4687#L155">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#CarpStatus.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#CarpStatus">CarpStatus</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConditionStatus">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=650:674#L14">ConditionStatus</a>
+				<a class="permalink" href="index.html#ConditionStatus">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConditionStatus <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RestartPolicy">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/v1/types.go?s=728:752#L17">RestartPolicy</a>
+				<a class="permalink" href="index.html#RestartPolicy">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type RestartPolicy <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

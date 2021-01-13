@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>testing - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package testing
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/runtime/testing"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#CacheableObjectTest">func CacheableObjectTest(t *testing.T, e runtime.Encoder)</a></dd>
+			
+				
+				<dd><a href="index.html#RegisterConversions">func RegisterConversions(s *runtime.Scheme) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#EmbeddedTest">type EmbeddedTest</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EmbeddedTest.DeepCopy">func (in *EmbeddedTest) DeepCopy() *EmbeddedTest</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EmbeddedTest.DeepCopyInto">func (in *EmbeddedTest) DeepCopyInto(out *EmbeddedTest)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EmbeddedTest.DeepCopyObject">func (in *EmbeddedTest) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#EmbeddedTestExternal">type EmbeddedTestExternal</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EmbeddedTestExternal.DeepCopy">func (in *EmbeddedTestExternal) DeepCopy() *EmbeddedTestExternal</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EmbeddedTestExternal.DeepCopyInto">func (in *EmbeddedTestExternal) DeepCopyInto(out *EmbeddedTestExternal)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EmbeddedTestExternal.DeepCopyObject">func (in *EmbeddedTestExternal) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExtensionA">type ExtensionA</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExtensionA.DeepCopy">func (in *ExtensionA) DeepCopy() *ExtensionA</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExtensionA.DeepCopyInto">func (in *ExtensionA) DeepCopyInto(out *ExtensionA)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExtensionA.DeepCopyObject">func (in *ExtensionA) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExtensionB">type ExtensionB</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExtensionB.DeepCopy">func (in *ExtensionB) DeepCopy() *ExtensionB</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExtensionB.DeepCopyInto">func (in *ExtensionB) DeepCopyInto(out *ExtensionB)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExtensionB.DeepCopyObject">func (in *ExtensionB) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExternalComplex">type ExternalComplex</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalComplex.DeepCopy">func (in *ExternalComplex) DeepCopy() *ExternalComplex</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalComplex.DeepCopyInto">func (in *ExternalComplex) DeepCopyInto(out *ExternalComplex)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalComplex.DeepCopyObject">func (in *ExternalComplex) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExternalExtensionType">type ExternalExtensionType</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalExtensionType.DeepCopy">func (in *ExternalExtensionType) DeepCopy() *ExternalExtensionType</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalExtensionType.DeepCopyInto">func (in *ExternalExtensionType) DeepCopyInto(out *ExternalExtensionType)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalExtensionType.DeepCopyObject">func (in *ExternalExtensionType) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExternalInternalSame">type ExternalInternalSame</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalInternalSame.DeepCopy">func (in *ExternalInternalSame) DeepCopy() *ExternalInternalSame</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalInternalSame.DeepCopyInto">func (in *ExternalInternalSame) DeepCopyInto(out *ExternalInternalSame)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalInternalSame.DeepCopyObject">func (in *ExternalInternalSame) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExternalOptionalExtensionType">type ExternalOptionalExtensionType</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalOptionalExtensionType.DeepCopy">func (in *ExternalOptionalExtensionType) DeepCopy() *ExternalOptionalExtensionType</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalOptionalExtensionType.DeepCopyInto">func (in *ExternalOptionalExtensionType) DeepCopyInto(out *ExternalOptionalExtensionType)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalOptionalExtensionType.DeepCopyObject">func (in *ExternalOptionalExtensionType) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExternalSimple">type ExternalSimple</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalSimple.DeepCopy">func (in *ExternalSimple) DeepCopy() *ExternalSimple</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalSimple.DeepCopyInto">func (in *ExternalSimple) DeepCopyInto(out *ExternalSimple)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalSimple.DeepCopyObject">func (in *ExternalSimple) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExternalTestType1">type ExternalTestType1</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalTestType1.DeepCopy">func (in *ExternalTestType1) DeepCopy() *ExternalTestType1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalTestType1.DeepCopyInto">func (in *ExternalTestType1) DeepCopyInto(out *ExternalTestType1)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalTestType1.DeepCopyObject">func (in *ExternalTestType1) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExternalTestType2">type ExternalTestType2</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalTestType2.DeepCopy">func (in *ExternalTestType2) DeepCopy() *ExternalTestType2</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalTestType2.DeepCopyInto">func (in *ExternalTestType2) DeepCopyInto(out *ExternalTestType2)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalTestType2.DeepCopyObject">func (in *ExternalTestType2) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ExternalTestType2.GetObjectKind">func (obj *ExternalTestType2) GetObjectKind() schema.ObjectKind</a></dd>
+				
+			
+				
+				<dd><a href="index.html#InternalComplex">type InternalComplex</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalComplex.DeepCopy">func (in *InternalComplex) DeepCopy() *InternalComplex</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalComplex.DeepCopyInto">func (in *InternalComplex) DeepCopyInto(out *InternalComplex)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalComplex.DeepCopyObject">func (in *InternalComplex) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#InternalExtensionType">type InternalExtensionType</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalExtensionType.DeepCopy">func (in *InternalExtensionType) DeepCopy() *InternalExtensionType</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalExtensionType.DeepCopyInto">func (in *InternalExtensionType) DeepCopyInto(out *InternalExtensionType)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalExtensionType.DeepCopyObject">func (in *InternalExtensionType) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#InternalOptionalExtensionType">type InternalOptionalExtensionType</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalOptionalExtensionType.DeepCopy">func (in *InternalOptionalExtensionType) DeepCopy() *InternalOptionalExtensionType</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalOptionalExtensionType.DeepCopyInto">func (in *InternalOptionalExtensionType) DeepCopyInto(out *InternalOptionalExtensionType)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalOptionalExtensionType.DeepCopyObject">func (in *InternalOptionalExtensionType) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#InternalSimple">type InternalSimple</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalSimple.DeepCopy">func (in *InternalSimple) DeepCopy() *InternalSimple</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalSimple.DeepCopyInto">func (in *InternalSimple) DeepCopyInto(out *InternalSimple)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalSimple.DeepCopyObject">func (in *InternalSimple) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#MockCacheableObject">type MockCacheableObject</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MockCacheableObject.CacheEncode">func (m *MockCacheableObject) CacheEncode(id runtime.Identifier, encode func(runtime.Object, io.Writer) error, w io.Writer) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MockCacheableObject.DeepCopyObject">func (m *MockCacheableObject) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MockCacheableObject.GetObject">func (m *MockCacheableObject) GetObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MockCacheableObject.GetObjectKind">func (m *MockCacheableObject) GetObjectKind() schema.ObjectKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MockCacheableObject.GroupVersionKind">func (m *MockCacheableObject) GroupVersionKind() schema.GroupVersionKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MockCacheableObject.Marshal">func (*MockCacheableObject) Marshal() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MockCacheableObject.SetGroupVersionKind">func (m *MockCacheableObject) SetGroupVersionKind(gvk schema.GroupVersionKind)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#MyWeirdCustomEmbeddedVersionKindField">type MyWeirdCustomEmbeddedVersionKindField</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MyWeirdCustomEmbeddedVersionKindField.GetObjectKind">func (obj *MyWeirdCustomEmbeddedVersionKindField) GetObjectKind() schema.ObjectKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MyWeirdCustomEmbeddedVersionKindField.GroupVersionKind">func (obj *MyWeirdCustomEmbeddedVersionKindField) GroupVersionKind() schema.GroupVersionKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MyWeirdCustomEmbeddedVersionKindField.SetGroupVersionKind">func (obj *MyWeirdCustomEmbeddedVersionKindField) SetGroupVersionKind(gvk schema.GroupVersionKind)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ObjectTest">type ObjectTest</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ObjectTest.DeepCopy">func (in *ObjectTest) DeepCopy() *ObjectTest</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ObjectTest.DeepCopyInto">func (in *ObjectTest) DeepCopyInto(out *ObjectTest)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ObjectTest.DeepCopyObject">func (in *ObjectTest) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ObjectTestExternal">type ObjectTestExternal</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ObjectTestExternal.DeepCopy">func (in *ObjectTestExternal) DeepCopy() *ObjectTestExternal</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ObjectTestExternal.DeepCopyInto">func (in *ObjectTestExternal) DeepCopyInto(out *ObjectTestExternal)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ObjectTestExternal.DeepCopyObject">func (in *ObjectTestExternal) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#TestType1">type TestType1</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TestType1.DeepCopy">func (in *TestType1) DeepCopy() *TestType1</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TestType1.DeepCopyInto">func (in *TestType1) DeepCopyInto(out *TestType1)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TestType1.DeepCopyObject">func (in *TestType1) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#TestType2">type TestType2</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TestType2.DeepCopy">func (in *TestType2) DeepCopy() *TestType2</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TestType2.DeepCopyInto">func (in *TestType2) DeepCopyInto(out *TestType2)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TestType2.DeepCopyObject">func (in *TestType2) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TestType2.GetObjectKind">func (obj *TestType2) GetObjectKind() schema.ObjectKind</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UnknownType">type UnknownType</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnknownType.DeepCopy">func (in *UnknownType) DeepCopy() *UnknownType</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnknownType.DeepCopyInto">func (in *UnknownType) DeepCopyInto(out *UnknownType)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnknownType.DeepCopyObject">func (in *UnknownType) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Unstructured">type Unstructured</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.DeepCopy">func (in *Unstructured) DeepCopy() *Unstructured</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.DeepCopyObject">func (in *Unstructured) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.EachListItem">func (obj *Unstructured) EachListItem(fn func(runtime.Object) error) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetObjectKind">func (obj *Unstructured) GetObjectKind() schema.ObjectKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GroupVersionKind">func (u *Unstructured) GroupVersionKind() schema.GroupVersionKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.IsList">func (obj *Unstructured) IsList() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.MarshalJSON">func (u *Unstructured) MarshalJSON() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.NewEmptyInstance">func (obj *Unstructured) NewEmptyInstance() runtime.Unstructured</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetGroupVersionKind">func (u *Unstructured) SetGroupVersionKind(gvk schema.GroupVersionKind)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetUnstructuredContent">func (obj *Unstructured) SetUnstructuredContent(content map[string]interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.UnmarshalJSON">func (u *Unstructured) UnmarshalJSON(b []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.UnstructuredContent">func (obj *Unstructured) UnstructuredContent() map[string]interface{}</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UnversionedType">type UnversionedType</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnversionedType.DeepCopy">func (in *UnversionedType) DeepCopy() *UnversionedType</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnversionedType.DeepCopyInto">func (in *UnversionedType) DeepCopyInto(out *UnversionedType)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnversionedType.DeepCopyObject">func (in *UnversionedType) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go">cacheable_object.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/conversion.go">conversion.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go">types.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="CacheableObjectTest">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=4495:4552#L143">CacheableObjectTest</a>
+				<a class="permalink" href="index.html#CacheableObjectTest">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CacheableObjectTest(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, e <a href="../index.html">runtime</a>.<a href="../index.html#Encoder">Encoder</a>)</pre>
+			<p>
+CacheableObjectTest implements a test that should be run for every
+runtime.Encoder interface implementation.
+It checks whether CacheableObject is properly supported by it.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RegisterConversions">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/conversion.go?s=6497:6546#L218">RegisterConversions</a>
+				<a class="permalink" href="index.html#RegisterConversions">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RegisterConversions(s *<a href="../index.html">runtime</a>.<a href="../index.html#Scheme">Scheme</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			
+			
+			
+
+		
+		
+			
+			
+			<h2 id="EmbeddedTest">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=793:915#L18">EmbeddedTest</a>
+				<a class="permalink" href="index.html#EmbeddedTest">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type EmbeddedTest struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a>
+<span id="EmbeddedTest.ID"></span>    ID          <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="EmbeddedTest.Object"></span>    Object      <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a>
+<span id="EmbeddedTest.EmptyObject"></span>    EmptyObject <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="EmbeddedTest.DeepCopy">func (*EmbeddedTest) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=1197:1245#L31">DeepCopy</a>
+					<a class="permalink" href="index.html#EmbeddedTest.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#EmbeddedTest">EmbeddedTest</a>) DeepCopy() *<a href="index.html#EmbeddedTest">EmbeddedTest</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new EmbeddedTest.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="EmbeddedTest.DeepCopyInto">func (*EmbeddedTest) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=835:890#L18">DeepCopyInto</a>
+					<a class="permalink" href="index.html#EmbeddedTest.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#EmbeddedTest">EmbeddedTest</a>) DeepCopyInto(out *<a href="index.html#EmbeddedTest">EmbeddedTest</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="EmbeddedTest.DeepCopyObject">func (*EmbeddedTest) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=1453:1508#L41">DeepCopyObject</a>
+					<a class="permalink" href="index.html#EmbeddedTest.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#EmbeddedTest">EmbeddedTest</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="EmbeddedTestExternal">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=988:1255#L26">EmbeddedTestExternal</a>
+				<a class="permalink" href="index.html#EmbeddedTestExternal">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type EmbeddedTestExternal struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="EmbeddedTestExternal.ID"></span>    ID               <a href="http://localhost:6060/pkg/builtin/#string">string</a>               `json:&#34;id,omitempty&#34;`
+<span id="EmbeddedTestExternal.Object"></span>    Object           <a href="../index.html">runtime</a>.<a href="../index.html#RawExtension">RawExtension</a> `json:&#34;object,omitempty&#34;`
+<span id="EmbeddedTestExternal.EmptyObject"></span>    EmptyObject      <a href="../index.html">runtime</a>.<a href="../index.html#RawExtension">RawExtension</a> `json:&#34;emptyObject,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="EmbeddedTestExternal.DeepCopy">func (*EmbeddedTestExternal) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=2009:2073#L58">DeepCopy</a>
+					<a class="permalink" href="index.html#EmbeddedTestExternal.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#EmbeddedTestExternal">EmbeddedTestExternal</a>) DeepCopy() *<a href="index.html#EmbeddedTestExternal">EmbeddedTestExternal</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new EmbeddedTestExternal.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="EmbeddedTestExternal.DeepCopyInto">func (*EmbeddedTestExternal) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=1690:1761#L49">DeepCopyInto</a>
+					<a class="permalink" href="index.html#EmbeddedTestExternal.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#EmbeddedTestExternal">EmbeddedTestExternal</a>) DeepCopyInto(out *<a href="index.html#EmbeddedTestExternal">EmbeddedTestExternal</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="EmbeddedTestExternal.DeepCopyObject">func (*EmbeddedTestExternal) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=2289:2352#L68">DeepCopyObject</a>
+					<a class="permalink" href="index.html#EmbeddedTestExternal.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#EmbeddedTestExternal">EmbeddedTestExternal</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExtensionA">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=2115:2221#L62">ExtensionA</a>
+				<a class="permalink" href="index.html#ExtensionA">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExtensionA struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="ExtensionA.TestString"></span>    TestString       <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;testString&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExtensionA.DeepCopy">func (*ExtensionA) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=2739:2783#L83">DeepCopy</a>
+					<a class="permalink" href="index.html#ExtensionA.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExtensionA">ExtensionA</a>) DeepCopy() *<a href="index.html#ExtensionA">ExtensionA</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExtensionA.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExtensionA.DeepCopyInto">func (*ExtensionA) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=2534:2585#L76">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExtensionA.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExtensionA">ExtensionA</a>) DeepCopyInto(out *<a href="index.html#ExtensionA">ExtensionA</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExtensionA.DeepCopyObject">func (*ExtensionA) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=2989:3042#L93">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExtensionA.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExtensionA">ExtensionA</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExtensionB">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=2294:2400#L68">ExtensionB</a>
+				<a class="permalink" href="index.html#ExtensionB">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExtensionB struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="ExtensionB.TestString"></span>    TestString       <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;testString&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExtensionB.DeepCopy">func (*ExtensionB) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=3429:3473#L108">DeepCopy</a>
+					<a class="permalink" href="index.html#ExtensionB.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExtensionB">ExtensionB</a>) DeepCopy() *<a href="index.html#ExtensionB">ExtensionB</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExtensionB.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExtensionB.DeepCopyInto">func (*ExtensionB) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=3224:3275#L101">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExtensionB.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExtensionB">ExtensionB</a>) DeepCopyInto(out *<a href="index.html#ExtensionB">ExtensionB</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExtensionB.DeepCopyObject">func (*ExtensionB) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=3679:3732#L118">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExtensionB.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExtensionB">ExtensionB</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExternalComplex">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=3514:3787#L108">ExternalComplex</a>
+				<a class="permalink" href="index.html#ExternalComplex">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExternalComplex struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="ExternalComplex.String"></span>    String           <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;string&#34; description:&#34;testing&#34;`
+<span id="ExternalComplex.Integer"></span>    Integer          <a href="http://localhost:6060/pkg/builtin/#int">int</a>    `json:&#34;int&#34;`
+<span id="ExternalComplex.Integer64"></span>    Integer64        <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>  `json:&#34;,omitempty&#34;`
+<span id="ExternalComplex.Int64"></span>    Int64            <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>
+<span id="ExternalComplex.Bool"></span>    Bool             <a href="http://localhost:6060/pkg/builtin/#bool">bool</a> `json:&#34;bool&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExternalComplex.DeepCopy">func (*ExternalComplex) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=4134:4188#L133">DeepCopy</a>
+					<a class="permalink" href="index.html#ExternalComplex.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalComplex">ExternalComplex</a>) DeepCopy() *<a href="index.html#ExternalComplex">ExternalComplex</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExternalComplex.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalComplex.DeepCopyInto">func (*ExternalComplex) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=3914:3975#L126">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExternalComplex.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalComplex">ExternalComplex</a>) DeepCopyInto(out *<a href="index.html#ExternalComplex">ExternalComplex</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalComplex.DeepCopyObject">func (*ExternalComplex) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=4399:4457#L143">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExternalComplex.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalComplex">ExternalComplex</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExternalExtensionType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=2473:2603#L74">ExternalExtensionType</a>
+				<a class="permalink" href="index.html#ExternalExtensionType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExternalExtensionType struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="ExternalExtensionType.Extension"></span>    Extension        <a href="../index.html">runtime</a>.<a href="../index.html#RawExtension">RawExtension</a> `json:&#34;extension&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExternalExtensionType.DeepCopy">func (*ExternalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=4920:4986#L159">DeepCopy</a>
+					<a class="permalink" href="index.html#ExternalExtensionType.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalExtensionType">ExternalExtensionType</a>) DeepCopy() *<a href="index.html#ExternalExtensionType">ExternalExtensionType</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExternalExtensionType.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalExtensionType.DeepCopyInto">func (*ExternalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=4639:4712#L151">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExternalExtensionType.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalExtensionType">ExternalExtensionType</a>) DeepCopyInto(out *<a href="index.html#ExternalExtensionType">ExternalExtensionType</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalExtensionType.DeepCopyObject">func (*ExternalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=5203:5267#L169">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExternalExtensionType.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalExtensionType">ExternalExtensionType</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExternalInternalSame">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=7573:7735#L182">ExternalInternalSame</a>
+				<a class="permalink" href="index.html#ExternalInternalSame">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExternalInternalSame struct {
+    <a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a> `json:&#34;,inline&#34;`
+<span id="ExternalInternalSame.A"></span>    A                                     <a href="index.html#TestType2">TestType2</a> `json:&#34;A,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExternalInternalSame.DeepCopy">func (*ExternalInternalSame) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=5756:5820#L185">DeepCopy</a>
+					<a class="permalink" href="index.html#ExternalInternalSame.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalInternalSame">ExternalInternalSame</a>) DeepCopy() *<a href="index.html#ExternalInternalSame">ExternalInternalSame</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExternalInternalSame.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalInternalSame.DeepCopyInto">func (*ExternalInternalSame) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=5449:5520#L177">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExternalInternalSame.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalInternalSame">ExternalInternalSame</a>) DeepCopyInto(out *<a href="index.html#ExternalInternalSame">ExternalInternalSame</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalInternalSame.DeepCopyObject">func (*ExternalInternalSame) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=6036:6099#L195">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExternalInternalSame.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalInternalSame">ExternalInternalSame</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExternalOptionalExtensionType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=2873:3021#L86">ExternalOptionalExtensionType</a>
+				<a class="permalink" href="index.html#ExternalOptionalExtensionType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExternalOptionalExtensionType struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="ExternalOptionalExtensionType.Extension"></span>    Extension        <a href="../index.html">runtime</a>.<a href="../index.html#RawExtension">RawExtension</a> `json:&#34;extension,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExternalOptionalExtensionType.DeepCopy">func (*ExternalOptionalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=6586:6668#L211">DeepCopy</a>
+					<a class="permalink" href="index.html#ExternalOptionalExtensionType.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalOptionalExtensionType">ExternalOptionalExtensionType</a>) DeepCopy() *<a href="index.html#ExternalOptionalExtensionType">ExternalOptionalExtensionType</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExternalOptionalExtensionType.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalOptionalExtensionType.DeepCopyInto">func (*ExternalOptionalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=6281:6370#L203">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExternalOptionalExtensionType.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalOptionalExtensionType">ExternalOptionalExtensionType</a>) DeepCopyInto(out *<a href="index.html#ExternalOptionalExtensionType">ExternalOptionalExtensionType</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalOptionalExtensionType.DeepCopyObject">func (*ExternalOptionalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=6893:6965#L221">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExternalOptionalExtensionType.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalOptionalExtensionType">ExternalOptionalExtensionType</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExternalSimple">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=1932:2042#L56">ExternalSimple</a>
+				<a class="permalink" href="index.html#ExternalSimple">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExternalSimple struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="ExternalSimple.TestString"></span>    TestString       <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;testString&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExternalSimple.DeepCopy">func (*ExternalSimple) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=7364:7416#L236">DeepCopy</a>
+					<a class="permalink" href="index.html#ExternalSimple.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalSimple">ExternalSimple</a>) DeepCopy() *<a href="index.html#ExternalSimple">ExternalSimple</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExternalSimple.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalSimple.DeepCopyInto">func (*ExternalSimple) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=7147:7206#L229">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExternalSimple.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalSimple">ExternalSimple</a>) DeepCopyInto(out *<a href="index.html#ExternalSimple">ExternalSimple</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalSimple.DeepCopyObject">func (*ExternalSimple) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=7626:7683#L246">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExternalSimple.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalSimple">ExternalSimple</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExternalTestType1">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=5987:7500#L161">ExternalTestType1</a>
+				<a class="permalink" href="index.html#ExternalTestType1">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExternalTestType1 struct {
+    <a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a> `json:&#34;,inline&#34;`
+<span id="ExternalTestType1.A"></span>    A                                     <a href="http://localhost:6060/pkg/builtin/#string">string</a>                       `json:&#34;A,omitempty&#34;`
+<span id="ExternalTestType1.B"></span>    B                                     <a href="http://localhost:6060/pkg/builtin/#int">int</a>                          `json:&#34;B,omitempty&#34;`
+<span id="ExternalTestType1.C"></span>    C                                     <a href="http://localhost:6060/pkg/builtin/#int8">int8</a>                         `json:&#34;C,omitempty&#34;`
+<span id="ExternalTestType1.D"></span>    D                                     <a href="http://localhost:6060/pkg/builtin/#int16">int16</a>                        `json:&#34;D,omitempty&#34;`
+<span id="ExternalTestType1.E"></span>    E                                     <a href="http://localhost:6060/pkg/builtin/#int32">int32</a>                        `json:&#34;E,omitempty&#34;`
+<span id="ExternalTestType1.F"></span>    F                                     <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>                        `json:&#34;F,omitempty&#34;`
+<span id="ExternalTestType1.G"></span>    G                                     <a href="http://localhost:6060/pkg/builtin/#uint">uint</a>                         `json:&#34;G,omitempty&#34;`
+<span id="ExternalTestType1.H"></span>    H                                     <a href="http://localhost:6060/pkg/builtin/#uint8">uint8</a>                        `json:&#34;H,omitempty&#34;`
+<span id="ExternalTestType1.I"></span>    I                                     <a href="http://localhost:6060/pkg/builtin/#uint16">uint16</a>                       `json:&#34;I,omitempty&#34;`
+<span id="ExternalTestType1.J"></span>    J                                     <a href="http://localhost:6060/pkg/builtin/#uint32">uint32</a>                       `json:&#34;J,omitempty&#34;`
+<span id="ExternalTestType1.K"></span>    K                                     <a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a>                       `json:&#34;K,omitempty&#34;`
+<span id="ExternalTestType1.L"></span>    L                                     <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>                         `json:&#34;L,omitempty&#34;`
+<span id="ExternalTestType1.M"></span>    M                                     map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#int">int</a>               `json:&#34;M,omitempty&#34;`
+<span id="ExternalTestType1.N"></span>    N                                     map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="index.html#ExternalTestType2">ExternalTestType2</a> `json:&#34;N,omitempty&#34;`
+<span id="ExternalTestType1.O"></span>    O                                     *<a href="index.html#ExternalTestType2">ExternalTestType2</a>           `json:&#34;O,omitempty&#34;`
+<span id="ExternalTestType1.P"></span>    P                                     []<a href="index.html#ExternalTestType2">ExternalTestType2</a>          `json:&#34;Q,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExternalTestType1.DeepCopy">func (*ExternalTestType1) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=8655:8713#L285">DeepCopy</a>
+					<a class="permalink" href="index.html#ExternalTestType1.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalTestType1">ExternalTestType1</a>) DeepCopy() *<a href="index.html#ExternalTestType1">ExternalTestType1</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExternalTestType1.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalTestType1.DeepCopyInto">func (*ExternalTestType1) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=7865:7930#L254">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExternalTestType1.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalTestType1">ExternalTestType1</a>) DeepCopyInto(out *<a href="index.html#ExternalTestType1">ExternalTestType1</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalTestType1.DeepCopyObject">func (*ExternalTestType1) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=8926:8986#L295">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExternalTestType1.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalTestType1">ExternalTestType1</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExternalTestType2">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=5819:5914#L155">ExternalTestType2</a>
+				<a class="permalink" href="index.html#ExternalTestType2">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ExternalTestType2 struct {
+<span id="ExternalTestType2.A"></span>    A <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;A,omitempty&#34;`
+<span id="ExternalTestType2.B"></span>    B <a href="http://localhost:6060/pkg/builtin/#int">int</a>    `json:&#34;B,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ExternalTestType2.DeepCopy">func (*ExternalTestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=9366:9424#L309">DeepCopy</a>
+					<a class="permalink" href="index.html#ExternalTestType2.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalTestType2">ExternalTestType2</a>) DeepCopy() *<a href="index.html#ExternalTestType2">ExternalTestType2</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ExternalTestType2.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalTestType2.DeepCopyInto">func (*ExternalTestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=9168:9233#L303">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ExternalTestType2.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalTestType2">ExternalTestType2</a>) DeepCopyInto(out *<a href="index.html#ExternalTestType2">ExternalTestType2</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalTestType2.DeepCopyObject">func (*ExternalTestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=9637:9697#L319">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ExternalTestType2.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ExternalTestType2">ExternalTestType2</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ExternalTestType2.GetObjectKind">func (*ExternalTestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=8714:8777#L208">GetObjectKind</a>
+					<a class="permalink" href="index.html#ExternalTestType2.GetObjectKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#ExternalTestType2">ExternalTestType2</a>) GetObjectKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#ObjectKind">ObjectKind</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="InternalComplex">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=3309:3441#L98">InternalComplex</a>
+				<a class="permalink" href="index.html#InternalComplex">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type InternalComplex struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a>
+<span id="InternalComplex.String"></span>    String    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="InternalComplex.Integer"></span>    Integer   <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+<span id="InternalComplex.Integer64"></span>    Integer64 <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>
+<span id="InternalComplex.Int64"></span>    Int64     <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>
+<span id="InternalComplex.Bool"></span>    Bool      <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InternalComplex.DeepCopy">func (*InternalComplex) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=10099:10153#L334">DeepCopy</a>
+					<a class="permalink" href="index.html#InternalComplex.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalComplex">InternalComplex</a>) DeepCopy() *<a href="index.html#InternalComplex">InternalComplex</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new InternalComplex.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalComplex.DeepCopyInto">func (*InternalComplex) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=9879:9940#L327">DeepCopyInto</a>
+					<a class="permalink" href="index.html#InternalComplex.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalComplex">InternalComplex</a>) DeepCopyInto(out *<a href="index.html#InternalComplex">InternalComplex</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalComplex.DeepCopyObject">func (*InternalComplex) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=10364:10422#L344">DeepCopyObject</a>
+					<a class="permalink" href="index.html#InternalComplex.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalComplex">InternalComplex</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="InternalExtensionType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=2676:2800#L80">InternalExtensionType</a>
+				<a class="permalink" href="index.html#InternalExtensionType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type InternalExtensionType struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="InternalExtensionType.Extension"></span>    Extension        <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a> `json:&#34;extension&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InternalExtensionType.DeepCopy">func (*InternalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=10919:10985#L362">DeepCopy</a>
+					<a class="permalink" href="index.html#InternalExtensionType.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalExtensionType">InternalExtensionType</a>) DeepCopy() *<a href="index.html#InternalExtensionType">InternalExtensionType</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new InternalExtensionType.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalExtensionType.DeepCopyInto">func (*InternalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=10604:10677#L352">DeepCopyInto</a>
+					<a class="permalink" href="index.html#InternalExtensionType.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalExtensionType">InternalExtensionType</a>) DeepCopyInto(out *<a href="index.html#InternalExtensionType">InternalExtensionType</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalExtensionType.DeepCopyObject">func (*InternalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=11202:11266#L372">DeepCopyObject</a>
+					<a class="permalink" href="index.html#InternalExtensionType.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalExtensionType">InternalExtensionType</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="InternalOptionalExtensionType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=3094:3236#L92">InternalOptionalExtensionType</a>
+				<a class="permalink" href="index.html#InternalOptionalExtensionType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type InternalOptionalExtensionType struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="InternalOptionalExtensionType.Extension"></span>    Extension        <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a> `json:&#34;extension,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InternalOptionalExtensionType.DeepCopy">func (*InternalOptionalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=11787:11869#L390">DeepCopy</a>
+					<a class="permalink" href="index.html#InternalOptionalExtensionType.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalOptionalExtensionType">InternalOptionalExtensionType</a>) DeepCopy() *<a href="index.html#InternalOptionalExtensionType">InternalOptionalExtensionType</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new InternalOptionalExtensionType.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalOptionalExtensionType.DeepCopyInto">func (*InternalOptionalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=11448:11537#L380">DeepCopyInto</a>
+					<a class="permalink" href="index.html#InternalOptionalExtensionType.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalOptionalExtensionType">InternalOptionalExtensionType</a>) DeepCopyInto(out *<a href="index.html#InternalOptionalExtensionType">InternalOptionalExtensionType</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalOptionalExtensionType.DeepCopyObject">func (*InternalOptionalExtensionType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=12094:12166#L400">DeepCopyObject</a>
+					<a class="permalink" href="index.html#InternalOptionalExtensionType.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalOptionalExtensionType">InternalOptionalExtensionType</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="InternalSimple">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=1749:1859#L50">InternalSimple</a>
+				<a class="permalink" href="index.html#InternalSimple">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type InternalSimple struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+<span id="InternalSimple.TestString"></span>    TestString       <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;testString&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InternalSimple.DeepCopy">func (*InternalSimple) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=12565:12617#L415">DeepCopy</a>
+					<a class="permalink" href="index.html#InternalSimple.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalSimple">InternalSimple</a>) DeepCopy() *<a href="index.html#InternalSimple">InternalSimple</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new InternalSimple.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalSimple.DeepCopyInto">func (*InternalSimple) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=12348:12407#L408">DeepCopyInto</a>
+					<a class="permalink" href="index.html#InternalSimple.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalSimple">InternalSimple</a>) DeepCopyInto(out *<a href="index.html#InternalSimple">InternalSimple</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="InternalSimple.DeepCopyObject">func (*InternalSimple) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=12827:12884#L425">DeepCopyObject</a>
+					<a class="permalink" href="index.html#InternalSimple.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#InternalSimple">InternalSimple</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MockCacheableObject">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=2008:2210#L60">MockCacheableObject</a>
+				<a class="permalink" href="index.html#MockCacheableObject">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+MochCacheableObject is used to test CacheableObject interface.
++k8s:deepcopy-gen=false
+</p>
+
+			<pre>type MockCacheableObject struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="MockCacheableObject.CacheEncode">func (*MockCacheableObject) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=3110:3239#L100">CacheEncode</a>
+					<a class="permalink" href="index.html#MockCacheableObject.CacheEncode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#MockCacheableObject">MockCacheableObject</a>) CacheEncode(id <a href="../index.html">runtime</a>.<a href="../index.html#Identifier">Identifier</a>, encode func(<a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a>, <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Writer">Writer</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>, w <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Writer">Writer</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+CacheEncode implements runtime.CacheableObject interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MockCacheableObject.DeepCopyObject">func (*MockCacheableObject) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=2267:2328#L74">DeepCopyObject</a>
+					<a class="permalink" href="index.html#MockCacheableObject.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#MockCacheableObject">MockCacheableObject</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject implements runtime.Object interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MockCacheableObject.GetObject">func (*MockCacheableObject) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=3544:3600#L112">GetObject</a>
+					<a class="permalink" href="index.html#MockCacheableObject.GetObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#MockCacheableObject">MockCacheableObject</a>) GetObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+GetObject implements runtime.CacheableObject interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MockCacheableObject.GetObjectKind">func (*MockCacheableObject) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=2445:2508#L79">GetObjectKind</a>
+					<a class="permalink" href="index.html#MockCacheableObject.GetObjectKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#MockCacheableObject">MockCacheableObject</a>) GetObjectKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#ObjectKind">ObjectKind</a></pre>
+				<p>
+GetObjectKind implements runtime.Object interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MockCacheableObject.GroupVersionKind">func (*MockCacheableObject) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=2584:2656#L84">GroupVersionKind</a>
+					<a class="permalink" href="index.html#MockCacheableObject.GroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#MockCacheableObject">MockCacheableObject</a>) GroupVersionKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				<p>
+GroupVersionKind implements schema.ObjectKind interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MockCacheableObject.Marshal">func (*MockCacheableObject) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=2950:3003#L95">Marshal</a>
+					<a class="permalink" href="index.html#MockCacheableObject.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#MockCacheableObject">MockCacheableObject</a>) Marshal() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Marshal implements proto.Marshaler interface.
+This is implemented to avoid errors from protobuf serializer.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MockCacheableObject.SetGroupVersionKind">func (*MockCacheableObject) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/cacheable_object.go?s=2739:2817#L89">SetGroupVersionKind</a>
+					<a class="permalink" href="index.html#MockCacheableObject.SetGroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#MockCacheableObject">MockCacheableObject</a>) SetGroupVersionKind(gvk <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersionKind">GroupVersionKind</a>)</pre>
+				<p>
+SetGroupVersionKind implements schema.ObjectKind interface.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MyWeirdCustomEmbeddedVersionKindField">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=3863:4136#L119">MyWeirdCustomEmbeddedVersionKindField</a>
+				<a class="permalink" href="index.html#MyWeirdCustomEmbeddedVersionKindField">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Test a weird version/kind embedding format.
++k8s:deepcopy-gen=false
+</p>
+
+			<pre>type MyWeirdCustomEmbeddedVersionKindField struct {
+<span id="MyWeirdCustomEmbeddedVersionKindField.ID"></span>    ID         <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;ID,omitempty&#34;`
+<span id="MyWeirdCustomEmbeddedVersionKindField.APIVersion"></span>    APIVersion <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;myVersionKey,omitempty&#34;`
+<span id="MyWeirdCustomEmbeddedVersionKindField.ObjectKind"></span>    ObjectKind <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;myKindKey,omitempty&#34;`
+<span id="MyWeirdCustomEmbeddedVersionKindField.Z"></span>    Z          <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;Z,omitempty&#34;`
+<span id="MyWeirdCustomEmbeddedVersionKindField.Y"></span>    Y          <a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a> `json:&#34;Y,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="MyWeirdCustomEmbeddedVersionKindField.GetObjectKind">func (*MyWeirdCustomEmbeddedVersionKindField) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=8187:8270#L199">GetObjectKind</a>
+					<a class="permalink" href="index.html#MyWeirdCustomEmbeddedVersionKindField.GetObjectKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a>) GetObjectKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#ObjectKind">ObjectKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyWeirdCustomEmbeddedVersionKindField.GroupVersionKind">func (*MyWeirdCustomEmbeddedVersionKindField) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=8449:8541#L203">GroupVersionKind</a>
+					<a class="permalink" href="index.html#MyWeirdCustomEmbeddedVersionKindField.GroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a>) GroupVersionKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MyWeirdCustomEmbeddedVersionKindField.SetGroupVersionKind">func (*MyWeirdCustomEmbeddedVersionKindField) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=8286:8384#L200">SetGroupVersionKind</a>
+					<a class="permalink" href="index.html#MyWeirdCustomEmbeddedVersionKindField.SetGroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a>) SetGroupVersionKind(gvk <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersionKind">GroupVersionKind</a>)</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ObjectTest">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=1328:1411#L34">ObjectTest</a>
+				<a class="permalink" href="index.html#ObjectTest">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ObjectTest struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a>
+
+<span id="ObjectTest.ID"></span>    ID    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="ObjectTest.Items"></span>    Items []<a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ObjectTest.DeepCopy">func (*ObjectTest) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=13471:13515#L449">DeepCopy</a>
+					<a class="permalink" href="index.html#ObjectTest.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ObjectTest">ObjectTest</a>) DeepCopy() *<a href="index.html#ObjectTest">ObjectTest</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ObjectTest.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ObjectTest.DeepCopyInto">func (*ObjectTest) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=13066:13117#L433">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ObjectTest.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ObjectTest">ObjectTest</a>) DeepCopyInto(out *<a href="index.html#ObjectTest">ObjectTest</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ObjectTest.DeepCopyObject">func (*ObjectTest) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=13721:13774#L459">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ObjectTest.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ObjectTest">ObjectTest</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ObjectTestExternal">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=1484:1676#L42">ObjectTestExternal</a>
+				<a class="permalink" href="index.html#ObjectTestExternal">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type ObjectTestExternal struct {
+    <a href="../index.html">runtime</a>.<a href="../index.html#TypeMeta">TypeMeta</a> `yaml:&#34;,inline&#34; json:&#34;,inline&#34;`
+
+<span id="ObjectTestExternal.ID"></span>    ID    <a href="http://localhost:6060/pkg/builtin/#string">string</a>                 `json:&#34;id,omitempty&#34;`
+<span id="ObjectTestExternal.Items"></span>    Items []<a href="../index.html">runtime</a>.<a href="../index.html#RawExtension">RawExtension</a> `json:&#34;items,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ObjectTestExternal.DeepCopy">func (*ObjectTestExternal) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=14357:14417#L481">DeepCopy</a>
+					<a class="permalink" href="index.html#ObjectTestExternal.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ObjectTestExternal">ObjectTestExternal</a>) DeepCopy() *<a href="index.html#ObjectTestExternal">ObjectTestExternal</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new ObjectTestExternal.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ObjectTestExternal.DeepCopyInto">func (*ObjectTestExternal) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=13956:14023#L467">DeepCopyInto</a>
+					<a class="permalink" href="index.html#ObjectTestExternal.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ObjectTestExternal">ObjectTestExternal</a>) DeepCopyInto(out *<a href="index.html#ObjectTestExternal">ObjectTestExternal</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ObjectTestExternal.DeepCopyObject">func (*ObjectTestExternal) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=14631:14692#L491">DeepCopyObject</a>
+					<a class="permalink" href="index.html#ObjectTestExternal.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#ObjectTestExternal">ObjectTestExternal</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="TestType1">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=4209:5586#L128">TestType1</a>
+				<a class="permalink" href="index.html#TestType1">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type TestType1 struct {
+    <a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a> `json:&#34;,inline&#34;`
+<span id="TestType1.A"></span>    A                                     <a href="http://localhost:6060/pkg/builtin/#string">string</a>               `json:&#34;A,omitempty&#34;`
+<span id="TestType1.B"></span>    B                                     <a href="http://localhost:6060/pkg/builtin/#int">int</a>                  `json:&#34;B,omitempty&#34;`
+<span id="TestType1.C"></span>    C                                     <a href="http://localhost:6060/pkg/builtin/#int8">int8</a>                 `json:&#34;C,omitempty&#34;`
+<span id="TestType1.D"></span>    D                                     <a href="http://localhost:6060/pkg/builtin/#int16">int16</a>                `json:&#34;D,omitempty&#34;`
+<span id="TestType1.E"></span>    E                                     <a href="http://localhost:6060/pkg/builtin/#int32">int32</a>                `json:&#34;E,omitempty&#34;`
+<span id="TestType1.F"></span>    F                                     <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>                `json:&#34;F,omitempty&#34;`
+<span id="TestType1.G"></span>    G                                     <a href="http://localhost:6060/pkg/builtin/#uint">uint</a>                 `json:&#34;G,omitempty&#34;`
+<span id="TestType1.H"></span>    H                                     <a href="http://localhost:6060/pkg/builtin/#uint8">uint8</a>                `json:&#34;H,omitempty&#34;`
+<span id="TestType1.I"></span>    I                                     <a href="http://localhost:6060/pkg/builtin/#uint16">uint16</a>               `json:&#34;I,omitempty&#34;`
+<span id="TestType1.J"></span>    J                                     <a href="http://localhost:6060/pkg/builtin/#uint32">uint32</a>               `json:&#34;J,omitempty&#34;`
+<span id="TestType1.K"></span>    K                                     <a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a>               `json:&#34;K,omitempty&#34;`
+<span id="TestType1.L"></span>    L                                     <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>                 `json:&#34;L,omitempty&#34;`
+<span id="TestType1.M"></span>    M                                     map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#int">int</a>       `json:&#34;M,omitempty&#34;`
+<span id="TestType1.N"></span>    N                                     map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="index.html#TestType2">TestType2</a> `json:&#34;N,omitempty&#34;`
+<span id="TestType1.O"></span>    O                                     *<a href="index.html#TestType2">TestType2</a>           `json:&#34;O,omitempty&#34;`
+<span id="TestType1.P"></span>    P                                     []<a href="index.html#TestType2">TestType2</a>          `json:&#34;Q,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="TestType1.DeepCopy">func (*TestType1) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=15616:15658#L530">DeepCopy</a>
+					<a class="permalink" href="index.html#TestType1.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#TestType1">TestType1</a>) DeepCopy() *<a href="index.html#TestType1">TestType1</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new TestType1.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestType1.DeepCopyInto">func (*TestType1) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=14874:14923#L499">DeepCopyInto</a>
+					<a class="permalink" href="index.html#TestType1.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#TestType1">TestType1</a>) DeepCopyInto(out *<a href="index.html#TestType1">TestType1</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestType1.DeepCopyObject">func (*TestType1) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=15863:15915#L540">DeepCopyObject</a>
+					<a class="permalink" href="index.html#TestType1.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#TestType1">TestType1</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="TestType2">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=5659:5746#L149">TestType2</a>
+				<a class="permalink" href="index.html#TestType2">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type TestType2 struct {
+<span id="TestType2.A"></span>    A <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;A,omitempty&#34;`
+<span id="TestType2.B"></span>    B <a href="http://localhost:6060/pkg/builtin/#int">int</a>    `json:&#34;B,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="TestType2.DeepCopy">func (*TestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=16271:16313#L554">DeepCopy</a>
+					<a class="permalink" href="index.html#TestType2.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#TestType2">TestType2</a>) DeepCopy() *<a href="index.html#TestType2">TestType2</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new TestType2.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestType2.DeepCopyInto">func (*TestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=16097:16146#L548">DeepCopyInto</a>
+					<a class="permalink" href="index.html#TestType2.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#TestType2">TestType2</a>) DeepCopyInto(out *<a href="index.html#TestType2">TestType2</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestType2.DeepCopyObject">func (*TestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=16518:16570#L564">DeepCopyObject</a>
+					<a class="permalink" href="index.html#TestType2.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#TestType2">TestType2</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="TestType2.GetObjectKind">func (*TestType2) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=8616:8671#L207">GetObjectKind</a>
+					<a class="permalink" href="index.html#TestType2.GetObjectKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#TestType2">TestType2</a>) GetObjectKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#ObjectKind">ObjectKind</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UnknownType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=8035:8185#L194">UnknownType</a>
+				<a class="permalink" href="index.html#UnknownType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type UnknownType struct {
+    <a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a> `json:&#34;,inline&#34;`
+<span id="UnknownType.A"></span>    A                                     <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;A,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UnknownType.DeepCopy">func (*UnknownType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=17018:17064#L579">DeepCopy</a>
+					<a class="permalink" href="index.html#UnknownType.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnknownType">UnknownType</a>) DeepCopy() *<a href="index.html#UnknownType">UnknownType</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new UnknownType.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnknownType.DeepCopyInto">func (*UnknownType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=16752:16805#L572">DeepCopyInto</a>
+					<a class="permalink" href="index.html#UnknownType.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnknownType">UnknownType</a>) DeepCopyInto(out *<a href="index.html#UnknownType">UnknownType</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnknownType.DeepCopyObject">func (*UnknownType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=17271:17325#L589">DeepCopyObject</a>
+					<a class="permalink" href="index.html#UnknownType.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnknownType">UnknownType</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Unstructured">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=8840:9025#L211">Unstructured</a>
+				<a class="permalink" href="index.html#Unstructured">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen=false
+</p>
+
+			<pre>type Unstructured struct {
+<span id="Unstructured.Object"></span>    <span class="comment">// Object is a JSON compatible map with string, float, int, bool, []interface{}, or</span>
+    <span class="comment">// map[string]interface{}</span>
+    <span class="comment">// children.</span>
+    Object map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Unstructured.DeepCopy">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=10770:10818#L289">DeepCopy</a>
+					<a class="permalink" href="index.html#Unstructured.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Unstructured">Unstructured</a>) DeepCopy() *<a href="index.html#Unstructured">Unstructured</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.DeepCopyObject">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=10687:10742#L285">DeepCopyObject</a>
+					<a class="permalink" href="index.html#Unstructured.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Unstructured">Unstructured</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.EachListItem">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=9276:9350#L230">EachListItem</a>
+					<a class="permalink" href="index.html#Unstructured.EachListItem">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) EachListItem(fn func(<a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetObjectKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=9073:9131#L220">GetObjectKind</a>
+					<a class="permalink" href="index.html#Unstructured.GetObjectKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) GetObjectKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#ObjectKind">ObjectKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GroupVersionKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=10952:11017#L299">GroupVersionKind</a>
+					<a class="permalink" href="index.html#Unstructured.GroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GroupVersionKind() <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.IsList">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=9148:9186#L222">IsList</a>
+					<a class="permalink" href="index.html#Unstructured.IsList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) IsList() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.MarshalJSON">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=10381:10433#L275">MarshalJSON</a>
+					<a class="permalink" href="index.html#Unstructured.MarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) MarshalJSON() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalJSON ensures that the unstructured object produces proper
+JSON when passed to Go&#39;s standard JSON library.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.NewEmptyInstance">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=9818:9882#L254">NewEmptyInstance</a>
+					<a class="permalink" href="index.html#Unstructured.NewEmptyInstance">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) NewEmptyInstance() <a href="../index.html">runtime</a>.<a href="../index.html#Unstructured">Unstructured</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetGroupVersionKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=11338:11409#L315">SetGroupVersionKind</a>
+					<a class="permalink" href="index.html#Unstructured.SetGroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetGroupVersionKind(gvk <a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersionKind">GroupVersionKind</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetUnstructuredContent">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=10155:10234#L269">SetUnstructuredContent</a>
+					<a class="permalink" href="index.html#Unstructured.SetUnstructuredContent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) SetUnstructuredContent(content map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{})</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.UnmarshalJSON">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=10592:10644#L281">UnmarshalJSON</a>
+					<a class="permalink" href="index.html#Unstructured.UnmarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) UnmarshalJSON(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UnmarshalJSON ensures that the unstructured object properly decodes
+JSON when passed to Go&#39;s standard JSON library.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.UnstructuredContent">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=9996:10065#L262">UnstructuredContent</a>
+					<a class="permalink" href="index.html#Unstructured.UnstructuredContent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) UnstructuredContent() map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UnversionedType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/types.go?s=7808:7962#L188">UnversionedType</a>
+				<a class="permalink" href="index.html#UnversionedType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type UnversionedType struct {
+    <a href="index.html#MyWeirdCustomEmbeddedVersionKindField">MyWeirdCustomEmbeddedVersionKindField</a> `json:&#34;,inline&#34;`
+<span id="UnversionedType.A"></span>    A                                     <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;A,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UnversionedType.DeepCopy">func (*UnversionedType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=17785:17839#L604">DeepCopy</a>
+					<a class="permalink" href="index.html#UnversionedType.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnversionedType">UnversionedType</a>) DeepCopy() *<a href="index.html#UnversionedType">UnversionedType</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new UnversionedType.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnversionedType.DeepCopyInto">func (*UnversionedType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=17507:17568#L597">DeepCopyInto</a>
+					<a class="permalink" href="index.html#UnversionedType.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnversionedType">UnversionedType</a>) DeepCopyInto(out *<a href="index.html#UnversionedType">UnversionedType</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnversionedType.DeepCopyObject">func (*UnversionedType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/testing/zz_generated.deepcopy.go?s=18050:18108#L614">DeepCopyObject</a>
+					<a class="permalink" href="index.html#UnversionedType.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnversionedType">UnversionedType</a>) DeepCopyObject() <a href="../index.html">runtime</a>.<a href="../index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

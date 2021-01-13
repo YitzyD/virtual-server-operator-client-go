@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>reflect - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package reflect
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/third_party/forked/golang/reflect"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package reflect is a fork of go&#39;s standard library reflection package, which
+allows for deep equal with equality functions defined.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#Equalities">type Equalities</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EqualitiesOrDie">func EqualitiesOrDie(funcs ...interface{}) Equalities</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Equalities.AddFunc">func (e Equalities) AddFunc(eqFunc interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Equalities.AddFuncs">func (e Equalities) AddFuncs(funcs ...interface{}) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Equalities.DeepDerivative">func (e Equalities) DeepDerivative(a1, a2 interface{}) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Equalities.DeepEqual">func (e Equalities) DeepEqual(a1, a2 interface{}) bool</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go">deep_equal.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="Equalities">type <a href="http://localhost:6060/src/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go?s=441:487#L7">Equalities</a>
+				<a class="permalink" href="index.html#Equalities">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Equalities is a map from type to a function comparing two values of
+that type.
+</p>
+
+			<pre>type Equalities map[<a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Type">Type</a>]<a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Value">Value</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="EqualitiesOrDie">func <a href="http://localhost:6060/src/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go?s=526:579#L10">EqualitiesOrDie</a>
+					<a class="permalink" href="index.html#EqualitiesOrDie">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func EqualitiesOrDie(funcs ...interface{}) <a href="index.html#Equalities">Equalities</a></pre>
+				<p>
+For convenience, panics on errors
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Equalities.AddFunc">func (Equalities) <a href="http://localhost:6060/src/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go?s=1011:1064#L30">AddFunc</a>
+					<a class="permalink" href="index.html#Equalities.AddFunc">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#Equalities">Equalities</a>) AddFunc(eqFunc interface{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+AddFunc uses func as an equality function: it must take
+two parameters of the same type, and return a boolean.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Equalities.AddFuncs">func (Equalities) <a href="http://localhost:6060/src/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go?s=733:789#L19">AddFuncs</a>
+					<a class="permalink" href="index.html#Equalities.AddFuncs">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#Equalities">Equalities</a>) AddFuncs(funcs ...interface{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+AddFuncs is a shortcut for multiple calls to AddFunc.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Equalities.DeepDerivative">func (Equalities) <a href="http://localhost:6060/src/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go?s=9531:9590#L368">DeepDerivative</a>
+					<a class="permalink" href="index.html#Equalities.DeepDerivative">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#Equalities">Equalities</a>) DeepDerivative(a1, a2 interface{}) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+DeepDerivative is similar to DeepEqual except that unset fields in a1 are
+ignored (not compared). This allows us to focus on the fields that matter to
+the semantic comparison.
+</p>
+<p>
+The unset fields include a nil pointer and an empty string.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Equalities.DeepEqual">func (Equalities) <a href="http://localhost:6060/src/k8s.io/apimachinery/third_party/forked/golang/reflect/deep_equal.go?s=6204:6258#L224">DeepEqual</a>
+					<a class="permalink" href="index.html#Equalities.DeepEqual">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#Equalities">Equalities</a>) DeepEqual(a1, a2 interface{}) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+DeepEqual is like reflect.DeepEqual, but focused on semantic equality
+instead of memory equality.
+</p>
+<p>
+It will use e&#39;s equality functions if it finds types that match.
+</p>
+<p>
+An empty slice *is* equal to a nil slice for our purposes; same for maps.
+</p>
+<p>
+Unexported field members cannot be compared and will cause an informative panic; you must add an Equality
+function for these types.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

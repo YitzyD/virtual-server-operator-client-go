@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>fuzz - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package fuzz
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/google/gofuzz"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package fuzz is a library for populating go objects with random values.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#Continue">type Continue</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Continue.Fuzz">func (c Continue) Fuzz(obj interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Continue.FuzzNoCustom">func (c Continue) FuzzNoCustom(obj interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Continue.RandBool">func (c Continue) RandBool() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Continue.RandString">func (c Continue) RandString() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Continue.RandUint64">func (c Continue) RandUint64() uint64</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Fuzzer">type Fuzzer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#New">func New() *Fuzzer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewWithSeed">func NewWithSeed(seed int64) *Fuzzer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.Funcs">func (f *Fuzzer) Funcs(fuzzFuncs ...interface{}) *Fuzzer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.Fuzz">func (f *Fuzzer) Fuzz(obj interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.FuzzNoCustom">func (f *Fuzzer) FuzzNoCustom(obj interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.MaxDepth">func (f *Fuzzer) MaxDepth(d int) *Fuzzer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.NilChance">func (f *Fuzzer) NilChance(p float64) *Fuzzer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.NumElements">func (f *Fuzzer) NumElements(atLeast, atMost int) *Fuzzer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.RandSource">func (f *Fuzzer) RandSource(s rand.Source) *Fuzzer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Fuzzer.SkipFieldsWithPattern">func (f *Fuzzer) SkipFieldsWithPattern(pattern *regexp.Regexp) *Fuzzer</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Interface">type Interface</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/github.com/google/gofuzz/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go">fuzz.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="Continue">type <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=10219:10448#L355">Continue</a>
+				<a class="permalink" href="index.html#Continue">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Continue can be passed to custom fuzzing functions to allow them to use
+the correct source of randomness and to continue fuzzing their members.
+</p>
+
+			<pre>type Continue struct {
+
+    <span class="comment">// For convenience, Continue implements rand.Rand via embedding.</span>
+    <span class="comment">// Use this for generating any randomness if you want your fuzzing</span>
+    <span class="comment">// to be repeatable for a given seed.</span>
+    *<a href="http://localhost:6060/pkg/math/rand/">rand</a>.<a href="http://localhost:6060/pkg/math/rand/#Rand">Rand</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Continue.Fuzz">func (Continue) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=10504:10543#L365">Fuzz</a>
+					<a class="permalink" href="index.html#Continue.Fuzz">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c <a href="index.html#Continue">Continue</a>) Fuzz(obj interface{})</pre>
+				<p>
+Fuzz continues fuzzing obj. obj must be a pointer.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Continue.FuzzNoCustom">func (Continue) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=10908:10955#L378">FuzzNoCustom</a>
+					<a class="permalink" href="index.html#Continue.FuzzNoCustom">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c <a href="index.html#Continue">Continue</a>) FuzzNoCustom(obj interface{})</pre>
+				<p>
+FuzzNoCustom continues fuzzing obj, except that any custom fuzz function for
+obj&#39;s type will not be called and obj will not be tested for fuzz.Interface
+conformance.  This applies only to obj and not other instances of obj&#39;s
+type.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Continue.RandBool">func (Continue) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=11526:11559#L400">RandBool</a>
+					<a class="permalink" href="index.html#Continue.RandBool">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c <a href="index.html#Continue">Continue</a>) RandBool() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+RandBool returns true or false randomly.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Continue.RandString">func (Continue) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=11227:11264#L389">RandString</a>
+					<a class="permalink" href="index.html#Continue.RandString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c <a href="index.html#Continue">Continue</a>) RandString() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+RandString makes a random string up to 20 characters long. The returned string
+may include a variety of (valid) UTF-8 encodings.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Continue.RandUint64">func (Continue) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=11412:11449#L395">RandUint64</a>
+					<a class="permalink" href="index.html#Continue.RandUint64">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c <a href="index.html#Continue">Continue</a>) RandUint64() <a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a></pre>
+				<p>
+RandUint64 makes random 64 bit numbers.
+Weirdly, rand doesn&#39;t have a function that gives you 64 random bits.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Fuzzer">type <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=837:1083#L21">Fuzzer</a>
+				<a class="permalink" href="index.html#Fuzzer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Fuzzer knows how to fill any object with random fields.
+</p>
+
+			<pre>type Fuzzer struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="New">func <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=1217:1235#L34">New</a>
+					<a class="permalink" href="index.html#New">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func New() *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				<p>
+New returns a new Fuzzer. Customize your Fuzzer further by calling Funcs,
+RandSource, NilChance, or NumElements in any order.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewWithSeed">func <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=1284:1320#L38">NewWithSeed</a>
+					<a class="permalink" href="index.html#NewWithSeed">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewWithSeed(seed <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="Fuzzer.Funcs">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=2638:2694#L71">Funcs</a>
+					<a class="permalink" href="index.html#Fuzzer.Funcs">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) Funcs(fuzzFuncs ...interface{}) *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				<p>
+Funcs adds each entry in fuzzFuncs as a custom fuzzing function.
+</p>
+<p>
+Each entry in fuzzFuncs must be a function taking two parameters.
+The first parameter must be a pointer or map. It is the variable that
+function will fill with random data. The second parameter must be a
+fuzz.Continue, which will provide a source of randomness and a way
+to automatically continue fuzzing smaller pieces of the first parameter.
+</p>
+<p>
+These functions are called sensibly, e.g., if you wanted custom string
+fuzzing, the function `func(s *string, c fuzz.Continue)` would get
+called and passed the address of strings. Maps and pointers will always
+be made/new&#39;d for you, ignoring the NilChange option. For slices, it
+doesn&#39;t make much sense to  pre-create them--Fuzzer doesn&#39;t know how
+long you want your slice--so take a pointer to a slice, and make it
+yourself. (If you don&#39;t want your map/pointer type pre-made, take a
+pointer to it, and make it yourself.) See the examples for a range of
+custom functions.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Fuzzer.Fuzz">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=5662:5700#L166">Fuzz</a>
+					<a class="permalink" href="index.html#Fuzzer.Fuzz">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) Fuzz(obj interface{})</pre>
+				<p>
+Fuzz recursively fills all of obj&#39;s fields with something random.  First
+this tries to find a custom fuzz function (see Funcs).  If there is no
+custom function this tests whether the object implements fuzz.Interface and,
+if so, calls Fuzz on it to fuzz itself.  If that fails, this will see if
+there is a default fuzz function provided by this package.  If all of that
+fails, this will generate random values for all primitive fields and then
+recurse for all non-primitives.
+</p>
+<p>
+This is safe for cyclic or tree-like structs, up to a limit.  Use the
+MaxDepth method to adjust how deep you need it to recurse.
+</p>
+<p>
+obj must be a pointer. Only exported (public) fields can be set (thanks,
+golang :/ ) Intended for tests, so will panic on bad input or unimplemented
+fields.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Fuzzer.FuzzNoCustom">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=6275:6321#L182">FuzzNoCustom</a>
+					<a class="permalink" href="index.html#Fuzzer.FuzzNoCustom">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) FuzzNoCustom(obj interface{})</pre>
+				<p>
+FuzzNoCustom is just like Fuzz, except that any custom fuzz function for
+obj&#39;s type will not be called and obj will not be tested for fuzz.Interface
+conformance.  This applies only to obj and not other instances of obj&#39;s
+type.
+Not safe for cyclic or tree-like structs!
+obj must be a pointer. Only exported (public) fields can be set (thanks, golang :/ )
+Intended for tests, so will panic on bad input or unimplemented fields.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Fuzzer.MaxDepth">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=4497:4537#L140">MaxDepth</a>
+					<a class="permalink" href="index.html#Fuzzer.MaxDepth">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) MaxDepth(d <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				<p>
+MaxDepth sets the maximum number of recursive fuzz calls that will be made
+before stopping.  This includes struct members, pointers, and map and slice
+elements.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Fuzzer.NilChance">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=3574:3619#L104">NilChance</a>
+					<a class="permalink" href="index.html#Fuzzer.NilChance">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) NilChance(p <a href="http://localhost:6060/pkg/builtin/#float64">float64</a>) *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				<p>
+NilChance sets the probability of creating a nil pointer, map, or slice to
+&#39;p&#39;. &#39;p&#39; should be between 0 (no nils) and 1 (all nils), inclusive.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Fuzzer.NumElements">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=3839:3896#L114">NumElements</a>
+					<a class="permalink" href="index.html#Fuzzer.NumElements">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) NumElements(atLeast, atMost <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				<p>
+NumElements sets the minimum and maximum number of elements that will be
+added to a non-nil map or slice.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Fuzzer.RandSource">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=3340:3390#L97">RandSource</a>
+					<a class="permalink" href="index.html#Fuzzer.RandSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) RandSource(s <a href="http://localhost:6060/pkg/math/rand/">rand</a>.<a href="http://localhost:6060/pkg/math/rand/#Source">Source</a>) *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				<p>
+RandSource causes f to get values from the given source of randomness.
+Use if you want deterministic fuzzing.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Fuzzer.SkipFieldsWithPattern">func (*Fuzzer) <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=4713:4783#L147">SkipFieldsWithPattern</a>
+					<a class="permalink" href="index.html#Fuzzer.SkipFieldsWithPattern">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#Fuzzer">Fuzzer</a>) SkipFieldsWithPattern(pattern *<a href="http://localhost:6060/pkg/regexp/">regexp</a>.<a href="http://localhost:6060/pkg/regexp/#Regexp">Regexp</a>) *<a href="index.html#Fuzzer">Fuzzer</a></pre>
+				<p>
+Skip fields which match the supplied pattern. Call this multiple times if needed
+This is useful to skip XXX_ fields generated by protobuf
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Interface">type <a href="http://localhost:6060/src/github.com/google/gofuzz/fuzz.go?s=10021:10067#L349">Interface</a>
+				<a class="permalink" href="index.html#Interface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Interface represents an object that knows how to fuzz itself.  Any time we
+find a type that implements this interface we will delegate the act of
+fuzzing itself.
+</p>
+
+			<pre>type Interface interface {
+    Fuzz(c <a href="index.html#Continue">Continue</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

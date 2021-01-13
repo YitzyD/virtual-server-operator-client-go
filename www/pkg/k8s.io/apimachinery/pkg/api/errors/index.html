@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>errors - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package errors
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/api/errors"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package errors provides detailed error types for api field validation.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#FromObject">func FromObject(obj runtime.Object) error</a></dd>
+			
+				
+				<dd><a href="index.html#HasStatusCause">func HasStatusCause(err error, name metav1.CauseType) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsAlreadyExists">func IsAlreadyExists(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsBadRequest">func IsBadRequest(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsConflict">func IsConflict(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsForbidden">func IsForbidden(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsGone">func IsGone(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsInternalError">func IsInternalError(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsInvalid">func IsInvalid(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsMethodNotSupported">func IsMethodNotSupported(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsNotAcceptable">func IsNotAcceptable(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsNotFound">func IsNotFound(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsRequestEntityTooLargeError">func IsRequestEntityTooLargeError(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsResourceExpired">func IsResourceExpired(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsServerTimeout">func IsServerTimeout(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsServiceUnavailable">func IsServiceUnavailable(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsTimeout">func IsTimeout(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsTooManyRequests">func IsTooManyRequests(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsUnauthorized">func IsUnauthorized(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsUnexpectedObjectError">func IsUnexpectedObjectError(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsUnexpectedServerError">func IsUnexpectedServerError(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsUnsupportedMediaType">func IsUnsupportedMediaType(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#ReasonForError">func ReasonForError(err error) metav1.StatusReason</a></dd>
+			
+				
+				<dd><a href="index.html#StatusCause">func StatusCause(err error, name metav1.CauseType) (metav1.StatusCause, bool)</a></dd>
+			
+				
+				<dd><a href="index.html#SuggestsClientDelay">func SuggestsClientDelay(err error) (int, bool)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#APIStatus">type APIStatus</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ErrorReporter">type ErrorReporter</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewClientErrorReporter">func NewClientErrorReporter(code int, verb string, reason string) *ErrorReporter</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ErrorReporter.AsObject">func (r *ErrorReporter) AsObject(err error) runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#StatusError">type StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAlreadyExists">func NewAlreadyExists(qualifiedResource schema.GroupResource, name string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewApplyConflict">func NewApplyConflict(causes []metav1.StatusCause, message string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewBadRequest">func NewBadRequest(reason string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewConflict">func NewConflict(qualifiedResource schema.GroupResource, name string, err error) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewForbidden">func NewForbidden(qualifiedResource schema.GroupResource, name string, err error) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewGenericServerResponse">func NewGenericServerResponse(code int, verb string, qualifiedResource schema.GroupResource, name, serverMessage string, retryAfterSeconds int, isUnexpectedResponse bool) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewGone">func NewGone(message string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewInternalError">func NewInternalError(err error) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewInvalid">func NewInvalid(qualifiedKind schema.GroupKind, name string, errs field.ErrorList) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewMethodNotSupported">func NewMethodNotSupported(qualifiedResource schema.GroupResource, action string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewNotFound">func NewNotFound(qualifiedResource schema.GroupResource, name string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewRequestEntityTooLargeError">func NewRequestEntityTooLargeError(message string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewResourceExpired">func NewResourceExpired(message string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewServerTimeout">func NewServerTimeout(qualifiedResource schema.GroupResource, operation string, retryAfterSeconds int) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewServerTimeoutForKind">func NewServerTimeoutForKind(qualifiedKind schema.GroupKind, operation string, retryAfterSeconds int) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewServiceUnavailable">func NewServiceUnavailable(reason string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewTimeoutError">func NewTimeoutError(message string, retryAfterSeconds int) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewTooManyRequests">func NewTooManyRequests(message string, retryAfterSeconds int) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewTooManyRequestsError">func NewTooManyRequestsError(message string) *StatusError</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewUnauthorized">func NewUnauthorized(reason string) *StatusError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StatusError.DebugError">func (e *StatusError) DebugError() (string, []interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StatusError.Error">func (e *StatusError) Error() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StatusError.Status">func (e *StatusError) Status() metav1.Status</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UnexpectedObjectError">type UnexpectedObjectError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnexpectedObjectError.Error">func (u *UnexpectedObjectError) Error() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go">errors.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="FromObject">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=3056:3097#L90">FromObject</a>
+				<a class="permalink" href="index.html#FromObject">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func FromObject(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+FromObject generates an StatusError from an metav1.Status, if that is the type of obj; otherwise,
+returns an UnexpecteObjectError.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="HasStatusCause">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=1992:2050#L58">HasStatusCause</a>
+				<a class="permalink" href="index.html#HasStatusCause">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func HasStatusCause(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>, name <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#CauseType">CauseType</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+HasStatusCause returns true if the provided error has a details cause
+with the provided type name.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsAlreadyExists">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=17591:17627#L476">IsAlreadyExists</a>
+				<a class="permalink" href="index.html#IsAlreadyExists">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsAlreadyExists(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsAlreadyExists determines if the err is an error which indicates that a specified resource already exists.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsBadRequest">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=19831:19864#L532">IsBadRequest</a>
+				<a class="permalink" href="index.html#IsBadRequest">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsBadRequest(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsBadRequest determines if err is an error which indicates that the request is invalid.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsConflict">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=17823:17854#L482">IsConflict</a>
+				<a class="permalink" href="index.html#IsConflict">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsConflict(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsConflict determines if the err is an error which indicates the provided update conflicts.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsForbidden">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=20370:20402#L546">IsForbidden</a>
+				<a class="permalink" href="index.html#IsForbidden">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsForbidden(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsForbidden determines if err is an error which indicates that the request is forbidden and cannot
+be completed as requested.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsGone">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=18262:18289#L494">IsGone</a>
+				<a class="permalink" href="index.html#IsGone">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsGone(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsGone is true if the error indicates the requested resource is no longer available.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsInternalError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=21081:21117#L566">IsInternalError</a>
+				<a class="permalink" href="index.html#IsInternalError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsInternalError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsInternalError determines if err is an error which indicates an internal server error.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsInvalid">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=18049:18079#L488">IsInvalid</a>
+				<a class="permalink" href="index.html#IsInvalid">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsInvalid(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsInvalid determines if the err is an error which indicates the provided resource is not valid.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsMethodNotSupported">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=19346:19387#L520">IsMethodNotSupported</a>
+				<a class="permalink" href="index.html#IsMethodNotSupported">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsMethodNotSupported(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsMethodNotSupported determines if the err is an error which indicates the provided action could not
+be performed because it is not supported by the server.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsNotAcceptable">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=18761:18797#L507">IsNotAcceptable</a>
+				<a class="permalink" href="index.html#IsNotAcceptable">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsNotAcceptable(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsNotAcceptable determines if err is an error which indicates that the request failed due to an invalid Accept header
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsNotFound">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=17353:17384#L470">IsNotFound</a>
+				<a class="permalink" href="index.html#IsNotFound">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsNotFound(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsNotFound returns true if the specified error was created by NewNotFound.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsRequestEntityTooLargeError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=21755:21804#L586">IsRequestEntityTooLargeError</a>
+				<a class="permalink" href="index.html#IsRequestEntityTooLargeError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsRequestEntityTooLargeError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsRequestEntityTooLargeError determines if err is an error which indicates
+the request entity is too large.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsResourceExpired">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=18507:18545#L501">IsResourceExpired</a>
+				<a class="permalink" href="index.html#IsResourceExpired">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsResourceExpired(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsResourceExpired is true if the error indicates the resource has expired and the current action is
+no longer possible.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsServerTimeout">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=20853:20889#L560">IsServerTimeout</a>
+				<a class="permalink" href="index.html#IsServerTimeout">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsServerTimeout(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsServerTimeout determines if err is an error which indicates that the request needs to be retried
+by the client.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsServiceUnavailable">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=19593:19634#L526">IsServiceUnavailable</a>
+				<a class="permalink" href="index.html#IsServiceUnavailable">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsServiceUnavailable(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsServiceUnavailable is true if the error indicates the underlying service is no longer available.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsTimeout">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=20608:20638#L553">IsTimeout</a>
+				<a class="permalink" href="index.html#IsTimeout">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsTimeout(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsTimeout determines if err is an error which indicates that request times out due to long
+processing.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsTooManyRequests">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=21352:21390#L573">IsTooManyRequests</a>
+				<a class="permalink" href="index.html#IsTooManyRequests">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsTooManyRequests(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsTooManyRequests determines if err is an error which indicates that there are too many requests
+that the server cannot handle.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsUnauthorized">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=20103:20138#L539">IsUnauthorized</a>
+				<a class="permalink" href="index.html#IsUnauthorized">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsUnauthorized(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsUnauthorized determines if err is an error which indicates that the request is unauthorized and
+requires authentication by the user.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsUnexpectedObjectError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=22640:22684#L612">IsUnexpectedObjectError</a>
+				<a class="permalink" href="index.html#IsUnexpectedObjectError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsUnexpectedObjectError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsUnexpectedObjectError determines if err is due to an unexpected object from the master.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsUnexpectedServerError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=22214:22258#L599">IsUnexpectedServerError</a>
+				<a class="permalink" href="index.html#IsUnexpectedServerError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsUnexpectedServerError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsUnexpectedServerError returns true if the server response was not in the expected API format,
+and may be the result of another HTTP actor.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsUnsupportedMediaType">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=19032:19075#L513">IsUnsupportedMediaType</a>
+				<a class="permalink" href="index.html#IsUnsupportedMediaType">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsUnsupportedMediaType(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsUnsupportedMediaType determines if err is an error which indicates that the request failed due to an invalid Content-Type header
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ReasonForError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=23727:23777#L639">ReasonForError</a>
+				<a class="permalink" href="index.html#ReasonForError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ReasonForError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#StatusReason">StatusReason</a></pre>
+			<p>
+ReasonForError returns the HTTP status for a particular error.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StatusCause">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=2247:2324#L65">StatusCause</a>
+				<a class="permalink" href="index.html#StatusCause">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StatusCause(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>, name <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#CauseType">CauseType</a>) (<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#StatusCause">StatusCause</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+StatusCause returns the named cause from the provided error if it exists and
+the error is of the type APIStatus. Otherwise it returns false.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SuggestsClientDelay">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=23090:23137#L622">SuggestsClientDelay</a>
+				<a class="permalink" href="index.html#SuggestsClientDelay">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SuggestsClientDelay(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+SuggestsClientDelay returns true if this error suggests a client delay as well as the
+suggested seconds to wait, or false if the error does not imply a wait. It does not
+address whether the error *should* be retried, since some errors (like a 3xx) may
+request delay without retry.
+It supports wrapped errors.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="APIStatus">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=1180:1232#L31">APIStatus</a>
+				<a class="permalink" href="index.html#APIStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+APIStatus is exposed by errors that can be converted to an api.Status object
+for finer grained details.
+</p>
+
+			<pre>type APIStatus interface {
+    Status() <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Status">Status</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ErrorReporter">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=24122:24193#L649">ErrorReporter</a>
+				<a class="permalink" href="index.html#ErrorReporter">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ErrorReporter converts generic errors into runtime.Object errors without
+requiring the caller to take a dependency on meta/v1 (where Status lives).
+This prevents circular dependencies in core watch code.
+</p>
+
+			<pre>type ErrorReporter struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewClientErrorReporter">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=24743:24823#L662">NewClientErrorReporter</a>
+					<a class="permalink" href="index.html#NewClientErrorReporter">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewClientErrorReporter(code <a href="http://localhost:6060/pkg/builtin/#int">int</a>, verb <a href="http://localhost:6060/pkg/builtin/#string">string</a>, reason <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#ErrorReporter">ErrorReporter</a></pre>
+				<p>
+NewClientErrorReporter will respond with valid v1.Status objects that report
+unexpected server responses. Primarily used by watch to report errors when
+we attempt to decode a response from the server and it is not in the form
+we expect. Because watch is a dependency of the core api, we can&#39;t return
+meta/v1.Status in that package and so much inject this interface to convert a
+generic error as appropriate. The reason is passed as a unique status cause
+on the returned status, otherwise the generic &#34;ClientError&#34; is returned.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="ErrorReporter.AsObject">func (*ErrorReporter) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=25116:25174#L673">AsObject</a>
+					<a class="permalink" href="index.html#ErrorReporter.AsObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ErrorReporter">ErrorReporter</a>) AsObject(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a></pre>
+				<p>
+AsObject returns a valid error runtime.Object (a v1.Status) for the given
+error, using the code and verb of the reporter type. The error is set to
+indicate that this was an unexpected server response.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="StatusError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=1016:1068#L25">StatusError</a>
+				<a class="permalink" href="index.html#StatusError">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+StatusError is an error intended for consumption by a REST API server; it can also be
+reconstructed by clients from a REST response. Public to allow easy type switches.
+</p>
+
+			<pre>type StatusError struct {
+<span id="StatusError.ErrStatus"></span>    ErrStatus <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Status">Status</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewAlreadyExists">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=4275:4362#L127">NewAlreadyExists</a>
+					<a class="permalink" href="index.html#NewAlreadyExists">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAlreadyExists(qualifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewAlreadyExists returns an error indicating the item requested exists by that identifier.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewApplyConflict">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=6561:6640#L195">NewApplyConflict</a>
+					<a class="permalink" href="index.html#NewApplyConflict">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewApplyConflict(causes []<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#StatusCause">StatusCause</a>, message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewApplyConflict returns an error including details on the requests apply conflicts
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewBadRequest">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=8595:8641#L256">NewBadRequest</a>
+					<a class="permalink" href="index.html#NewBadRequest">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewBadRequest(reason <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewBadRequest creates an error that indicates that the request is invalid and can not be processed.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewConflict">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=5996:6089#L180">NewConflict</a>
+					<a class="permalink" href="index.html#NewConflict">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewConflict(qualifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewConflict returns an error indicating the item can&#39;t be updated as provided.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewForbidden">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=5218:5312#L157">NewForbidden</a>
+					<a class="permalink" href="index.html#NewForbidden">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewForbidden(qualifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewForbidden returns an error indicating the requested action was forbidden
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewGenericServerResponse">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=13679:13862#L378">NewGenericServerResponse</a>
+					<a class="permalink" href="index.html#NewGenericServerResponse">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewGenericServerResponse(code <a href="http://localhost:6060/pkg/builtin/#int">int</a>, verb <a href="http://localhost:6060/pkg/builtin/#string">string</a>, qualifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a>, name, serverMessage <a href="http://localhost:6060/pkg/builtin/#string">string</a>, retryAfterSeconds <a href="http://localhost:6060/pkg/builtin/#int">int</a>, isUnexpectedResponse <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewGenericServerResponse returns a new error for server responses that are not in a recognizable form.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewGone">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=7083:7124#L210">NewGone</a>
+					<a class="permalink" href="index.html#NewGone">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewGone(message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewGone returns an error indicating the item no longer available at the server and no forwarding address is known.
+DEPRECATED: Please use NewResourceExpired instead.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewInternalError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=11734:11779#L328">NewInternalError</a>
+					<a class="permalink" href="index.html#NewInternalError">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewInternalError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewInternalError returns an error indicating the item is invalid and cannot be processed.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewInvalid">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=7765:7860#L231">NewInvalid</a>
+					<a class="permalink" href="index.html#NewInvalid">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewInvalid(qualifiedKind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, errs <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewInvalid returns an error indicating the item is invalid and cannot be processed.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewMethodNotSupported">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=9859:9953#L291">NewMethodNotSupported</a>
+					<a class="permalink" href="index.html#NewMethodNotSupported">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewMethodNotSupported(qualifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a>, action <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewMethodNotSupported returns an error indicating the requested action is not supported on this kind.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewNotFound">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=3746:3828#L112">NewNotFound</a>
+					<a class="permalink" href="index.html#NewNotFound">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewNotFound(qualifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewNotFound returns a new error which indicates that the resource of the kind and the name was not found.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewRequestEntityTooLargeError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=13268:13331#L368">NewRequestEntityTooLargeError</a>
+					<a class="permalink" href="index.html#NewRequestEntityTooLargeError">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewRequestEntityTooLargeError(message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewRequestEntityTooLargeError returns an error indicating that the request
+entity was too large.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewResourceExpired">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=7460:7512#L221">NewResourceExpired</a>
+					<a class="permalink" href="index.html#NewResourceExpired">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewResourceExpired(message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewResourceExpired creates an error that indicates that the requested resource content has expired from
+the server (usually due to a resourceVersion that is too old).
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewServerTimeout">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=10490:10605#L306">NewServerTimeout</a>
+					<a class="permalink" href="index.html#NewServerTimeout">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewServerTimeout(qualifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a>, operation <a href="http://localhost:6060/pkg/builtin/#string">string</a>, retryAfterSeconds <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewServerTimeout returns an error indicating the requested action could not be completed due to a
+transient error, and the client should try again.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewServerTimeoutForKind">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=11386:11500#L323">NewServerTimeoutForKind</a>
+					<a class="permalink" href="index.html#NewServerTimeoutForKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewServerTimeoutForKind(qualifiedKind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, operation <a href="http://localhost:6060/pkg/builtin/#string">string</a>, retryAfterSeconds <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewServerTimeoutForKind should not exist.  Server timeouts happen when accessing resources, the Kind is just what we
+happened to be looking at when the request failed.  This delegates to keep code sane, but we should work towards removing this.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewServiceUnavailable">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=9510:9564#L281">NewServiceUnavailable</a>
+					<a class="permalink" href="index.html#NewServiceUnavailable">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewServiceUnavailable(reason <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewServiceUnavailable creates an error that indicates that the requested service is unavailable.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewTimeoutError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=12270:12342#L342">NewTimeoutError</a>
+					<a class="permalink" href="index.html#NewTimeoutError">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewTimeoutError(message <a href="http://localhost:6060/pkg/builtin/#string">string</a>, retryAfterSeconds <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewTimeoutError returns an error indicating that a timeout occurred before the request
+could be completed.  Clients may retry, but the operation may still complete.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewTooManyRequests">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=9063:9138#L268">NewTooManyRequests</a>
+					<a class="permalink" href="index.html#NewTooManyRequests">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewTooManyRequests(message <a href="http://localhost:6060/pkg/builtin/#string">string</a>, retryAfterSeconds <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewTooManyRequests creates an error that indicates that the client must try again later because
+the specified endpoint is not accepting requests. More specific details should be provided
+if client should know why the failure was limited4.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewTooManyRequestsError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=12885:12942#L357">NewTooManyRequestsError</a>
+					<a class="permalink" href="index.html#NewTooManyRequestsError">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewTooManyRequestsError(message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewTooManyRequestsError returns an error indicating that the request was rejected because
+the server has received too many requests. Client should wait and retry. But if the request
+is perishable, then the client should not retry the request.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewUnauthorized">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=4837:4885#L143">NewUnauthorized</a>
+					<a class="permalink" href="index.html#NewUnauthorized">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewUnauthorized(reason <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#StatusError">StatusError</a></pre>
+				<p>
+NewUnauthorized returns an error indicating the client is not authorized to perform the requested
+action.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="StatusError.DebugError">func (*StatusError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=1616:1674#L49">DebugError</a>
+					<a class="permalink" href="index.html#StatusError.DebugError">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e *<a href="index.html#StatusError">StatusError</a>) DebugError() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, []interface{})</pre>
+				<p>
+DebugError reports extended info about the error to debug output.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="StatusError.Error">func (*StatusError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=1305:1341#L38">Error</a>
+					<a class="permalink" href="index.html#StatusError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e *<a href="index.html#StatusError">StatusError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Error implements the Error interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="StatusError.Status">func (*StatusError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=1477:1521#L44">Status</a>
+					<a class="permalink" href="index.html#StatusError.Status">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e *<a href="index.html#StatusError">StatusError</a>) Status() <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Status">Status</a></pre>
+				<p>
+Status allows access to e&#39;s status without having to know the detailed workings
+of StatusError.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UnexpectedObjectError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=2700:2760#L79">UnexpectedObjectError</a>
+				<a class="permalink" href="index.html#UnexpectedObjectError">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UnexpectedObjectError can be returned by FromObject if it&#39;s passed a non-status object.
+</p>
+
+			<pre>type UnexpectedObjectError struct {
+<span id="UnexpectedObjectError.Object"></span>    Object <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UnexpectedObjectError.Error">func (*UnexpectedObjectError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/errors/errors.go?s=2812:2858#L84">Error</a>
+					<a class="permalink" href="index.html#UnexpectedObjectError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnexpectedObjectError">UnexpectedObjectError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Error returns an error message describing &#39;u&#39;.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

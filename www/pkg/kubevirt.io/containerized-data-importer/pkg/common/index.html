@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>common - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package common
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/common"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/common/common.go">common.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span class="comment">// CDILabelKey provides a constant for CDI PVC labels</span>
+    <span id="CDILabelKey">CDILabelKey</span> = &#34;app&#34;
+    <span class="comment">// CDILabelValue provides a constant  for CDI PVC label values</span>
+    <span id="CDILabelValue">CDILabelValue</span> = &#34;containerized-data-importer&#34;
+    <span class="comment">// CDILabelSelector provides a constant to use for the selector to identify CDI objects in list</span>
+    <span id="CDILabelSelector">CDILabelSelector</span> = <a href="index.html#CDILabelKey">CDILabelKey</a> + &#34;=&#34; + <a href="index.html#CDILabelValue">CDILabelValue</a>
+
+    <span class="comment">// CDIComponentLabel can be added to all CDI resources</span>
+    <span id="CDIComponentLabel">CDIComponentLabel</span> = &#34;cdi.kubevirt.io&#34;
+
+    <span class="comment">// PrometheusLabel provides the label to indicate prometheus metrics are available in the pods.</span>
+    <span id="PrometheusLabel">PrometheusLabel</span> = &#34;prometheus.cdi.kubevirt.io&#34;
+    <span class="comment">// PrometheusServiceName is the name of the prometheus service created by the operator.</span>
+    <span id="PrometheusServiceName">PrometheusServiceName</span> = &#34;cdi-prometheus-metrics&#34;
+
+    <span class="comment">// UploadTargetLabel has the UID of upload target PVC</span>
+    <span id="UploadTargetLabel">UploadTargetLabel</span> = <a href="index.html#CDIComponentLabel">CDIComponentLabel</a> + &#34;/uploadTarget&#34;
+
+    <span class="comment">// ImporterVolumePath provides a constant for the directory where the PV is mounted.</span>
+    <span id="ImporterVolumePath">ImporterVolumePath</span> = &#34;/data&#34;
+    <span class="comment">// DiskImageName provides a constant for our importer/datastream_ginkgo_test and to build ImporterWritePath</span>
+    <span id="DiskImageName">DiskImageName</span> = &#34;disk.img&#34;
+    <span class="comment">// ImporterWritePath provides a constant for the cmd/cdi-importer/importer.go executable</span>
+    <span id="ImporterWritePath">ImporterWritePath</span> = <a href="index.html#ImporterVolumePath">ImporterVolumePath</a> + &#34;/&#34; + <a href="index.html#DiskImageName">DiskImageName</a>
+    <span class="comment">// WriteBlockPath provides a constant for the path where the PV is mounted.</span>
+    <span id="WriteBlockPath">WriteBlockPath</span> = &#34;/dev/cdi-block-volume&#34;
+    <span class="comment">// PodTerminationMessageFile is the name of the file to write the termination message to.</span>
+    <span id="PodTerminationMessageFile">PodTerminationMessageFile</span> = &#34;/dev/termination-log&#34;
+    <span class="comment">// ImporterPodName provides a constant to use as a prefix for Pods created by CDI (controller only)</span>
+    <span id="ImporterPodName">ImporterPodName</span> = &#34;importer&#34;
+    <span class="comment">// ImporterDataDir provides a constant for the controller pkg to use as a hardcoded path to where content is transferred to/from (controller only)</span>
+    <span id="ImporterDataDir">ImporterDataDir</span> = &#34;/data&#34;
+    <span class="comment">// ScratchDataDir provides a constant for the controller pkg to use as a hardcoded path to where scratch space is located.</span>
+    <span id="ScratchDataDir">ScratchDataDir</span> = &#34;/scratch&#34;
+    <span class="comment">// ImporterS3Host provides an S3 string used by importer/dataStream.go only</span>
+    <span id="ImporterS3Host">ImporterS3Host</span> = &#34;s3.amazonaws.com&#34;
+    <span class="comment">// ImporterCertDir is where the configmap containing certs will be mounted</span>
+    <span id="ImporterCertDir">ImporterCertDir</span> = &#34;/certs&#34;
+    <span class="comment">// DefaultPullPolicy imports k8s &#34;IfNotPresent&#34; string for the import_controller_gingko_test and the cdi-controller executable</span>
+    <span id="DefaultPullPolicy">DefaultPullPolicy</span> = <a href="http://localhost:6060/pkg/builtin/#string">string</a>(<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PullIfNotPresent">PullIfNotPresent</a>)
+
+    <span class="comment">// PullPolicy provides a constant to capture our env variable &#34;PULL_POLICY&#34; (only used by cmd/cdi-controller/controller.go)</span>
+    <span id="PullPolicy">PullPolicy</span> = &#34;PULL_POLICY&#34;
+    <span class="comment">// ImporterSource provides a constant to capture our env variable &#34;IMPORTER_SOURCE&#34;</span>
+    <span id="ImporterSource">ImporterSource</span> = &#34;IMPORTER_SOURCE&#34;
+    <span class="comment">// ImporterContentType provides a constant to capture our env variable &#34;IMPORTER_CONTENTTYPE&#34;</span>
+    <span id="ImporterContentType">ImporterContentType</span> = &#34;IMPORTER_CONTENTTYPE&#34;
+    <span class="comment">// ImporterEndpoint provides a constant to capture our env variable &#34;IMPORTER_ENDPOINT&#34;</span>
+    <span id="ImporterEndpoint">ImporterEndpoint</span> = &#34;IMPORTER_ENDPOINT&#34;
+    <span class="comment">// ImporterAccessKeyID provides a constant to capture our env variable &#34;IMPORTER_ACCES_KEY_ID&#34;</span>
+    <span id="ImporterAccessKeyID">ImporterAccessKeyID</span> = &#34;IMPORTER_ACCESS_KEY_ID&#34;
+    <span class="comment">// ImporterSecretKey provides a constant to capture our env variable &#34;IMPORTER_SECRET_KEY&#34;</span>
+    <span id="ImporterSecretKey">ImporterSecretKey</span> = &#34;IMPORTER_SECRET_KEY&#34;
+    <span class="comment">// ImporterImageSize provides a constant to capture our env variable &#34;IMPORTER_IMAGE_SIZE&#34;</span>
+    <span id="ImporterImageSize">ImporterImageSize</span> = &#34;IMPORTER_IMAGE_SIZE&#34;
+    <span class="comment">// ImporterCertDirVar provides a constant to capture our env variable &#34;IMPORTER_CERT_DIR&#34;</span>
+    <span id="ImporterCertDirVar">ImporterCertDirVar</span> = &#34;IMPORTER_CERT_DIR&#34;
+    <span class="comment">// InsecureTLSVar provides a constant to capture our env variable &#34;INSECURE_TLS&#34;</span>
+    <span id="InsecureTLSVar">InsecureTLSVar</span> = &#34;INSECURE_TLS&#34;
+    <span class="comment">// ImporterDiskID provides a constant to capture our env variable &#34;IMPORTER_DISK_ID&#34;</span>
+    <span id="ImporterDiskID">ImporterDiskID</span> = &#34;IMPORTER_DISK_ID&#34;
+    <span class="comment">// ImporterUUID provides a constant to capture our env variable &#34;IMPORTER_UUID&#34;</span>
+    <span id="ImporterUUID">ImporterUUID</span> = &#34;IMPORTER_UUID&#34;
+    <span class="comment">// ImporterBackingFile provides a constant to capture our env variable &#34;IMPORTER_BACKING_FILE&#34;</span>
+    <span id="ImporterBackingFile">ImporterBackingFile</span> = &#34;IMPORTER_BACKING_FILE&#34;
+    <span class="comment">// ImporterThumbprint provides a constant to capture our env variable &#34;IMPORTER_THUMBPRINT&#34;</span>
+    <span id="ImporterThumbprint">ImporterThumbprint</span> = &#34;IMPORTER_THUMBPRINT&#34;
+
+    <span class="comment">// CloningLabelValue provides a constant to use as a label value for pod affinity (controller pkg only)</span>
+    <span id="CloningLabelValue">CloningLabelValue</span> = &#34;host-assisted-cloning&#34;
+    <span class="comment">// CloningTopologyKey  (controller pkg only)</span>
+    <span id="CloningTopologyKey">CloningTopologyKey</span> = &#34;kubernetes.io/hostname&#34;
+    <span class="comment">// ClonerSourcePodName (controller pkg only)</span>
+    <span id="ClonerSourcePodName">ClonerSourcePodName</span> = &#34;cdi-clone-source&#34;
+    <span class="comment">// ClonerMountPath (controller pkg only)</span>
+    <span id="ClonerMountPath">ClonerMountPath</span> = &#34;/var/run/cdi/clone/source&#34;
+    <span class="comment">// ClonerSourcePodNameSuffix (controller pkg only)</span>
+    <span id="ClonerSourcePodNameSuffix">ClonerSourcePodNameSuffix</span> = &#34;-source-pod&#34;
+
+    <span class="comment">// KubeVirtAnnKey is part of a kubevirt.io key.</span>
+    <span id="KubeVirtAnnKey">KubeVirtAnnKey</span> = &#34;kubevirt.io/&#34;
+    <span class="comment">// CDIAnnKey is part of a kubevirt.io key.</span>
+    <span id="CDIAnnKey">CDIAnnKey</span> = &#34;cdi.kubevirt.io/&#34;
+
+    <span class="comment">// SmartClonerCDILabel is the label applied to resources created by the smart-clone controller</span>
+    <span id="SmartClonerCDILabel">SmartClonerCDILabel</span> = &#34;cdi-smart-clone&#34;
+
+    <span class="comment">// UploadServerCDILabel is the label applied to upload server resources</span>
+    <span id="UploadServerCDILabel">UploadServerCDILabel</span> = &#34;cdi-upload-server&#34;
+    <span class="comment">// UploadServerPodname is name of the upload server pod container</span>
+    <span id="UploadServerPodname">UploadServerPodname</span> = <a href="index.html#UploadServerCDILabel">UploadServerCDILabel</a>
+    <span class="comment">// UploadServerDataDir is the destination directoryfor uploads</span>
+    <span id="UploadServerDataDir">UploadServerDataDir</span> = <a href="index.html#ImporterDataDir">ImporterDataDir</a>
+    <span class="comment">// UploadServerServiceLabel is the label selector for upload server services</span>
+    <span id="UploadServerServiceLabel">UploadServerServiceLabel</span> = &#34;service&#34;
+    <span class="comment">// UploadImageSize provides a constant to capture our env variable &#34;UPLOAD_IMAGE_SIZE&#34;</span>
+    <span id="UploadImageSize">UploadImageSize</span> = &#34;UPLOAD_IMAGE_SIZE&#34;
+
+    <span class="comment">// FilesystemOverheadVar provides a constant to capture our env variable &#34;FILESYSTEM_OVERHEAD&#34;</span>
+    <span id="FilesystemOverheadVar">FilesystemOverheadVar</span> = &#34;FILESYSTEM_OVERHEAD&#34;
+    <span class="comment">// DefaultGlobalOverhead is the amount of space reserved on Filesystem volumes by default</span>
+    <span id="DefaultGlobalOverhead">DefaultGlobalOverhead</span> = &#34;0.055&#34;
+
+    <span class="comment">// ConfigName is the name of default CDI Config</span>
+    <span id="ConfigName">ConfigName</span> = &#34;config&#34;
+
+    <span class="comment">// OwnerUID provides the UID of the owner entity (either PVC or DV)</span>
+    <span id="OwnerUID">OwnerUID</span> = &#34;OWNER_UID&#34;
+
+    <span class="comment">// KeyAccess provides a constant to the accessKeyId label using in controller pkg and transport_test.go</span>
+    <span id="KeyAccess">KeyAccess</span> = &#34;accessKeyId&#34;
+    <span class="comment">// KeySecret provides a constant to the secretKey label using in controller pkg and transport_test.go</span>
+    <span id="KeySecret">KeySecret</span> = &#34;secretKey&#34;
+
+    <span class="comment">// DefaultResyncPeriod sets a 10 minute resync period, used in the controller pkg and the controller cmd executable</span>
+    <span id="DefaultResyncPeriod">DefaultResyncPeriod</span> = 10 * <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Minute">Minute</a>
+    <span class="comment">// InsecureRegistryConfigMap is the name of the ConfigMap for insecure registries</span>
+    <span id="InsecureRegistryConfigMap">InsecureRegistryConfigMap</span> = &#34;cdi-insecure-registries&#34;
+
+    <span class="comment">// ScratchSpaceNeededExitCode is the exit code that indicates the importer pod requires scratch space to function properly.</span>
+    <span id="ScratchSpaceNeededExitCode">ScratchSpaceNeededExitCode</span> = 42
+
+    <span class="comment">// ScratchNameSuffix (controller pkg only)</span>
+    <span id="ScratchNameSuffix">ScratchNameSuffix</span> = &#34;scratch&#34;
+
+    <span class="comment">// UploadTokenIssuer is the JWT issuer of upload tokens</span>
+    <span id="UploadTokenIssuer">UploadTokenIssuer</span> = &#34;cdi-apiserver&#34;
+
+    <span class="comment">// CloneTokenIssuer is the JWT issuer for clone tokens</span>
+    <span id="CloneTokenIssuer">CloneTokenIssuer</span> = &#34;cdi-apiserver&#34;
+
+    <span class="comment">// QemuSubGid is the gid used as the qemu group in fsGroup</span>
+    <span id="QemuSubGid">QemuSubGid</span> = <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>(107)
+
+    <span class="comment">// ControllerServiceAccountName is the name of the CDI controller service account</span>
+    <span id="ControllerServiceAccountName">ControllerServiceAccountName</span> = &#34;cdi-sa&#34;
+
+    <span class="comment">// VddkConfigMap is the name of the ConfigMap with a reference to the VDDK image</span>
+    <span id="VddkConfigMap">VddkConfigMap</span> = &#34;v2v-vmware&#34;
+    <span class="comment">// VddkConfigDataKey is the name of the ConfigMap key of the VDDK image reference</span>
+    <span id="VddkConfigDataKey">VddkConfigDataKey</span> = &#34;vddk-init-image&#34;
+
+    <span class="comment">// UploadContentTypeHeader is the header upload clients may use to set the content type explicitly</span>
+    <span id="UploadContentTypeHeader">UploadContentTypeHeader</span> = &#34;x-cdi-content-type&#34;
+
+    <span class="comment">// FilesystemCloneContentType is the content type when cloning a filesystem</span>
+    <span id="FilesystemCloneContentType">FilesystemCloneContentType</span> = &#34;filesystem-clone&#34;
+
+    <span class="comment">// BlockdeviceClone is the content type when cloning a block device</span>
+    <span id="BlockdeviceClone">BlockdeviceClone</span> = &#34;blockdevice-clone&#34;
+
+    <span class="comment">// UploadPathSync is the path to POST CDI uploads</span>
+    <span id="UploadPathSync">UploadPathSync</span> = &#34;/v1beta1/upload&#34;
+
+    <span class="comment">// UploadPathAsync is the path to POST CDI uploads in async mode</span>
+    <span id="UploadPathAsync">UploadPathAsync</span> = &#34;/v1beta1/upload-async&#34;
+
+    <span class="comment">// UploadFormSync is the path to POST CDI uploads as form data</span>
+    <span id="UploadFormSync">UploadFormSync</span> = &#34;/v1beta1/upload-form&#34;
+
+    <span class="comment">// UploadFormAsync is the path to POST CDI uploads as form data in async mode</span>
+    <span id="UploadFormAsync">UploadFormAsync</span> = &#34;/v1beta1/upload-form-async&#34;
+)</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+AsyncUploadFormPaths are paths to POST CDI uploads as form data in async mode
+</p>
+
+				<pre>var <span id="AsyncUploadFormPaths">AsyncUploadFormPaths</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="index.html#UploadFormAsync">UploadFormAsync</a>,
+    &#34;/v1alpha1/upload-form-async&#34;,
+}</pre>
+			
+				<p>
+AsyncUploadPaths are paths to POST CDI uploads in async mode
+</p>
+
+				<pre>var <span id="AsyncUploadPaths">AsyncUploadPaths</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="index.html#UploadPathAsync">UploadPathAsync</a>,
+    &#34;/v1alpha1/upload-async&#34;,
+}</pre>
+			
+				<p>
+ProxyPaths are all supported paths
+</p>
+
+				<pre>var <span id="ProxyPaths">ProxyPaths</span> = <a href="http://localhost:6060/pkg/builtin/#append">append</a>(
+    <a href="http://localhost:6060/pkg/builtin/#append">append</a>(<a href="index.html#SyncUploadPaths">SyncUploadPaths</a>, <a href="index.html#AsyncUploadPaths">AsyncUploadPaths</a>...),
+    <a href="http://localhost:6060/pkg/builtin/#append">append</a>(<a href="index.html#SyncUploadFormPaths">SyncUploadFormPaths</a>, <a href="index.html#AsyncUploadFormPaths">AsyncUploadFormPaths</a>...)...,
+)</pre>
+			
+				<p>
+SyncUploadFormPaths are paths to POST CDI uploads as form data
+</p>
+
+				<pre>var <span id="SyncUploadFormPaths">SyncUploadFormPaths</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="index.html#UploadFormSync">UploadFormSync</a>,
+    &#34;/v1alpha1/upload-form&#34;,
+}</pre>
+			
+				<p>
+SyncUploadPaths are paths to POST CDI uploads
+</p>
+
+				<pre>var <span id="SyncUploadPaths">SyncUploadPaths</span> = []<a href="http://localhost:6060/pkg/builtin/#string">string</a>{
+    <a href="index.html#UploadPathSync">UploadPathSync</a>,
+    &#34;/v1alpha1/upload&#34;,
+}</pre>
+			
+		
+		
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

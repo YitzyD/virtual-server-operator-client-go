@@ -1,0 +1,3059 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>importer - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package importer
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/importer"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CleanDir">func CleanDir(dest string) error</a></dd>
+			
+				
+				<dd><a href="index.html#CopyRegistryImage">func CopyRegistryImage(url, destDir, pathPrefix, accessKey, secKey, certDir string, insecureRegistry bool) error</a></dd>
+			
+				
+				<dd><a href="index.html#CopyRegistryImageAll">func CopyRegistryImageAll(url, destDir, pathPrefix, accessKey, secKey, certDir string, insecureRegistry bool) error</a></dd>
+			
+				
+				<dd><a href="index.html#FindMoRef">func FindMoRef(uuid string, sdkURL string) (string, error)</a></dd>
+			
+				
+				<dd><a href="index.html#ParseEndpoint">func ParseEndpoint(endpt string) (*url.URL, error)</a></dd>
+			
+				
+				<dd><a href="index.html#ResizeImage">func ResizeImage(dataFile, imageSize string, totalTargetSpace int64) error</a></dd>
+			
+				
+				<dd><a href="index.html#WaitForNbd">func WaitForNbd(pidfile string) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#AsyncUploadDataSource">type AsyncUploadDataSource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAsyncUploadDataSource">func NewAsyncUploadDataSource(stream io.ReadCloser) *AsyncUploadDataSource</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AsyncUploadDataSource.Close">func (aud *AsyncUploadDataSource) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AsyncUploadDataSource.GetResumePhase">func (aud *AsyncUploadDataSource) GetResumePhase() ProcessingPhase</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AsyncUploadDataSource.GetURL">func (aud *AsyncUploadDataSource) GetURL() *url.URL</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AsyncUploadDataSource.Info">func (aud *AsyncUploadDataSource) Info() (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AsyncUploadDataSource.Transfer">func (aud *AsyncUploadDataSource) Transfer(path string) (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AsyncUploadDataSource.TransferFile">func (aud *AsyncUploadDataSource) TransferFile(fileName string) (ProcessingPhase, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConnectionInterface">type ConnectionInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ConnectionWrapper">type ConnectionWrapper</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConnectionWrapper.Close">func (wrapper *ConnectionWrapper) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConnectionWrapper.SystemService">func (wrapper *ConnectionWrapper) SystemService() SystemServiceInteface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DataProcessor">type DataProcessor</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewDataProcessor">func NewDataProcessor(dataSource DataSourceInterface, dataFile, dataDir, scratchDataDir, requestImageSize string, filesystemOverhead float64) *DataProcessor</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DataProcessor.ProcessData">func (dp *DataProcessor) ProcessData() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DataProcessor.ProcessDataResume">func (dp *DataProcessor) ProcessDataResume() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DataProcessor.ProcessDataWithPause">func (dp *DataProcessor) ProcessDataWithPause() error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DataSourceInterface">type DataSourceInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DiskService">type DiskService</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DiskService.Get">func (service *DiskService) Get() DiskServiceGetInterface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DiskServiceGet">type DiskServiceGet</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DiskServiceGet.Send">func (service *DiskServiceGet) Send() (DiskServiceResponseInterface, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DiskServiceGetInterface">type DiskServiceGetInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DiskServiceGetResponseInterface">type DiskServiceGetResponseInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DiskServiceInterface">type DiskServiceInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DiskServiceResponse">type DiskServiceResponse</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DiskServiceResponse.Disk">func (service *DiskServiceResponse) Disk() (*ovirtsdk4.Disk, bool)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DiskServiceResponseInterface">type DiskServiceResponseInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DisksService">type DisksService</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DisksService.DiskService">func (service *DisksService) DiskService(id string) DiskServiceInterface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DisksServiceInterface">type DisksServiceInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#FormatReaders">type FormatReaders</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewFormatReaders">func NewFormatReaders(stream io.ReadCloser, total uint64) (*FormatReaders, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FormatReaders.Close">func (fr *FormatReaders) Close() (rtnerr error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FormatReaders.StartProgressUpdate">func (fr *FormatReaders) StartProgressUpdate()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FormatReaders.TopReader">func (fr *FormatReaders) TopReader() io.ReadCloser</a></dd>
+				
+			
+				
+				<dd><a href="index.html#HTTPDataSource">type HTTPDataSource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewHTTPDataSource">func NewHTTPDataSource(endpoint, accessKey, secKey, certDir string, contentType cdiv1.DataVolumeContentType) (*HTTPDataSource, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#HTTPDataSource.Close">func (hs *HTTPDataSource) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#HTTPDataSource.GetURL">func (hs *HTTPDataSource) GetURL() *url.URL</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#HTTPDataSource.Info">func (hs *HTTPDataSource) Info() (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#HTTPDataSource.Transfer">func (hs *HTTPDataSource) Transfer(path string) (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#HTTPDataSource.TransferFile">func (hs *HTTPDataSource) TransferFile(fileName string) (ProcessingPhase, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImageTransferService">type ImageTransferService</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransferService.Finalize">func (service *ImageTransferService) Finalize() ImageTransferServiceFinalizeRequestInterface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImageTransferServiceAddInterface">type ImageTransferServiceAddInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ImageTransferServiceFinalizeRequest">type ImageTransferServiceFinalizeRequest</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransferServiceFinalizeRequest.Send">func (service *ImageTransferServiceFinalizeRequest) Send() (ImageTransferServiceFinalizeResponseInterface, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImageTransferServiceFinalizeRequestInterface">type ImageTransferServiceFinalizeRequestInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ImageTransferServiceFinalizeResponse">type ImageTransferServiceFinalizeResponse</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ImageTransferServiceFinalizeResponseInterface">type ImageTransferServiceFinalizeResponseInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ImageTransferServiceInterface">type ImageTransferServiceInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ImageTransfersService">type ImageTransfersService</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransfersService.Add">func (service *ImageTransfersService) Add() ImageTransferServiceAddInterface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransfersService.ImageTransferService">func (service *ImageTransfersService) ImageTransferService(id string) ImageTransferServiceInterface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImageTransfersServiceAdd">type ImageTransfersServiceAdd</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransfersServiceAdd.Send">func (service *ImageTransfersServiceAdd) Send() (*ovirtsdk4.ImageTransfersServiceAddResponse, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImageTransfersServiceAddResponse">type ImageTransfersServiceAddResponse</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransfersServiceAddResponse.ImageTransfer">func (service *ImageTransfersServiceAddResponse) ImageTransfer() (*ovirtsdk4.ImageTransfer, bool)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImageTransfersServiceAddResponseInterface">type ImageTransfersServiceAddResponseInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ImageTransfersServiceInterface">type ImageTransfersServiceInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ImageTransfersServiceResponse">type ImageTransfersServiceResponse</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransfersServiceResponse.ImageTransfer">func (service *ImageTransfersServiceResponse) ImageTransfer(imageTransfer *ovirtsdk4.ImageTransfer) *ovirtsdk4.ImageTransfersServiceAddRequest</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageTransfersServiceResponse.Send">func (service *ImageTransfersServiceResponse) Send() (ImageTransfersServiceAddResponseInterface, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImageioDataSource">type ImageioDataSource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewImageioDataSource">func NewImageioDataSource(endpoint string, accessKey string, secKey string, certDir string, diskID string) (*ImageioDataSource, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageioDataSource.Close">func (is *ImageioDataSource) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageioDataSource.GetURL">func (is *ImageioDataSource) GetURL() *url.URL</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageioDataSource.Info">func (is *ImageioDataSource) Info() (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageioDataSource.Transfer">func (is *ImageioDataSource) Transfer(path string) (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImageioDataSource.TransferFile">func (is *ImageioDataSource) TransferFile(fileName string) (ProcessingPhase, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#NbdOperations">type NbdOperations</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ProcessingPhase">type ProcessingPhase</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RegistryDataSource">type RegistryDataSource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewRegistryDataSource">func NewRegistryDataSource(endpoint, accessKey, secKey, certDir string, insecureTLS bool) *RegistryDataSource</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RegistryDataSource.Close">func (rd *RegistryDataSource) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RegistryDataSource.GetURL">func (rd *RegistryDataSource) GetURL() *url.URL</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RegistryDataSource.Info">func (rd *RegistryDataSource) Info() (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RegistryDataSource.Transfer">func (rd *RegistryDataSource) Transfer(path string) (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RegistryDataSource.TransferFile">func (rd *RegistryDataSource) TransferFile(fileName string) (ProcessingPhase, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ResumableDataSource">type ResumableDataSource</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#S3Client">type S3Client</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#S3DataSource">type S3DataSource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewS3DataSource">func NewS3DataSource(endpoint, accessKey, secKey string) (*S3DataSource, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#S3DataSource.Close">func (sd *S3DataSource) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#S3DataSource.GetURL">func (sd *S3DataSource) GetURL() *url.URL</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#S3DataSource.Info">func (sd *S3DataSource) Info() (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#S3DataSource.Transfer">func (sd *S3DataSource) Transfer(path string) (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#S3DataSource.TransferFile">func (sd *S3DataSource) TransferFile(fileName string) (ProcessingPhase, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#SystemService">type SystemService</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SystemService.DisksService">func (service *SystemService) DisksService() DisksServiceInterface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SystemService.ImageTransfersService">func (service *SystemService) ImageTransfersService() ImageTransfersServiceInterface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#SystemServiceInteface">type SystemServiceInteface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UploadDataSource">type UploadDataSource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewUploadDataSource">func NewUploadDataSource(stream io.ReadCloser) *UploadDataSource</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadDataSource.Close">func (ud *UploadDataSource) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadDataSource.GetURL">func (ud *UploadDataSource) GetURL() *url.URL</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadDataSource.Info">func (ud *UploadDataSource) Info() (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadDataSource.Transfer">func (ud *UploadDataSource) Transfer(path string) (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadDataSource.TransferFile">func (ud *UploadDataSource) TransferFile(fileName string) (ProcessingPhase, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#VDDKDataSink">type VDDKDataSink</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#VDDKDataSource">type VDDKDataSource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewVDDKDataSource">func NewVDDKDataSource(endpoint string, accessKey string, secKey string, thumbprint string, uuid string, backingFile string) (*VDDKDataSource, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VDDKDataSource.Close">func (vs *VDDKDataSource) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VDDKDataSource.GetURL">func (vs *VDDKDataSource) GetURL() *url.URL</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VDDKDataSource.Info">func (vs *VDDKDataSource) Info() (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VDDKDataSource.Transfer">func (vs *VDDKDataSource) Transfer(path string) (ProcessingPhase, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VDDKDataSource.TransferFile">func (vs *VDDKDataSource) TransferFile(fileName string) (ProcessingPhase, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#VDDKFileSink">type VDDKFileSink</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VDDKFileSink.Close">func (sink *VDDKFileSink) Close()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#VDDKFileSink.Write">func (sink *VDDKFileSink) Write(buf []byte) (int, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ValidationSizeError">type ValidationSizeError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ValidationSizeError.Error">func (e ValidationSizeError) Error() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go">data-processor.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/format-readers.go">format-readers.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go">http-datasource.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go">imageio-datasource.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go">registry-datasource.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go">s3-datasource.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/transport.go">transport.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go">upload-datasource.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/util.go">util.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go">vddk-datasource.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+ErrInvalidPath indicates that the path is invalid.
+</p>
+
+				<pre>var <span id="ErrInvalidPath">ErrInvalidPath</span> = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;invalid transfer path&#34;)</pre>
+			
+				<p>
+ErrRequiresScratchSpace indicates that we require scratch space.
+</p>
+
+				<pre>var <span id="ErrRequiresScratchSpace">ErrRequiresScratchSpace</span> = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;scratch space required and none found&#34;)</pre>
+			
+		
+		
+			
+			
+			<h2 id="CleanDir">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/util.go?s=790:822#L20">CleanDir</a>
+				<a class="permalink" href="index.html#CleanDir">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CleanDir(dest <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+CleanDir cleans the contents of a directory including its sub directories, but does NOT remove the
+directory itself.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CopyRegistryImage">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/transport.go?s=6747:6859#L230">CopyRegistryImage</a>
+				<a class="permalink" href="index.html#CopyRegistryImage">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CopyRegistryImage(url, destDir, pathPrefix, accessKey, secKey, certDir <a href="http://localhost:6060/pkg/builtin/#string">string</a>, insecureRegistry <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+CopyRegistryImage download image from registry with docker image API. It will extract first file under the pathPrefix
+url: source registry url.
+destDir: the scratch space destination.
+pathPrefix: path to extract files from.
+accessKey: accessKey for the registry described in url.
+secKey: secretKey for the registry described in url.
+certDir: directory public CA keys are stored for registry identity verification
+insecureRegistry: boolean if true will allow insecure registries.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CopyRegistryImageAll">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/transport.go?s=7474:7589#L242">CopyRegistryImageAll</a>
+				<a class="permalink" href="index.html#CopyRegistryImageAll">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CopyRegistryImageAll(url, destDir, pathPrefix, accessKey, secKey, certDir <a href="http://localhost:6060/pkg/builtin/#string">string</a>, insecureRegistry <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+CopyRegistryImageAll download image from registry with docker image API. It will extract all files under the pathPrefix
+url: source registry url.
+destDir: the scratch space destination.
+pathPrefix: path to extract files from.
+accessKey: accessKey for the registry described in url.
+secKey: secretKey for the registry described in url.
+certDir: directory public CA keys are stored for registry identity verification
+insecureRegistry: boolean if true will allow insecure registries.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="FindMoRef">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=3182:3240#L111">FindMoRef</a>
+				<a class="permalink" href="index.html#FindMoRef">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func FindMoRef(uuid <a href="http://localhost:6060/pkg/builtin/#string">string</a>, sdkURL <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+FindMoRef takes the UUID of the VM to migrate and finds its MOref from the given VMware URL.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ParseEndpoint">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/util.go?s=301:351#L7">ParseEndpoint</a>
+				<a class="permalink" href="index.html#ParseEndpoint">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ParseEndpoint(endpt <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ParseEndpoint parses the required endpoint and return the url struct.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ResizeImage">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=10869:10943#L261">ResizeImage</a>
+				<a class="permalink" href="index.html#ResizeImage">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ResizeImage(dataFile, imageSize <a href="http://localhost:6060/pkg/builtin/#string">string</a>, totalTargetSpace <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+ResizeImage resizes the images to match the requested size. Sometimes provisioners misbehave and the available space
+is not the same as the requested space. For those situations we compare the available space to the requested space and
+use the smallest of the two values.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="WaitForNbd">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=4835:4872#L165">WaitForNbd</a>
+				<a class="permalink" href="index.html#WaitForNbd">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func WaitForNbd(pidfile <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+WaitForNbd waits for nbdkit to start by watching for the existence of the given PID file.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="AsyncUploadDataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=3096:3293#L87">AsyncUploadDataSource</a>
+				<a class="permalink" href="index.html#AsyncUploadDataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+AsyncUploadDataSource is an asynchronouse version of an upload data source, that returns finished phase instead
+of going to post upload processing phases.
+</p>
+
+			<pre>type AsyncUploadDataSource struct {
+
+    <span class="comment">// Next Phase indicates what the next Processing Phase should be after the transfer completes.</span>
+<span id="AsyncUploadDataSource.ResumePhase"></span>    ResumePhase <a href="index.html#ProcessingPhase">ProcessingPhase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewAsyncUploadDataSource">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=3369:3443#L94">NewAsyncUploadDataSource</a>
+					<a class="permalink" href="index.html#NewAsyncUploadDataSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAsyncUploadDataSource(stream <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadCloser">ReadCloser</a>) *<a href="index.html#AsyncUploadDataSource">AsyncUploadDataSource</a></pre>
+				<p>
+NewAsyncUploadDataSource creates a new instance of an UploadDataSource
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="AsyncUploadDataSource.Close">func (*AsyncUploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=5066:5113#L142">Close</a>
+					<a class="permalink" href="index.html#AsyncUploadDataSource.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (aud *<a href="index.html#AsyncUploadDataSource">AsyncUploadDataSource</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close closes any readers or other open resources.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AsyncUploadDataSource.GetResumePhase">func (*AsyncUploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=5401:5467#L152">GetResumePhase</a>
+					<a class="permalink" href="index.html#AsyncUploadDataSource.GetResumePhase">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (aud *<a href="index.html#AsyncUploadDataSource">AsyncUploadDataSource</a>) GetResumePhase() <a href="index.html#ProcessingPhase">ProcessingPhase</a></pre>
+				<p>
+GetResumePhase returns the next phase to process when resuming
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AsyncUploadDataSource.GetURL">func (*AsyncUploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=5240:5291#L147">GetURL</a>
+					<a class="permalink" href="index.html#AsyncUploadDataSource.GetURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (aud *<a href="index.html#AsyncUploadDataSource">AsyncUploadDataSource</a>) GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+				<p>
+GetURL returns the url that the data processor can use when converting the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AsyncUploadDataSource.Info">func (*AsyncUploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=3643:3708#L104">Info</a>
+					<a class="permalink" href="index.html#AsyncUploadDataSource.Info">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (aud *<a href="index.html#AsyncUploadDataSource">AsyncUploadDataSource</a>) Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Info is called to get initial information about the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AsyncUploadDataSource.Transfer">func (*AsyncUploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=3832:3912#L109">Transfer</a>
+					<a class="permalink" href="index.html#AsyncUploadDataSource.Transfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (aud *<a href="index.html#AsyncUploadDataSource">AsyncUploadDataSource</a>) Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Transfer is called to transfer the data from the source to the passed in path.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="AsyncUploadDataSource.TransferFile">func (*AsyncUploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=4577:4665#L130">TransferFile</a>
+					<a class="permalink" href="index.html#AsyncUploadDataSource.TransferFile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (aud *<a href="index.html#AsyncUploadDataSource">AsyncUploadDataSource</a>) TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TransferFile is called to transfer the data from the source to the passed in file.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConnectionInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=9713:9805#L320">ConnectionInterface</a>
+				<a class="permalink" href="index.html#ConnectionInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ConnectionInterface defines connection methods
+</p>
+
+			<pre>type ConnectionInterface interface {
+    SystemService() <a href="index.html#SystemServiceInteface">SystemServiceInteface</a>
+    Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ConnectionWrapper">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=11873:11934#L388">ConnectionWrapper</a>
+				<a class="permalink" href="index.html#ConnectionWrapper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ConnectionWrapper wraps ovirt connection
+</p>
+
+			<pre>type ConnectionWrapper struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConnectionWrapper.Close">func (*ConnectionWrapper) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=16552:16599#L553">Close</a>
+					<a class="permalink" href="index.html#ConnectionWrapper.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (wrapper *<a href="index.html#ConnectionWrapper">ConnectionWrapper</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close closes the connection to ovirt
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ConnectionWrapper.SystemService">func (*ConnectionWrapper) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=16371:16442#L546">SystemService</a>
+					<a class="permalink" href="index.html#ConnectionWrapper.SystemService">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (wrapper *<a href="index.html#ConnectionWrapper">ConnectionWrapper</a>) SystemService() <a href="index.html#SystemServiceInteface">SystemServiceInteface</a></pre>
+				<p>
+SystemService returns system service
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DataProcessor">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=4367:5145#L90">DataProcessor</a>
+				<a class="permalink" href="index.html#DataProcessor">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DataProcessor holds the fields needed to process data from a data provider.
+</p>
+
+			<pre>type DataProcessor struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewDataProcessor">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=5244:5400#L110">NewDataProcessor</a>
+					<a class="permalink" href="index.html#NewDataProcessor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDataProcessor(dataSource <a href="index.html#DataSourceInterface">DataSourceInterface</a>, dataFile, dataDir, scratchDataDir, requestImageSize <a href="http://localhost:6060/pkg/builtin/#string">string</a>, filesystemOverhead <a href="http://localhost:6060/pkg/builtin/#float64">float64</a>) *<a href="index.html#DataProcessor">DataProcessor</a></pre>
+				<p>
+NewDataProcessor create a new instance of a data processor using the passed in data provider.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="DataProcessor.ProcessData">func (*DataProcessor) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=5857:5901#L126">ProcessData</a>
+					<a class="permalink" href="index.html#DataProcessor.ProcessData">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (dp *<a href="index.html#DataProcessor">DataProcessor</a>) ProcessData() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+ProcessData is the main synchronous processing loop
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DataProcessor.ProcessDataResume">func (*DataProcessor) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=6774:6824#L146">ProcessDataResume</a>
+					<a class="permalink" href="index.html#DataProcessor.ProcessDataResume">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (dp *<a href="index.html#DataProcessor">DataProcessor</a>) ProcessDataResume() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+ProcessDataResume Resume a paused processor, assumes the provided data source is ResumableDataSource
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DataProcessor.ProcessDataWithPause">func (*DataProcessor) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=7131:7184#L157">ProcessDataWithPause</a>
+					<a class="permalink" href="index.html#DataProcessor.ProcessDataWithPause">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (dp *<a href="index.html#DataProcessor">DataProcessor</a>) ProcessDataWithPause() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+ProcessDataWithPause is the main processing loop.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DataSourceInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=3527:4107#L70">DataSourceInterface</a>
+				<a class="permalink" href="index.html#DataSourceInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DataSourceInterface is the interface all data sources should implement.
+</p>
+
+			<pre>type DataSourceInterface interface {
+    <span class="comment">// Info is called to get initial information about the data.</span>
+    Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <span class="comment">// Transfer is called to transfer the data from the source to the path passed in.</span>
+    Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <span class="comment">// TransferFile is called to transfer the data from the source to the file passed in.</span>
+    TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <span class="comment">// Geturl returns the url that the data processor can use when converting the data.</span>
+    GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>
+    <span class="comment">// Close closes any readers or other open resources.</span>
+    Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DiskService">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12182:12237#L403">DiskService</a>
+				<a class="permalink" href="index.html#DiskService">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DiskService wraps ovirt disk service
+</p>
+
+			<pre>type DiskService struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DiskService.Get">func (*DiskService) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=15210:15267#L504">Get</a>
+					<a class="permalink" href="index.html#DiskService.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#DiskService">DiskService</a>) Get() <a href="index.html#DiskServiceGetInterface">DiskServiceGetInterface</a></pre>
+				<p>
+Get returns get service
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DiskServiceGet">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12286:12354#L408">DiskServiceGet</a>
+				<a class="permalink" href="index.html#DiskServiceGet">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DiskServiceGet wraps ovirt disk get service
+</p>
+
+			<pre>type DiskServiceGet struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DiskServiceGet.Send">func (*DiskServiceGet) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=15018:15093#L496">Send</a>
+					<a class="permalink" href="index.html#DiskServiceGet.Send">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#DiskServiceGet">DiskServiceGet</a>) Send() (<a href="index.html#DiskServiceResponseInterface">DiskServiceResponseInterface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Send returns disk get response
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DiskServiceGetInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=10111:10199#L336">DiskServiceGetInterface</a>
+				<a class="permalink" href="index.html#DiskServiceGetInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DiskServiceGetInterface defines service methods
+</p>
+
+			<pre>type DiskServiceGetInterface interface {
+    Send() (<a href="index.html#DiskServiceResponseInterface">DiskServiceResponseInterface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DiskServiceGetResponseInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=10260:10342#L341">DiskServiceGetResponseInterface</a>
+				<a class="permalink" href="index.html#DiskServiceGetResponseInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DiskServiceGetResponseInterface defines service methods
+</p>
+
+			<pre>type DiskServiceGetResponseInterface interface {
+    Disk() (*<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#Disk">Disk</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DiskServiceInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=9988:10058#L331">DiskServiceInterface</a>
+				<a class="permalink" href="index.html#DiskServiceInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DiskServiceInterface defines service methods
+</p>
+
+			<pre>type DiskServiceInterface interface {
+    Get() <a href="index.html#DiskServiceGetInterface">DiskServiceGetInterface</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DiskServiceResponse">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12412:12486#L413">DiskServiceResponse</a>
+				<a class="permalink" href="index.html#DiskServiceResponse">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DiskServiceResponse wraps ovirt response get service
+</p>
+
+			<pre>type DiskServiceResponse struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DiskServiceResponse.Disk">func (*DiskServiceResponse) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=14215:14281#L470">Disk</a>
+					<a class="permalink" href="index.html#DiskServiceResponse.Disk">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#DiskServiceResponse">DiskServiceResponse</a>) Disk() (*<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#Disk">Disk</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Disk returns disk struct
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DiskServiceResponseInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=11748:11827#L383">DiskServiceResponseInterface</a>
+				<a class="permalink" href="index.html#DiskServiceResponseInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DiskServiceResponseInterface defines service methods
+</p>
+
+			<pre>type DiskServiceResponseInterface interface {
+    Disk() (*<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#Disk">Disk</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DisksService">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12083:12140#L398">DisksService</a>
+				<a class="permalink" href="index.html#DisksService">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DisksService wraps ovirt disks service
+</p>
+
+			<pre>type DisksService struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DisksService.DiskService">func (*DisksService) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=15363:15435#L511">DiskService</a>
+					<a class="permalink" href="index.html#DisksService.DiskService">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#DisksService">DisksService</a>) DiskService(id <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#DiskServiceInterface">DiskServiceInterface</a></pre>
+				<p>
+DiskService returns disk service
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DisksServiceInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=9856:9938#L326">DisksServiceInterface</a>
+				<a class="permalink" href="index.html#DisksServiceInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DisksServiceInterface defines service methods
+</p>
+
+			<pre>type DisksServiceInterface interface {
+    DiskService(<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#DiskServiceInterface">DiskServiceInterface</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="FormatReaders">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/format-readers.go?s=1825:2013#L60">FormatReaders</a>
+				<a class="permalink" href="index.html#FormatReaders">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FormatReaders contains the stack of readers needed to get information from the input stream (io.ReadCloser)
+</p>
+
+			<pre>type FormatReaders struct {
+<span id="FormatReaders.Convert"></span>    Convert  <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="FormatReaders.Archived"></span>    Archived <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewFormatReaders">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/format-readers.go?s=2306:2387#L83">NewFormatReaders</a>
+					<a class="permalink" href="index.html#NewFormatReaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewFormatReaders(stream <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadCloser">ReadCloser</a>, total <a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a>) (*<a href="index.html#FormatReaders">FormatReaders</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewFormatReaders creates a new instance of FormatReaders using the input stream and content type passed in.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="FormatReaders.Close">func (*FormatReaders) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/format-readers.go?s=7840:7887#L243">Close</a>
+					<a class="permalink" href="index.html#FormatReaders.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (fr *<a href="index.html#FormatReaders">FormatReaders</a>) Close() (rtnerr <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Close Readers in reverse order.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FormatReaders.StartProgressUpdate">func (*FormatReaders) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/format-readers.go?s=8167:8213#L255">StartProgressUpdate</a>
+					<a class="permalink" href="index.html#FormatReaders.StartProgressUpdate">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (fr *<a href="index.html#FormatReaders">FormatReaders</a>) StartProgressUpdate()</pre>
+				<p>
+StartProgressUpdate starts the go routine to automatically update the progress on a set interval.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FormatReaders.TopReader">func (*FormatReaders) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/format-readers.go?s=4213:4263#L143">TopReader</a>
+					<a class="permalink" href="index.html#FormatReaders.TopReader">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (fr *<a href="index.html#FormatReaders">FormatReaders</a>) TopReader() <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadCloser">ReadCloser</a></pre>
+				<p>
+TopReader return the top-level io.ReadCloser from the receiver Reader &#34;stack&#34;.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="HTTPDataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go?s=1542:2263#L44">HTTPDataSource</a>
+				<a class="permalink" href="index.html#HTTPDataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+HTTPDataSource is the data provider for http(s) endpoints.
+Sequence of phases:
+1a. Info -&gt; Convert (In Info phase the format readers are configured), if the source Reader image is not archived, and no custom CA is used, and can be converted by QEMU-IMG (RAW/QCOW2)
+1b. Info -&gt; TransferArchive if the content type is archive
+1c. Info -&gt; Transfer in all other cases.
+2a. Transfer -&gt; Process if content type is kube virt
+2b. Transfer -&gt; Complete if content type is archive (Transfer is called with the target instead of the scratch space). Non block PVCs only.
+3. Process -&gt; Convert
+</p>
+
+			<pre>type HTTPDataSource struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewHTTPDataSource">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go?s=2336:2469#L66">NewHTTPDataSource</a>
+					<a class="permalink" href="index.html#NewHTTPDataSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewHTTPDataSource(endpoint, accessKey, secKey, certDir <a href="http://localhost:6060/pkg/builtin/#string">string</a>, contentType <a href="../apis/core/v1beta1/index.html">cdiv1</a>.<a href="../apis/core/v1beta1/index.html#DataVolumeContentType">DataVolumeContentType</a>) (*<a href="index.html#HTTPDataSource">HTTPDataSource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewHTTPDataSource creates a new instance of the http data provider.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="HTTPDataSource.Close">func (*HTTPDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go?s=5895:5934#L163">Close</a>
+					<a class="permalink" href="index.html#HTTPDataSource.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (hs *<a href="index.html#HTTPDataSource">HTTPDataSource</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close all readers.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="HTTPDataSource.GetURL">func (*HTTPDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go?s=5809:5852#L158">GetURL</a>
+					<a class="permalink" href="index.html#HTTPDataSource.GetURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (hs *<a href="index.html#HTTPDataSource">HTTPDataSource</a>) GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+				<p>
+GetURL returns the URI that the data processor can use when converting the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="HTTPDataSource.Info">func (*HTTPDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go?s=3476:3533#L98">Info</a>
+					<a class="permalink" href="index.html#HTTPDataSource.Info">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (hs *<a href="index.html#HTTPDataSource">HTTPDataSource</a>) Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Info is called to get initial information about the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="HTTPDataSource.Transfer">func (*HTTPDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go?s=4426:4498#L122">Transfer</a>
+					<a class="permalink" href="index.html#HTTPDataSource.Transfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (hs *<a href="index.html#HTTPDataSource">HTTPDataSource</a>) Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Transfer is called to transfer the data from the source to a scratch location.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="HTTPDataSource.TransferFile">func (*HTTPDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/http-datasource.go?s=5451:5531#L148">TransferFile</a>
+					<a class="permalink" href="index.html#HTTPDataSource.TransferFile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (hs *<a href="index.html#HTTPDataSource">HTTPDataSource</a>) TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TransferFile is called to transfer the data from the source to the passed in file.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImageTransferService">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12672:12745#L423">ImageTransferService</a>
+				<a class="permalink" href="index.html#ImageTransferService">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransferService wraps ovirt transfer service
+</p>
+
+			<pre>type ImageTransferService struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ImageTransferService.Finalize">func (*ImageTransferService) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=16153:16245#L539">Finalize</a>
+					<a class="permalink" href="index.html#ImageTransferService.Finalize">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransferService">ImageTransferService</a>) Finalize() <a href="index.html#ImageTransferServiceFinalizeRequestInterface">ImageTransferServiceFinalizeRequestInterface</a></pre>
+				<p>
+Finalize returns image service
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImageTransferServiceAddInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=11301:11509#L372">ImageTransferServiceAddInterface</a>
+				<a class="permalink" href="index.html#ImageTransferServiceAddInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransferServiceAddInterface defines service methods
+</p>
+
+			<pre>type ImageTransferServiceAddInterface interface {
+    ImageTransfer(imageTransfer *<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#ImageTransfer">ImageTransfer</a>) *<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#ImageTransfersServiceAddRequest">ImageTransfersServiceAddRequest</a>
+    Send() (<a href="index.html#ImageTransfersServiceAddResponseInterface">ImageTransfersServiceAddResponseInterface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ImageTransferServiceFinalizeRequest">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=13289:13392#L443">ImageTransferServiceFinalizeRequest</a>
+				<a class="permalink" href="index.html#ImageTransferServiceFinalizeRequest">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransferServiceFinalizeRequest warps finalize request
+</p>
+
+			<pre>type ImageTransferServiceFinalizeRequest struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ImageTransferServiceFinalizeRequest.Send">func (*ImageTransferServiceFinalizeRequest) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=14764:14877#L488">Send</a>
+					<a class="permalink" href="index.html#ImageTransferServiceFinalizeRequest.Send">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransferServiceFinalizeRequest">ImageTransferServiceFinalizeRequest</a>) Send() (<a href="index.html#ImageTransferServiceFinalizeResponseInterface">ImageTransferServiceFinalizeResponseInterface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Send returns disk get response
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImageTransferServiceFinalizeRequestInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=10974:11100#L363">ImageTransferServiceFinalizeRequestInterface</a>
+				<a class="permalink" href="index.html#ImageTransferServiceFinalizeRequestInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransferServiceFinalizeRequestInterface defines service methods
+</p>
+
+			<pre>type ImageTransferServiceFinalizeRequestInterface interface {
+    Send() (<a href="index.html#ImageTransferServiceFinalizeResponseInterface">ImageTransferServiceFinalizeResponseInterface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ImageTransferServiceFinalizeResponse">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=13458:13563#L448">ImageTransferServiceFinalizeResponse</a>
+				<a class="permalink" href="index.html#ImageTransferServiceFinalizeResponse">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransferServiceFinalizeResponse warps finalize response
+</p>
+
+			<pre>type ImageTransferServiceFinalizeResponse struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ImageTransferServiceFinalizeResponseInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=11175:11239#L368">ImageTransferServiceFinalizeResponseInterface</a>
+				<a class="permalink" href="index.html#ImageTransferServiceFinalizeResponseInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransferServiceFinalizeResponseInterface defines service methods
+</p>
+
+			<pre>type ImageTransferServiceFinalizeResponseInterface interface {
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ImageTransferServiceInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=10795:10900#L358">ImageTransferServiceInterface</a>
+				<a class="permalink" href="index.html#ImageTransferServiceInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransferServiceInterface defines service methods
+</p>
+
+			<pre>type ImageTransferServiceInterface interface {
+    Finalize() <a href="index.html#ImageTransferServiceFinalizeRequestInterface">ImageTransferServiceFinalizeRequestInterface</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ImageTransfersService">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12542:12617#L418">ImageTransfersService</a>
+				<a class="permalink" href="index.html#ImageTransfersService">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransfersService wraps ovirt transfer service
+</p>
+
+			<pre>type ImageTransfersService struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ImageTransfersService.Add">func (*ImageTransfersService) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=14041:14117#L463">Add</a>
+					<a class="permalink" href="index.html#ImageTransfersService.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransfersService">ImageTransfersService</a>) Add() <a href="index.html#ImageTransferServiceAddInterface">ImageTransferServiceAddInterface</a></pre>
+				<p>
+Add returns image transfer add request
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ImageTransfersService.ImageTransferService">func (*ImageTransfersService) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=15935:16034#L532">ImageTransferService</a>
+					<a class="permalink" href="index.html#ImageTransfersService.ImageTransferService">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransfersService">ImageTransfersService</a>) ImageTransferService(id <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#ImageTransferServiceInterface">ImageTransferServiceInterface</a></pre>
+				<p>
+ImageTransferService returns image service
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImageTransfersServiceAdd">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12808:12896#L428">ImageTransfersServiceAdd</a>
+				<a class="permalink" href="index.html#ImageTransfersServiceAdd">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransfersServiceAdd wraps ovirt add transfer service
+</p>
+
+			<pre>type ImageTransfersServiceAdd struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ImageTransfersServiceAdd.Send">func (*ImageTransfersServiceAdd) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=13866:13966#L458">Send</a>
+					<a class="permalink" href="index.html#ImageTransfersServiceAdd.Send">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransfersServiceAdd">ImageTransfersServiceAdd</a>) Send() (*<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#ImageTransfersServiceAddResponse">ImageTransfersServiceAddResponse</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Send return image transfer add response
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImageTransfersServiceAddResponse">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=13128:13225#L438">ImageTransfersServiceAddResponse</a>
+				<a class="permalink" href="index.html#ImageTransfersServiceAddResponse">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransfersServiceAddResponse wraps ovirt add transfer service
+</p>
+
+			<pre>type ImageTransfersServiceAddResponse struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ImageTransfersServiceAddResponse.ImageTransfer">func (*ImageTransfersServiceAddResponse) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=14351:14448#L475">ImageTransfer</a>
+					<a class="permalink" href="index.html#ImageTransfersServiceAddResponse.ImageTransfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransfersServiceAddResponse">ImageTransfersServiceAddResponse</a>) ImageTransfer() (*<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#ImageTransfer">ImageTransfer</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+ImageTransfer returns disk struct
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImageTransfersServiceAddResponseInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=11580:11690#L378">ImageTransfersServiceAddResponseInterface</a>
+				<a class="permalink" href="index.html#ImageTransfersServiceAddResponseInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransfersServiceAddResponseInterface defines service methods
+</p>
+
+			<pre>type ImageTransfersServiceAddResponseInterface interface {
+    ImageTransfer() (*<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#ImageTransfer">ImageTransfer</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ImageTransfersServiceInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=10587:10736#L352">ImageTransfersServiceInterface</a>
+				<a class="permalink" href="index.html#ImageTransfersServiceInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransfersServiceInterface defines service methods
+</p>
+
+			<pre>type ImageTransfersServiceInterface interface {
+    Add() <a href="index.html#ImageTransferServiceAddInterface">ImageTransferServiceAddInterface</a>
+    ImageTransferService(<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#ImageTransferServiceInterface">ImageTransferServiceInterface</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ImageTransfersServiceResponse">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=12964:13057#L433">ImageTransfersServiceResponse</a>
+				<a class="permalink" href="index.html#ImageTransfersServiceResponse">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageTransfersServiceResponse wraps ovirt add transfer service
+</p>
+
+			<pre>type ImageTransfersServiceResponse struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ImageTransfersServiceResponse.ImageTransfer">func (*ImageTransfersServiceResponse) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=13626:13768#L453">ImageTransfer</a>
+					<a class="permalink" href="index.html#ImageTransfersServiceResponse.ImageTransfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransfersServiceResponse">ImageTransfersServiceResponse</a>) ImageTransfer(imageTransfer *<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#ImageTransfer">ImageTransfer</a>) *<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/">ovirtsdk4</a>.<a href="http://localhost:6060/pkg/github.com/ovirt/go-ovirt/#ImageTransfersServiceAddRequest">ImageTransfersServiceAddRequest</a></pre>
+				<p>
+ImageTransfer sets image transfer and returns add request
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ImageTransfersServiceResponse.Send">func (*ImageTransfersServiceResponse) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=14524:14627#L480">Send</a>
+					<a class="permalink" href="index.html#ImageTransfersServiceResponse.Send">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#ImageTransfersServiceResponse">ImageTransfersServiceResponse</a>) Send() (<a href="index.html#ImageTransfersServiceAddResponseInterface">ImageTransfersServiceAddResponseInterface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Send returns disk get response
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImageioDataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=911:1493#L30">ImageioDataSource</a>
+				<a class="permalink" href="index.html#ImageioDataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImageioDataSource is the data provider for ovirt-imageio.
+</p>
+
+			<pre>type ImageioDataSource struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewImageioDataSource">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=1578:1712#L48">NewImageioDataSource</a>
+					<a class="permalink" href="index.html#NewImageioDataSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewImageioDataSource(endpoint <a href="http://localhost:6060/pkg/builtin/#string">string</a>, accessKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, secKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, certDir <a href="http://localhost:6060/pkg/builtin/#string">string</a>, diskID <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#ImageioDataSource">ImageioDataSource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewImageioDataSource creates a new instance of the ovirt-imageio data provider.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="ImageioDataSource.Close">func (*ImageioDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=3969:4011#L118">Close</a>
+					<a class="permalink" href="index.html#ImageioDataSource.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (is *<a href="index.html#ImageioDataSource">ImageioDataSource</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close all readers.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ImageioDataSource.GetURL">func (*ImageioDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=3880:3926#L113">GetURL</a>
+					<a class="permalink" href="index.html#ImageioDataSource.GetURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (is *<a href="index.html#ImageioDataSource">ImageioDataSource</a>) GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+				<p>
+GetURL returns the URI that the data processor can use when converting the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ImageioDataSource.Info">func (*ImageioDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=2419:2479#L70">Info</a>
+					<a class="permalink" href="index.html#ImageioDataSource.Info">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (is *<a href="index.html#ImageioDataSource">ImageioDataSource</a>) Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Info is called to get initial information about the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ImageioDataSource.Transfer">func (*ImageioDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=2878:2953#L85">Transfer</a>
+					<a class="permalink" href="index.html#ImageioDataSource.Transfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (is *<a href="index.html#ImageioDataSource">ImageioDataSource</a>) Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Transfer is called to transfer the data from the source to a scratch location.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ImageioDataSource.TransferFile">func (*ImageioDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=3519:3602#L103">TransferFile</a>
+					<a class="permalink" href="index.html#ImageioDataSource.TransferFile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (is *<a href="index.html#ImageioDataSource">ImageioDataSource</a>) TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TransferFile is called to transfer the data from the source to the passed in file.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NbdOperations">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=1721:1879#L56">NbdOperations</a>
+				<a class="permalink" href="index.html#NbdOperations">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+NbdOperations provides a mockable interface for the things needed from libnbd.
+</p>
+
+			<pre>type NbdOperations interface {
+    GetSize() (<a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    Pread(buf []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, offset <a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a>, optargs *<a href="http://localhost:6060/pkg/github.com/mrnold/go-libnbd/">libnbd</a>.<a href="http://localhost:6060/pkg/github.com/mrnold/go-libnbd/#PreadOptargs">PreadOptargs</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    Close() *<a href="http://localhost:6060/pkg/github.com/mrnold/go-libnbd/">libnbd</a>.<a href="http://localhost:6060/pkg/github.com/mrnold/go-libnbd/#LibnbdError">LibnbdError</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ProcessingPhase">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=914:941#L26">ProcessingPhase</a>
+				<a class="permalink" href="index.html#ProcessingPhase">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ProcessingPhase is the current phase being processed.
+</p>
+
+			<pre>type ProcessingPhase <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+				
+				<pre>const (
+    <span class="comment">// ProcessingPhaseInfo is the first phase, during this phase the source obtains information needed to determine which phase to go to next.</span>
+    <span id="ProcessingPhaseInfo">ProcessingPhaseInfo</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;Info&#34;
+    <span class="comment">// ProcessingPhaseTransferScratch is the phase in which the data source writes data to the scratch space.</span>
+    <span id="ProcessingPhaseTransferScratch">ProcessingPhaseTransferScratch</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;TransferScratch&#34;
+    <span class="comment">// ProcessingPhaseTransferDataDir is the phase in which the data source writes data directly to the target path without conversion.</span>
+    <span id="ProcessingPhaseTransferDataDir">ProcessingPhaseTransferDataDir</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;TransferDataDir&#34;
+    <span class="comment">// ProcessingPhaseTransferDataFile is the phase in which the data source writes data directly to the target file without conversion.</span>
+    <span id="ProcessingPhaseTransferDataFile">ProcessingPhaseTransferDataFile</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;TransferDataFile&#34;
+    <span class="comment">// ProcessingPhaseValidatePause is the phase in which the data processor should validate and then pause.</span>
+    <span id="ProcessingPhaseValidatePause">ProcessingPhaseValidatePause</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;ValidatePause&#34;
+    <span class="comment">// ProcessingPhaseConvert is the phase in which the data is taken from the url provided by the source, and it is converted to the target RAW disk image format.</span>
+    <span class="comment">// The url can be an http end point or file system end point.</span>
+    <span id="ProcessingPhaseConvert">ProcessingPhaseConvert</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;Convert&#34;
+    <span class="comment">// ProcessingPhaseResize the disk image, this is only needed when the target contains a file system (block device do not need a resize)</span>
+    <span id="ProcessingPhaseResize">ProcessingPhaseResize</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;Resize&#34;
+    <span class="comment">// ProcessingPhaseComplete is the phase where the entire process completed successfully and we can exit gracefully.</span>
+    <span id="ProcessingPhaseComplete">ProcessingPhaseComplete</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;Complete&#34;
+    <span class="comment">// ProcessingPhasePause is the phase where we pause processing and end the loop, and expect something to call the process loop again.</span>
+    <span id="ProcessingPhasePause">ProcessingPhasePause</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;Pause&#34;
+    <span class="comment">// ProcessingPhaseError is the phase in which we encountered an error and need to exit ungracefully.</span>
+    <span id="ProcessingPhaseError">ProcessingPhaseError</span> <a href="index.html#ProcessingPhase">ProcessingPhase</a> = &#34;Error&#34;
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RegistryDataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go?s=1150:1363#L33">RegistryDataSource</a>
+				<a class="permalink" href="index.html#RegistryDataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+RegistryDataSource is the struct containing the information needed to import from a registry data source.
+Sequence of phases:
+1. Info -&gt; Transfer
+2. Transfer -&gt; Convert
+</p>
+
+			<pre>type RegistryDataSource struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewRegistryDataSource">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go?s=1442:1551#L45">NewRegistryDataSource</a>
+					<a class="permalink" href="index.html#NewRegistryDataSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewRegistryDataSource(endpoint, accessKey, secKey, certDir <a href="http://localhost:6060/pkg/builtin/#string">string</a>, insecureTLS <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) *<a href="index.html#RegistryDataSource">RegistryDataSource</a></pre>
+				<p>
+NewRegistryDataSource creates a new instance of the Registry Data Source.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="RegistryDataSource.Close">func (*RegistryDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go?s=3583:3626#L100">Close</a>
+					<a class="permalink" href="index.html#RegistryDataSource.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (rd *<a href="index.html#RegistryDataSource">RegistryDataSource</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close closes any readers or other open resources.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RegistryDataSource.GetURL">func (*RegistryDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go?s=3462:3509#L95">GetURL</a>
+					<a class="permalink" href="index.html#RegistryDataSource.GetURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (rd *<a href="index.html#RegistryDataSource">RegistryDataSource</a>) GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+				<p>
+GetURL returns the url that the data processor can use when converting the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RegistryDataSource.Info">func (*RegistryDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go?s=1825:1886#L56">Info</a>
+					<a class="permalink" href="index.html#RegistryDataSource.Info">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (rd *<a href="index.html#RegistryDataSource">RegistryDataSource</a>) Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Info is called to get initial information about the data. No information available for registry currently.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RegistryDataSource.Transfer">func (*RegistryDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go?s=2029:2105#L61">Transfer</a>
+					<a class="permalink" href="index.html#RegistryDataSource.Transfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (rd *<a href="index.html#RegistryDataSource">RegistryDataSource</a>) Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Transfer is called to transfer the data from the source registry to a temporary location.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RegistryDataSource.TransferFile">func (*RegistryDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/registry-datasource.go?s=3210:3294#L90">TransferFile</a>
+					<a class="permalink" href="index.html#RegistryDataSource.TransferFile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (rd *<a href="index.html#RegistryDataSource">RegistryDataSource</a>) TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TransferFile is called to transfer the data from the source to the passed in file.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ResumableDataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=4193:4286#L84">ResumableDataSource</a>
+				<a class="permalink" href="index.html#ResumableDataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ResumableDataSource is the interface all resumeable data sources should implement
+</p>
+
+			<pre>type ResumableDataSource interface {
+    <a href="index.html#DataSourceInterface">DataSourceInterface</a>
+    GetResumePhase() <a href="index.html#ProcessingPhase">ProcessingPhase</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="S3Client">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=426:519#L15">S3Client</a>
+				<a class="permalink" href="index.html#S3Client">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+S3Client is the interface to the used S3 client.
+</p>
+
+			<pre>type S3Client interface {
+    GetObject(input *<a href="http://localhost:6060/pkg/github.com/aws/aws-sdk-go/service/s3/">s3</a>.<a href="http://localhost:6060/pkg/github.com/aws/aws-sdk-go/service/s3/#GetObjectInput">GetObjectInput</a>) (*<a href="http://localhost:6060/pkg/github.com/aws/aws-sdk-go/service/s3/">s3</a>.<a href="http://localhost:6060/pkg/github.com/aws/aws-sdk-go/service/s3/#GetObjectOutput">GetObjectOutput</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="S3DataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=779:1028#L27">S3DataSource</a>
+				<a class="permalink" href="index.html#S3DataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+S3DataSource is the struct containing the information needed to import from an S3 data source.
+Sequence of phases:
+1. Info -&gt; Transfer
+2. Transfer -&gt; Process
+3. Process -&gt; Convert
+</p>
+
+			<pre>type S3DataSource struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewS3DataSource">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=1092:1171#L43">NewS3DataSource</a>
+					<a class="permalink" href="index.html#NewS3DataSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewS3DataSource(endpoint, accessKey, secKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#S3DataSource">S3DataSource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewS3DataSource creates a new instance of the S3DataSource
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="S3DataSource.Close">func (*S3DataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=3175:3212#L108">Close</a>
+					<a class="permalink" href="index.html#S3DataSource.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sd *<a href="index.html#S3DataSource">S3DataSource</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close closes any readers or other open resources.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="S3DataSource.GetURL">func (*S3DataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=3060:3101#L103">GetURL</a>
+					<a class="permalink" href="index.html#S3DataSource.GetURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sd *<a href="index.html#S3DataSource">S3DataSource</a>) GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+				<p>
+GetURL returns the url that the data processor can use when converting the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="S3DataSource.Info">func (*S3DataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=1590:1645#L61">Info</a>
+					<a class="permalink" href="index.html#S3DataSource.Info">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sd *<a href="index.html#S3DataSource">S3DataSource</a>) Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Info is called to get initial information about the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="S3DataSource.Transfer">func (*S3DataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=2105:2175#L77">Transfer</a>
+					<a class="permalink" href="index.html#S3DataSource.Transfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sd *<a href="index.html#S3DataSource">S3DataSource</a>) Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Transfer is called to transfer the data from the source to a temporary location.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="S3DataSource.TransferFile">func (*S3DataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/s3-datasource.go?s=2738:2816#L94">TransferFile</a>
+					<a class="permalink" href="index.html#S3DataSource.TransferFile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sd *<a href="index.html#S3DataSource">S3DataSource</a>) TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TransferFile is called to transfer the data from the source to the passed in file.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SystemService">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=11980:12039#L393">SystemService</a>
+				<a class="permalink" href="index.html#SystemService">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+SystemService wraps ovirt system service
+</p>
+
+			<pre>type SystemService struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="SystemService.DisksService">func (*SystemService) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=15540:15606#L518">DisksService</a>
+					<a class="permalink" href="index.html#SystemService.DisksService">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#SystemService">SystemService</a>) DisksService() <a href="index.html#DisksServiceInterface">DisksServiceInterface</a></pre>
+				<p>
+DisksService returns disks service
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="SystemService.ImageTransfersService">func (*SystemService) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=15720:15804#L525">ImageTransfersService</a>
+					<a class="permalink" href="index.html#SystemService.ImageTransfersService">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (service *<a href="index.html#SystemService">SystemService</a>) ImageTransfersService() <a href="index.html#ImageTransfersServiceInterface">ImageTransfersServiceInterface</a></pre>
+				<p>
+ImageTransfersService returns image service
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SystemServiceInteface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/imageio-datasource.go?s=10393:10527#L346">SystemServiceInteface</a>
+				<a class="permalink" href="index.html#SystemServiceInteface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+SystemServiceInteface defines service methods
+</p>
+
+			<pre>type SystemServiceInteface interface {
+    DisksService() <a href="index.html#DisksServiceInterface">DisksServiceInterface</a>
+    ImageTransfersService() <a href="index.html#ImageTransfersServiceInterface">ImageTransfersServiceInterface</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UploadDataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=640:805#L9">UploadDataSource</a>
+				<a class="permalink" href="index.html#UploadDataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UploadDataSource contains all the information need to upload data into a data volume.
+Sequence of phases:
+1a. ProcessingPhaseInfo -&gt; ProcessingPhaseTransferScratch (In Info phase the format readers are configured) In case the readers don&#39;t contain a raw file.
+1b. ProcessingPhaseInfo -&gt; ProcessingPhaseTransferDataFile, in the case the readers contain a raw file.
+2a. ProcessingPhaseTransferScratch -&gt; ProcessingPhaseConvert
+2b. ProcessingPhaseTransferDataFile -&gt; ProcessingPhaseResize
+</p>
+
+			<pre>type UploadDataSource struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewUploadDataSource">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=876:940#L19">NewUploadDataSource</a>
+					<a class="permalink" href="index.html#NewUploadDataSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewUploadDataSource(stream <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadCloser">ReadCloser</a>) *<a href="index.html#UploadDataSource">UploadDataSource</a></pre>
+				<p>
+NewUploadDataSource creates a new instance of an UploadDataSource
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="UploadDataSource.Close">func (*UploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=2823:2864#L78">Close</a>
+					<a class="permalink" href="index.html#UploadDataSource.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ud *<a href="index.html#UploadDataSource">UploadDataSource</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close closes any readers or other open resources.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UploadDataSource.GetURL">func (*UploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=2704:2749#L73">GetURL</a>
+					<a class="permalink" href="index.html#UploadDataSource.GetURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ud *<a href="index.html#UploadDataSource">UploadDataSource</a>) GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+				<p>
+GetURL returns the url that the data processor can use when converting the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UploadDataSource.Info">func (*UploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=1055:1114#L26">Info</a>
+					<a class="permalink" href="index.html#UploadDataSource.Info">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ud *<a href="index.html#UploadDataSource">UploadDataSource</a>) Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Info is called to get initial information about the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UploadDataSource.Transfer">func (*UploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=1619:1693#L42">Transfer</a>
+					<a class="permalink" href="index.html#UploadDataSource.Transfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ud *<a href="index.html#UploadDataSource">UploadDataSource</a>) Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Transfer is called to transfer the data from the source to the passed in path.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UploadDataSource.TransferFile">func (*UploadDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/upload-datasource.go?s=2274:2356#L62">TransferFile</a>
+					<a class="permalink" href="index.html#UploadDataSource.TransferFile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ud *<a href="index.html#UploadDataSource">UploadDataSource</a>) TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TransferFile is called to transfer the data from the source to the passed in file.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VDDKDataSink">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=1960:2032#L63">VDDKDataSink</a>
+				<a class="permalink" href="index.html#VDDKDataSink">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VDDKDataSink provides a mockable interface for saving data from the source.
+</p>
+
+			<pre>type VDDKDataSink interface {
+    Write(buf []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    Close()
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="VDDKDataSource">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=2557:2653#L91">VDDKDataSource</a>
+				<a class="permalink" href="index.html#VDDKDataSource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VDDKDataSource is the data provider for vddk.
+</p>
+
+			<pre>type VDDKDataSource struct {
+<span id="VDDKDataSource.Command"></span>    Command   *<a href="http://localhost:6060/pkg/os/exec/">exec</a>.<a href="http://localhost:6060/pkg/os/exec/#Cmd">Cmd</a>
+<span id="VDDKDataSource.NbdSocket"></span>    NbdSocket *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>
+<span id="VDDKDataSource.NbdHandle"></span>    NbdHandle <a href="index.html#NbdOperations">NbdOperations</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewVDDKDataSource">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=5565:5714#L198">NewVDDKDataSource</a>
+					<a class="permalink" href="index.html#NewVDDKDataSource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewVDDKDataSource(endpoint <a href="http://localhost:6060/pkg/builtin/#string">string</a>, accessKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, secKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, thumbprint <a href="http://localhost:6060/pkg/builtin/#string">string</a>, uuid <a href="http://localhost:6060/pkg/builtin/#string">string</a>, backingFile <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#VDDKDataSource">VDDKDataSource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewVDDKDataSource creates a new instance of the vddk data provider.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="VDDKDataSource.Close">func (*VDDKDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=9990:10029#L368">Close</a>
+					<a class="permalink" href="index.html#VDDKDataSource.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vs *<a href="index.html#VDDKDataSource">VDDKDataSource</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close closes any readers or other open resources.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VDDKDataSource.GetURL">func (*VDDKDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=10175:10218#L374">GetURL</a>
+					<a class="permalink" href="index.html#VDDKDataSource.GetURL">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vs *<a href="index.html#VDDKDataSource">VDDKDataSource</a>) GetURL() *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+				<p>
+GetURL returns the url that the data processor can use when converting the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VDDKDataSource.Info">func (*VDDKDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=9617:9674#L357">Info</a>
+					<a class="permalink" href="index.html#VDDKDataSource.Info">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vs *<a href="index.html#VDDKDataSource">VDDKDataSource</a>) Info() (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Info is called to get initial information about the data.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VDDKDataSource.Transfer">func (*VDDKDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=10327:10399#L379">Transfer</a>
+					<a class="permalink" href="index.html#VDDKDataSource.Transfer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vs *<a href="index.html#VDDKDataSource">VDDKDataSource</a>) Transfer(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Transfer is called to transfer the data from the source to the path passed in.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VDDKDataSource.TransferFile">func (*VDDKDataSource) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=10536:10616#L384">TransferFile</a>
+					<a class="permalink" href="index.html#VDDKDataSource.TransferFile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vs *<a href="index.html#VDDKDataSource">VDDKDataSource</a>) TransferFile(fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#ProcessingPhase">ProcessingPhase</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TransferFile is called to transfer the data from the source to the file passed in.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VDDKFileSink">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=2095:2162#L69">VDDKFileSink</a>
+				<a class="permalink" href="index.html#VDDKFileSink">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VDDKFileSink writes the source disk data to a local file.
+</p>
+
+			<pre>type VDDKFileSink struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VDDKFileSink.Close">func (*VDDKFileSink) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=2411:2444#L84">Close</a>
+					<a class="permalink" href="index.html#VDDKFileSink.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sink *<a href="index.html#VDDKFileSink">VDDKFileSink</a>) Close()</pre>
+				<p>
+Close closes the file after a transfer is complete.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VDDKFileSink.Write">func (*VDDKFileSink) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/vddk-datasource.go?s=2164:2220#L74">Write</a>
+					<a class="permalink" href="index.html#VDDKFileSink.Write">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (sink *<a href="index.html#VDDKFileSink">VDDKFileSink</a>) Write(buf []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ValidationSizeError">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=2928:2974#L53">ValidationSizeError</a>
+				<a class="permalink" href="index.html#ValidationSizeError">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ValidationSizeError is an error indication size validation failure.
+</p>
+
+			<pre>type ValidationSizeError struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ValidationSizeError.Error">func (ValidationSizeError) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/importer/data-processor.go?s=2976:3019#L57">Error</a>
+					<a class="permalink" href="index.html#ValidationSizeError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#ValidationSizeError">ValidationSizeError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

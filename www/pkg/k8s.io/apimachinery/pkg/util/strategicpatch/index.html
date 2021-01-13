@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>strategicpatch - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package strategicpatch
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/strategicpatch"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#CreateDeleteDirective">func CreateDeleteDirective(mergeKey string, mergeKeyValue interface{}) map[string]interface{}</a></dd>
+			
+				
+				<dd><a href="index.html#CreateThreeWayMergePatch">func CreateThreeWayMergePatch(original, modified, current []byte, schema LookupPatchMeta, overwrite bool, fns ...mergepatch.PreconditionFunc) ([]byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#CreateTwoWayMergePatch">func CreateTwoWayMergePatch(original, modified []byte, dataStruct interface{}, fns ...mergepatch.PreconditionFunc) ([]byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#CreateTwoWayMergePatchUsingLookupPatchMeta">func CreateTwoWayMergePatchUsingLookupPatchMeta(original, modified []byte, schema LookupPatchMeta, fns ...mergepatch.PreconditionFunc) ([]byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetTagStructTypeOrDie">func GetTagStructTypeOrDie(dataStruct interface{}) reflect.Type</a></dd>
+			
+				
+				<dd><a href="index.html#ItemAddedToModifiedSlice">func ItemAddedToModifiedSlice(original, modified string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#ItemMatchesOriginalAndModifiedSlice">func ItemMatchesOriginalAndModifiedSlice(original, modified string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#ItemRemovedFromModifiedSlice">func ItemRemovedFromModifiedSlice(original, modified string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#MergingMapsHaveConflicts">func MergingMapsHaveConflicts(left, right map[string]interface{}, schema LookupPatchMeta) (bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewKindItem">func NewKindItem(key string, path *openapi.Path) *kindItem</a></dd>
+			
+				
+				<dd><a href="index.html#NewSliceItem">func NewSliceItem(key string, path *openapi.Path) *sliceItem</a></dd>
+			
+				
+				<dd><a href="index.html#StrategicMergePatch">func StrategicMergePatch(original, patch []byte, dataStruct interface{}) ([]byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#StrategicMergePatchUsingLookupPatchMeta">func StrategicMergePatchUsingLookupPatchMeta(original, patch []byte, schema LookupPatchMeta) ([]byte, error)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#DiffOptions">type DiffOptions</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#FieldNotFoundError">type FieldNotFoundError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FieldNotFoundError.Error">func (e FieldNotFoundError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#InvalidTypeError">type InvalidTypeError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InvalidTypeError.Error">func (e InvalidTypeError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#JSONMap">type JSONMap</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CreateTwoWayMergeMapPatch">func CreateTwoWayMergeMapPatch(original, modified JSONMap, dataStruct interface{}, fns ...mergepatch.PreconditionFunc) (JSONMap, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CreateTwoWayMergeMapPatchUsingLookupPatchMeta">func CreateTwoWayMergeMapPatchUsingLookupPatchMeta(original, modified JSONMap, schema LookupPatchMeta, fns ...mergepatch.PreconditionFunc) (JSONMap, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MergeStrategicMergeMapPatchUsingLookupPatchMeta">func MergeStrategicMergeMapPatchUsingLookupPatchMeta(schema LookupPatchMeta, patches ...JSONMap) (JSONMap, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StrategicMergeMapPatch">func StrategicMergeMapPatch(original, patch JSONMap, dataStruct interface{}) (JSONMap, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StrategicMergeMapPatchUsingLookupPatchMeta">func StrategicMergeMapPatchUsingLookupPatchMeta(original, patch JSONMap, schema LookupPatchMeta) (JSONMap, error)</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#LookupPatchItem">type LookupPatchItem</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#LookupPatchMeta">type LookupPatchMeta</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#LookupPatchMetaError">type LookupPatchMetaError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#LookupPatchMetaError.Error">func (e LookupPatchMetaError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#MergeOptions">type MergeOptions</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#PatchMeta">type PatchMeta</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMeta.GetPatchMergeKey">func (pm PatchMeta) GetPatchMergeKey() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMeta.GetPatchStrategies">func (pm PatchMeta) GetPatchStrategies() []string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMeta.SetPatchMergeKey">func (pm PatchMeta) SetPatchMergeKey(pmk string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMeta.SetPatchStrategies">func (pm PatchMeta) SetPatchStrategies(ps []string)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#PatchMetaFromOpenAPI">type PatchMetaFromOpenAPI</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewPatchMetaFromOpenAPI">func NewPatchMetaFromOpenAPI(s openapi.Schema) PatchMetaFromOpenAPI</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMetaFromOpenAPI.LookupPatchMetadataForSlice">func (s PatchMetaFromOpenAPI) LookupPatchMetadataForSlice(key string) (LookupPatchMeta, PatchMeta, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMetaFromOpenAPI.LookupPatchMetadataForStruct">func (s PatchMetaFromOpenAPI) LookupPatchMetadataForStruct(key string) (LookupPatchMeta, PatchMeta, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMetaFromOpenAPI.Name">func (s PatchMetaFromOpenAPI) Name() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#PatchMetaFromStruct">type PatchMetaFromStruct</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewPatchMetaFromStruct">func NewPatchMetaFromStruct(dataStruct interface{}) (PatchMetaFromStruct, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMetaFromStruct.LookupPatchMetadataForSlice">func (s PatchMetaFromStruct) LookupPatchMetadataForSlice(key string) (LookupPatchMeta, PatchMeta, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMetaFromStruct.LookupPatchMetadataForStruct">func (s PatchMetaFromStruct) LookupPatchMetadataForStruct(key string) (LookupPatchMeta, PatchMeta, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PatchMetaFromStruct.Name">func (s PatchMetaFromStruct) Name() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#SortableSliceOfMaps">type SortableSliceOfMaps</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SortableSliceOfMaps.Len">func (ss SortableSliceOfMaps) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SortableSliceOfMaps.Less">func (ss SortableSliceOfMaps) Less(i, j int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SortableSliceOfMaps.Swap">func (ss SortableSliceOfMaps) Swap(i, j int)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#SortableSliceOfScalars">type SortableSliceOfScalars</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SortableSliceOfScalars.Len">func (ss SortableSliceOfScalars) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SortableSliceOfScalars.Less">func (ss SortableSliceOfScalars) Less(i, j int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SortableSliceOfScalars.Swap">func (ss SortableSliceOfScalars) Swap(i, j int)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/errors.go">errors.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go">meta.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go">patch.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/types.go">types.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="CreateDeleteDirective">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=73116:73209#L2094">CreateDeleteDirective</a>
+				<a class="permalink" href="index.html#CreateDeleteDirective">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CreateDeleteDirective(mergeKey <a href="http://localhost:6060/pkg/builtin/#string">string</a>, mergeKeyValue interface{}) map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="CreateThreeWayMergePatch">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=70353:70510#L2010">CreateThreeWayMergePatch</a>
+				<a class="permalink" href="index.html#CreateThreeWayMergePatch">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CreateThreeWayMergePatch(original, modified, current []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, schema <a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, overwrite <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, fns ...<a href="../mergepatch/index.html">mergepatch</a>.<a href="../mergepatch/index.html#PreconditionFunc">PreconditionFunc</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+CreateThreeWayMergePatch reconciles a modified configuration with an original configuration,
+while preserving any changes or deletions made to the original configuration in the interim,
+and not overridden by the current configuration. All three documents must be passed to the
+method as json encoded content. It will return a strategic merge patch, or an error if any
+of the documents is invalid, or if there are any preconditions that fail against the modified
+configuration, or, if overwrite is false and there are conflicts between the modified and current
+configurations. Conflicts are defined as keys changed differently from original to modified
+than from original to current. In other words, a conflict occurs if modified changes any key
+in a way that is different from how it is changed in current (e.g., deleting it, changing its
+value). We also propagate values fields that do not exist in original but are explicitly
+defined in modified.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CreateTwoWayMergePatch">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=3677:3807#L84">CreateTwoWayMergePatch</a>
+				<a class="permalink" href="index.html#CreateTwoWayMergePatch">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CreateTwoWayMergePatch(original, modified []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, dataStruct interface{}, fns ...<a href="../mergepatch/index.html">mergepatch</a>.<a href="../mergepatch/index.html#PreconditionFunc">PreconditionFunc</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+CreateTwoWayMergePatch creates a patch that can be passed to StrategicMergePatch from an original
+document and a modified document, which are passed to the method as json encoded content. It will
+return a patch that yields the modified document when applied to the original document, or an error
+if either of the two documents is invalid.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CreateTwoWayMergePatchUsingLookupPatchMeta">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=3990:4142#L93">CreateTwoWayMergePatchUsingLookupPatchMeta</a>
+				<a class="permalink" href="index.html#CreateTwoWayMergePatchUsingLookupPatchMeta">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CreateTwoWayMergePatchUsingLookupPatchMeta(
+    original, modified []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, schema <a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, fns ...<a href="../mergepatch/index.html">mergepatch</a>.<a href="../mergepatch/index.html#PreconditionFunc">PreconditionFunc</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetTagStructTypeOrDie">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=4280:4343#L133">GetTagStructTypeOrDie</a>
+				<a class="permalink" href="index.html#GetTagStructTypeOrDie">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetTagStructTypeOrDie(dataStruct interface{}) <a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Type">Type</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="ItemAddedToModifiedSlice">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=72818:72879#L2088">ItemAddedToModifiedSlice</a>
+				<a class="permalink" href="index.html#ItemAddedToModifiedSlice">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ItemAddedToModifiedSlice(original, modified <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="ItemMatchesOriginalAndModifiedSlice">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=73010:73082#L2092">ItemMatchesOriginalAndModifiedSlice</a>
+				<a class="permalink" href="index.html#ItemMatchesOriginalAndModifiedSlice">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ItemMatchesOriginalAndModifiedSlice(original, modified <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="ItemRemovedFromModifiedSlice">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=72912:72977#L2090">ItemRemovedFromModifiedSlice</a>
+				<a class="permalink" href="index.html#ItemRemovedFromModifiedSlice">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ItemRemovedFromModifiedSlice(original, modified <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="MergingMapsHaveConflicts">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=63925:64028#L1822">MergingMapsHaveConflicts</a>
+				<a class="permalink" href="index.html#MergingMapsHaveConflicts">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MergingMapsHaveConflicts(left, right map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, schema <a href="index.html#LookupPatchMeta">LookupPatchMeta</a>) (<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+MergingMapsHaveConflicts returns true if the left and right JSON interface
+objects overlap with different values in any key. All keys are required to be
+strings. Since patches of the same Type have congruent keys, this is valid
+for multiple patch types. This method supports strategic merge patch semantics.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewKindItem">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/types.go?s=1126:1184#L38">NewKindItem</a>
+				<a class="permalink" href="index.html#NewKindItem">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewKindItem(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>, path *<a href="../../../../kube-openapi/pkg/util/proto/index.html">openapi</a>.<a href="../../../../kube-openapi/pkg/util/proto/index.html#Path">Path</a>) *kindItem</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="NewSliceItem">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/types.go?s=2510:2570#L101">NewSliceItem</a>
+				<a class="permalink" href="index.html#NewSliceItem">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewSliceItem(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>, path *<a href="../../../../kube-openapi/pkg/util/proto/index.html">openapi</a>.<a href="../../../../kube-openapi/pkg/util/proto/index.html#Path">Path</a>) *sliceItem</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="StrategicMergePatch">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=30000:30088#L802">StrategicMergePatch</a>
+				<a class="permalink" href="index.html#StrategicMergePatch">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StrategicMergePatch(original, patch []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, dataStruct interface{}) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+StrategicMergePatch applies a strategic merge patch. The patch and the original document
+must be json encoded content. A patch can be created from an original and a modified document
+by calling CreateStrategicMergePatch.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StrategicMergePatchUsingLookupPatchMeta">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=30257:30365#L811">StrategicMergePatchUsingLookupPatchMeta</a>
+				<a class="permalink" href="index.html#StrategicMergePatchUsingLookupPatchMeta">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StrategicMergePatchUsingLookupPatchMeta(original, patch []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, schema <a href="index.html#LookupPatchMeta">LookupPatchMeta</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			
+			
+			
+
+		
+		
+			
+			
+			<h2 id="DiffOptions">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=1943:2613#L50">DiffOptions</a>
+				<a class="permalink" href="index.html#DiffOptions">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type DiffOptions struct {
+<span id="DiffOptions.SetElementOrder"></span>    <span class="comment">// SetElementOrder determines whether we generate the $setElementOrder parallel list.</span>
+    SetElementOrder <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="DiffOptions.IgnoreChangesAndAdditions"></span>    <span class="comment">// IgnoreChangesAndAdditions indicates if we keep the changes and additions in the patch.</span>
+    IgnoreChangesAndAdditions <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="DiffOptions.IgnoreDeletions"></span>    <span class="comment">// IgnoreDeletions indicates if we keep the deletions in the patch.</span>
+    IgnoreDeletions <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+    <span class="comment">// We introduce a new value retainKeys for patchStrategy.</span>
+    <span class="comment">// It indicates that all fields needing to be preserved must be</span>
+    <span class="comment">// present in the `retainKeys` list.</span>
+    <span class="comment">// And the fields that are present will be merged with live object.</span>
+    <span class="comment">// All the missing fields will be cleared when patching.</span>
+<span id="DiffOptions.BuildRetainKeysDirective"></span>    BuildRetainKeysDirective <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="FieldNotFoundError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/errors.go?s=794:856#L22">FieldNotFoundError</a>
+				<a class="permalink" href="index.html#FieldNotFoundError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type FieldNotFoundError struct {
+<span id="FieldNotFoundError.Path"></span>    Path  <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="FieldNotFoundError.Field"></span>    Field <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FieldNotFoundError.Error">func (FieldNotFoundError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/errors.go?s=858:900#L27">Error</a>
+					<a class="permalink" href="index.html#FieldNotFoundError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#FieldNotFoundError">FieldNotFoundError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="InvalidTypeError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/errors.go?s=980:1063#L31">InvalidTypeError</a>
+				<a class="permalink" href="index.html#InvalidTypeError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type InvalidTypeError struct {
+<span id="InvalidTypeError.Path"></span>    Path     <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="InvalidTypeError.Expected"></span>    Expected <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="InvalidTypeError.Actual"></span>    Actual   <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InvalidTypeError.Error">func (InvalidTypeError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/errors.go?s=1065:1105#L37">Error</a>
+					<a class="permalink" href="index.html#InvalidTypeError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#InvalidTypeError">InvalidTypeError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="JSONMap">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=1906:1941#L48">JSONMap</a>
+				<a class="permalink" href="index.html#JSONMap">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+JSONMap is a representations of JSON object encoded as map[string]interface{}
+where the children can be either map[string]interface{}, []interface{} or
+primitive type).
+Operating on JSONMap representation is much faster as it doesn&#39;t require any
+json marshaling and/or unmarshaling operations.
+</p>
+
+			<pre>type JSONMap map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="CreateTwoWayMergeMapPatch">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=4872:5007#L120">CreateTwoWayMergeMapPatch</a>
+					<a class="permalink" href="index.html#CreateTwoWayMergeMapPatch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func CreateTwoWayMergeMapPatch(original, modified <a href="index.html#JSONMap">JSONMap</a>, dataStruct interface{}, fns ...<a href="../mergepatch/index.html">mergepatch</a>.<a href="../mergepatch/index.html#PreconditionFunc">PreconditionFunc</a>) (<a href="index.html#JSONMap">JSONMap</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+CreateTwoWayMergeMapPatch creates a patch from an original and modified JSON objects,
+encoded JSONMap.
+The serialized version of the map can then be passed to StrategicMergeMapPatch.
+</p>
+
+				
+				
+			
+				
+				<h3 id="CreateTwoWayMergeMapPatchUsingLookupPatchMeta">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=5193:5348#L129">CreateTwoWayMergeMapPatchUsingLookupPatchMeta</a>
+					<a class="permalink" href="index.html#CreateTwoWayMergeMapPatchUsingLookupPatchMeta">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func CreateTwoWayMergeMapPatchUsingLookupPatchMeta(original, modified <a href="index.html#JSONMap">JSONMap</a>, schema <a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, fns ...<a href="../mergepatch/index.html">mergepatch</a>.<a href="../mergepatch/index.html#PreconditionFunc">PreconditionFunc</a>) (<a href="index.html#JSONMap">JSONMap</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+				
+				<h3 id="MergeStrategicMergeMapPatchUsingLookupPatchMeta">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=32906:33019#L880">MergeStrategicMergeMapPatchUsingLookupPatchMeta</a>
+					<a class="permalink" href="index.html#MergeStrategicMergeMapPatchUsingLookupPatchMeta">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MergeStrategicMergeMapPatchUsingLookupPatchMeta(schema <a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, patches ...<a href="index.html#JSONMap">JSONMap</a>) (<a href="index.html#JSONMap">JSONMap</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MergeStrategicMergeMapPatchUsingLookupPatchMeta merges strategic merge
+patches retaining `null` fields and parallel lists. If 2 patches change the
+same fields and the latter one will override the former one. If you don&#39;t
+want that happen, you need to run func MergingMapsHaveConflicts before
+merging these patches. Applying the resulting merged merge patch to a JSONMap
+yields the same as merging each strategic merge patch to the JSONMap in
+succession.
+</p>
+
+				
+				
+			
+				
+				<h3 id="StrategicMergeMapPatch">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=31256:31349#L846">StrategicMergeMapPatch</a>
+					<a class="permalink" href="index.html#StrategicMergeMapPatch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func StrategicMergeMapPatch(original, patch <a href="index.html#JSONMap">JSONMap</a>, dataStruct interface{}) (<a href="index.html#JSONMap">JSONMap</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+StrategicMergeMapPatch applies a strategic merge patch. The original and patch documents
+must be JSONMap. A patch can be created from an original and modified document by
+calling CreateTwoWayMergeMapPatch.
+Warning: the original and patch JSONMap objects are mutated by this function and should not be reused.
+</p>
+
+				
+				
+			
+				
+				<h3 id="StrategicMergeMapPatchUsingLookupPatchMeta">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=32162:32275#L865">StrategicMergeMapPatchUsingLookupPatchMeta</a>
+					<a class="permalink" href="index.html#StrategicMergeMapPatchUsingLookupPatchMeta">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func StrategicMergeMapPatchUsingLookupPatchMeta(original, patch <a href="index.html#JSONMap">JSONMap</a>, schema <a href="index.html#LookupPatchMeta">LookupPatchMeta</a>) (<a href="index.html#JSONMap">JSONMap</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="LookupPatchItem">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/types.go?s=862:957#L22">LookupPatchItem</a>
+				<a class="permalink" href="index.html#LookupPatchItem">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type LookupPatchItem interface {
+    <a href="../../../../kube-openapi/pkg/util/proto/index.html">openapi</a>.<a href="../../../../kube-openapi/pkg/util/proto/index.html#SchemaVisitor">SchemaVisitor</a>
+
+    Error() <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    Path() *<a href="../../../../kube-openapi/pkg/util/proto/index.html">openapi</a>.<a href="../../../../kube-openapi/pkg/util/proto/index.html#Path">Path</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LookupPatchMeta">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=1240:1675#L43">LookupPatchMeta</a>
+				<a class="permalink" href="index.html#LookupPatchMeta">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type LookupPatchMeta interface {
+    <span class="comment">// LookupPatchMetadataForStruct gets subschema and the patch metadata (e.g. patch strategy and merge key) for map.</span>
+    LookupPatchMetadataForStruct(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, <a href="index.html#PatchMeta">PatchMeta</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <span class="comment">// LookupPatchMetadataForSlice get subschema and the patch metadata for slice.</span>
+    LookupPatchMetadataForSlice(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, <a href="index.html#PatchMeta">PatchMeta</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <span class="comment">// Get the type name of the field</span>
+    Name() <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LookupPatchMetaError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/errors.go?s=614:675#L13">LookupPatchMetaError</a>
+				<a class="permalink" href="index.html#LookupPatchMetaError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type LookupPatchMetaError struct {
+<span id="LookupPatchMetaError.Path"></span>    Path <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="LookupPatchMetaError.Err"></span>    Err  <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="LookupPatchMetaError.Error">func (LookupPatchMetaError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/errors.go?s=677:721#L18">Error</a>
+					<a class="permalink" href="index.html#LookupPatchMetaError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#LookupPatchMetaError">LookupPatchMetaError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MergeOptions">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=2615:3075#L65">MergeOptions</a>
+				<a class="permalink" href="index.html#MergeOptions">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type MergeOptions struct {
+<span id="MergeOptions.MergeParallelList"></span>    <span class="comment">// MergeParallelList indicates if we are merging the parallel list.</span>
+    <span class="comment">// We don&#39;t merge parallel list when calling mergeMap() in CreateThreeWayMergePatch()</span>
+    <span class="comment">// which is called client-side.</span>
+    <span class="comment">// We merge parallel list iff when calling mergeMap() in StrategicMergeMapPatch()</span>
+    <span class="comment">// which is called server-side</span>
+    MergeParallelList <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="MergeOptions.IgnoreUnmatchedNulls"></span>    <span class="comment">// IgnoreUnmatchedNulls indicates if we should process the unmatched nulls.</span>
+    IgnoreUnmatchedNulls <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PatchMeta">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=790:865#L19">PatchMeta</a>
+				<a class="permalink" href="index.html#PatchMeta">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type PatchMeta struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="PatchMeta.GetPatchMergeKey">func (PatchMeta) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=1086:1131#L35">GetPatchMergeKey</a>
+					<a class="permalink" href="index.html#PatchMeta.GetPatchMergeKey">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pm <a href="index.html#PatchMeta">PatchMeta</a>) GetPatchMergeKey() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PatchMeta.GetPatchStrategies">func (PatchMeta) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=867:916#L24">GetPatchStrategies</a>
+					<a class="permalink" href="index.html#PatchMeta.GetPatchStrategies">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pm <a href="index.html#PatchMeta">PatchMeta</a>) GetPatchStrategies() []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PatchMeta.SetPatchMergeKey">func (PatchMeta) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=1162:1210#L39">SetPatchMergeKey</a>
+					<a class="permalink" href="index.html#PatchMeta.SetPatchMergeKey">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pm <a href="index.html#PatchMeta">PatchMeta</a>) SetPatchMergeKey(pmk <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PatchMeta.SetPatchStrategies">func (PatchMeta) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=1004:1055#L31">SetPatchStrategies</a>
+					<a class="permalink" href="index.html#PatchMeta.SetPatchStrategies">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pm <a href="index.html#PatchMeta">PatchMeta</a>) SetPatchStrategies(ps []<a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="PatchMetaFromOpenAPI">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=4432:4491#L141">PatchMetaFromOpenAPI</a>
+				<a class="permalink" href="index.html#PatchMetaFromOpenAPI">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type PatchMetaFromOpenAPI struct {
+<span id="PatchMetaFromOpenAPI.Schema"></span>    Schema <a href="../../../../kube-openapi/pkg/util/proto/index.html">openapi</a>.<a href="../../../../kube-openapi/pkg/util/proto/index.html#Schema">Schema</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewPatchMetaFromOpenAPI">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=4493:4560#L145">NewPatchMetaFromOpenAPI</a>
+					<a class="permalink" href="index.html#NewPatchMetaFromOpenAPI">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewPatchMetaFromOpenAPI(s <a href="../../../../kube-openapi/pkg/util/proto/index.html">openapi</a>.<a href="../../../../kube-openapi/pkg/util/proto/index.html#Schema">Schema</a>) <a href="index.html#PatchMetaFromOpenAPI">PatchMetaFromOpenAPI</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="PatchMetaFromOpenAPI.LookupPatchMetadataForSlice">func (PatchMetaFromOpenAPI) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=5060:5165#L166">LookupPatchMetadataForSlice</a>
+					<a class="permalink" href="index.html#PatchMetaFromOpenAPI.LookupPatchMetadataForSlice">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#PatchMetaFromOpenAPI">PatchMetaFromOpenAPI</a>) LookupPatchMetadataForSlice(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, <a href="index.html#PatchMeta">PatchMeta</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PatchMetaFromOpenAPI.LookupPatchMetadataForStruct">func (PatchMetaFromOpenAPI) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=4654:4760#L151">LookupPatchMetadataForStruct</a>
+					<a class="permalink" href="index.html#PatchMetaFromOpenAPI.LookupPatchMetadataForStruct">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#PatchMetaFromOpenAPI">PatchMetaFromOpenAPI</a>) LookupPatchMetadataForStruct(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, <a href="index.html#PatchMeta">PatchMeta</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PatchMetaFromOpenAPI.Name">func (PatchMetaFromOpenAPI) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=5471:5514#L181">Name</a>
+					<a class="permalink" href="index.html#PatchMetaFromOpenAPI.Name">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#PatchMetaFromOpenAPI">PatchMetaFromOpenAPI</a>) Name() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="PatchMetaFromStruct">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=1677:1728#L52">PatchMetaFromStruct</a>
+				<a class="permalink" href="index.html#PatchMetaFromStruct">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type PatchMetaFromStruct struct {
+<span id="PatchMetaFromStruct.T"></span>    T <a href="http://localhost:6060/pkg/reflect/">reflect</a>.<a href="http://localhost:6060/pkg/reflect/#Type">Type</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewPatchMetaFromStruct">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=1730:1810#L56">NewPatchMetaFromStruct</a>
+					<a class="permalink" href="index.html#NewPatchMetaFromStruct">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewPatchMetaFromStruct(dataStruct interface{}) (<a href="index.html#PatchMetaFromStruct">PatchMetaFromStruct</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="PatchMetaFromStruct.LookupPatchMetadataForSlice">func (PatchMetaFromStruct) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=2363:2467#L76">LookupPatchMetadataForSlice</a>
+					<a class="permalink" href="index.html#PatchMetaFromStruct.LookupPatchMetadataForSlice">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#PatchMetaFromStruct">PatchMetaFromStruct</a>) LookupPatchMetadataForSlice(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, <a href="index.html#PatchMeta">PatchMeta</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PatchMetaFromStruct.LookupPatchMetadataForStruct">func (PatchMetaFromStruct) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=1942:2047#L63">LookupPatchMetadataForStruct</a>
+					<a class="permalink" href="index.html#PatchMetaFromStruct.LookupPatchMetadataForStruct">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#PatchMetaFromStruct">PatchMetaFromStruct</a>) LookupPatchMetadataForStruct(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#LookupPatchMeta">LookupPatchMeta</a>, <a href="index.html#PatchMeta">PatchMeta</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PatchMetaFromStruct.Name">func (PatchMetaFromStruct) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/meta.go?s=3809:3851#L111">Name</a>
+					<a class="permalink" href="index.html#PatchMetaFromStruct.Name">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#PatchMetaFromStruct">PatchMetaFromStruct</a>) Name() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SortableSliceOfMaps">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=61338:61429#L1719">SortableSliceOfMaps</a>
+				<a class="permalink" href="index.html#SortableSliceOfMaps">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type SortableSliceOfMaps struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="SortableSliceOfMaps.Len">func (SortableSliceOfMaps) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=61431:61470#L1724">Len</a>
+					<a class="permalink" href="index.html#SortableSliceOfMaps.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ss <a href="index.html#SortableSliceOfMaps">SortableSliceOfMaps</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SortableSliceOfMaps.Less">func (SortableSliceOfMaps) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=61494:61543#L1728">Less</a>
+					<a class="permalink" href="index.html#SortableSliceOfMaps.Less">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ss <a href="index.html#SortableSliceOfMaps">SortableSliceOfMaps</a>) Less(i, j <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SortableSliceOfMaps.Swap">func (SortableSliceOfMaps) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=61685:61729#L1734">Swap</a>
+					<a class="permalink" href="index.html#SortableSliceOfMaps.Swap">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ss <a href="index.html#SortableSliceOfMaps">SortableSliceOfMaps</a>) Swap(i, j <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SortableSliceOfScalars">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=62309:62364#L1768">SortableSliceOfScalars</a>
+				<a class="permalink" href="index.html#SortableSliceOfScalars">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type SortableSliceOfScalars struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="SortableSliceOfScalars.Len">func (SortableSliceOfScalars) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=62366:62408#L1772">Len</a>
+					<a class="permalink" href="index.html#SortableSliceOfScalars.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ss <a href="index.html#SortableSliceOfScalars">SortableSliceOfScalars</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SortableSliceOfScalars.Less">func (SortableSliceOfScalars) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=62432:62484#L1776">Less</a>
+					<a class="permalink" href="index.html#SortableSliceOfScalars.Less">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ss <a href="index.html#SortableSliceOfScalars">SortableSliceOfScalars</a>) Less(i, j <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="SortableSliceOfScalars.Swap">func (SortableSliceOfScalars) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/strategicpatch/patch.go?s=62614:62661#L1782">Swap</a>
+					<a class="permalink" href="index.html#SortableSliceOfScalars.Swap">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ss <a href="index.html#SortableSliceOfScalars">SortableSliceOfScalars</a>) Swap(i, j <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="testing/index.html">testing</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

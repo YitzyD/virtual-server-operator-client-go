@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>clock - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package clock
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/clock"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#Clock">type Clock</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#FakeClock">type FakeClock</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewFakeClock">func NewFakeClock(t time.Time) *FakeClock</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeClock.After">func (f *FakeClock) After(d time.Duration) &lt;-chan time.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeClock.HasWaiters">func (f *FakeClock) HasWaiters() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeClock.NewTicker">func (f *FakeClock) NewTicker(d time.Duration) Ticker</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeClock.NewTimer">func (f *FakeClock) NewTimer(d time.Duration) Timer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeClock.SetTime">func (f *FakeClock) SetTime(t time.Time)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeClock.Sleep">func (f *FakeClock) Sleep(d time.Duration)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeClock.Step">func (f *FakeClock) Step(d time.Duration)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FakePassiveClock">type FakePassiveClock</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewFakePassiveClock">func NewFakePassiveClock(t time.Time) *FakePassiveClock</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakePassiveClock.Now">func (f *FakePassiveClock) Now() time.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakePassiveClock.SetTime">func (f *FakePassiveClock) SetTime(t time.Time)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakePassiveClock.Since">func (f *FakePassiveClock) Since(ts time.Time) time.Duration</a></dd>
+				
+			
+				
+				<dd><a href="index.html#IntervalClock">type IntervalClock</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntervalClock.After">func (*IntervalClock) After(d time.Duration) &lt;-chan time.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntervalClock.NewTicker">func (*IntervalClock) NewTicker(d time.Duration) Ticker</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntervalClock.NewTimer">func (*IntervalClock) NewTimer(d time.Duration) Timer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntervalClock.Now">func (i *IntervalClock) Now() time.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntervalClock.Since">func (i *IntervalClock) Since(ts time.Time) time.Duration</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntervalClock.Sleep">func (*IntervalClock) Sleep(d time.Duration)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#PassiveClock">type PassiveClock</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RealClock">type RealClock</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RealClock.After">func (RealClock) After(d time.Duration) &lt;-chan time.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RealClock.NewTicker">func (RealClock) NewTicker(d time.Duration) Ticker</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RealClock.NewTimer">func (RealClock) NewTimer(d time.Duration) Timer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RealClock.Now">func (RealClock) Now() time.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RealClock.Since">func (RealClock) Since(ts time.Time) time.Duration</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#RealClock.Sleep">func (RealClock) Sleep(d time.Duration)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Ticker">type Ticker</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Timer">type Timer</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go">clock.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="Clock">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=973:1136#L24">Clock</a>
+				<a class="permalink" href="index.html#Clock">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Clock allows for injecting fake or real clocks into code that
+needs to do arbitrary things based on time.
+</p>
+
+			<pre>type Clock interface {
+    <a href="index.html#PassiveClock">PassiveClock</a>
+    After(<a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) &lt;-chan <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>
+    NewTimer(<a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Timer">Timer</a>
+    Sleep(<a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)
+    NewTicker(<a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Ticker">Ticker</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="FakeClock">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=2139:2281#L76">FakeClock</a>
+				<a class="permalink" href="index.html#FakeClock">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FakeClock implements Clock, but returns an arbitrary time.
+</p>
+
+			<pre>type FakeClock struct {
+    <a href="index.html#FakePassiveClock">FakePassiveClock</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewFakeClock">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=2617:2658#L98">NewFakeClock</a>
+					<a class="permalink" href="index.html#NewFakeClock">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewFakeClock(t <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>) *<a href="index.html#FakeClock">FakeClock</a></pre>
+				<p>
+NewFakeClock returns a new FakeClock
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="FakeClock.After">func (*FakeClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=3232:3291#L126">After</a>
+					<a class="permalink" href="index.html#FakeClock.After">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeClock">FakeClock</a>) After(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) &lt;-chan <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a></pre>
+				<p>
+After is the Fake version of time.After(d).
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeClock.HasWaiters">func (*FakeClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=5419:5456#L220">HasWaiters</a>
+					<a class="permalink" href="index.html#FakeClock.HasWaiters">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeClock">FakeClock</a>) HasWaiters() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasWaiters returns true if After has been called on f but not yet satisfied (so you can
+write race-free tests).
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeClock.NewTicker">func (*FakeClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=3947:4000#L156">NewTicker</a>
+					<a class="permalink" href="index.html#FakeClock.NewTicker">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeClock">FakeClock</a>) NewTicker(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Ticker">Ticker</a></pre>
+				<p>
+NewTicker returns a new Ticker.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeClock.NewTimer">func (*FakeClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=3567:3618#L139">NewTimer</a>
+					<a class="permalink" href="index.html#FakeClock.NewTimer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeClock">FakeClock</a>) NewTimer(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Timer">Timer</a></pre>
+				<p>
+NewTimer is the Fake version of time.NewTimer(d).
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeClock.SetTime">func (*FakeClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=4542:4582#L181">SetTime</a>
+					<a class="permalink" href="index.html#FakeClock.SetTime">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeClock">FakeClock</a>) SetTime(t <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>)</pre>
+				<p>
+SetTime sets the time on a FakeClock.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeClock.Sleep">func (*FakeClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=5575:5617#L227">Sleep</a>
+					<a class="permalink" href="index.html#FakeClock.Sleep">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeClock">FakeClock</a>) Sleep(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)</pre>
+				<p>
+Sleep pauses the FakeClock for duration d.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeClock.Step">func (*FakeClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=4384:4425#L174">Step</a>
+					<a class="permalink" href="index.html#FakeClock.Step">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakeClock">FakeClock</a>) Step(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)</pre>
+				<p>
+Step moves clock by Duration, notifies anyone that&#39;s called After, Tick, or NewTimer
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FakePassiveClock">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=2008:2075#L70">FakePassiveClock</a>
+				<a class="permalink" href="index.html#FakePassiveClock">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FakePassiveClock implements PassiveClock, but returns an arbitrary time.
+</p>
+
+			<pre>type FakePassiveClock struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewFakePassiveClock">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=2475:2530#L91">NewFakePassiveClock</a>
+					<a class="permalink" href="index.html#NewFakePassiveClock">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewFakePassiveClock(t <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>) *<a href="index.html#FakePassiveClock">FakePassiveClock</a></pre>
+				<p>
+NewFakePassiveClock returns a new FakePassiveClock.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="FakePassiveClock.Now">func (*FakePassiveClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=2757:2799#L105">Now</a>
+					<a class="permalink" href="index.html#FakePassiveClock.Now">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakePassiveClock">FakePassiveClock</a>) Now() <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a></pre>
+				<p>
+Now returns f&#39;s time.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakePassiveClock.SetTime">func (*FakePassiveClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=3082:3129#L119">SetTime</a>
+					<a class="permalink" href="index.html#FakePassiveClock.SetTime">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakePassiveClock">FakePassiveClock</a>) SetTime(t <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>)</pre>
+				<p>
+SetTime sets the time on the FakePassiveClock.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakePassiveClock.Since">func (*FakePassiveClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=2903:2963#L112">Since</a>
+					<a class="permalink" href="index.html#FakePassiveClock.Since">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FakePassiveClock">FakePassiveClock</a>) Since(ts <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>) <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a></pre>
+				<p>
+Since returns time since the time in f.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="IntervalClock">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=5743:5816#L232">IntervalClock</a>
+				<a class="permalink" href="index.html#IntervalClock">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+IntervalClock implements Clock, but each invocation of Now steps the clock forward the specified duration
+</p>
+
+			<pre>type IntervalClock struct {
+<span id="IntervalClock.Time"></span>    Time     <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>
+<span id="IntervalClock.Duration"></span>    Duration <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="IntervalClock.After">func (*IntervalClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=6185:6246#L250">After</a>
+					<a class="permalink" href="index.html#IntervalClock.After">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#IntervalClock">IntervalClock</a>) After(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) &lt;-chan <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a></pre>
+				<p>
+After is currently unimplemented, will panic.
+TODO: make interval clock use FakeClock so this can be implemented.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntervalClock.NewTicker">func (*IntervalClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=6657:6712#L262">NewTicker</a>
+					<a class="permalink" href="index.html#IntervalClock.NewTicker">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#IntervalClock">IntervalClock</a>) NewTicker(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Ticker">Ticker</a></pre>
+				<p>
+NewTicker is currently unimplemented, will panic.
+TODO: make interval clock use FakeClock so this can be implemented.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntervalClock.NewTimer">func (*IntervalClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=6423:6476#L256">NewTimer</a>
+					<a class="permalink" href="index.html#IntervalClock.NewTimer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#IntervalClock">IntervalClock</a>) NewTimer(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Timer">Timer</a></pre>
+				<p>
+NewTimer is currently unimplemented, will panic.
+TODO: make interval clock use FakeClock so this can be implemented.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntervalClock.Now">func (*IntervalClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=5843:5882#L238">Now</a>
+					<a class="permalink" href="index.html#IntervalClock.Now">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (i *<a href="index.html#IntervalClock">IntervalClock</a>) Now() <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a></pre>
+				<p>
+Now returns i&#39;s time.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntervalClock.Since">func (*IntervalClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=5979:6036#L244">Since</a>
+					<a class="permalink" href="index.html#IntervalClock.Since">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (i *<a href="index.html#IntervalClock">IntervalClock</a>) Since(ts <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>) <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a></pre>
+				<p>
+Since returns time since the time in i.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntervalClock.Sleep">func (*IntervalClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=6819:6863#L267">Sleep</a>
+					<a class="permalink" href="index.html#IntervalClock.Sleep">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#IntervalClock">IntervalClock</a>) Sleep(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)</pre>
+				<p>
+Sleep is currently unimplemented; will panic.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="PassiveClock">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=779:859#L17">PassiveClock</a>
+				<a class="permalink" href="index.html#PassiveClock">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+PassiveClock allows for injecting fake or real clocks into code
+that needs to read the current time but does not support scheduling
+activity in the future.
+</p>
+
+			<pre>type PassiveClock interface {
+    Now() <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>
+    Since(<a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>) <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RealClock">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=1175:1198#L33">RealClock</a>
+				<a class="permalink" href="index.html#RealClock">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+RealClock really calls time.Now()
+</p>
+
+			<pre>type RealClock struct{}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="RealClock.After">func (RealClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=1461:1517#L46">After</a>
+					<a class="permalink" href="index.html#RealClock.After">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#RealClock">RealClock</a>) After(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) &lt;-chan <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a></pre>
+				<p>
+After is the same as time.After(d).
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RealClock.NewTicker">func (RealClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=1717:1767#L58">NewTicker</a>
+					<a class="permalink" href="index.html#RealClock.NewTicker">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#RealClock">RealClock</a>) NewTicker(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Ticker">Ticker</a></pre>
+				<p>
+NewTicker returns a new Ticker.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RealClock.NewTimer">func (RealClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=1578:1626#L51">NewTimer</a>
+					<a class="permalink" href="index.html#RealClock.NewTimer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#RealClock">RealClock</a>) NewTimer(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="index.html#Timer">Timer</a></pre>
+				<p>
+NewTimer returns a new Timer.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RealClock.Now">func (RealClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=1233:1265#L36">Now</a>
+					<a class="permalink" href="index.html#RealClock.Now">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#RealClock">RealClock</a>) Now() <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a></pre>
+				<p>
+Now returns the current time.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RealClock.Since">func (RealClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=1343:1393#L41">Since</a>
+					<a class="permalink" href="index.html#RealClock.Since">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#RealClock">RealClock</a>) Since(ts <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>) <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a></pre>
+				<p>
+Since returns time since the specified timestamp.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="RealClock.Sleep">func (RealClock) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=1872:1911#L65">Sleep</a>
+					<a class="permalink" href="index.html#RealClock.Sleep">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#RealClock">RealClock</a>) Sleep(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)</pre>
+				<p>
+Sleep pauses the RealClock for duration d.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Ticker">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=9974:10029#L371">Ticker</a>
+				<a class="permalink" href="index.html#Ticker">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Ticker defines the Ticker interface
+</p>
+
+			<pre>type Ticker interface {
+    C() &lt;-chan <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>
+    Stop()
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Timer">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/clock/clock.go?s=7029:7117#L273">Timer</a>
+				<a class="permalink" href="index.html#Timer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Timer allows for injecting fake or real timers into code that
+needs to do arbitrary things based on time.
+</p>
+
+			<pre>type Timer interface {
+    C() &lt;-chan <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Time">Time</a>
+    Stop() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+    Reset(d <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

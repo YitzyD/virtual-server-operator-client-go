@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>fetcher - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package fetcher
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#CertBundleFetcher">type CertBundleFetcher</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#CertFetcher">type CertFetcher</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ConfigMapCertBundleFetcher">type ConfigMapCertBundleFetcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConfigMapCertBundleFetcher.BundleBytes">func (f *ConfigMapCertBundleFetcher) BundleBytes() ([]byte, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FileCertFetcher">type FileCertFetcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FileCertFetcher.CertBytes">func (f *FileCertFetcher) CertBytes() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FileCertFetcher.KeyBytes">func (f *FileCertFetcher) KeyBytes() ([]byte, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#MemCertBundleFetcher">type MemCertBundleFetcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MemCertBundleFetcher.BundleBytes">func (f *MemCertBundleFetcher) BundleBytes() ([]byte, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#MemCertFetcher">type MemCertFetcher</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MemCertFetcher.CertBytes">func (f *MemCertFetcher) CertBytes() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MemCertFetcher.KeyBytes">func (f *MemCertFetcher) KeyBytes() ([]byte, error)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go">certfetcher.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="CertBundleFetcher">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=1130:1197#L44">CertBundleFetcher</a>
+				<a class="permalink" href="index.html#CertBundleFetcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CertBundleFetcher is an interface for retreiving CA Certbundles
+</p>
+
+			<pre>type CertBundleFetcher interface {
+    BundleBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CertFetcher">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=264:351#L8">CertFetcher</a>
+				<a class="permalink" href="index.html#CertFetcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CertFetcher is an interface for retreiving certs
+</p>
+
+			<pre>type CertFetcher interface {
+    KeyBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    CertBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ConfigMapCertBundleFetcher">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=1259:1350#L49">ConfigMapCertBundleFetcher</a>
+				<a class="permalink" href="index.html#ConfigMapCertBundleFetcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ConfigMapCertBundleFetcher reads bundles from ConfigMaps
+</p>
+
+			<pre>type ConfigMapCertBundleFetcher struct {
+<span id="ConfigMapCertBundleFetcher.Name"></span>    Name   <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="ConfigMapCertBundleFetcher.Client"></span>    Client <a href="http://localhost:6060/pkg/k8s.io/client-go/kubernetes/typed/core/v1/">corev1</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/kubernetes/typed/core/v1/#ConfigMapInterface">ConfigMapInterface</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ConfigMapCertBundleFetcher.BundleBytes">func (*ConfigMapCertBundleFetcher) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=1388:1454#L55">BundleBytes</a>
+					<a class="permalink" href="index.html#ConfigMapCertBundleFetcher.BundleBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#ConfigMapCertBundleFetcher">ConfigMapCertBundleFetcher</a>) BundleBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+BundleBytes returns bundle bytes
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FileCertFetcher">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=395:439#L14">FileCertFetcher</a>
+				<a class="permalink" href="index.html#FileCertFetcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FileCertFetcher reads certs from files
+</p>
+
+			<pre>type FileCertFetcher struct {
+<span id="FileCertFetcher.Name"></span>    Name <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FileCertFetcher.CertBytes">func (*FileCertFetcher) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=629:682#L24">CertBytes</a>
+					<a class="permalink" href="index.html#FileCertFetcher.CertBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FileCertFetcher">FileCertFetcher</a>) CertBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+CertBytes returns cert bytes
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FileCertFetcher.KeyBytes">func (*FileCertFetcher) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=471:523#L19">KeyBytes</a>
+					<a class="permalink" href="index.html#FileCertFetcher.KeyBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#FileCertFetcher">FileCertFetcher</a>) KeyBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+KeyBytes returns key bytes
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MemCertBundleFetcher">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=1735:1786#L70">MemCertBundleFetcher</a>
+				<a class="permalink" href="index.html#MemCertBundleFetcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+MemCertBundleFetcher reads bundles
+</p>
+
+			<pre>type MemCertBundleFetcher struct {
+<span id="MemCertBundleFetcher.Bundle"></span>    Bundle []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="MemCertBundleFetcher.BundleBytes">func (*MemCertBundleFetcher) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=1824:1884#L75">BundleBytes</a>
+					<a class="permalink" href="index.html#MemCertBundleFetcher.BundleBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#MemCertBundleFetcher">MemCertBundleFetcher</a>) BundleBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+BundleBytes returns bundle bytes
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="MemCertFetcher">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=797:845#L29">MemCertFetcher</a>
+				<a class="permalink" href="index.html#MemCertFetcher">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+MemCertFetcher reads certs from files
+</p>
+
+			<pre>type MemCertFetcher struct {
+<span id="MemCertFetcher.Cert"></span>    Cert, Key []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="MemCertFetcher.CertBytes">func (*MemCertFetcher) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=985:1037#L39">CertBytes</a>
+					<a class="permalink" href="index.html#MemCertFetcher.CertBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#MemCertFetcher">MemCertFetcher</a>) CertBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+CertBytes returns cert bytes
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MemCertFetcher.KeyBytes">func (*MemCertFetcher) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/cert/fetcher/certfetcher.go?s=877:928#L34">KeyBytes</a>
+					<a class="permalink" href="index.html#MemCertFetcher.KeyBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f *<a href="index.html#MemCertFetcher">MemCertFetcher</a>) KeyBytes() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+KeyBytes returns key bytes
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

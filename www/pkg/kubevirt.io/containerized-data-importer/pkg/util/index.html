@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>util - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package util
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/util"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#CopyDir">func CopyDir(source string, dest string) (err error)</a></dd>
+			
+				
+				<dd><a href="index.html#CopyFile">func CopyFile(src, dst string) error</a></dd>
+			
+				
+				<dd><a href="index.html#GetAvailableSpace">func GetAvailableSpace(path string) (int64, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAvailableSpaceBlock">func GetAvailableSpaceBlock(deviceName string) (int64, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetAvailableSpaceByVolumeMode">func GetAvailableSpaceByVolumeMode(volumeMode v1.PersistentVolumeMode) (int64, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetNamespace">func GetNamespace() string</a></dd>
+			
+				
+				<dd><a href="index.html#MinQuantity">func MinQuantity(availableSpace, imageSize *resource.Quantity) resource.Quantity</a></dd>
+			
+				
+				<dd><a href="index.html#ParseEnvVar">func ParseEnvVar(envVarName string, decode bool) (string, error)</a></dd>
+			
+				
+				<dd><a href="index.html#RandAlphaNum">func RandAlphaNum(n int) string</a></dd>
+			
+				
+				<dd><a href="index.html#StreamDataToFile">func StreamDataToFile(r io.Reader, fileName string) error</a></dd>
+			
+				
+				<dd><a href="index.html#UnArchiveTar">func UnArchiveTar(reader io.Reader, destDir string, arg ...string) error</a></dd>
+			
+				
+				<dd><a href="index.html#WriteTerminationMessage">func WriteTerminationMessage(message string) error</a></dd>
+			
+				
+				<dd><a href="index.html#WriteTerminationMessageToFile">func WriteTerminationMessageToFile(file, message string) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CountingReader">type CountingReader</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CountingReader.Close">func (r *CountingReader) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CountingReader.Read">func (r *CountingReader) Read(p []byte) (n int, err error)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go">util.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="CopyDir">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=6600:6652#L230">CopyDir</a>
+				<a class="permalink" href="index.html#CopyDir">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CopyDir(source <a href="http://localhost:6060/pkg/builtin/#string">string</a>, dest <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+CopyDir copies a dir from one location to another.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CopyFile">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=5569:5605#L191">CopyFile</a>
+				<a class="permalink" href="index.html#CopyFile">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CopyFile(src, dst <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+CopyFile copies a file from one location to another.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetAvailableSpace">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=2521:2571#L89">GetAvailableSpace</a>
+				<a class="permalink" href="index.html#GetAvailableSpace">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAvailableSpace(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetAvailableSpace gets the amount of available space at the path specified.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetAvailableSpaceBlock">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=2833:2894#L99">GetAvailableSpaceBlock</a>
+				<a class="permalink" href="index.html#GetAvailableSpaceBlock">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAvailableSpaceBlock(deviceName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetAvailableSpaceBlock gets the amount of available space at the block device path specified.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetAvailableSpaceByVolumeMode">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=2195:2280#L81">GetAvailableSpaceByVolumeMode</a>
+				<a class="permalink" href="index.html#GetAvailableSpaceByVolumeMode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetAvailableSpaceByVolumeMode(volumeMode <a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeMode">PersistentVolumeMode</a>) (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetAvailableSpaceByVolumeMode calls another method based on the volumeMode parameter to get the amount of
+available space at the path specified.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetNamespace">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=983:1009#L40">GetNamespace</a>
+				<a class="permalink" href="index.html#GetNamespace">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetNamespace() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+GetNamespace returns the namespace the pod is executing in
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MinQuantity">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=3563:3643#L126">MinQuantity</a>
+				<a class="permalink" href="index.html#MinQuantity">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MinQuantity(availableSpace, imageSize *<a href="../../../../k8s.io/apimachinery/pkg/api/resource/index.html">resource</a>.<a href="../../../../k8s.io/apimachinery/pkg/api/resource/index.html#Quantity">Quantity</a>) <a href="../../../../k8s.io/apimachinery/pkg/api/resource/index.html">resource</a>.<a href="../../../../k8s.io/apimachinery/pkg/api/resource/index.html#Quantity">Quantity</a></pre>
+			<p>
+MinQuantity calculates the minimum of two quantities.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ParseEnvVar">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=1359:1423#L54">ParseEnvVar</a>
+				<a class="permalink" href="index.html#ParseEnvVar">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ParseEnvVar(envVarName <a href="http://localhost:6060/pkg/builtin/#string">string</a>, decode <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ParseEnvVar provides a wrapper to attempt to fetch the specified env var
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RandAlphaNum">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=660:691#L29">RandAlphaNum</a>
+				<a class="permalink" href="index.html#RandAlphaNum">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RandAlphaNum(n <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+RandAlphaNum provides an implementation to generate a random alpha numeric string of the specified length
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StreamDataToFile">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=3840:3897#L134">StreamDataToFile</a>
+				<a class="permalink" href="index.html#StreamDataToFile">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StreamDataToFile(r <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>, fileName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+StreamDataToFile provides a function to stream the specified io.Reader to the specified local file
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnArchiveTar">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=4880:4952#L163">UnArchiveTar</a>
+				<a class="permalink" href="index.html#UnArchiveTar">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnArchiveTar(reader <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>, destDir <a href="http://localhost:6060/pkg/builtin/#string">string</a>, arg ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+UnArchiveTar unarchives a tar file and streams its files
+using the specified io.Reader to the specified destination.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="WriteTerminationMessage">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=5945:5995#L212">WriteTerminationMessage</a>
+				<a class="permalink" href="index.html#WriteTerminationMessage">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func WriteTerminationMessage(message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+WriteTerminationMessage writes the passed in message to the default termination message file
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="WriteTerminationMessageToFile">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=6174:6236#L217">WriteTerminationMessageToFile</a>
+				<a class="permalink" href="index.html#WriteTerminationMessageToFile">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func WriteTerminationMessageToFile(file, message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+WriteTerminationMessageToFile writes the passed in message to the passed in message file
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="CountingReader">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=466:549#L22">CountingReader</a>
+				<a class="permalink" href="index.html#CountingReader">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CountingReader is a reader that keeps track of how much has been read
+</p>
+
+			<pre>type CountingReader struct {
+<span id="CountingReader.Reader"></span>    Reader  <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadCloser">ReadCloser</a>
+<span id="CountingReader.Current"></span>    Current <a href="http://localhost:6060/pkg/builtin/#uint64">uint64</a>
+<span id="CountingReader.Done"></span>    Done    <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CountingReader.Close">func (*CountingReader) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=1975:2013#L75">Close</a>
+					<a class="permalink" href="index.html#CountingReader.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#CountingReader">CountingReader</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Close closes the stream
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CountingReader.Read">func (*CountingReader) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/util/util.go?s=1794:1852#L67">Read</a>
+					<a class="permalink" href="index.html#CountingReader.Read">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#CountingReader">CountingReader</a>) Read(p []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Read reads bytes from the stream and updates the prometheus clone_progress metric according to the progress.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="cert/index.html">cert</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 20px;">
+						<a href="cert/fetcher/index.html">fetcher</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 20px;">
+						<a href="cert/generator/index.html">generator</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 20px;">
+						<a href="cert/triple/index.html">triple</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						Package triple generates key-certificate pairs for the triple (CA, Server, Client).
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 20px;">
+						<a href="cert/watcher/index.html">watcher</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="naming/index.html">naming</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="prometheus/index.html">prometheus</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

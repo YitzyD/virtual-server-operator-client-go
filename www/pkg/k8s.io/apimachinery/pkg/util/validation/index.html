@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>validation - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package validation
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/validation"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#EmptyError">func EmptyError() string</a></dd>
+			
+				
+				<dd><a href="index.html#InclusiveRangeError">func InclusiveRangeError(lo, hi int) string</a></dd>
+			
+				
+				<dd><a href="index.html#IsCIdentifier">func IsCIdentifier(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsConfigMapKey">func IsConfigMapKey(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsDNS1035Label">func IsDNS1035Label(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsDNS1123Label">func IsDNS1123Label(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsDNS1123Subdomain">func IsDNS1123Subdomain(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsDomainPrefixedPath">func IsDomainPrefixedPath(fldPath *field.Path, dpPath string) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#IsEnvVarName">func IsEnvVarName(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsFullyQualifiedDomainName">func IsFullyQualifiedDomainName(fldPath *field.Path, name string) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#IsFullyQualifiedName">func IsFullyQualifiedName(fldPath *field.Path, name string) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#IsHTTPHeaderName">func IsHTTPHeaderName(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsInRange">func IsInRange(value int, min int, max int) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsQualifiedName">func IsQualifiedName(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidGroupID">func IsValidGroupID(gid int64) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidIP">func IsValidIP(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidIPv4Address">func IsValidIPv4Address(fldPath *field.Path, value string) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidIPv6Address">func IsValidIPv6Address(fldPath *field.Path, value string) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidLabelValue">func IsValidLabelValue(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidPercent">func IsValidPercent(percent string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidPortName">func IsValidPortName(port string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidPortNum">func IsValidPortNum(port int) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidSocketAddr">func IsValidSocketAddr(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsValidUserID">func IsValidUserID(uid int64) []string</a></dd>
+			
+				
+				<dd><a href="index.html#IsWildcardDNS1123Subdomain">func IsWildcardDNS1123Subdomain(value string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#MaxLenError">func MaxLenError(length int) string</a></dd>
+			
+				
+				<dd><a href="index.html#RegexError">func RegexError(msg string, fmt string, examples ...string) string</a></dd>
+			
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go">validation.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<p>
+DNS1035LabelMaxLength is a label&#39;s max length in DNS (RFC 1035)
+</p>
+
+				<pre>const <span id="DNS1035LabelMaxLength">DNS1035LabelMaxLength</span> <a href="http://localhost:6060/pkg/builtin/#int">int</a> = 63</pre>
+			
+				<p>
+DNS1123LabelMaxLength is a label&#39;s max length in DNS (RFC 1123)
+</p>
+
+				<pre>const <span id="DNS1123LabelMaxLength">DNS1123LabelMaxLength</span> <a href="http://localhost:6060/pkg/builtin/#int">int</a> = 63</pre>
+			
+				<p>
+DNS1123SubdomainMaxLength is a subdomain&#39;s max length in DNS (RFC 1123)
+</p>
+
+				<pre>const <span id="DNS1123SubdomainMaxLength">DNS1123SubdomainMaxLength</span> <a href="http://localhost:6060/pkg/builtin/#int">int</a> = 253</pre>
+			
+				<p>
+LabelValueMaxLength is a label&#39;s max length
+</p>
+
+				<pre>const <span id="LabelValueMaxLength">LabelValueMaxLength</span> <a href="http://localhost:6060/pkg/builtin/#int">int</a> = 63</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="EmptyError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=17309:17333#L450">EmptyError</a>
+				<a class="permalink" href="index.html#EmptyError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EmptyError() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+EmptyError returns a string explanation of a &#34;must not be empty&#34; validation
+failure.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="InclusiveRangeError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=17601:17644#L463">InclusiveRangeError</a>
+				<a class="permalink" href="index.html#InclusiveRangeError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func InclusiveRangeError(lo, hi <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+InclusiveRangeError returns a string explanation of a numeric &#34;must be
+between&#34; validation failure.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsCIdentifier">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=10803:10844#L259">IsCIdentifier</a>
+				<a class="permalink" href="index.html#IsCIdentifier">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsCIdentifier(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsCIdentifier tests for a string that conforms the definition of an identifier
+in C. This checks the format, but not the length.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsConfigMapKey">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=16209:16251#L414">IsConfigMapKey</a>
+				<a class="permalink" href="index.html#IsConfigMapKey">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsConfigMapKey(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsConfigMapKey tests for a string that is a valid key for a ConfigMap or Secret
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsDNS1035Label">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=8984:9026#L219">IsDNS1035Label</a>
+				<a class="permalink" href="index.html#IsDNS1035Label">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsDNS1035Label(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsDNS1035Label tests for a string that conforms to the definition of a label in
+DNS (RFC 1035).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsDNS1123Label">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=7203:7245#L177">IsDNS1123Label</a>
+				<a class="permalink" href="index.html#IsDNS1123Label">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsDNS1123Label(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsDNS1123Label tests for a string that conforms to the definition of a label in
+DNS (RFC 1123).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsDNS1123Subdomain">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=8113:8159#L198">IsDNS1123Subdomain</a>
+				<a class="permalink" href="index.html#IsDNS1123Subdomain">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsDNS1123Subdomain(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsDNS1123Subdomain tests for a string that conforms to the definition of a
+subdomain in DNS (RFC 1123).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsDomainPrefixedPath">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=5021:5098#L121">IsDomainPrefixedPath</a>
+				<a class="permalink" href="index.html#IsDomainPrefixedPath">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsDomainPrefixedPath(fldPath *<a href="field/index.html">field</a>.<a href="field/index.html#Path">Path</a>, dpPath <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="field/index.html">field</a>.<a href="field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+IsDomainPrefixedPath checks if the given string is a domain-prefixed path
+(e.g. acme.io/foo). All characters before the first &#34;/&#34; must be a valid
+subdomain as defined by RFC 1123. All characters trailing the first &#34;/&#34; must
+be valid HTTP Path characters as defined by RFC 3986.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsEnvVarName">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=15611:15651#L398">IsEnvVarName</a>
+				<a class="permalink" href="index.html#IsEnvVarName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsEnvVarName(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsEnvVarName tests if a string is a valid environment variable name.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsFullyQualifiedDomainName">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=3542:3623#L85">IsFullyQualifiedDomainName</a>
+				<a class="permalink" href="index.html#IsFullyQualifiedDomainName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsFullyQualifiedDomainName(fldPath *<a href="field/index.html">field</a>.<a href="field/index.html#Path">Path</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="field/index.html">field</a>.<a href="field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+IsFullyQualifiedDomainName checks if the domain name is fully qualified. This
+is similar to IsFullyQualifiedName but only requires a minimum of 2 segments
+instead of 3 and accepts a trailing . as valid.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsFullyQualifiedName">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=2812:2887#L68">IsFullyQualifiedName</a>
+				<a class="permalink" href="index.html#IsFullyQualifiedName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsFullyQualifiedName(fldPath *<a href="field/index.html">field</a>.<a href="field/index.html#Path">Path</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="field/index.html">field</a>.<a href="field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+IsFullyQualifiedName checks if the name is fully qualified. This is similar
+to IsFullyQualifiedDomainName but requires a minimum of 3 segments instead of
+2 and does not accept a trailing . as valid.
+TODO: This function is deprecated and preserved until all callers migrate to
+IsFullyQualifiedDomainName; please don&#39;t add new callers.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsHTTPHeaderName">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=15049:15093#L385">IsHTTPHeaderName</a>
+				<a class="permalink" href="index.html#IsHTTPHeaderName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsHTTPHeaderName(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsHTTPHeaderName checks that a string conforms to the Go HTTP library&#39;s
+definition of a valid header field name (a stricter subset than RFC7230).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsInRange">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=11285:11337#L275">IsInRange</a>
+				<a class="permalink" href="index.html#IsInRange">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsInRange(value <a href="http://localhost:6060/pkg/builtin/#int">int</a>, min <a href="http://localhost:6060/pkg/builtin/#int">int</a>, max <a href="http://localhost:6060/pkg/builtin/#int">int</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsInRange tests that the argument is in an inclusive range.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsQualifiedName">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=1432:1475#L32">IsQualifiedName</a>
+				<a class="permalink" href="index.html#IsQualifiedName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsQualifiedName(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsQualifiedName tests whether the value passed is what Kubernetes calls a
+&#34;qualified name&#34;.  This is a format used in various places throughout the
+system.  If the value is not valid, a list of error strings is returned.
+Otherwise an empty list (or nil) is returned.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidGroupID">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=11732:11771#L292">IsValidGroupID</a>
+				<a class="permalink" href="index.html#IsValidGroupID">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidGroupID(gid <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidGroupID tests that the argument is a valid Unix GID.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidIP">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=13322:13359#L338">IsValidIP</a>
+				<a class="permalink" href="index.html#IsValidIP">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidIP(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidIP tests that the argument is a valid IP address.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidIPv4Address">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=13566:13640#L346">IsValidIPv4Address</a>
+				<a class="permalink" href="index.html#IsValidIPv4Address">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidIPv4Address(fldPath *<a href="field/index.html">field</a>.<a href="field/index.html#Path">Path</a>, value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="field/index.html">field</a>.<a href="field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+IsValidIPv4Address tests that the argument is a valid IPv4 address.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidIPv6Address">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=13925:13999#L356">IsValidIPv6Address</a>
+				<a class="permalink" href="index.html#IsValidIPv6Address">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidIPv6Address(fldPath *<a href="field/index.html">field</a>.<a href="field/index.html#Path">Path</a>, value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="field/index.html">field</a>.<a href="field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+IsValidIPv6Address tests that the argument is a valid IPv6 address.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidLabelValue">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=6356:6401#L156">IsValidLabelValue</a>
+				<a class="permalink" href="index.html#IsValidLabelValue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidLabelValue(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidLabelValue tests whether the value passed is a valid label value.  If
+the value is not valid, a list of error strings is returned.  Otherwise an
+empty list (or nil) is returned.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidPercent">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=14487:14531#L371">IsValidPercent</a>
+				<a class="permalink" href="index.html#IsValidPercent">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidPercent(percent <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidPercent checks that string is in the form of a percentage
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidPortName">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=12611:12653#L317">IsValidPortName</a>
+				<a class="permalink" href="index.html#IsValidPortName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidPortName(port <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidPortName check that the argument is valid syntax. It must be
+non-empty and no more than 15 characters long. It may contain only [-a-z0-9]
+and must contain at least one letter [a-z]. It must not start or end with a
+hyphen, nor contain adjacent hyphens.
+</p>
+<p>
+Note: We only allow lower-case characters, even though RFC 6335 is case
+insensitive.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidPortNum">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=11081:11119#L267">IsValidPortNum</a>
+				<a class="permalink" href="index.html#IsValidPortNum">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidPortNum(port <a href="http://localhost:6060/pkg/builtin/#int">int</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidPortNum tests that the argument is a valid, non-zero port number.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidSocketAddr">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=18158:18203#L482">IsValidSocketAddr</a>
+				<a class="permalink" href="index.html#IsValidSocketAddr">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidSocketAddr(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidSocketAddr checks that string represents a valid socket address
+as defined in RFC 789. (e.g 0.0.0.0:10254 or [::]:10254))
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsValidUserID">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=11962:12000#L300">IsValidUserID</a>
+				<a class="permalink" href="index.html#IsValidUserID">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsValidUserID(uid <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsValidUserID tests that the argument is a valid Unix UID.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsWildcardDNS1123Subdomain">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=9915:9969#L239">IsWildcardDNS1123Subdomain</a>
+				<a class="permalink" href="index.html#IsWildcardDNS1123Subdomain">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsWildcardDNS1123Subdomain(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+IsWildcardDNS1123Subdomain tests for a string that conforms to the definition of a
+wildcard subdomain in DNS (RFC 1034 section 4.3.3).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MaxLenError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=16691:16726#L428">MaxLenError</a>
+				<a class="permalink" href="index.html#MaxLenError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MaxLenError(length <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+MaxLenError returns a string explanation of a &#34;string too long&#34; validation
+failure.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RegexError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/validation.go?s=16872:16938#L433">RegexError</a>
+				<a class="permalink" href="index.html#RegexError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RegexError(msg <a href="http://localhost:6060/pkg/builtin/#string">string</a>, fmt <a href="http://localhost:6060/pkg/builtin/#string">string</a>, examples ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+RegexError returns a string explanation of a regex validation failure.
+</p>
+
+			
+			
+
+		
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="field/index.html">field</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

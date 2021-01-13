@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>field - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package field
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/validation/field"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#NewErrorTypeMatcher">func NewErrorTypeMatcher(t ErrorType) utilerrors.Matcher</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Error">type Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Duplicate">func Duplicate(field *Path, value interface{}) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Forbidden">func Forbidden(field *Path, detail string) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InternalError">func InternalError(field *Path, err error) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Invalid">func Invalid(field *Path, value interface{}, detail string) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NotFound">func NotFound(field *Path, value interface{}) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NotSupported">func NotSupported(field *Path, value interface{}, validValues []string) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Required">func Required(field *Path, detail string) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TooLong">func TooLong(field *Path, value interface{}, maxLength int) *Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TooMany">func TooMany(field *Path, actualQuantity, maxQuantity int) *Error</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Error.Error">func (v *Error) Error() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Error.ErrorBody">func (v *Error) ErrorBody() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ErrorList">type ErrorList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ErrorList.Filter">func (list ErrorList) Filter(fns ...utilerrors.Matcher) ErrorList</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ErrorList.ToAggregate">func (list ErrorList) ToAggregate() utilerrors.Aggregate</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ErrorType">type ErrorType</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ErrorType.String">func (t ErrorType) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Path">type Path</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewPath">func NewPath(name string, moreNames ...string) *Path</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Path.Child">func (p *Path) Child(name string, moreNames ...string) *Path</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Path.Index">func (p *Path) Index(index int) *Path</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Path.Key">func (p *Path) Key(key string) *Path</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Path.Root">func (p *Path) Root() *Path</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Path.String">func (p *Path) String() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go">errors.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go">path.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="NewErrorTypeMatcher">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=8854:8910#L221">NewErrorTypeMatcher</a>
+				<a class="permalink" href="index.html#NewErrorTypeMatcher">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewErrorTypeMatcher(t <a href="index.html#ErrorType">ErrorType</a>) <a href="../../errors/index.html">utilerrors</a>.<a href="../../errors/index.html#Matcher">Matcher</a></pre>
+			<p>
+NewErrorTypeMatcher returns an errors.Matcher that returns true
+if the provided error is a Error and has the provided ErrorType.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Error">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=834:931#L21">Error</a>
+				<a class="permalink" href="index.html#Error">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Error is an implementation of the &#39;error&#39; interface, which represents a
+field-level validation error.
+</p>
+
+			<pre>type Error struct {
+<span id="Error.Type"></span>    Type     <a href="index.html#ErrorType">ErrorType</a>
+<span id="Error.Field"></span>    Field    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="Error.BadValue"></span>    BadValue interface{}
+<span id="Error.Detail"></span>    Detail   <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="Duplicate">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=6030:6083#L159">Duplicate</a>
+					<a class="permalink" href="index.html#Duplicate">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Duplicate(field *<a href="index.html#Path">Path</a>, value interface{}) *<a href="index.html#Error">Error</a></pre>
+				<p>
+Duplicate returns a *Error indicating &#34;duplicate value&#34;.  This is
+used to report collisions of values that must be unique (e.g. names or IDs).
+</p>
+
+				
+				
+			
+				
+				<h3 id="Forbidden">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=7261:7310#L188">Forbidden</a>
+					<a class="permalink" href="index.html#Forbidden">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Forbidden(field *<a href="index.html#Path">Path</a>, detail <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+Forbidden returns a *Error indicating &#34;forbidden&#34;.  This is used to
+report valid (as per formatting rules) values which would be accepted under
+some conditions, but which are not permitted by current conditions (e.g.
+security policy).
+</p>
+
+				
+				
+			
+				
+				<h3 id="InternalError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=8364:8413#L210">InternalError</a>
+					<a class="permalink" href="index.html#InternalError">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func InternalError(field *<a href="index.html#Path">Path</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+InternalError returns a *Error indicating &#34;internal error&#34;.  This is used
+to signal that an error was found that was not directly related to user
+input.  The err argument must be non-nil.
+</p>
+
+				
+				
+			
+				
+				<h3 id="Invalid">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=6303:6369#L165">Invalid</a>
+					<a class="permalink" href="index.html#Invalid">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Invalid(field *<a href="index.html#Path">Path</a>, value interface{}, detail <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+Invalid returns a *Error indicating &#34;invalid value&#34;.  This is used
+to report malformed values (e.g. failed regex match, too long, out of bounds).
+</p>
+
+				
+				
+			
+				
+				<h3 id="NotFound">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=5468:5520#L146">NotFound</a>
+					<a class="permalink" href="index.html#NotFound">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NotFound(field *<a href="index.html#Path">Path</a>, value interface{}) *<a href="index.html#Error">Error</a></pre>
+				<p>
+NotFound returns a *Error indicating &#34;value not found&#34;.  This is
+used to report failure to find a requested value (e.g. looking up an ID).
+</p>
+
+				
+				
+			
+				
+				<h3 id="NotSupported">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=6601:6679#L172">NotSupported</a>
+					<a class="permalink" href="index.html#NotSupported">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NotSupported(field *<a href="index.html#Path">Path</a>, value interface{}, validValues []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+NotSupported returns a *Error indicating &#34;unsupported value&#34;.
+This is used to report unknown values for enumerated fields (e.g. a list of
+valid values).
+</p>
+
+				
+				
+			
+				
+				<h3 id="Required">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=5765:5813#L153">Required</a>
+					<a class="permalink" href="index.html#Required">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Required(field *<a href="index.html#Path">Path</a>, detail <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+Required returns a *Error indicating &#34;value required&#34;.  This is used
+to report required values that are not provided (e.g. empty strings, null
+values, or empty arrays).
+</p>
+
+				
+				
+			
+				
+				<h3 id="TooLong">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=7586:7652#L196">TooLong</a>
+					<a class="permalink" href="index.html#TooLong">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func TooLong(field *<a href="index.html#Path">Path</a>, value interface{}, maxLength <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+TooLong returns a *Error indicating &#34;too long&#34;.  This is used to
+report that the given value is too long.  This is similar to
+Invalid, but the returned error will not include the too-long
+value.
+</p>
+
+				
+				
+			
+				
+				<h3 id="TooMany">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=7975:8040#L203">TooMany</a>
+					<a class="permalink" href="index.html#TooMany">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func TooMany(field *<a href="index.html#Path">Path</a>, actualQuantity, maxQuantity <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+TooMany returns a *Error indicating &#34;too many&#34;. This is used to
+report that a given list has too many items. This is similar to TooLong,
+but the returned error indicates quantity instead of length.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Error.Error">func (*Error) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=998:1028#L31">Error</a>
+					<a class="permalink" href="index.html#Error.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (v *<a href="index.html#Error">Error</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Error implements the error interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Error.ErrorBody">func (*Error) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=1226:1260#L37">ErrorBody</a>
+					<a class="permalink" href="index.html#Error.ErrorBody">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (v *<a href="index.html#Error">Error</a>) ErrorBody() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+ErrorBody returns the error message without the field name.  This is useful
+for building nice-looking higher-level error reporting.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ErrorList">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=8694:8717#L217">ErrorList</a>
+				<a class="permalink" href="index.html#ErrorList">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ErrorList holds a set of Errors.  It is plausible that we might one day have
+non-field errors in this same umbrella package, but for now we don&#39;t, so
+we can keep it simple and leave ErrorList here.
+</p>
+
+			<pre>type ErrorList []*<a href="index.html#Error">Error</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ErrorList.Filter">func (ErrorList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=9670:9735#L255">Filter</a>
+					<a class="permalink" href="index.html#ErrorList.Filter">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (list <a href="index.html#ErrorList">ErrorList</a>) Filter(fns ...<a href="../../errors/index.html">utilerrors</a>.<a href="../../errors/index.html#Matcher">Matcher</a>) <a href="index.html#ErrorList">ErrorList</a></pre>
+				<p>
+Filter removes items from the ErrorList that match the provided fns.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ErrorList.ToAggregate">func (ErrorList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=9088:9144#L231">ToAggregate</a>
+					<a class="permalink" href="index.html#ErrorList.ToAggregate">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (list <a href="index.html#ErrorList">ErrorList</a>) ToAggregate() <a href="../../errors/index.html">utilerrors</a>.<a href="../../errors/index.html#Aggregate">Aggregate</a></pre>
+				<p>
+ToAggregate converts the ErrorList into an errors.Aggregate.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ErrorType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=2662:2683#L80">ErrorType</a>
+				<a class="permalink" href="index.html#ErrorType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ErrorType is a machine readable value providing more detail about why
+a field is invalid.  These values are expected to match 1-1 with
+CauseType in api/types.go.
+</p>
+
+			<pre>type ErrorType <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+				<p>
+TODO: These values are duplicated in api/types.go, but there&#39;s a circular dep.  Fix it.
+</p>
+
+				<pre>const (
+    <span class="comment">// ErrorTypeNotFound is used to report failure to find a requested value</span>
+    <span class="comment">// (e.g. looking up an ID).  See NotFound().</span>
+    <span id="ErrorTypeNotFound">ErrorTypeNotFound</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueNotFound&#34;
+    <span class="comment">// ErrorTypeRequired is used to report required values that are not</span>
+    <span class="comment">// provided (e.g. empty strings, null values, or empty arrays).  See</span>
+    <span class="comment">// Required().</span>
+    <span id="ErrorTypeRequired">ErrorTypeRequired</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueRequired&#34;
+    <span class="comment">// ErrorTypeDuplicate is used to report collisions of values that must be</span>
+    <span class="comment">// unique (e.g. unique IDs).  See Duplicate().</span>
+    <span id="ErrorTypeDuplicate">ErrorTypeDuplicate</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueDuplicate&#34;
+    <span class="comment">// ErrorTypeInvalid is used to report malformed values (e.g. failed regex</span>
+    <span class="comment">// match, too long, out of bounds).  See Invalid().</span>
+    <span id="ErrorTypeInvalid">ErrorTypeInvalid</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueInvalid&#34;
+    <span class="comment">// ErrorTypeNotSupported is used to report unknown values for enumerated</span>
+    <span class="comment">// fields (e.g. a list of valid values).  See NotSupported().</span>
+    <span id="ErrorTypeNotSupported">ErrorTypeNotSupported</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueNotSupported&#34;
+    <span class="comment">// ErrorTypeForbidden is used to report valid (as per formatting rules)</span>
+    <span class="comment">// values which would be accepted under some conditions, but which are not</span>
+    <span class="comment">// permitted by the current conditions (such as security policy).  See</span>
+    <span class="comment">// Forbidden().</span>
+    <span id="ErrorTypeForbidden">ErrorTypeForbidden</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueForbidden&#34;
+    <span class="comment">// ErrorTypeTooLong is used to report that the given value is too long.</span>
+    <span class="comment">// This is similar to ErrorTypeInvalid, but the error will not include the</span>
+    <span class="comment">// too-long value.  See TooLong().</span>
+    <span id="ErrorTypeTooLong">ErrorTypeTooLong</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueTooLong&#34;
+    <span class="comment">// ErrorTypeTooMany is used to report &#34;too many&#34;. This is used to</span>
+    <span class="comment">// report that a given list has too many items. This is similar to FieldValueTooLong,</span>
+    <span class="comment">// but the error indicates quantity instead of length.</span>
+    <span id="ErrorTypeTooMany">ErrorTypeTooMany</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;FieldValueTooMany&#34;
+    <span class="comment">// ErrorTypeInternal is used to report other errors that are not related</span>
+    <span class="comment">// to user input.  See InternalError().</span>
+    <span id="ErrorTypeInternal">ErrorTypeInternal</span> <a href="index.html#ErrorType">ErrorType</a> = &#34;InternalError&#34;
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ErrorType.String">func (ErrorType) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/errors.go?s=4746:4780#L119">String</a>
+					<a class="permalink" href="index.html#ErrorType.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (t <a href="index.html#ErrorType">ErrorType</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String converts a ErrorType into its corresponding canonical error message.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Path">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go?s=691:924#L16">Path</a>
+				<a class="permalink" href="index.html#Path">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Path represents the path from some root to a particular field.
+</p>
+
+			<pre>type Path struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewPath">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go?s=965:1017#L23">NewPath</a>
+					<a class="permalink" href="index.html#NewPath">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewPath(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, moreNames ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Path">Path</a></pre>
+				<p>
+NewPath creates a root Path object.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Path.Child">func (*Path) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go?s=1373:1433#L40">Child</a>
+					<a class="permalink" href="index.html#Path.Child">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#Path">Path</a>) Child(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, moreNames ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Path">Path</a></pre>
+				<p>
+Child creates a new Path that is a child of the method receiver.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Path.Index">func (*Path) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go?s=1625:1662#L48">Index</a>
+					<a class="permalink" href="index.html#Path.Index">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#Path">Path</a>) Index(index <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#Path">Path</a></pre>
+				<p>
+Index indicates that the previous Path is to be subscripted by an int.
+This sets the same underlying value as Key.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Path.Key">func (*Path) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go?s=1844:1880#L54">Key</a>
+					<a class="permalink" href="index.html#Path.Key">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#Path">Path</a>) Key(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Path">Path</a></pre>
+				<p>
+Key indicates that the previous Path is to be subscripted by a string.
+This sets the same underlying value as Index.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Path.Root">func (*Path) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go?s=1203:1230#L32">Root</a>
+					<a class="permalink" href="index.html#Path.Root">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#Path">Path</a>) Root() *<a href="index.html#Path">Path</a></pre>
+				<p>
+Root returns the root element of this Path.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Path.String">func (*Path) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/validation/field/path.go?s=1979:2009#L59">String</a>
+					<a class="permalink" href="index.html#Path.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (p *<a href="index.html#Path">Path</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String produces a string representation of the Path.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

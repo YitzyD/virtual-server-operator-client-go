@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>testapigroup - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package testapigroup
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/apis/testapigroup"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
++k8s:deepcopy-gen=package
++groupName=testapigroup.apimachinery.k8s.io
+</p>
+<p>
+package testapigroup contains an testapigroup API used to demonstrate how to create api groups. Moreover, this is
+used within tests.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Kind">func Kind(kind string) schema.GroupKind</a></dd>
+			
+				
+				<dd><a href="index.html#Resource">func Resource(resource string) schema.GroupResource</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Carp">type Carp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.DeepCopy">func (in *Carp) DeepCopy() *Carp</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.DeepCopyInto">func (in *Carp) DeepCopyInto(out *Carp)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Carp.DeepCopyObject">func (in *Carp) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpCondition">type CarpCondition</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.DeepCopy">func (in *CarpCondition) DeepCopy() *CarpCondition</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpCondition.DeepCopyInto">func (in *CarpCondition) DeepCopyInto(out *CarpCondition)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpConditionType">type CarpConditionType</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#CarpList">type CarpList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.DeepCopy">func (in *CarpList) DeepCopy() *CarpList</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.DeepCopyInto">func (in *CarpList) DeepCopyInto(out *CarpList)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpList.DeepCopyObject">func (in *CarpList) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpPhase">type CarpPhase</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#CarpSpec">type CarpSpec</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.DeepCopy">func (in *CarpSpec) DeepCopy() *CarpSpec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpSpec.DeepCopyInto">func (in *CarpSpec) DeepCopyInto(out *CarpSpec)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CarpStatus">type CarpStatus</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.DeepCopy">func (in *CarpStatus) DeepCopy() *CarpStatus</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CarpStatus.DeepCopyInto">func (in *CarpStatus) DeepCopyInto(out *CarpStatus)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConditionStatus">type ConditionStatus</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RestartPolicy">type RestartPolicy</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/register.go">register.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go">types.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<p>
+GroupName is the group name use in this package
+</p>
+
+				<pre>const <span id="GroupName">GroupName</span> = &#34;testapigroup.apimachinery.k8s.io&#34;</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var (
+    <span id="SchemeBuilder">SchemeBuilder</span> = <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#NewSchemeBuilder">NewSchemeBuilder</a>(addKnownTypes)
+    <span id="AddToScheme">AddToScheme</span>   = <a href="index.html#SchemeBuilder">SchemeBuilder</a>.<a href="index.html#AddToScheme">AddToScheme</a>
+)</pre>
+			
+				<p>
+SchemeGroupVersion is group version used to register these objects
+</p>
+
+				<pre>var <span id="SchemeGroupVersion">SchemeGroupVersion</span> = <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersion">GroupVersion</a>{<a href="../../runtime/schema/index.html#GroupVersion.Group">Group</a>: <a href="index.html#GroupName">GroupName</a>, <a href="../../runtime/schema/index.html#GroupVersion.Version">Version</a>: <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#APIVersionInternal">APIVersionInternal</a>}</pre>
+			
+		
+		
+			
+			
+			<h2 id="Kind">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/register.go?s=1141:1180#L26">Kind</a>
+				<a class="permalink" href="index.html#Kind">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Kind(kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a></pre>
+			<p>
+Kind takes an unqualified kind and returns a Group qualified GroupKind
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Resource">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/register.go?s=1326:1377#L31">Resource</a>
+				<a class="permalink" href="index.html#Resource">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Resource(resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupResource">GroupResource</a></pre>
+			<p>
+Resource takes an unqualified resource and returns a Group qualified GroupResource
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Carp">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=941:1213#L23">Carp</a>
+				<a class="permalink" href="index.html#Carp">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Carp is a collection of containers, used as either input (create, update) or as output (list, get).
+</p>
+
+			<pre>type Carp struct {
+    <a href="../meta/v1/index.html">metav1</a>.<a href="../meta/v1/index.html#TypeMeta">TypeMeta</a>
+    <span class="comment">// +optional</span>
+    <a href="../meta/v1/index.html">metav1</a>.<a href="../meta/v1/index.html#ObjectMeta">ObjectMeta</a>
+
+<span id="Carp.Spec"></span>    <span class="comment">// Spec defines the behavior of a carp.</span>
+    <span class="comment">// +optional</span>
+    Spec <a href="index.html#CarpSpec">CarpSpec</a>
+
+<span id="Carp.Status"></span>    <span class="comment">// Status represents the current information about a carp. This data may not be up</span>
+    <span class="comment">// to date.</span>
+    <span class="comment">// +optional</span>
+    Status <a href="index.html#CarpStatus">CarpStatus</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Carp.DeepCopy">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=1142:1174#L28">DeepCopy</a>
+					<a class="permalink" href="index.html#Carp.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Carp">Carp</a>) DeepCopy() *<a href="index.html#Carp">Carp</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new Carp.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Carp.DeepCopyInto">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=840:879#L18">DeepCopyInto</a>
+					<a class="permalink" href="index.html#Carp.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Carp">Carp</a>) DeepCopyInto(out *<a href="index.html#Carp">Carp</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Carp.DeepCopyObject">func (*Carp) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=1374:1421#L38">DeepCopyObject</a>
+					<a class="permalink" href="index.html#Carp.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Carp">Carp</a>) DeepCopyObject() <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpCondition">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=1925:2150#L63">CarpCondition</a>
+				<a class="permalink" href="index.html#CarpCondition">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CarpCondition struct {
+<span id="CarpCondition.Type"></span>    Type   <a href="index.html#CarpConditionType">CarpConditionType</a>
+<span id="CarpCondition.Status"></span>    Status <a href="index.html#ConditionStatus">ConditionStatus</a>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.LastProbeTime"></span>    LastProbeTime <a href="../meta/v1/index.html">metav1</a>.<a href="../meta/v1/index.html#Time">Time</a>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.LastTransitionTime"></span>    LastTransitionTime <a href="../meta/v1/index.html">metav1</a>.<a href="../meta/v1/index.html#Time">Time</a>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.Reason"></span>    Reason <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// +optional</span>
+<span id="CarpCondition.Message"></span>    Message <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpCondition.DeepCopy">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=1901:1951#L54">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpCondition.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpCondition">CarpCondition</a>) DeepCopy() *<a href="index.html#CarpCondition">CarpCondition</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpCondition.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpCondition.DeepCopyInto">func (*CarpCondition) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=1603:1660#L46">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpCondition.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpCondition">CarpCondition</a>) DeepCopyInto(out *<a href="index.html#CarpCondition">CarpCondition</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpConditionType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=686:710#L15">CarpConditionType</a>
+				<a class="permalink" href="index.html#CarpConditionType">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CarpConditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CarpList">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=4281:4368#L122">CarpList</a>
+				<a class="permalink" href="index.html#CarpList">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CarpList is a list of Carps.
+</p>
+
+			<pre>type CarpList struct {
+    <a href="../meta/v1/index.html">metav1</a>.<a href="../meta/v1/index.html#TypeMeta">TypeMeta</a>
+    <span class="comment">// +optional</span>
+    <a href="../meta/v1/index.html">metav1</a>.<a href="../meta/v1/index.html#ListMeta">ListMeta</a>
+
+<span id="CarpList.Items"></span>    Items []<a href="index.html#Carp">Carp</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpList.DeepCopy">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=2561:2601#L79">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpList.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpList">CarpList</a>) DeepCopy() *<a href="index.html#CarpList">CarpList</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpList.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpList.DeepCopyInto">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=2165:2212#L64">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpList.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpList">CarpList</a>) DeepCopyInto(out *<a href="index.html#CarpList">CarpList</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpList.DeepCopyObject">func (*CarpList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=2805:2856#L89">DeepCopyObject</a>
+					<a class="permalink" href="index.html#CarpList.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpList">CarpList</a>) DeepCopyObject() <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpPhase">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=712:736#L16">CarpPhase</a>
+				<a class="permalink" href="index.html#CarpPhase">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type CarpPhase <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CarpSpec">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=2191:4175#L77">CarpSpec</a>
+				<a class="permalink" href="index.html#CarpSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CarpSpec is a description of a carp
+</p>
+
+			<pre>type CarpSpec struct {
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.RestartPolicy"></span>    RestartPolicy <a href="index.html#RestartPolicy">RestartPolicy</a>
+    <span class="comment">// Optional duration in seconds the carp needs to terminate gracefully. May be decreased in delete request.</span>
+    <span class="comment">// Value must be non-negative integer. The value zero indicates delete immediately.</span>
+    <span class="comment">// If this value is nil, the default grace period will be used instead.</span>
+    <span class="comment">// The grace period is the duration in seconds after the processes running in the carp are sent</span>
+    <span class="comment">// a termination signal and the time when the processes are forcibly halted with a kill signal.</span>
+    <span class="comment">// Set this value longer than the expected cleanup time for your process.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.TerminationGracePeriodSeconds"></span>    TerminationGracePeriodSeconds *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>
+    <span class="comment">// Optional duration in seconds relative to the StartTime that the carp may be active on a node</span>
+    <span class="comment">// before the system actively tries to terminate the carp; value must be positive integer</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.ActiveDeadlineSeconds"></span>    ActiveDeadlineSeconds *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>
+<span id="CarpSpec.NodeSelector"></span>    <span class="comment">// NodeSelector is a selector which must be true for the carp to fit on a node</span>
+    <span class="comment">// +optional</span>
+    NodeSelector map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+<span id="CarpSpec.ServiceAccountName"></span>    <span class="comment">// ServiceAccountName is the name of the ServiceAccount to use to run this carp</span>
+    <span class="comment">// The carp will be allowed to use secrets referenced by the ServiceAccount</span>
+    ServiceAccountName <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+<span id="CarpSpec.NodeName"></span>    <span class="comment">// NodeName is a request to schedule this carp onto a specific node.  If it is non-empty,</span>
+    <span class="comment">// the scheduler simply schedules this carp onto that node, assuming that it fits resource</span>
+    <span class="comment">// requirements.</span>
+    <span class="comment">// +optional</span>
+    NodeName <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// Specifies the hostname of the Carp.</span>
+    <span class="comment">// If not specified, the carp&#39;s hostname will be set to a system-defined value.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.Hostname"></span>    Hostname <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// If specified, the fully qualified Carp hostname will be &#34;&lt;hostname&gt;.&lt;subdomain&gt;.&lt;carp namespace&gt;.svc.&lt;cluster domain&gt;&#34;.</span>
+    <span class="comment">// If not specified, the carp will not have a domainname at all.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.Subdomain"></span>    Subdomain <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// If specified, the carp will be dispatched by specified scheduler.</span>
+    <span class="comment">// If not specified, the carp will be dispatched by default scheduler.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpSpec.SchedulerName"></span>    SchedulerName <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpSpec.DeepCopy">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=3698:3738#L120">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpSpec.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpSpec">CarpSpec</a>) DeepCopy() *<a href="index.html#CarpSpec">CarpSpec</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpSpec.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpSpec.DeepCopyInto">func (*CarpSpec) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=3038:3085#L97">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpSpec.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpSpec">CarpSpec</a>) DeepCopyInto(out *<a href="index.html#CarpSpec">CarpSpec</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CarpStatus">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=1330:1923#L40">CarpStatus</a>
+				<a class="permalink" href="index.html#CarpStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CarpStatus represents information about the status of a carp. Status may trail the actual
+state of a system.
+</p>
+
+			<pre>type CarpStatus struct {
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Phase"></span>    Phase <a href="index.html#CarpPhase">CarpPhase</a>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Conditions"></span>    Conditions []<a href="index.html#CarpCondition">CarpCondition</a>
+    <span class="comment">// A human readable message indicating details about why the carp is in this state.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Message"></span>    Message <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// A brief CamelCase message indicating details about why the carp is in this state. e.g. &#39;DiskPressure&#39;</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.Reason"></span>    Reason <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.HostIP"></span>    HostIP <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.CarpIP"></span>    CarpIP <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Date and time at which the object was acknowledged by the Kubelet.</span>
+    <span class="comment">// This is before the Kubelet pulled the container image(s) for the carp.</span>
+    <span class="comment">// +optional</span>
+<span id="CarpStatus.StartTime"></span>    StartTime *<a href="../meta/v1/index.html">metav1</a>.<a href="../meta/v1/index.html#Time">Time</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CarpStatus.DeepCopy">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=4402:4446#L147">DeepCopy</a>
+					<a class="permalink" href="index.html#CarpStatus.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpStatus">CarpStatus</a>) DeepCopy() *<a href="index.html#CarpStatus">CarpStatus</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new CarpStatus.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CarpStatus.DeepCopyInto">func (*CarpStatus) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/zz_generated.deepcopy.go?s=3947:3998#L130">DeepCopyInto</a>
+					<a class="permalink" href="index.html#CarpStatus.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#CarpStatus">CarpStatus</a>) DeepCopyInto(out *<a href="index.html#CarpStatus">CarpStatus</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConditionStatus">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=660:684#L14">ConditionStatus</a>
+				<a class="permalink" href="index.html#ConditionStatus">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConditionStatus <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RestartPolicy">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/testapigroup/types.go?s=738:762#L17">RestartPolicy</a>
+				<a class="permalink" href="index.html#RestartPolicy">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type RestartPolicy <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="fuzzer/index.html">fuzzer</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="install/index.html">install</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						Package install installs the certificates API group, making it available as an option to all of the API encoding/decoding machinery.
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="v1/index.html">v1</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

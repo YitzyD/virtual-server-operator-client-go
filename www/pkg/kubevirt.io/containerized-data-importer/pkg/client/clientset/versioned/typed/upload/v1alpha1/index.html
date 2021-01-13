@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>v1alpha1 - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package v1alpha1
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+This package has the automatically generated typed clients.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#UploadTokenRequestExpansion">type UploadTokenRequestExpansion</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UploadTokenRequestInterface">type UploadTokenRequestInterface</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UploadTokenRequestsGetter">type UploadTokenRequestsGetter</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UploadV1alpha1Client">type UploadV1alpha1Client</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#New">func New(c rest.Interface) *UploadV1alpha1Client</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewForConfig">func NewForConfig(c *rest.Config) (*UploadV1alpha1Client, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewForConfigOrDie">func NewForConfigOrDie(c *rest.Config) *UploadV1alpha1Client</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadV1alpha1Client.RESTClient">func (c *UploadV1alpha1Client) RESTClient() rest.Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadV1alpha1Client.UploadTokenRequests">func (c *UploadV1alpha1Client) UploadTokenRequests(namespace string) UploadTokenRequestInterface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UploadV1alpha1Interface">type UploadV1alpha1Interface</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/generated_expansion.go">generated_expansion.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go">upload_client.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/uploadtokenrequest.go">uploadtokenrequest.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="UploadTokenRequestExpansion">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/generated_expansion.go?s=629:673#L11">UploadTokenRequestExpansion</a>
+				<a class="permalink" href="index.html#UploadTokenRequestExpansion">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type UploadTokenRequestExpansion interface{}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UploadTokenRequestInterface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/uploadtokenrequest.go?s=1312:2404#L30">UploadTokenRequestInterface</a>
+				<a class="permalink" href="index.html#UploadTokenRequestInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UploadTokenRequestInterface has methods to work with UploadTokenRequest resources.
+</p>
+
+			<pre>type UploadTokenRequestInterface interface {
+    Create(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, uploadTokenRequest *<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#CreateOptions">CreateOptions</a>) (*<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    Update(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, uploadTokenRequest *<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (*<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    UpdateStatus(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, uploadTokenRequest *<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (*<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    Delete(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    DeleteCollection(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>, listOpts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    Get(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#GetOptions">GetOptions</a>) (*<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    List(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (*<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequestList">UploadTokenRequestList</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    Watch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (<a href="../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html">watch</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html#Interface">Interface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    Patch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, pt <a href="../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html">types</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html#PatchType">PatchType</a>, data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, opts <a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#PatchOptions">PatchOptions</a>, subresources ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (result *<a href="../../../../../../apis/upload/v1alpha1/index.html">v1alpha1</a>.<a href="../../../../../../apis/upload/v1alpha1/index.html#UploadTokenRequest">UploadTokenRequest</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <a href="index.html#UploadTokenRequestExpansion">UploadTokenRequestExpansion</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UploadTokenRequestsGetter">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/uploadtokenrequest.go?s=1113:1224#L25">UploadTokenRequestsGetter</a>
+				<a class="permalink" href="index.html#UploadTokenRequestsGetter">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UploadTokenRequestsGetter has a method to return a UploadTokenRequestInterface.
+A group&#39;s client should implement this interface.
+</p>
+
+			<pre>type UploadTokenRequestsGetter interface {
+    UploadTokenRequests(namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#UploadTokenRequestInterface">UploadTokenRequestInterface</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UploadV1alpha1Client">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go?s=1033:1096#L23">UploadV1alpha1Client</a>
+				<a class="permalink" href="index.html#UploadV1alpha1Client">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UploadV1alpha1Client is used to interact with features provided by the upload.cdi.kubevirt.io group.
+</p>
+
+			<pre>type UploadV1alpha1Client struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="New">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go?s=1941:1989#L55">New</a>
+					<a class="permalink" href="index.html#New">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func New(c <a href="http://localhost:6060/pkg/k8s.io/client-go/rest/">rest</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/#Interface">Interface</a>) *<a href="index.html#UploadV1alpha1Client">UploadV1alpha1Client</a></pre>
+				<p>
+New creates a new UploadV1alpha1Client for the given RESTClient.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewForConfig">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go?s=1318:1382#L32">NewForConfig</a>
+					<a class="permalink" href="index.html#NewForConfig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewForConfig(c *<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/">rest</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/#Config">Config</a>) (*<a href="index.html#UploadV1alpha1Client">UploadV1alpha1Client</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewForConfig creates a new UploadV1alpha1Client for the given config.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewForConfigOrDie">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go?s=1727:1787#L46">NewForConfigOrDie</a>
+					<a class="permalink" href="index.html#NewForConfigOrDie">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewForConfigOrDie(c *<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/">rest</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/#Config">Config</a>) *<a href="index.html#UploadV1alpha1Client">UploadV1alpha1Client</a></pre>
+				<p>
+NewForConfigOrDie creates a new UploadV1alpha1Client for the given config and
+panics if there is an error in the config.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="UploadV1alpha1Client.RESTClient">func (*UploadV1alpha1Client) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go?s=2450:2508#L74">RESTClient</a>
+					<a class="permalink" href="index.html#UploadV1alpha1Client.RESTClient">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#UploadV1alpha1Client">UploadV1alpha1Client</a>) RESTClient() <a href="http://localhost:6060/pkg/k8s.io/client-go/rest/">rest</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/#Interface">Interface</a></pre>
+				<p>
+RESTClient returns a RESTClient that is used to communicate
+with API server by this client implementation.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UploadV1alpha1Client.UploadTokenRequests">func (*UploadV1alpha1Client) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go?s=1098:1194#L27">UploadTokenRequests</a>
+					<a class="permalink" href="index.html#UploadV1alpha1Client.UploadTokenRequests">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#UploadV1alpha1Client">UploadV1alpha1Client</a>) UploadTokenRequests(namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#UploadTokenRequestInterface">UploadTokenRequestInterface</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UploadV1alpha1Interface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/upload/v1alpha1/upload_client.go?s=829:927#L17">UploadV1alpha1Interface</a>
+				<a class="permalink" href="index.html#UploadV1alpha1Interface">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type UploadV1alpha1Interface interface {
+    RESTClient() <a href="http://localhost:6060/pkg/k8s.io/client-go/rest/">rest</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/#Interface">Interface</a>
+    <a href="index.html#UploadTokenRequestsGetter">UploadTokenRequestsGetter</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="fake/index.html">fake</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						Package fake has the automatically generated clients.
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>v1beta1 - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package v1beta1
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#NewCDIConfigInformer">func NewCDIConfigInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers) cache.SharedIndexInformer</a></dd>
+			
+				
+				<dd><a href="index.html#NewCDIInformer">func NewCDIInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers) cache.SharedIndexInformer</a></dd>
+			
+				
+				<dd><a href="index.html#NewDataVolumeInformer">func NewDataVolumeInformer(client versioned.Interface, namespace string, resyncPeriod time.Duration, indexers cache.Indexers) cache.SharedIndexInformer</a></dd>
+			
+				
+				<dd><a href="index.html#NewFilteredCDIConfigInformer">func NewFilteredCDIConfigInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer</a></dd>
+			
+				
+				<dd><a href="index.html#NewFilteredCDIInformer">func NewFilteredCDIInformer(client versioned.Interface, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer</a></dd>
+			
+				
+				<dd><a href="index.html#NewFilteredDataVolumeInformer">func NewFilteredDataVolumeInformer(client versioned.Interface, namespace string, resyncPeriod time.Duration, indexers cache.Indexers, tweakListOptions internalinterfaces.TweakListOptionsFunc) cache.SharedIndexInformer</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CDIConfigInformer">type CDIConfigInformer</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#CDIInformer">type CDIInformer</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DataVolumeInformer">type DataVolumeInformer</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Interface">type Interface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#New">func New(f internalinterfaces.SharedInformerFactory, namespace string, tweakListOptions internalinterfaces.TweakListOptionsFunc) Interface</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdi.go">cdi.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdiconfig.go">cdiconfig.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/datavolume.go">datavolume.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/interface.go">interface.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="NewCDIConfigInformer">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdiconfig.go?s=1794:1926#L40">NewCDIConfigInformer</a>
+				<a class="permalink" href="index.html#NewCDIConfigInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewCDIConfigInformer(client <a href="../../../../clientset/versioned/index.html">versioned</a>.<a href="../../../../clientset/versioned/index.html#Interface">Interface</a>, resyncPeriod <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>, indexers <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#Indexers">Indexers</a>) <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a></pre>
+			<p>
+NewCDIConfigInformer constructs a new informer for CDIConfig type.
+Always prefer using an informer factory to get a shared informer instead of getting an independent
+one. This reduces memory footprint and number of connections to the server.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewCDIInformer">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdi.go?s=1752:1878#L40">NewCDIInformer</a>
+				<a class="permalink" href="index.html#NewCDIInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewCDIInformer(client <a href="../../../../clientset/versioned/index.html">versioned</a>.<a href="../../../../clientset/versioned/index.html#Interface">Interface</a>, resyncPeriod <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>, indexers <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#Indexers">Indexers</a>) <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a></pre>
+			<p>
+NewCDIInformer constructs a new informer for CDI type.
+Always prefer using an informer factory to get a shared informer instead of getting an independent
+one. This reduces memory footprint and number of connections to the server.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewDataVolumeInformer">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/datavolume.go?s=1826:1977#L41">NewDataVolumeInformer</a>
+				<a class="permalink" href="index.html#NewDataVolumeInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewDataVolumeInformer(client <a href="../../../../clientset/versioned/index.html">versioned</a>.<a href="../../../../clientset/versioned/index.html#Interface">Interface</a>, namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>, resyncPeriod <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>, indexers <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#Indexers">Indexers</a>) <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a></pre>
+			<p>
+NewDataVolumeInformer constructs a new informer for DataVolume type.
+Always prefer using an informer factory to get a shared informer instead of getting an independent
+one. This reduces memory footprint and number of connections to the server.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewFilteredCDIConfigInformer">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdiconfig.go?s=2265:2463#L47">NewFilteredCDIConfigInformer</a>
+				<a class="permalink" href="index.html#NewFilteredCDIConfigInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewFilteredCDIConfigInformer(client <a href="../../../../clientset/versioned/index.html">versioned</a>.<a href="../../../../clientset/versioned/index.html#Interface">Interface</a>, resyncPeriod <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>, indexers <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#Indexers">Indexers</a>, tweakListOptions <a href="../../internalinterfaces/index.html">internalinterfaces</a>.<a href="../../internalinterfaces/index.html#TweakListOptionsFunc">TweakListOptionsFunc</a>) <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a></pre>
+			<p>
+NewFilteredCDIConfigInformer constructs a new informer for CDIConfig type.
+Always prefer using an informer factory to get a shared informer instead of getting an independent
+one. This reduces memory footprint and number of connections to the server.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewFilteredCDIInformer">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdi.go?s=2199:2391#L47">NewFilteredCDIInformer</a>
+				<a class="permalink" href="index.html#NewFilteredCDIInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewFilteredCDIInformer(client <a href="../../../../clientset/versioned/index.html">versioned</a>.<a href="../../../../clientset/versioned/index.html#Interface">Interface</a>, resyncPeriod <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>, indexers <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#Indexers">Indexers</a>, tweakListOptions <a href="../../internalinterfaces/index.html">internalinterfaces</a>.<a href="../../internalinterfaces/index.html#TweakListOptionsFunc">TweakListOptionsFunc</a>) <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a></pre>
+			<p>
+NewFilteredCDIInformer constructs a new informer for CDI type.
+Always prefer using an informer factory to get a shared informer instead of getting an independent
+one. This reduces memory footprint and number of connections to the server.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewFilteredDataVolumeInformer">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/datavolume.go?s=2330:2547#L48">NewFilteredDataVolumeInformer</a>
+				<a class="permalink" href="index.html#NewFilteredDataVolumeInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewFilteredDataVolumeInformer(client <a href="../../../../clientset/versioned/index.html">versioned</a>.<a href="../../../../clientset/versioned/index.html#Interface">Interface</a>, namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>, resyncPeriod <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>, indexers <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#Indexers">Indexers</a>, tweakListOptions <a href="../../internalinterfaces/index.html">internalinterfaces</a>.<a href="../../internalinterfaces/index.html#TweakListOptionsFunc">TweakListOptionsFunc</a>) <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a></pre>
+			<p>
+NewFilteredDataVolumeInformer constructs a new informer for DataVolume type.
+Always prefer using an informer factory to get a shared informer instead of getting an independent
+one. This reduces memory footprint and number of connections to the server.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="CDIConfigInformer">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdiconfig.go?s=1281:1389#L27">CDIConfigInformer</a>
+				<a class="permalink" href="index.html#CDIConfigInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CDIConfigInformer provides access to a shared informer and lister for
+CDIConfigs.
+</p>
+
+			<pre>type CDIConfigInformer interface {
+    Informer() <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a>
+    Lister() <a href="../../../../listers/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../listers/core/v1beta1/index.html#CDIConfigLister">CDIConfigLister</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CDIInformer">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/cdi.go?s=1269:1365#L27">CDIInformer</a>
+				<a class="permalink" href="index.html#CDIInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CDIInformer provides access to a shared informer and lister for
+CDIs.
+</p>
+
+			<pre>type CDIInformer interface {
+    Informer() <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a>
+    Lister() <a href="../../../../listers/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../listers/core/v1beta1/index.html#CDILister">CDILister</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DataVolumeInformer">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/datavolume.go?s=1283:1393#L27">DataVolumeInformer</a>
+				<a class="permalink" href="index.html#DataVolumeInformer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DataVolumeInformer provides access to a shared informer and lister for
+DataVolumes.
+</p>
+
+			<pre>type DataVolumeInformer interface {
+    Informer() <a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/">cache</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/tools/cache/#SharedIndexInformer">SharedIndexInformer</a>
+    Lister() <a href="../../../../listers/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../listers/core/v1beta1/index.html#DataVolumeLister">DataVolumeLister</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Interface">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/interface.go?s=834:1070#L16">Interface</a>
+				<a class="permalink" href="index.html#Interface">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Interface provides access to all the informers in this group version.
+</p>
+
+			<pre>type Interface interface {
+    <span class="comment">// CDIs returns a CDIInformer.</span>
+    CDIs() <a href="index.html#CDIInformer">CDIInformer</a>
+    <span class="comment">// CDIConfigs returns a CDIConfigInformer.</span>
+    CDIConfigs() <a href="index.html#CDIConfigInformer">CDIConfigInformer</a>
+    <span class="comment">// DataVolumes returns a DataVolumeInformer.</span>
+    DataVolumes() <a href="index.html#DataVolumeInformer">DataVolumeInformer</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="New">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/informers/externalversions/core/v1beta1/interface.go?s=1271:1409#L32">New</a>
+					<a class="permalink" href="index.html#New">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func New(f <a href="../../internalinterfaces/index.html">internalinterfaces</a>.<a href="../../internalinterfaces/index.html#SharedInformerFactory">SharedInformerFactory</a>, namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>, tweakListOptions <a href="../../internalinterfaces/index.html">internalinterfaces</a>.<a href="../../internalinterfaces/index.html#TweakListOptionsFunc">TweakListOptionsFunc</a>) <a href="index.html#Interface">Interface</a></pre>
+				<p>
+New returns a new Interface.
+</p>
+
+				
+				
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

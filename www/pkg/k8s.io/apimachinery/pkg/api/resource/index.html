@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>resource - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package resource
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/api/resource"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+				<dd><a href="index.html#pkg-examples" class="examplesLink">Examples</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#CanonicalValue">type CanonicalValue</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Format">type Format</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Quantity">type Quantity</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MustParse">func MustParse(str string) Quantity</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewMilliQuantity">func NewMilliQuantity(value int64, format Format) *Quantity</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewQuantity">func NewQuantity(value int64, format Format) *Quantity</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewScaledQuantity">func NewScaledQuantity(value int64, scale Scale) *Quantity</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseQuantity">func ParseQuantity(str string) (Quantity, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Add">func (q *Quantity) Add(y Quantity)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.AsApproximateFloat64">func (q *Quantity) AsApproximateFloat64() float64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.AsCanonicalBytes">func (q *Quantity) AsCanonicalBytes(out []byte) (result []byte, exponent int32)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.AsDec">func (q *Quantity) AsDec() *inf.Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.AsInt64">func (q *Quantity) AsInt64() (int64, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.AsScale">func (q *Quantity) AsScale(scale Scale) (CanonicalValue, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.CanonicalizeBytes">func (q *Quantity) CanonicalizeBytes(out []byte) (result, suffix []byte)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Cmp">func (q *Quantity) Cmp(y Quantity) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.CmpInt64">func (q *Quantity) CmpInt64(y int64) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.DeepCopy">func (q Quantity) DeepCopy() Quantity</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.DeepCopyInto">func (in *Quantity) DeepCopyInto(out *Quantity)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Descriptor">func (*Quantity) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Equal">func (q Quantity) Equal(v Quantity) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.IsZero">func (q *Quantity) IsZero() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Marshal">func (m *Quantity) Marshal() (data []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.MarshalJSON">func (q Quantity) MarshalJSON() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.MarshalTo">func (m *Quantity) MarshalTo(data []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.MarshalToSizedBuffer">func (m *Quantity) MarshalToSizedBuffer(data []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.MilliValue">func (q *Quantity) MilliValue() int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Neg">func (q *Quantity) Neg()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.OpenAPISchemaFormat">func (_ Quantity) OpenAPISchemaFormat() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.OpenAPISchemaType">func (_ Quantity) OpenAPISchemaType() []string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.ProtoMessage">func (*Quantity) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Reset">func (m *Quantity) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.RoundUp">func (q *Quantity) RoundUp(scale Scale) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.ScaledValue">func (q *Quantity) ScaledValue(scale Scale) int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Set">func (q *Quantity) Set(value int64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.SetMilli">func (q *Quantity) SetMilli(value int64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.SetScaled">func (q *Quantity) SetScaled(value int64, scale Scale)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Sign">func (q *Quantity) Sign() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Size">func (m *Quantity) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.String">func (q *Quantity) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Sub">func (q *Quantity) Sub(y Quantity)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.ToDec">func (q *Quantity) ToDec() *Quantity</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.ToUnstructured">func (q Quantity) ToUnstructured() interface{}</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Unmarshal">func (m *Quantity) Unmarshal(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.UnmarshalJSON">func (q *Quantity) UnmarshalJSON(value []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.Value">func (q *Quantity) Value() int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.XXX_DiscardUnknown">func (m *Quantity) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.XXX_Marshal">func (m *Quantity) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.XXX_Merge">func (m *Quantity) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.XXX_Size">func (m *Quantity) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Quantity.XXX_Unmarshal">func (m *Quantity) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Scale">type Scale</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+		<div id="pkg-examples">
+			<h3>Examples</h3>
+			<div class="js-expandAll expandAll collapsed">(Expand All)</div>
+			<dl>
+			
+			<dd><a class="exampleLink" href="index.html#example_Format">Format</a></dd>
+			
+			<dd><a class="exampleLink" href="index.html#example_MustParse">MustParse</a></dd>
+			
+			</dl>
+		</div>
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/amount.go">amount.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go">generated.pb.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/math.go">math.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go">quantity.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity_proto.go">quantity_proto.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/scale_int.go">scale_int.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/suffix.go">suffix.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span id="DecimalExponent">DecimalExponent</span> = <a href="index.html#Format">Format</a>(&#34;DecimalExponent&#34;) <span class="comment">// e.g., 12e6</span>
+    <span id="BinarySI">BinarySI</span>        = <a href="index.html#Format">Format</a>(&#34;BinarySI&#34;)        <span class="comment">// e.g., 12Mi (12 * 2^20)</span>
+    <span id="DecimalSI">DecimalSI</span>       = <a href="index.html#Format">Format</a>(&#34;DecimalSI&#34;)       <span class="comment">// e.g., 12M  (12 * 10^6)</span>
+)</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var (
+    <span class="comment">// Errors that could happen while parsing a string.</span>
+    <span id="ErrFormatWrong">ErrFormatWrong</span> = <a href="http://localhost:6060/pkg/errors/">errors</a>.<a href="http://localhost:6060/pkg/errors/#New">New</a>(&#34;quantities must match the regular expression &#39;&#34; + splitREString + &#34;&#39;&#34;)
+    <span id="ErrNumeric">ErrNumeric</span>     = <a href="http://localhost:6060/pkg/errors/">errors</a>.<a href="http://localhost:6060/pkg/errors/#New">New</a>(&#34;unable to parse numeric part of quantity&#34;)
+    <span id="ErrSuffix">ErrSuffix</span>      = <a href="http://localhost:6060/pkg/errors/">errors</a>.<a href="http://localhost:6060/pkg/errors/#New">New</a>(&#34;unable to parse quantity&#39;s suffix&#34;)
+)</pre>
+			
+				
+				<pre>var (
+    <span id="ErrInvalidLengthGenerated">ErrInvalidLengthGenerated</span> = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: negative length found during unmarshaling&#34;)
+    <span id="ErrIntOverflowGenerated">ErrIntOverflowGenerated</span>   = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: integer overflow&#34;)
+)</pre>
+			
+				
+				<pre>var (
+
+    <span class="comment">// The maximum value we can represent milli-units for.</span>
+    <span class="comment">// Compare with the return value of Quantity.Value() to</span>
+    <span class="comment">// see if it&#39;s safe to use Quantity.MilliValue().</span>
+    <span id="MaxMilliValue">MaxMilliValue</span> = <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>(((1 &lt;&lt; 63) - 1) / 1000)
+)</pre>
+			
+				
+				<pre>var (
+    <span id="Zero">Zero</span> = int64Amount{}
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="CanonicalValue">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=3833:4432#L93">CanonicalValue</a>
+				<a class="permalink" href="index.html#CanonicalValue">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CanonicalValue allows a quantity amount to be converted to a string.
+</p>
+
+			<pre>type CanonicalValue interface {
+    <span class="comment">// AsCanonicalBytes returns a byte array representing the string representation</span>
+    <span class="comment">// of the value mantissa and an int32 representing its exponent in base-10. Callers may</span>
+    <span class="comment">// pass a byte slice to the method to avoid allocations.</span>
+    AsCanonicalBytes(out []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#int32">int32</a>)
+    <span class="comment">// AsCanonicalBase1024Bytes returns a byte array representing the string representation</span>
+    <span class="comment">// of the value mantissa and an int32 representing its exponent in base-1024. Callers</span>
+    <span class="comment">// may pass a byte slice to the method to avoid allocations.</span>
+    AsCanonicalBase1024Bytes(out []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#int32">int32</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Format">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=4496:4514#L105">Format</a>
+				<a class="permalink" href="index.html#Format">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Format lists the three possible formattings of a quantity.
+</p>
+
+			<pre>type Format <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			<div id="example_Format" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code">memorySize := resource.NewQuantity(5*1024*1024*1024, resource.BinarySI)
+fmt.Printf(&#34;memorySize = %v\n&#34;, memorySize)
+
+diskSize := resource.NewQuantity(5*1000*1000*1000, resource.DecimalSI)
+fmt.Printf(&#34;diskSize = %v\n&#34;, diskSize)
+
+cores := resource.NewMilliQuantity(5300, resource.DecimalSI)
+fmt.Printf(&#34;cores = %v\n&#34;, cores)
+
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">memorySize = 5Gi
+diskSize = 5G
+cores = 5300m
+</pre>
+			
+		
+	</div>
+</div>
+
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Quantity">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=3420:3759#L79">Quantity</a>
+				<a class="permalink" href="index.html#Quantity">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Quantity is a fixed-point representation of a number.
+It provides convenient marshaling/unmarshaling in JSON and YAML,
+in addition to String() and AsInt64() accessors.
+</p>
+<p>
+The serialization format is:
+</p>
+<p>
+&lt;quantity&gt;        ::= &lt;signedNumber&gt;&lt;suffix&gt;
+</p>
+<pre>(Note that &lt;suffix&gt; may be empty, from the &#34;&#34; case in &lt;decimalSI&gt;.)
+</pre>
+<p>
+&lt;digit&gt;           ::= 0 | 1 | ... | 9
+&lt;digits&gt;          ::= &lt;digit&gt; | &lt;digit&gt;&lt;digits&gt;
+&lt;number&gt;          ::= &lt;digits&gt; | &lt;digits&gt;.&lt;digits&gt; | &lt;digits&gt;. | .&lt;digits&gt;
+&lt;sign&gt;            ::= &#34;+&#34; | &#34;-&#34;
+&lt;signedNumber&gt;    ::= &lt;number&gt; | &lt;sign&gt;&lt;number&gt;
+&lt;suffix&gt;          ::= &lt;binarySI&gt; | &lt;decimalExponent&gt; | &lt;decimalSI&gt;
+&lt;binarySI&gt;        ::= Ki | Mi | Gi | Ti | Pi | Ei
+</p>
+<pre>(International System of units; See: <a href="http://physics.nist.gov/cuu/Units/binary.html">http://physics.nist.gov/cuu/Units/binary.html</a>)
+</pre>
+<p>
+&lt;decimalSI&gt;       ::= m | &#34;&#34; | k | M | G | T | P | E
+</p>
+<pre>(Note that 1024 = 1Ki but 1000 = 1k; I didn&#39;t choose the capitalization.)
+</pre>
+<p>
+&lt;decimalExponent&gt; ::= &#34;e&#34; &lt;signedNumber&gt; | &#34;E&#34; &lt;signedNumber&gt;
+</p>
+<p>
+No matter which of the three exponent forms is used, no quantity may represent
+a number greater than 2^63-1 in magnitude, nor may it have more than 3 decimal
+places. Numbers larger or more precise will be capped or rounded up.
+(E.g.: 0.1m will rounded up to 1m.)
+This may be extended in the future if we require larger or smaller quantities.
+</p>
+<p>
+When a Quantity is parsed from a string, it will remember the type of suffix
+it had, and will use the same type again when it is serialized.
+</p>
+<p>
+Before serializing, Quantity will be put in &#34;canonical form&#34;.
+This means that Exponent/suffix will be adjusted up or down (with a
+corresponding increase or decrease in Mantissa) such that:
+</p>
+<pre>a. No precision is lost
+b. No fractional digits will be emitted
+c. The exponent (or suffix) is as large as possible.
+</pre>
+<p>
+The sign will be omitted unless the number is negative.
+</p>
+<p>
+Examples:
+</p>
+<pre>1.5 will be serialized as &#34;1500m&#34;
+1.5Gi will be serialized as &#34;1536Mi&#34;
+</pre>
+<p>
+Note that the quantity will NEVER be internally represented by a
+floating point number. That is the whole point of this exercise.
+</p>
+<p>
+Non-canonical values will still parse as long as they are well formed,
+but will be re-emitted in their canonical form. (So always use canonical
+form, or don&#39;t diff.)
+</p>
+<p>
+This format is intended to make it difficult to use these numbers without
+writing some sort of special handling code in the hopes that that will
+cause implementors to also use a fixed point implementation.
+</p>
+<p>
++protobuf=true
++protobuf.embed=string
++protobuf.options.marshal=false
++protobuf.options.(gogoproto.goproto_stringer)=false
++k8s:deepcopy-gen=true
++k8s:openapi-gen=true
+</p>
+
+			<pre>type Quantity struct {
+
+    <span class="comment">// Change Format at will. See the comment for Canonicalize for</span>
+    <span class="comment">// more details.</span>
+    <a href="index.html#Format">Format</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="MustParse">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=4855:4890#L115">MustParse</a>
+					<a class="permalink" href="index.html#MustParse">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func MustParse(str <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#Quantity">Quantity</a></pre>
+				<p>
+MustParse turns the given string into a quantity or panics; for tests
+or other cases where you know the string is valid.
+</p>
+
+				<div id="example_MustParse" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code">memorySize := resource.MustParse(&#34;5Gi&#34;)
+fmt.Printf(&#34;memorySize = %v (%v)\n&#34;, memorySize.Value(), memorySize.Format)
+
+diskSize := resource.MustParse(&#34;5G&#34;)
+fmt.Printf(&#34;diskSize = %v (%v)\n&#34;, diskSize.Value(), diskSize.Format)
+
+cores := resource.MustParse(&#34;5300m&#34;)
+fmt.Printf(&#34;milliCores = %v (%v)\n&#34;, cores.MilliValue(), cores.Format)
+
+cores2 := resource.MustParse(&#34;5.4&#34;)
+fmt.Printf(&#34;milliCores = %v (%v)\n&#34;, cores2.MilliValue(), cores2.Format)
+
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">memorySize = 5368709120 (BinarySI)
+diskSize = 5000000000 (DecimalSI)
+milliCores = 5300 (DecimalSI)
+milliCores = 5400 (DecimalSI)
+</pre>
+			
+		
+	</div>
+</div>
+
+				
+			
+				
+				<h3 id="NewMilliQuantity">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=21090:21149#L702">NewMilliQuantity</a>
+					<a class="permalink" href="index.html#NewMilliQuantity">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewMilliQuantity(value <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, format <a href="index.html#Format">Format</a>) *<a href="index.html#Quantity">Quantity</a></pre>
+				<p>
+NewMilliQuantity returns a new Quantity representing the given
+value * 1/1000 in the given format. Note that BinarySI formatting
+will round fractional values, and will be changed to DecimalSI for
+values x where (-1 &lt; x &lt; 1) &amp;&amp; (x != 0).
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewQuantity">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=20704:20758#L691">NewQuantity</a>
+					<a class="permalink" href="index.html#NewQuantity">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewQuantity(value <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, format <a href="index.html#Format">Format</a>) *<a href="index.html#Quantity">Quantity</a></pre>
+				<p>
+NewQuantity returns a new Quantity representing the given
+value in the given format.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewScaledQuantity">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=21351:21409#L711">NewScaledQuantity</a>
+					<a class="permalink" href="index.html#NewScaledQuantity">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewScaledQuantity(value <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, scale <a href="index.html#Scale">Scale</a>) *<a href="index.html#Quantity">Quantity</a></pre>
+				<p>
+NewScaledQuantity returns a new Quantity representing the given
+value * 10^scale in DecimalSI format.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ParseQuantity">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=7618:7666#L254">ParseQuantity</a>
+					<a class="permalink" href="index.html#ParseQuantity">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseQuantity(str <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#Quantity">Quantity</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParseQuantity turns str into a Quantity, or returns an error.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Quantity.Add">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=16694:16728#L552">Add</a>
+					<a class="permalink" href="index.html#Quantity.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) Add(y <a href="index.html#Quantity">Quantity</a>)</pre>
+				<p>
+Add adds the provide y quantity to the current value. If the current value is zero,
+the format of the quantity will be updated to the format of y.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.AsApproximateFloat64">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=13528:13577#L439">AsApproximateFloat64</a>
+					<a class="permalink" href="index.html#Quantity.AsApproximateFloat64">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) AsApproximateFloat64() <a href="http://localhost:6060/pkg/builtin/#float64">float64</a></pre>
+				<p>
+AsApproximateFloat64 returns a float64 representation of the quantity which may
+lose precision. If the value of the quantity is outside the range of a float64
++Inf/-Inf will be returned.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.AsCanonicalBytes">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=15109:15188#L497">AsCanonicalBytes</a>
+					<a class="permalink" href="index.html#Quantity.AsCanonicalBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) AsCanonicalBytes(out []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (result []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, exponent <a href="http://localhost:6060/pkg/builtin/#int32">int32</a>)</pre>
+				<p>
+AsCanonicalBytes returns the canonical byte representation of this quantity as a mantissa
+and base 10 exponent. The out byte slice may be passed to the method to avoid an extra
+allocation.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.AsDec">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=14769:14804#L485">AsDec</a>
+					<a class="permalink" href="index.html#Quantity.AsDec">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) AsDec() *<a href="../../../../../gopkg.in/inf.v0/index.html">inf</a>.<a href="../../../../../gopkg.in/inf.v0/index.html#Dec">Dec</a></pre>
+				<p>
+AsDec returns the quantity as represented by a scaled inf.Dec.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.AsInt64">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=14376:14418#L468">AsInt64</a>
+					<a class="permalink" href="index.html#Quantity.AsInt64">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) AsInt64() (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+AsInt64 returns a representation of the current value as an int64 if a fast conversion
+is possible. If false is returned, callers must use the inf.Dec form of this quantity.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.AsScale">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=15826:15888#L523">AsScale</a>
+					<a class="permalink" href="index.html#Quantity.AsScale">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) AsScale(scale <a href="index.html#Scale">Scale</a>) (<a href="index.html#CanonicalValue">CanonicalValue</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+AsScale returns the current value, rounded up to the provided scale, and returns
+false if the scale resulted in a loss of precision.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.CanonicalizeBytes">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=12266:12338#L397">CanonicalizeBytes</a>
+					<a class="permalink" href="index.html#Quantity.CanonicalizeBytes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) CanonicalizeBytes(out []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (result, suffix []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>)</pre>
+				<p>
+CanonicalizeBytes returns the canonical form of q and its suffix (see comment on Quantity).
+</p>
+<p>
+Note about BinarySI:
+* If q.Format is set to BinarySI and q.Amount represents a non-zero value between
+</p>
+<pre>-1 and +1, it will be emitted as if q.Format were DecimalSI.
+</pre>
+<p>
+* Otherwise, if q.Format is set to BinarySI, fractional parts of q.Amount will be
+</p>
+<pre>rounded up. (1.1i becomes 2i.)
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Cmp">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=17450:17488#L582">Cmp</a>
+					<a class="permalink" href="index.html#Quantity.Cmp">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) Cmp(y <a href="index.html#Quantity">Quantity</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Cmp returns 0 if the quantity is equal to y, -1 if the quantity is less than y, or 1 if the
+quantity is greater than y.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.CmpInt64">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=17722:17762#L591">CmpInt64</a>
+					<a class="permalink" href="index.html#Quantity.CmpInt64">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) CmpInt64(y <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+CmpInt64 returns 0 if the quantity is equal to y, -1 if the quantity is less than y, or 1 if the
+quantity is greater than y.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.DeepCopy">func (Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=11301:11338#L372">DeepCopy</a>
+					<a class="permalink" href="index.html#Quantity.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q <a href="index.html#Quantity">Quantity</a>) DeepCopy() <a href="index.html#Quantity">Quantity</a></pre>
+				<p>
+DeepCopy returns a deep-copy of the Quantity value.  Note that the method
+receiver is a value, so we can mutate it in-place and return it.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.DeepCopyInto">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/zz_generated.deepcopy.go?s=781:828#L14">DeepCopyInto</a>
+					<a class="permalink" href="index.html#Quantity.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Quantity">Quantity</a>) DeepCopyInto(out *<a href="index.html#Quantity">Quantity</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Descriptor">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1346:1391#L33">Descriptor</a>
+					<a class="permalink" href="index.html#Quantity.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#Quantity">Quantity</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Equal">func (Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=18148:18188#L610">Equal</a>
+					<a class="permalink" href="index.html#Quantity.Equal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q <a href="index.html#Quantity">Quantity</a>) Equal(v <a href="index.html#Quantity">Quantity</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Equal checks equality of two Quantities. This is useful for testing with
+cmp.Equal.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.IsZero">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=15344:15376#L505">IsZero</a>
+					<a class="permalink" href="index.html#Quantity.IsZero">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) IsZero() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+IsZero returns true if the quantity is equal to zero.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Marshal">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity_proto.go?s=695:748#L19">Marshal</a>
+					<a class="permalink" href="index.html#Quantity.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) Marshal() (data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.MarshalJSON">func (Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=18940:18987#L635">MarshalJSON</a>
+					<a class="permalink" href="index.html#Quantity.MarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q <a href="index.html#Quantity">Quantity</a>) MarshalJSON() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalJSON implements the json.Marshaller interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.MarshalTo">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity_proto.go?s=1025:1079#L31">MarshalTo</a>
+					<a class="permalink" href="index.html#Quantity.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) MarshalTo(data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalTo is a customized version of the generated Protobuf unmarshaler for a struct
+with a single string field.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.MarshalToSizedBuffer">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity_proto.go?s=1277:1342#L38">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#Quantity.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) MarshalToSizedBuffer(data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalToSizedBuffer is a customized version of the generated
+Protobuf unmarshaler for a struct with a single string field.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.MilliValue">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=21822:21859#L725">MilliValue</a>
+					<a class="permalink" href="index.html#Quantity.MilliValue">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) MilliValue() <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				<p>
+MilliValue returns the value of ceil(q * 1000); this could overflow an int64;
+if that&#39;s a concern, call Value() first to verify the number is small enough.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Neg">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=17938:17962#L599">Neg</a>
+					<a class="permalink" href="index.html#Quantity.Neg">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) Neg()</pre>
+				<p>
+Neg sets quantity to be the negative value of itself.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.OpenAPISchemaFormat">func (Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=11810:11856#L388">OpenAPISchemaFormat</a>
+					<a class="permalink" href="index.html#Quantity.OpenAPISchemaFormat">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_ <a href="index.html#Quantity">Quantity</a>) OpenAPISchemaFormat() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+OpenAPISchemaFormat is used by the kube-openapi generator when constructing
+the OpenAPI spec of this type.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.OpenAPISchemaType">func (Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=11619:11665#L384">OpenAPISchemaType</a>
+					<a class="permalink" href="index.html#Quantity.OpenAPISchemaType">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (_ <a href="index.html#Quantity">Quantity</a>) OpenAPISchemaType() []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+OpenAPISchemaType is used by the kube-openapi generator when constructing
+the OpenAPI spec of this type.
+</p>
+<p>
+See: <a href="https://github.com/kubernetes/kube-openapi/tree/master/pkg/generators">https://github.com/kubernetes/kube-openapi/tree/master/pkg/generators</a>
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.ProtoMessage">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1311:1342#L32">ProtoMessage</a>
+					<a class="permalink" href="index.html#Quantity.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#Quantity">Quantity</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Reset">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1259:1285#L31">Reset</a>
+					<a class="permalink" href="index.html#Quantity.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.RoundUp">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=16222:16266#L533">RoundUp</a>
+					<a class="permalink" href="index.html#Quantity.RoundUp">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) RoundUp(scale <a href="index.html#Scale">Scale</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+RoundUp updates the quantity to the provided scale, ensuring that the value is at
+least 1. False is returned if the rounding operation resulted in a loss of precision.
+Negative numbers are rounded away from zero (-9 scale 1 rounds to -10).
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.ScaledValue">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=22135:22184#L733">ScaledValue</a>
+					<a class="permalink" href="index.html#Quantity.ScaledValue">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) ScaledValue(scale <a href="index.html#Scale">Scale</a>) <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				<p>
+ScaledValue returns the value of ceil(q / 10^scale).
+For example, NewQuantity(1, DecimalSI).ScaledValue(Milli) returns 1000.
+This could overflow an int64.
+To detect overflow, call Value() first and verify the expected magnitude.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Set">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=22391:22426#L743">Set</a>
+					<a class="permalink" href="index.html#Quantity.Set">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) Set(value <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				<p>
+Set sets q&#39;s value to be value.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.SetMilli">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=22504:22544#L748">SetMilli</a>
+					<a class="permalink" href="index.html#Quantity.SetMilli">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) SetMilli(value <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				<p>
+SetMilli sets q&#39;s value to be value * 1/1000.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.SetScaled">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=22628:22682#L753">SetScaled</a>
+					<a class="permalink" href="index.html#Quantity.SetScaled">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) SetScaled(value <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, scale <a href="index.html#Scale">Scale</a>)</pre>
+				<p>
+SetScaled sets q&#39;s value to be value * 10^scale
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Sign">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=15585:15614#L514">Sign</a>
+					<a class="permalink" href="index.html#Quantity.Sign">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) Sign() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Sign returns 0 if the quantity is zero, -1 if the quantity is less than zero, or 1 if the
+quantity is greater than zero.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Size">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity_proto.go?s=1826:1859#L68">Size</a>
+					<a class="permalink" href="index.html#Quantity.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.String">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=18609:18643#L621">String</a>
+					<a class="permalink" href="index.html#Quantity.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String formats the Quantity as a string, caching the result if not calculated.
+String is an expensive operation and caching this result significantly reduces the cost of
+normal parse / marshal operations on Quantity.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Sub">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=17124:17158#L569">Sub</a>
+					<a class="permalink" href="index.html#Quantity.Sub">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) Sub(y <a href="index.html#Quantity">Quantity</a>)</pre>
+				<p>
+Sub subtracts the provided quantity from the current value in place. If the current
+value is zero, the format of the quantity will be updated to the format of y.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.ToDec">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=14581:14617#L476">ToDec</a>
+					<a class="permalink" href="index.html#Quantity.ToDec">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) ToDec() *<a href="index.html#Quantity">Quantity</a></pre>
+				<p>
+ToDec promotes the quantity in place to use an inf.Dec representation and returns itself.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.ToUnstructured">func (Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=19972:20018#L662">ToUnstructured</a>
+					<a class="permalink" href="index.html#Quantity.ToUnstructured">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q <a href="index.html#Quantity">Quantity</a>) ToUnstructured() interface{}</pre>
+				<p>
+ToUnstructured implements the value.UnstructuredConverter interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Unmarshal">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity_proto.go?s=2190:2237#L86">Unmarshal</a>
+					<a class="permalink" href="index.html#Quantity.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) Unmarshal(data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Unmarshal is a customized version of the generated Protobuf unmarshaler for a struct
+with a single string field.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.UnmarshalJSON">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=20160:20212#L668">UnmarshalJSON</a>
+					<a class="permalink" href="index.html#Quantity.UnmarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) UnmarshalJSON(value []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UnmarshalJSON implements the json.Unmarshaller interface.
+TODO: Remove support for leading/trailing whitespace
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.Value">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/quantity.go?s=21597:21629#L719">Value</a>
+					<a class="permalink" href="index.html#Quantity.Value">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (q *<a href="index.html#Quantity">Quantity</a>) Value() <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				<p>
+Value returns the unscaled value of q rounded up to the nearest integer away from 0.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Quantity.XXX_DiscardUnknown">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1862:1901#L48">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#Quantity.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.XXX_Marshal">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1548:1624#L39">XXX_Marshal</a>
+					<a class="permalink" href="index.html#Quantity.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.XXX_Merge">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1691:1738#L42">XXX_Merge</a>
+					<a class="permalink" href="index.html#Quantity.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) XXX_Merge(src <a href="../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.XXX_Size">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1783:1816#L45">XXX_Size</a>
+					<a class="permalink" href="index.html#Quantity.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Quantity.XXX_Unmarshal">func (*Quantity) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/generated.pb.go?s=1446:1494#L36">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#Quantity.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#Quantity">Quantity</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Scale">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/resource/amount.go?s=819:835#L19">Scale</a>
+				<a class="permalink" href="index.html#Scale">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Scale is used for getting and setting the base-10 scaled value.
+Base-2 scales are omitted for mathematical simplicity.
+See Quantity.ScaledValue for more details.
+</p>
+
+			<pre>type Scale <a href="http://localhost:6060/pkg/builtin/#int32">int32</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="Nano">Nano</span>  <a href="index.html#Scale">Scale</a> = -9
+    <span id="Micro">Micro</span> <a href="index.html#Scale">Scale</a> = -6
+    <span id="Milli">Milli</span> <a href="index.html#Scale">Scale</a> = -3
+    <span id="Kilo">Kilo</span>  <a href="index.html#Scale">Scale</a> = 3
+    <span id="Mega">Mega</span>  <a href="index.html#Scale">Scale</a> = 6
+    <span id="Giga">Giga</span>  <a href="index.html#Scale">Scale</a> = 9
+    <span id="Tera">Tera</span>  <a href="index.html#Scale">Scale</a> = 12
+    <span id="Peta">Peta</span>  <a href="index.html#Scale">Scale</a> = 15
+    <span id="Exa">Exa</span>   <a href="index.html#Scale">Scale</a> = 18
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

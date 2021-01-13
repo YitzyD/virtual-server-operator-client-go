@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>httpstream - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package httpstream
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/httpstream"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package httpstream adds multiplexed streaming support to HTTP requests and
+responses via connection upgrades.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#Handshake">func Handshake(req *http.Request, w http.ResponseWriter, serverProtocols []string) (string, error)</a></dd>
+			
+				
+				<dd><a href="index.html#IsUpgradeRequest">func IsUpgradeRequest(req *http.Request) bool</a></dd>
+			
+				
+				<dd><a href="index.html#NoOpNewStreamHandler">func NoOpNewStreamHandler(stream Stream, replySent &lt;-chan struct{}) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Connection">type Connection</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Dialer">type Dialer</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#NewStreamHandler">type NewStreamHandler</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ResponseUpgrader">type ResponseUpgrader</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Stream">type Stream</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UpgradeRoundTripper">type UpgradeRoundTripper</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go">httpstream.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span id="HeaderConnection">HeaderConnection</span>               = &#34;Connection&#34;
+    <span id="HeaderUpgrade">HeaderUpgrade</span>                  = &#34;Upgrade&#34;
+    <span id="HeaderProtocolVersion">HeaderProtocolVersion</span>          = &#34;X-Stream-Protocol-Version&#34;
+    <span id="HeaderAcceptedProtocolVersions">HeaderAcceptedProtocolVersions</span> = &#34;X-Accepted-Stream-Protocol-Versions&#34;
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="Handshake">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=4913:5011#L125">Handshake</a>
+				<a class="permalink" href="index.html#Handshake">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Handshake(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>, w <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#ResponseWriter">ResponseWriter</a>, serverProtocols []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+Handshake performs a subprotocol negotiation. If the client did request a
+subprotocol, Handshake will select the first common value found in
+serverProtocols. If a match is found, Handshake adds a response header
+indicating the chosen subprotocol. If no match is found, HTTP forbidden is
+returned, along with a response header containing the list of protocols the
+server can accept.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsUpgradeRequest">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=3663:3708#L87">IsUpgradeRequest</a>
+				<a class="permalink" href="index.html#IsUpgradeRequest">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsUpgradeRequest(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsUpgradeRequest returns true if the given request is a connection upgrade request
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NoOpNewStreamHandler">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=1294:1367#L31">NoOpNewStreamHandler</a>
+				<a class="permalink" href="index.html#NoOpNewStreamHandler">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NoOpNewStreamHandler(stream <a href="index.html#Stream">Stream</a>, replySent &lt;-chan struct{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+NoOpNewStreamHandler is a stream handler that accepts a new stream and
+performs no other logic.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Connection">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=2671:3153#L61">Connection</a>
+				<a class="permalink" href="index.html#Connection">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Connection represents an upgraded HTTP connection.
+</p>
+
+			<pre>type Connection interface {
+    <span class="comment">// CreateStream creates a new Stream with the supplied headers.</span>
+    CreateStream(headers <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Header">Header</a>) (<a href="index.html#Stream">Stream</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <span class="comment">// Close resets all streams and closes the connection.</span>
+    Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    <span class="comment">// CloseChan returns a channel that is closed when the underlying connection is closed.</span>
+    CloseChan() &lt;-chan <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+    <span class="comment">// SetIdleTimeout sets the amount of time the connection may remain idle before</span>
+    <span class="comment">// it is automatically closed.</span>
+    SetIdleTimeout(timeout <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Dialer">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=1448:1669#L34">Dialer</a>
+				<a class="permalink" href="index.html#Dialer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Dialer knows how to open a streaming connection to a server.
+</p>
+
+			<pre>type Dialer interface {
+
+    <span class="comment">// Dial opens a streaming connection to a server using one of the protocols</span>
+    <span class="comment">// specified (in order of most preferred to least preferred).</span>
+    Dial(protocols ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#Connection">Connection</a>, <a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="NewStreamHandler">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=1116:1190#L27">NewStreamHandler</a>
+				<a class="permalink" href="index.html#NewStreamHandler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+NewStreamHandler defines a function that is called when a new Stream is
+received. If no error is returned, the Stream is accepted; otherwise,
+the stream is rejected. After the reply frame has been sent, replySent is closed.
+</p>
+
+			<pre>type NewStreamHandler func(stream <a href="index.html#Stream">Stream</a>, replySent &lt;-chan struct{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ResponseUpgrader">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=2260:2615#L53">ResponseUpgrader</a>
+				<a class="permalink" href="index.html#ResponseUpgrader">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ResponseUpgrader knows how to upgrade HTTP requests and responses to
+add streaming support to them.
+</p>
+
+			<pre>type ResponseUpgrader interface {
+    <span class="comment">// UpgradeResponse upgrades an HTTP response to one that supports multiplexed</span>
+    <span class="comment">// streams. newStreamHandler will be called asynchronously whenever the</span>
+    <span class="comment">// other end of the upgraded connection creates a new stream.</span>
+    UpgradeResponse(w <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#ResponseWriter">ResponseWriter</a>, req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>, newStreamHandler <a href="index.html#NewStreamHandler">NewStreamHandler</a>) <a href="index.html#Connection">Connection</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Stream">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=3258:3575#L75">Stream</a>
+				<a class="permalink" href="index.html#Stream">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Stream represents a bidirectional communications channel that is part of an
+upgraded connection.
+</p>
+
+			<pre>type Stream interface {
+    <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadWriteCloser">ReadWriteCloser</a>
+    <span class="comment">// Reset closes both directions of the stream, indicating that neither client</span>
+    <span class="comment">// or server can use it any more.</span>
+    Reset() <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+    <span class="comment">// Headers returns the headers used to create the stream.</span>
+    Headers() <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Header">Header</a>
+    <span class="comment">// Identifier returns the stream&#39;s ID.</span>
+    Identifier() <a href="http://localhost:6060/pkg/builtin/#uint32">uint32</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UpgradeRoundTripper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/httpstream/httpstream.go?s=1968:2152#L45">UpgradeRoundTripper</a>
+				<a class="permalink" href="index.html#UpgradeRoundTripper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UpgradeRoundTripper is a type of http.RoundTripper that is able to upgrade
+HTTP requests to support multiplexed bidirectional streams. After RoundTrip()
+is invoked, if the upgrade is successful, clients may retrieve the upgraded
+connection by calling UpgradeRoundTripper.Connection().
+</p>
+
+			<pre>type UpgradeRoundTripper interface {
+    <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>
+    <span class="comment">// NewConnection validates the response and creates a new Connection.</span>
+    NewConnection(resp *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Response">Response</a>) (<a href="index.html#Connection">Connection</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="spdy/index.html">spdy</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

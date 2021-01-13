@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>controller - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package controller
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/operator/controller"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#Add">func Add(mgr manager.Manager) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CertManager">type CertManager</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewCertManager">func NewCertManager(mgr manager.Manager, installNamespace string, additionalNamespaces ...string) (CertManager, error)</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ReconcileCDI">type ReconcileCDI</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ReconcileCDI.Create">func (r *ReconcileCDI) Create() controllerutil.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ReconcileCDI.GetAllResources">func (r *ReconcileCDI) GetAllResources(crObject runtime.Object) ([]runtime.Object, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ReconcileCDI.GetDependantResourcesListObjects">func (r *ReconcileCDI) GetDependantResourcesListObjects() []runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ReconcileCDI.IsCreating">func (r *ReconcileCDI) IsCreating(_ controllerutil.Object) (bool, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ReconcileCDI.Reconcile">func (r *ReconcileCDI) Reconcile(request reconcile.Request) (reconcile.Result, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ReconcileCDI.SetController">func (r *ReconcileCDI) SetController(controller controller.Controller)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ReconcileCDI.Status">func (r *ReconcileCDI) Status(cr runtime.Object) *sdkapi.Status</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/callbacks.go">callbacks.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/certrotation.go">certrotation.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/controller.go">controller.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/cr-manager.go">cr-manager.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/cruft.go">cruft.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/handler.go">handler.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/reconciler-hooks.go">reconciler-hooks.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/route.go">route.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/scc.go">scc.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span class="comment">// SCCAnnotation is the annotation listing SCCs for a SA</span>
+    <span id="SCCAnnotation">SCCAnnotation</span> = &#34;cdi-scc&#34;
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="Add">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/controller.go?s=2375:2410#L58">Add</a>
+				<a class="permalink" href="index.html#Add">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Add(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Add creates a new CDI Controller and adds it to the Manager. The Manager will set fields on the Controller
+and Start it when the Manager is Started.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="CertManager">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/certrotation.go?s=1160:1242#L26">CertManager</a>
+				<a class="permalink" href="index.html#CertManager">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CertManager is the client interface to the certificate manager/refresher
+</p>
+
+			<pre>type CertManager interface {
+    Sync(certs []<a href="../resources/cert/index.html">cdicerts</a>.<a href="../resources/cert/index.html#CertificateDefinition">CertificateDefinition</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewCertManager">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/certrotation.go?s=1476:1594#L39">NewCertManager</a>
+					<a class="permalink" href="index.html#NewCertManager">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewCertManager(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>, installNamespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>, additionalNamespaces ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#CertManager">CertManager</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewCertManager creates a new certificate manager/refresher
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="ReconcileCDI">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/controller.go?s=3960:4535#L118">ReconcileCDI</a>
+				<a class="permalink" href="index.html#ReconcileCDI">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ReconcileCDI reconciles a CDI object
+</p>
+
+			<pre>type ReconcileCDI struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ReconcileCDI.Create">func (*ReconcileCDI) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/cr-manager.go?s=1564:1617#L34">Create</a>
+					<a class="permalink" href="index.html#ReconcileCDI.Create">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ReconcileCDI">ReconcileCDI</a>) Create() <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil/">controllerutil</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil/#Object">Object</a></pre>
+				<p>
+Create creates new CDI resource
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ReconcileCDI.GetAllResources">func (*ReconcileCDI) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/cr-manager.go?s=2935:3024#L78">GetAllResources</a>
+					<a class="permalink" href="index.html#ReconcileCDI.GetAllResources">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ReconcileCDI">ReconcileCDI</a>) GetAllResources(crObject <a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html">runtime</a>.<a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html#Object">Object</a>) ([]<a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html">runtime</a>.<a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html#Object">Object</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+GetAllResources provides slice of resources CDI depends on
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ReconcileCDI.GetDependantResourcesListObjects">func (*ReconcileCDI) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/cr-manager.go?s=1759:1833#L39">GetDependantResourcesListObjects</a>
+					<a class="permalink" href="index.html#ReconcileCDI.GetDependantResourcesListObjects">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ReconcileCDI">ReconcileCDI</a>) GetDependantResourcesListObjects() []<a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html">runtime</a>.<a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html#Object">Object</a></pre>
+				<p>
+GetDependantResourcesListObjects provides slice of List resources corresponding to CDI-dependant resource types
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ReconcileCDI.IsCreating">func (*ReconcileCDI) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/cr-manager.go?s=2395:2467#L56">IsCreating</a>
+					<a class="permalink" href="index.html#ReconcileCDI.IsCreating">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ReconcileCDI">ReconcileCDI</a>) IsCreating(_ <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil/">controllerutil</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil/#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+IsCreating checks whether operator config is missing (which means it is create-type reconciliation)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ReconcileCDI.Reconcile">func (*ReconcileCDI) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/controller.go?s=5067:5152#L148">Reconcile</a>
+					<a class="permalink" href="index.html#ReconcileCDI.Reconcile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ReconcileCDI">ReconcileCDI</a>) Reconcile(request <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Request">Request</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Result">Result</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Reconcile reads that state of the cluster for a CDI object and makes changes based on the state read
+and what is in the CDI.Spec
+Note:
+The Controller will requeue the Request to be processed again if the returned error is non-nil or
+Result.Requeue is true, otherwise upon completion it will remove the work from the queue.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ReconcileCDI.SetController">func (*ReconcileCDI) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/controller.go?s=4585:4655#L138">SetController</a>
+					<a class="permalink" href="index.html#ReconcileCDI.SetController">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ReconcileCDI">ReconcileCDI</a>) SetController(controller <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/">controller</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/#Controller">Controller</a>)</pre>
+				<p>
+SetController sets the controller dependency
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="ReconcileCDI.Status">func (*ReconcileCDI) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/operator/controller/cr-manager.go?s=1421:1484#L29">Status</a>
+					<a class="permalink" href="index.html#ReconcileCDI.Status">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ReconcileCDI">ReconcileCDI</a>) Status(cr <a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html">runtime</a>.<a href="../../../../../k8s.io/apimachinery/pkg/runtime/index.html#Object">Object</a>) *<a href="../../../../controller-lifecycle-operator-sdk/pkg/sdk/api/index.html">sdkapi</a>.<a href="../../../../controller-lifecycle-operator-sdk/pkg/sdk/api/index.html#Status">Status</a></pre>
+				<p>
+Status provides CDI status sub-resource
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

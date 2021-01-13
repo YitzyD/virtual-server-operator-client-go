@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>fields - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package fields
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/fields"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package fields implements a simple field system, parsing and matching
+selectors with sets of fields.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#EscapeValue">func EscapeValue(s string) string</a></dd>
+			
+				
+				<dd><a href="index.html#UnescapeValue">func UnescapeValue(s string) (string, error)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Fields">type Fields</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#InvalidEscapeSequence">type InvalidEscapeSequence</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#InvalidEscapeSequence.Error">func (i InvalidEscapeSequence) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Requirement">type Requirement</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Requirements">type Requirements</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Selector">type Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AndSelectors">func AndSelectors(selectors ...Selector) Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Everything">func Everything() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Nothing">func Nothing() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OneTermEqualSelector">func OneTermEqualSelector(k, v string) Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OneTermNotEqualSelector">func OneTermNotEqualSelector(k, v string) Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseAndTransformSelector">func ParseAndTransformSelector(selector string, fn TransformFunc) (Selector, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseSelector">func ParseSelector(selector string) (Selector, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseSelectorOrDie">func ParseSelectorOrDie(s string) Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SelectorFromSet">func SelectorFromSet(ls Set) Selector</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Set">type Set</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.AsSelector">func (ls Set) AsSelector() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.Get">func (ls Set) Get(field string) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.Has">func (ls Set) Has(field string) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.String">func (ls Set) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#TransformFunc">type TransformFunc</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UnescapedRune">type UnescapedRune</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnescapedRune.Error">func (i UnescapedRune) Error() string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/fields.go">fields.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/requirements.go">requirements.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go">selector.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="EscapeValue">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=6676:6709#L275">EscapeValue</a>
+				<a class="permalink" href="index.html#EscapeValue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EscapeValue(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+EscapeValue escapes an arbitrary literal string for use as a fieldSelector value
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnescapeValue">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=7434:7478#L299">UnescapeValue</a>
+				<a class="permalink" href="index.html#UnescapeValue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnescapeValue(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+UnescapeValue unescapes a fieldSelector value and returns the original literal value.
+May return the original string if it contains no escaped or special characters.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Fields">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/fields.go?s=691:885#L15">Fields</a>
+				<a class="permalink" href="index.html#Fields">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Fields allows you to present fields independently from their storage.
+</p>
+
+			<pre>type Fields interface {
+    <span class="comment">// Has returns whether the provided field exists.</span>
+    Has(field <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (exists <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+
+    <span class="comment">// Get returns the value for the provided field.</span>
+    Get(field <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (value <a href="http://localhost:6060/pkg/builtin/#string">string</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="InvalidEscapeSequence">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=6828:6882#L280">InvalidEscapeSequence</a>
+				<a class="permalink" href="index.html#InvalidEscapeSequence">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+InvalidEscapeSequence indicates an error occurred unescaping a field selector
+</p>
+
+			<pre>type InvalidEscapeSequence struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="InvalidEscapeSequence.Error">func (InvalidEscapeSequence) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=6884:6929#L284">Error</a>
+					<a class="permalink" href="index.html#InvalidEscapeSequence.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (i <a href="index.html#InvalidEscapeSequence">InvalidEscapeSequence</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Requirement">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/requirements.go?s=883:973#L16">Requirement</a>
+				<a class="permalink" href="index.html#Requirement">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Requirement contains a field, a value, and an operator that relates the field and value.
+This is currently for reading internal selection information of field selector.
+</p>
+
+			<pre>type Requirement struct {
+<span id="Requirement.Operator"></span>    Operator <a href="../selection/index.html">selection</a>.<a href="../selection/index.html#Operator">Operator</a>
+<span id="Requirement.Field"></span>    Field    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="Requirement.Value"></span>    Value    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Requirements">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/requirements.go?s=675:706#L12">Requirements</a>
+				<a class="permalink" href="index.html#Requirements">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Requirements is AND of all requirements.
+</p>
+
+			<pre>type Requirements []<a href="index.html#Requirement">Requirement</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Selector">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=713:1777#L19">Selector</a>
+				<a class="permalink" href="index.html#Selector">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Selector represents a field selector.
+</p>
+
+			<pre>type Selector interface {
+    <span class="comment">// Matches returns true if this selector matches the given set of fields.</span>
+    Matches(<a href="index.html#Fields">Fields</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+
+    <span class="comment">// Empty returns true if this selector does not restrict the selection space.</span>
+    Empty() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+
+    <span class="comment">// RequiresExactMatch allows a caller to introspect whether a given selector</span>
+    <span class="comment">// requires a single specific field to be set, and if so returns the value it</span>
+    <span class="comment">// requires.</span>
+    RequiresExactMatch(field <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (value <a href="http://localhost:6060/pkg/builtin/#string">string</a>, found <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+
+    <span class="comment">// Transform returns a new copy of the selector after TransformFunc has been</span>
+    <span class="comment">// applied to the entire selector, or an error if fn returns an error.</span>
+    <span class="comment">// If for a given requirement both field and value are transformed to empty</span>
+    <span class="comment">// string, the requirement is skipped.</span>
+    Transform(fn <a href="index.html#TransformFunc">TransformFunc</a>) (<a href="index.html#Selector">Selector</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+    <span class="comment">// Requirements converts this interface to Requirements to expose</span>
+    <span class="comment">// more detailed selection information.</span>
+    Requirements() <a href="index.html#Requirements">Requirements</a>
+
+    <span class="comment">// String returns a human readable string that represents this selector.</span>
+    String() <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Make a deep copy of the selector.</span>
+    DeepCopySelector() <a href="index.html#Selector">Selector</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="AndSelectors">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=12519:12568#L466">AndSelectors</a>
+					<a class="permalink" href="index.html#AndSelectors">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func AndSelectors(selectors ...<a href="index.html#Selector">Selector</a>) <a href="index.html#Selector">Selector</a></pre>
+				<p>
+AndSelectors creates a selector that is the logical AND of all the given selectors
+</p>
+
+				
+				
+			
+				
+				<h3 id="Everything">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=2514:2540#L66">Everything</a>
+					<a class="permalink" href="index.html#Everything">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Everything() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+Everything returns a selector that matches all fields.
+</p>
+
+				
+				
+			
+				
+				<h3 id="Nothing">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=2401:2424#L61">Nothing</a>
+					<a class="permalink" href="index.html#Nothing">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Nothing() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+Nothing returns a selector that matches no fields
+</p>
+
+				
+				
+			
+				
+				<h3 id="OneTermEqualSelector">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=12106:12153#L455">OneTermEqualSelector</a>
+					<a class="permalink" href="index.html#OneTermEqualSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func OneTermEqualSelector(k, v <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#Selector">Selector</a></pre>
+				<p>
+OneTermEqualSelector returns an object that matches objects where one field/field equals one value.
+Cannot return an error.
+</p>
+
+				
+				
+			
+				
+				<h3 id="OneTermNotEqualSelector">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=12337:12387#L461">OneTermNotEqualSelector</a>
+					<a class="permalink" href="index.html#OneTermNotEqualSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func OneTermNotEqualSelector(k, v <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#Selector">Selector</a></pre>
+				<p>
+OneTermNotEqualSelector returns an object that matches objects where one field/field does not equal one value.
+Cannot return an error.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ParseAndTransformSelector">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=9029:9112#L360">ParseAndTransformSelector</a>
+					<a class="permalink" href="index.html#ParseAndTransformSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseAndTransformSelector(selector <a href="http://localhost:6060/pkg/builtin/#string">string</a>, fn <a href="index.html#TransformFunc">TransformFunc</a>) (<a href="index.html#Selector">Selector</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParseAndTransformSelector parses the selector and runs them through the given TransformFunc.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ParseSelector">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=8752:8805#L352">ParseSelector</a>
+					<a class="permalink" href="index.html#ParseSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseSelector(selector <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#Selector">Selector</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParseSelector takes a string representing a selector and returns an
+object suitable for matching, or an error.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ParseSelectorOrDie">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=8502:8544#L342">ParseSelectorOrDie</a>
+					<a class="permalink" href="index.html#ParseSelectorOrDie">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseSelectorOrDie(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#Selector">Selector</a></pre>
+				<p>
+ParseSelectorOrDie takes a string representing a selector and returns an
+object suitable for matching, or panic when an error occur.
+</p>
+
+				
+				
+			
+				
+				<h3 id="SelectorFromSet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=6050:6087#L251">SelectorFromSet</a>
+					<a class="permalink" href="index.html#SelectorFromSet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func SelectorFromSet(ls <a href="index.html#Set">Set</a>) <a href="index.html#Selector">Selector</a></pre>
+				<p>
+SelectorFromSet returns a Selector which will match exactly the given Set. A
+nil Set is considered equivalent to Everything().
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="Set">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/fields.go?s=941:967#L24">Set</a>
+				<a class="permalink" href="index.html#Set">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Set is a map of field:value. It implements Fields.
+</p>
+
+			<pre>type Set map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Set.AsSelector">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/fields.go?s=1657:1692#L50">AsSelector</a>
+					<a class="permalink" href="index.html#Set.AsSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) AsSelector() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+AsSelector converts fields into a selectors.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.Get">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/fields.go?s=1547:1585#L45">Get</a>
+					<a class="permalink" href="index.html#Set.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) Get(field <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Get returns the value in the map for the provided field.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.Has">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/fields.go?s=1406:1442#L39">Has</a>
+					<a class="permalink" href="index.html#Set.Has">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) Has(field <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Has returns whether the provided field exists in the map.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.String">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/fields.go?s=1095:1124#L28">String</a>
+					<a class="permalink" href="index.html#Set.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String returns all fields listed as a human readable string.
+Conveniently, exactly the format that ParseSelector takes.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="TransformFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=9193:9276#L365">TransformFunc</a>
+				<a class="permalink" href="index.html#TransformFunc">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TransformFunc transforms selectors.
+</p>
+
+			<pre>type TransformFunc func(field, value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (newField, newValue <a href="http://localhost:6060/pkg/builtin/#string">string</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UnescapedRune">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=7095:7132#L289">UnescapedRune</a>
+				<a class="permalink" href="index.html#UnescapedRune">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UnescapedRune indicates an error occurred unescaping a field selector
+</p>
+
+			<pre>type UnescapedRune struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UnescapedRune.Error">func (UnescapedRune) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/fields/selector.go?s=7134:7171#L293">Error</a>
+					<a class="permalink" href="index.html#UnescapedRune.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (i <a href="index.html#UnescapedRune">UnescapedRune</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

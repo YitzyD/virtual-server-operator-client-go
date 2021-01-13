@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>unstructured - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package unstructured
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#NestedBool">func NestedBool(obj map[string]interface{}, fields ...string) (bool, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedFieldCopy">func NestedFieldCopy(obj map[string]interface{}, fields ...string) (interface{}, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedFieldNoCopy">func NestedFieldNoCopy(obj map[string]interface{}, fields ...string) (interface{}, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedFloat64">func NestedFloat64(obj map[string]interface{}, fields ...string) (float64, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedInt64">func NestedInt64(obj map[string]interface{}, fields ...string) (int64, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedMap">func NestedMap(obj map[string]interface{}, fields ...string) (map[string]interface{}, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedSlice">func NestedSlice(obj map[string]interface{}, fields ...string) ([]interface{}, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedString">func NestedString(obj map[string]interface{}, fields ...string) (string, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedStringMap">func NestedStringMap(obj map[string]interface{}, fields ...string) (map[string]string, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NestedStringSlice">func NestedStringSlice(obj map[string]interface{}, fields ...string) ([]string, bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewJSONFallbackEncoder">func NewJSONFallbackEncoder(encoder runtime.Encoder) runtime.Encoder</a></dd>
+			
+				
+				<dd><a href="index.html#RemoveNestedField">func RemoveNestedField(obj map[string]interface{}, fields ...string)</a></dd>
+			
+				
+				<dd><a href="index.html#SetNestedField">func SetNestedField(obj map[string]interface{}, value interface{}, fields ...string) error</a></dd>
+			
+				
+				<dd><a href="index.html#SetNestedMap">func SetNestedMap(obj map[string]interface{}, value map[string]interface{}, fields ...string) error</a></dd>
+			
+				
+				<dd><a href="index.html#SetNestedSlice">func SetNestedSlice(obj map[string]interface{}, value []interface{}, fields ...string) error</a></dd>
+			
+				
+				<dd><a href="index.html#SetNestedStringMap">func SetNestedStringMap(obj map[string]interface{}, value map[string]string, fields ...string) error</a></dd>
+			
+				
+				<dd><a href="index.html#SetNestedStringSlice">func SetNestedStringSlice(obj map[string]interface{}, value []string, fields ...string) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Unstructured">type Unstructured</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.DeepCopy">func (in *Unstructured) DeepCopy() *Unstructured</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.DeepCopyInto">func (in *Unstructured) DeepCopyInto(out *Unstructured)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.DeepCopyObject">func (in *Unstructured) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.EachListItem">func (obj *Unstructured) EachListItem(fn func(runtime.Object) error) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetAPIVersion">func (u *Unstructured) GetAPIVersion() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetAnnotations">func (u *Unstructured) GetAnnotations() map[string]string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetClusterName">func (u *Unstructured) GetClusterName() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetContinue">func (u *Unstructured) GetContinue() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetCreationTimestamp">func (u *Unstructured) GetCreationTimestamp() metav1.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetDeletionGracePeriodSeconds">func (u *Unstructured) GetDeletionGracePeriodSeconds() *int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetDeletionTimestamp">func (u *Unstructured) GetDeletionTimestamp() *metav1.Time</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetFinalizers">func (u *Unstructured) GetFinalizers() []string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetGenerateName">func (u *Unstructured) GetGenerateName() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetGeneration">func (u *Unstructured) GetGeneration() int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetKind">func (u *Unstructured) GetKind() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetLabels">func (u *Unstructured) GetLabels() map[string]string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetManagedFields">func (u *Unstructured) GetManagedFields() []metav1.ManagedFieldsEntry</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetName">func (u *Unstructured) GetName() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetNamespace">func (u *Unstructured) GetNamespace() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetObjectKind">func (obj *Unstructured) GetObjectKind() schema.ObjectKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetOwnerReferences">func (u *Unstructured) GetOwnerReferences() []metav1.OwnerReference</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetRemainingItemCount">func (u *Unstructured) GetRemainingItemCount() *int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetResourceVersion">func (u *Unstructured) GetResourceVersion() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetSelfLink">func (u *Unstructured) GetSelfLink() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GetUID">func (u *Unstructured) GetUID() types.UID</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.GroupVersionKind">func (u *Unstructured) GroupVersionKind() schema.GroupVersionKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.IsList">func (obj *Unstructured) IsList() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.MarshalJSON">func (u *Unstructured) MarshalJSON() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.NewEmptyInstance">func (in *Unstructured) NewEmptyInstance() runtime.Unstructured</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetAPIVersion">func (u *Unstructured) SetAPIVersion(version string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetAnnotations">func (u *Unstructured) SetAnnotations(annotations map[string]string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetClusterName">func (u *Unstructured) SetClusterName(clusterName string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetContinue">func (u *Unstructured) SetContinue(c string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetCreationTimestamp">func (u *Unstructured) SetCreationTimestamp(timestamp metav1.Time)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetDeletionGracePeriodSeconds">func (u *Unstructured) SetDeletionGracePeriodSeconds(deletionGracePeriodSeconds *int64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetDeletionTimestamp">func (u *Unstructured) SetDeletionTimestamp(timestamp *metav1.Time)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetFinalizers">func (u *Unstructured) SetFinalizers(finalizers []string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetGenerateName">func (u *Unstructured) SetGenerateName(generateName string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetGeneration">func (u *Unstructured) SetGeneration(generation int64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetGroupVersionKind">func (u *Unstructured) SetGroupVersionKind(gvk schema.GroupVersionKind)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetKind">func (u *Unstructured) SetKind(kind string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetLabels">func (u *Unstructured) SetLabels(labels map[string]string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetManagedFields">func (u *Unstructured) SetManagedFields(managedFields []metav1.ManagedFieldsEntry)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetName">func (u *Unstructured) SetName(name string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetNamespace">func (u *Unstructured) SetNamespace(namespace string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetOwnerReferences">func (u *Unstructured) SetOwnerReferences(references []metav1.OwnerReference)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetRemainingItemCount">func (u *Unstructured) SetRemainingItemCount(c *int64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetResourceVersion">func (u *Unstructured) SetResourceVersion(resourceVersion string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetSelfLink">func (u *Unstructured) SetSelfLink(selfLink string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetUID">func (u *Unstructured) SetUID(uid types.UID)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.SetUnstructuredContent">func (obj *Unstructured) SetUnstructuredContent(content map[string]interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.ToList">func (obj *Unstructured) ToList() (*UnstructuredList, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.UnmarshalJSON">func (u *Unstructured) UnmarshalJSON(b []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Unstructured.UnstructuredContent">func (obj *Unstructured) UnstructuredContent() map[string]interface{}</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UnstructuredList">type UnstructuredList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.DeepCopy">func (u *UnstructuredList) DeepCopy() *UnstructuredList</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.DeepCopyInto">func (in *UnstructuredList) DeepCopyInto(out *UnstructuredList)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.DeepCopyObject">func (in *UnstructuredList) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.EachListItem">func (u *UnstructuredList) EachListItem(fn func(runtime.Object) error) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GetAPIVersion">func (u *UnstructuredList) GetAPIVersion() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GetContinue">func (u *UnstructuredList) GetContinue() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GetKind">func (u *UnstructuredList) GetKind() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GetObjectKind">func (u *UnstructuredList) GetObjectKind() schema.ObjectKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GetRemainingItemCount">func (u *UnstructuredList) GetRemainingItemCount() *int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GetResourceVersion">func (u *UnstructuredList) GetResourceVersion() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GetSelfLink">func (u *UnstructuredList) GetSelfLink() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.GroupVersionKind">func (u *UnstructuredList) GroupVersionKind() schema.GroupVersionKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.IsList">func (u *UnstructuredList) IsList() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.MarshalJSON">func (u *UnstructuredList) MarshalJSON() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.NewEmptyInstance">func (u *UnstructuredList) NewEmptyInstance() runtime.Unstructured</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetAPIVersion">func (u *UnstructuredList) SetAPIVersion(version string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetContinue">func (u *UnstructuredList) SetContinue(c string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetGroupVersionKind">func (u *UnstructuredList) SetGroupVersionKind(gvk schema.GroupVersionKind)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetKind">func (u *UnstructuredList) SetKind(kind string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetRemainingItemCount">func (u *UnstructuredList) SetRemainingItemCount(c *int64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetResourceVersion">func (u *UnstructuredList) SetResourceVersion(version string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetSelfLink">func (u *UnstructuredList) SetSelfLink(selfLink string)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.SetUnstructuredContent">func (obj *UnstructuredList) SetUnstructuredContent(content map[string]interface{})</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.UnmarshalJSON">func (u *UnstructuredList) UnmarshalJSON(b []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UnstructuredList.UnstructuredContent">func (u *UnstructuredList) UnstructuredContent() map[string]interface{}</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go">helpers.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go">unstructured.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go">unstructured_list.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+UnstructuredJSONScheme is capable of converting JSON data into the Unstructured
+type, which can be used for generic access to objects without a predefined scheme.
+TODO: move into serializer/json.
+</p>
+
+				<pre>var <span id="UnstructuredJSONScheme">UnstructuredJSONScheme</span> <a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Codec">Codec</a> = unstructuredJSONScheme{}</pre>
+			
+		
+		
+			
+			
+			<h2 id="NestedBool">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=2811:2892#L78">NestedBool</a>
+				<a class="permalink" href="index.html#NestedBool">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedBool(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedBool returns the bool value of a nested field.
+Returns false if value is not found and an error if not a bool.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedFieldCopy">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=1148:1241#L29">NestedFieldCopy</a>
+				<a class="permalink" href="index.html#NestedFieldCopy">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedFieldCopy(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (interface{}, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedFieldCopy returns a deep copy of the value of a nested field.
+Returns false if the value is missing.
+No error is returned for a nil field.
+</p>
+<p>
+Note: fields passed to this function are treated as keys within the passed
+object; no array/slice syntax is supported.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedFieldNoCopy">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=1676:1771#L43">NestedFieldNoCopy</a>
+				<a class="permalink" href="index.html#NestedFieldNoCopy">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedFieldNoCopy(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (interface{}, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedFieldNoCopy returns a reference to a nested field.
+Returns false if value is not found and an error if unable
+to traverse obj.
+</p>
+<p>
+Note: fields passed to this function are treated as keys within the passed
+object; no array/slice syntax is supported.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedFloat64">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=3316:3403#L92">NestedFloat64</a>
+				<a class="permalink" href="index.html#NestedFloat64">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedFloat64(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#float64">float64</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedFloat64 returns the float64 value of a nested field.
+Returns false if value is not found and an error if not a float64.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedInt64">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=3820:3903#L106">NestedInt64</a>
+				<a class="permalink" href="index.html#NestedInt64">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedInt64(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedInt64 returns the int64 value of a nested field.
+Returns false if value is not found and an error if not an int64.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedMap">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=6584:6682#L174">NestedMap</a>
+				<a class="permalink" href="index.html#NestedMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedMap(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedMap returns a deep copy of map[string]interface{} value of a nested field.
+Returns false if value is not found and an error if not a map[string]interface{}.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedSlice">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=5242:5333#L142">NestedSlice</a>
+				<a class="permalink" href="index.html#NestedSlice">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedSlice(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]interface{}, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedSlice returns a deep copy of []interface{} value of a nested field.
+Returns false if value is not found and an error if not a []interface{}.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedString">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=2313:2398#L64">NestedString</a>
+				<a class="permalink" href="index.html#NestedString">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedString(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedString returns the string value of a nested field.
+Returns false if value is not found and an error if not a string.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedStringMap">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=5890:5989#L156">NestedStringMap</a>
+				<a class="permalink" href="index.html#NestedStringMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedStringMap(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedStringMap returns a copy of map[string]string value of a nested field.
+Returns false if value is not found and an error if not a map[string]interface{} or contains non-string values in the map.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NestedStringSlice">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=4380:4472#L120">NestedStringSlice</a>
+				<a class="permalink" href="index.html#NestedStringSlice">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NestedStringSlice(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NestedStringSlice returns a copy of []string value of a nested field.
+Returns false if value is not found and an error if not a []interface{} or contains non-string items in the slice.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewJSONFallbackEncoder">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=15624:15692#L459">NewJSONFallbackEncoder</a>
+				<a class="permalink" href="index.html#NewJSONFallbackEncoder">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewJSONFallbackEncoder(encoder <a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Encoder">Encoder</a>) <a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Encoder">Encoder</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="RemoveNestedField">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=9978:10046#L255">RemoveNestedField</a>
+				<a class="permalink" href="index.html#RemoveNestedField">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RemoveNestedField(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+			<p>
+RemoveNestedField removes the nested field from the obj.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetNestedField">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=7625:7715#L198">SetNestedField</a>
+				<a class="permalink" href="index.html#SetNestedField">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetNestedField(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, value interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+SetNestedField sets the value of a nested field to a deep copy of the value provided.
+Returns an error if value cannot be set because one of the nesting levels is not a map[string]interface{}.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetNestedMap">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=9767:9866#L250">SetNestedMap</a>
+				<a class="permalink" href="index.html#SetNestedMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetNestedMap(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, value map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+SetNestedMap sets the map[string]interface{} value of a nested field.
+Returns an error if value cannot be set because one of the nesting levels is not a map[string]interface{}.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetNestedSlice">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=8957:9049#L234">SetNestedSlice</a>
+				<a class="permalink" href="index.html#SetNestedSlice">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetNestedSlice(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, value []interface{}, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+SetNestedSlice sets the slice value of a nested field.
+Returns an error if value cannot be set because one of the nesting levels is not a map[string]interface{}.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetNestedStringMap">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=9285:9385#L240">SetNestedStringMap</a>
+				<a class="permalink" href="index.html#SetNestedStringMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetNestedStringMap(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, value map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+SetNestedStringMap sets the map[string]string value of a nested field.
+Returns an error if value cannot be set because one of the nesting levels is not a map[string]interface{}.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetNestedStringSlice">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/helpers.go?s=8513:8606#L224">SetNestedStringSlice</a>
+				<a class="permalink" href="index.html#SetNestedStringSlice">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetNestedStringSlice(obj map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}, value []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, fields ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+SetNestedStringSlice sets the string slice value of a nested field.
+Returns an error if value cannot be set because one of the nesting levels is not a map[string]interface{}.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Unstructured">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=1461:1646#L31">Unstructured</a>
+				<a class="permalink" href="index.html#Unstructured">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Unstructured allows objects that do not have Golang structs registered to be manipulated
+generically. This can be used to deal with the API objects from a plug-in. Unstructured
+objects still have functioning TypeMeta features-- kind, version, etc.
+</p>
+<p>
+WARNING: This object has accessors for the v1 standard metadata. You *MUST NOT* use this
+type if you are dealing with objects that are not in the server meta v1 schema.
+</p>
+<p>
+TODO: make the serialization part of this type distinct from the field accessors.
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
++k8s:deepcopy-gen=true
+</p>
+
+			<pre>type Unstructured struct {
+<span id="Unstructured.Object"></span>    <span class="comment">// Object is a JSON compatible map with string, float, int, bool, []interface{}, or</span>
+    <span class="comment">// map[string]interface{}</span>
+    <span class="comment">// children.</span>
+    Object map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Unstructured.DeepCopy">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=4205:4253#L130">DeepCopy</a>
+					<a class="permalink" href="index.html#Unstructured.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Unstructured">Unstructured</a>) DeepCopy() *<a href="index.html#Unstructured">Unstructured</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.DeepCopyInto">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/zz_generated.deepcopy.go?s=840:895#L18">DeepCopyInto</a>
+					<a class="permalink" href="index.html#Unstructured.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Unstructured">Unstructured</a>) DeepCopyInto(out *<a href="index.html#Unstructured">Unstructured</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.DeepCopyObject">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/zz_generated.deepcopy.go?s=1058:1113#L25">DeepCopyObject</a>
+					<a class="permalink" href="index.html#Unstructured.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Unstructured">Unstructured</a>) DeepCopyObject() <a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.EachListItem">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=2436:2510#L73">EachListItem</a>
+					<a class="permalink" href="index.html#Unstructured.EachListItem">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) EachListItem(fn func(<a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetAPIVersion">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=6296:6341#L207">GetAPIVersion</a>
+					<a class="permalink" href="index.html#Unstructured.GetAPIVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetAPIVersion() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetAnnotations">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=11412:11469#L397">GetAnnotations</a>
+					<a class="permalink" href="index.html#Unstructured.GetAnnotations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetAnnotations() map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetClusterName">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=12495:12541#L437">GetClusterName</a>
+					<a class="permalink" href="index.html#Unstructured.GetClusterName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetClusterName() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetContinue">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=8938:8981#L311">GetContinue</a>
+					<a class="permalink" href="index.html#Unstructured.GetContinue">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetContinue() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetCreationTimestamp">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=9566:9623#L335">GetCreationTimestamp</a>
+					<a class="permalink" href="index.html#Unstructured.GetCreationTimestamp">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetCreationTimestamp() <a href="../index.html">metav1</a>.<a href="../index.html#Time">Time</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetDeletionGracePeriodSeconds">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=10577:10638#L368">GetDeletionGracePeriodSeconds</a>
+					<a class="permalink" href="index.html#Unstructured.GetDeletionGracePeriodSeconds">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetDeletionGracePeriodSeconds() *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetDeletionTimestamp">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=10061:10119#L350">GetDeletionTimestamp</a>
+					<a class="permalink" href="index.html#Unstructured.GetDeletionTimestamp">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetDeletionTimestamp() *<a href="../index.html">metav1</a>.<a href="../index.html#Time">Time</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetFinalizers">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=12145:12192#L424">GetFinalizers</a>
+					<a class="permalink" href="index.html#Unstructured.GetFinalizers">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetFinalizers() []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetGenerateName">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=7252:7299#L247">GetGenerateName</a>
+					<a class="permalink" href="index.html#Unstructured.GetGenerateName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetGenerateName() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetGeneration">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=8254:8298#L283">GetGeneration</a>
+					<a class="permalink" href="index.html#Unstructured.GetGeneration">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetGeneration() <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=6494:6533#L215">GetKind</a>
+					<a class="permalink" href="index.html#Unstructured.GetKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetKind() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetLabels">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=11090:11142#L384">GetLabels</a>
+					<a class="permalink" href="index.html#Unstructured.GetLabels">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetLabels() map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetManagedFields">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=12826:12895#L449">GetManagedFields</a>
+					<a class="permalink" href="index.html#Unstructured.GetManagedFields">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetManagedFields() []<a href="../index.html">metav1</a>.<a href="../index.html#ManagedFieldsEntry">ManagedFieldsEntry</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetName">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=6977:7016#L235">GetName</a>
+					<a class="permalink" href="index.html#Unstructured.GetName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetName() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetNamespace">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=6662:6706#L223">GetNamespace</a>
+					<a class="permalink" href="index.html#Unstructured.GetNamespace">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetNamespace() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetObjectKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=1777:1835#L42">GetObjectKind</a>
+					<a class="permalink" href="index.html#Unstructured.GetObjectKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) GetObjectKind() <a href="../../../../runtime/schema/index.html">schema</a>.<a href="../../../../runtime/schema/index.html#ObjectKind">ObjectKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetOwnerReferences">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=5170:5237#L168">GetOwnerReferences</a>
+					<a class="permalink" href="index.html#Unstructured.GetOwnerReferences">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetOwnerReferences() []<a href="../index.html">metav1</a>.<a href="../index.html#OwnerReference">OwnerReference</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetRemainingItemCount">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=9224:9277#L323">GetRemainingItemCount</a>
+					<a class="permalink" href="index.html#Unstructured.GetRemainingItemCount">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetRemainingItemCount() *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetResourceVersion">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=7891:7941#L271">GetResourceVersion</a>
+					<a class="permalink" href="index.html#Unstructured.GetResourceVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetResourceVersion() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetSelfLink">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=8631:8674#L299">GetSelfLink</a>
+					<a class="permalink" href="index.html#Unstructured.GetSelfLink">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetSelfLink() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GetUID">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=7591:7632#L259">GetUID</a>
+					<a class="permalink" href="index.html#Unstructured.GetUID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GetUID() <a href="../../../../types/index.html">types</a>.<a href="../../../../types/index.html#UID">UID</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.GroupVersionKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=11918:11983#L415">GroupVersionKind</a>
+					<a class="permalink" href="index.html#Unstructured.GroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) GroupVersionKind() <a href="../../../../runtime/schema/index.html">schema</a>.<a href="../../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.IsList">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=1852:1890#L44">IsList</a>
+					<a class="permalink" href="index.html#Unstructured.IsList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) IsList() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.MarshalJSON">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=3345:3397#L107">MarshalJSON</a>
+					<a class="permalink" href="index.html#Unstructured.MarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) MarshalJSON() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalJSON ensures that the unstructured object produces proper
+JSON when passed to Go&#39;s standard JSON library.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.NewEmptyInstance">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=3998:4061#L122">NewEmptyInstance</a>
+					<a class="permalink" href="index.html#Unstructured.NewEmptyInstance">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Unstructured">Unstructured</a>) NewEmptyInstance() <a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Unstructured">Unstructured</a></pre>
+				<p>
+NewEmptyInstance returns a new instance of the concrete type containing only kind/apiVersion and no other data.
+This should be called instead of reflect.New() for unstructured types because the go type alone does not preserve kind/apiVersion info.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetAPIVersion">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=6395:6447#L211">SetAPIVersion</a>
+					<a class="permalink" href="index.html#Unstructured.SetAPIVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetAPIVersion(version <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetAnnotations">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=11550:11618#L402">SetAnnotations</a>
+					<a class="permalink" href="index.html#Unstructured.SetAnnotations">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetAnnotations(annotations map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetClusterName">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=12608:12665#L441">SetClusterName</a>
+					<a class="permalink" href="index.html#Unstructured.SetClusterName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetClusterName(clusterName <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetContinue">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=9045:9089#L315">SetContinue</a>
+					<a class="permalink" href="index.html#Unstructured.SetContinue">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetContinue(c <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetCreationTimestamp">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=9769:9835#L341">SetCreationTimestamp</a>
+					<a class="permalink" href="index.html#Unstructured.SetCreationTimestamp">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetCreationTimestamp(timestamp <a href="../index.html">metav1</a>.<a href="../index.html#Time">Time</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetDeletionGracePeriodSeconds">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=10784:10871#L376">SetDeletionGracePeriodSeconds</a>
+					<a class="permalink" href="index.html#Unstructured.SetDeletionGracePeriodSeconds">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetDeletionGracePeriodSeconds(deletionGracePeriodSeconds *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetDeletionTimestamp">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=10307:10374#L359">SetDeletionTimestamp</a>
+					<a class="permalink" href="index.html#Unstructured.SetDeletionTimestamp">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetDeletionTimestamp(timestamp *<a href="../index.html">metav1</a>.<a href="../index.html#Time">Time</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetFinalizers">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=12278:12335#L429">SetFinalizers</a>
+					<a class="permalink" href="index.html#Unstructured.SetFinalizers">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetFinalizers(finalizers []<a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetGenerateName">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=7367:7426#L251">SetGenerateName</a>
+					<a class="permalink" href="index.html#Unstructured.SetGenerateName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetGenerateName(generateName <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetGeneration">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=8425:8479#L291">SetGeneration</a>
+					<a class="permalink" href="index.html#Unstructured.SetGeneration">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetGeneration(generation <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetGroupVersionKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=11774:11845#L410">SetGroupVersionKind</a>
+					<a class="permalink" href="index.html#Unstructured.SetGroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetGroupVersionKind(gvk <a href="../../../../runtime/schema/index.html">schema</a>.<a href="../../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetKind">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=6581:6624#L219">SetKind</a>
+					<a class="permalink" href="index.html#Unstructured.SetKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetKind(kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetLabels">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=11218:11276#L389">SetLabels</a>
+					<a class="permalink" href="index.html#Unstructured.SetLabels">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetLabels(labels map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetManagedFields">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=13588:13670#L471">SetManagedFields</a>
+					<a class="permalink" href="index.html#Unstructured.SetManagedFields">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetManagedFields(managedFields []<a href="../index.html">metav1</a>.<a href="../index.html#ManagedFieldsEntry">ManagedFieldsEntry</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetName">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=7076:7119#L239">SetName</a>
+					<a class="permalink" href="index.html#Unstructured.SetName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetName(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetNamespace">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=6771:6824#L227">SetNamespace</a>
+					<a class="permalink" href="index.html#Unstructured.SetNamespace">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetNamespace(namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetOwnerReferences">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=5708:5785#L189">SetOwnerReferences</a>
+					<a class="permalink" href="index.html#Unstructured.SetOwnerReferences">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetOwnerReferences(references []<a href="../index.html">metav1</a>.<a href="../index.html#OwnerReference">OwnerReference</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetRemainingItemCount">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=9357:9411#L327">SetRemainingItemCount</a>
+					<a class="permalink" href="index.html#Unstructured.SetRemainingItemCount">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetRemainingItemCount(c *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetResourceVersion">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=8012:8077#L275">SetResourceVersion</a>
+					<a class="permalink" href="index.html#Unstructured.SetResourceVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetResourceVersion(resourceVersion <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetSelfLink">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=8738:8789#L303">SetSelfLink</a>
+					<a class="permalink" href="index.html#Unstructured.SetSelfLink">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetSelfLink(selfLink <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetUID">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=7702:7746#L263">SetUID</a>
+					<a class="permalink" href="index.html#Unstructured.SetUID">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) SetUID(uid <a href="../../../../types/index.html">types</a>.<a href="../../../../types/index.html#UID">UID</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.SetUnstructuredContent">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=3119:3198#L101">SetUnstructuredContent</a>
+					<a class="permalink" href="index.html#Unstructured.SetUnstructuredContent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) SetUnstructuredContent(content map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{})</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.ToList">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=1999:2059#L52">ToList</a>
+					<a class="permalink" href="index.html#Unstructured.ToList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) ToList() (*<a href="index.html#UnstructuredList">UnstructuredList</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.UnmarshalJSON">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=3619:3671#L115">UnmarshalJSON</a>
+					<a class="permalink" href="index.html#Unstructured.UnmarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#Unstructured">Unstructured</a>) UnmarshalJSON(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UnmarshalJSON ensures that the unstructured object properly decodes
+JSON when passed to Go&#39;s standard JSON library.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Unstructured.UnstructuredContent">func (*Unstructured) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured.go?s=2960:3029#L94">UnstructuredContent</a>
+					<a class="permalink" href="index.html#Unstructured.UnstructuredContent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#Unstructured">Unstructured</a>) UnstructuredContent() map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UnstructuredList">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=1108:1254#L25">UnstructuredList</a>
+				<a class="permalink" href="index.html#UnstructuredList">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UnstructuredList allows lists that do not have Golang structs
+registered to be manipulated generically. This can be used to deal
+with the API lists from a plug-in.
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
++k8s:deepcopy-gen=true
+</p>
+
+			<pre>type UnstructuredList struct {
+<span id="UnstructuredList.Object"></span>    Object map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}
+
+<span id="UnstructuredList.Items"></span>    <span class="comment">// Items is a list of unstructured objects.</span>
+    Items []<a href="index.html#Unstructured">Unstructured</a> `json:&#34;items&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UnstructuredList.DeepCopy">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=3353:3408#L100">DeepCopy</a>
+					<a class="permalink" href="index.html#UnstructuredList.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) DeepCopy() *<a href="index.html#UnstructuredList">UnstructuredList</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.DeepCopyInto">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/zz_generated.deepcopy.go?s=1295:1358#L33">DeepCopyInto</a>
+					<a class="permalink" href="index.html#UnstructuredList.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnstructuredList">UnstructuredList</a>) DeepCopyInto(out *<a href="index.html#UnstructuredList">UnstructuredList</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.DeepCopyObject">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/zz_generated.deepcopy.go?s=1521:1580#L40">DeepCopyObject</a>
+					<a class="permalink" href="index.html#UnstructuredList.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#UnstructuredList">UnstructuredList</a>) DeepCopyObject() <a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.EachListItem">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=1389:1465#L36">EachListItem</a>
+					<a class="permalink" href="index.html#UnstructuredList.EachListItem">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) EachListItem(fn func(<a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GetAPIVersion">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4197:4246#L129">GetAPIVersion</a>
+					<a class="permalink" href="index.html#UnstructuredList.GetAPIVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GetAPIVersion() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GetContinue">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=5053:5100#L161">GetContinue</a>
+					<a class="permalink" href="index.html#UnstructuredList.GetContinue">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GetContinue() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GetKind">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4403:4446#L137">GetKind</a>
+					<a class="permalink" href="index.html#UnstructuredList.GetKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GetKind() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GetObjectKind">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=1256:1316#L32">GetObjectKind</a>
+					<a class="permalink" href="index.html#UnstructuredList.GetObjectKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GetObjectKind() <a href="../../../../runtime/schema/index.html">schema</a>.<a href="../../../../runtime/schema/index.html#ObjectKind">ObjectKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GetRemainingItemCount">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=5263:5320#L169">GetRemainingItemCount</a>
+					<a class="permalink" href="index.html#UnstructuredList.GetRemainingItemCount">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GetRemainingItemCount() *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GetResourceVersion">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4579:4633#L145">GetResourceVersion</a>
+					<a class="permalink" href="index.html#UnstructuredList.GetResourceVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GetResourceVersion() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GetSelfLink">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4829:4876#L153">GetSelfLink</a>
+					<a class="permalink" href="index.html#UnstructuredList.GetSelfLink">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GetSelfLink() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.GroupVersionKind">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=5761:5830#L186">GroupVersionKind</a>
+					<a class="permalink" href="index.html#UnstructuredList.GroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) GroupVersionKind() <a href="../../../../runtime/schema/index.html">schema</a>.<a href="../../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.IsList">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=1331:1371#L34">IsList</a>
+					<a class="permalink" href="index.html#UnstructuredList.IsList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) IsList() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.MarshalJSON">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=3785:3841#L116">MarshalJSON</a>
+					<a class="permalink" href="index.html#UnstructuredList.MarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) MarshalJSON() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalJSON ensures that the unstructured list object produces proper
+JSON when passed to Go&#39;s standard JSON library.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.NewEmptyInstance">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=1826:1892#L47">NewEmptyInstance</a>
+					<a class="permalink" href="index.html#UnstructuredList.NewEmptyInstance">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) NewEmptyInstance() <a href="../../../../runtime/index.html">runtime</a>.<a href="../../../../runtime/index.html#Unstructured">Unstructured</a></pre>
+				<p>
+NewEmptyInstance returns a new instance of the concrete type containing only kind/apiVersion and no other data.
+This should be called instead of reflect.New() for unstructured types because the go type alone does not preserve kind/apiVersion info.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetAPIVersion">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4300:4356#L133">SetAPIVersion</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetAPIVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetAPIVersion(version <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetContinue">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=5164:5212#L165">SetContinue</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetContinue">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetContinue(c <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetGroupVersionKind">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=5613:5688#L181">SetGroupVersionKind</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetGroupVersionKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetGroupVersionKind(gvk <a href="../../../../runtime/schema/index.html">schema</a>.<a href="../../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetKind">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4494:4541#L141">SetKind</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetKind(kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetRemainingItemCount">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=5400:5458#L173">SetRemainingItemCount</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetRemainingItemCount">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetRemainingItemCount(c *<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetResourceVersion">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4704:4765#L149">SetResourceVersion</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetResourceVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetResourceVersion(version <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetSelfLink">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4940:4995#L157">SetSelfLink</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetSelfLink">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetSelfLink(selfLink <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.SetUnstructuredContent">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=2710:2793#L76">SetUnstructuredContent</a>
+					<a class="permalink" href="index.html#UnstructuredList.SetUnstructuredContent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (obj *<a href="index.html#UnstructuredList">UnstructuredList</a>) SetUnstructuredContent(content map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{})</pre>
+				<p>
+SetUnstructuredContent obeys the conventions of List and keeps Items and the items
+array in sync. If items is not an array of objects in the incoming map, then any
+mismatched item will be removed.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.UnmarshalJSON">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=4068:4124#L124">UnmarshalJSON</a>
+					<a class="permalink" href="index.html#UnstructuredList.UnmarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) UnmarshalJSON(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UnmarshalJSON ensures that the unstructured list object properly
+decodes JSON when passed to Go&#39;s standard JSON library.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="UnstructuredList.UnstructuredContent">func (*UnstructuredList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1/unstructured/unstructured_list.go?s=2140:2211#L57">UnstructuredContent</a>
+					<a class="permalink" href="index.html#UnstructuredList.UnstructuredContent">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (u *<a href="index.html#UnstructuredList">UnstructuredList</a>) UnstructuredContent() map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]interface{}</pre>
+				<p>
+UnstructuredContent returns a map contain an overlay of the Items field onto
+the Object field. Items always overwrites overlay.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="unstructuredscheme/index.html">unstructuredscheme</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

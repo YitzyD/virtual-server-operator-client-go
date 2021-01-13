@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>serializer - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package serializer
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/runtime/serializer"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#DisablePretty">func DisablePretty(options *CodecFactoryOptions)</a></dd>
+			
+				
+				<dd><a href="index.html#DisableStrict">func DisableStrict(options *CodecFactoryOptions)</a></dd>
+			
+				
+				<dd><a href="index.html#EnablePretty">func EnablePretty(options *CodecFactoryOptions)</a></dd>
+			
+				
+				<dd><a href="index.html#EnableStrict">func EnableStrict(options *CodecFactoryOptions)</a></dd>
+			
+				
+				<dd><a href="index.html#NegotiatedSerializerWrapper">func NegotiatedSerializerWrapper(info runtime.SerializerInfo) runtime.NegotiatedSerializer</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CodecFactory">type CodecFactory</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewCodecFactory">func NewCodecFactory(scheme *runtime.Scheme, mutators ...CodecFactoryOptionsMutator) CodecFactory</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.CodecForVersions">func (f CodecFactory) CodecForVersions(encoder runtime.Encoder, decoder runtime.Decoder, encode runtime.GroupVersioner, decode runtime.GroupVersioner) runtime.Codec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.DecoderToVersion">func (f CodecFactory) DecoderToVersion(decoder runtime.Decoder, gv runtime.GroupVersioner) runtime.Decoder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.EncoderForVersion">func (f CodecFactory) EncoderForVersion(encoder runtime.Encoder, gv runtime.GroupVersioner) runtime.Encoder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.LegacyCodec">func (f CodecFactory) LegacyCodec(version ...schema.GroupVersion) runtime.Codec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.SupportedMediaTypes">func (f CodecFactory) SupportedMediaTypes() []runtime.SerializerInfo</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.UniversalDecoder">func (f CodecFactory) UniversalDecoder(versions ...schema.GroupVersion) runtime.Decoder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.UniversalDeserializer">func (f CodecFactory) UniversalDeserializer() runtime.Decoder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CodecFactory.WithoutConversion">func (f CodecFactory) WithoutConversion() runtime.NegotiatedSerializer</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CodecFactoryOptions">type CodecFactoryOptions</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#CodecFactoryOptionsMutator">type CodecFactoryOptionsMutator</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#WithoutConversionCodecFactory">type WithoutConversionCodecFactory</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#WithoutConversionCodecFactory.DecoderToVersion">func (f WithoutConversionCodecFactory) DecoderToVersion(serializer runtime.Decoder, _ runtime.GroupVersioner) runtime.Decoder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#WithoutConversionCodecFactory.EncoderForVersion">func (f WithoutConversionCodecFactory) EncoderForVersion(serializer runtime.Encoder, version runtime.GroupVersioner) runtime.Encoder</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go">codec_factory.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/negotiated_codec.go">negotiated_codec.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="DisablePretty">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=4356:4404#L126">DisablePretty</a>
+				<a class="permalink" href="index.html#DisablePretty">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DisablePretty(options *<a href="index.html#CodecFactoryOptions">CodecFactoryOptions</a>)</pre>
+			<p>
+DisablePretty disables including a pretty serializer along with the non-pretty one
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="DisableStrict">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=4646:4694#L136">DisableStrict</a>
+				<a class="permalink" href="index.html#DisableStrict">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DisableStrict(options *<a href="index.html#CodecFactoryOptions">CodecFactoryOptions</a>)</pre>
+			<p>
+DisableStrict disables configuring all serializers in strict mode
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EnablePretty">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=4194:4241#L121">EnablePretty</a>
+				<a class="permalink" href="index.html#EnablePretty">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EnablePretty(options *<a href="index.html#CodecFactoryOptions">CodecFactoryOptions</a>)</pre>
+			<p>
+EnablePretty enables including a pretty serializer along with the non-pretty one
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EnableStrict">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=4501:4548#L131">EnableStrict</a>
+				<a class="permalink" href="index.html#EnableStrict">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EnableStrict(options *<a href="index.html#CodecFactoryOptions">CodecFactoryOptions</a>)</pre>
+			<p>
+EnableStrict enables configuring all serializers in strict mode
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NegotiatedSerializerWrapper">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/negotiated_codec.go?s=844:934#L19">NegotiatedSerializerWrapper</a>
+				<a class="permalink" href="index.html#NegotiatedSerializerWrapper">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NegotiatedSerializerWrapper(info <a href="../index.html">runtime</a>.<a href="../index.html#SerializerInfo">SerializerInfo</a>) <a href="../index.html">runtime</a>.<a href="../index.html#NegotiatedSerializer">NegotiatedSerializer</a></pre>
+			
+			
+			
+
+		
+		
+			
+			
+			<h2 id="CodecFactory">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=3450:3606#L100">CodecFactory</a>
+				<a class="permalink" href="index.html#CodecFactory">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CodecFactory provides methods for retrieving codecs and serializers for specific
+versions and content types.
+</p>
+
+			<pre>type CodecFactory struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewCodecFactory">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=5445:5542#L151">NewCodecFactory</a>
+					<a class="permalink" href="index.html#NewCodecFactory">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewCodecFactory(scheme *<a href="../index.html">runtime</a>.<a href="../index.html#Scheme">Scheme</a>, mutators ...<a href="index.html#CodecFactoryOptionsMutator">CodecFactoryOptionsMutator</a>) <a href="index.html#CodecFactory">CodecFactory</a></pre>
+				<p>
+NewCodecFactory provides methods for retrieving serializers for the supported wire formats
+and conversion wrappers to define preferred internal and external versions. In the future,
+as the internal version is used less, callers may instead use a defaulting serializer and
+only convert objects which are shared internally (Status, common API machinery).
+</p>
+<p>
+Mutators can be passed to change the CodecFactoryOptions before construction of the factory.
+It is recommended to explicitly pass mutators instead of relying on defaults.
+By default, Pretty is enabled -- this is conformant with previously supported behavior.
+</p>
+<p>
+TODO: allow other codecs to be compiled in?
+TODO: accept a scheme interface
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="CodecFactory.CodecForVersions">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=10287:10451#L269">CodecForVersions</a>
+					<a class="permalink" href="index.html#CodecFactory.CodecForVersions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) CodecForVersions(encoder <a href="../index.html">runtime</a>.<a href="../index.html#Encoder">Encoder</a>, decoder <a href="../index.html">runtime</a>.<a href="../index.html#Decoder">Decoder</a>, encode <a href="../index.html">runtime</a>.<a href="../index.html#GroupVersioner">GroupVersioner</a>, decode <a href="../index.html">runtime</a>.<a href="../index.html#GroupVersioner">GroupVersioner</a>) <a href="../index.html">runtime</a>.<a href="../index.html#Codec">Codec</a></pre>
+				<p>
+CodecForVersions creates a codec with the provided serializer. If an object is decoded and its group is not in the list,
+it will default to runtime.APIVersionInternal. If encode is not specified for an object&#39;s group, the object is not
+converted. If encode or decode are nil, no conversion is performed.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CodecFactory.DecoderToVersion">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=10819:10925#L281">DecoderToVersion</a>
+					<a class="permalink" href="index.html#CodecFactory.DecoderToVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) DecoderToVersion(decoder <a href="../index.html">runtime</a>.<a href="../index.html#Decoder">Decoder</a>, gv <a href="../index.html">runtime</a>.<a href="../index.html#GroupVersioner">GroupVersioner</a>) <a href="../index.html">runtime</a>.<a href="../index.html#Decoder">Decoder</a></pre>
+				<p>
+DecoderToVersion returns a decoder that targets the provided group version.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CodecFactory.EncoderForVersion">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=11062:11169#L286">EncoderForVersion</a>
+					<a class="permalink" href="index.html#CodecFactory.EncoderForVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) EncoderForVersion(encoder <a href="../index.html">runtime</a>.<a href="../index.html#Encoder">Encoder</a>, gv <a href="../index.html">runtime</a>.<a href="../index.html#GroupVersioner">GroupVersioner</a>) <a href="../index.html">runtime</a>.<a href="../index.html#Encoder">Encoder</a></pre>
+				<p>
+EncoderForVersion returns an encoder that targets the provided group version.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CodecFactory.LegacyCodec">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=8409:8488#L237">LegacyCodec</a>
+					<a class="permalink" href="index.html#CodecFactory.LegacyCodec">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) LegacyCodec(version ...<a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersion">GroupVersion</a>) <a href="../index.html">runtime</a>.<a href="../index.html#Codec">Codec</a></pre>
+				<p>
+LegacyCodec encodes output to a given API versions, and decodes output into the internal form from
+any recognized source. The returned codec will always encode output to JSON. If a type is not
+found in the list of versions an error will be returned.
+</p>
+<p>
+This method is deprecated - clients and servers should negotiate a serializer by mime-type and
+invoke CodecForVersions. Callers that need only to read data should use UniversalDecoder().
+</p>
+<p>
+TODO: make this call exist only in pkg/api, and initialize it with the set of default versions.
+</p>
+<pre>All other callers will be forced to request a Codec directly.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="CodecFactory.SupportedMediaTypes">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=7693:7761#L224">SupportedMediaTypes</a>
+					<a class="permalink" href="index.html#CodecFactory.SupportedMediaTypes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) SupportedMediaTypes() []<a href="../index.html">runtime</a>.<a href="../index.html#SerializerInfo">SerializerInfo</a></pre>
+				<p>
+SupportedMediaTypes returns the RFC2046 media types that this factory has serializers for.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CodecFactory.UniversalDecoder">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=9654:9741#L256">UniversalDecoder</a>
+					<a class="permalink" href="index.html#CodecFactory.UniversalDecoder">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) UniversalDecoder(versions ...<a href="../schema/index.html">schema</a>.<a href="../schema/index.html#GroupVersion">GroupVersion</a>) <a href="../index.html">runtime</a>.<a href="../index.html#Decoder">Decoder</a></pre>
+				<p>
+UniversalDecoder returns a runtime.Decoder capable of decoding all known API objects in all known formats. Used
+by clients that do not need to encode objects but want to deserialize API objects stored on disk. Only decodes
+objects in groups registered with the scheme. The GroupVersions passed may be used to select alternate
+versions of objects to return - by default, runtime.APIVersionInternal is used. If any versions are specified,
+unrecognized groups will be returned in the version they are encoded as (no conversion). This decoder performs
+defaulting.
+</p>
+<p>
+TODO: the decoder will eventually be removed in favor of dealing with objects in their versioned form
+TODO: only accept a group versioner
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CodecFactory.UniversalDeserializer">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=8842:8903#L243">UniversalDeserializer</a>
+					<a class="permalink" href="index.html#CodecFactory.UniversalDeserializer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) UniversalDeserializer() <a href="../index.html">runtime</a>.<a href="../index.html#Decoder">Decoder</a></pre>
+				<p>
+UniversalDeserializer can convert any stored data recognized by this factory into a Go object that satisfies
+runtime.Object. It does not perform conversion. It does not perform defaulting.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CodecFactory.WithoutConversion">func (CodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=7482:7552#L219">WithoutConversion</a>
+					<a class="permalink" href="index.html#CodecFactory.WithoutConversion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#CodecFactory">CodecFactory</a>) WithoutConversion() <a href="../index.html">runtime</a>.<a href="../index.html#NegotiatedSerializer">NegotiatedSerializer</a></pre>
+				<p>
+WithoutConversion returns a NegotiatedSerializer that performs no conversion, even if the
+caller requests it.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CodecFactoryOptions">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=3687:3871#L109">CodecFactoryOptions</a>
+				<a class="permalink" href="index.html#CodecFactoryOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CodecFactoryOptions holds the options for configuring CodecFactory behavior
+</p>
+
+			<pre>type CodecFactoryOptions struct {
+<span id="CodecFactoryOptions.Strict"></span>    <span class="comment">// Strict configures all serializers in strict mode</span>
+    Strict <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="CodecFactoryOptions.Pretty"></span>    <span class="comment">// Pretty includes a pretty serializer along with the non-pretty one</span>
+    Pretty <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="CodecFactoryOptionsMutator">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=4050:4108#L118">CodecFactoryOptionsMutator</a>
+				<a class="permalink" href="index.html#CodecFactoryOptionsMutator">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CodecFactoryOptionsMutator takes a pointer to an options struct and then modifies it.
+Functions implementing this type can be passed to the NewCodecFactory() constructor.
+</p>
+
+			<pre>type CodecFactoryOptionsMutator func(*<a href="index.html#CodecFactoryOptions">CodecFactoryOptions</a>)</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="WithoutConversionCodecFactory">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=11529:11588#L293">WithoutConversionCodecFactory</a>
+				<a class="permalink" href="index.html#WithoutConversionCodecFactory">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+WithoutConversionCodecFactory is a CodecFactory that will explicitly ignore requests to perform conversion.
+This wrapper is used while code migrates away from using conversion (such as external clients) and in the future
+will be unnecessary when we change the signature of NegotiatedSerializer.
+</p>
+
+			<pre>type WithoutConversionCodecFactory struct {
+    <a href="index.html#CodecFactory">CodecFactory</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="WithoutConversionCodecFactory.DecoderToVersion">func (WithoutConversionCodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=12063:12188#L308">DecoderToVersion</a>
+					<a class="permalink" href="index.html#WithoutConversionCodecFactory.DecoderToVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#WithoutConversionCodecFactory">WithoutConversionCodecFactory</a>) DecoderToVersion(serializer <a href="../index.html">runtime</a>.<a href="../index.html#Decoder">Decoder</a>, _ <a href="../index.html">runtime</a>.<a href="../index.html#GroupVersioner">GroupVersioner</a>) <a href="../index.html">runtime</a>.<a href="../index.html#Decoder">Decoder</a></pre>
+				<p>
+DecoderToVersion returns an decoder that does not do conversion.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="WithoutConversionCodecFactory.EncoderForVersion">func (WithoutConversionCodecFactory) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/serializer/codec_factory.go?s=11729:11861#L299">EncoderForVersion</a>
+					<a class="permalink" href="index.html#WithoutConversionCodecFactory.EncoderForVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (f <a href="index.html#WithoutConversionCodecFactory">WithoutConversionCodecFactory</a>) EncoderForVersion(serializer <a href="../index.html">runtime</a>.<a href="../index.html#Encoder">Encoder</a>, version <a href="../index.html">runtime</a>.<a href="../index.html#GroupVersioner">GroupVersioner</a>) <a href="../index.html">runtime</a>.<a href="../index.html#Encoder">Encoder</a></pre>
+				<p>
+EncoderForVersion returns an encoder that does not do conversion, but does set the group version kind of the object
+when serialized.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="json/index.html">json</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="protobuf/index.html">protobuf</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						Package protobuf provides a Kubernetes serializer for the protobuf format.
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="recognizer/index.html">recognizer</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="streaming/index.html">streaming</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						Package streaming implements encoder and decoder for streams of runtime.Objects over io.Writer/Readers.
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="versioning/index.html">versioning</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="yaml/index.html">yaml</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>schema - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package schema
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/runtime/schema"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#ParseKindArg">func ParseKindArg(arg string) (*GroupVersionKind, GroupKind)</a></dd>
+			
+				
+				<dd><a href="index.html#ParseResourceArg">func ParseResourceArg(arg string) (*GroupVersionResource, GroupResource)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#GroupKind">type GroupKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseGroupKind">func ParseGroupKind(gk string) GroupKind</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupKind.Empty">func (gk GroupKind) Empty() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupKind.String">func (gk GroupKind) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupKind.WithVersion">func (gk GroupKind) WithVersion(version string) GroupVersionKind</a></dd>
+				
+			
+				
+				<dd><a href="index.html#GroupResource">type GroupResource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseGroupResource">func ParseGroupResource(gr string) GroupResource</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupResource.Empty">func (gr GroupResource) Empty() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupResource.String">func (gr GroupResource) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupResource.WithVersion">func (gr GroupResource) WithVersion(version string) GroupVersionResource</a></dd>
+				
+			
+				
+				<dd><a href="index.html#GroupVersion">type GroupVersion</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseGroupVersion">func ParseGroupVersion(gv string) (GroupVersion, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersion.Empty">func (gv GroupVersion) Empty() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersion.Identifier">func (gv GroupVersion) Identifier() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersion.KindForGroupVersionKinds">func (gv GroupVersion) KindForGroupVersionKinds(kinds []GroupVersionKind) (target GroupVersionKind, ok bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersion.String">func (gv GroupVersion) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersion.WithKind">func (gv GroupVersion) WithKind(kind string) GroupVersionKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersion.WithResource">func (gv GroupVersion) WithResource(resource string) GroupVersionResource</a></dd>
+				
+			
+				
+				<dd><a href="index.html#GroupVersionKind">type GroupVersionKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FromAPIVersionAndKind">func FromAPIVersionAndKind(apiVersion, kind string) GroupVersionKind</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionKind.Empty">func (gvk GroupVersionKind) Empty() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionKind.GroupKind">func (gvk GroupVersionKind) GroupKind() GroupKind</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionKind.GroupVersion">func (gvk GroupVersionKind) GroupVersion() GroupVersion</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionKind.String">func (gvk GroupVersionKind) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionKind.ToAPIVersionAndKind">func (gvk GroupVersionKind) ToAPIVersionAndKind() (string, string)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#GroupVersionResource">type GroupVersionResource</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionResource.Empty">func (gvr GroupVersionResource) Empty() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionResource.GroupResource">func (gvr GroupVersionResource) GroupResource() GroupResource</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionResource.GroupVersion">func (gvr GroupVersionResource) GroupVersion() GroupVersion</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersionResource.String">func (gvr GroupVersionResource) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#GroupVersions">type GroupVersions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersions.Identifier">func (gvs GroupVersions) Identifier() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#GroupVersions.KindForGroupVersionKinds">func (gvs GroupVersions) KindForGroupVersionKinds(kinds []GroupVersionKind) (GroupVersionKind, bool)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ObjectKind">type ObjectKind</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/generated.pb.go">generated.pb.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go">group_version.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/interfaces.go">interfaces.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+EmptyObjectKind implements the ObjectKind interface as a noop
+</p>
+
+				<pre>var <span id="EmptyObjectKind">EmptyObjectKind</span> = emptyObjectKind{}</pre>
+			
+		
+		
+			
+			
+			<h2 id="ParseKindArg">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=1928:1988#L34">ParseKindArg</a>
+				<a class="permalink" href="index.html#ParseKindArg">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ParseKindArg(arg <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#GroupVersionKind">GroupVersionKind</a>, <a href="index.html#GroupKind">GroupKind</a>)</pre>
+			<p>
+ParseKindArg takes the common style of string which may be either `Kind.group.com` or `Kind.version.group.com`
+and parses it out into both possibilities. This code takes no responsibility for knowing which representation was intended
+but with a knowledge of all GroupKinds, calling code can take a very good guess. If there are only two segments, then
+`*GroupVersionResource` is nil.
+`Kind.group.com` -&gt; `group=com, version=group, kind=Kind` and `group=group.com, kind=Kind`
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ParseResourceArg">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=1144:1216#L19">ParseResourceArg</a>
+				<a class="permalink" href="index.html#ParseResourceArg">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ParseResourceArg(arg <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#GroupVersionResource">GroupVersionResource</a>, <a href="index.html#GroupResource">GroupResource</a>)</pre>
+			<p>
+ParseResourceArg takes the common style of string which may be either `resource.group.com` or `resource.version.group.com`
+and parses it out into both possibilities.  This code takes no responsibility for knowing which representation was intended
+but with a knowledge of all GroupVersions, calling code can take a very good guess.  If there are only two segments, then
+`*GroupVersionResource` is nil.
+`resource.group.com` -&gt; `group=com, version=group, resource=resource` and `group=group.com, resource=resource`
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="GroupKind">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=4316:4369#L110">GroupKind</a>
+				<a class="permalink" href="index.html#GroupKind">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GroupKind specifies a Group and a Kind, but does not force a version.  This is useful for identifying
+concepts during lookup stages without having partially valid types
+</p>
+
+			<pre>type GroupKind struct {
+<span id="GroupKind.Group"></span>    Group <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="GroupKind.Kind"></span>    Kind  <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ParseGroupKind">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=2832:2872#L66">ParseGroupKind</a>
+					<a class="permalink" href="index.html#ParseGroupKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseGroupKind(gk <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#GroupKind">GroupKind</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="GroupKind.Empty">func (GroupKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=4371:4403#L115">Empty</a>
+					<a class="permalink" href="index.html#GroupKind.Empty">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gk <a href="index.html#GroupKind">GroupKind</a>) Empty() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupKind.String">func (GroupKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=4602:4637#L123">String</a>
+					<a class="permalink" href="index.html#GroupKind.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gk <a href="index.html#GroupKind">GroupKind</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupKind.WithVersion">func (GroupKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=4457:4521#L119">WithVersion</a>
+					<a class="permalink" href="index.html#GroupKind.WithVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gk <a href="index.html#GroupKind">GroupKind</a>) WithVersion(version <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="GroupResource">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=2377:2440#L46">GroupResource</a>
+				<a class="permalink" href="index.html#GroupResource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GroupResource specifies a Group and a Resource, but does not force a version.  This is useful for identifying
+concepts during lookup stages without having partially valid types
+</p>
+
+			<pre>type GroupResource struct {
+<span id="GroupResource.Group"></span>    Group    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="GroupResource.Resource"></span>    Resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ParseGroupResource">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=3130:3178#L77">ParseGroupResource</a>
+					<a class="permalink" href="index.html#ParseGroupResource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseGroupResource(gr <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#GroupResource">GroupResource</a></pre>
+				<p>
+ParseGroupResource turns &#34;resource.group&#34; string into a GroupResource struct.  Empty strings are allowed
+for each field.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="GroupResource.Empty">func (GroupResource) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=2607:2643#L55">Empty</a>
+					<a class="permalink" href="index.html#GroupResource.Empty">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gr <a href="index.html#GroupResource">GroupResource</a>) Empty() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupResource.String">func (GroupResource) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=2701:2740#L59">String</a>
+					<a class="permalink" href="index.html#GroupResource.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gr <a href="index.html#GroupResource">GroupResource</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupResource.WithVersion">func (GroupResource) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=2442:2514#L51">WithVersion</a>
+					<a class="permalink" href="index.html#GroupResource.WithVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gr <a href="index.html#GroupResource">GroupResource</a>) WithVersion(version <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#GroupVersionResource">GroupVersionResource</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="GroupVersion">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=5603:5663#L156">GroupVersion</a>
+				<a class="permalink" href="index.html#GroupVersion">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GroupVersion contains the &#34;group&#34; and the &#34;version&#34;, which uniquely identifies the API.
+</p>
+
+			<pre>type GroupVersion struct {
+<span id="GroupVersion.Group"></span>    Group   <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="GroupVersion.Version"></span>    Version <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ParseGroupVersion">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=7102:7157#L201">ParseGroupVersion</a>
+					<a class="permalink" href="index.html#ParseGroupVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseGroupVersion(gv <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#GroupVersion">GroupVersion</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParseGroupVersion turns &#34;group/version&#34; string into a GroupVersion struct. It reports error
+if it cannot parse the string.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="GroupVersion.Empty">func (GroupVersion) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=5718:5753#L162">Empty</a>
+					<a class="permalink" href="index.html#GroupVersion.Empty">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gv <a href="index.html#GroupVersion">GroupVersion</a>) Empty() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Empty returns true if group and version are empty
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GroupVersion.Identifier">func (GroupVersion) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=6109:6151#L176">Identifier</a>
+					<a class="permalink" href="index.html#GroupVersion.Identifier">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gv <a href="index.html#GroupVersion">GroupVersion</a>) Identifier() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Identifier implements runtime.GroupVersioner interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GroupVersion.KindForGroupVersionKinds">func (GroupVersion) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=6608:6716#L185">KindForGroupVersionKinds</a>
+					<a class="permalink" href="index.html#GroupVersion.KindForGroupVersionKinds">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gv <a href="index.html#GroupVersion">GroupVersion</a>) KindForGroupVersionKinds(kinds []<a href="index.html#GroupVersionKind">GroupVersionKind</a>) (target <a href="index.html#GroupVersionKind">GroupVersionKind</a>, ok <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+KindForGroupVersionKinds identifies the preferred GroupVersionKind out of a list. It returns ok false
+if none of the options match the group. It prefers a match to group and version over just group.
+TODO: Move GroupVersion to a package under pkg/runtime, since it&#39;s used by scheme.
+TODO: Introduce an adapter type between GroupVersion and runtime.GroupVersioner, and use LegacyCodec(GroupVersion)
+</p>
+<pre>in fewer places.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="GroupVersion.String">func (GroupVersion) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=5923:5961#L168">String</a>
+					<a class="permalink" href="index.html#GroupVersion.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gv <a href="index.html#GroupVersion">GroupVersion</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String puts &#34;group&#34; and &#34;version&#34; into a single &#34;group/version&#34; string. For the legacy v1
+it returns &#34;v1&#34;.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GroupVersion.WithKind">func (GroupVersion) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=7742:7803#L220">WithKind</a>
+					<a class="permalink" href="index.html#GroupVersion.WithKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gv <a href="index.html#GroupVersion">GroupVersion</a>) WithKind(kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				<p>
+WithKind creates a GroupVersionKind based on the method receiver&#39;s GroupVersion and the passed Kind.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GroupVersion.WithResource">func (GroupVersion) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=8000:8073#L225">WithResource</a>
+					<a class="permalink" href="index.html#GroupVersion.WithResource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gv <a href="index.html#GroupVersion">GroupVersion</a>) WithResource(resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#GroupVersionResource">GroupVersionResource</a></pre>
+				<p>
+WithResource creates a GroupVersionResource based on the method receiver&#39;s GroupVersion and the passed Resource.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="GroupVersionKind">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=4910:4990#L132">GroupVersionKind</a>
+				<a class="permalink" href="index.html#GroupVersionKind">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GroupVersionKind unambiguously identifies a kind.  It doesn&#39;t anonymously include GroupVersion
+to avoid automatic coercion.  It doesn&#39;t use a GroupVersion to avoid custom marshalling
+</p>
+
+			<pre>type GroupVersionKind struct {
+<span id="GroupVersionKind.Group"></span>    Group   <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="GroupVersionKind.Version"></span>    Version <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="GroupVersionKind.Kind"></span>    Kind    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="FromAPIVersionAndKind">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=10252:10320#L290">FromAPIVersionAndKind</a>
+					<a class="permalink" href="index.html#FromAPIVersionAndKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func FromAPIVersionAndKind(apiVersion, kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#GroupVersionKind">GroupVersionKind</a></pre>
+				<p>
+FromAPIVersionAndKind returns a GVK representing the provided fields for types that
+do not use TypeMeta. This method exists to support test types and legacy serializations
+that have a distinct group and kind.
+TODO: further reduce usage of this method.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="GroupVersionKind.Empty">func (GroupVersionKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=5052:5092#L139">Empty</a>
+					<a class="permalink" href="index.html#GroupVersionKind.Empty">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvk <a href="index.html#GroupVersionKind">GroupVersionKind</a>) Empty() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Empty returns true if group, version, and kind are empty
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GroupVersionKind.GroupKind">func (GroupVersionKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=5173:5222#L143">GroupKind</a>
+					<a class="permalink" href="index.html#GroupVersionKind.GroupKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvk <a href="index.html#GroupVersionKind">GroupVersionKind</a>) GroupKind() <a href="index.html#GroupKind">GroupKind</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupVersionKind.GroupVersion">func (GroupVersionKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=5280:5335#L147">GroupVersion</a>
+					<a class="permalink" href="index.html#GroupVersionKind.GroupVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvk <a href="index.html#GroupVersionKind">GroupVersionKind</a>) GroupVersion() <a href="index.html#GroupVersion">GroupVersion</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupVersionKind.String">func (GroupVersionKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=5402:5445#L151">String</a>
+					<a class="permalink" href="index.html#GroupVersionKind.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvk <a href="index.html#GroupVersionKind">GroupVersionKind</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupVersionKind.ToAPIVersionAndKind">func (GroupVersionKind) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=9833:9899#L279">ToAPIVersionAndKind</a>
+					<a class="permalink" href="index.html#GroupVersionKind.ToAPIVersionAndKind">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvk <a href="index.html#GroupVersionKind">GroupVersionKind</a>) ToAPIVersionAndKind() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+ToAPIVersionAndKind is a convenience method for satisfying runtime.Object on types that
+do not use TypeMeta.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="GroupVersionResource">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=3520:3607#L86">GroupVersionResource</a>
+				<a class="permalink" href="index.html#GroupVersionResource">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GroupVersionResource unambiguously identifies a resource.  It doesn&#39;t anonymously include GroupVersion
+to avoid automatic coercion.  It doesn&#39;t use a GroupVersion to avoid custom marshalling
+</p>
+
+			<pre>type GroupVersionResource struct {
+<span id="GroupVersionResource.Group"></span>    Group    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="GroupVersionResource.Version"></span>    Version  <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="GroupVersionResource.Resource"></span>    Resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="GroupVersionResource.Empty">func (GroupVersionResource) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=3609:3653#L92">Empty</a>
+					<a class="permalink" href="index.html#GroupVersionResource.Empty">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvr <a href="index.html#GroupVersionResource">GroupVersionResource</a>) Empty() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupVersionResource.GroupResource">func (GroupVersionResource) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=3738:3799#L96">GroupResource</a>
+					<a class="permalink" href="index.html#GroupVersionResource.GroupResource">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvr <a href="index.html#GroupVersionResource">GroupVersionResource</a>) GroupResource() <a href="index.html#GroupResource">GroupResource</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupVersionResource.GroupVersion">func (GroupVersionResource) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=3869:3928#L100">GroupVersion</a>
+					<a class="permalink" href="index.html#GroupVersionResource.GroupVersion">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvr <a href="index.html#GroupVersionResource">GroupVersionResource</a>) GroupVersion() <a href="index.html#GroupVersion">GroupVersion</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="GroupVersionResource.String">func (GroupVersionResource) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=3995:4042#L104">String</a>
+					<a class="permalink" href="index.html#GroupVersionResource.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvr <a href="index.html#GroupVersionResource">GroupVersionResource</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="GroupVersions">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=8469:8502#L233">GroupVersions</a>
+				<a class="permalink" href="index.html#GroupVersions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GroupVersions can be used to represent a set of desired group versions.
+TODO: Move GroupVersions to a package under pkg/runtime, since it&#39;s used by scheme.
+TODO: Introduce an adapter type between GroupVersions and runtime.GroupVersioner, and use LegacyCodec(GroupVersion)
+</p>
+<pre>in fewer places.
+</pre>
+
+			<pre>type GroupVersions []<a href="index.html#GroupVersion">GroupVersion</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="GroupVersions.Identifier">func (GroupVersions) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=8563:8607#L236">Identifier</a>
+					<a class="permalink" href="index.html#GroupVersions.Identifier">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvs <a href="index.html#GroupVersions">GroupVersions</a>) Identifier() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Identifier implements runtime.GroupVersioner interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="GroupVersions.KindForGroupVersionKinds">func (GroupVersions) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/group_version.go?s=8951:9051#L246">KindForGroupVersionKinds</a>
+					<a class="permalink" href="index.html#GroupVersions.KindForGroupVersionKinds">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (gvs <a href="index.html#GroupVersions">GroupVersions</a>) KindForGroupVersionKinds(kinds []<a href="index.html#GroupVersionKind">GroupVersionKind</a>) (<a href="index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+KindForGroupVersionKinds identifies the preferred GroupVersionKind out of a list. It returns ok false
+if none of the options match the group.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ObjectKind">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/runtime/schema/interfaces.go?s=893:1297#L12">ObjectKind</a>
+				<a class="permalink" href="index.html#ObjectKind">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+All objects that are serialized from a Scheme encode their type information. This interface is used
+by serialization to set type information from the Scheme onto the serialized version of an object.
+For objects that cannot be serialized or have unique requirements, this interface may be a no-op.
+</p>
+
+			<pre>type ObjectKind interface {
+    <span class="comment">// SetGroupVersionKind sets or clears the intended serialized kind of an object. Passing kind nil</span>
+    <span class="comment">// should clear the current setting.</span>
+    SetGroupVersionKind(kind <a href="index.html#GroupVersionKind">GroupVersionKind</a>)
+    <span class="comment">// GroupVersionKind returns the stored group, version, and kind of an object, or an empty struct</span>
+    <span class="comment">// if the object does not expose or provide these fields.</span>
+    GroupVersionKind() <a href="index.html#GroupVersionKind">GroupVersionKind</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

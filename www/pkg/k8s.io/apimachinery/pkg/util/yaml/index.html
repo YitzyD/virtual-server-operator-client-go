@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>yaml - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package yaml
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/yaml"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#GuessJSONStream">func GuessJSONStream(r io.Reader, size int) (io.Reader, []byte, bool)</a></dd>
+			
+				
+				<dd><a href="index.html#NewDocumentDecoder">func NewDocumentDecoder(r io.ReadCloser) io.ReadCloser</a></dd>
+			
+				
+				<dd><a href="index.html#ToJSON">func ToJSON(data []byte) ([]byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#Unmarshal">func Unmarshal(data []byte, v interface{}) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#JSONSyntaxError">type JSONSyntaxError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#JSONSyntaxError.Error">func (e JSONSyntaxError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#LineReader">type LineReader</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#LineReader.Read">func (r *LineReader) Read() ([]byte, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Reader">type Reader</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#YAMLDecoder">type YAMLDecoder</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#YAMLDecoder.Close">func (d *YAMLDecoder) Close() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#YAMLDecoder.Read">func (d *YAMLDecoder) Read(data []byte) (n int, err error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#YAMLOrJSONDecoder">type YAMLOrJSONDecoder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewYAMLOrJSONDecoder">func NewYAMLOrJSONDecoder(r io.Reader, bufferSize int) *YAMLOrJSONDecoder</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#YAMLOrJSONDecoder.Decode">func (d *YAMLOrJSONDecoder) Decode(into interface{}) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#YAMLReader">type YAMLReader</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewYAMLReader">func NewYAMLReader(r *bufio.Reader) *YAMLReader</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#YAMLReader.Read">func (r *YAMLReader) Read() ([]byte, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#YAMLSyntaxError">type YAMLSyntaxError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#YAMLSyntaxError.Error">func (e YAMLSyntaxError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#YAMLToJSONDecoder">type YAMLToJSONDecoder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewYAMLToJSONDecoder">func NewYAMLToJSONDecoder(r io.Reader) *YAMLToJSONDecoder</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#YAMLToJSONDecoder.Decode">func (d *YAMLToJSONDecoder) Decode(into interface{}) error</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go">decoder.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="GuessJSONStream">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=9290:9359#L350">GuessJSONStream</a>
+				<a class="permalink" href="index.html#GuessJSONStream">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GuessJSONStream(r <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>, size <a href="http://localhost:6060/pkg/builtin/#int">int</a>) (<a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>, []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+GuessJSONStream scans the provided reader up to size, looking
+for an open brace indicating this is JSON. It will return the
+bufio.Reader it creates for the consumer.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewDocumentDecoder">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=3460:3514#L114">NewDocumentDecoder</a>
+				<a class="permalink" href="index.html#NewDocumentDecoder">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewDocumentDecoder(r <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadCloser">ReadCloser</a>) <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#ReadCloser">ReadCloser</a></pre>
+			<p>
+NewDocumentDecoder decodes YAML documents from the provided
+stream in chunks by converting each document (as defined by
+the YAML spec) into its own chunk. io.ErrShortBuffer will be
+returned if the entire buffer could not be read to assist
+the caller in framing the chunk.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ToJSON">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=1807:1847#L58">ToJSON</a>
+				<a class="permalink" href="index.html#ToJSON">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ToJSON(data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ToJSON converts a single YAML document into a JSON document
+or returns an error. If the document appears to be JSON the
+YAML decoding path is not used (so that error messages are
+JSON specific).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Unmarshal">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=920:968#L28">Unmarshal</a>
+				<a class="permalink" href="index.html#Unmarshal">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Unmarshal(data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, v interface{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Unmarshal unmarshals the given data
+If v is a *map[string]interface{}, *[]interface{}, or *interface{} numbers
+are converted to int64 or float64
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="JSONSyntaxError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=5826:5879#L211">JSONSyntaxError</a>
+				<a class="permalink" href="index.html#JSONSyntaxError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type JSONSyntaxError struct {
+<span id="JSONSyntaxError.Line"></span>    Line <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+<span id="JSONSyntaxError.Err"></span>    Err  <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="JSONSyntaxError.Error">func (JSONSyntaxError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=5881:5920#L216">Error</a>
+					<a class="permalink" href="index.html#JSONSyntaxError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#JSONSyntaxError">JSONSyntaxError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="LineReader">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=8616:8664#L325">LineReader</a>
+				<a class="permalink" href="index.html#LineReader">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type LineReader struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="LineReader.Read">func (*LineReader) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=8816:8859#L331">Read</a>
+					<a class="permalink" href="index.html#LineReader.Read">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#LineReader">LineReader</a>) Read() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Read returns a single line (with &#39;\n&#39; ended) from the underlying reader.
+An error is returned iff there is an error with the underlying reader.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Reader">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=7635:7684#L277">Reader</a>
+				<a class="permalink" href="index.html#Reader">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Reader interface {
+    Read() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="YAMLDecoder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=3075:3171#L103">YAMLDecoder</a>
+				<a class="permalink" href="index.html#YAMLDecoder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+YAMLDecoder reads chunks of objects and returns ErrShortBuffer if
+the data is not sufficient.
+</p>
+
+			<pre>type YAMLDecoder struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="YAMLDecoder.Close">func (*YAMLDecoder) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=4520:4555#L159">Close</a>
+					<a class="permalink" href="index.html#YAMLDecoder.Close">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#YAMLDecoder">YAMLDecoder</a>) Close() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="YAMLDecoder.Read">func (*YAMLDecoder) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=3931:3989#L130">Read</a>
+					<a class="permalink" href="index.html#YAMLDecoder.Read">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#YAMLDecoder">YAMLDecoder</a>) Read(data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Read reads the previous slice into the buffer, or attempts to read
+the next chunk.
+TODO: switch to readline approach.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="YAMLOrJSONDecoder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=5719:5824#L203">YAMLOrJSONDecoder</a>
+				<a class="permalink" href="index.html#YAMLOrJSONDecoder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+YAMLOrJSONDecoder attempts to decode a stream of JSON documents or
+YAML documents by sniffing for a leading { character.
+</p>
+
+			<pre>type YAMLOrJSONDecoder struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewYAMLOrJSONDecoder">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=6394:6467#L232">NewYAMLOrJSONDecoder</a>
+					<a class="permalink" href="index.html#NewYAMLOrJSONDecoder">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewYAMLOrJSONDecoder(r <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>, bufferSize <a href="http://localhost:6060/pkg/builtin/#int">int</a>) *<a href="index.html#YAMLOrJSONDecoder">YAMLOrJSONDecoder</a></pre>
+				<p>
+NewYAMLOrJSONDecoder returns a decoder that will process YAML documents
+or JSON documents from the given reader as a stream. bufferSize determines
+how far into the stream the decoder will look to figure out whether this
+is a JSON stream (has whitespace followed by an open brace).
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="YAMLOrJSONDecoder.Decode">func (*YAMLOrJSONDecoder) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=6660:6718#L241">Decode</a>
+					<a class="permalink" href="index.html#YAMLOrJSONDecoder.Decode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#YAMLOrJSONDecoder">YAMLOrJSONDecoder</a>) Decode(into interface{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Decode unmarshals the next object from the underlying stream into the
+provide object, or returns an error.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="YAMLReader">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=7686:7727#L281">YAMLReader</a>
+				<a class="permalink" href="index.html#YAMLReader">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type YAMLReader struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewYAMLReader">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=7729:7776#L285">NewYAMLReader</a>
+					<a class="permalink" href="index.html#NewYAMLReader">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewYAMLReader(r *<a href="http://localhost:6060/pkg/bufio/">bufio</a>.<a href="http://localhost:6060/pkg/bufio/#Reader">Reader</a>) *<a href="index.html#YAMLReader">YAMLReader</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="YAMLReader.Read">func (*YAMLReader) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=7878:7921#L292">Read</a>
+					<a class="permalink" href="index.html#YAMLReader.Read">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#YAMLReader">YAMLReader</a>) Read() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Read returns a full YAML document.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="YAMLSyntaxError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=5990:6032#L220">YAMLSyntaxError</a>
+				<a class="permalink" href="index.html#YAMLSyntaxError">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type YAMLSyntaxError struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="YAMLSyntaxError.Error">func (YAMLSyntaxError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=6034:6073#L224">Error</a>
+					<a class="permalink" href="index.html#YAMLSyntaxError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e <a href="index.html#YAMLSyntaxError">YAMLSyntaxError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="YAMLToJSONDecoder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=2102:2150#L68">YAMLToJSONDecoder</a>
+				<a class="permalink" href="index.html#YAMLToJSONDecoder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+YAMLToJSONDecoder decodes YAML documents from an io.Reader by
+separating individual documents. It first converts the YAML
+body to JSON, then unmarshals the JSON.
+</p>
+
+			<pre>type YAMLToJSONDecoder struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewYAMLToJSONDecoder">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=2401:2458#L76">NewYAMLToJSONDecoder</a>
+					<a class="permalink" href="index.html#NewYAMLToJSONDecoder">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewYAMLToJSONDecoder(r <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>) *<a href="index.html#YAMLToJSONDecoder">YAMLToJSONDecoder</a></pre>
+				<p>
+NewYAMLToJSONDecoder decodes YAML documents from the provided
+stream in chunks by converting each document (as defined by
+the YAML spec) into its own chunk, converting it to JSON via
+yaml.YAMLToJSON, and then passing it to json.Decoder.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="YAMLToJSONDecoder.Decode">func (*YAMLToJSONDecoder) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/yaml/decoder.go?s=2702:2760#L86">Decode</a>
+					<a class="permalink" href="index.html#YAMLToJSONDecoder.Decode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="index.html#YAMLToJSONDecoder">YAMLToJSONDecoder</a>) Decode(into interface{}) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Decode reads a YAML document as JSON from the stream or returns
+an error. The decoding rules match json.Unmarshal, not
+yaml.Unmarshal.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

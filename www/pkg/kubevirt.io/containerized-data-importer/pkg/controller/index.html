@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>controller - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package controller
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/controller"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#CreateScratchPersistentVolumeClaim">func CreateScratchPersistentVolumeClaim(client client.Client, pvc *v1.PersistentVolumeClaim, pod *v1.Pod, name, storageClassName string) (*v1.PersistentVolumeClaim, error)</a></dd>
+			
+				
+				<dd><a href="index.html#DecodePublicKey">func DecodePublicKey(keyBytes []byte) (*rsa.PublicKey, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetActiveCDI">func GetActiveCDI(c client.Client) (*cdiv1.CDI, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetDefaultPodResourceRequirements">func GetDefaultPodResourceRequirements(client client.Client) (*v1.ResourceRequirements, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetFilesystemOverhead">func GetFilesystemOverhead(client client.Client, pvc *v1.PersistentVolumeClaim) (cdiv1.Percent, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetScratchPvcStorageClass">func GetScratchPvcStorageClass(client client.Client, pvc *v1.PersistentVolumeClaim) string</a></dd>
+			
+				
+				<dd><a href="index.html#GetStorageClassByName">func GetStorageClassByName(client client.Client, name *string) (*storagev1.StorageClass, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetUploadServerURL">func GetUploadServerURL(namespace, pvc, uploadPath string) string</a></dd>
+			
+				
+				<dd><a href="index.html#GetWorkloadNodePlacement">func GetWorkloadNodePlacement(c client.Client) (*sdkapi.NodePlacement, error)</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreIsNoMatchError">func IgnoreIsNoMatchError(err error) error</a></dd>
+			
+				
+				<dd><a href="index.html#IgnoreNotFound">func IgnoreNotFound(err error) error</a></dd>
+			
+				
+				<dd><a href="index.html#IsCsiCrdsDeployed">func IsCsiCrdsDeployed(c extclientset.Interface) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsPopulated">func IsPopulated(pvc *v1.PersistentVolumeClaim, c client.Client) (bool, error)</a></dd>
+			
+				
+				<dd><a href="index.html#MakeCloneSourcePodSpec">func MakeCloneSourcePodSpec(image, pullPolicy, sourcePvcName, sourcePvcNamespace, ownerRefAnno string, clientKey, clientCert, serverCACert []byte, targetPvc *corev1.PersistentVolumeClaim, resourceRequirements *corev1.ResourceRequirements, workloadNodePlacement *sdkapi.NodePlacement) *corev1.Pod</a></dd>
+			
+				
+				<dd><a href="index.html#MakeEmptyCDICR">func MakeEmptyCDICR() *cdiv1.CDI</a></dd>
+			
+				
+				<dd><a href="index.html#MakeEmptyCDIConfigSpec">func MakeEmptyCDIConfigSpec(name string) *cdiv1.CDIConfig</a></dd>
+			
+				
+				<dd><a href="index.html#MakePVCOwnerReference">func MakePVCOwnerReference(pvc *v1.PersistentVolumeClaim) metav1.OwnerReference</a></dd>
+			
+				
+				<dd><a href="index.html#MakePodOwnerReference">func MakePodOwnerReference(pod *v1.Pod) metav1.OwnerReference</a></dd>
+			
+				
+				<dd><a href="index.html#NewCloneController">func NewCloneController(mgr manager.Manager, log logr.Logger, image, pullPolicy, verbose string, clientCertGenerator generator.CertGenerator, serverCAFetcher fetcher.CertBundleFetcher, apiServerKey *rsa.PublicKey) (controller.Controller, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewConfigController">func NewConfigController(mgr manager.Manager, log logr.Logger, uploadProxyServiceName, configName string) (controller.Controller, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewDatavolumeController">func NewDatavolumeController(mgr manager.Manager, extClientSet extclientset.Interface, log logr.Logger) (controller.Controller, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewImportController">func NewImportController(mgr manager.Manager, log logr.Logger, importerImage, pullPolicy, verbose string) (controller.Controller, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewSmartCloneController">func NewSmartCloneController(mgr manager.Manager, log logr.Logger) (controller.Controller, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewUploadController">func NewUploadController(mgr manager.Manager, log logr.Logger, uploadImage, pullPolicy, verbose string, serverCertGenerator generator.CertGenerator, clientCAFetcher fetcher.CertBundleFetcher) (controller.Controller, error)</a></dd>
+			
+				
+				<dd><a href="index.html#ParseCloneRequestAnnotation">func ParseCloneRequestAnnotation(pvc *corev1.PersistentVolumeClaim) (exists bool, namespace, name string)</a></dd>
+			
+				
+				<dd><a href="index.html#UploadPossibleForPVC">func UploadPossibleForPVC(pvc *v1.PersistentVolumeClaim) error</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCanCloneSourceAndTargetSpec">func ValidateCanCloneSourceAndTargetSpec(sourceSpec, targetSpec *corev1.PersistentVolumeClaimSpec) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CDIConfigReconciler">type CDIConfigReconciler</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CDIConfigReconciler.Init">func (r *CDIConfigReconciler) Init() error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CDIConfigReconciler.Reconcile">func (r *CDIConfigReconciler) Reconcile(req reconcile.Request) (reconcile.Result, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#CloneReconciler">type CloneReconciler</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CloneReconciler.CreateCloneSourcePod">func (r *CloneReconciler) CreateCloneSourcePod(image, pullPolicy, clientName string, pvc *corev1.PersistentVolumeClaim, log logr.Logger) (*corev1.Pod, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CloneReconciler.Reconcile">func (r *CloneReconciler) Reconcile(req reconcile.Request) (reconcile.Result, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DataVolumeEvent">type DataVolumeEvent</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DatavolumeReconciler">type DatavolumeReconciler</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DatavolumeReconciler.Reconcile">func (r *DatavolumeReconciler) Reconcile(req reconcile.Request) (reconcile.Result, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ImportReconciler">type ImportReconciler</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ImportReconciler.Reconcile">func (r *ImportReconciler) Reconcile(req reconcile.Request) (reconcile.Result, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#SmartCloneReconciler">type SmartCloneReconciler</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SmartCloneReconciler.Reconcile">func (r *SmartCloneReconciler) Reconcile(req reconcile.Request) (reconcile.Result, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UploadPodArgs">type UploadPodArgs</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#UploadReconciler">type UploadReconciler</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UploadReconciler.Reconcile">func (r *UploadReconciler) Reconcile(req reconcile.Request) (reconcile.Result, error)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go">clone-controller.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/config-controller.go">config-controller.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/datavolume-conditions.go">datavolume-conditions.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/datavolume-controller.go">datavolume-controller.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/import-controller.go">import-controller.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/runtime-util.go">runtime-util.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/smart-clone-controller.go">smart-clone-controller.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/upload-controller.go">upload-controller.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go">util.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+
+    <span class="comment">//AnnCloneRequest sets our expected annotation for a CloneRequest</span>
+    <span id="AnnCloneRequest">AnnCloneRequest</span> = &#34;k8s.io/CloneRequest&#34;
+    <span class="comment">//AnnCloneOf is used to indicate that cloning was complete</span>
+    <span id="AnnCloneOf">AnnCloneOf</span> = &#34;k8s.io/CloneOf&#34;
+    <span class="comment">// AnnCloneToken is the annotation containing the clone token</span>
+    <span id="AnnCloneToken">AnnCloneToken</span> = &#34;cdi.kubevirt.io/storage.clone.token&#34;
+
+    <span class="comment">//CloneUniqueID is used as a special label to be used when we search for the pod</span>
+    <span id="CloneUniqueID">CloneUniqueID</span> = &#34;cdi.kubevirt.io/storage.clone.cloneUniqeId&#34;
+    <span class="comment">// AnnCloneSourcePod name of the source clone pod</span>
+    <span id="AnnCloneSourcePod">AnnCloneSourcePod</span> = &#34;cdi.kubevirt.io/storage.sourceClonePodName&#34;
+
+    <span class="comment">// ErrIncompatiblePVC provides a const to indicate a clone is not possible due to an incompatible PVC</span>
+    <span id="ErrIncompatiblePVC">ErrIncompatiblePVC</span> = &#34;ErrIncompatiblePVC&#34;
+
+    <span class="comment">// APIServerPublicKeyDir is the path to the apiserver public key dir</span>
+    <span id="APIServerPublicKeyDir">APIServerPublicKeyDir</span> = &#34;/var/run/cdi/apiserver/key&#34;
+
+    <span class="comment">// APIServerPublicKeyPath is the path to the apiserver public key</span>
+    <span id="APIServerPublicKeyPath">APIServerPublicKeyPath</span> = <a href="index.html#APIServerPublicKeyDir">APIServerPublicKeyDir</a> + &#34;/id_rsa.pub&#34;
+
+    <span class="comment">// CloneSucceededPVC provides a const to indicate a clone to the PVC succeeded</span>
+    <span id="CloneSucceededPVC">CloneSucceededPVC</span> = &#34;CloneSucceeded&#34;
+
+    <span class="comment">// CloneSourceInUse is reason for event created when clone source pvc is in use</span>
+    <span id="CloneSourceInUse">CloneSourceInUse</span> = &#34;CloneSourceInUse&#34;
+)</pre>
+			
+				
+				<pre>const (
+    <span class="comment">// SuccessSynced provides a const to represent a Synced status</span>
+    <span id="SuccessSynced">SuccessSynced</span> = &#34;Synced&#34;
+    <span class="comment">// ErrResourceExists provides a const to indicate a resource exists error</span>
+    <span id="ErrResourceExists">ErrResourceExists</span> = &#34;ErrResourceExists&#34;
+    <span class="comment">// ErrResourceDoesntExist provides a const to indicate a resource doesn&#39;t exist error</span>
+    <span id="ErrResourceDoesntExist">ErrResourceDoesntExist</span> = &#34;ErrResourceDoesntExist&#34;
+    <span class="comment">// ErrClaimLost provides a const to indicate a claim is lost</span>
+    <span id="ErrClaimLost">ErrClaimLost</span> = &#34;ErrClaimLost&#34;
+    <span class="comment">// DataVolumeFailed provides a const to represent DataVolume failed status</span>
+    <span id="DataVolumeFailed">DataVolumeFailed</span> = &#34;DataVolumeFailed&#34;
+    <span class="comment">// ImportScheduled provides a const to indicate import is scheduled</span>
+    <span id="ImportScheduled">ImportScheduled</span> = &#34;ImportScheduled&#34;
+    <span class="comment">// ImportInProgress provides a const to indicate an import is in progress</span>
+    <span id="ImportInProgress">ImportInProgress</span> = &#34;ImportInProgress&#34;
+    <span class="comment">// ImportFailed provides a const to indicate import has failed</span>
+    <span id="ImportFailed">ImportFailed</span> = &#34;ImportFailed&#34;
+    <span class="comment">// ImportSucceeded provides a const to indicate import has succeeded</span>
+    <span id="ImportSucceeded">ImportSucceeded</span> = &#34;ImportSucceeded&#34;
+    <span class="comment">// CloneScheduled provides a const to indicate clone is scheduled</span>
+    <span id="CloneScheduled">CloneScheduled</span> = &#34;CloneScheduled&#34;
+    <span class="comment">// CloneInProgress provides a const to indicate clone is in progress</span>
+    <span id="CloneInProgress">CloneInProgress</span> = &#34;CloneInProgress&#34;
+    <span class="comment">// SnapshotForSmartCloneInProgress provides a const to indicate snapshot creation for smart-clone is in progress</span>
+    <span id="SnapshotForSmartCloneInProgress">SnapshotForSmartCloneInProgress</span> = &#34;SnapshotForSmartCloneInProgress&#34;
+    <span class="comment">// SnapshotForSmartCloneCreated provides a const to indicate snapshot creation for smart-clone has been completed</span>
+    <span id="SnapshotForSmartCloneCreated">SnapshotForSmartCloneCreated</span> = &#34;SnapshotForSmartCloneCreated&#34;
+    <span class="comment">// SmartClonePVCInProgress provides a const to indicate snapshot creation for smart-clone is in progress</span>
+    <span id="SmartClonePVCInProgress">SmartClonePVCInProgress</span> = &#34;SmartClonePVCInProgress&#34;
+    <span class="comment">// SmartCloneSourceInUse provides a const to indicate a smart clone is being delayed becasuse the source is in use</span>
+    <span id="SmartCloneSourceInUse">SmartCloneSourceInUse</span> = &#34;SmartCloneSourceInUse&#34;
+    <span class="comment">// CloneFailed provides a const to indicate clone has failed</span>
+    <span id="CloneFailed">CloneFailed</span> = &#34;CloneFailed&#34;
+    <span class="comment">// CloneSucceeded provides a const to indicate clone has succeeded</span>
+    <span id="CloneSucceeded">CloneSucceeded</span> = &#34;CloneSucceeded&#34;
+    <span class="comment">// UploadScheduled provides a const to indicate upload is scheduled</span>
+    <span id="UploadScheduled">UploadScheduled</span> = &#34;UploadScheduled&#34;
+    <span class="comment">// UploadReady provides a const to indicate upload is in progress</span>
+    <span id="UploadReady">UploadReady</span> = &#34;UploadReady&#34;
+    <span class="comment">// UploadFailed provides a const to indicate upload has failed</span>
+    <span id="UploadFailed">UploadFailed</span> = &#34;UploadFailed&#34;
+    <span class="comment">// UploadSucceeded provides a const to indicate upload has succeeded</span>
+    <span id="UploadSucceeded">UploadSucceeded</span> = &#34;UploadSucceeded&#34;
+    <span class="comment">// MessageResourceExists provides a const to form a resource exists error message</span>
+    <span id="MessageResourceExists">MessageResourceExists</span> = &#34;Resource %q already exists and is not managed by DataVolume&#34;
+    <span class="comment">// MessageResourceDoesntExist provides a const to form a resource doesn&#39;t exist error message</span>
+    <span id="MessageResourceDoesntExist">MessageResourceDoesntExist</span> = &#34;Resource managed by %q doesn&#39;t exist&#34;
+    <span class="comment">// MessageResourceSynced provides a const to standardize a Resource Synced message</span>
+    <span id="MessageResourceSynced">MessageResourceSynced</span> = &#34;DataVolume synced successfully&#34;
+    <span class="comment">// MessageErrClaimLost provides a const to form claim lost message</span>
+    <span id="MessageErrClaimLost">MessageErrClaimLost</span> = &#34;PVC %s lost&#34;
+    <span class="comment">// MessageImportScheduled provides a const to form import is scheduled message</span>
+    <span id="MessageImportScheduled">MessageImportScheduled</span> = &#34;Import into %s scheduled&#34;
+    <span class="comment">// MessageImportInProgress provides a const to form import is in progress message</span>
+    <span id="MessageImportInProgress">MessageImportInProgress</span> = &#34;Import into %s in progress&#34;
+    <span class="comment">// MessageImportFailed provides a const to form import has failed message</span>
+    <span id="MessageImportFailed">MessageImportFailed</span> = &#34;Failed to import into PVC %s&#34;
+    <span class="comment">// MessageImportSucceeded provides a const to form import has succeeded message</span>
+    <span id="MessageImportSucceeded">MessageImportSucceeded</span> = &#34;Successfully imported into PVC %s&#34;
+    <span class="comment">// MessageCloneScheduled provides a const to form clone is scheduled message</span>
+    <span id="MessageCloneScheduled">MessageCloneScheduled</span> = &#34;Cloning from %s/%s into %s/%s scheduled&#34;
+    <span class="comment">// MessageCloneInProgress provides a const to form clone is in progress message</span>
+    <span id="MessageCloneInProgress">MessageCloneInProgress</span> = &#34;Cloning from %s/%s into %s/%s in progress&#34;
+    <span class="comment">// MessageCloneFailed provides a const to form clone has failed message</span>
+    <span id="MessageCloneFailed">MessageCloneFailed</span> = &#34;Cloning from %s/%s into %s/%s failed&#34;
+    <span class="comment">// MessageCloneSucceeded provides a const to form clone has succeeded message</span>
+    <span id="MessageCloneSucceeded">MessageCloneSucceeded</span> = &#34;Successfully cloned from %s/%s into %s/%s&#34;
+    <span class="comment">// MessageSmartCloneInProgress provides a const to form snapshot for smart-clone is in progress message</span>
+    <span id="MessageSmartCloneInProgress">MessageSmartCloneInProgress</span> = &#34;Creating snapshot for smart-clone is in progress (for pvc %s/%s)&#34;
+    <span class="comment">// MessageSmartClonePVCInProgress provides a const to form snapshot for smart-clone is in progress message</span>
+    <span id="MessageSmartClonePVCInProgress">MessageSmartClonePVCInProgress</span> = &#34;Creating PVC for smart-clone is in progress (for pvc %s/%s)&#34;
+    <span class="comment">// MessageUploadScheduled provides a const to form upload is scheduled message</span>
+    <span id="MessageUploadScheduled">MessageUploadScheduled</span> = &#34;Upload into %s scheduled&#34;
+    <span class="comment">// MessageUploadReady provides a const to form upload is ready message</span>
+    <span id="MessageUploadReady">MessageUploadReady</span> = &#34;Upload into %s ready&#34;
+    <span class="comment">// MessageUploadFailed provides a const to form upload has failed message</span>
+    <span id="MessageUploadFailed">MessageUploadFailed</span> = &#34;Upload into %s failed&#34;
+    <span class="comment">// MessageUploadSucceeded provides a const to form upload has succeeded message</span>
+    <span id="MessageUploadSucceeded">MessageUploadSucceeded</span> = &#34;Successfully uploaded into %s&#34;
+)</pre>
+			
+				
+				<pre>const (
+
+    <span class="comment">// SourceHTTP is the source type HTTP, if unspecified or invalid, it defaults to SourceHTTP</span>
+    <span id="SourceHTTP">SourceHTTP</span> = &#34;http&#34;
+    <span class="comment">// SourceS3 is the source type S3</span>
+    <span id="SourceS3">SourceS3</span> = &#34;s3&#34;
+    <span class="comment">// SourceGlance is the source type of glance</span>
+    <span id="SourceGlance">SourceGlance</span> = &#34;glance&#34;
+    <span class="comment">// SourceNone means there is no source.</span>
+    <span id="SourceNone">SourceNone</span> = &#34;none&#34;
+    <span class="comment">// SourceRegistry is the source type of Registry</span>
+    <span id="SourceRegistry">SourceRegistry</span> = &#34;registry&#34;
+    <span class="comment">// SourceImageio is the source type ovirt-imageio</span>
+    <span id="SourceImageio">SourceImageio</span> = &#34;imageio&#34;
+    <span class="comment">// SourceVDDK is the source type of VDDK</span>
+    <span id="SourceVDDK">SourceVDDK</span> = &#34;vddk&#34;
+
+    <span class="comment">// AnnSource provide a const for our PVC import source annotation</span>
+    <span id="AnnSource">AnnSource</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.source&#34;
+    <span class="comment">// AnnEndpoint provides a const for our PVC endpoint annotation</span>
+    <span id="AnnEndpoint">AnnEndpoint</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.endpoint&#34;
+    <span class="comment">// AnnSecret provides a const for our PVC secretName annotation</span>
+    <span id="AnnSecret">AnnSecret</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.secretName&#34;
+    <span class="comment">// AnnCertConfigMap is the name of a configmap containing tls certs</span>
+    <span id="AnnCertConfigMap">AnnCertConfigMap</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.certConfigMap&#34;
+    <span class="comment">// AnnContentType provides a const for the PVC content-type</span>
+    <span id="AnnContentType">AnnContentType</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.contentType&#34;
+    <span class="comment">// AnnImportPod provides a const for our PVC importPodName annotation</span>
+    <span id="AnnImportPod">AnnImportPod</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.importPodName&#34;
+    <span class="comment">// AnnRequiresScratch provides a const for our PVC requires scratch annotation</span>
+    <span id="AnnRequiresScratch">AnnRequiresScratch</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.requiresScratch&#34;
+    <span class="comment">// AnnDiskID provides a const for our PVC diskId annotation</span>
+    <span id="AnnDiskID">AnnDiskID</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.diskId&#34;
+    <span class="comment">// AnnUUID provides a const for our PVC uuid annotation</span>
+    <span id="AnnUUID">AnnUUID</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.uuid&#34;
+    <span class="comment">// AnnBackingFile provides a const for our PVC backing file annotation</span>
+    <span id="AnnBackingFile">AnnBackingFile</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.backingFile&#34;
+    <span class="comment">// AnnThumbprint provides a const for our PVC backing thumbprint annotation</span>
+    <span id="AnnThumbprint">AnnThumbprint</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.vddk.thumbprint&#34;
+
+    <span class="comment">//LabelImportPvc is a pod label used to find the import pod that was created by the relevant PVC</span>
+    <span id="LabelImportPvc">LabelImportPvc</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.import.importPvcName&#34;
+    <span class="comment">//AnnDefaultStorageClass is the annotation indicating that a storage class is the default one.</span>
+    <span id="AnnDefaultStorageClass">AnnDefaultStorageClass</span> = &#34;storageclass.kubernetes.io/is-default-class&#34;
+
+    <span class="comment">// ErrImportFailedPVC provides a const to indicate an import to the PVC failed</span>
+    <span id="ErrImportFailedPVC">ErrImportFailedPVC</span> = &#34;ErrImportFailed&#34;
+    <span class="comment">// ImportSucceededPVC provides a const to indicate an import to the PVC failed</span>
+    <span id="ImportSucceededPVC">ImportSucceededPVC</span> = &#34;ImportSucceeded&#34;
+
+    <span class="comment">// ImportTargetInUse is reason for event created when an import pvc is in use</span>
+    <span id="ImportTargetInUse">ImportTargetInUse</span> = &#34;ImportTargetInUse&#34;
+)</pre>
+			
+				
+				<pre>const (
+    <span class="comment">// AnnUploadRequest marks that a PVC should be made available for upload</span>
+    <span id="AnnUploadRequest">AnnUploadRequest</span> = &#34;cdi.kubevirt.io/storage.upload.target&#34;
+
+    <span class="comment">// AnnUploadClientName is the TLS name uploadserver will accept requests from</span>
+    <span id="AnnUploadClientName">AnnUploadClientName</span> = &#34;cdi.kubevirt.io/uploadClientName&#34;
+
+    <span class="comment">// AnnUploadPod name of the upload pod</span>
+    <span id="AnnUploadPod">AnnUploadPod</span> = &#34;cdi.kubevirt.io/storage.uploadPodName&#34;
+
+    <span class="comment">// UploadSucceededPVC provides a const to indicate an import to the PVC failed</span>
+    <span id="UploadSucceededPVC">UploadSucceededPVC</span> = &#34;UploadSucceeded&#34;
+
+    <span class="comment">// UploadTargetInUse is reason for event created when an upload pvc is in use</span>
+    <span id="UploadTargetInUse">UploadTargetInUse</span> = &#34;UploadTargetInUse&#34;
+)</pre>
+			
+				
+				<pre>const (
+    <span class="comment">// DataVolName provides a const to use for creating volumes in pod specs</span>
+    <span id="DataVolName">DataVolName</span> = &#34;cdi-data-vol&#34;
+
+    <span class="comment">// CertVolName is the name of the volumecontaining certs</span>
+    <span id="CertVolName">CertVolName</span> = &#34;cdi-cert-vol&#34;
+
+    <span class="comment">// ScratchVolName provides a const to use for creating scratch pvc volumes in pod specs</span>
+    <span id="ScratchVolName">ScratchVolName</span> = &#34;cdi-scratch-vol&#34;
+
+    <span class="comment">// ImagePathName provides a const to use for creating volumes in pod specs</span>
+    <span id="ImagePathName">ImagePathName</span> = &#34;image-path&#34;
+
+    <span class="comment">// AnnAPIGroup is the APIGroup for CDI</span>
+    <span id="AnnAPIGroup">AnnAPIGroup</span> = &#34;cdi.kubevirt.io&#34;
+    <span class="comment">// AnnCreatedBy is a pod annotation indicating if the pod was created by the PVC</span>
+    <span id="AnnCreatedBy">AnnCreatedBy</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.createdByController&#34;
+    <span class="comment">// AnnPodPhase is a PVC annotation indicating the related pod progress (phase)</span>
+    <span id="AnnPodPhase">AnnPodPhase</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.pod.phase&#34;
+    <span class="comment">// AnnPodReady tells whether the pod is ready</span>
+    <span id="AnnPodReady">AnnPodReady</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.pod.ready&#34;
+    <span class="comment">// AnnOwnerRef is used when owner is in a different namespace</span>
+    <span id="AnnOwnerRef">AnnOwnerRef</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.ownerRef&#34;
+    <span class="comment">// AnnPodRestarts is a PVC annotation that tells how many times a related pod was restarted</span>
+    <span id="AnnPodRestarts">AnnPodRestarts</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.pod.restarts&#34;
+    <span class="comment">// AnnPopulatedFor is a PVC annotation telling the datavolume controller that the PVC is already populated</span>
+    <span id="AnnPopulatedFor">AnnPopulatedFor</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.populatedFor&#34;
+    <span class="comment">// AnnPrePopulated is a PVC annotation telling the datavolume controller that the PVC is already populated</span>
+    <span id="AnnPrePopulated">AnnPrePopulated</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.prePopulated&#34;
+
+    <span class="comment">// AnnRunningCondition provides a const for the running condition</span>
+    <span id="AnnRunningCondition">AnnRunningCondition</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.running&#34;
+    <span class="comment">// AnnRunningConditionMessage provides a const for the running condition</span>
+    <span id="AnnRunningConditionMessage">AnnRunningConditionMessage</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.running.message&#34;
+    <span class="comment">// AnnRunningConditionReason provides a const for the running condition</span>
+    <span id="AnnRunningConditionReason">AnnRunningConditionReason</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.running.reason&#34;
+
+    <span class="comment">// AnnBoundCondition provides a const for the running condition</span>
+    <span id="AnnBoundCondition">AnnBoundCondition</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.bound&#34;
+    <span class="comment">// AnnBoundConditionMessage provides a const for the running condition</span>
+    <span id="AnnBoundConditionMessage">AnnBoundConditionMessage</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.bound.message&#34;
+    <span class="comment">// AnnBoundConditionReason provides a const for the running condition</span>
+    <span id="AnnBoundConditionReason">AnnBoundConditionReason</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.bound.reason&#34;
+
+    <span class="comment">// AnnSourceRunningCondition provides a const for the running condition</span>
+    <span id="AnnSourceRunningCondition">AnnSourceRunningCondition</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.source.running&#34;
+    <span class="comment">// AnnSourceRunningConditionMessage provides a const for the running condition</span>
+    <span id="AnnSourceRunningConditionMessage">AnnSourceRunningConditionMessage</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.source.running.message&#34;
+    <span class="comment">// AnnSourceRunningConditionReason provides a const for the running condition</span>
+    <span id="AnnSourceRunningConditionReason">AnnSourceRunningConditionReason</span> = <a href="index.html#AnnAPIGroup">AnnAPIGroup</a> + &#34;/storage.condition.source.running.reason&#34;
+)</pre>
+			
+				
+				<pre>const (
+    <span class="comment">//AnnSmartCloneRequest sets our expected annotation for a CloneRequest</span>
+    <span id="AnnSmartCloneRequest">AnnSmartCloneRequest</span> = &#34;k8s.io/SmartCloneRequest&#34;
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="CreateScratchPersistentVolumeClaim">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=7822:7993#L193">CreateScratchPersistentVolumeClaim</a>
+				<a class="permalink" href="index.html#CreateScratchPersistentVolumeClaim">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CreateScratchPersistentVolumeClaim(client <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>, pvc *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>, pod *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#Pod">Pod</a>, name, storageClassName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+CreateScratchPersistentVolumeClaim creates and returns a pointer to a scratch PVC which is created based on the passed-in pvc and storage class name.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="DecodePublicKey">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=13838:13899#L344">DecodePublicKey</a>
+				<a class="permalink" href="index.html#DecodePublicKey">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DecodePublicKey(keyBytes []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (*<a href="http://localhost:6060/pkg/crypto/rsa/">rsa</a>.<a href="http://localhost:6060/pkg/crypto/rsa/#PublicKey">PublicKey</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+DecodePublicKey turns a bunch of bytes into a public key
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetActiveCDI">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=19508:19562#L548">GetActiveCDI</a>
+				<a class="permalink" href="index.html#GetActiveCDI">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetActiveCDI(c <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>) (*<a href="../apis/core/v1beta1/index.html">cdiv1</a>.<a href="../apis/core/v1beta1/index.html#CDI">CDI</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetActiveCDI returns the active CDI CR
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetDefaultPodResourceRequirements">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=12776:12870#L310">GetDefaultPodResourceRequirements</a>
+				<a class="permalink" href="index.html#GetDefaultPodResourceRequirements">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetDefaultPodResourceRequirements(client <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>) (*<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#ResourceRequirements">ResourceRequirements</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetDefaultPodResourceRequirements gets default pod resource requirements from cdi config status
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetFilesystemOverhead">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=9919:10021#L236">GetFilesystemOverhead</a>
+				<a class="permalink" href="index.html#GetFilesystemOverhead">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetFilesystemOverhead(client <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>, pvc *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>) (<a href="../apis/core/v1beta1/index.html">cdiv1</a>.<a href="../apis/core/v1beta1/index.html#Percent">Percent</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetFilesystemOverhead determines the filesystem overhead defined in CDIConfig for this PVC&#39;s volumeMode and storageClass.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetScratchPvcStorageClass">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=12037:12127#L289">GetScratchPvcStorageClass</a>
+				<a class="permalink" href="index.html#GetScratchPvcStorageClass">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetScratchPvcStorageClass(client <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>, pvc *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+GetScratchPvcStorageClass tries to determine which storage class to use for use with a scratch persistent
+volume claim. The order of preference is the following:
+1. Defined value in CDI Config field scratchSpaceStorageClass.
+2. If 1 is not available, use the storage class name of the original pvc that will own the scratch pvc.
+3. If none of those are available, return blank.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetStorageClassByName">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=8761:8856#L210">GetStorageClassByName</a>
+				<a class="permalink" href="index.html#GetStorageClassByName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetStorageClassByName(client <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>, name *<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="http://localhost:6060/pkg/k8s.io/api/storage/v1/">storagev1</a>.<a href="http://localhost:6060/pkg/k8s.io/api/storage/v1/#StorageClass">StorageClass</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetStorageClassByName looks up the storage class based on the name. If no storage class is found returns nil
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetUploadServerURL">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/upload-controller.go?s=20906:20971#L619">GetUploadServerURL</a>
+				<a class="permalink" href="index.html#GetUploadServerURL">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetUploadServerURL(namespace, pvc, uploadPath <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+GetUploadServerURL returns the url the proxy should post to for a particular pvc
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetWorkloadNodePlacement">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=19222:19299#L534">GetWorkloadNodePlacement</a>
+				<a class="permalink" href="index.html#GetWorkloadNodePlacement">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetWorkloadNodePlacement(c <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>) (*<a href="../../../controller-lifecycle-operator-sdk/pkg/sdk/api/index.html">sdkapi</a>.<a href="../../../controller-lifecycle-operator-sdk/pkg/sdk/api/index.html#NodePlacement">NodePlacement</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetWorkloadNodePlacement extracts the workload-specific nodeplacement values from the CDI CR
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreIsNoMatchError">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/runtime-util.go?s=1465:1507#L45">IgnoreIsNoMatchError</a>
+				<a class="permalink" href="index.html#IgnoreIsNoMatchError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreIsNoMatchError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+IgnoreIsNoMatchError returns nil if the error is a IsNoMatchError.
+We will want to ignore this error for optional CRDs, if it is not found, just ignore it.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IgnoreNotFound">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/runtime-util.go?s=1204:1240#L36">IgnoreNotFound</a>
+				<a class="permalink" href="index.html#IgnoreNotFound">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IgnoreNotFound(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+IgnoreNotFound returns nil if the error is a NotFound error.
+We generally want to ignore (not requeue) NotFound errors, since we&#39;ll get a reconciliation request once the
+object exists, and requeuing in the meantime won&#39;t help.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsCsiCrdsDeployed">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=15138:15191#L391">IsCsiCrdsDeployed</a>
+				<a class="permalink" href="index.html#IsCsiCrdsDeployed">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsCsiCrdsDeployed(c <a href="http://localhost:6060/pkg/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/">extclientset</a>.<a href="http://localhost:6060/pkg/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/#Interface">Interface</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsCsiCrdsDeployed checks whether the CSI snapshotter CRD are deployed
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsPopulated">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=20176:20254#L573">IsPopulated</a>
+				<a class="permalink" href="index.html#IsPopulated">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsPopulated(pvc *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>, c <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/">client</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/client/#Client">Client</a>) (<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+IsPopulated returns if the passed in PVC has been populated according to the rules outlined in pkg/apis/core/&lt;version&gt;/utils.go
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MakeCloneSourcePodSpec">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go?s=16119:16416#L478">MakeCloneSourcePodSpec</a>
+				<a class="permalink" href="index.html#MakeCloneSourcePodSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MakeCloneSourcePodSpec(image, pullPolicy, sourcePvcName, sourcePvcNamespace, ownerRefAnno <a href="http://localhost:6060/pkg/builtin/#string">string</a>,
+    clientKey, clientCert, serverCACert []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, targetPvc *<a href="../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>, resourceRequirements *<a href="../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#ResourceRequirements">ResourceRequirements</a>,
+    workloadNodePlacement *<a href="../../../controller-lifecycle-operator-sdk/pkg/sdk/api/index.html">sdkapi</a>.<a href="../../../controller-lifecycle-operator-sdk/pkg/sdk/api/index.html#NodePlacement">NodePlacement</a>) *<a href="../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#Pod">Pod</a></pre>
+			<p>
+MakeCloneSourcePodSpec creates and returns the clone source pod spec based on the target pvc.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MakeEmptyCDICR">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/runtime-util.go?s=758:790#L21">MakeEmptyCDICR</a>
+				<a class="permalink" href="index.html#MakeEmptyCDICR">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MakeEmptyCDICR() *<a href="../apis/core/v1beta1/index.html">cdiv1</a>.<a href="../apis/core/v1beta1/index.html#CDI">CDI</a></pre>
+			<p>
+MakeEmptyCDICR creates CDI CustomResouce manifest
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MakeEmptyCDIConfigSpec">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/runtime-util.go?s=334:391#L4">MakeEmptyCDIConfigSpec</a>
+				<a class="permalink" href="index.html#MakeEmptyCDIConfigSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MakeEmptyCDIConfigSpec(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="../apis/core/v1beta1/index.html">cdiv1</a>.<a href="../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a></pre>
+			<p>
+MakeEmptyCDIConfigSpec creates cdi config manifest
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MakePVCOwnerReference">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=14259:14338#L363">MakePVCOwnerReference</a>
+				<a class="permalink" href="index.html#MakePVCOwnerReference">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MakePVCOwnerReference(pvc *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>) <a href="../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">metav1</a>.<a href="../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#OwnerReference">OwnerReference</a></pre>
+			<p>
+MakePVCOwnerReference makes owner reference from a PVC
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MakePodOwnerReference">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/util.go?s=14709:14770#L377">MakePodOwnerReference</a>
+				<a class="permalink" href="index.html#MakePodOwnerReference">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MakePodOwnerReference(pod *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#Pod">Pod</a>) <a href="../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">metav1</a>.<a href="../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#OwnerReference">OwnerReference</a></pre>
+			<p>
+MakePodOwnerReference makes owner reference from a Pod
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewCloneController">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go?s=2994:3244#L81">NewCloneController</a>
+				<a class="permalink" href="index.html#NewCloneController">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewCloneController(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>,
+    log <a href="http://localhost:6060/pkg/github.com/go-logr/logr/">logr</a>.<a href="http://localhost:6060/pkg/github.com/go-logr/logr/#Logger">Logger</a>,
+    image, pullPolicy,
+    verbose <a href="http://localhost:6060/pkg/builtin/#string">string</a>,
+    clientCertGenerator <a href="../util/cert/generator/index.html">generator</a>.<a href="../util/cert/generator/index.html#CertGenerator">CertGenerator</a>,
+    serverCAFetcher <a href="../util/cert/fetcher/index.html">fetcher</a>.<a href="../util/cert/fetcher/index.html#CertBundleFetcher">CertBundleFetcher</a>,
+    apiServerKey *<a href="http://localhost:6060/pkg/crypto/rsa/">rsa</a>.<a href="http://localhost:6060/pkg/crypto/rsa/#PublicKey">PublicKey</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/">controller</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/#Controller">Controller</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NewCloneController creates a new instance of the config controller.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewConfigController">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/config-controller.go?s=11188:11324#L322">NewConfigController</a>
+				<a class="permalink" href="index.html#NewConfigController">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewConfigController(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>, log <a href="http://localhost:6060/pkg/github.com/go-logr/logr/">logr</a>.<a href="http://localhost:6060/pkg/github.com/go-logr/logr/#Logger">Logger</a>, uploadProxyServiceName, configName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/">controller</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/#Controller">Controller</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NewConfigController creates a new instance of the config controller.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewDatavolumeController">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/datavolume-controller.go?s=7664:7798#L157">NewDatavolumeController</a>
+				<a class="permalink" href="index.html#NewDatavolumeController">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewDatavolumeController(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>, extClientSet <a href="http://localhost:6060/pkg/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/">extclientset</a>.<a href="http://localhost:6060/pkg/k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/#Interface">Interface</a>, log <a href="http://localhost:6060/pkg/github.com/go-logr/logr/">logr</a>.<a href="http://localhost:6060/pkg/github.com/go-logr/logr/#Logger">Logger</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/">controller</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/#Controller">Controller</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NewDatavolumeController creates a new instance of the datavolume controller.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewImportController">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/import-controller.go?s=4666:4802#L114">NewImportController</a>
+				<a class="permalink" href="index.html#NewImportController">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewImportController(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>, log <a href="http://localhost:6060/pkg/github.com/go-logr/logr/">logr</a>.<a href="http://localhost:6060/pkg/github.com/go-logr/logr/#Logger">Logger</a>, importerImage, pullPolicy, verbose <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/">controller</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/#Controller">Controller</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NewImportController creates a new instance of the import controller.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewSmartCloneController">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/smart-clone-controller.go?s=1356:1453#L35">NewSmartCloneController</a>
+				<a class="permalink" href="index.html#NewSmartCloneController">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewSmartCloneController(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>, log <a href="http://localhost:6060/pkg/github.com/go-logr/logr/">logr</a>.<a href="http://localhost:6060/pkg/github.com/go-logr/logr/#Logger">Logger</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/">controller</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/#Controller">Controller</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NewSmartCloneController creates a new instance of the Smart clone controller.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewUploadController">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/upload-controller.go?s=17957:18179#L537">NewUploadController</a>
+				<a class="permalink" href="index.html#NewUploadController">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewUploadController(mgr <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/">manager</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/manager/#Manager">Manager</a>, log <a href="http://localhost:6060/pkg/github.com/go-logr/logr/">logr</a>.<a href="http://localhost:6060/pkg/github.com/go-logr/logr/#Logger">Logger</a>, uploadImage, pullPolicy, verbose <a href="http://localhost:6060/pkg/builtin/#string">string</a>, serverCertGenerator <a href="../util/cert/generator/index.html">generator</a>.<a href="../util/cert/generator/index.html#CertGenerator">CertGenerator</a>, clientCAFetcher <a href="../util/cert/fetcher/index.html">fetcher</a>.<a href="../util/cert/fetcher/index.html#CertBundleFetcher">CertBundleFetcher</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/">controller</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/controller/#Controller">Controller</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NewUploadController creates a new instance of the upload controller.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ParseCloneRequestAnnotation">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go?s=21459:21564#L671">ParseCloneRequestAnnotation</a>
+				<a class="permalink" href="index.html#ParseCloneRequestAnnotation">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ParseCloneRequestAnnotation(pvc *<a href="../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>) (exists <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, namespace, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+			<p>
+ParseCloneRequestAnnotation parses the clone request annotation
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UploadPossibleForPVC">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/upload-controller.go?s=20618:20680#L611">UploadPossibleForPVC</a>
+				<a class="permalink" href="index.html#UploadPossibleForPVC">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UploadPossibleForPVC(pvc *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+UploadPossibleForPVC is called by the api server to see whether to return an upload token
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCanCloneSourceAndTargetSpec">func <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go?s=21878:21982#L689">ValidateCanCloneSourceAndTargetSpec</a>
+				<a class="permalink" href="index.html#ValidateCanCloneSourceAndTargetSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCanCloneSourceAndTargetSpec(sourceSpec, targetSpec *<a href="../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaimSpec">PersistentVolumeClaimSpec</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+ValidateCanCloneSourceAndTargetSpec validates the specs passed in are compatible for cloning.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="CDIConfigReconciler">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/config-controller.go?s=1110:1459#L25">CDIConfigReconciler</a>
+				<a class="permalink" href="index.html#CDIConfigReconciler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CDIConfigReconciler members
+</p>
+
+			<pre>type CDIConfigReconciler struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CDIConfigReconciler.Init">func (*CDIConfigReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/config-controller.go?s=11025:11067#L316">Init</a>
+					<a class="permalink" href="index.html#CDIConfigReconciler.Init">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#CDIConfigReconciler">CDIConfigReconciler</a>) Init() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Init initializes a CDIConfig object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CDIConfigReconciler.Reconcile">func (*CDIConfigReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/config-controller.go?s=1648:1736#L44">Reconcile</a>
+					<a class="permalink" href="index.html#CDIConfigReconciler.Reconcile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#CDIConfigReconciler">CDIConfigReconciler</a>) Reconcile(req <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Request">Request</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Result">Result</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Reconcile the reconcile loop for the CDIConfig object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="CloneReconciler">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go?s=2530:2921#L67">CloneReconciler</a>
+				<a class="permalink" href="index.html#CloneReconciler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CloneReconciler members
+</p>
+
+			<pre>type CloneReconciler struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="CloneReconciler.CreateCloneSourcePod">func (*CloneReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go?s=14494:14651#L431">CreateCloneSourcePod</a>
+					<a class="permalink" href="index.html#CloneReconciler.CreateCloneSourcePod">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#CloneReconciler">CloneReconciler</a>) CreateCloneSourcePod(image, pullPolicy, clientName <a href="http://localhost:6060/pkg/builtin/#string">string</a>, pvc *<a href="../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>, log <a href="http://localhost:6060/pkg/github.com/go-logr/logr/">logr</a>.<a href="http://localhost:6060/pkg/github.com/go-logr/logr/#Logger">Logger</a>) (*<a href="../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#Pod">Pod</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+CreateCloneSourcePod creates our cloning src pod which will be used for out of band cloning to read the contents of the src PVC
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="CloneReconciler.Reconcile">func (*CloneReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/clone-controller.go?s=5011:5095#L138">Reconcile</a>
+					<a class="permalink" href="index.html#CloneReconciler.Reconcile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#CloneReconciler">CloneReconciler</a>) Reconcile(req <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Request">Request</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Result">Result</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Reconcile the reconcile loop for host assisted clone pvc.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DataVolumeEvent">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/datavolume-controller.go?s=7064:7149#L135">DataVolumeEvent</a>
+				<a class="permalink" href="index.html#DataVolumeEvent">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DataVolumeEvent reoresents event
+</p>
+
+			<pre>type DataVolumeEvent struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DatavolumeReconciler">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/datavolume-controller.go?s=7183:7415#L142">DatavolumeReconciler</a>
+				<a class="permalink" href="index.html#DatavolumeReconciler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DatavolumeReconciler members
+</p>
+
+			<pre>type DatavolumeReconciler struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DatavolumeReconciler.Reconcile">func (*DatavolumeReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/datavolume-controller.go?s=9249:9338#L206">Reconcile</a>
+					<a class="permalink" href="index.html#DatavolumeReconciler.Reconcile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#DatavolumeReconciler">DatavolumeReconciler</a>) Reconcile(req <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Request">Request</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Result">Result</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Reconcile the reconcile loop for the data volumes.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ImportReconciler">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/import-controller.go?s=3874:4237#L85">ImportReconciler</a>
+				<a class="permalink" href="index.html#ImportReconciler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ImportReconciler members
+</p>
+
+			<pre>type ImportReconciler struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ImportReconciler.Reconcile">func (*ImportReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/import-controller.go?s=6801:6886#L178">Reconcile</a>
+					<a class="permalink" href="index.html#ImportReconciler.Reconcile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#ImportReconciler">ImportReconciler</a>) Reconcile(req <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Request">Request</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Result">Result</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Reconcile the reconcile loop for the CDIConfig object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="SmartCloneReconciler">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/smart-clone-controller.go?s=1134:1273#L27">SmartCloneReconciler</a>
+				<a class="permalink" href="index.html#SmartCloneReconciler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+SmartCloneReconciler members
+</p>
+
+			<pre>type SmartCloneReconciler struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="SmartCloneReconciler.Reconcile">func (*SmartCloneReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/smart-clone-controller.go?s=4518:4607#L134">Reconcile</a>
+					<a class="permalink" href="index.html#SmartCloneReconciler.Reconcile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#SmartCloneReconciler">SmartCloneReconciler</a>) Reconcile(req <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Request">Request</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Result">Result</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Reconcile the reconcile loop for smart cloning.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UploadPodArgs">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/upload-controller.go?s=3074:3362#L82">UploadPodArgs</a>
+				<a class="permalink" href="index.html#UploadPodArgs">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UploadPodArgs are the parameters required to create an upload pod
+</p>
+
+			<pre>type UploadPodArgs struct {
+<span id="UploadPodArgs.Name"></span>    Name                            <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="UploadPodArgs.PVC"></span>    PVC                             *<a href="../../../../k8s.io/api/core/v1/index.html">v1</a>.<a href="../../../../k8s.io/api/core/v1/index.html#PersistentVolumeClaim">PersistentVolumeClaim</a>
+<span id="UploadPodArgs.ScratchPVCName"></span>    ScratchPVCName                  <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="UploadPodArgs.ClientName"></span>    ClientName                      <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="UploadPodArgs.FilesystemOverhead"></span>    FilesystemOverhead              <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="UploadPodArgs.ServerCert"></span>    ServerCert, ServerKey, ClientCA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="UploadReconciler">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/upload-controller.go?s=2540:3003#L67">UploadReconciler</a>
+				<a class="permalink" href="index.html#UploadReconciler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UploadReconciler members
+</p>
+
+			<pre>type UploadReconciler struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="UploadReconciler.Reconcile">func (*UploadReconciler) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/controller/upload-controller.go?s=3422:3507#L92">Reconcile</a>
+					<a class="permalink" href="index.html#UploadReconciler.Reconcile">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#UploadReconciler">UploadReconciler</a>) Reconcile(req <a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Request">Request</a>) (<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/">reconcile</a>.<a href="http://localhost:6060/pkg/sigs.k8s.io/controller-runtime/pkg/reconcile/#Result">Result</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Reconcile the reconcile loop for the CDIConfig object.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>v1beta1 - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package v1beta1
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/apis/meta/v1beta1"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+package v1beta1 is alpha objects from meta that will be introduced.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#AddMetaToScheme">func AddMetaToScheme(scheme *runtime.Scheme) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_Slice_string_To_v1beta1_IncludeObjectPolicy">func Convert_Slice_string_To_v1beta1_IncludeObjectPolicy(in *[]string, out *IncludeObjectPolicy, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_v1_PartialObjectMetadataList_To_v1beta1_PartialObjectMetadataList">func Convert_v1_PartialObjectMetadataList_To_v1beta1_PartialObjectMetadataList(in *v1.PartialObjectMetadataList, out *PartialObjectMetadataList, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Convert_v1beta1_PartialObjectMetadataList_To_v1_PartialObjectMetadataList">func Convert_v1beta1_PartialObjectMetadataList_To_v1_PartialObjectMetadataList(in *PartialObjectMetadataList, out *v1.PartialObjectMetadataList, s conversion.Scope) error</a></dd>
+			
+				
+				<dd><a href="index.html#Kind">func Kind(kind string) schema.GroupKind</a></dd>
+			
+				
+				<dd><a href="index.html#RegisterConversions">func RegisterConversions(s *runtime.Scheme) error</a></dd>
+			
+				
+				<dd><a href="index.html#RegisterDefaults">func RegisterDefaults(scheme *runtime.Scheme) error</a></dd>
+			
+			
+				
+				<dd><a href="index.html#ConditionStatus">type ConditionStatus</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#IncludeObjectPolicy">type IncludeObjectPolicy</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#PartialObjectMetadata">type PartialObjectMetadata</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#PartialObjectMetadataList">type PartialObjectMetadataList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.DeepCopy">func (in *PartialObjectMetadataList) DeepCopy() *PartialObjectMetadataList</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.DeepCopyInto">func (in *PartialObjectMetadataList) DeepCopyInto(out *PartialObjectMetadataList)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.DeepCopyObject">func (in *PartialObjectMetadataList) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.Descriptor">func (*PartialObjectMetadataList) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.Marshal">func (m *PartialObjectMetadataList) Marshal() (dAtA []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.MarshalTo">func (m *PartialObjectMetadataList) MarshalTo(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.MarshalToSizedBuffer">func (m *PartialObjectMetadataList) MarshalToSizedBuffer(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.ProtoMessage">func (*PartialObjectMetadataList) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.Reset">func (m *PartialObjectMetadataList) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.Size">func (m *PartialObjectMetadataList) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.String">func (this *PartialObjectMetadataList) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.SwaggerDoc">func (PartialObjectMetadataList) SwaggerDoc() map[string]string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.Unmarshal">func (m *PartialObjectMetadataList) Unmarshal(dAtA []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.XXX_DiscardUnknown">func (m *PartialObjectMetadataList) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.XXX_Marshal">func (m *PartialObjectMetadataList) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.XXX_Merge">func (m *PartialObjectMetadataList) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.XXX_Size">func (m *PartialObjectMetadataList) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PartialObjectMetadataList.XXX_Unmarshal">func (m *PartialObjectMetadataList) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#RowConditionType">type RowConditionType</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Table">type Table</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TableColumnDefinition">type TableColumnDefinition</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TableOptions">type TableOptions</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TableRow">type TableRow</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TableRowCondition">type TableRowCondition</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/conversion.go">conversion.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/deepcopy.go">deepcopy.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go">generated.pb.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/register.go">register.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go">types.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types_swagger_doc_generated.go">types_swagger_doc_generated.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.defaults.go">zz_generated.defaults.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span id="RowCompleted">RowCompleted</span> = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#RowCompleted">RowCompleted</a>
+
+    <span id="ConditionTrue">ConditionTrue</span>    = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#ConditionTrue">ConditionTrue</a>
+    <span id="ConditionFalse">ConditionFalse</span>   = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#ConditionFalse">ConditionFalse</a>
+    <span id="ConditionUnknown">ConditionUnknown</span> = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#ConditionUnknown">ConditionUnknown</a>
+
+    <span id="IncludeNone">IncludeNone</span>     = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#IncludeNone">IncludeNone</a>
+    <span id="IncludeMetadata">IncludeMetadata</span> = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#IncludeMetadata">IncludeMetadata</a>
+    <span id="IncludeObject">IncludeObject</span>   = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#IncludeObject">IncludeObject</a>
+)</pre>
+			
+				<p>
+GroupName is the group name for this API.
+</p>
+
+				<pre>const <span id="GroupName">GroupName</span> = &#34;meta.k8s.io&#34;</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var (
+    <span id="ErrInvalidLengthGenerated">ErrInvalidLengthGenerated</span>        = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: negative length found during unmarshaling&#34;)
+    <span id="ErrIntOverflowGenerated">ErrIntOverflowGenerated</span>          = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: integer overflow&#34;)
+    <span id="ErrUnexpectedEndOfGroupGenerated">ErrUnexpectedEndOfGroupGenerated</span> = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: unexpected end of group&#34;)
+)</pre>
+			
+				<p>
+SchemeGroupVersion is group version used to register these objects
+</p>
+
+				<pre>var <span id="SchemeGroupVersion">SchemeGroupVersion</span> = <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersion">GroupVersion</a>{<a href="../../../runtime/schema/index.html#GroupVersion.Group">Group</a>: <a href="index.html#GroupName">GroupName</a>, <a href="../../../runtime/schema/index.html#GroupVersion.Version">Version</a>: &#34;v1beta1&#34;}</pre>
+			
+		
+		
+			
+			
+			<h2 id="AddMetaToScheme">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/register.go?s=1219:1269#L28">AddMetaToScheme</a>
+				<a class="permalink" href="index.html#AddMetaToScheme">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AddMetaToScheme(scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+AddMetaToScheme registers base meta types into schemas.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_Slice_string_To_v1beta1_IncludeObjectPolicy">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/conversion.go?s=790:912#L17">Convert_Slice_string_To_v1beta1_IncludeObjectPolicy</a>
+				<a class="permalink" href="index.html#Convert_Slice_string_To_v1beta1_IncludeObjectPolicy">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_Slice_string_To_v1beta1_IncludeObjectPolicy(in *[]<a href="http://localhost:6060/pkg/builtin/#string">string</a>, out *<a href="index.html#IncludeObjectPolicy">IncludeObjectPolicy</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_Slice_string_To_v1beta1_IncludeObjectPolicy allows converting a URL query parameter value
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_v1_PartialObjectMetadataList_To_v1beta1_PartialObjectMetadataList">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/conversion.go?s=1554:1724#L32">Convert_v1_PartialObjectMetadataList_To_v1beta1_PartialObjectMetadataList</a>
+				<a class="permalink" href="index.html#Convert_v1_PartialObjectMetadataList_To_v1beta1_PartialObjectMetadataList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_v1_PartialObjectMetadataList_To_v1beta1_PartialObjectMetadataList(in *<a href="../v1/index.html">v1</a>.<a href="../v1/index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>, out *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_v1_PartialObjectMetadataList_To_v1beta1_PartialObjectMetadataList allows converting PartialObjectMetadataList between versions
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Convert_v1beta1_PartialObjectMetadataList_To_v1_PartialObjectMetadataList">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/conversion.go?s=1129:1299#L25">Convert_v1beta1_PartialObjectMetadataList_To_v1_PartialObjectMetadataList</a>
+				<a class="permalink" href="index.html#Convert_v1beta1_PartialObjectMetadataList_To_v1_PartialObjectMetadataList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Convert_v1beta1_PartialObjectMetadataList_To_v1_PartialObjectMetadataList(in *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>, out *<a href="../v1/index.html">v1</a>.<a href="../v1/index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>, s <a href="../../../conversion/index.html">conversion</a>.<a href="../../../conversion/index.html#Scope">Scope</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+Convert_v1beta1_PartialObjectMetadataList_To_v1_PartialObjectMetadataList allows converting PartialObjectMetadataList between versions
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Kind">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/register.go?s=1061:1100#L23">Kind</a>
+				<a class="permalink" href="index.html#Kind">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Kind(kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupKind">GroupKind</a></pre>
+			<p>
+Kind takes an unqualified kind and returns a Group qualified GroupKind
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RegisterConversions">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/register.go?s=1494:1543#L40">RegisterConversions</a>
+				<a class="permalink" href="index.html#RegisterConversions">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RegisterConversions(s *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+RegisterConversions adds conversion functions to the given scheme.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RegisterDefaults">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.defaults.go?s=911:962#L20">RegisterDefaults</a>
+				<a class="permalink" href="index.html#RegisterDefaults">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RegisterDefaults(scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+RegisterDefaults adds defaulters functions to the given scheme.
+Public to allow building arbitrary schemes.
+All generated defaulters are covering - they call all nested defaulters.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="ConditionStatus">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1432:1473#L34">ConditionStatus</a>
+				<a class="permalink" href="index.html#ConditionStatus">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ConditionStatus = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#ConditionStatus">ConditionStatus</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="IncludeObjectPolicy">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1475:1524#L36">IncludeObjectPolicy</a>
+				<a class="permalink" href="index.html#IncludeObjectPolicy">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type IncludeObjectPolicy = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#IncludeObjectPolicy">IncludeObjectPolicy</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PartialObjectMetadata">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1968:2021#L45">PartialObjectMetadata</a>
+				<a class="permalink" href="index.html#PartialObjectMetadata">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+PartialObjectMetadata is a generic representation of any object with ObjectMeta. It allows clients
+to get access to a particular ObjectMeta schema without knowing the details of the version.
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type PartialObjectMetadata = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#PartialObjectMetadata">PartialObjectMetadata</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PartialObjectMetadataList">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=2436:2869#L53">PartialObjectMetadataList</a>
+				<a class="permalink" href="index.html#PartialObjectMetadataList">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+PartialObjectMetadataList contains a list of objects containing only their metadata.
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type PartialObjectMetadataList struct {
+    <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+    <span class="comment">// Standard list metadata.</span>
+    <span class="comment">// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</span>
+    <span class="comment">// +optional</span>
+    <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#ListMeta">ListMeta</a> `json:&#34;metadata,omitempty&#34; protobuf:&#34;bytes,2,opt,name=metadata&#34;`
+
+    <span class="comment">// items contains each of the included items.</span>
+<span id="PartialObjectMetadataList.Items"></span>    Items []<a href="../v1/index.html">v1</a>.<a href="../v1/index.html#PartialObjectMetadata">PartialObjectMetadata</a> `json:&#34;items&#34; protobuf:&#34;bytes,1,rep,name=items&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="PartialObjectMetadataList.DeepCopy">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.deepcopy.go?s=1345:1419#L34">DeepCopy</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) DeepCopy() *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new PartialObjectMetadataList.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.DeepCopyInto">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.deepcopy.go?s=878:959#L19">DeepCopyInto</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) DeepCopyInto(out *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.DeepCopyObject">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/zz_generated.deepcopy.go?s=1640:1708#L44">DeepCopyObject</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) DeepCopyObject() <a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.Descriptor">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=1515:1577#L39">Descriptor</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.Marshal">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=4644:4714#L97">Marshal</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) Marshal() (dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.MarshalTo">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=4872:4943#L107">MarshalTo</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) MarshalTo(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.MarshalToSizedBuffer">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=5011:5093#L112">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) MarshalToSizedBuffer(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.ProtoMessage">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=1463:1511#L38">ProtoMessage</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.Reset">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=1377:1420#L37">Reset</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.Size">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=5877:5927#L155">Size</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.String">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=6352:6406#L178">String</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (this *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.SwaggerDoc">func (PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types_swagger_doc_generated.go?s=1555:1618#L26">SwaggerDoc</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.SwaggerDoc">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) SwaggerDoc() map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.Unmarshal">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=7067:7131#L202">Unmarshal</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) Unmarshal(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.XXX_DiscardUnknown">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=2131:2187#L59">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.XXX_Marshal">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=1725:1818#L45">XXX_Marshal</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.XXX_Merge">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=1933:1997#L53">XXX_Merge</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) XXX_Merge(src <a href="../../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.XXX_Size">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=2059:2109#L56">XXX_Size</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PartialObjectMetadataList.XXX_Unmarshal">func (*PartialObjectMetadataList) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/generated.pb.go?s=1632:1697#L42">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#PartialObjectMetadataList.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#PartialObjectMetadataList">PartialObjectMetadataList</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="RowConditionType">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1387:1430#L32">RowConditionType</a>
+				<a class="permalink" href="index.html#RowConditionType">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type RowConditionType = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#RowConditionType">RowConditionType</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Table">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=971:992#L18">Table</a>
+				<a class="permalink" href="index.html#Table">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Table is a tabular representation of a set of API resources. The server transforms the
+object into a set of preferred columns for quickly reviewing the objects.
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
++protobuf=false
+</p>
+
+			<pre>type Table = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#Table">Table</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TableColumnDefinition">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1097:1150#L22">TableColumnDefinition</a>
+				<a class="permalink" href="index.html#TableColumnDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TableColumnDefinition contains information about a column returned in the Table.
++protobuf=false
+</p>
+
+			<pre>type TableColumnDefinition = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#TableColumnDefinition">TableColumnDefinition</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TableOptions">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1663:1698#L40">TableOptions</a>
+				<a class="permalink" href="index.html#TableOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TableOptions are used when a Table is requested by the caller.
++k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+</p>
+
+			<pre>type TableOptions = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#TableOptions">TableOptions</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TableRow">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1216:1243#L26">TableRow</a>
+				<a class="permalink" href="index.html#TableRow">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TableRow is an individual row in a table.
++protobuf=false
+</p>
+
+			<pre>type TableRow = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#TableRow">TableRow</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TableRowCondition">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/apis/meta/v1beta1/types.go?s=1340:1385#L30">TableRowCondition</a>
+				<a class="permalink" href="index.html#TableRowCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+TableRowCondition allows a row to be marked with additional information.
++protobuf=false
+</p>
+
+			<pre>type TableRowCondition = <a href="../v1/index.html">v1</a>.<a href="../v1/index.html#TableRowCondition">TableRowCondition</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="validation/index.html">validation</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

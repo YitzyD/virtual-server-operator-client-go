@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>proxy - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package proxy
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/proxy"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package proxy provides transport and upgrade support for proxies.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#ErrorResponder">type ErrorResponder</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewErrorResponder">func NewErrorResponder(r SimpleErrorResponder) ErrorResponder</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#SimpleErrorResponder">type SimpleErrorResponder</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Transport">type Transport</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Transport.RoundTrip">func (t *Transport) RoundTrip(req *http.Request) (*http.Response, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Transport.WrappedRoundTripper">func (rt *Transport) WrappedRoundTripper() http.RoundTripper</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UpgradeAwareHandler">type UpgradeAwareHandler</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewUpgradeAwareHandler">func NewUpgradeAwareHandler(location *url.URL, transport http.RoundTripper, wrapTransport, upgradeRequired bool, responder ErrorResponder) *UpgradeAwareHandler</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UpgradeAwareHandler.DialForUpgrade">func (h *UpgradeAwareHandler) DialForUpgrade(req *http.Request) (net.Conn, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#UpgradeAwareHandler.ServeHTTP">func (h *UpgradeAwareHandler) ServeHTTP(w http.ResponseWriter, req *http.Request)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#UpgradeRequestRoundTripper">type UpgradeRequestRoundTripper</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewUpgradeRequestRoundTripper">func NewUpgradeRequestRoundTripper(connection, request http.RoundTripper) UpgradeRequestRoundTripper</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/dial.go">dial.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/transport.go">transport.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go">upgradeaware.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+MirrorRequest is a round tripper that can be called to get back the calling request as
+the core round tripper in a chain.
+</p>
+
+				<pre>var <span id="MirrorRequest">MirrorRequest</span> <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a> = onewayRoundTripper{}</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="ErrorResponder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=3529:3622#L79">ErrorResponder</a>
+				<a class="permalink" href="index.html#ErrorResponder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ErrorResponder abstracts error reporting to the proxy handler to remove the need to hardcode a particular
+error format.
+</p>
+
+			<pre>type ErrorResponder interface {
+    Error(w <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#ResponseWriter">ResponseWriter</a>, req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewErrorResponder">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=3824:3885#L89">NewErrorResponder</a>
+					<a class="permalink" href="index.html#NewErrorResponder">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewErrorResponder(r <a href="index.html#SimpleErrorResponder">SimpleErrorResponder</a>) <a href="index.html#ErrorResponder">ErrorResponder</a></pre>
+				
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="SimpleErrorResponder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=3765:3822#L85">SimpleErrorResponder</a>
+				<a class="permalink" href="index.html#SimpleErrorResponder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+SimpleErrorResponder is the legacy implementation of ErrorResponder for callers that only
+service a single request/response per proxy.
+</p>
+
+			<pre>type SimpleErrorResponder interface {
+    Error(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Transport">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/transport.go?s=2483:2588#L64">Transport</a>
+				<a class="permalink" href="index.html#Transport">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Transport is a transport for text/html content that replaces URLs in html
+content with the prefix of the proxy server
+</p>
+
+			<pre>type Transport struct {
+<span id="Transport.Scheme"></span>    Scheme      <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="Transport.Host"></span>    Host        <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="Transport.PathPrepend"></span>    PathPrepend <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+    <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Transport.RoundTrip">func (*Transport) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/transport.go?s=2646:2718#L73">RoundTrip</a>
+					<a class="permalink" href="index.html#Transport.RoundTrip">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (t *<a href="index.html#Transport">Transport</a>) RoundTrip(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (*<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Response">Response</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+RoundTrip implements the http.RoundTripper interface
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Transport.WrappedRoundTripper">func (*Transport) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/transport.go?s=3711:3771#L114">WrappedRoundTripper</a>
+					<a class="permalink" href="index.html#Transport.WrappedRoundTripper">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (rt *<a href="index.html#Transport">Transport</a>) WrappedRoundTripper() <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UpgradeAwareHandler">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=1733:3348#L47">UpgradeAwareHandler</a>
+				<a class="permalink" href="index.html#UpgradeAwareHandler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UpgradeAwareHandler is a handler for proxy requests that may require an upgrade
+</p>
+
+			<pre>type UpgradeAwareHandler struct {
+<span id="UpgradeAwareHandler.UpgradeRequired"></span>    <span class="comment">// UpgradeRequired will reject non-upgrade connections if true.</span>
+    UpgradeRequired <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="UpgradeAwareHandler.Location"></span>    <span class="comment">// Location is the location of the upstream proxy. It is used as the location to Dial on the upstream server</span>
+    <span class="comment">// for upgrade requests unless UseRequestLocationOnUpgrade is true.</span>
+    Location *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>
+<span id="UpgradeAwareHandler.Transport"></span>    <span class="comment">// Transport provides an optional round tripper to use to proxy. If nil, the default proxy transport is used</span>
+    Transport <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>
+<span id="UpgradeAwareHandler.UpgradeTransport"></span>    <span class="comment">// UpgradeTransport, if specified, will be used as the backend transport when upgrade requests are provided.</span>
+    <span class="comment">// This allows clients to disable HTTP/2.</span>
+    UpgradeTransport <a href="index.html#UpgradeRequestRoundTripper">UpgradeRequestRoundTripper</a>
+<span id="UpgradeAwareHandler.WrapTransport"></span>    <span class="comment">// WrapTransport indicates whether the provided Transport should be wrapped with default proxy transport behavior (URL rewriting, X-Forwarded-* header setting)</span>
+    WrapTransport <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="UpgradeAwareHandler.InterceptRedirects"></span>    <span class="comment">// InterceptRedirects determines whether the proxy should sniff backend responses for redirects,</span>
+    <span class="comment">// following them as necessary.</span>
+    InterceptRedirects <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="UpgradeAwareHandler.RequireSameHostRedirects"></span>    <span class="comment">// RequireSameHostRedirects only allows redirects to the same host. It is only used if InterceptRedirects=true.</span>
+    RequireSameHostRedirects <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="UpgradeAwareHandler.UseRequestLocation"></span>    <span class="comment">// UseRequestLocation will use the incoming request URL when talking to the backend server.</span>
+    UseRequestLocation <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+<span id="UpgradeAwareHandler.FlushInterval"></span>    <span class="comment">// FlushInterval controls how often the standard HTTP proxy will flush content from the upstream.</span>
+    FlushInterval <a href="http://localhost:6060/pkg/time/">time</a>.<a href="http://localhost:6060/pkg/time/#Duration">Duration</a>
+<span id="UpgradeAwareHandler.MaxBytesPerSec"></span>    <span class="comment">// MaxBytesPerSec controls the maximum rate for an upstream connection. No rate is imposed if the value is zero.</span>
+    MaxBytesPerSec <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>
+<span id="UpgradeAwareHandler.Responder"></span>    <span class="comment">// Responder is passed errors that occur while setting up proxying.</span>
+    Responder <a href="index.html#ErrorResponder">ErrorResponder</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewUpgradeAwareHandler">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=6492:6651#L166">NewUpgradeAwareHandler</a>
+					<a class="permalink" href="index.html#NewUpgradeAwareHandler">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewUpgradeAwareHandler(location *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>, transport <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>, wrapTransport, upgradeRequired <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, responder <a href="index.html#ErrorResponder">ErrorResponder</a>) *<a href="index.html#UpgradeAwareHandler">UpgradeAwareHandler</a></pre>
+				<p>
+NewUpgradeAwareHandler creates a new proxy handler with a default flush interval. Responder is required for returning
+errors to the caller.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="UpgradeAwareHandler.DialForUpgrade">func (*UpgradeAwareHandler) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=14831:14912#L393">DialForUpgrade</a>
+					<a class="permalink" href="index.html#UpgradeAwareHandler.DialForUpgrade">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (h *<a href="index.html#UpgradeAwareHandler">UpgradeAwareHandler</a>) DialForUpgrade(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#Conn">Conn</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="UpgradeAwareHandler.ServeHTTP">func (*UpgradeAwareHandler) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=6948:7029#L178">ServeHTTP</a>
+					<a class="permalink" href="index.html#UpgradeAwareHandler.ServeHTTP">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (h *<a href="index.html#UpgradeAwareHandler">UpgradeAwareHandler</a>) ServeHTTP(w <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#ResponseWriter">ResponseWriter</a>, req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>)</pre>
+				<p>
+ServeHTTP handles the proxy request
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="UpgradeRequestRoundTripper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=1214:1648#L37">UpgradeRequestRoundTripper</a>
+				<a class="permalink" href="index.html#UpgradeRequestRoundTripper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+UpgradeRequestRoundTripper provides an additional method to decorate a request
+with any authentication or other protocol level information prior to performing
+an upgrade on the server. Any response will be handled by the intercepting
+proxy.
+</p>
+
+			<pre>type UpgradeRequestRoundTripper interface {
+    <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>
+    <span class="comment">// WrapRequest takes a valid HTTP request and returns a suitably altered version</span>
+    <span class="comment">// of request with any HTTP level values required to complete the request half of</span>
+    <span class="comment">// an upgrade on the server. It does not get a chance to see the response and</span>
+    <span class="comment">// should bypass any request side logic that expects to see the response.</span>
+    WrapRequest(*<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (*<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewUpgradeRequestRoundTripper">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/proxy/upgradeaware.go?s=5859:5959#L148">NewUpgradeRequestRoundTripper</a>
+					<a class="permalink" href="index.html#NewUpgradeRequestRoundTripper">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewUpgradeRequestRoundTripper(connection, request <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>) <a href="index.html#UpgradeRequestRoundTripper">UpgradeRequestRoundTripper</a></pre>
+				<p>
+NewUpgradeRequestRoundTripper takes two round trippers - one for the underlying TCP connection, and
+one that is able to write headers to an HTTP request. The request rt is used to set the request headers
+and that is written to the underlying connection rt.
+</p>
+
+				
+				
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

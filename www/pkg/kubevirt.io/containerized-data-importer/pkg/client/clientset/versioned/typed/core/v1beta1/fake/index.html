@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>fake - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package fake
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package fake has the automatically generated clients.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#FakeCDIConfigs">type FakeCDIConfigs</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.Create">func (c *FakeCDIConfigs) Create(ctx context.Context, cDIConfig *v1beta1.CDIConfig, opts v1.CreateOptions) (result *v1beta1.CDIConfig, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.Delete">func (c *FakeCDIConfigs) Delete(ctx context.Context, name string, opts v1.DeleteOptions) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.DeleteCollection">func (c *FakeCDIConfigs) DeleteCollection(ctx context.Context, opts v1.DeleteOptions, listOpts v1.ListOptions) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.Get">func (c *FakeCDIConfigs) Get(ctx context.Context, name string, options v1.GetOptions) (result *v1beta1.CDIConfig, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.List">func (c *FakeCDIConfigs) List(ctx context.Context, opts v1.ListOptions) (result *v1beta1.CDIConfigList, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.Patch">func (c *FakeCDIConfigs) Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts v1.PatchOptions, subresources ...string) (result *v1beta1.CDIConfig, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.Update">func (c *FakeCDIConfigs) Update(ctx context.Context, cDIConfig *v1beta1.CDIConfig, opts v1.UpdateOptions) (result *v1beta1.CDIConfig, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.UpdateStatus">func (c *FakeCDIConfigs) UpdateStatus(ctx context.Context, cDIConfig *v1beta1.CDIConfig, opts v1.UpdateOptions) (*v1beta1.CDIConfig, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIConfigs.Watch">func (c *FakeCDIConfigs) Watch(ctx context.Context, opts v1.ListOptions) (watch.Interface, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FakeCDIs">type FakeCDIs</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.Create">func (c *FakeCDIs) Create(ctx context.Context, cDI *v1beta1.CDI, opts v1.CreateOptions) (result *v1beta1.CDI, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.Delete">func (c *FakeCDIs) Delete(ctx context.Context, name string, opts v1.DeleteOptions) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.DeleteCollection">func (c *FakeCDIs) DeleteCollection(ctx context.Context, opts v1.DeleteOptions, listOpts v1.ListOptions) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.Get">func (c *FakeCDIs) Get(ctx context.Context, name string, options v1.GetOptions) (result *v1beta1.CDI, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.List">func (c *FakeCDIs) List(ctx context.Context, opts v1.ListOptions) (result *v1beta1.CDIList, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.Patch">func (c *FakeCDIs) Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts v1.PatchOptions, subresources ...string) (result *v1beta1.CDI, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.Update">func (c *FakeCDIs) Update(ctx context.Context, cDI *v1beta1.CDI, opts v1.UpdateOptions) (result *v1beta1.CDI, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.UpdateStatus">func (c *FakeCDIs) UpdateStatus(ctx context.Context, cDI *v1beta1.CDI, opts v1.UpdateOptions) (*v1beta1.CDI, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCDIs.Watch">func (c *FakeCDIs) Watch(ctx context.Context, opts v1.ListOptions) (watch.Interface, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FakeCdiV1beta1">type FakeCdiV1beta1</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCdiV1beta1.CDIConfigs">func (c *FakeCdiV1beta1) CDIConfigs() v1beta1.CDIConfigInterface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCdiV1beta1.CDIs">func (c *FakeCdiV1beta1) CDIs() v1beta1.CDIInterface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCdiV1beta1.DataVolumes">func (c *FakeCdiV1beta1) DataVolumes(namespace string) v1beta1.DataVolumeInterface</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeCdiV1beta1.RESTClient">func (c *FakeCdiV1beta1) RESTClient() rest.Interface</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FakeDataVolumes">type FakeDataVolumes</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.Create">func (c *FakeDataVolumes) Create(ctx context.Context, dataVolume *v1beta1.DataVolume, opts v1.CreateOptions) (result *v1beta1.DataVolume, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.Delete">func (c *FakeDataVolumes) Delete(ctx context.Context, name string, opts v1.DeleteOptions) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.DeleteCollection">func (c *FakeDataVolumes) DeleteCollection(ctx context.Context, opts v1.DeleteOptions, listOpts v1.ListOptions) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.Get">func (c *FakeDataVolumes) Get(ctx context.Context, name string, options v1.GetOptions) (result *v1beta1.DataVolume, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.List">func (c *FakeDataVolumes) List(ctx context.Context, opts v1.ListOptions) (result *v1beta1.DataVolumeList, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.Patch">func (c *FakeDataVolumes) Patch(ctx context.Context, name string, pt types.PatchType, data []byte, opts v1.PatchOptions, subresources ...string) (result *v1beta1.DataVolume, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.Update">func (c *FakeDataVolumes) Update(ctx context.Context, dataVolume *v1beta1.DataVolume, opts v1.UpdateOptions) (result *v1beta1.DataVolume, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.UpdateStatus">func (c *FakeDataVolumes) UpdateStatus(ctx context.Context, dataVolume *v1beta1.DataVolume, opts v1.UpdateOptions) (*v1beta1.DataVolume, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FakeDataVolumes.Watch">func (c *FakeDataVolumes) Watch(ctx context.Context, opts v1.ListOptions) (watch.Interface, error)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go">fake_cdi.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go">fake_cdiconfig.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_core_client.go">fake_core_client.go</a>
+			
+				<a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go">fake_datavolume.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="FakeCDIConfigs">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=1017:1069#L24">FakeCDIConfigs</a>
+				<a class="permalink" href="index.html#FakeCDIConfigs">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FakeCDIConfigs implements CDIConfigInterface
+</p>
+
+			<pre>type FakeCDIConfigs struct {
+<span id="FakeCDIConfigs.Fake"></span>    Fake *<a href="index.html#FakeCdiV1beta1">FakeCdiV1beta1</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FakeCDIConfigs.Create">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=2891:3035#L70">Create</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.Create">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) Create(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cDIConfig *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#CreateOptions">CreateOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Create takes the representation of a cDIConfig and creates it.  Returns the server&#39;s representation of the cDIConfig, and an error, if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.Delete">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=4322:4416#L101">Delete</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) Delete(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Delete takes name of the cDIConfig and deletes it. Returns an error if one occurs.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.DeleteCollection">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=4593:4709#L108">DeleteCollection</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.DeleteCollection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) DeleteCollection(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>, listOpts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+DeleteCollection deletes a collection of objects.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.Get">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=1420:1544#L33">Get</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) Get(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, options <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#GetOptions">GetOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Get takes name of the cDIConfig, and returns the corresponding cDIConfig object, and an error if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.List">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=1835:1949#L43">List</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) List(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfigList">CDIConfigList</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+List takes label and field selectors, and returns the list of CDIConfigs that match those selectors.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.Patch">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=4929:5111#L116">Patch</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.Patch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) Patch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, pt <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html">types</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html#PatchType">PatchType</a>, data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#PatchOptions">PatchOptions</a>, subresources ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Patch applies the patch and returns the patched cDIConfig.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.Update">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=3381:3525#L80">Update</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.Update">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) Update(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cDIConfig *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Update takes the representation of a cDIConfig and updates it. Returns the server&#39;s representation of the cDIConfig, and an error, if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.UpdateStatus">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=3881:4020#L91">UpdateStatus</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.UpdateStatus">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) UpdateStatus(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cDIConfig *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (*<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIConfig">CDIConfig</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+UpdateStatus was generated because the type contains a Status member.
+Add a +genclient:noStatus comment above the type to avoid generating UpdateStatus().
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIConfigs.Watch">func (*FakeCDIConfigs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdiconfig.go?s=2551:2648#L64">Watch</a>
+					<a class="permalink" href="index.html#FakeCDIConfigs.Watch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIConfigs">FakeCDIConfigs</a>) Watch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html">watch</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html#Interface">Interface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Watch returns a watch.Interface that watches the requested cDIConfigs.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FakeCDIs">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=1005:1051#L24">FakeCDIs</a>
+				<a class="permalink" href="index.html#FakeCDIs">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FakeCDIs implements CDIInterface
+</p>
+
+			<pre>type FakeCDIs struct {
+<span id="FakeCDIs.Fake"></span>    Fake *<a href="index.html#FakeCdiV1beta1">FakeCdiV1beta1</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FakeCDIs.Create">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=2723:2843#L70">Create</a>
+					<a class="permalink" href="index.html#FakeCDIs.Create">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) Create(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cDI *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#CreateOptions">CreateOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Create takes the representation of a cDI and creates it.  Returns the server&#39;s representation of the cDI, and an error, if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.Delete">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=3992:4080#L101">Delete</a>
+					<a class="permalink" href="index.html#FakeCDIs.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) Delete(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Delete takes name of the cDI and deletes it. Returns an error if one occurs.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.DeleteCollection">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=4245:4355#L108">DeleteCollection</a>
+					<a class="permalink" href="index.html#FakeCDIs.DeleteCollection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) DeleteCollection(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>, listOpts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+DeleteCollection deletes a collection of objects.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.Get">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=1366:1478#L33">Get</a>
+					<a class="permalink" href="index.html#FakeCDIs.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) Get(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, options <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#GetOptions">GetOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Get takes name of the cDI, and returns the corresponding cDI object, and an error if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.List">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=1745:1847#L43">List</a>
+					<a class="permalink" href="index.html#FakeCDIs.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) List(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDIList">CDIList</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+List takes label and field selectors, and returns the list of CDIs that match those selectors.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.Patch">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=4557:4727#L116">Patch</a>
+					<a class="permalink" href="index.html#FakeCDIs.Patch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) Patch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, pt <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html">types</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html#PatchType">PatchType</a>, data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#PatchOptions">PatchOptions</a>, subresources ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Patch applies the patch and returns the patched cDI.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.Update">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=3153:3273#L80">Update</a>
+					<a class="permalink" href="index.html#FakeCDIs.Update">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) Update(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cDI *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Update takes the representation of a cDI and updates it. Returns the server&#39;s representation of the cDI, and an error, if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.UpdateStatus">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=3605:3720#L91">UpdateStatus</a>
+					<a class="permalink" href="index.html#FakeCDIs.UpdateStatus">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) UpdateStatus(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, cDI *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (*<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#CDI">CDI</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+UpdateStatus was generated because the type contains a Status member.
+Add a +genclient:noStatus comment above the type to avoid generating UpdateStatus().
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeCDIs.Watch">func (*FakeCDIs) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_cdi.go?s=2407:2498#L64">Watch</a>
+					<a class="permalink" href="index.html#FakeCDIs.Watch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCDIs">FakeCDIs</a>) Watch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html">watch</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html#Interface">Interface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Watch returns a watch.Interface that watches the requested cDIs.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FakeCdiV1beta1">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_core_client.go?s=804:849#L17">FakeCdiV1beta1</a>
+				<a class="permalink" href="index.html#FakeCdiV1beta1">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type FakeCdiV1beta1 struct {
+    *<a href="http://localhost:6060/pkg/k8s.io/client-go/testing/">testing</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/testing/#Fake">Fake</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FakeCdiV1beta1.CDIConfigs">func (*FakeCdiV1beta1) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_core_client.go?s=930:994#L25">CDIConfigs</a>
+					<a class="permalink" href="index.html#FakeCdiV1beta1.CDIConfigs">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCdiV1beta1">FakeCdiV1beta1</a>) CDIConfigs() <a href="../index.html">v1beta1</a>.<a href="../index.html#CDIConfigInterface">CDIConfigInterface</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="FakeCdiV1beta1.CDIs">func (*FakeCdiV1beta1) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_core_client.go?s=851:903#L21">CDIs</a>
+					<a class="permalink" href="index.html#FakeCdiV1beta1.CDIs">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCdiV1beta1">FakeCdiV1beta1</a>) CDIs() <a href="../index.html">v1beta1</a>.<a href="../index.html#CDIInterface">CDIInterface</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="FakeCdiV1beta1.DataVolumes">func (*FakeCdiV1beta1) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_core_client.go?s=1027:1109#L29">DataVolumes</a>
+					<a class="permalink" href="index.html#FakeCdiV1beta1.DataVolumes">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCdiV1beta1">FakeCdiV1beta1</a>) DataVolumes(namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../index.html">v1beta1</a>.<a href="../index.html#DataVolumeInterface">DataVolumeInterface</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="FakeCdiV1beta1.RESTClient">func (*FakeCdiV1beta1) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_core_client.go?s=1267:1319#L35">RESTClient</a>
+					<a class="permalink" href="index.html#FakeCdiV1beta1.RESTClient">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeCdiV1beta1">FakeCdiV1beta1</a>) RESTClient() <a href="http://localhost:6060/pkg/k8s.io/client-go/rest/">rest</a>.<a href="http://localhost:6060/pkg/k8s.io/client-go/rest/#Interface">Interface</a></pre>
+				<p>
+RESTClient returns a RESTClient that is used to communicate
+with API server by this client implementation.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FakeDataVolumes">type <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=1019:1085#L24">FakeDataVolumes</a>
+				<a class="permalink" href="index.html#FakeDataVolumes">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FakeDataVolumes implements DataVolumeInterface
+</p>
+
+			<pre>type FakeDataVolumes struct {
+<span id="FakeDataVolumes.Fake"></span>    Fake *<a href="index.html#FakeCdiV1beta1">FakeCdiV1beta1</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FakeDataVolumes.Create">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=2941:3089#L74">Create</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.Create">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) Create(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, dataVolume *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#CreateOptions">CreateOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Create takes the representation of a dataVolume and creates it.  Returns the server&#39;s representation of the dataVolume, and an error, if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.Delete">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=4408:4503#L108">Delete</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) Delete(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Delete takes name of the dataVolume and deletes it. Returns an error if one occurs.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.DeleteCollection">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=4685:4802#L116">DeleteCollection</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.DeleteCollection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) DeleteCollection(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#DeleteOptions">DeleteOptions</a>, listOpts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+DeleteCollection deletes a collection of objects.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.Get">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=1442:1568#L34">Get</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) Get(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, options <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#GetOptions">GetOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Get takes name of the dataVolume, and returns the corresponding dataVolume object, and an error if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.List">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=1866:1982#L45">List</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) List(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolumeList">DataVolumeList</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+List takes label and field selectors, and returns the list of DataVolumes that match those selectors.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.Patch">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=5027:5211#L124">Patch</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.Patch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) Patch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, pt <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html">types</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/types/index.html#PatchType">PatchType</a>, data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#PatchOptions">PatchOptions</a>, subresources ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Patch applies the patch and returns the patched dataVolume.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.Update">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=3444:3592#L85">Update</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.Update">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) Update(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, dataVolume *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (result *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Update takes the representation of a dataVolume and updates it. Returns the server&#39;s representation of the dataVolume, and an error, if there is any.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.UpdateStatus">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=3955:4098#L97">UpdateStatus</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.UpdateStatus">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) UpdateStatus(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, dataVolume *<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#UpdateOptions">UpdateOptions</a>) (*<a href="../../../../../../../apis/core/v1beta1/index.html">v1beta1</a>.<a href="../../../../../../../apis/core/v1beta1/index.html#DataVolume">DataVolume</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+UpdateStatus was generated because the type contains a Status member.
+Add a +genclient:noStatus comment above the type to avoid generating UpdateStatus().
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FakeDataVolumes.Watch">func (*FakeDataVolumes) <a href="http://localhost:6060/src/kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned/typed/core/v1beta1/fake/fake_datavolume.go?s=2594:2692#L67">Watch</a>
+					<a class="permalink" href="index.html#FakeDataVolumes.Watch">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#FakeDataVolumes">FakeDataVolumes</a>) Watch(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, opts <a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">v1</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#ListOptions">ListOptions</a>) (<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html">watch</a>.<a href="../../../../../../../../../../k8s.io/apimachinery/pkg/watch/index.html#Interface">Interface</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Watch returns a watch.Interface that watches the requested dataVolumes.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

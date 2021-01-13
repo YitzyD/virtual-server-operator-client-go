@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>v1 - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package v1
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/openshift/custom-resource-status/conditions/v1"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package v1 provides version v1 of the types and functions necessary to
+manage and inspect a slice of conditions. It is opinionated in the
+condition types provided but leaves it to the user to define additional
+types as necessary.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#IsStatusConditionFalse">func IsStatusConditionFalse(conditions []Condition, conditionType ConditionType) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsStatusConditionPresentAndEqual">func IsStatusConditionPresentAndEqual(conditions []Condition, conditionType ConditionType, status corev1.ConditionStatus) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsStatusConditionTrue">func IsStatusConditionTrue(conditions []Condition, conditionType ConditionType) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsStatusConditionUnknown">func IsStatusConditionUnknown(conditions []Condition, conditionType ConditionType) bool</a></dd>
+			
+				
+				<dd><a href="index.html#RemoveStatusCondition">func RemoveStatusCondition(conditions *[]Condition, conditionType ConditionType)</a></dd>
+			
+				
+				<dd><a href="index.html#SetStatusCondition">func SetStatusCondition(conditions *[]Condition, newCondition Condition)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Condition">type Condition</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FindStatusCondition">func FindStatusCondition(conditions []Condition, conditionType ConditionType) *Condition</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Condition.DeepCopy">func (in *Condition) DeepCopy() *Condition</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Condition.DeepCopyInto">func (in *Condition) DeepCopyInto(out *Condition)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ConditionType">type ConditionType</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go">conditions.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/types.go">types.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="IsStatusConditionFalse">func <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go?s=2034:2119#L55">IsStatusConditionFalse</a>
+				<a class="permalink" href="index.html#IsStatusConditionFalse">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsStatusConditionFalse(conditions []<a href="index.html#Condition">Condition</a>, conditionType <a href="index.html#ConditionType">ConditionType</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsStatusConditionFalse returns true when the conditionType is present and set to `corev1.ConditionFalse`
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsStatusConditionPresentAndEqual">func <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go?s=2614:2740#L65">IsStatusConditionPresentAndEqual</a>
+				<a class="permalink" href="index.html#IsStatusConditionPresentAndEqual">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsStatusConditionPresentAndEqual(conditions []<a href="index.html#Condition">Condition</a>, conditionType <a href="index.html#ConditionType">ConditionType</a>, status <a href="../../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../../k8s.io/api/core/v1/index.html#ConditionStatus">ConditionStatus</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsStatusConditionPresentAndEqual returns true when conditionType is present and equal to status.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsStatusConditionTrue">func <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go?s=1746:1830#L50">IsStatusConditionTrue</a>
+				<a class="permalink" href="index.html#IsStatusConditionTrue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsStatusConditionTrue(conditions []<a href="index.html#Condition">Condition</a>, conditionType <a href="index.html#ConditionType">ConditionType</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsStatusConditionTrue returns true when the conditionType is present and set to `corev1.ConditionTrue`
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsStatusConditionUnknown">func <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go?s=2328:2415#L60">IsStatusConditionUnknown</a>
+				<a class="permalink" href="index.html#IsStatusConditionUnknown">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsStatusConditionUnknown(conditions []<a href="index.html#Condition">Condition</a>, conditionType <a href="index.html#ConditionType">ConditionType</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsStatusConditionUnknown returns true when the conditionType is present and set to `corev1.ConditionUnknown`
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RemoveStatusCondition">func <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go?s=1044:1124#L24">RemoveStatusCondition</a>
+				<a class="permalink" href="index.html#RemoveStatusCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RemoveStatusCondition(conditions *[]<a href="index.html#Condition">Condition</a>, conditionType <a href="index.html#ConditionType">ConditionType</a>)</pre>
+			<p>
+RemoveStatusCondition removes the corresponding conditionType from conditions.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetStatusCondition">func <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go?s=195:267#L1">SetStatusCondition</a>
+				<a class="permalink" href="index.html#SetStatusCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetStatusCondition(conditions *[]<a href="index.html#Condition">Condition</a>, newCondition <a href="index.html#Condition">Condition</a>)</pre>
+			<p>
+SetStatusCondition sets the corresponding condition in conditions to newCondition.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Condition">type <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/types.go?s=211:1004#L1">Condition</a>
+				<a class="permalink" href="index.html#Condition">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Condition represents the state of the operator&#39;s
+reconciliation functionality.
++k8s:deepcopy-gen=true
+</p>
+
+			<pre>type Condition struct {
+<span id="Condition.Type"></span>    Type <a href="index.html#ConditionType">ConditionType</a> `json:&#34;type&#34; description:&#34;type of condition ie. Available|Progressing|Degraded.&#34;`
+
+<span id="Condition.Status"></span>    Status <a href="../../../../../k8s.io/api/core/v1/index.html">corev1</a>.<a href="../../../../../k8s.io/api/core/v1/index.html#ConditionStatus">ConditionStatus</a> `json:&#34;status&#34; description:&#34;status of the condition, one of True, False, Unknown&#34;`
+
+    <span class="comment">// +optional</span>
+<span id="Condition.Reason"></span>    Reason <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;reason,omitempty&#34; description:&#34;one-word CamelCase reason for the condition&#39;s last transition&#34;`
+
+    <span class="comment">// +optional</span>
+<span id="Condition.Message"></span>    Message <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;message,omitempty&#34; description:&#34;human-readable message indicating details about last transition&#34;`
+
+    <span class="comment">// +optional</span>
+<span id="Condition.LastHeartbeatTime"></span>    LastHeartbeatTime <a href="../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">metav1</a>.<a href="../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#Time">Time</a> `json:&#34;lastHeartbeatTime&#34; description:&#34;last time we got an update on a given condition&#34;`
+
+    <span class="comment">// +optional</span>
+<span id="Condition.LastTransitionTime"></span>    LastTransitionTime <a href="../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html">metav1</a>.<a href="../../../../../k8s.io/apimachinery/pkg/apis/meta/v1/index.html#Time">Time</a> `json:&#34;lastTransitionTime&#34; description:&#34;last time the condition transit from one status to another&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="FindStatusCondition">func <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/conditions.go?s=1429:1517#L39">FindStatusCondition</a>
+					<a class="permalink" href="index.html#FindStatusCondition">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func FindStatusCondition(conditions []<a href="index.html#Condition">Condition</a>, conditionType <a href="index.html#ConditionType">ConditionType</a>) *<a href="index.html#Condition">Condition</a></pre>
+				<p>
+FindStatusCondition finds the conditionType in conditions.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Condition.DeepCopy">func (*Condition) <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/zz_generated.deepcopy.go?s=503:545#L6">DeepCopy</a>
+					<a class="permalink" href="index.html#Condition.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Condition">Condition</a>) DeepCopy() *<a href="index.html#Condition">Condition</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new Condition.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Condition.DeepCopyInto">func (*Condition) <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/zz_generated.deepcopy.go?s=209:258#L1">DeepCopyInto</a>
+					<a class="permalink" href="index.html#Condition.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Condition">Condition</a>) DeepCopyInto(out *<a href="index.html#Condition">Condition</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ConditionType">type <a href="http://localhost:6060/src/github.com/openshift/custom-resource-status/conditions/v1/types.go?s=1084:1109#L20">ConditionType</a>
+				<a class="permalink" href="index.html#ConditionType">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ConditionType is the state of the operator&#39;s reconciliation functionality.
+</p>
+
+			<pre>type ConditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+				
+				<pre>const (
+    <span class="comment">// ConditionAvailable indicates that the resources maintained by the operator,</span>
+    <span class="comment">// is functional and available in the cluster.</span>
+    <span id="ConditionAvailable">ConditionAvailable</span> <a href="index.html#ConditionType">ConditionType</a> = &#34;Available&#34;
+
+    <span class="comment">// ConditionProgressing indicates that the operator is actively making changes to the resources maintained by the</span>
+    <span class="comment">// operator</span>
+    <span id="ConditionProgressing">ConditionProgressing</span> <a href="index.html#ConditionType">ConditionType</a> = &#34;Progressing&#34;
+
+    <span class="comment">// ConditionDegraded indicates that the resources maintained by the operator are not functioning completely.</span>
+    <span class="comment">// An example of a degraded state would be if not all pods in a deployment were running.</span>
+    <span class="comment">// It may still be available, but it is degraded</span>
+    <span id="ConditionDegraded">ConditionDegraded</span> <a href="index.html#ConditionType">ConditionType</a> = &#34;Degraded&#34;
+
+    <span class="comment">// ConditionUpgradeable indicates whether the resources maintained by the operator are in a state that is safe to upgrade.</span>
+    <span class="comment">// When `False`, the resources maintained by the operator should not be upgraded and the</span>
+    <span class="comment">// message field should contain a human readable description of what the administrator should do to</span>
+    <span class="comment">// allow the operator to successfully update the resources maintained by the operator.</span>
+    <span id="ConditionUpgradeable">ConditionUpgradeable</span> <a href="index.html#ConditionType">ConditionType</a> = &#34;Upgradeable&#34;
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>validation - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package validation
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#SchemaHasInvalidTypes">func SchemaHasInvalidTypes(s *apiextensions.JSONSchemaProps) bool</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceColumnDefinition">func ValidateCustomResourceColumnDefinition(col *apiextensions.CustomResourceColumnDefinition, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceConversion">func ValidateCustomResourceConversion(conversion *apiextensions.CustomResourceConversion, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceDefinition">func ValidateCustomResourceDefinition(obj *apiextensions.CustomResourceDefinition, requestGV schema.GroupVersion) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceDefinitionNames">func ValidateCustomResourceDefinitionNames(names *apiextensions.CustomResourceDefinitionNames, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceDefinitionOpenAPISchema">func ValidateCustomResourceDefinitionOpenAPISchema(schema *apiextensions.JSONSchemaProps, fldPath *field.Path, ssv specStandardValidator, isRoot bool, opts *validationOptions) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceDefinitionStatus">func ValidateCustomResourceDefinitionStatus(status *apiextensions.CustomResourceDefinitionStatus, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceDefinitionStoredVersions">func ValidateCustomResourceDefinitionStoredVersions(storedVersions []string, versions []apiextensions.CustomResourceDefinitionVersion, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceDefinitionSubresources">func ValidateCustomResourceDefinitionSubresources(subresources *apiextensions.CustomResourceSubresources, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateCustomResourceDefinitionUpdate">func ValidateCustomResourceDefinitionUpdate(obj, oldObj *apiextensions.CustomResourceDefinition, requestGV schema.GroupVersion) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateUpdateCustomResourceDefinitionStatus">func ValidateUpdateCustomResourceDefinitionStatus(obj, oldObj *apiextensions.CustomResourceDefinition) field.ErrorList</a></dd>
+			
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go">validation.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="SchemaHasInvalidTypes">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=62858:62923#L1458">SchemaHasInvalidTypes</a>
+				<a class="permalink" href="index.html#SchemaHasInvalidTypes">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SchemaHasInvalidTypes(s *<a href="../index.html">apiextensions</a>.<a href="../index.html#JSONSchemaProps">JSONSchemaProps</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+SchemaHasInvalidTypes returns true if it contains invalid offending openapi-v3 specification.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceColumnDefinition">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=29178:29309#L616">ValidateCustomResourceColumnDefinition</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceColumnDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceColumnDefinition(col *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceColumnDefinition">CustomResourceColumnDefinition</a>, fldPath *<a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#Path">Path</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceColumnDefinition statically validates a printer column.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceConversion">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=20225:20351#L407">ValidateCustomResourceConversion</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceConversion">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceConversion(conversion *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceConversion">CustomResourceConversion</a>, fldPath *<a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#Path">Path</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceConversion statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceDefinition">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=1925:2054#L40">ValidateCustomResourceDefinition</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceDefinition(obj *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceDefinition">CustomResourceDefinition</a>, requestGV <a href="../../../../../apimachinery/pkg/runtime/schema/index.html">schema</a>.<a href="../../../../../apimachinery/pkg/runtime/schema/index.html#GroupVersion">GroupVersion</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceDefinition statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceDefinitionNames">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=27193:27324#L580">ValidateCustomResourceDefinitionNames</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceDefinitionNames">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceDefinitionNames(names *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceDefinitionNames">CustomResourceDefinitionNames</a>, fldPath *<a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#Path">Path</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceDefinitionNames statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceDefinitionOpenAPISchema">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=34544:34735#L730">ValidateCustomResourceDefinitionOpenAPISchema</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceDefinitionOpenAPISchema">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceDefinitionOpenAPISchema(schema *<a href="../index.html">apiextensions</a>.<a href="../index.html#JSONSchemaProps">JSONSchemaProps</a>, fldPath *<a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#Path">Path</a>, ssv specStandardValidator, isRoot <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, opts *validationOptions) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceDefinitionOpenAPISchema statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceDefinitionStatus">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=26821:26955#L573">ValidateCustomResourceDefinitionStatus</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceDefinitionStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceDefinitionStatus(status *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceDefinitionStatus">CustomResourceDefinitionStatus</a>, fldPath *<a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#Path">Path</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceDefinitionStatus statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceDefinitionStoredVersions">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=7345:7516#L125">ValidateCustomResourceDefinitionStoredVersions</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceDefinitionStoredVersions">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceDefinitionStoredVersions(storedVersions []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, versions []<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceDefinitionVersion">CustomResourceDefinitionVersion</a>, fldPath *<a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#Path">Path</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceDefinitionStoredVersions statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceDefinitionSubresources">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=48099:48241#L1050">ValidateCustomResourceDefinitionSubresources</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceDefinitionSubresources">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceDefinitionSubresources(subresources *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceSubresources">CustomResourceSubresources</a>, fldPath *<a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#Path">Path</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceDefinitionSubresources statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateCustomResourceDefinitionUpdate">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=5371:5514#L100">ValidateCustomResourceDefinitionUpdate</a>
+				<a class="permalink" href="index.html#ValidateCustomResourceDefinitionUpdate">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateCustomResourceDefinitionUpdate(obj, oldObj *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceDefinition">CustomResourceDefinition</a>, requestGV <a href="../../../../../apimachinery/pkg/runtime/schema/index.html">schema</a>.<a href="../../../../../apimachinery/pkg/runtime/schema/index.html#GroupVersion">GroupVersion</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateCustomResourceDefinitionUpdate statically validates
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateUpdateCustomResourceDefinitionStatus">func <a href="http://localhost:6060/src/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/validation/validation.go?s=8268:8386#L152">ValidateUpdateCustomResourceDefinitionStatus</a>
+				<a class="permalink" href="index.html#ValidateUpdateCustomResourceDefinitionStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateUpdateCustomResourceDefinitionStatus(obj, oldObj *<a href="../index.html">apiextensions</a>.<a href="../index.html#CustomResourceDefinition">CustomResourceDefinition</a>) <a href="../../../../../apimachinery/pkg/util/validation/field/index.html">field</a>.<a href="../../../../../apimachinery/pkg/util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateUpdateCustomResourceDefinitionStatus statically validates
+</p>
+
+			
+			
+
+		
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

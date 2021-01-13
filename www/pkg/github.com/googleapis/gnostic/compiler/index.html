@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>compiler - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package compiler
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/googleapis/gnostic/compiler"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package compiler provides support functions to generated compiler code.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#BoolForScalarNode">func BoolForScalarNode(node *yaml.Node) (bool, bool)</a></dd>
+			
+				
+				<dd><a href="index.html#CallExtension">func CallExtension(context *Context, in *yaml.Node, extensionName string) (handled bool, response *any.Any, err error)</a></dd>
+			
+				
+				<dd><a href="index.html#ClearCaches">func ClearCaches()</a></dd>
+			
+				
+				<dd><a href="index.html#ClearFileCache">func ClearFileCache()</a></dd>
+			
+				
+				<dd><a href="index.html#ClearInfoCache">func ClearInfoCache()</a></dd>
+			
+				
+				<dd><a href="index.html#ConvertInterfaceArrayToStringArray">func ConvertInterfaceArrayToStringArray(interfaceArray []interface{}) []string</a></dd>
+			
+				
+				<dd><a href="index.html#Description">func Description(item interface{}) string</a></dd>
+			
+				
+				<dd><a href="index.html#DisableFileCache">func DisableFileCache()</a></dd>
+			
+				
+				<dd><a href="index.html#DisableInfoCache">func DisableInfoCache()</a></dd>
+			
+				
+				<dd><a href="index.html#Display">func Display(node *yaml.Node) string</a></dd>
+			
+				
+				<dd><a href="index.html#EnableFileCache">func EnableFileCache()</a></dd>
+			
+				
+				<dd><a href="index.html#EnableInfoCache">func EnableInfoCache()</a></dd>
+			
+				
+				<dd><a href="index.html#FetchFile">func FetchFile(fileurl string) ([]byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#FloatForScalarNode">func FloatForScalarNode(node *yaml.Node) (float64, bool)</a></dd>
+			
+				
+				<dd><a href="index.html#GetInfoCache">func GetInfoCache() map[string]*yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#IntForScalarNode">func IntForScalarNode(node *yaml.Node) (int64, bool)</a></dd>
+			
+				
+				<dd><a href="index.html#InvalidKeysInMap">func InvalidKeysInMap(m *yaml.Node, allowedKeys []string, allowedPatterns []*regexp.Regexp) []string</a></dd>
+			
+				
+				<dd><a href="index.html#MapHasKey">func MapHasKey(m *yaml.Node, key string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#MapValueForKey">func MapValueForKey(m *yaml.Node, key string) *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#Marshal">func Marshal(in *yaml.Node) []byte</a></dd>
+			
+				
+				<dd><a href="index.html#MissingKeysInMap">func MissingKeysInMap(m *yaml.Node, requiredKeys []string) []string</a></dd>
+			
+				
+				<dd><a href="index.html#NewErrorGroupOrNil">func NewErrorGroupOrNil(errors []error) error</a></dd>
+			
+				
+				<dd><a href="index.html#NewMappingNode">func NewMappingNode() *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#NewScalarNodeForBool">func NewScalarNodeForBool(b bool) *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#NewScalarNodeForFloat">func NewScalarNodeForFloat(f float64) *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#NewScalarNodeForInt">func NewScalarNodeForInt(i int64) *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#NewScalarNodeForString">func NewScalarNodeForString(s string) *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#NewSequenceNode">func NewSequenceNode() *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#NewSequenceNodeForStringArray">func NewSequenceNodeForStringArray(strings []string) *yaml.Node</a></dd>
+			
+				
+				<dd><a href="index.html#PluralProperties">func PluralProperties(count int) string</a></dd>
+			
+				
+				<dd><a href="index.html#ReadBytesForFile">func ReadBytesForFile(filename string) ([]byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#ReadInfoForRef">func ReadInfoForRef(basefile string, ref string) (*yaml.Node, error)</a></dd>
+			
+				
+				<dd><a href="index.html#ReadInfoFromBytes">func ReadInfoFromBytes(filename string, bytes []byte) (*yaml.Node, error)</a></dd>
+			
+				
+				<dd><a href="index.html#RemoveFromFileCache">func RemoveFromFileCache(fileurl string)</a></dd>
+			
+				
+				<dd><a href="index.html#RemoveFromInfoCache">func RemoveFromInfoCache(filename string)</a></dd>
+			
+				
+				<dd><a href="index.html#SequenceNodeForNode">func SequenceNodeForNode(node *yaml.Node) (*yaml.Node, bool)</a></dd>
+			
+				
+				<dd><a href="index.html#SortedKeysForMap">func SortedKeysForMap(m *yaml.Node) []string</a></dd>
+			
+				
+				<dd><a href="index.html#StringArrayContainsValue">func StringArrayContainsValue(array []string, value string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#StringArrayContainsValues">func StringArrayContainsValues(array []string, values []string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#StringArrayForSequenceNode">func StringArrayForSequenceNode(node *yaml.Node) []string</a></dd>
+			
+				
+				<dd><a href="index.html#StringForScalarNode">func StringForScalarNode(node *yaml.Node) (string, bool)</a></dd>
+			
+				
+				<dd><a href="index.html#StringValue">func StringValue(item interface{}) (value string, ok bool)</a></dd>
+			
+				
+				<dd><a href="index.html#UnpackMap">func UnpackMap(in *yaml.Node) (*yaml.Node, bool)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Context">type Context</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewContext">func NewContext(name string, parent *Context) *Context</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewContextWithExtensions">func NewContextWithExtensions(name string, parent *Context, extensionHandlers *[]ExtensionHandler) *Context</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Context.Description">func (context *Context) Description() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Error">type Error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewError">func NewError(context *Context, message string) *Error</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Error.Error">func (err *Error) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ErrorGroup">type ErrorGroup</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ErrorGroup.Error">func (group *ErrorGroup) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#ExtensionHandler">type ExtensionHandler</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/context.go">context.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/error.go">error.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/extensions.go">extensions.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go">helpers.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/main.go">main.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go">reader.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="BoolForScalarNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=2566:2618#L92">BoolForScalarNode</a>
+				<a class="permalink" href="index.html#BoolForScalarNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func BoolForScalarNode(node *yaml.<a href="index.html#Node">Node</a>) (<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+BoolForScalarNode returns the bool value of a node.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CallExtension">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/extensions.go?s=1039:1157#L25">CallExtension</a>
+				<a class="permalink" href="index.html#CallExtension">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CallExtension(context *<a href="index.html#Context">Context</a>, in *<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/">yaml</a>.<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/#Node">Node</a>, extensionName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (handled <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, response *<a href="../../../golang/protobuf/ptypes/any/index.html">any</a>.<a href="../../../golang/protobuf/ptypes/any/index.html#Any">Any</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+CallExtension calls a binary extension handler.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ClearCaches">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=3396:3414#L126">ClearCaches</a>
+				<a class="permalink" href="index.html#ClearCaches">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ClearCaches()</pre>
+			<p>
+ClearCaches clears all caches.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ClearFileCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=3078:3099#L112">ClearFileCache</a>
+				<a class="permalink" href="index.html#ClearFileCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ClearFileCache()</pre>
+			<p>
+ClearFileCache clears the file cache.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ClearInfoCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=3240:3261#L119">ClearInfoCache</a>
+				<a class="permalink" href="index.html#ClearInfoCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ClearInfoCache()</pre>
+			<p>
+ClearInfoCache clears the info cache.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ConvertInterfaceArrayToStringArray">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=2044:2122#L72">ConvertInterfaceArrayToStringArray</a>
+				<a class="permalink" href="index.html#ConvertInterfaceArrayToStringArray">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ConvertInterfaceArrayToStringArray(interfaceArray []interface{}) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+ConvertInterfaceArrayToStringArray converts an array of interfaces to an array of strings, if possible.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Description">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=8443:8484#L341">Description</a>
+				<a class="permalink" href="index.html#Description">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Description(item interface{}) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+Description returns a human-readable represention of an item.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="DisableFileCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=2061:2084#L66">DisableFileCache</a>
+				<a class="permalink" href="index.html#DisableFileCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DisableFileCache()</pre>
+			<p>
+DisableFileCache turns off file caching.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="DisableInfoCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=2220:2243#L73">DisableInfoCache</a>
+				<a class="permalink" href="index.html#DisableInfoCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func DisableInfoCache()</pre>
+			<p>
+DisableInfoCache turns off parsed info caching.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Display">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=8671:8707#L350">Display</a>
+				<a class="permalink" href="index.html#Display">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Display(node *yaml.<a href="index.html#Node">Node</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+Display returns a description of a node for use in error messages.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EnableFileCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=1756:1778#L52">EnableFileCache</a>
+				<a class="permalink" href="index.html#EnableFileCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EnableFileCache()</pre>
+			<p>
+EnableFileCache turns on file caching.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EnableInfoCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=1911:1933#L59">EnableInfoCache</a>
+				<a class="permalink" href="index.html#EnableInfoCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EnableInfoCache()</pre>
+			<p>
+EnableInfoCache turns on parsed info caching.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="FetchFile">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=3539:3585#L132">FetchFile</a>
+				<a class="permalink" href="index.html#FetchFile">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func FetchFile(fileurl <a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+FetchFile gets a specified file from the local filesystem or a remote location.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="FloatForScalarNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=3461:3517#L134">FloatForScalarNode</a>
+				<a class="permalink" href="index.html#FloatForScalarNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func FloatForScalarNode(node *yaml.<a href="index.html#Node">Node</a>) (<a href="http://localhost:6060/pkg/builtin/#float64">float64</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+FloatForScalarNode returns the float value of a node.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetInfoCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=2868:2909#L102">GetInfoCache</a>
+				<a class="permalink" href="index.html#GetInfoCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetInfoCache() map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]*<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/">yaml</a>.<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/#Node">Node</a></pre>
+			<p>
+GetInfoCache returns the info cache map.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IntForScalarNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=3019:3071#L113">IntForScalarNode</a>
+				<a class="permalink" href="index.html#IntForScalarNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IntForScalarNode(node *yaml.<a href="index.html#Node">Node</a>) (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+IntForScalarNode returns the integer value of a node.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="InvalidKeysInMap">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=5143:5243#L203">InvalidKeysInMap</a>
+				<a class="permalink" href="index.html#InvalidKeysInMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func InvalidKeysInMap(m *yaml.<a href="index.html#Node">Node</a>, allowedKeys []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, allowedPatterns []*<a href="http://localhost:6060/pkg/regexp/">regexp</a>.<a href="http://localhost:6060/pkg/regexp/#Regexp">Regexp</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+InvalidKeysInMap returns keys in a map that don&#39;t match a list of allowed keys and patterns.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MapHasKey">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=1335:1380#L40">MapHasKey</a>
+				<a class="permalink" href="index.html#MapHasKey">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MapHasKey(m *yaml.<a href="index.html#Node">Node</a>, key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+MapHasKey returns true if a yamlv2.MapSlice contains a specified key.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MapValueForKey">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=1662:1718#L56">MapValueForKey</a>
+				<a class="permalink" href="index.html#MapValueForKey">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MapValueForKey(m *yaml.<a href="index.html#Node">Node</a>, key <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+MapValueForKey gets the value of a map value for a specified key.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Marshal">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=8964:8998#L362">Marshal</a>
+				<a class="permalink" href="index.html#Marshal">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Marshal(in *yaml.<a href="index.html#Node">Node</a>) []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a></pre>
+			<p>
+Marshal creates a yaml version of a structure in our preferred style
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="MissingKeysInMap">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=4815:4882#L192">MissingKeysInMap</a>
+				<a class="permalink" href="index.html#MissingKeysInMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func MissingKeysInMap(m *yaml.<a href="index.html#Node">Node</a>, requiredKeys []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+MissingKeysInMap identifies which keys from a list of required keys are not in a map.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewErrorGroupOrNil">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/error.go?s=1307:1352#L32">NewErrorGroupOrNil</a>
+				<a class="permalink" href="index.html#NewErrorGroupOrNil">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewErrorGroupOrNil(errors []<a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+NewErrorGroupOrNil returns a new ErrorGroup for a slice of errors or nil if the slice is empty.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewMappingNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=5912:5944#L235">NewMappingNode</a>
+				<a class="permalink" href="index.html#NewMappingNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewMappingNode() *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+NewMappingNode creates a new Mapping node.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewScalarNodeForBool">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=6827:6871#L273">NewScalarNodeForBool</a>
+				<a class="permalink" href="index.html#NewScalarNodeForBool">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewScalarNodeForBool(b <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+NewScalarNodeForBool creates a new node to hold a bool.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewScalarNodeForFloat">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=7037:7085#L282">NewScalarNodeForFloat</a>
+				<a class="permalink" href="index.html#NewScalarNodeForFloat">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewScalarNodeForFloat(f <a href="http://localhost:6060/pkg/builtin/#float64">float64</a>) *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+NewScalarNodeForFloat creates a new node to hold a float.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewScalarNodeForInt">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=7253:7297#L291">NewScalarNodeForInt</a>
+				<a class="permalink" href="index.html#NewScalarNodeForInt">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewScalarNodeForInt(i <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+NewScalarNodeForInt creates a new node to hold an integer.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewScalarNodeForString">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=6287:6335#L252">NewScalarNodeForString</a>
+				<a class="permalink" href="index.html#NewScalarNodeForString">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewScalarNodeForString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+NewScalarNodeForString creates a new node to hold a string.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewSequenceNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=6084:6117#L243">NewSequenceNode</a>
+				<a class="permalink" href="index.html#NewSequenceNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewSequenceNode() *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+NewSequenceNode creates a new Sequence node.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewSequenceNodeForStringArray">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=6501:6564#L261">NewSequenceNodeForStringArray</a>
+				<a class="permalink" href="index.html#NewSequenceNodeForStringArray">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewSequenceNodeForStringArray(strings []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) *yaml.<a href="index.html#Node">Node</a></pre>
+			<p>
+NewSequenceNodeForStringArray creates a new node to hold an array of strings.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="PluralProperties">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=7465:7504#L300">PluralProperties</a>
+				<a class="permalink" href="index.html#PluralProperties">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func PluralProperties(count <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+PluralProperties returns the string &#34;properties&#34; pluralized.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ReadBytesForFile">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=4385:4439#L169">ReadBytesForFile</a>
+				<a class="permalink" href="index.html#ReadBytesForFile">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ReadBytesForFile(filename <a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ReadBytesForFile reads the bytes of a file.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ReadInfoForRef">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=5799:5867#L227">ReadInfoForRef</a>
+				<a class="permalink" href="index.html#ReadInfoForRef">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ReadInfoForRef(basefile <a href="http://localhost:6060/pkg/builtin/#string">string</a>, ref <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/">yaml</a>.<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/#Node">Node</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ReadInfoForRef reads a file and return the fragment needed to resolve a $ref.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ReadInfoFromBytes">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=4986:5059#L195">ReadInfoFromBytes</a>
+				<a class="permalink" href="index.html#ReadInfoFromBytes">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ReadInfoFromBytes(filename <a href="http://localhost:6060/pkg/builtin/#string">string</a>, bytes []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (*<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/">yaml</a>.<a href="http://localhost:6060/pkg/gopkg.in/yaml.v3/#Node">Node</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ReadInfoFromBytes unmarshals a file as a *yaml.Node.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RemoveFromFileCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=2389:2429#L80">RemoveFromFileCache</a>
+				<a class="permalink" href="index.html#RemoveFromFileCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RemoveFromFileCache(fileurl <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+			<p>
+RemoveFromFileCache removes an entry from the file cache.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RemoveFromInfoCache">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/reader.go?s=2636:2677#L91">RemoveFromInfoCache</a>
+				<a class="permalink" href="index.html#RemoveFromInfoCache">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RemoveFromInfoCache(filename <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+			<p>
+RemoveFromInfoCache removes an entry from the info cache.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SequenceNodeForNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=2366:2426#L84">SequenceNodeForNode</a>
+				<a class="permalink" href="index.html#SequenceNodeForNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SequenceNodeForNode(node *yaml.<a href="index.html#Node">Node</a>) (*yaml.<a href="index.html#Node">Node</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+SequenceNodeForNode returns a node if it is a SequenceNode.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SortedKeysForMap">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=1026:1070#L28">SortedKeysForMap</a>
+				<a class="permalink" href="index.html#SortedKeysForMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SortedKeysForMap(m *yaml.<a href="index.html#Node">Node</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+SortedKeysForMap returns the sorted keys of a yamlv2.MapSlice.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StringArrayContainsValue">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=7658:7722#L308">StringArrayContainsValue</a>
+				<a class="permalink" href="index.html#StringArrayContainsValue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StringArrayContainsValue(array []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+StringArrayContainsValue returns true if a string array contains a specified value.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StringArrayContainsValues">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=7919:7987#L318">StringArrayContainsValues</a>
+				<a class="permalink" href="index.html#StringArrayContainsValues">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StringArrayContainsValues(array []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, values []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+StringArrayContainsValues returns true if a string array contains all of a list of specified values.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StringArrayForSequenceNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=4478:4535#L180">StringArrayForSequenceNode</a>
+				<a class="permalink" href="index.html#StringArrayForSequenceNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StringArrayForSequenceNode(node *yaml.<a href="index.html#Node">Node</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+StringArrayForSequenceNode converts a sequence node to an array of strings, if possible.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StringForScalarNode">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=3946:4002#L155">StringForScalarNode</a>
+				<a class="permalink" href="index.html#StringForScalarNode">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StringForScalarNode(node *yaml.<a href="index.html#Node">Node</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+StringForScalarNode returns the string value of a node.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="StringValue">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=8160:8218#L328">StringValue</a>
+				<a class="permalink" href="index.html#StringValue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func StringValue(item interface{}) (value <a href="http://localhost:6060/pkg/builtin/#string">string</a>, ok <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+StringValue returns the string value of an item.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnpackMap">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/helpers.go?s=850:898#L20">UnpackMap</a>
+				<a class="permalink" href="index.html#UnpackMap">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnpackMap(in *yaml.<a href="index.html#Node">Node</a>) (*yaml.<a href="index.html#Node">Node</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+UnpackMap gets a *yaml.Node if possible.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Context">type <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/context.go?s=697:813#L8">Context</a>
+				<a class="permalink" href="index.html#Context">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Context contains state of the compiler as it traverses a document.
+</p>
+
+			<pre>type Context struct {
+<span id="Context.Parent"></span>    Parent            *<a href="index.html#Context">Context</a>
+<span id="Context.Name"></span>    Name              <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="Context.ExtensionHandlers"></span>    ExtensionHandlers *[]<a href="index.html#ExtensionHandler">ExtensionHandler</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewContext">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/context.go?s=1159:1213#L20">NewContext</a>
+					<a class="permalink" href="index.html#NewContext">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewContext(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, parent *<a href="index.html#Context">Context</a>) *<a href="index.html#Context">Context</a></pre>
+				<p>
+NewContext returns a new object representing the compiler state
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewContextWithExtensions">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/context.go?s=896:1003#L15">NewContextWithExtensions</a>
+					<a class="permalink" href="index.html#NewContextWithExtensions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewContextWithExtensions(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, parent *<a href="index.html#Context">Context</a>, extensionHandlers *[]<a href="index.html#ExtensionHandler">ExtensionHandler</a>) *<a href="index.html#Context">Context</a></pre>
+				<p>
+NewContextWithExtensions returns a new object representing the compiler state
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Context.Description">func (*Context) <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/context.go?s=1466:1510#L28">Description</a>
+					<a class="permalink" href="index.html#Context.Description">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (context *<a href="index.html#Context">Context</a>) Description() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Description returns a text description of the compiler state
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Error">type <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/error.go?s=699:754#L8">Error</a>
+				<a class="permalink" href="index.html#Error">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Error represents compiler errors and their location in the document.
+</p>
+
+			<pre>type Error struct {
+<span id="Error.Context"></span>    Context *<a href="index.html#Context">Context</a>
+<span id="Error.Message"></span>    Message <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewError">func <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/error.go?s=786:840#L14">NewError</a>
+					<a class="permalink" href="index.html#NewError">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewError(context *<a href="index.html#Context">Context</a>, message <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#Error">Error</a></pre>
+				<p>
+NewError creates an Error.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Error.Error">func (*Error) <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/error.go?s=944:976#L19">Error</a>
+					<a class="permalink" href="index.html#Error.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (err *<a href="index.html#Error">Error</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Error returns the string value of an Error.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ErrorGroup">type <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/error.go?s=1164:1206#L27">ErrorGroup</a>
+				<a class="permalink" href="index.html#ErrorGroup">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ErrorGroup is a container for groups of Error values.
+</p>
+
+			<pre>type ErrorGroup struct {
+<span id="ErrorGroup.Errors"></span>    Errors []<a href="http://localhost:6060/pkg/builtin/#error">error</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ErrorGroup.Error">func (*ErrorGroup) <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/error.go?s=1493:1532#L42">Error</a>
+					<a class="permalink" href="index.html#ErrorGroup.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (group *<a href="index.html#ErrorGroup">ErrorGroup</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="ExtensionHandler">type <a href="http://localhost:6060/src/github.com/googleapis/gnostic/compiler/extensions.go?s=941:986#L20">ExtensionHandler</a>
+				<a class="permalink" href="index.html#ExtensionHandler">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ExtensionHandler describes a binary that is called by the compiler to handle specification extensions.
+</p>
+
+			<pre>type ExtensionHandler struct {
+<span id="ExtensionHandler.Name"></span>    Name <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

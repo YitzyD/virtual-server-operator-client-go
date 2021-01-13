@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>sets - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package sets
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/sets"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package sets has auto-generated set types.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#Byte">type Byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ByteKeySet">func ByteKeySet(theMap interface{}) Byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewByte">func NewByte(items ...byte) Byte</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Delete">func (s Byte) Delete(items ...byte) Byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Difference">func (s Byte) Difference(s2 Byte) Byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Equal">func (s1 Byte) Equal(s2 Byte) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Has">func (s Byte) Has(item byte) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.HasAll">func (s Byte) HasAll(items ...byte) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.HasAny">func (s Byte) HasAny(items ...byte) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Insert">func (s Byte) Insert(items ...byte) Byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Intersection">func (s1 Byte) Intersection(s2 Byte) Byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.IsSuperset">func (s1 Byte) IsSuperset(s2 Byte) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Len">func (s Byte) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.List">func (s Byte) List() []byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.PopAny">func (s Byte) PopAny() (byte, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.Union">func (s1 Byte) Union(s2 Byte) Byte</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Byte.UnsortedList">func (s Byte) UnsortedList() []byte</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Empty">type Empty</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Int">type Int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntKeySet">func IntKeySet(theMap interface{}) Int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewInt">func NewInt(items ...int) Int</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Delete">func (s Int) Delete(items ...int) Int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Difference">func (s Int) Difference(s2 Int) Int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Equal">func (s1 Int) Equal(s2 Int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Has">func (s Int) Has(item int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.HasAll">func (s Int) HasAll(items ...int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.HasAny">func (s Int) HasAny(items ...int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Insert">func (s Int) Insert(items ...int) Int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Intersection">func (s1 Int) Intersection(s2 Int) Int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.IsSuperset">func (s1 Int) IsSuperset(s2 Int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Len">func (s Int) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.List">func (s Int) List() []int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.PopAny">func (s Int) PopAny() (int, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.Union">func (s1 Int) Union(s2 Int) Int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int.UnsortedList">func (s Int) UnsortedList() []int</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Int32">type Int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32KeySet">func Int32KeySet(theMap interface{}) Int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewInt32">func NewInt32(items ...int32) Int32</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Delete">func (s Int32) Delete(items ...int32) Int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Difference">func (s Int32) Difference(s2 Int32) Int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Equal">func (s1 Int32) Equal(s2 Int32) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Has">func (s Int32) Has(item int32) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.HasAll">func (s Int32) HasAll(items ...int32) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.HasAny">func (s Int32) HasAny(items ...int32) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Insert">func (s Int32) Insert(items ...int32) Int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Intersection">func (s1 Int32) Intersection(s2 Int32) Int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.IsSuperset">func (s1 Int32) IsSuperset(s2 Int32) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Len">func (s Int32) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.List">func (s Int32) List() []int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.PopAny">func (s Int32) PopAny() (int32, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.Union">func (s1 Int32) Union(s2 Int32) Int32</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int32.UnsortedList">func (s Int32) UnsortedList() []int32</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Int64">type Int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64KeySet">func Int64KeySet(theMap interface{}) Int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewInt64">func NewInt64(items ...int64) Int64</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Delete">func (s Int64) Delete(items ...int64) Int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Difference">func (s Int64) Difference(s2 Int64) Int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Equal">func (s1 Int64) Equal(s2 Int64) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Has">func (s Int64) Has(item int64) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.HasAll">func (s Int64) HasAll(items ...int64) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.HasAny">func (s Int64) HasAny(items ...int64) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Insert">func (s Int64) Insert(items ...int64) Int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Intersection">func (s1 Int64) Intersection(s2 Int64) Int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.IsSuperset">func (s1 Int64) IsSuperset(s2 Int64) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Len">func (s Int64) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.List">func (s Int64) List() []int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.PopAny">func (s Int64) PopAny() (int64, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.Union">func (s1 Int64) Union(s2 Int64) Int64</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Int64.UnsortedList">func (s Int64) UnsortedList() []int64</a></dd>
+				
+			
+				
+				<dd><a href="index.html#String">type String</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewString">func NewString(items ...string) String</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#StringKeySet">func StringKeySet(theMap interface{}) String</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Delete">func (s String) Delete(items ...string) String</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Difference">func (s String) Difference(s2 String) String</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Equal">func (s1 String) Equal(s2 String) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Has">func (s String) Has(item string) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.HasAll">func (s String) HasAll(items ...string) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.HasAny">func (s String) HasAny(items ...string) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Insert">func (s String) Insert(items ...string) String</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Intersection">func (s1 String) Intersection(s2 String) String</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.IsSuperset">func (s1 String) IsSuperset(s2 String) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Len">func (s String) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.List">func (s String) List() []string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.PopAny">func (s String) PopAny() (string, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.Union">func (s1 String) Union(s2 String) String</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#String.UnsortedList">func (s String) UnsortedList() []string</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go">byte.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/empty.go">empty.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go">int.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go">int32.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go">int64.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go">string.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="Byte">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=753:777#L17">Byte</a>
+				<a class="permalink" href="index.html#Byte">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+sets.Byte is a set of bytes, implemented via map[byte]struct{} for minimal memory consumption.
+</p>
+
+			<pre>type Byte map[<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>]<a href="index.html#Empty">Empty</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ByteKeySet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=1058:1098#L28">ByteKeySet</a>
+					<a class="permalink" href="index.html#ByteKeySet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ByteKeySet(theMap interface{}) <a href="index.html#Byte">Byte</a></pre>
+				<p>
+ByteKeySet creates a Byte from a keys of a map[byte](? extends interface{}).
+If the value passed in is not actually a map, this will panic.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewByte">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=828:860#L20">NewByte</a>
+					<a class="permalink" href="index.html#NewByte">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewByte(items ...<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="index.html#Byte">Byte</a></pre>
+				<p>
+NewByte creates a Byte from a list of values.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Byte.Delete">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=1431:1471#L47">Delete</a>
+					<a class="permalink" href="index.html#Byte.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) Delete(items ...<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="index.html#Byte">Byte</a></pre>
+				<p>
+Delete removes all items from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.Difference">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=2264:2302#L86">Difference</a>
+					<a class="permalink" href="index.html#Byte.Difference">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) Difference(s2 <a href="index.html#Byte">Byte</a>) <a href="index.html#Byte">Byte</a></pre>
+				<p>
+Difference returns a set of objects that are not in s2
+For example:
+s1 = {a1, a2, a3}
+s2 = {a1, a2, a4, a5}
+s1.Difference(s2) = {a3}
+s2.Difference(s1) = {a4, a5}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.Equal">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=3579:3613#L149">Equal</a>
+					<a class="permalink" href="index.html#Byte.Equal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Byte">Byte</a>) Equal(s2 <a href="index.html#Byte">Byte</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Equal returns true if and only if s1 is equal (as a set) to s2.
+Two sets are equal if their membership is identical.
+(In practice, this means same elements, order doesn&#39;t matter)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.Has">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=1603:1636#L55">Has</a>
+					<a class="permalink" href="index.html#Byte.Has">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) Has(item <a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Has returns true if and only if item is contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.HasAll">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=1759:1799#L61">HasAll</a>
+					<a class="permalink" href="index.html#Byte.HasAll">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) HasAll(items ...<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAll returns true if and only if all items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.HasAny">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=1953:1993#L71">HasAny</a>
+					<a class="permalink" href="index.html#Byte.HasAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) HasAny(items ...<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAny returns true if any items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.Insert">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=1280:1320#L39">Insert</a>
+					<a class="permalink" href="index.html#Byte.Insert">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) Insert(items ...<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="index.html#Byte">Byte</a></pre>
+				<p>
+Insert adds items to the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.Intersection">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=2929:2970#L118">Intersection</a>
+					<a class="permalink" href="index.html#Byte.Intersection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Byte">Byte</a>) Intersection(s2 <a href="index.html#Byte">Byte</a>) <a href="index.html#Byte">Byte</a></pre>
+				<p>
+Intersection returns a new set which includes the item in BOTH s1 and s2
+For example:
+s1 = {a1, a2}
+s2 = {a2, a3}
+s1.Intersection(s2) = {a2}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.IsSuperset">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=3265:3304#L137">IsSuperset</a>
+					<a class="permalink" href="index.html#Byte.IsSuperset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Byte">Byte</a>) IsSuperset(s2 <a href="index.html#Byte">Byte</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+IsSuperset returns true if and only if s1 is a superset of s2.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.Len">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=4567:4590#L189">Len</a>
+					<a class="permalink" href="index.html#Byte.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Len returns the size of the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.List">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=3979:4006#L160">List</a>
+					<a class="permalink" href="index.html#Byte.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) List() []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a></pre>
+				<p>
+List returns the contents as a sorted byte slice.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.PopAny">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=4385:4420#L179">PopAny</a>
+					<a class="permalink" href="index.html#Byte.PopAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) PopAny() (<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Returns a single element from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.Union">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=2603:2637#L102">Union</a>
+					<a class="permalink" href="index.html#Byte.Union">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Byte">Byte</a>) Union(s2 <a href="index.html#Byte">Byte</a>) <a href="index.html#Byte">Byte</a></pre>
+				<p>
+Union returns a new set which includes items in either s1 or s2.
+For example:
+s1 = {a1, a2}
+s2 = {a3, a4}
+s1.Union(s2) = {a1, a2, a3, a4}
+s2.Union(s1) = {a1, a2, a3, a4}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Byte.UnsortedList">func (Byte) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/byte.go?s=4208:4243#L170">UnsortedList</a>
+					<a class="permalink" href="index.html#Byte.UnsortedList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Byte">Byte</a>) UnsortedList() []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a></pre>
+				<p>
+UnsortedList returns the slice with contents in random order.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Empty">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/empty.go?s=808:827#L13">Empty</a>
+				<a class="permalink" href="index.html#Empty">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Empty is public since it is used by some internal API objects for conversions between external
+string arrays and internal sets, and conversion logic requires public types today.
+</p>
+
+			<pre>type Empty struct{}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Int">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=750:772#L17">Int</a>
+				<a class="permalink" href="index.html#Int">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+sets.Int is a set of ints, implemented via map[int]struct{} for minimal memory consumption.
+</p>
+
+			<pre>type Int map[<a href="http://localhost:6060/pkg/builtin/#int">int</a>]<a href="index.html#Empty">Empty</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="IntKeySet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=1044:1082#L28">IntKeySet</a>
+					<a class="permalink" href="index.html#IntKeySet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func IntKeySet(theMap interface{}) <a href="index.html#Int">Int</a></pre>
+				<p>
+IntKeySet creates a Int from a keys of a map[int](? extends interface{}).
+If the value passed in is not actually a map, this will panic.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewInt">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=821:850#L20">NewInt</a>
+					<a class="permalink" href="index.html#NewInt">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewInt(items ...<a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="index.html#Int">Int</a></pre>
+				<p>
+NewInt creates a Int from a list of values.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Int.Delete">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=1410:1447#L47">Delete</a>
+					<a class="permalink" href="index.html#Int.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) Delete(items ...<a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="index.html#Int">Int</a></pre>
+				<p>
+Delete removes all items from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.Difference">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=2234:2269#L86">Difference</a>
+					<a class="permalink" href="index.html#Int.Difference">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) Difference(s2 <a href="index.html#Int">Int</a>) <a href="index.html#Int">Int</a></pre>
+				<p>
+Difference returns a set of objects that are not in s2
+For example:
+s1 = {a1, a2, a3}
+s2 = {a1, a2, a4, a5}
+s1.Difference(s2) = {a3}
+s2.Difference(s1) = {a4, a5}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.Equal">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=3534:3566#L149">Equal</a>
+					<a class="permalink" href="index.html#Int.Equal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int">Int</a>) Equal(s2 <a href="index.html#Int">Int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Equal returns true if and only if s1 is equal (as a set) to s2.
+Two sets are equal if their membership is identical.
+(In practice, this means same elements, order doesn&#39;t matter)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.Has">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=1579:1610#L55">Has</a>
+					<a class="permalink" href="index.html#Int.Has">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) Has(item <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Has returns true if and only if item is contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.HasAll">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=1733:1771#L61">HasAll</a>
+					<a class="permalink" href="index.html#Int.HasAll">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) HasAll(items ...<a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAll returns true if and only if all items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.HasAny">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=1925:1963#L71">HasAny</a>
+					<a class="permalink" href="index.html#Int.HasAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) HasAny(items ...<a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAny returns true if any items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.Insert">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=1262:1299#L39">Insert</a>
+					<a class="permalink" href="index.html#Int.Insert">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) Insert(items ...<a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="index.html#Int">Int</a></pre>
+				<p>
+Insert adds items to the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.Intersection">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=2891:2929#L118">Intersection</a>
+					<a class="permalink" href="index.html#Int.Intersection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int">Int</a>) Intersection(s2 <a href="index.html#Int">Int</a>) <a href="index.html#Int">Int</a></pre>
+				<p>
+Intersection returns a new set which includes the item in BOTH s1 and s2
+For example:
+s1 = {a1, a2}
+s2 = {a2, a3}
+s1.Intersection(s2) = {a2}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.IsSuperset">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=3222:3259#L137">IsSuperset</a>
+					<a class="permalink" href="index.html#Int.IsSuperset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int">Int</a>) IsSuperset(s2 <a href="index.html#Int">Int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+IsSuperset returns true if and only if s1 is a superset of s2.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.Len">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=4503:4525#L189">Len</a>
+					<a class="permalink" href="index.html#Int.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Len returns the size of the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.List">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=3925:3950#L160">List</a>
+					<a class="permalink" href="index.html#Int.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) List() []<a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+List returns the contents as a sorted int slice.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.PopAny">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=4324:4357#L179">PopAny</a>
+					<a class="permalink" href="index.html#Int.PopAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) PopAny() (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Returns a single element from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.Union">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=2569:2600#L102">Union</a>
+					<a class="permalink" href="index.html#Int.Union">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int">Int</a>) Union(s2 <a href="index.html#Int">Int</a>) <a href="index.html#Int">Int</a></pre>
+				<p>
+Union returns a new set which includes items in either s1 or s2.
+For example:
+s1 = {a1, a2}
+s2 = {a3, a4}
+s1.Union(s2) = {a1, a2, a3, a4}
+s2.Union(s1) = {a1, a2, a3, a4}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int.UnsortedList">func (Int) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int.go?s=4150:4183#L170">UnsortedList</a>
+					<a class="permalink" href="index.html#Int.UnsortedList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int">Int</a>) UnsortedList() []<a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+UnsortedList returns the slice with contents in random order.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Int32">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=756:782#L17">Int32</a>
+				<a class="permalink" href="index.html#Int32">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+sets.Int32 is a set of int32s, implemented via map[int32]struct{} for minimal memory consumption.
+</p>
+
+			<pre>type Int32 map[<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>]<a href="index.html#Empty">Empty</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="Int32KeySet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=1072:1114#L28">Int32KeySet</a>
+					<a class="permalink" href="index.html#Int32KeySet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Int32KeySet(theMap interface{}) <a href="index.html#Int32">Int32</a></pre>
+				<p>
+Int32KeySet creates a Int32 from a keys of a map[int32](? extends interface{}).
+If the value passed in is not actually a map, this will panic.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewInt32">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=835:870#L20">NewInt32</a>
+					<a class="permalink" href="index.html#NewInt32">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewInt32(items ...<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) <a href="index.html#Int32">Int32</a></pre>
+				<p>
+NewInt32 creates a Int32 from a list of values.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Int32.Delete">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=1452:1495#L47">Delete</a>
+					<a class="permalink" href="index.html#Int32.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) Delete(items ...<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) <a href="index.html#Int32">Int32</a></pre>
+				<p>
+Delete removes all items from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.Difference">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=2294:2335#L86">Difference</a>
+					<a class="permalink" href="index.html#Int32.Difference">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) Difference(s2 <a href="index.html#Int32">Int32</a>) <a href="index.html#Int32">Int32</a></pre>
+				<p>
+Difference returns a set of objects that are not in s2
+For example:
+s1 = {a1, a2, a3}
+s2 = {a1, a2, a4, a5}
+s1.Difference(s2) = {a3}
+s2.Difference(s1) = {a4, a5}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.Equal">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=3624:3660#L149">Equal</a>
+					<a class="permalink" href="index.html#Int32.Equal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int32">Int32</a>) Equal(s2 <a href="index.html#Int32">Int32</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Equal returns true if and only if s1 is equal (as a set) to s2.
+Two sets are equal if their membership is identical.
+(In practice, this means same elements, order doesn&#39;t matter)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.Has">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=1627:1662#L55">Has</a>
+					<a class="permalink" href="index.html#Int32.Has">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) Has(item <a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Has returns true if and only if item is contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.HasAll">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=1785:1827#L61">HasAll</a>
+					<a class="permalink" href="index.html#Int32.HasAll">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) HasAll(items ...<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAll returns true if and only if all items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.HasAny">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=1981:2023#L71">HasAny</a>
+					<a class="permalink" href="index.html#Int32.HasAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) HasAny(items ...<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAny returns true if any items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.Insert">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=1298:1341#L39">Insert</a>
+					<a class="permalink" href="index.html#Int32.Insert">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) Insert(items ...<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>) <a href="index.html#Int32">Int32</a></pre>
+				<p>
+Insert adds items to the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.Intersection">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=2967:3011#L118">Intersection</a>
+					<a class="permalink" href="index.html#Int32.Intersection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int32">Int32</a>) Intersection(s2 <a href="index.html#Int32">Int32</a>) <a href="index.html#Int32">Int32</a></pre>
+				<p>
+Intersection returns a new set which includes the item in BOTH s1 and s2
+For example:
+s1 = {a1, a2}
+s2 = {a2, a3}
+s1.Intersection(s2) = {a2}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.IsSuperset">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=3308:3349#L137">IsSuperset</a>
+					<a class="permalink" href="index.html#Int32.IsSuperset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int32">Int32</a>) IsSuperset(s2 <a href="index.html#Int32">Int32</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+IsSuperset returns true if and only if s1 is a superset of s2.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.Len">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=4631:4655#L189">Len</a>
+					<a class="permalink" href="index.html#Int32.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Len returns the size of the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.List">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=4033:4062#L160">List</a>
+					<a class="permalink" href="index.html#Int32.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) List() []<a href="http://localhost:6060/pkg/builtin/#int32">int32</a></pre>
+				<p>
+List returns the contents as a sorted int32 slice.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.PopAny">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=4446:4483#L179">PopAny</a>
+					<a class="permalink" href="index.html#Int32.PopAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) PopAny() (<a href="http://localhost:6060/pkg/builtin/#int32">int32</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Returns a single element from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.Union">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=2637:2674#L102">Union</a>
+					<a class="permalink" href="index.html#Int32.Union">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int32">Int32</a>) Union(s2 <a href="index.html#Int32">Int32</a>) <a href="index.html#Int32">Int32</a></pre>
+				<p>
+Union returns a new set which includes items in either s1 or s2.
+For example:
+s1 = {a1, a2}
+s2 = {a3, a4}
+s1.Union(s2) = {a1, a2, a3, a4}
+s2.Union(s1) = {a1, a2, a3, a4}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int32.UnsortedList">func (Int32) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int32.go?s=4266:4303#L170">UnsortedList</a>
+					<a class="permalink" href="index.html#Int32.UnsortedList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int32">Int32</a>) UnsortedList() []<a href="http://localhost:6060/pkg/builtin/#int32">int32</a></pre>
+				<p>
+UnsortedList returns the slice with contents in random order.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Int64">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=756:782#L17">Int64</a>
+				<a class="permalink" href="index.html#Int64">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+sets.Int64 is a set of int64s, implemented via map[int64]struct{} for minimal memory consumption.
+</p>
+
+			<pre>type Int64 map[<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>]<a href="index.html#Empty">Empty</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="Int64KeySet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=1072:1114#L28">Int64KeySet</a>
+					<a class="permalink" href="index.html#Int64KeySet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Int64KeySet(theMap interface{}) <a href="index.html#Int64">Int64</a></pre>
+				<p>
+Int64KeySet creates a Int64 from a keys of a map[int64](? extends interface{}).
+If the value passed in is not actually a map, this will panic.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewInt64">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=835:870#L20">NewInt64</a>
+					<a class="permalink" href="index.html#NewInt64">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewInt64(items ...<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="index.html#Int64">Int64</a></pre>
+				<p>
+NewInt64 creates a Int64 from a list of values.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Int64.Delete">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=1452:1495#L47">Delete</a>
+					<a class="permalink" href="index.html#Int64.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) Delete(items ...<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="index.html#Int64">Int64</a></pre>
+				<p>
+Delete removes all items from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.Difference">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=2294:2335#L86">Difference</a>
+					<a class="permalink" href="index.html#Int64.Difference">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) Difference(s2 <a href="index.html#Int64">Int64</a>) <a href="index.html#Int64">Int64</a></pre>
+				<p>
+Difference returns a set of objects that are not in s2
+For example:
+s1 = {a1, a2, a3}
+s2 = {a1, a2, a4, a5}
+s1.Difference(s2) = {a3}
+s2.Difference(s1) = {a4, a5}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.Equal">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=3624:3660#L149">Equal</a>
+					<a class="permalink" href="index.html#Int64.Equal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int64">Int64</a>) Equal(s2 <a href="index.html#Int64">Int64</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Equal returns true if and only if s1 is equal (as a set) to s2.
+Two sets are equal if their membership is identical.
+(In practice, this means same elements, order doesn&#39;t matter)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.Has">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=1627:1662#L55">Has</a>
+					<a class="permalink" href="index.html#Int64.Has">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) Has(item <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Has returns true if and only if item is contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.HasAll">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=1785:1827#L61">HasAll</a>
+					<a class="permalink" href="index.html#Int64.HasAll">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) HasAll(items ...<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAll returns true if and only if all items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.HasAny">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=1981:2023#L71">HasAny</a>
+					<a class="permalink" href="index.html#Int64.HasAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) HasAny(items ...<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAny returns true if any items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.Insert">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=1298:1341#L39">Insert</a>
+					<a class="permalink" href="index.html#Int64.Insert">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) Insert(items ...<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) <a href="index.html#Int64">Int64</a></pre>
+				<p>
+Insert adds items to the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.Intersection">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=2967:3011#L118">Intersection</a>
+					<a class="permalink" href="index.html#Int64.Intersection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int64">Int64</a>) Intersection(s2 <a href="index.html#Int64">Int64</a>) <a href="index.html#Int64">Int64</a></pre>
+				<p>
+Intersection returns a new set which includes the item in BOTH s1 and s2
+For example:
+s1 = {a1, a2}
+s2 = {a2, a3}
+s1.Intersection(s2) = {a2}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.IsSuperset">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=3308:3349#L137">IsSuperset</a>
+					<a class="permalink" href="index.html#Int64.IsSuperset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int64">Int64</a>) IsSuperset(s2 <a href="index.html#Int64">Int64</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+IsSuperset returns true if and only if s1 is a superset of s2.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.Len">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=4631:4655#L189">Len</a>
+					<a class="permalink" href="index.html#Int64.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Len returns the size of the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.List">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=4033:4062#L160">List</a>
+					<a class="permalink" href="index.html#Int64.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) List() []<a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				<p>
+List returns the contents as a sorted int64 slice.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.PopAny">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=4446:4483#L179">PopAny</a>
+					<a class="permalink" href="index.html#Int64.PopAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) PopAny() (<a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Returns a single element from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.Union">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=2637:2674#L102">Union</a>
+					<a class="permalink" href="index.html#Int64.Union">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#Int64">Int64</a>) Union(s2 <a href="index.html#Int64">Int64</a>) <a href="index.html#Int64">Int64</a></pre>
+				<p>
+Union returns a new set which includes items in either s1 or s2.
+For example:
+s1 = {a1, a2}
+s2 = {a3, a4}
+s1.Union(s2) = {a1, a2, a3, a4}
+s2.Union(s1) = {a1, a2, a3, a4}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Int64.UnsortedList">func (Int64) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/int64.go?s=4266:4303#L170">UnsortedList</a>
+					<a class="permalink" href="index.html#Int64.UnsortedList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#Int64">Int64</a>) UnsortedList() []<a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+				<p>
+UnsortedList returns the slice with contents in random order.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="String">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=759:787#L17">String</a>
+				<a class="permalink" href="index.html#String">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+sets.String is a set of strings, implemented via map[string]struct{} for minimal memory consumption.
+</p>
+
+			<pre>type String map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="index.html#Empty">Empty</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewString">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=842:880#L20">NewString</a>
+					<a class="permalink" href="index.html#NewString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewString(items ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#String">String</a></pre>
+				<p>
+NewString creates a String from a list of values.
+</p>
+
+				
+				
+			
+				
+				<h3 id="StringKeySet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=1086:1130#L28">StringKeySet</a>
+					<a class="permalink" href="index.html#StringKeySet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func StringKeySet(theMap interface{}) <a href="index.html#String">String</a></pre>
+				<p>
+StringKeySet creates a String from a keys of a map[string](? extends interface{}).
+If the value passed in is not actually a map, this will panic.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="String.Delete">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=1473:1519#L47">Delete</a>
+					<a class="permalink" href="index.html#String.Delete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) Delete(items ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#String">String</a></pre>
+				<p>
+Delete removes all items from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.Difference">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=2324:2368#L86">Difference</a>
+					<a class="permalink" href="index.html#String.Difference">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) Difference(s2 <a href="index.html#String">String</a>) <a href="index.html#String">String</a></pre>
+				<p>
+Difference returns a set of objects that are not in s2
+For example:
+s1 = {a1, a2, a3}
+s2 = {a1, a2, a4, a5}
+s1.Difference(s2) = {a3}
+s2.Difference(s1) = {a4, a5}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.Equal">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=3669:3707#L149">Equal</a>
+					<a class="permalink" href="index.html#String.Equal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#String">String</a>) Equal(s2 <a href="index.html#String">String</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Equal returns true if and only if s1 is equal (as a set) to s2.
+Two sets are equal if their membership is identical.
+(In practice, this means same elements, order doesn&#39;t matter)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.Has">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=1651:1688#L55">Has</a>
+					<a class="permalink" href="index.html#String.Has">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) Has(item <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Has returns true if and only if item is contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.HasAll">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=1811:1855#L61">HasAll</a>
+					<a class="permalink" href="index.html#String.HasAll">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) HasAll(items ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAll returns true if and only if all items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.HasAny">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=2009:2053#L71">HasAny</a>
+					<a class="permalink" href="index.html#String.HasAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) HasAny(items ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+HasAny returns true if any items are contained in the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.Insert">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=1316:1362#L39">Insert</a>
+					<a class="permalink" href="index.html#String.Insert">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) Insert(items ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#String">String</a></pre>
+				<p>
+Insert adds items to the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.Intersection">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=3005:3052#L118">Intersection</a>
+					<a class="permalink" href="index.html#String.Intersection">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#String">String</a>) Intersection(s2 <a href="index.html#String">String</a>) <a href="index.html#String">String</a></pre>
+				<p>
+Intersection returns a new set which includes the item in BOTH s1 and s2
+For example:
+s1 = {a1, a2}
+s2 = {a2, a3}
+s1.Intersection(s2) = {a2}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.IsSuperset">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=3351:3394#L137">IsSuperset</a>
+					<a class="permalink" href="index.html#String.IsSuperset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#String">String</a>) IsSuperset(s2 <a href="index.html#String">String</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+IsSuperset returns true if and only if s1 is a superset of s2.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.Len">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=4695:4720#L189">Len</a>
+					<a class="permalink" href="index.html#String.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Len returns the size of the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.List">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=4087:4118#L160">List</a>
+					<a class="permalink" href="index.html#String.List">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) List() []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+List returns the contents as a sorted string slice.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.PopAny">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=4507:4546#L179">PopAny</a>
+					<a class="permalink" href="index.html#String.PopAny">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) PopAny() (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Returns a single element from the set.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.Union">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=2671:2711#L102">Union</a>
+					<a class="permalink" href="index.html#String.Union">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s1 <a href="index.html#String">String</a>) Union(s2 <a href="index.html#String">String</a>) <a href="index.html#String">String</a></pre>
+				<p>
+Union returns a new set which includes items in either s1 or s2.
+For example:
+s1 = {a1, a2}
+s2 = {a3, a4}
+s1.Union(s2) = {a1, a2, a3, a4}
+s2.Union(s1) = {a1, a2, a3, a4}
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="String.UnsortedList">func (String) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/sets/string.go?s=4324:4363#L170">UnsortedList</a>
+					<a class="permalink" href="index.html#String.UnsortedList">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (s <a href="index.html#String">String</a>) UnsortedList() []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+UnsortedList returns the slice with contents in random order.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="types/index.html">types</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						Package types just provides input types to the set generator.
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

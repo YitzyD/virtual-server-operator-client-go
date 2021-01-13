@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>inf - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package inf
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "gopkg.in/inf.v0"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+				<dd><a href="index.html#pkg-examples" class="examplesLink">Examples</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package inf (type inf.Dec) implements &#34;infinite-precision&#34; decimal
+arithmetic.
+&#34;Infinite precision&#34; describes two characteristics: practically unlimited
+precision for decimal number representation and no support for calculating
+with any specific fixed precision.
+(Although there is no practical limit on precision, inf.Dec can only
+represent finite decimals.)
+</p>
+<p>
+This package is currently in experimental stage and the API may change.
+</p>
+<p>
+This package does NOT support:
+</p>
+<pre>- rounding to specific precisions (as opposed to specific decimal positions)
+- the notion of context (each rounding must be explicit)
+- NaN and Inf values, and distinguishing between positive and negative zero
+- conversions to and from float32/64 types
+</pre>
+<p>
+Features considered for possible addition:
+</p>
+<pre>+ formatting options
++ Exp method
++ combined operations such as AddRound/MulAdd etc
++ exchanging data in decimal32/64/128 formats
+</pre>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="index.html#Dec">type Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewDec">func NewDec(unscaled int64, scale Scale) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewDecBig">func NewDecBig(unscaled *big.Int, scale Scale) *Dec</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Abs">func (z *Dec) Abs(x *Dec) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Add">func (z *Dec) Add(x, y *Dec) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Cmp">func (x *Dec) Cmp(y *Dec) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Format">func (x *Dec) Format(s fmt.State, ch rune)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.GobDecode">func (z *Dec) GobDecode(buf []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.GobEncode">func (x *Dec) GobEncode() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.MarshalText">func (x *Dec) MarshalText() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Mul">func (z *Dec) Mul(x, y *Dec) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Neg">func (z *Dec) Neg(x *Dec) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.QuoExact">func (z *Dec) QuoExact(x, y *Dec) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.QuoRound">func (z *Dec) QuoRound(x, y *Dec, s Scale, r Rounder) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Round">func (z *Dec) Round(x *Dec, s Scale, r Rounder) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Scale">func (x *Dec) Scale() Scale</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Scan">func (z *Dec) Scan(s fmt.ScanState, ch rune) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Set">func (z *Dec) Set(x *Dec) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.SetScale">func (z *Dec) SetScale(scale Scale) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.SetString">func (z *Dec) SetString(s string) (*Dec, bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.SetUnscaled">func (z *Dec) SetUnscaled(unscaled int64) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.SetUnscaledBig">func (z *Dec) SetUnscaledBig(unscaled *big.Int) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Sign">func (x *Dec) Sign() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.String">func (x *Dec) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Sub">func (z *Dec) Sub(x, y *Dec) *Dec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.UnmarshalText">func (z *Dec) UnmarshalText(data []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.Unscaled">func (x *Dec) Unscaled() (u int64, ok bool)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Dec.UnscaledBig">func (x *Dec) UnscaledBig() *big.Int</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Rounder">type Rounder</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Scale">type Scale</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+		<div id="pkg-examples">
+			<h3>Examples</h3>
+			<div class="js-expandAll expandAll collapsed">(Expand All)</div>
+			<dl>
+			
+			<dd><a class="exampleLink" href="index.html#example_Dec_QuoExact_fail">Dec.QuoExact (Fail)</a></dd>
+			
+			<dd><a class="exampleLink" href="index.html#example_Dec_QuoExact_ok">Dec.QuoExact (Ok)</a></dd>
+			
+			<dd><a class="exampleLink" href="index.html#example_Dec_QuoRound_scale2RoundCeil">Dec.QuoRound (Scale2RoundCeil)</a></dd>
+			
+			<dd><a class="exampleLink" href="index.html#example_Dec_QuoRound_scale2RoundDown">Dec.QuoRound (Scale2RoundDown)</a></dd>
+			
+			<dd><a class="exampleLink" href="index.html#example_Dec_Scan">Dec.Scan</a></dd>
+			
+			<dd><a class="exampleLink" href="index.html#example_Dec_SetString">Dec.SetString</a></dd>
+			
+			<dd><a class="exampleLink" href="index.html#example_Rounder">Rounder</a></dd>
+			
+			</dl>
+		</div>
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go">dec.go</a>
+			
+				<a href="http://localhost:6060/src/gopkg.in/inf.v0/rounder.go">rounder.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="Dec">type <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=3094:3147#L73">Dec</a>
+				<a class="permalink" href="index.html#Dec">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+A Dec represents a signed arbitrary-precision decimal.
+It is a combination of a sign, an arbitrary-precision integer coefficient
+value, and a signed fixed-precision exponent value.
+The sign and the coefficient value are handled together as a signed value
+and referred to as the unscaled value.
+(Positive and negative zero values are not distinguished.)
+Since the exponent is most commonly non-positive, it is handled in negated
+form and referred to as scale.
+</p>
+<p>
+The mathematical value of a Dec equals:
+</p>
+<pre>unscaled * 10**(-scale)
+</pre>
+<p>
+Note that different Dec representations may have equal mathematical values.
+</p>
+<pre>unscaled  scale  String()
+-------------------------
+       0      0    &#34;0&#34;
+       0      2    &#34;0.00&#34;
+       0     -2    &#34;0&#34;
+       1      0    &#34;1&#34;
+     100      2    &#34;1.00&#34;
+      10      0   &#34;10&#34;
+       1     -1   &#34;10&#34;
+</pre>
+<p>
+The zero value for a Dec represents the value 0 with scale 0.
+</p>
+<p>
+Operations are typically performed through the *Dec type.
+The semantics of the assignment operation &#34;=&#34; for &#34;bare&#34; Dec values is
+undefined and should not be relied on.
+</p>
+<p>
+Methods are typically of the form:
+</p>
+<pre>func (z *Dec) Op(x, y *Dec) *Dec
+</pre>
+<p>
+and implement operations z = x Op y with the result as receiver; if it
+is one of the operands it may be overwritten (and its memory reused).
+To enable chaining of operations, the result is also returned. Methods
+returning a result other than *Dec take one of the operands as the receiver.
+</p>
+<p>
+A &#34;bare&#34; Quo method (quotient / division operation) is not provided, as the
+result is not always a finite decimal and thus in general cannot be
+represented as a Dec.
+Instead, in the common case when rounding is (potentially) necessary,
+QuoRound should be used with a Scale and a Rounder.
+QuoExact or QuoRound with RoundExact can be used in the special cases when it
+is known that the result is always a finite decimal.
+</p>
+
+			<pre>type Dec struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewDec">func <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=3923:3968#L106">NewDec</a>
+					<a class="permalink" href="index.html#NewDec">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDec(unscaled <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, scale <a href="index.html#Scale">Scale</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+NewDec allocates and returns a new Dec set to the given int64 unscaled value
+and scale.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewDecBig">func <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=4129:4180#L112">NewDecBig</a>
+					<a class="permalink" href="index.html#NewDecBig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDecBig(unscaled *<a href="http://localhost:6060/pkg/math/big/">big</a>.<a href="http://localhost:6060/pkg/math/big/#Int">Int</a>, scale <a href="index.html#Scale">Scale</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+NewDecBig allocates and returns a new Dec set to the given *big.Int unscaled
+value and scale.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Dec.Abs">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=6260:6290#L199">Abs</a>
+					<a class="permalink" href="index.html#Dec.Abs">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Abs(x *<a href="index.html#Dec">Dec</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+Abs sets z to |x| (the absolute value of x) and returns z.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Add">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=6470:6503#L207">Add</a>
+					<a class="permalink" href="index.html#Dec.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Add(x, y *<a href="index.html#Dec">Dec</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+Add sets z to the sum x+y and returns z.
+The scale of z is the greater of the scales of x and y.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Cmp">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=6091:6120#L193">Cmp</a>
+					<a class="permalink" href="index.html#Dec.Cmp">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) Cmp(y *<a href="index.html#Dec">Dec</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Cmp compares x and y and returns:
+</p>
+<pre>-1 if x &lt;  y
+ 0 if x == y
++1 if x &gt;  y
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Format">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=12762:12804#L452">Format</a>
+					<a class="permalink" href="index.html#Dec.Format">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) Format(s <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#State">State</a>, ch <a href="http://localhost:6060/pkg/builtin/#rune">rune</a>)</pre>
+				<p>
+Format is a support routine for fmt.Formatter. It accepts the decimal
+formats &#39;d&#39; and &#39;f&#39;, and handles both equivalently.
+Width, precision, flags and bases 2, 8, 16 are not supported.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.GobDecode">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=15843:15884#L576">GobDecode</a>
+					<a class="permalink" href="index.html#Dec.GobDecode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) GobDecode(buf []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+GobDecode implements the gob.GobDecoder interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.GobEncode">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=15578:15619#L566">GobEncode</a>
+					<a class="permalink" href="index.html#Dec.GobEncode">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) GobEncode() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+GobEncode implements the gob.GobEncoder interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.MarshalText">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=16308:16351#L594">MarshalText</a>
+					<a class="permalink" href="index.html#Dec.MarshalText">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) MarshalText() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalText implements the encoding.TextMarshaler interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Mul">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=6993:7026#L225">Mul</a>
+					<a class="permalink" href="index.html#Dec.Mul">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Mul(x, y *<a href="index.html#Dec">Dec</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+Mul sets z to the product x*y and returns z.
+The scale of z is the sum of the scales of x and y.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Neg">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=5887:5917#L181">Neg</a>
+					<a class="permalink" href="index.html#Dec.Neg">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Neg(x *<a href="index.html#Dec">Dec</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+Neg sets z to -x and returns z.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.QuoExact">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=8501:8539#L272">QuoExact</a>
+					<a class="permalink" href="index.html#Dec.QuoExact">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) QuoExact(x, y *<a href="index.html#Dec">Dec</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+QuoExact sets z to the quotient x/y and returns z when x/y is a finite
+decimal. Otherwise it returns nil and the value of z is undefined.
+</p>
+<p>
+The scale of a non-nil result is &#34;x.Scale() - y.Scale()&#34; or greater; it is
+calculated so that the remainder will be zero whenever x/y is a finite
+decimal.
+</p>
+
+				
+				<div id="example_Dec_QuoExact_fail" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example (Fail)</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example (Fail)</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code"><span class="comment">// 1 / 3 is an infinite decimal; it has no exact Dec representation</span>
+x, y := inf.NewDec(1, 0), inf.NewDec(3, 0)
+z := new(inf.Dec).QuoExact(x, y)
+fmt.Println(z)
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">&lt;nil&gt;
+</pre>
+			
+		
+	</div>
+</div>
+<div id="example_Dec_QuoExact_ok" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example (Ok)</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example (Ok)</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code"><span class="comment">// 1 / 25 is a finite decimal; it has exact Dec representation</span>
+x, y := inf.NewDec(1, 0), inf.NewDec(25, 0)
+z := new(inf.Dec).QuoExact(x, y)
+fmt.Println(z)
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">0.04
+</pre>
+			
+		
+	</div>
+</div>
+
+				
+			
+				
+				<h3 id="Dec.QuoRound">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=7697:7755#L246">QuoRound</a>
+					<a class="permalink" href="index.html#Dec.QuoRound">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) QuoRound(x, y *<a href="index.html#Dec">Dec</a>, s <a href="index.html#Scale">Scale</a>, r <a href="index.html#Rounder">Rounder</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+QuoRound sets z to the quotient x/y, rounded using the given Rounder to the
+specified scale.
+</p>
+<p>
+If the rounder is RoundExact but the result can not be expressed exactly at
+the specified scale, QuoRound returns nil, and the value of z is undefined.
+</p>
+<p>
+There is no corresponding Div method; the equivalent can be achieved through
+the choice of Rounder used.
+</p>
+
+				
+				<div id="example_Dec_QuoRound_scale2RoundCeil" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example (Scale2RoundCeil)</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example (Scale2RoundCeil)</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code"><span class="comment">// -42 / 400 is an finite decimal with 3 digits beyond the decimal point</span>
+x, y := inf.NewDec(-42, 0), inf.NewDec(400, 0)
+<span class="comment">// use 2 digits beyond decimal point, round towards positive infinity</span>
+z := new(inf.Dec).QuoRound(x, y, 2, inf.RoundCeil)
+fmt.Println(z)
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">-0.10
+</pre>
+			
+		
+	</div>
+</div>
+<div id="example_Dec_QuoRound_scale2RoundDown" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example (Scale2RoundDown)</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example (Scale2RoundDown)</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code"><span class="comment">// 10 / 3 is an infinite decimal; it has no exact Dec representation</span>
+x, y := inf.NewDec(10, 0), inf.NewDec(3, 0)
+<span class="comment">// use 2 digits beyond the decimal point, round towards 0</span>
+z := new(inf.Dec).QuoRound(x, y, 2, inf.RoundDown)
+fmt.Println(z)
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">3.33
+</pre>
+			
+		
+	</div>
+</div>
+
+				
+			
+				
+				<h3 id="Dec.Round">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=7220:7272#L233">Round</a>
+					<a class="permalink" href="index.html#Dec.Round">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Round(x *<a href="index.html#Dec">Dec</a>, s <a href="index.html#Scale">Scale</a>, r <a href="index.html#Rounder">Rounder</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+Round sets z to the value of x rounded to Scale s using Rounder r, and
+returns z.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Scale">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=4277:4304#L117">Scale</a>
+					<a class="permalink" href="index.html#Dec.Scale">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) Scale() <a href="index.html#Scale">Scale</a></pre>
+				<p>
+Scale returns the scale of x.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Scan">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=14974:15024#L534">Scan</a>
+					<a class="permalink" href="index.html#Dec.Scan">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Scan(s <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#ScanState">ScanState</a>, ch <a href="http://localhost:6060/pkg/builtin/#rune">rune</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Scan is a support routine for fmt.Scanner; it sets z to the value of
+the scanned number. It accepts the decimal formats &#39;d&#39; and &#39;f&#39;, and
+handles both equivalently. Bases 2, 8, 16 are not supported.
+The scale of z is the number of digits after the decimal point
+(including any trailing 0s), or 0 if there is no decimal point.
+</p>
+
+				
+				<div id="example_Dec_Scan" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code"><span class="comment">// The Scan function is rarely used directly;</span>
+<span class="comment">// the fmt package recognizes it as an implementation of fmt.Scanner.</span>
+d := new(inf.Dec)
+_, err := fmt.Sscan(&#34;184467440.73709551617&#34;, d)
+if err != nil {
+    log.Println(&#34;error scanning value:&#34;, err)
+} else {
+    fmt.Println(d)
+}
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">184467440.73709551617
+</pre>
+			
+		
+	</div>
+</div>
+
+				
+			
+				
+				<h3 id="Dec.Set">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=5598:5628#L162">Set</a>
+					<a class="permalink" href="index.html#Dec.Set">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Set(x *<a href="index.html#Dec">Dec</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+Set sets z to the value of x and returns z.
+It does nothing if z == x.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.SetScale">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=5080:5120#L141">SetScale</a>
+					<a class="permalink" href="index.html#Dec.SetScale">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) SetScale(scale <a href="index.html#Scale">Scale</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+SetScale sets the scale of z, with the unscaled value unchanged, and returns
+z.
+The mathematical value of the Dec changes as if it was multiplied by
+10**(oldscale-scale).
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.SetString">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=14365:14411#L515">SetString</a>
+					<a class="permalink" href="index.html#Dec.SetString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) SetString(s <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#Dec">Dec</a>, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+SetString sets z to the value of s, interpreted as a decimal (base 10),
+and returns z and a boolean indicating success. The scale of z is the
+number of digits after the decimal point (including any trailing 0s),
+or 0 if there is no decimal point. If SetString fails, the value of z
+is undefined but the returned value is nil.
+</p>
+
+				
+				<div id="example_Dec_SetString" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example</span></p>
+		
+		
+		
+			<p>Code:</p>
+			<pre class="code">d := new(inf.Dec)
+d.SetString(&#34;012345.67890&#34;) <span class="comment">// decimal; leading 0 ignored; trailing 0 kept</span>
+fmt.Println(d)
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">12345.67890
+</pre>
+			
+		
+	</div>
+</div>
+
+				
+			
+				
+				<h3 id="Dec.SetUnscaled">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=5242:5288#L148">SetUnscaled</a>
+					<a class="permalink" href="index.html#Dec.SetUnscaled">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) SetUnscaled(unscaled <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+SetUnscaled sets the unscaled value of z, with the scale unchanged, and
+returns z.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.SetUnscaledBig">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=5427:5479#L155">SetUnscaledBig</a>
+					<a class="permalink" href="index.html#Dec.SetUnscaledBig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) SetUnscaledBig(unscaled *<a href="http://localhost:6060/pkg/math/big/">big</a>.<a href="http://localhost:6060/pkg/math/big/#Int">Int</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+SetUnscaledBig sets the unscaled value of z, with the scale unchanged, and
+returns z.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Sign">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=5791:5815#L176">Sign</a>
+					<a class="permalink" href="index.html#Dec.Sign">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) Sign() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+Sign returns:
+</p>
+<pre>-1 if x &lt;  0
+ 0 if x == 0
++1 if x &gt;  0
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.String">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=11852:11881#L416">String</a>
+					<a class="permalink" href="index.html#Dec.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="Dec.Sub">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=6735:6768#L216">Sub</a>
+					<a class="permalink" href="index.html#Dec.Sub">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) Sub(x, y *<a href="index.html#Dec">Dec</a>) *<a href="index.html#Dec">Dec</a></pre>
+				<p>
+Sub sets z to the difference x-y and returns z.
+The scale of z is the greater of the scales of x and y.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.UnmarshalText">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=16457:16503#L599">UnmarshalText</a>
+					<a class="permalink" href="index.html#Dec.UnmarshalText">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (z *<a href="index.html#Dec">Dec</a>) UnmarshalText(data []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UnmarshalText implements the encoding.TextUnmarshaler interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.Unscaled">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=4637:4680#L125">Unscaled</a>
+					<a class="permalink" href="index.html#Dec.Unscaled">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) Unscaled() (u <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, ok <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+				<p>
+Unscaled returns the unscaled value of x for u and true for ok when the
+unscaled value can be represented as int64; otherwise it returns an undefined
+int64 value for u and false for ok. Use x.UnscaledBig().Int64() to avoid
+checking the validity of the value when the check is known to be redundant.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Dec.UnscaledBig">func (*Dec) <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=4835:4871#L133">UnscaledBig</a>
+					<a class="permalink" href="index.html#Dec.UnscaledBig">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (x *<a href="index.html#Dec">Dec</a>) UnscaledBig() *<a href="http://localhost:6060/pkg/math/big/">big</a>.<a href="http://localhost:6060/pkg/math/big/#Int">Int</a></pre>
+				<p>
+UnscaledBig returns the unscaled value of x as *big.Int.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Rounder">type <a href="http://localhost:6060/src/gopkg.in/inf.v0/rounder.go?s=282:302#L3">Rounder</a>
+				<a class="permalink" href="index.html#Rounder">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Rounder represents a method for rounding the (possibly infinite decimal)
+result of a division to a finite Dec. It is used by Dec.Round() and
+Dec.Quo().
+</p>
+<p>
+See the Example for results of using each Rounder with some sample values.
+</p>
+
+			<pre>type Rounder rounder</pre>
+
+			
+
+			
+				<p>
+See <a href="http://speleotrove.com/decimal/damodel.html#refround">http://speleotrove.com/decimal/damodel.html#refround</a> for more detailed
+definitions of these rounding modes.
+</p>
+
+				<pre>var (
+    <span id="RoundDown">RoundDown</span>     <a href="index.html#Rounder">Rounder</a> <span class="comment">// towards 0</span>
+    <span id="RoundUp">RoundUp</span>       <a href="index.html#Rounder">Rounder</a> <span class="comment">// away from 0</span>
+    <span id="RoundFloor">RoundFloor</span>    <a href="index.html#Rounder">Rounder</a> <span class="comment">// towards -infinity</span>
+    <span id="RoundCeil">RoundCeil</span>     <a href="index.html#Rounder">Rounder</a> <span class="comment">// towards +infinity</span>
+    <span id="RoundHalfDown">RoundHalfDown</span> <a href="index.html#Rounder">Rounder</a> <span class="comment">// to nearest; towards 0 if same distance</span>
+    <span id="RoundHalfUp">RoundHalfUp</span>   <a href="index.html#Rounder">Rounder</a> <span class="comment">// to nearest; away from 0 if same distance</span>
+    <span id="RoundHalfEven">RoundHalfEven</span> <a href="index.html#Rounder">Rounder</a> <span class="comment">// to nearest; even last digit if same distance</span>
+)</pre>
+			
+				<p>
+RoundExact is to be used in the case when rounding is not necessary.
+When used with Quo or Round, it returns the result verbatim when it can be
+expressed exactly with the given precision, and it returns nil otherwise.
+QuoExact is a shorthand for using Quo with RoundExact.
+</p>
+
+				<pre>var <span id="RoundExact">RoundExact</span> <a href="index.html#Rounder">Rounder</a></pre>
+			
+
+			<div id="example_Rounder" class="toggle">
+	<div class="collapsed">
+		<p class="exampleHeading toggleButton">▹ <span class="text">Example</span></p>
+	</div>
+	<div class="expanded">
+		<p class="exampleHeading toggleButton">▾ <span class="text">Example</span></p>
+		<p>This example displays the results of Dec.Round with each of the Rounders.
+</p>
+		
+		
+			<p>Code:</p>
+			<pre class="code">var vals = []struct {
+    x string
+    s inf.Scale
+}{
+    {&#34;-0.18&#34;, 1}, {&#34;-0.15&#34;, 1}, {&#34;-0.12&#34;, 1}, {&#34;-0.10&#34;, 1},
+    {&#34;-0.08&#34;, 1}, {&#34;-0.05&#34;, 1}, {&#34;-0.02&#34;, 1}, {&#34;0.00&#34;, 1},
+    {&#34;0.02&#34;, 1}, {&#34;0.05&#34;, 1}, {&#34;0.08&#34;, 1}, {&#34;0.10&#34;, 1},
+    {&#34;0.12&#34;, 1}, {&#34;0.15&#34;, 1}, {&#34;0.18&#34;, 1},
+}
+
+var rounders = []struct {
+    name    string
+    rounder inf.Rounder
+}{
+    {&#34;RoundDown&#34;, inf.RoundDown}, {&#34;RoundUp&#34;, inf.RoundUp},
+    {&#34;RoundCeil&#34;, inf.RoundCeil}, {&#34;RoundFloor&#34;, inf.RoundFloor},
+    {&#34;RoundHalfDown&#34;, inf.RoundHalfDown}, {&#34;RoundHalfUp&#34;, inf.RoundHalfUp},
+    {&#34;RoundHalfEven&#34;, inf.RoundHalfEven}, {&#34;RoundExact&#34;, inf.RoundExact},
+}
+
+fmt.Println(&#34;The results of new(inf.Dec).Round(x, s, inf.RoundXXX):&#34;)
+fmt.Println()
+w := tabwriter.NewWriter(os.Stdout, 0, 0, 1, &#39; &#39;, tabwriter.AlignRight)
+fmt.Fprint(w, &#34;x\ts\t|\t&#34;)
+for _, r := range rounders {
+    fmt.Fprintf(w, &#34;%s\t&#34;, r.name[5:])
+}
+fmt.Fprintln(w)
+for _, v := range vals {
+    fmt.Fprintf(w, &#34;%s\t%d\t|\t&#34;, v.x, v.s)
+    for _, r := range rounders {
+        x, _ := new(inf.Dec).SetString(v.x)
+        z := new(inf.Dec).Round(x, v.s, r.rounder)
+        fmt.Fprintf(w, &#34;%d\t&#34;, z)
+    }
+    fmt.Fprintln(w)
+}
+w.Flush()
+
+<span class="comment"></pre>
+			
+			<p>Output:</p>
+			<pre class="output">The results of new(inf.Dec).Round(x, s, inf.RoundXXX):
+
+     x s | Down   Up Ceil Floor HalfDown HalfUp HalfEven Exact
+ -0.18 1 | -0.1 -0.2 -0.1  -0.2     -0.2   -0.2     -0.2 &lt;nil&gt;
+ -0.15 1 | -0.1 -0.2 -0.1  -0.2     -0.1   -0.2     -0.2 &lt;nil&gt;
+ -0.12 1 | -0.1 -0.2 -0.1  -0.2     -0.1   -0.1     -0.1 &lt;nil&gt;
+ -0.10 1 | -0.1 -0.1 -0.1  -0.1     -0.1   -0.1     -0.1  -0.1
+ -0.08 1 |  0.0 -0.1  0.0  -0.1     -0.1   -0.1     -0.1 &lt;nil&gt;
+ -0.05 1 |  0.0 -0.1  0.0  -0.1      0.0   -0.1      0.0 &lt;nil&gt;
+ -0.02 1 |  0.0 -0.1  0.0  -0.1      0.0    0.0      0.0 &lt;nil&gt;
+  0.00 1 |  0.0  0.0  0.0   0.0      0.0    0.0      0.0   0.0
+  0.02 1 |  0.0  0.1  0.1   0.0      0.0    0.0      0.0 &lt;nil&gt;
+  0.05 1 |  0.0  0.1  0.1   0.0      0.0    0.1      0.0 &lt;nil&gt;
+  0.08 1 |  0.0  0.1  0.1   0.0      0.1    0.1      0.1 &lt;nil&gt;
+  0.10 1 |  0.1  0.1  0.1   0.1      0.1    0.1      0.1   0.1
+  0.12 1 |  0.1  0.2  0.2   0.1      0.1    0.1      0.1 &lt;nil&gt;
+  0.15 1 |  0.1  0.2  0.2   0.1      0.1    0.2      0.2 &lt;nil&gt;
+  0.18 1 |  0.1  0.2  0.2   0.1      0.2    0.2      0.2 &lt;nil&gt;
+</pre>
+			
+		
+	</div>
+</div>
+
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Scale">type <a href="http://localhost:6060/src/gopkg.in/inf.v0/dec.go?s=3207:3223#L79">Scale</a>
+				<a class="permalink" href="index.html#Scale">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Scale represents the type used for the scale of a Dec.
+</p>
+
+			<pre>type Scale <a href="http://localhost:6060/pkg/builtin/#int32">int32</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

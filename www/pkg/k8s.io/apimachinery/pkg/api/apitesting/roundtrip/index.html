@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>roundtrip - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package roundtrip
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/api/apitesting/roundtrip"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CompatibilityTestFuzzer">func CompatibilityTestFuzzer(scheme *runtime.Scheme, fuzzFuncs []interface{}) *fuzz.Fuzzer</a></dd>
+			
+				
+				<dd><a href="index.html#CompatibilityTestObject">func CompatibilityTestObject(scheme *runtime.Scheme, gvk schema.GroupVersionKind, fuzzFuncs []interface{}) (runtime.Object, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GlobalNonRoundTrippableTypes">func GlobalNonRoundTrippableTypes() sets.String</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripExternalTypes">func RoundTripExternalTypes(t *testing.T, scheme *runtime.Scheme, codecFactory runtimeserializer.CodecFactory, fuzzer *fuzz.Fuzzer, nonRoundTrippableTypes map[schema.GroupVersionKind]bool)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripExternalTypesWithoutProtobuf">func RoundTripExternalTypesWithoutProtobuf(t *testing.T, scheme *runtime.Scheme, codecFactory runtimeserializer.CodecFactory, fuzzer *fuzz.Fuzzer, nonRoundTrippableTypes map[schema.GroupVersionKind]bool)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripProtobufTestForAPIGroup">func RoundTripProtobufTestForAPIGroup(t *testing.T, installFn InstallFunc, fuzzingFuncs fuzzer.FuzzerFuncs)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripProtobufTestForScheme">func RoundTripProtobufTestForScheme(t *testing.T, scheme *runtime.Scheme, fuzzingFuncs fuzzer.FuzzerFuncs)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripSpecificKind">func RoundTripSpecificKind(t *testing.T, gvk schema.GroupVersionKind, scheme *runtime.Scheme, codecFactory runtimeserializer.CodecFactory, fuzzer *fuzz.Fuzzer, nonRoundTrippableTypes map[schema.GroupVersionKind]bool)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripSpecificKindWithoutProtobuf">func RoundTripSpecificKindWithoutProtobuf(t *testing.T, gvk schema.GroupVersionKind, scheme *runtime.Scheme, codecFactory runtimeserializer.CodecFactory, fuzzer *fuzz.Fuzzer, nonRoundTrippableTypes map[schema.GroupVersionKind]bool)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripTestForAPIGroup">func RoundTripTestForAPIGroup(t *testing.T, installFn InstallFunc, fuzzingFuncs fuzzer.FuzzerFuncs)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripTestForScheme">func RoundTripTestForScheme(t *testing.T, scheme *runtime.Scheme, fuzzingFuncs fuzzer.FuzzerFuncs)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripTypes">func RoundTripTypes(t *testing.T, scheme *runtime.Scheme, codecFactory runtimeserializer.CodecFactory, fuzzer *fuzz.Fuzzer, nonRoundTrippableTypes map[schema.GroupVersionKind]bool)</a></dd>
+			
+				
+				<dd><a href="index.html#RoundTripTypesWithoutProtobuf">func RoundTripTypesWithoutProtobuf(t *testing.T, scheme *runtime.Scheme, codecFactory runtimeserializer.CodecFactory, fuzzer *fuzz.Fuzzer, nonRoundTrippableTypes map[schema.GroupVersionKind]bool)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#CompatibilityTestOptions">type CompatibilityTestOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewCompatibilityTestOptions">func NewCompatibilityTestOptions(scheme *runtime.Scheme) *CompatibilityTestOptions</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CompatibilityTestOptions.Complete">func (c *CompatibilityTestOptions) Complete(t *testing.T) *CompatibilityTestOptions</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#CompatibilityTestOptions.Run">func (c *CompatibilityTestOptions) Run(t *testing.T)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#InstallFunc">type InstallFunc</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/compatibility.go">compatibility.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go">roundtrip.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var <span id="FuzzIters">FuzzIters</span> = <a href="../../../../../../github.com/spf13/pflag/index.html">flag</a>.<a href="../../../../../../github.com/spf13/pflag/index.html#Int">Int</a>(&#34;fuzz-iters&#34;, 20, &#34;How many fuzzing iterations to do.&#34;)</pre>
+			
+		
+		
+			
+			
+			<h2 id="CompatibilityTestFuzzer">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/compatibility.go?s=7389:7479#L212">CompatibilityTestFuzzer</a>
+				<a class="permalink" href="index.html#CompatibilityTestFuzzer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CompatibilityTestFuzzer(scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, fuzzFuncs []interface{}) *<a href="../../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../../github.com/google/gofuzz/index.html#Fuzzer">Fuzzer</a></pre>
+			<p>
+CompatibilityTestFuzzer returns a fuzzer for the given scheme:
+- fixed seed (deterministic output that lets us generate the same fixtures on every run)
+- 0 nil chance (populate all fields)
+- 1 numelements (populate and bound all lists)
+- 20 max depth (don&#39;t recurse infinitely)
+- meta fuzzing functions added
+- custom fuzzing functions to make strings and managedFields more readable in fixtures
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CompatibilityTestObject">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/compatibility.go?s=6454:6584#L184">CompatibilityTestObject</a>
+				<a class="permalink" href="index.html#CompatibilityTestObject">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CompatibilityTestObject(scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, gvk <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, fuzzFuncs []interface{}) (<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Object">Object</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+CompatibilityTestObject returns a deterministically fuzzed object for the specified GVK
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GlobalNonRoundTrippableTypes">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=4344:4391#L109">GlobalNonRoundTrippableTypes</a>
+				<a class="permalink" href="index.html#GlobalNonRoundTrippableTypes">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GlobalNonRoundTrippableTypes() <a href="../../../util/sets/index.html">sets</a>.<a href="../../../util/sets/index.html#String">String</a></pre>
+			<p>
+GlobalNonRoundTrippableTypes returns the kinds that are effectively reserved across all GroupVersions.
+They don&#39;t roundtrip and thus can be excluded in any custom/downstream roundtrip tests
+</p>
+<pre>kinds := scheme.AllKnownTypes()
+for gvk := range kinds {
+    if roundtrip.GlobalNonRoundTrippableTypes().Has(gvk.Kind) {
+        continue
+    }
+    t.Run(gvk.Group+&#34;.&#34;+gvk.Version+&#34;.&#34;+gvk.Kind, func(t *testing.T) {
+        // roundtrip test
+    })
+}
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripExternalTypes">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=6120:6308#L144">RoundTripExternalTypes</a>
+				<a class="permalink" href="index.html#RoundTripExternalTypes">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripExternalTypes(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, codecFactory <a href="../../../runtime/serializer/index.html">runtimeserializer</a>.<a href="../../../runtime/serializer/index.html#CodecFactory">CodecFactory</a>, fuzzer *<a href="../../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../../github.com/google/gofuzz/index.html#Fuzzer">Fuzzer</a>, nonRoundTrippableTypes map[<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+RoundTripExternalTypes applies the round-trip test to all external round-trippable Kinds
+in the scheme.  It will skip all the GroupVersionKinds in the nonRoundTripExternalTypes list .
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripExternalTypesWithoutProtobuf">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=6859:7062#L158">RoundTripExternalTypesWithoutProtobuf</a>
+				<a class="permalink" href="index.html#RoundTripExternalTypesWithoutProtobuf">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripExternalTypesWithoutProtobuf(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, codecFactory <a href="../../../runtime/serializer/index.html">runtimeserializer</a>.<a href="../../../runtime/serializer/index.html#CodecFactory">CodecFactory</a>, fuzzer *<a href="../../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../../github.com/google/gofuzz/index.html#Fuzzer">Fuzzer</a>, nonRoundTrippableTypes map[<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+RoundTripExternalTypesWithoutProtobuf applies the round-trip test to all external round-trippable Kinds
+in the scheme.  It will skip all the GroupVersionKinds in the nonRoundTripExternalTypes list.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripProtobufTestForAPIGroup">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=2465:2572#L60">RoundTripProtobufTestForAPIGroup</a>
+				<a class="permalink" href="index.html#RoundTripProtobufTestForAPIGroup">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripProtobufTestForAPIGroup(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, installFn <a href="index.html#InstallFunc">InstallFunc</a>, fuzzingFuncs <a href="../fuzzer/index.html">fuzzer</a>.<a href="../fuzzer/index.html#FuzzerFuncs">FuzzerFuncs</a>)</pre>
+			<p>
+RoundTripProtobufTestForAPIGroup is convenient to call from your install package to make sure that a &#34;bare&#34; install of your group provides
+enough information to round trip
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripProtobufTestForScheme">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=2814:2920#L68">RoundTripProtobufTestForScheme</a>
+				<a class="permalink" href="index.html#RoundTripProtobufTestForScheme">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripProtobufTestForScheme(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, fuzzingFuncs <a href="../fuzzer/index.html">fuzzer</a>.<a href="../fuzzer/index.html#FuzzerFuncs">FuzzerFuncs</a>)</pre>
+			<p>
+RoundTripProtobufTestForScheme is convenient to call if you already have a scheme and want to make sure that its well-formed
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripSpecificKind">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=7736:7952#L174">RoundTripSpecificKind</a>
+				<a class="permalink" href="index.html#RoundTripSpecificKind">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripSpecificKind(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, gvk <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, codecFactory <a href="../../../runtime/serializer/index.html">runtimeserializer</a>.<a href="../../../runtime/serializer/index.html#CodecFactory">CodecFactory</a>, fuzzer *<a href="../../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../../github.com/google/gofuzz/index.html#Fuzzer">Fuzzer</a>, nonRoundTrippableTypes map[<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripSpecificKindWithoutProtobuf">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=7408:7639#L170">RoundTripSpecificKindWithoutProtobuf</a>
+				<a class="permalink" href="index.html#RoundTripSpecificKindWithoutProtobuf">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripSpecificKindWithoutProtobuf(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, gvk <a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, codecFactory <a href="../../../runtime/serializer/index.html">runtimeserializer</a>.<a href="../../../runtime/serializer/index.html#CodecFactory">CodecFactory</a>, fuzzer *<a href="../../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../../github.com/google/gofuzz/index.html#Fuzzer">Fuzzer</a>, nonRoundTrippableTypes map[<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripTestForAPIGroup">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=1601:1700#L40">RoundTripTestForAPIGroup</a>
+				<a class="permalink" href="index.html#RoundTripTestForAPIGroup">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripTestForAPIGroup(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, installFn <a href="index.html#InstallFunc">InstallFunc</a>, fuzzingFuncs <a href="../fuzzer/index.html">fuzzer</a>.<a href="../fuzzer/index.html#FuzzerFuncs">FuzzerFuncs</a>)</pre>
+			<p>
+RoundTripTestForAPIGroup is convenient to call from your install package to make sure that a &#34;bare&#34; install of your group provides
+enough information to round trip
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripTestForScheme">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=1926:2024#L48">RoundTripTestForScheme</a>
+				<a class="permalink" href="index.html#RoundTripTestForScheme">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripTestForScheme(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, fuzzingFuncs <a href="../fuzzer/index.html">fuzzer</a>.<a href="../fuzzer/index.html#FuzzerFuncs">FuzzerFuncs</a>)</pre>
+			<p>
+RoundTripTestForScheme is convenient to call if you already have a scheme and want to make sure that its well-formed
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripTypes">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=4906:5086#L119">RoundTripTypes</a>
+				<a class="permalink" href="index.html#RoundTripTypes">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripTypes(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, codecFactory <a href="../../../runtime/serializer/index.html">runtimeserializer</a>.<a href="../../../runtime/serializer/index.html#CodecFactory">CodecFactory</a>, fuzzer *<a href="../../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../../github.com/google/gofuzz/index.html#Fuzzer">Fuzzer</a>, nonRoundTrippableTypes map[<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="RoundTripTypesWithoutProtobuf">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=4626:4821#L115">RoundTripTypesWithoutProtobuf</a>
+				<a class="permalink" href="index.html#RoundTripTypesWithoutProtobuf">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RoundTripTypesWithoutProtobuf(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>, scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>, codecFactory <a href="../../../runtime/serializer/index.html">runtimeserializer</a>.<a href="../../../runtime/serializer/index.html#CodecFactory">CodecFactory</a>, fuzzer *<a href="../../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../../github.com/google/gofuzz/index.html#Fuzzer">Fuzzer</a>, nonRoundTrippableTypes map[<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]<a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+RoundTripTypesWithoutProtobuf applies the round-trip test to all round-trippable Kinds
+in the scheme.  It will skip all the GroupVersionKinds in the skip list.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="CompatibilityTestOptions">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/compatibility.go?s=1567:3832#L41">CompatibilityTestOptions</a>
+				<a class="permalink" href="index.html#CompatibilityTestOptions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+CompatibilityTestOptions holds configuration for running a compatibility test using in-memory objects
+and serialized files on disk representing the current code and serialized data from previous versions.
+</p>
+<p>
+Example use: `NewCompatibilityTestOptions(scheme).Complete(t).Run(t)`
+</p>
+
+			<pre>type CompatibilityTestOptions struct {
+<span id="CompatibilityTestOptions.Scheme"></span>    <span class="comment">// Scheme is used to create new objects for fuzzing, decoding, and for constructing serializers.</span>
+    <span class="comment">// Required.</span>
+    Scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>
+
+<span id="CompatibilityTestOptions.TestDataDir"></span>    <span class="comment">// TestDataDir points to a directory containing compatibility test data.</span>
+    <span class="comment">// Complete() populates this with &#34;testdata&#34; if unset.</span>
+    TestDataDir <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+<span id="CompatibilityTestOptions.TestDataDirCurrentVersion"></span>    <span class="comment">// TestDataDirCurrentVersion points to a directory containing compatibility test data for the current version.</span>
+    <span class="comment">// Complete() populates this with &#34;&lt;TestDataDir&gt;/HEAD&#34; if unset.</span>
+    <span class="comment">// Within this directory, `&lt;group&gt;.&lt;version&gt;.&lt;kind&gt;.[json|yaml|pb]` files are required to exist, and are:</span>
+    <span class="comment">// * verified to match serialized FuzzedObjects[GVK]</span>
+    <span class="comment">// * verified to decode without error</span>
+    <span class="comment">// * verified to round-trip byte-for-byte when re-encoded</span>
+    <span class="comment">// * verified to be semantically equal when decoded into memory</span>
+    TestDataDirCurrentVersion <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+<span id="CompatibilityTestOptions.TestDataDirsPreviousVersions"></span>    <span class="comment">// TestDataDirsPreviousVersions is a list of directories containing compatibility test data for previous versions.</span>
+    <span class="comment">// Complete() populates this with &#34;&lt;TestDataDir&gt;/v*&#34; directories if nil.</span>
+    <span class="comment">// Within these directories, `&lt;group&gt;.&lt;version&gt;.&lt;kind&gt;.[json|yaml|pb]` files are optional. If present, they are:</span>
+    <span class="comment">// * verified to decode without error</span>
+    <span class="comment">// * verified to round-trip byte-for-byte when re-encoded (or to match a `&lt;group&gt;.&lt;version&gt;.&lt;kind&gt;.[json|yaml|pb].after_roundtrip.[json|yaml|pb]` file if it exists)</span>
+    <span class="comment">// * verified to be semantically equal when decoded into memory</span>
+    TestDataDirsPreviousVersions []<a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+<span id="CompatibilityTestOptions.Kinds"></span>    <span class="comment">// Kinds is a list of fully qualified kinds to test.</span>
+    <span class="comment">// Complete() populates this with Scheme.AllKnownTypes() if unset.</span>
+    Kinds []<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>
+
+<span id="CompatibilityTestOptions.FuzzedObjects"></span>    <span class="comment">// FuzzedObjects is an optional set of fuzzed objects to use for verifying HEAD fixtures.</span>
+    <span class="comment">// Complete() populates this with the result of CompatibilityTestObject(Kinds[*], Scheme, FuzzFuncs) for any missing kinds.</span>
+    <span class="comment">// Objects must be deterministically fuzzed and identical on every invocation.</span>
+    FuzzedObjects map[<a href="../../../runtime/schema/index.html">schema</a>.<a href="../../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Object">Object</a>
+
+<span id="CompatibilityTestOptions.FuzzFuncs"></span>    <span class="comment">// FuzzFuncs is an optional set of custom fuzzing functions to use to construct FuzzedObjects.</span>
+    <span class="comment">// They *must* not use any random source other than the passed-in fuzzer.</span>
+    FuzzFuncs []interface{}
+
+<span id="CompatibilityTestOptions.JSON"></span>    JSON  <a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Serializer">Serializer</a>
+<span id="CompatibilityTestOptions.YAML"></span>    YAML  <a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Serializer">Serializer</a>
+<span id="CompatibilityTestOptions.Proto"></span>    Proto <a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Serializer">Serializer</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewCompatibilityTestOptions">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/compatibility.go?s=3834:3916#L85">NewCompatibilityTestOptions</a>
+					<a class="permalink" href="index.html#NewCompatibilityTestOptions">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewCompatibilityTestOptions(scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>) *<a href="index.html#CompatibilityTestOptions">CompatibilityTestOptions</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="CompatibilityTestOptions.Complete">func (*CompatibilityTestOptions) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/compatibility.go?s=4225:4308#L96">Complete</a>
+					<a class="permalink" href="index.html#CompatibilityTestOptions.Complete">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#CompatibilityTestOptions">CompatibilityTestOptions</a>) Complete(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>) *<a href="index.html#CompatibilityTestOptions">CompatibilityTestOptions</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="CompatibilityTestOptions.Run">func (*CompatibilityTestOptions) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/compatibility.go?s=8892:8944#L259">Run</a>
+					<a class="permalink" href="index.html#CompatibilityTestOptions.Run">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (c *<a href="index.html#CompatibilityTestOptions">CompatibilityTestOptions</a>) Run(t *<a href="http://localhost:6060/pkg/testing/">testing</a>.<a href="http://localhost:6060/pkg/testing/#T">T</a>)</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="InstallFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/apitesting/roundtrip/roundtrip.go?s=1384:1429#L36">InstallFunc</a>
+				<a class="permalink" href="index.html#InstallFunc">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type InstallFunc func(scheme *<a href="../../../runtime/index.html">runtime</a>.<a href="../../../runtime/index.html#Scheme">Scheme</a>)</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

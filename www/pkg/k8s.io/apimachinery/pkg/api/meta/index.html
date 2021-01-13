@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>meta - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package meta
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/api/meta"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package meta provides functions for retrieving API metadata from objects
+belonging to the Kubernetes API
+</p>
+<p>
+TODO: move everything in this file to pkg/api/rest
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Accessor">func Accessor(obj interface{}) (metav1.Object, error)</a></dd>
+			
+				
+				<dd><a href="index.html#AsPartialObjectMetadata">func AsPartialObjectMetadata(m metav1.Object) *metav1.PartialObjectMetadata</a></dd>
+			
+				
+				<dd><a href="index.html#CommonAccessor">func CommonAccessor(obj interface{}) (metav1.Common, error)</a></dd>
+			
+				
+				<dd><a href="index.html#EachListItem">func EachListItem(obj runtime.Object, fn func(runtime.Object) error) error</a></dd>
+			
+				
+				<dd><a href="index.html#ExtractList">func ExtractList(obj runtime.Object) ([]runtime.Object, error)</a></dd>
+			
+				
+				<dd><a href="index.html#FindStatusCondition">func FindStatusCondition(conditions []metav1.Condition, conditionType string) *metav1.Condition</a></dd>
+			
+				
+				<dd><a href="index.html#GetItemsPtr">func GetItemsPtr(list runtime.Object) (interface{}, error)</a></dd>
+			
+				
+				<dd><a href="index.html#IsAmbiguousError">func IsAmbiguousError(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsListType">func IsListType(obj runtime.Object) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsNoMatchError">func IsNoMatchError(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsStatusConditionFalse">func IsStatusConditionFalse(conditions []metav1.Condition, conditionType string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsStatusConditionPresentAndEqual">func IsStatusConditionPresentAndEqual(conditions []metav1.Condition, conditionType string, status metav1.ConditionStatus) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsStatusConditionTrue">func IsStatusConditionTrue(conditions []metav1.Condition, conditionType string) bool</a></dd>
+			
+				
+				<dd><a href="index.html#LenList">func LenList(list runtime.Object) int</a></dd>
+			
+				
+				<dd><a href="index.html#RemoveStatusCondition">func RemoveStatusCondition(conditions *[]metav1.Condition, conditionType string)</a></dd>
+			
+				
+				<dd><a href="index.html#SetList">func SetList(list runtime.Object, objects []runtime.Object) error</a></dd>
+			
+				
+				<dd><a href="index.html#SetStatusCondition">func SetStatusCondition(conditions *[]metav1.Condition, newCondition metav1.Condition)</a></dd>
+			
+				
+				<dd><a href="index.html#UnsafeGuessKindToResource">func UnsafeGuessKindToResource(kind schema.GroupVersionKind) (schema.GroupVersionResource, schema.GroupVersionResource)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#AmbiguousKindError">type AmbiguousKindError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AmbiguousKindError.Error">func (e *AmbiguousKindError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#AmbiguousResourceError">type AmbiguousResourceError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#AmbiguousResourceError.Error">func (e *AmbiguousResourceError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#DefaultRESTMapper">type DefaultRESTMapper</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewDefaultRESTMapper">func NewDefaultRESTMapper(defaultGroupVersions []schema.GroupVersion) *DefaultRESTMapper</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.Add">func (m *DefaultRESTMapper) Add(kind schema.GroupVersionKind, scope RESTScope)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.AddSpecific">func (m *DefaultRESTMapper) AddSpecific(kind schema.GroupVersionKind, plural, singular schema.GroupVersionResource, scope RESTScope)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.KindFor">func (m *DefaultRESTMapper) KindFor(resource schema.GroupVersionResource) (schema.GroupVersionKind, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.KindsFor">func (m *DefaultRESTMapper) KindsFor(input schema.GroupVersionResource) ([]schema.GroupVersionKind, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.RESTMapping">func (m *DefaultRESTMapper) RESTMapping(gk schema.GroupKind, versions ...string) (*RESTMapping, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.RESTMappings">func (m *DefaultRESTMapper) RESTMappings(gk schema.GroupKind, versions ...string) ([]*RESTMapping, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.ResourceFor">func (m *DefaultRESTMapper) ResourceFor(resource schema.GroupVersionResource) (schema.GroupVersionResource, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.ResourceSingularizer">func (m *DefaultRESTMapper) ResourceSingularizer(resourceType string) (string, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.ResourcesFor">func (m *DefaultRESTMapper) ResourcesFor(input schema.GroupVersionResource) ([]schema.GroupVersionResource, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DefaultRESTMapper.String">func (m *DefaultRESTMapper) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#FirstHitRESTMapper">type FirstHitRESTMapper</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FirstHitRESTMapper.KindFor">func (m FirstHitRESTMapper) KindFor(resource schema.GroupVersionResource) (schema.GroupVersionKind, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FirstHitRESTMapper.RESTMapping">func (m FirstHitRESTMapper) RESTMapping(gk schema.GroupKind, versions ...string) (*RESTMapping, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FirstHitRESTMapper.ResourceFor">func (m FirstHitRESTMapper) ResourceFor(resource schema.GroupVersionResource) (schema.GroupVersionResource, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FirstHitRESTMapper.String">func (m FirstHitRESTMapper) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#List">type List</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ListAccessor">func ListAccessor(obj interface{}) (List, error)</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ListMetaAccessor">type ListMetaAccessor</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#MetadataAccessor">type MetadataAccessor</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewAccessor">func NewAccessor() MetadataAccessor</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#MultiRESTMapper">type MultiRESTMapper</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.KindFor">func (m MultiRESTMapper) KindFor(resource schema.GroupVersionResource) (schema.GroupVersionKind, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.KindsFor">func (m MultiRESTMapper) KindsFor(resource schema.GroupVersionResource) (gvk []schema.GroupVersionKind, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.RESTMapping">func (m MultiRESTMapper) RESTMapping(gk schema.GroupKind, versions ...string) (*RESTMapping, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.RESTMappings">func (m MultiRESTMapper) RESTMappings(gk schema.GroupKind, versions ...string) ([]*RESTMapping, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.ResourceFor">func (m MultiRESTMapper) ResourceFor(resource schema.GroupVersionResource) (schema.GroupVersionResource, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.ResourceSingularizer">func (m MultiRESTMapper) ResourceSingularizer(resource string) (singular string, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.ResourcesFor">func (m MultiRESTMapper) ResourcesFor(resource schema.GroupVersionResource) ([]schema.GroupVersionResource, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#MultiRESTMapper.String">func (m MultiRESTMapper) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#NoKindMatchError">type NoKindMatchError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NoKindMatchError.Error">func (e *NoKindMatchError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#NoResourceMatchError">type NoResourceMatchError</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NoResourceMatchError.Error">func (e *NoResourceMatchError) Error() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#PriorityRESTMapper">type PriorityRESTMapper</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.KindFor">func (m PriorityRESTMapper) KindFor(partiallySpecifiedResource schema.GroupVersionResource) (schema.GroupVersionKind, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.KindsFor">func (m PriorityRESTMapper) KindsFor(partiallySpecifiedResource schema.GroupVersionResource) (gvk []schema.GroupVersionKind, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.RESTMapping">func (m PriorityRESTMapper) RESTMapping(gk schema.GroupKind, versions ...string) (mapping *RESTMapping, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.RESTMappings">func (m PriorityRESTMapper) RESTMappings(gk schema.GroupKind, versions ...string) ([]*RESTMapping, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.ResourceFor">func (m PriorityRESTMapper) ResourceFor(partiallySpecifiedResource schema.GroupVersionResource) (schema.GroupVersionResource, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.ResourceSingularizer">func (m PriorityRESTMapper) ResourceSingularizer(resource string) (singular string, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.ResourcesFor">func (m PriorityRESTMapper) ResourcesFor(partiallySpecifiedResource schema.GroupVersionResource) ([]schema.GroupVersionResource, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PriorityRESTMapper.String">func (m PriorityRESTMapper) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#RESTMapper">type RESTMapper</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewLazyRESTMapperLoader">func NewLazyRESTMapperLoader(fn func() (RESTMapper, error)) RESTMapper</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RESTMapping">type RESTMapping</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RESTScope">type RESTScope</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RESTScopeName">type RESTScopeName</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Type">type Type</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#TypeAccessor">func TypeAccessor(obj interface{}) (Type, error)</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/conditions.go">conditions.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go">errors.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/firsthit_restmapper.go">firsthit_restmapper.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/help.go">help.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go">interfaces.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/lazy.go">lazy.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/meta.go">meta.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go">multirestmapper.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go">priority.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go">restmapper.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span id="AnyGroup">AnyGroup</span>    = &#34;*&#34;
+    <span id="AnyVersion">AnyVersion</span>  = &#34;*&#34;
+    <span id="AnyResource">AnyResource</span> = &#34;*&#34;
+    <span id="AnyKind">AnyKind</span>     = &#34;*&#34;
+)</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var <span id="RESTScopeNamespace">RESTScopeNamespace</span> = &amp;restScope{
+    name: <a href="index.html#RESTScopeNameNamespace">RESTScopeNameNamespace</a>,
+}</pre>
+			
+				
+				<pre>var <span id="RESTScopeRoot">RESTScopeRoot</span> = &amp;restScope{
+    name: <a href="index.html#RESTScopeNameRoot">RESTScopeNameRoot</a>,
+}</pre>
+			
+		
+		
+			
+			
+			<h2 id="Accessor">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/meta.go?s=2870:2923#L86">Accessor</a>
+				<a class="permalink" href="index.html#Accessor">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Accessor(obj interface{}) (<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Object">Object</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+Accessor takes an arbitrary object pointer and returns meta.Interface.
+obj must be a pointer to an API type. An error is returned if the minimum
+required fields are missing. Fields that are not required return the default
+value and are a no-op if set.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="AsPartialObjectMetadata">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/meta.go?s=3295:3370#L102">AsPartialObjectMetadata</a>
+				<a class="permalink" href="index.html#AsPartialObjectMetadata">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AsPartialObjectMetadata(m <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Object">Object</a>) *<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#PartialObjectMetadata">PartialObjectMetadata</a></pre>
+			<p>
+AsPartialObjectMetadata takes the metav1 interface and returns a partial object.
+TODO: consider making this solely a conversion action.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CommonAccessor">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/meta.go?s=1254:1313#L29">CommonAccessor</a>
+				<a class="permalink" href="index.html#CommonAccessor">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CommonAccessor(obj interface{}) (<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Common">Common</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+CommonAccessor returns a Common interface for the provided object or an error if the object does
+not provide List.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="EachListItem">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/help.go?s=3116:3190#L105">EachListItem</a>
+				<a class="permalink" href="index.html#EachListItem">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EachListItem(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, fn func(<a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+EachListItem invokes fn on each runtime.Object in the list. Any error immediately terminates
+the loop.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ExtractList">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/help.go?s=4508:4570#L159">ExtractList</a>
+				<a class="permalink" href="index.html#ExtractList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ExtractList(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) ([]<a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ExtractList returns obj&#39;s Items element as an array of runtime.Objects.
+Returns an error if obj is not a List type (does not have an Items member).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="FindStatusCondition">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/conditions.go?s=2545:2640#L64">FindStatusCondition</a>
+				<a class="permalink" href="index.html#FindStatusCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func FindStatusCondition(conditions []<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a>, conditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a></pre>
+			<p>
+FindStatusCondition finds the conditionType in conditions.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetItemsPtr">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/help.go?s=2170:2228#L70">GetItemsPtr</a>
+				<a class="permalink" href="index.html#GetItemsPtr">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetItemsPtr(list <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (interface{}, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetItemsPtr returns a pointer to the list object&#39;s Items member.
+If &#39;list&#39; doesn&#39;t have an Items member, it&#39;s not really a list type
+and an error will be returned.
+This function will either return a pointer to a slice, or an error, but not both.
+TODO: this will be replaced with an interface in the future
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsAmbiguousError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=2376:2413#L56">IsAmbiguousError</a>
+				<a class="permalink" href="index.html#IsAmbiguousError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsAmbiguousError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="IsListType">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/help.go?s=1215:1255#L34">IsListType</a>
+				<a class="permalink" href="index.html#IsListType">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsListType(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsListType returns true if the provided Object has a slice called Items.
+TODO: Replace the code in this check with an interface comparison by
+</p>
+<pre>creating and enforcing that lists implement a list accessor.
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsNoMatchError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=3759:3794#L101">IsNoMatchError</a>
+				<a class="permalink" href="index.html#IsNoMatchError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsNoMatchError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="IsStatusConditionFalse">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/conditions.go?s=3157:3242#L80">IsStatusConditionFalse</a>
+				<a class="permalink" href="index.html#IsStatusConditionFalse">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsStatusConditionFalse(conditions []<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a>, conditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsStatusConditionFalse returns true when the conditionType is present and set to `metav1.ConditionFalse`
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsStatusConditionPresentAndEqual">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/conditions.go?s=3439:3565#L85">IsStatusConditionPresentAndEqual</a>
+				<a class="permalink" href="index.html#IsStatusConditionPresentAndEqual">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsStatusConditionPresentAndEqual(conditions []<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a>, conditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a>, status <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#ConditionStatus">ConditionStatus</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsStatusConditionPresentAndEqual returns true when conditionType is present and equal to status.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsStatusConditionTrue">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/conditions.go?s=2869:2953#L75">IsStatusConditionTrue</a>
+				<a class="permalink" href="index.html#IsStatusConditionTrue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsStatusConditionTrue(conditions []<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a>, conditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsStatusConditionTrue returns true when the conditionType is present and set to `metav1.ConditionTrue`
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="LenList">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/help.go?s=5592:5629#L198">LenList</a>
+				<a class="permalink" href="index.html#LenList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func LenList(list <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+			<p>
+LenList returns the length of this list or 0 if it is not a list.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="RemoveStatusCondition">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/conditions.go?s=2126:2206#L49">RemoveStatusCondition</a>
+				<a class="permalink" href="index.html#RemoveStatusCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func RemoveStatusCondition(conditions *[]<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a>, conditionType <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+			<p>
+RemoveStatusCondition removes the corresponding conditionType from conditions.
+conditions must be non-nil.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetList">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/help.go?s=6027:6092#L214">SetList</a>
+				<a class="permalink" href="index.html#SetList">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetList(list <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, objects []<a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+			<p>
+SetList sets the given list object&#39;s Items member have the elements given in
+objects.
+Returns an error if list is not a List type (does not have an Items member),
+or if any of the objects are not of the right type.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetStatusCondition">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/conditions.go?s=1117:1203#L20">SetStatusCondition</a>
+				<a class="permalink" href="index.html#SetStatusCondition">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetStatusCondition(conditions *[]<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a>, newCondition <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Condition">Condition</a>)</pre>
+			<p>
+SetStatusCondition sets the corresponding condition in conditions to newCondition.
+conditions must be non-nil.
+1. if the condition of the specified type already exists (all fields of the existing condition are updated to
+</p>
+<pre>newCondition, LastTransitionTime is set to now if the new status differs from the old status)
+</pre>
+<p>
+2. if a condition of the specified type does not exist (LastTransitionTime is set to now() if unset, and newCondition is appended)
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="UnsafeGuessKindToResource">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=4697:4841#L116">UnsafeGuessKindToResource</a>
+				<a class="permalink" href="index.html#UnsafeGuessKindToResource">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func UnsafeGuessKindToResource(kind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>)</pre>
+			<p>
+UnsafeGuessKindToResource converts Kind to a resource name.
+Broken. This method only &#34;sort of&#34; works when used outside of this package.  It assumes that Kinds and Resources match
+and they aren&#39;t guaranteed to do so.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="AmbiguousKindError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=1636:1802#L37">AmbiguousKindError</a>
+				<a class="permalink" href="index.html#AmbiguousKindError">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+AmbiguousKindError is returned if the RESTMapper finds multiple matches for a kind
+</p>
+
+			<pre>type AmbiguousKindError struct {
+<span id="AmbiguousKindError.PartialKind"></span>    PartialKind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>
+
+<span id="AmbiguousKindError.MatchingResources"></span>    MatchingResources []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>
+<span id="AmbiguousKindError.MatchingKinds"></span>    MatchingKinds     []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="AmbiguousKindError.Error">func (*AmbiguousKindError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=1804:1847#L44">Error</a>
+					<a class="permalink" href="index.html#AmbiguousKindError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e *<a href="index.html#AmbiguousKindError">AmbiguousKindError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="AmbiguousResourceError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=778:956#L17">AmbiguousResourceError</a>
+				<a class="permalink" href="index.html#AmbiguousResourceError">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+AmbiguousResourceError is returned if the RESTMapper finds multiple matches for a resource
+</p>
+
+			<pre>type AmbiguousResourceError struct {
+<span id="AmbiguousResourceError.PartialResource"></span>    PartialResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>
+
+<span id="AmbiguousResourceError.MatchingResources"></span>    MatchingResources []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>
+<span id="AmbiguousResourceError.MatchingKinds"></span>    MatchingKinds     []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="AmbiguousResourceError.Error">func (*AmbiguousResourceError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=958:1005#L24">Error</a>
+					<a class="permalink" href="index.html#AmbiguousResourceError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e *<a href="index.html#AmbiguousResourceError">AmbiguousResourceError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DefaultRESTMapper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=1586:2044#L47">DefaultRESTMapper</a>
+				<a class="permalink" href="index.html#DefaultRESTMapper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DefaultRESTMapper exposes mappings between the types defined in a
+runtime.Scheme. It assumes that all types defined the provided scheme
+can be mapped with the provided MetadataAccessor and Codec interfaces.
+</p>
+<p>
+The resource name of a Kind is defined as the lowercase,
+English-plural version of the Kind string.
+When converting from resource to Kind, the singular version of the
+resource name is also accepted for convenience.
+</p>
+<p>
+TODO: Only accept plural for some operations for increased control?
+(`get pod bar` vs `get pods bar`)
+</p>
+
+			<pre>type DefaultRESTMapper struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewDefaultRESTMapper">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=2656:2744#L71">NewDefaultRESTMapper</a>
+					<a class="permalink" href="index.html#NewDefaultRESTMapper">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDefaultRESTMapper(defaultGroupVersions []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersion">GroupVersion</a>) *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a></pre>
+				<p>
+NewDefaultRESTMapper initializes a mapping between Kind and APIVersion
+to a resource name and back based on the objects in a runtime.Scheme
+and the Kubernetes API conventions. Takes a group name, a priority list of the versions
+to search when an object has no default version (set empty to return an error),
+and a function that retrieves the correct metadata for a given version.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="DefaultRESTMapper.Add">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=3504:3582#L89">Add</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.Add">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) Add(kind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, scope <a href="index.html#RESTScope">RESTScope</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.AddSpecific">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=3687:3819#L94">AddSpecific</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.AddSpecific">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) AddSpecific(kind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, plural, singular <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, scope <a href="index.html#RESTScope">RESTScope</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.KindFor">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=11548:11654#L348">KindFor</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.KindFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) KindFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.KindsFor">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=9693:9799#L281">KindsFor</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.KindsFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) KindsFor(input <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) ([]<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.RESTMapping">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=14048:14150#L440">RESTMapping</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.RESTMapping">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) RESTMapping(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+RESTMapping returns a struct representing the resource path and conversion interfaces a
+RESTClient should use to operate on the provided group/kind in order of versions. If a version search
+order is not provided, the search order provided to DefaultRESTMapper will be used to resolve which
+version should be used to access the named group/kind.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.RESTMappings">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=14679:14784#L456">RESTMappings</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.RESTMappings">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) RESTMappings(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+RESTMappings returns the RESTMappings for the provided group kind. If a version search order
+is not provided, the search order provided to DefaultRESTMapper will be used.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.ResourceFor">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=9288:9402#L269">ResourceFor</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.ResourceFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) ResourceFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.ResourceSingularizer">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=5646:5731#L142">ResourceSingularizer</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.ResourceSingularizer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) ResourceSingularizer(resourceType <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ResourceSingularizer implements RESTMapper
+It converts a resource name from plural to singular (e.g., from pods to pod)
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.ResourcesFor">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=6835:6949#L182">ResourcesFor</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.ResourcesFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) ResourcesFor(input <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) ([]<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="DefaultRESTMapper.String">func (*DefaultRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/restmapper.go?s=2046:2089#L57">String</a>
+					<a class="permalink" href="index.html#DefaultRESTMapper.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#DefaultRESTMapper">DefaultRESTMapper</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="FirstHitRESTMapper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/firsthit_restmapper.go?s=828:879#L18">FirstHitRESTMapper</a>
+				<a class="permalink" href="index.html#FirstHitRESTMapper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+FirstHitRESTMapper is a wrapper for multiple RESTMappers which returns the
+first successful result for the singular requests
+</p>
+
+			<pre>type FirstHitRESTMapper struct {
+    <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="FirstHitRESTMapper.KindFor">func (FirstHitRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/firsthit_restmapper.go?s=1366:1472#L39">KindFor</a>
+					<a class="permalink" href="index.html#FirstHitRESTMapper.KindFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#FirstHitRESTMapper">FirstHitRESTMapper</a>) KindFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="FirstHitRESTMapper.RESTMapping">func (FirstHitRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/firsthit_restmapper.go?s=1889:1991#L55">RESTMapping</a>
+					<a class="permalink" href="index.html#FirstHitRESTMapper.RESTMapping">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#FirstHitRESTMapper">FirstHitRESTMapper</a>) RESTMapping(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+RESTMapping provides the REST mapping for the resource based on the
+kind and version. This implementation supports multiple REST schemas and
+return the first match.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="FirstHitRESTMapper.ResourceFor">func (FirstHitRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/firsthit_restmapper.go?s=1001:1115#L26">ResourceFor</a>
+					<a class="permalink" href="index.html#FirstHitRESTMapper.ResourceFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#FirstHitRESTMapper">FirstHitRESTMapper</a>) ResourceFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="FirstHitRESTMapper.String">func (FirstHitRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/firsthit_restmapper.go?s=881:924#L22">String</a>
+					<a class="permalink" href="index.html#FirstHitRESTMapper.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#FirstHitRESTMapper">FirstHitRESTMapper</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="List">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=1037:1067#L23">List</a>
+				<a class="permalink" href="index.html#List">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+List lets you work with list metadata from any of the versioned or
+internal API objects. Attempting to set or retrieve a field on an object that does
+not support that field will be a no-op and return a default value.
+</p>
+
+			<pre>type List <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#ListInterface">ListInterface</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ListAccessor">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/meta.go?s=2035:2083#L59">ListAccessor</a>
+					<a class="permalink" href="index.html#ListAccessor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ListAccessor(obj interface{}) (<a href="index.html#List">List</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ListAccessor returns a List interface for the provided object or an error if the object does
+not provide List.
+IMPORTANT: Objects are NOT a superset of lists. Do not use this check to determine whether an
+object *is* a List.
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="ListMetaAccessor">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=754:809#L16">ListMetaAccessor</a>
+				<a class="permalink" href="index.html#ListMetaAccessor">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ListMetaAccessor interface {
+    GetListMeta() <a href="index.html#List">List</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="MetadataAccessor">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=1544:2653#L34">MetadataAccessor</a>
+				<a class="permalink" href="index.html#MetadataAccessor">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+MetadataAccessor lets you work with object and list metadata from any of the versioned or
+internal API objects. Attempting to set or retrieve a field on an object that does
+not support that field (Name, UID, Namespace on lists) will be a no-op and return
+a default value.
+</p>
+<p>
+MetadataAccessor exposes Interface in a way that can be used with multiple objects.
+</p>
+
+			<pre>type MetadataAccessor interface {
+    APIVersion(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetAPIVersion(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, version <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    Kind(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetKind(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, kind <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    Namespace(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetNamespace(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, namespace <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    Name(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetName(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    GenerateName(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetGenerateName(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    UID(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="../../types/index.html">types</a>.<a href="../../types/index.html#UID">UID</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetUID(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, uid <a href="../../types/index.html">types</a>.<a href="../../types/index.html#UID">UID</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    SelfLink(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetSelfLink(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, selfLink <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    Labels(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetLabels(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, labels map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    Annotations(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetAnnotations(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, annotations map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    Continue(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    SetContinue(obj <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#Object">Object</a>, c <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a>
+
+    <a href="../../runtime/index.html">runtime</a>.<a href="../../runtime/index.html#ResourceVersioner">ResourceVersioner</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewAccessor">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/meta.go?s=6323:6358#L190">NewAccessor</a>
+					<a class="permalink" href="index.html#NewAccessor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewAccessor() <a href="index.html#MetadataAccessor">MetadataAccessor</a></pre>
+				<p>
+NewAccessor returns a MetadataAccessor that can retrieve
+or manipulate resource version on objects derived from core API
+metadata concepts.
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="MultiRESTMapper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=766:799#L18">MultiRESTMapper</a>
+				<a class="permalink" href="index.html#MultiRESTMapper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+MultiRESTMapper is a wrapper for multiple RESTMappers.
+</p>
+
+			<pre>type MultiRESTMapper []<a href="index.html#RESTMapper">RESTMapper</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="MultiRESTMapper.KindFor">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=3419:3522#L125">KindFor</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.KindFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) KindFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MultiRESTMapper.KindsFor">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=2274:2388#L78">KindsFor</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.KindsFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) KindsFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (gvk []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MultiRESTMapper.RESTMapping">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=3955:4054#L140">RESTMapping</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.RESTMapping">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) RESTMapping(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+RESTMapping provides the REST mapping for the resource based on the
+kind and version. This implementation supports multiple REST schemas and
+return the first match.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MultiRESTMapper.RESTMappings">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=5072:5174#L177">RESTMappings</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.RESTMappings">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) RESTMappings(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+RESTMappings returns all possible RESTMappings for the provided group kind, or an error
+if the type is not recognized.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MultiRESTMapper.ResourceFor">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=3017:3128#L113">ResourceFor</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.ResourceFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) ResourceFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MultiRESTMapper.ResourceSingularizer">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=1309:1400#L33">ResourceSingularizer</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.ResourceSingularizer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) ResourceSingularizer(resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (singular <a href="http://localhost:6060/pkg/builtin/#string">string</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ResourceSingularizer converts a REST resource name from plural to singular (e.g., from pods to pod)
+This implementation supports multiple REST schemas and return the first match.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="MultiRESTMapper.ResourcesFor">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=1523:1637#L43">ResourcesFor</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.ResourcesFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) ResourcesFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) ([]<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="MultiRESTMapper.String">func (MultiRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/multirestmapper.go?s=801:841#L20">String</a>
+					<a class="permalink" href="index.html#MultiRESTMapper.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#MultiRESTMapper">MultiRESTMapper</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NoKindMatchError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=2935:3163#L78">NoKindMatchError</a>
+				<a class="permalink" href="index.html#NoKindMatchError">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+NoKindMatchError is returned if the RESTMapper can&#39;t find any match for a kind
+</p>
+
+			<pre>type NoKindMatchError struct {
+<span id="NoKindMatchError.GroupKind"></span>    <span class="comment">// GroupKind is the API group and kind that was searched</span>
+    GroupKind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>
+<span id="NoKindMatchError.SearchedVersions"></span>    <span class="comment">// SearchedVersions is the optional list of versions the search was restricted to</span>
+    SearchedVersions []<a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="NoKindMatchError.Error">func (*NoKindMatchError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=3165:3206#L85">Error</a>
+					<a class="permalink" href="index.html#NoKindMatchError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e *<a href="index.html#NoKindMatchError">NoKindMatchError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="NoResourceMatchError">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=2659:2740#L69">NoResourceMatchError</a>
+				<a class="permalink" href="index.html#NoResourceMatchError">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+NoResourceMatchError is returned if the RESTMapper can&#39;t find any match for a resource
+</p>
+
+			<pre>type NoResourceMatchError struct {
+<span id="NoResourceMatchError.PartialResource"></span>    PartialResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="NoResourceMatchError.Error">func (*NoResourceMatchError) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/errors.go?s=2742:2787#L73">Error</a>
+					<a class="permalink" href="index.html#NoResourceMatchError.Error">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (e *<a href="index.html#NoResourceMatchError">NoResourceMatchError</a>) Error() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="PriorityRESTMapper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=864:1723#L24">PriorityRESTMapper</a>
+				<a class="permalink" href="index.html#PriorityRESTMapper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+PriorityRESTMapper is a wrapper for automatically choosing a particular Resource or Kind
+when multiple matches are possible
+</p>
+
+			<pre>type PriorityRESTMapper struct {
+<span id="PriorityRESTMapper.Delegate"></span>    <span class="comment">// Delegate is the RESTMapper to use to locate all the Kind and Resource matches</span>
+    Delegate <a href="index.html#RESTMapper">RESTMapper</a>
+
+<span id="PriorityRESTMapper.ResourcePriority"></span>    <span class="comment">// ResourcePriority is a list of priority patterns to apply to matching resources.</span>
+    <span class="comment">// The list of all matching resources is narrowed based on the patterns until only one remains.</span>
+    <span class="comment">// A pattern with no matches is skipped.  A pattern with more than one match uses its</span>
+    <span class="comment">// matches as the list to continue matching against.</span>
+    ResourcePriority []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>
+
+<span id="PriorityRESTMapper.KindPriority"></span>    <span class="comment">// KindPriority is a list of priority patterns to apply to matching kinds.</span>
+    <span class="comment">// The list of all matching kinds is narrowed based on the patterns until only one remains.</span>
+    <span class="comment">// A pattern with no matches is skipped.  A pattern with more than one match uses its</span>
+    <span class="comment">// matches as the list to continue matching against.</span>
+    KindPriority []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="PriorityRESTMapper.KindFor">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=3360:3484#L82">KindFor</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.KindFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) KindFor(partiallySpecifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+KindFor finds all kinds, then passes them through the KindPriority patterns to find a single matching hit.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PriorityRESTMapper.KindsFor">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=7410:7545#L210">KindsFor</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.KindsFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) KindsFor(partiallySpecifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (gvk []<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PriorityRESTMapper.RESTMapping">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=5308:5422#L145">RESTMapping</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.RESTMapping">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) RESTMapping(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (mapping *<a href="index.html#RESTMapping">RESTMapping</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PriorityRESTMapper.RESTMappings">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=6899:7004#L198">RESTMappings</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.RESTMappings">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) RESTMappings(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PriorityRESTMapper.ResourceFor">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=2008:2140#L46">ResourceFor</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.ResourceFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) ResourceFor(partiallySpecifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ResourceFor finds all resources, then passes them through the ResourcePriority patterns to find a single matching hit.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PriorityRESTMapper.ResourceSingularizer">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=7059:7153#L202">ResourceSingularizer</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.ResourceSingularizer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) ResourceSingularizer(resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (singular <a href="http://localhost:6060/pkg/builtin/#string">string</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PriorityRESTMapper.ResourcesFor">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=7209:7344#L206">ResourcesFor</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.ResourcesFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) ResourcesFor(partiallySpecifiedResource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) ([]<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="PriorityRESTMapper.String">func (PriorityRESTMapper) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/priority.go?s=1725:1768#L41">String</a>
+					<a class="permalink" href="index.html#PriorityRESTMapper.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m <a href="index.html#PriorityRESTMapper">PriorityRESTMapper</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="RESTMapper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=3967:5274#L103">RESTMapper</a>
+				<a class="permalink" href="index.html#RESTMapper">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+RESTMapper allows clients to map resources to kind, and map kind and version
+to interfaces for manipulating those objects. It is primarily intended for
+consumers of Kubernetes compatible REST APIs as defined in docs/devel/api-conventions.md.
+</p>
+<p>
+The Kubernetes API provides versioned resources and object kinds which are scoped
+to API groups. In other words, kinds and resources should not be assumed to be
+unique across groups.
+</p>
+<p>
+TODO: split into sub-interfaces
+</p>
+
+			<pre>type RESTMapper interface {
+    <span class="comment">// KindFor takes a partial resource and returns the single match.  Returns an error if there are multiple matches</span>
+    KindFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+    <span class="comment">// KindsFor takes a partial resource and returns the list of potential kinds in priority order</span>
+    KindsFor(resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) ([]<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+    <span class="comment">// ResourceFor takes a partial resource and returns the single match.  Returns an error if there are multiple matches</span>
+    ResourceFor(input <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) (<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+    <span class="comment">// ResourcesFor takes a partial resource and returns the list of potential resource in priority order</span>
+    ResourcesFor(input <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>) ([]<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+    <span class="comment">// RESTMapping identifies a preferred resource mapping for the provided group kind.</span>
+    RESTMapping(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+    <span class="comment">// RESTMappings returns all resource mappings for the provided group kind if no</span>
+    <span class="comment">// version search is provided. Otherwise identifies a preferred resource mapping for</span>
+    <span class="comment">// the provided version(s).</span>
+    RESTMappings(gk <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupKind">GroupKind</a>, versions ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]*<a href="index.html#RESTMapping">RESTMapping</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+    ResourceSingularizer(resource <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (singular <a href="http://localhost:6060/pkg/builtin/#string">string</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewLazyRESTMapperLoader">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/lazy.go?s=1129:1199#L28">NewLazyRESTMapperLoader</a>
+					<a class="permalink" href="index.html#NewLazyRESTMapperLoader">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewLazyRESTMapperLoader(fn func() (<a href="index.html#RESTMapper">RESTMapper</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)) <a href="index.html#RESTMapper">RESTMapper</a></pre>
+				<p>
+NewLazyObjectLoader handles unrecoverable errors when creating a RESTMapper / ObjectTyper by
+returning those initialization errors when the interface methods are invoked. This defers the
+initialization and any server calls until a client actually needs to perform the action.
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="RESTMapping">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=3096:3481#L83">RESTMapping</a>
+				<a class="permalink" href="index.html#RESTMapping">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+RESTMapping contains the information needed to deal with objects of a specific
+resource and kind in a RESTful manner.
+</p>
+
+			<pre>type RESTMapping struct {
+<span id="RESTMapping.Resource"></span>    <span class="comment">// Resource is the GroupVersionResource (location) for this endpoint</span>
+    Resource <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionResource">GroupVersionResource</a>
+
+<span id="RESTMapping.GroupVersionKind"></span>    <span class="comment">// GroupVersionKind is the GroupVersionKind (data format) to submit to this endpoint</span>
+    GroupVersionKind <a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>
+
+<span id="RESTMapping.Scope"></span>    <span class="comment">// Scope contains the information needed to deal with REST Resources that are in a resource hierarchy</span>
+    Scope <a href="index.html#RESTScope">RESTScope</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RESTScope">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=2898:2970#L76">RESTScope</a>
+				<a class="permalink" href="index.html#RESTScope">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+RESTScope contains the information needed to deal with REST resources that are in a resource hierarchy
+</p>
+
+			<pre>type RESTScope interface {
+    <span class="comment">// Name of the scope</span>
+    Name() <a href="index.html#RESTScopeName">RESTScopeName</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RESTScopeName">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=2655:2680#L68">RESTScopeName</a>
+				<a class="permalink" href="index.html#RESTScopeName">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type RESTScopeName <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="RESTScopeNameNamespace">RESTScopeNameNamespace</span> <a href="index.html#RESTScopeName">RESTScopeName</a> = &#34;namespace&#34;
+    <span id="RESTScopeNameRoot">RESTScopeNameRoot</span>      <a href="index.html#RESTScopeName">RESTScopeName</a> = &#34;root&#34;
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Type">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/interfaces.go?s=1147:1168#L26">Type</a>
+				<a class="permalink" href="index.html#Type">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Type exposes the type and APIVersion of versioned or internal API objects.
+</p>
+
+			<pre>type Type <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Type">Type</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="TypeAccessor">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/meta/meta.go?s=4748:4796#L135">TypeAccessor</a>
+					<a class="permalink" href="index.html#TypeAccessor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func TypeAccessor(obj interface{}) (<a href="index.html#Type">Type</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+TypeAccessor returns an interface that allows retrieving and modifying the APIVersion
+and Kind of an in-memory internal object.
+TODO: this interface is used to test code that does not have ObjectMeta or ListMeta
+in round tripping (objects which can use apiVersion/kind, but do not fit the Kube
+api conventions).
+</p>
+
+				
+				
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="table/index.html">table</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="testrestmapper/index.html">testrestmapper</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

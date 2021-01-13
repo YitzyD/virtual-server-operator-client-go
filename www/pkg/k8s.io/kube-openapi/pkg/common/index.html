@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>common - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package common
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/kube-openapi/pkg/common"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+package common holds shared code and types between open API code
+generator and spec generator.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#EscapeJsonPointer">func EscapeJsonPointer(p string) string</a></dd>
+			
+				
+				<dd><a href="index.html#OpenAPITypeFormat">func OpenAPITypeFormat(typeName string) (string, string)</a></dd>
+			
+				
+				<dd><a href="index.html#OpenAPIZeroValue">func OpenAPIZeroValue(typeName string) (interface{}, bool)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Config">type Config</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#GetOpenAPIDefinitions">type GetOpenAPIDefinitions</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#OpenAPIDefinition">type OpenAPIDefinition</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#EmbedOpenAPIDefinitionIntoV2Extension">func EmbedOpenAPIDefinitionIntoV2Extension(main OpenAPIDefinition, embedded OpenAPIDefinition) OpenAPIDefinition</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#OpenAPIDefinitionGetter">type OpenAPIDefinitionGetter</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#OpenAPIV3DefinitionGetter">type OpenAPIV3DefinitionGetter</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#PathHandler">type PathHandler</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ReferenceCallback">type ReferenceCallback</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go">common.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/doc.go">doc.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span class="comment">// TODO: Make this configurable.</span>
+    <span id="ExtensionPrefix">ExtensionPrefix</span>   = &#34;x-kubernetes-&#34;
+    <span id="ExtensionV2Schema">ExtensionV2Schema</span> = <a href="index.html#ExtensionPrefix">ExtensionPrefix</a> + &#34;v2-schema&#34;
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="EscapeJsonPointer">func <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=7247:7286#L185">EscapeJsonPointer</a>
+				<a class="permalink" href="index.html#EscapeJsonPointer">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func EscapeJsonPointer(p <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="OpenAPITypeFormat">func <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=6816:6872#L167">OpenAPITypeFormat</a>
+				<a class="permalink" href="index.html#OpenAPITypeFormat">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func OpenAPITypeFormat(typeName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+			<p>
+This function is a reference for converting go (or any custom type) to a simple open API type,format pair. There are
+two ways to customize spec for a type. If you add it here, a type will be converted to a simple type and the type
+comment (the comment that is added before type definition) will be lost. The spec will still have the property
+comment. The second way is to implement OpenAPIDefinitionGetter interface. That function can customize the spec (so
+the spec does not need to be simple type,format) or can even return a simple type,format (e.g. IntOrString). For simple
+type formats, the benefit of adding OpenAPIDefinitionGetter interface is to keep both type and property documentation.
+Example:
+type Sample struct {
+</p>
+<pre>...
+// port of the server
+port IntOrString
+...
+</pre>
+<p>
+}
+// IntOrString documentation...
+type IntOrString { ... }
+</p>
+<p>
+Adding IntOrString to this function:
+&#34;port&#34; : {
+</p>
+<pre>format:      &#34;string&#34;,
+type:        &#34;int-or-string&#34;,
+Description: &#34;port of the server&#34;
+</pre>
+<p>
+}
+</p>
+<p>
+Implement OpenAPIDefinitionGetter for IntOrString:
+</p>
+<p>
+&#34;port&#34; : {
+</p>
+<pre>$Ref:    &#34;#/definitions/IntOrString&#34;
+Description: &#34;port of the server&#34;
+</pre>
+<p>
+}
+...
+definitions:
+{
+</p>
+<pre>&#34;IntOrString&#34;: {
+          format:      &#34;string&#34;,
+          type:        &#34;int-or-string&#34;,
+          Description: &#34;IntOrString documentation...&#34;    // new
+}
+</pre>
+<p>
+}
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="OpenAPIZeroValue">func <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=7079:7137#L177">OpenAPIZeroValue</a>
+				<a class="permalink" href="index.html#OpenAPIZeroValue">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func OpenAPIZeroValue(typeName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (interface{}, <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+Returns the zero-value for the given type along with true if the type
+could be found.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Config">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=1862:4275#L51">Config</a>
+				<a class="permalink" href="index.html#Config">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Config is set of configuration for openAPI spec generation.
+</p>
+
+			<pre>type Config struct {
+    <span class="comment">// List of supported protocols such as https, http, etc.</span>
+<span id="Config.ProtocolList"></span>    ProtocolList []<a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+<span id="Config.Info"></span>    <span class="comment">// Info is general information about the API.</span>
+    Info *<a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Info">Info</a>
+
+<span id="Config.DefaultResponse"></span>    <span class="comment">// DefaultResponse will be used if an operation does not have any responses listed. It</span>
+    <span class="comment">// will show up as ... &#34;responses&#34; : {&#34;default&#34; : $DefaultResponse} in the spec.</span>
+    DefaultResponse *<a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Response">Response</a>
+
+<span id="Config.ResponseDefinitions"></span>    <span class="comment">// ResponseDefinitions will be added to &#34;responses&#34; under the top-level swagger object. This is an object</span>
+    <span class="comment">// that holds responses definitions that can be used across operations. This property does not define</span>
+    <span class="comment">// global responses for all operations. For more info please refer:</span>
+    <span class="comment">//     https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#fixed-fields</span>
+    ResponseDefinitions map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Response">Response</a>
+
+<span id="Config.CommonResponses"></span>    <span class="comment">// CommonResponses will be added as a response to all operation specs. This is a good place to add common</span>
+    <span class="comment">// responses such as authorization failed.</span>
+    CommonResponses map[<a href="http://localhost:6060/pkg/builtin/#int">int</a>]<a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Response">Response</a>
+
+    <span class="comment">// List of webservice&#39;s path prefixes to ignore</span>
+<span id="Config.IgnorePrefixes"></span>    IgnorePrefixes []<a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+    <span class="comment">// OpenAPIDefinitions should provide definition for all models used by routes. Failure to provide this map</span>
+    <span class="comment">// or any of the models will result in spec generation failure.</span>
+<span id="Config.GetDefinitions"></span>    GetDefinitions <a href="index.html#GetOpenAPIDefinitions">GetOpenAPIDefinitions</a>
+
+<span id="Config.GetOperationIDAndTags"></span>    <span class="comment">// GetOperationIDAndTags returns operation id and tags for a restful route. It is an optional function to customize operation IDs.</span>
+    GetOperationIDAndTags func(r *restful.<a href="index.html#Route">Route</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+<span id="Config.GetDefinitionName"></span>    <span class="comment">// GetDefinitionName returns a friendly name for a definition base on the serving path. parameter `name` is the full name of the definition.</span>
+    <span class="comment">// It is an optional function to customize model names.</span>
+    GetDefinitionName func(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Extensions">Extensions</a>)
+
+<span id="Config.PostProcessSpec"></span>    <span class="comment">// PostProcessSpec runs after the spec is ready to serve. It allows a final modification to the spec before serving.</span>
+    PostProcessSpec func(*<a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Swagger">Swagger</a>) (*<a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Swagger">Swagger</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+
+<span id="Config.SecurityDefinitions"></span>    <span class="comment">// SecurityDefinitions is list of all security definitions for OpenAPI service. If this is not nil, the user of config</span>
+    <span class="comment">// is responsible to provide DefaultSecurity and (maybe) add unauthorized response to CommonResponses.</span>
+    SecurityDefinitions *<a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#SecurityDefinitions">SecurityDefinitions</a>
+
+<span id="Config.DefaultSecurity"></span>    <span class="comment">// DefaultSecurity for all operations. This will pass as spec.SwaggerProps.Security to OpenAPI.</span>
+    <span class="comment">// For most cases, this will be list of acceptable definitions in SecurityDefinitions.</span>
+    DefaultSecurity []map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>][]<a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="GetOpenAPIDefinitions">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=1123:1202#L32">GetOpenAPIDefinitions</a>
+				<a class="permalink" href="index.html#GetOpenAPIDefinitions">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+GetOpenAPIDefinitions is collection of all definitions.
+</p>
+
+			<pre>type GetOpenAPIDefinitions func(<a href="index.html#ReferenceCallback">ReferenceCallback</a>) map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="index.html#OpenAPIDefinition">OpenAPIDefinition</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="OpenAPIDefinition">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=929:1011#L24">OpenAPIDefinition</a>
+				<a class="permalink" href="index.html#OpenAPIDefinition">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+OpenAPIDefinition describes single type. Normally these definitions are auto-generated using gen-openapi.
+</p>
+
+			<pre>type OpenAPIDefinition struct {
+<span id="OpenAPIDefinition.Schema"></span>    Schema       <a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Schema">Schema</a>
+<span id="OpenAPIDefinition.Dependencies"></span>    Dependencies []<a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="EmbedOpenAPIDefinitionIntoV2Extension">func <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=7422:7534#L192">EmbedOpenAPIDefinitionIntoV2Extension</a>
+					<a class="permalink" href="index.html#EmbedOpenAPIDefinitionIntoV2Extension">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func EmbedOpenAPIDefinitionIntoV2Extension(main <a href="index.html#OpenAPIDefinition">OpenAPIDefinition</a>, embedded <a href="index.html#OpenAPIDefinition">OpenAPIDefinition</a>) <a href="index.html#OpenAPIDefinition">OpenAPIDefinition</a></pre>
+				
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="OpenAPIDefinitionGetter">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=1552:1634#L38">OpenAPIDefinitionGetter</a>
+				<a class="permalink" href="index.html#OpenAPIDefinitionGetter">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+OpenAPIDefinitionGetter gets openAPI definitions for a given type. If a type implements this interface,
+the definition returned by it will be used, otherwise the auto-generated definitions will be used. See
+GetOpenAPITypeFormat for more information about trade-offs of using this interface or GetOpenAPITypeFormat method when
+possible.
+</p>
+
+			<pre>type OpenAPIDefinitionGetter interface {
+    OpenAPIDefinition() *<a href="index.html#OpenAPIDefinition">OpenAPIDefinition</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="OpenAPIV3DefinitionGetter">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=1636:1722#L42">OpenAPIV3DefinitionGetter</a>
+				<a class="permalink" href="index.html#OpenAPIV3DefinitionGetter">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type OpenAPIV3DefinitionGetter interface {
+    OpenAPIV3Definition() *<a href="index.html#OpenAPIDefinition">OpenAPIDefinition</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PathHandler">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=1724:1797#L46">PathHandler</a>
+				<a class="permalink" href="index.html#PathHandler">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type PathHandler interface {
+    Handle(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>, handler <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Handler">Handler</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ReferenceCallback">type <a href="http://localhost:6060/src/k8s.io/kube-openapi/pkg/common/common.go?s=1013:1062#L29">ReferenceCallback</a>
+				<a class="permalink" href="index.html#ReferenceCallback">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type ReferenceCallback func(path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="../../../../github.com/go-openapi/spec/index.html">spec</a>.<a href="../../../../github.com/go-openapi/spec/index.html#Ref">Ref</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

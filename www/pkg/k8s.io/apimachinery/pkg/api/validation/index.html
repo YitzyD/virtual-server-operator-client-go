@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>validation - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package validation
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/api/validation"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package validation contains generic api type validation functions.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#NameIsDNS1035Label">func NameIsDNS1035Label(name string, prefix bool) []string</a></dd>
+			
+				
+				<dd><a href="index.html#NameIsDNSLabel">func NameIsDNSLabel(name string, prefix bool) []string</a></dd>
+			
+				
+				<dd><a href="index.html#NameIsDNSSubdomain">func NameIsDNSSubdomain(name string, prefix bool) []string</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateAnnotations">func ValidateAnnotations(annotations map[string]string, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateFinalizerName">func ValidateFinalizerName(stringValue string, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateFinalizers">func ValidateFinalizers(finalizers []string, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateImmutableField">func ValidateImmutableField(newVal, oldVal interface{}, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateNoNewFinalizers">func ValidateNoNewFinalizers(newFinalizers []string, oldFinalizers []string, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateNonnegativeField">func ValidateNonnegativeField(value int64, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateObjectMeta">func ValidateObjectMeta(objMeta *metav1.ObjectMeta, requiresNamespace bool, nameFn ValidateNameFunc, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateObjectMetaAccessor">func ValidateObjectMetaAccessor(meta metav1.Object, requiresNamespace bool, nameFn ValidateNameFunc, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateObjectMetaAccessorUpdate">func ValidateObjectMetaAccessorUpdate(newMeta, oldMeta metav1.Object, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateObjectMetaUpdate">func ValidateObjectMetaUpdate(newMeta, oldMeta *metav1.ObjectMeta, fldPath *field.Path) field.ErrorList</a></dd>
+			
+				
+				<dd><a href="index.html#ValidateOwnerReferences">func ValidateOwnerReferences(ownerReferences []metav1.OwnerReference, fldPath *field.Path) field.ErrorList</a></dd>
+			
+			
+				
+				<dd><a href="index.html#ValidateNameFunc">type ValidateNameFunc</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/generic.go">generic.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go">objectmeta.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				<p>
+FieldImmutableErrorMsg is a error message for field is immutable.
+</p>
+
+				<pre>const <span id="FieldImmutableErrorMsg">FieldImmutableErrorMsg</span> <a href="http://localhost:6060/pkg/builtin/#string">string</a> = `field is immutable`</pre>
+			
+				<p>
+IsNegativeErrorMsg is a error message for value must be greater than or equal to 0.
+</p>
+
+				<pre>const <span id="IsNegativeErrorMsg">IsNegativeErrorMsg</span> <a href="http://localhost:6060/pkg/builtin/#string">string</a> = `must be greater than or equal to 0`</pre>
+			
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				<p>
+BannedOwners is a black list of object that are not allowed to be owners.
+</p>
+
+				<pre>var <span id="BannedOwners">BannedOwners</span> = map[<a href="../../runtime/schema/index.html">schema</a>.<a href="../../runtime/schema/index.html#GroupVersionKind">GroupVersionKind</a>]struct{}{
+    {<a href="index.html#Group">Group</a>: &#34;&#34;, <a href="index.html#Version">Version</a>: &#34;v1&#34;, <a href="index.html#Kind">Kind</a>: &#34;Event&#34;}: {},
+}</pre>
+			
+				<p>
+ValidateClusterName can be used to check whether the given cluster name is valid.
+</p>
+
+				<pre>var <span id="ValidateClusterName">ValidateClusterName</span> = <a href="index.html#NameIsDNS1035Label">NameIsDNS1035Label</a></pre>
+			
+				<p>
+ValidateNamespaceName can be used to check whether the given namespace name is valid.
+Prefix indicates this name will be used as part of generation, in which case
+trailing dashes are allowed.
+</p>
+
+				<pre>var <span id="ValidateNamespaceName">ValidateNamespaceName</span> = <a href="index.html#NameIsDNSLabel">NameIsDNSLabel</a></pre>
+			
+				<p>
+ValidateServiceAccountName can be used to check whether the given service account name is valid.
+Prefix indicates this name will be used as part of generation, in which case
+trailing dashes are allowed.
+</p>
+
+				<pre>var <span id="ValidateServiceAccountName">ValidateServiceAccountName</span> = <a href="index.html#NameIsDNSSubdomain">NameIsDNSSubdomain</a></pre>
+			
+		
+		
+			
+			
+			<h2 id="NameIsDNS1035Label">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/generic.go?s=1877:1935#L43">NameIsDNS1035Label</a>
+				<a class="permalink" href="index.html#NameIsDNS1035Label">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NameIsDNS1035Label(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, prefix <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+NameIsDNS1035Label is a ValidateNameFunc for names that must be a DNS 952 label.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NameIsDNSLabel">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/generic.go?s=1645:1699#L35">NameIsDNSLabel</a>
+				<a class="permalink" href="index.html#NameIsDNSLabel">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NameIsDNSLabel(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, prefix <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+NameIsDNSLabel is a ValidateNameFunc for names that must be a DNS 1123 label.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NameIsDNSSubdomain">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/generic.go?s=1408:1466#L27">NameIsDNSSubdomain</a>
+				<a class="permalink" href="index.html#NameIsDNSSubdomain">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NameIsDNSSubdomain(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, prefix <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+NameIsDNSSubdomain is a ValidateNameFunc for names that must be a DNS subdomain.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateAnnotations">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=1584:1676#L37">ValidateAnnotations</a>
+				<a class="permalink" href="index.html#ValidateAnnotations">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateAnnotations(annotations map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateAnnotations validates that a set of annotations are correctly defined.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateFinalizerName">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=3934:4017#L93">ValidateFinalizerName</a>
+				<a class="permalink" href="index.html#ValidateFinalizerName">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateFinalizerName(stringValue <a href="http://localhost:6060/pkg/builtin/#string">string</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateFinalizerName validates finalizer names.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateFinalizers">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=8682:8763#L186">ValidateFinalizers</a>
+				<a class="permalink" href="index.html#ValidateFinalizers">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateFinalizers(finalizers []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateFinalizers tests if the finalizers name are valid, and if there are conflicting finalizers.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateImmutableField">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=4847:4939#L113">ValidateImmutableField</a>
+				<a class="permalink" href="index.html#ValidateImmutableField">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateImmutableField(newVal, oldVal interface{}, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateImmutableField validates the new value and the old value are deeply equal.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateNoNewFinalizers">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=4311:4424#L103">ValidateNoNewFinalizers</a>
+				<a class="permalink" href="index.html#ValidateNoNewFinalizers">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateNoNewFinalizers(newFinalizers []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, oldFinalizers []<a href="http://localhost:6060/pkg/builtin/#string">string</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateNoNewFinalizers validates the new finalizers has no new finalizers compare to old finalizers.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateNonnegativeField">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/generic.go?s=2849:2928#L70">ValidateNonnegativeField</a>
+				<a class="permalink" href="index.html#ValidateNonnegativeField">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateNonnegativeField(value <a href="http://localhost:6060/pkg/builtin/#int64">int64</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateNonnegativeField validates that given value is not negative.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateObjectMeta">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=5384:5521#L124">ValidateObjectMeta</a>
+				<a class="permalink" href="index.html#ValidateObjectMeta">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateObjectMeta(objMeta *<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#ObjectMeta">ObjectMeta</a>, requiresNamespace <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, nameFn <a href="index.html#ValidateNameFunc">ValidateNameFunc</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateObjectMeta validates an object&#39;s metadata on creation. It expects that name generation has already
+been performed.
+It doesn&#39;t return an error for rootscoped resources with namespace, because namespace should already be cleared before.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateObjectMetaAccessor">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=6051:6188#L137">ValidateObjectMetaAccessor</a>
+				<a class="permalink" href="index.html#ValidateObjectMetaAccessor">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateObjectMetaAccessor(meta <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Object">Object</a>, requiresNamespace <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>, nameFn <a href="index.html#ValidateNameFunc">ValidateNameFunc</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateObjectMetaAccessor validates an object&#39;s metadata on creation. It expects that name generation has already
+been performed.
+It doesn&#39;t return an error for rootscoped resources with namespace, because namespace should already be cleared before.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateObjectMetaAccessorUpdate">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=10170:10276#L223">ValidateObjectMetaAccessorUpdate</a>
+				<a class="permalink" href="index.html#ValidateObjectMetaAccessorUpdate">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateObjectMetaAccessorUpdate(newMeta, oldMeta <a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#Object">Object</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateObjectMetaAccessorUpdate validates an object&#39;s metadata when updated.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateObjectMetaUpdate">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=9532:9635#L206">ValidateObjectMetaUpdate</a>
+				<a class="permalink" href="index.html#ValidateObjectMetaUpdate">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateObjectMetaUpdate(newMeta, oldMeta *<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#ObjectMeta">ObjectMeta</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateObjectMetaUpdate validates an object&#39;s metadata when updated.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ValidateOwnerReferences">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/objectmeta.go?s=3250:3356#L75">ValidateOwnerReferences</a>
+				<a class="permalink" href="index.html#ValidateOwnerReferences">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ValidateOwnerReferences(ownerReferences []<a href="../../apis/meta/v1/index.html">metav1</a>.<a href="../../apis/meta/v1/index.html#OwnerReference">OwnerReference</a>, fldPath *<a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#Path">Path</a>) <a href="../../util/validation/field/index.html">field</a>.<a href="../../util/validation/field/index.html#ErrorList">ErrorList</a></pre>
+			<p>
+ValidateOwnerReferences validates that a set of owner references are correctly defined.
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="ValidateNameFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/api/validation/generic.go?s=1261:1322#L24">ValidateNameFunc</a>
+				<a class="permalink" href="index.html#ValidateNameFunc">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ValidateNameFunc validates that the provided name is valid for a given resource type.
+Not all resources have the same validation rules for names. Prefix is true
+if the name will have a value appended to it.  If the name is not valid,
+this returns a list of descriptions of individual characteristics of the
+value that were not valid.  Otherwise this returns an empty list or nil.
+</p>
+
+			<pre>type ValidateNameFunc func(name <a href="http://localhost:6060/pkg/builtin/#string">string</a>, prefix <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../index.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="path/index.html">path</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

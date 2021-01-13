@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>labels - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package labels
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/labels"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package labels implements a simple label system, parsing and matching
+selectors with sets of labels.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="index.html#Conflicts">func Conflicts(labels1, labels2 Set) bool</a></dd>
+			
+				
+				<dd><a href="index.html#Equals">func Equals(labels1, labels2 Set) bool</a></dd>
+			
+				
+				<dd><a href="index.html#FormatLabels">func FormatLabels(labelMap map[string]string) string</a></dd>
+			
+			
+				
+				<dd><a href="index.html#ByKey">type ByKey</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ByKey.Len">func (a ByKey) Len() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ByKey.Less">func (a ByKey) Less(i, j int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ByKey.Swap">func (a ByKey) Swap(i, j int)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Labels">type Labels</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Lexer">type Lexer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Lexer.Lex">func (l *Lexer) Lex() (tok Token, lit string)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Parser">type Parser</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ParserContext">type ParserContext</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Requirement">type Requirement</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewRequirement">func NewRequirement(key string, op selection.Operator, vals []string) (*Requirement, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseToRequirements">func ParseToRequirements(selector string) ([]Requirement, error)</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Requirement.DeepCopy">func (in *Requirement) DeepCopy() *Requirement</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Requirement.DeepCopyInto">func (in *Requirement) DeepCopyInto(out *Requirement)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Requirement.Key">func (r *Requirement) Key() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Requirement.Matches">func (r *Requirement) Matches(ls Labels) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Requirement.Operator">func (r *Requirement) Operator() selection.Operator</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Requirement.String">func (r *Requirement) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Requirement.Values">func (r *Requirement) Values() sets.String</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Requirements">type Requirements</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#ScannedItem">type ScannedItem</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Selector">type Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Everything">func Everything() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#NewSelector">func NewSelector() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Nothing">func Nothing() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Parse">func Parse(selector string) (Selector, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SelectorFromSet">func SelectorFromSet(ls Set) Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#SelectorFromValidatedSet">func SelectorFromValidatedSet(ls Set) Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ValidatedSelectorFromSet">func ValidatedSelectorFromSet(ls Set) (Selector, error)</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Set">type Set</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ConvertSelectorToLabelsMap">func ConvertSelectorToLabelsMap(selector string) (Set, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Merge">func Merge(labels1, labels2 Set) Set</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.AsSelector">func (ls Set) AsSelector() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.AsSelectorPreValidated">func (ls Set) AsSelectorPreValidated() Selector</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.AsValidatedSelector">func (ls Set) AsValidatedSelector() (Selector, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.Get">func (ls Set) Get(label string) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.Has">func (ls Set) Has(label string) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Set.String">func (ls Set) String() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Token">type Token</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/doc.go">doc.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go">labels.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go">selector.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+			
+			
+			<h2 id="Conflicts">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=2758:2799#L83">Conflicts</a>
+				<a class="permalink" href="index.html#Conflicts">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Conflicts(labels1, labels2 <a href="index.html#Set">Set</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+Conflicts takes 2 maps and returns true if there a key match between
+the maps but the value doesn&#39;t match, and returns false in other cases
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Equals">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=3403:3441#L117">Equals</a>
+				<a class="permalink" href="index.html#Equals">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Equals(labels1, labels2 <a href="index.html#Set">Set</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+Equals returns true if the given maps are equal
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="FormatLabels">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=2483:2535#L73">FormatLabels</a>
+				<a class="permalink" href="index.html#FormatLabels">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func FormatLabels(labelMap map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+FormatLabels convert label map into plain string
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="ByKey">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=3252:3276#L99">ByKey</a>
+				<a class="permalink" href="index.html#ByKey">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ByKey sorts requirements by key to obtain deterministic parser
+</p>
+
+			<pre>type ByKey []<a href="index.html#Requirement">Requirement</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="ByKey.Len">func (ByKey) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=3278:3302#L101">Len</a>
+					<a class="permalink" href="index.html#ByKey.Len">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (a <a href="index.html#ByKey">ByKey</a>) Len() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="ByKey.Less">func (ByKey) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=3381:3415#L105">Less</a>
+					<a class="permalink" href="index.html#ByKey.Less">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (a <a href="index.html#ByKey">ByKey</a>) Less(i, j <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="ByKey.Swap">func (ByKey) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=3322:3351#L103">Swap</a>
+					<a class="permalink" href="index.html#ByKey.Swap">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (a <a href="index.html#ByKey">ByKey</a>) Swap(i, j <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Labels">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=698:892#L16">Labels</a>
+				<a class="permalink" href="index.html#Labels">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Labels allows you to present labels independently from their storage.
+</p>
+
+			<pre>type Labels interface {
+    <span class="comment">// Has returns whether the provided label exists.</span>
+    Has(label <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (exists <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+
+    <span class="comment">// Get returns the value for the provided label.</span>
+    Get(label <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (value <a href="http://localhost:6060/pkg/builtin/#string">string</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Lexer">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=14075:14199#L448">Lexer</a>
+				<a class="permalink" href="index.html#Lexer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Lexer represents the Lexer struct for label selector.
+It contains necessary informationt to tokenize the input string
+</p>
+
+			<pre>type Lexer struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="Lexer.Lex">func (*Lexer) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=16199:16244#L535">Lex</a>
+					<a class="permalink" href="index.html#Lexer.Lex">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (l *<a href="index.html#Lexer">Lexer</a>) Lex() (tok <a href="index.html#Token">Token</a>, lit <a href="http://localhost:6060/pkg/builtin/#string">string</a>)</pre>
+				<p>
+Lex returns a pair of Token and the literal
+literal is meaningfull only for IdentifierToken token
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Parser">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=16541:16630#L549">Parser</a>
+				<a class="permalink" href="index.html#Parser">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Parser data structure contains the label selector parser data structure
+</p>
+
+			<pre>type Parser struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ParserContext">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=16850:16872#L559">ParserContext</a>
+				<a class="permalink" href="index.html#ParserContext">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ParserContext represents context during parsing:
+some literal for example &#39;in&#39; and &#39;notin&#39; can be
+recognized as operator for example &#39;x in (a)&#39; but
+it can be recognized as value for example &#39;value in (in)&#39;
+</p>
+
+			<pre>type ParserContext <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+
+			
+				
+				<pre>const (
+    <span class="comment">// KeyAndOperator represents key and operator</span>
+    <span id="KeyAndOperator">KeyAndOperator</span> <a href="index.html#ParserContext">ParserContext</a> = <a href="http://localhost:6060/pkg/builtin/#iota">iota</a>
+    <span class="comment">// Values represents values</span>
+    <span id="Values">Values</span>
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Requirement">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=3772:4050#L112">Requirement</a>
+				<a class="permalink" href="index.html#Requirement">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Requirement contains values, a key, and an operator that relates the key and values.
+The zero value of Requirement is invalid.
+Requirement implements both set based match and exact match
+Requirement should be initialized via NewRequirement constructor for creating a valid Requirement.
++k8s:deepcopy-gen=true
+</p>
+
+			<pre>type Requirement struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewRequirement">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=4826:4917#L132">NewRequirement</a>
+					<a class="permalink" href="index.html#NewRequirement">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewRequirement(key <a href="http://localhost:6060/pkg/builtin/#string">string</a>, op <a href="../selection/index.html">selection</a>.<a href="../selection/index.html#Operator">Operator</a>, vals []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#Requirement">Requirement</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+NewRequirement is the constructor for a Requirement.
+If any of these rules is violated, an error is returned:
+(1) The operator can only be In, NotIn, Equals, DoubleEquals, NotEquals, Exists, or DoesNotExist.
+(2) If the operator is In or NotIn, the values set must be non-empty.
+(3) If the operator is Equals, DoubleEquals, or NotEquals, the values set must contain one value.
+(4) If the operator is Exists or DoesNotExist, the value set must be empty.
+(5) If the operator is Gt or Lt, the values set must contain only one value, which will be interpreted as an integer.
+(6) The key is invalid due to its length, or sequence
+</p>
+<pre>of characters. See validateLabelKey for more details.
+</pre>
+<p>
+The empty string is a valid value in the input values set.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ParseToRequirements">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=28426:28490#L911">ParseToRequirements</a>
+					<a class="permalink" href="index.html#ParseToRequirements">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseToRequirements(selector <a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]<a href="index.html#Requirement">Requirement</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParseToRequirements takes a string representing a selector and returns a list of
+requirements. This function is suitable for those callers that perform additional
+processing on selector requirements.
+See the documentation for Parse() function for more details.
+TODO: Consider exporting the internalSelector type instead.
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Requirement.DeepCopy">func (*Requirement) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/zz_generated.deepcopy.go?s=1083:1129#L25">DeepCopy</a>
+					<a class="permalink" href="index.html#Requirement.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Requirement">Requirement</a>) DeepCopy() *<a href="index.html#Requirement">Requirement</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new Requirement.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Requirement.DeepCopyInto">func (*Requirement) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/zz_generated.deepcopy.go?s=779:832#L14">DeepCopyInto</a>
+					<a class="permalink" href="index.html#Requirement.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="index.html#Requirement">Requirement</a>) DeepCopyInto(out *<a href="index.html#Requirement">Requirement</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Requirement.Key">func (*Requirement) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=8436:8470#L237">Key</a>
+					<a class="permalink" href="index.html#Requirement.Key">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#Requirement">Requirement</a>) Key() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Key returns requirement key
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Requirement.Matches">func (*Requirement) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=6949:6994#L190">Matches</a>
+					<a class="permalink" href="index.html#Requirement.Matches">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#Requirement">Requirement</a>) Matches(ls <a href="index.html#Labels">Labels</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Matches returns true if the Requirement matches the input Labels.
+There is a match in the following cases:
+(1) The operator is Exists and Labels has the Requirement&#39;s key.
+(2) The operator is In, Labels has the Requirement&#39;s key and Labels&#39;
+</p>
+<pre>value for that key is in Requirement&#39;s value set.
+</pre>
+<p>
+(3) The operator is NotIn, Labels has the Requirement&#39;s key and
+</p>
+<pre>Labels&#39; value for that key is not in Requirement&#39;s value set.
+</pre>
+<p>
+(4) The operator is DoesNotExist or NotIn and Labels does not have the
+</p>
+<pre>Requirement&#39;s key.
+</pre>
+<p>
+(5) The operator is GreaterThanOperator or LessThanOperator, and Labels has
+</p>
+<pre>the Requirement&#39;s key and the corresponding value satisfies mathematical inequality.
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="Requirement.Operator">func (*Requirement) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=8531:8582#L242">Operator</a>
+					<a class="permalink" href="index.html#Requirement.Operator">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#Requirement">Requirement</a>) Operator() <a href="../selection/index.html">selection</a>.<a href="../selection/index.html#Operator">Operator</a></pre>
+				<p>
+Operator returns requirement operator
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Requirement.String">func (*Requirement) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=9157:9194#L266">String</a>
+					<a class="permalink" href="index.html#Requirement.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#Requirement">Requirement</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String returns a human-readable string that represents this
+Requirement. If called on an invalid Requirement, an error is
+returned. See NewRequirement for creating a valid Requirement.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Requirement.Values">func (*Requirement) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=8644:8686#L247">Values</a>
+					<a class="permalink" href="index.html#Requirement.Values">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (r *<a href="index.html#Requirement">Requirement</a>) Values() <a href="../util/sets/index.html">sets</a>.<a href="../util/sets/index.html#String">String</a></pre>
+				<p>
+Values returns requirement values
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Requirements">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=825:856#L23">Requirements</a>
+				<a class="permalink" href="index.html#Requirements">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Requirements is AND of all requirements.
+</p>
+
+			<pre>type Requirements []<a href="index.html#Requirement">Requirement</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ScannedItem">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=13534:13592#L427">ScannedItem</a>
+				<a class="permalink" href="index.html#ScannedItem">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+ScannedItem contains the Token and the literal produced by the lexer.
+</p>
+
+			<pre>type ScannedItem struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Selector">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=899:1941#L26">Selector</a>
+				<a class="permalink" href="index.html#Selector">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Selector represents a label selector.
+</p>
+
+			<pre>type Selector interface {
+    <span class="comment">// Matches returns true if this selector matches the given set of labels.</span>
+    Matches(<a href="index.html#Labels">Labels</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+
+    <span class="comment">// Empty returns true if this selector does not restrict the selection space.</span>
+    Empty() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>
+
+    <span class="comment">// String returns a human readable string that represents this selector.</span>
+    String() <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+
+    <span class="comment">// Add adds requirements to the Selector</span>
+    Add(r ...<a href="index.html#Requirement">Requirement</a>) <a href="index.html#Selector">Selector</a>
+
+    <span class="comment">// Requirements converts this interface into Requirements to expose</span>
+    <span class="comment">// more detailed selection information.</span>
+    <span class="comment">// If there are querying parameters, it will return converted requirements and selectable=true.</span>
+    <span class="comment">// If this selector doesn&#39;t want to select anything, it will return selectable=false.</span>
+    Requirements() (requirements <a href="index.html#Requirements">Requirements</a>, selectable <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+
+    <span class="comment">// Make a deep copy of the selector.</span>
+    DeepCopySelector() <a href="index.html#Selector">Selector</a>
+
+    <span class="comment">// RequiresExactMatch allows a caller to introspect whether a given selector</span>
+    <span class="comment">// requires a single specific label to be set, and if so returns the value it</span>
+    <span class="comment">// requires.</span>
+    RequiresExactMatch(label <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (value <a href="http://localhost:6060/pkg/builtin/#string">string</a>, found <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="Everything">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=2001:2027#L55">Everything</a>
+					<a class="permalink" href="index.html#Everything">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Everything() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+Everything returns a selector that matches all labels.
+</p>
+
+				
+				
+			
+				
+				<h3 id="NewSelector">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=2807:2834#L77">NewSelector</a>
+					<a class="permalink" href="index.html#NewSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewSelector() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+NewSelector returns a nil selector
+</p>
+
+				
+				
+			
+				
+				<h3 id="Nothing">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=2714:2737#L72">Nothing</a>
+					<a class="permalink" href="index.html#Nothing">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Nothing() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+Nothing returns a selector that matches no labels
+</p>
+
+				
+				
+			
+				
+				<h3 id="Parse">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=25184:25229#L826">Parse</a>
+					<a class="permalink" href="index.html#Parse">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Parse(selector <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#Selector">Selector</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+Parse takes a string representing a selector and returns a selector
+object, or an error. This parsing function differs from ParseSelector
+as they parse different selectors with different syntaxes.
+The input will cause an error if it does not follow this form:
+</p>
+<pre>&lt;selector-syntax&gt;         ::= &lt;requirement&gt; | &lt;requirement&gt; &#34;,&#34; &lt;selector-syntax&gt;
+&lt;requirement&gt;             ::= [!] KEY [ &lt;set-based-restriction&gt; | &lt;exact-match-restriction&gt; ]
+&lt;set-based-restriction&gt;   ::= &#34;&#34; | &lt;inclusion-exclusion&gt; &lt;value-set&gt;
+&lt;inclusion-exclusion&gt;     ::= &lt;inclusion&gt; | &lt;exclusion&gt;
+&lt;exclusion&gt;               ::= &#34;notin&#34;
+&lt;inclusion&gt;               ::= &#34;in&#34;
+&lt;value-set&gt;               ::= &#34;(&#34; &lt;values&gt; &#34;)&#34;
+&lt;values&gt;                  ::= VALUE | VALUE &#34;,&#34; &lt;values&gt;
+&lt;exact-match-restriction&gt; ::= [&#34;=&#34;|&#34;==&#34;|&#34;!=&#34;] VALUE
+</pre>
+<p>
+KEY is a sequence of one or more characters following [ DNS_SUBDOMAIN &#34;/&#34; ] DNS_LABEL. Max length is 63 characters.
+VALUE is a sequence of zero or more characters &#34;([A-Za-z0-9_-\.])&#34;. Max length is 63 characters.
+Delimiter is white space: (&#39; &#39;, &#39;\t&#39;)
+Example of valid syntax:
+</p>
+<pre>&#34;x in (foo,,baz),y,z notin ()&#34;
+</pre>
+<p>
+Note:
+</p>
+<pre>(1) Inclusion - &#34; in &#34; - denotes that the KEY exists and is equal to any of the
+    VALUEs in its requirement
+(2) Exclusion - &#34; notin &#34; - denotes that the KEY is not equal to any
+    of the VALUEs in its requirement or does not exist
+(3) The empty string is a valid VALUE
+(4) A requirement with just a KEY - as in &#34;y&#34; above - denotes that
+    the KEY exists and can be any VALUE.
+(5) A requirement with just !KEY requires that the KEY not exist.
+</pre>
+
+				
+				
+			
+				
+				<h3 id="SelectorFromSet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=26618:26655#L866">SelectorFromSet</a>
+					<a class="permalink" href="index.html#SelectorFromSet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func SelectorFromSet(ls <a href="index.html#Set">Set</a>) <a href="index.html#Selector">Selector</a></pre>
+				<p>
+SelectorFromSet returns a Selector which will match exactly the given Set. A
+nil and empty Sets are considered equivalent to Everything().
+It does not perform any validation, which means the server will reject
+the request if the Set contains invalid values.
+</p>
+
+				
+				
+			
+				
+				<h3 id="SelectorFromValidatedSet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=27648:27694#L893">SelectorFromValidatedSet</a>
+					<a class="permalink" href="index.html#SelectorFromValidatedSet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func SelectorFromValidatedSet(ls <a href="index.html#Set">Set</a>) <a href="index.html#Selector">Selector</a></pre>
+				<p>
+SelectorFromValidatedSet returns a Selector which will match exactly the given Set.
+A nil and empty Sets are considered equivalent to Everything().
+It assumes that Set is already validated and doesn&#39;t do any validation.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ValidatedSelectorFromSet">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=26925:26980#L873">ValidatedSelectorFromSet</a>
+					<a class="permalink" href="index.html#ValidatedSelectorFromSet">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ValidatedSelectorFromSet(ls <a href="index.html#Set">Set</a>) (<a href="index.html#Selector">Selector</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ValidatedSelectorFromSet returns a Selector which will match exactly the given Set. A
+nil and empty Sets are considered equivalent to Everything().
+The Set is validated client-side, which allows to catch errors early.
+</p>
+
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="Set">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=948:974#L25">Set</a>
+				<a class="permalink" href="index.html#Set">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Set is a map of label:value. It implements Labels.
+</p>
+
+			<pre>type Set map[<a href="http://localhost:6060/pkg/builtin/#string">string</a>]<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ConvertSelectorToLabelsMap">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=3743:3804#L136">ConvertSelectorToLabelsMap</a>
+					<a class="permalink" href="index.html#ConvertSelectorToLabelsMap">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ConvertSelectorToLabelsMap(selector <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="index.html#Set">Set</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ConvertSelectorToLabelsMap converts selector string to labels map
+and validates keys and values
+</p>
+
+				
+				
+			
+				
+				<h3 id="Merge">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=3169:3205#L104">Merge</a>
+					<a class="permalink" href="index.html#Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Merge(labels1, labels2 <a href="index.html#Set">Set</a>) <a href="index.html#Set">Set</a></pre>
+				<p>
+Merge combines given maps, and does not check for any conflicts
+between the maps. In case of conflicts, second map (labels2) wins
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="Set.AsSelector">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=1789:1824#L53">AsSelector</a>
+					<a class="permalink" href="index.html#Set.AsSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) AsSelector() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+AsSelector converts labels into a selectors. It does not
+perform any validation, which means the server will reject
+the request if the Set contains invalid values.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.AsSelectorPreValidated">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=2341:2388#L68">AsSelectorPreValidated</a>
+					<a class="permalink" href="index.html#Set.AsSelectorPreValidated">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) AsSelectorPreValidated() <a href="index.html#Selector">Selector</a></pre>
+				<p>
+AsSelectorPreValidated converts labels into a selector, but
+assumes that labels are already validated and thus doesn&#39;t
+perform any validation.
+According to our measurements this is significantly faster
+in codepaths that matter at high scale.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.AsValidatedSelector">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=1988:2041#L59">AsValidatedSelector</a>
+					<a class="permalink" href="index.html#Set.AsValidatedSelector">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) AsValidatedSelector() (<a href="index.html#Selector">Selector</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+AsValidatedSelector converts labels into a selectors.
+The Set is validated client-side, which allows to catch errors early.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.Get">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=1554:1592#L46">Get</a>
+					<a class="permalink" href="index.html#Set.Get">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) Get(label <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Get returns the value in the map for the provided label.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.Has">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=1413:1449#L40">Has</a>
+					<a class="permalink" href="index.html#Set.Has">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) Has(label <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Has returns whether the provided label exists in the map.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="Set.String">func (Set) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/labels.go?s=1102:1131#L29">String</a>
+					<a class="permalink" href="index.html#Set.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (ls <a href="index.html#Set">Set</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String returns all labels listed as a human readable string.
+Conveniently, exactly the format that ParseSelector takes.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Token">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/labels/selector.go?s=12156:12170#L377">Token</a>
+				<a class="permalink" href="index.html#Token">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Token represents constant definition for lexer token
+</p>
+
+			<pre>type Token <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+
+			
+				
+				<pre>const (
+    <span class="comment">// ErrorToken represents scan error</span>
+    <span id="ErrorToken">ErrorToken</span> <a href="index.html#Token">Token</a> = <a href="http://localhost:6060/pkg/builtin/#iota">iota</a>
+    <span class="comment">// EndOfStringToken represents end of string</span>
+    <span id="EndOfStringToken">EndOfStringToken</span>
+    <span class="comment">// ClosedParToken represents close parenthesis</span>
+    <span id="ClosedParToken">ClosedParToken</span>
+    <span class="comment">// CommaToken represents the comma</span>
+    <span id="CommaToken">CommaToken</span>
+    <span class="comment">// DoesNotExistToken represents logic not</span>
+    <span id="DoesNotExistToken">DoesNotExistToken</span>
+    <span class="comment">// DoubleEqualsToken represents double equals</span>
+    <span id="DoubleEqualsToken">DoubleEqualsToken</span>
+    <span class="comment">// EqualsToken represents equal</span>
+    <span id="EqualsToken">EqualsToken</span>
+    <span class="comment">// GreaterThanToken represents greater than</span>
+    <span id="GreaterThanToken">GreaterThanToken</span>
+    <span class="comment">// IdentifierToken represents identifier, e.g. keys and values</span>
+    <span id="IdentifierToken">IdentifierToken</span>
+    <span class="comment">// InToken represents in</span>
+    <span id="InToken">InToken</span>
+    <span class="comment">// LessThanToken represents less than</span>
+    <span id="LessThanToken">LessThanToken</span>
+    <span class="comment">// NotEqualsToken represents not equal</span>
+    <span id="NotEqualsToken">NotEqualsToken</span>
+    <span class="comment">// NotInToken represents not in</span>
+    <span id="NotInToken">NotInToken</span>
+    <span class="comment">// OpenParToken represents open parenthesis</span>
+    <span id="OpenParToken">OpenParToken</span>
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

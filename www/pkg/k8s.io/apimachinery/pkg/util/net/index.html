@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>net - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package net
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/net"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#AppendForwardedForHeader">func AppendForwardedForHeader(req *http.Request)</a></dd>
+			
+				
+				<dd><a href="index.html#ChooseBindAddressForInterface">func ChooseBindAddressForInterface(intfName string) (net.IP, error)</a></dd>
+			
+				
+				<dd><a href="index.html#ChooseHostInterface">func ChooseHostInterface() (net.IP, error)</a></dd>
+			
+				
+				<dd><a href="index.html#CloneHeader">func CloneHeader(in http.Header) http.Header</a></dd>
+			
+				
+				<dd><a href="index.html#CloneRequest">func CloneRequest(req *http.Request) *http.Request</a></dd>
+			
+				
+				<dd><a href="index.html#ConnectWithRedirects">func ConnectWithRedirects(originalMethod string, originalLocation *url.URL, header http.Header, originalBody io.Reader, dialer Dialer, requireSameHostRedirects bool) (net.Conn, []byte, error)</a></dd>
+			
+				
+				<dd><a href="index.html#FormatURL">func FormatURL(scheme string, host string, port int, path string) *url.URL</a></dd>
+			
+				
+				<dd><a href="index.html#GetClientIP">func GetClientIP(req *http.Request) net.IP</a></dd>
+			
+				
+				<dd><a href="index.html#GetHTTPClient">func GetHTTPClient(req *http.Request) string</a></dd>
+			
+				
+				<dd><a href="index.html#IPNetEqual">func IPNetEqual(ipnet1, ipnet2 *net.IPNet) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsConnectionRefused">func IsConnectionRefused(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsConnectionReset">func IsConnectionReset(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsNoRoutesError">func IsNoRoutesError(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsProbableEOF">func IsProbableEOF(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#IsTimeout">func IsTimeout(err error) bool</a></dd>
+			
+				
+				<dd><a href="index.html#JoinPreservingTrailingSlash">func JoinPreservingTrailingSlash(elem ...string) string</a></dd>
+			
+				
+				<dd><a href="index.html#JoinSchemeNamePort">func JoinSchemeNamePort(scheme, name, port string) string</a></dd>
+			
+				
+				<dd><a href="index.html#NewProxierWithNoProxyCIDR">func NewProxierWithNoProxyCIDR(delegate func(req *http.Request) (*url.URL, error)) func(req *http.Request) (*url.URL, error)</a></dd>
+			
+				
+				<dd><a href="index.html#NewWarningHeader">func NewWarningHeader(code int, agent, text string) (string, error)</a></dd>
+			
+				
+				<dd><a href="index.html#ResolveBindAddress">func ResolveBindAddress(bindAddress net.IP) (net.IP, error)</a></dd>
+			
+				
+				<dd><a href="index.html#SetOldTransportDefaults">func SetOldTransportDefaults(t *http.Transport) *http.Transport</a></dd>
+			
+				
+				<dd><a href="index.html#SetTransportDefaults">func SetTransportDefaults(t *http.Transport) *http.Transport</a></dd>
+			
+				
+				<dd><a href="index.html#SourceIPs">func SourceIPs(req *http.Request) []net.IP</a></dd>
+			
+				
+				<dd><a href="index.html#SplitSchemeNamePort">func SplitSchemeNamePort(id string) (scheme, name, port string, valid bool)</a></dd>
+			
+				
+				<dd><a href="index.html#TLSClientConfig">func TLSClientConfig(transport http.RoundTripper) (*tls.Config, error)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#AddressFamily">type AddressFamily</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#AddressFamilyPreference">type AddressFamilyPreference</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DialFunc">type DialFunc</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DialerFor">func DialerFor(transport http.RoundTripper) (DialFunc, error)</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Dialer">type Dialer</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#DialerFunc">type DialerFunc</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#DialerFunc.Dial">func (fn DialerFunc) Dial(req *http.Request) (net.Conn, error)</a></dd>
+				
+			
+				
+				<dd><a href="index.html#PortRange">type PortRange</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParsePortRange">func ParsePortRange(value string) (*PortRange, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParsePortRangeOrDie">func ParsePortRangeOrDie(value string) *PortRange</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PortRange.Contains">func (pr *PortRange) Contains(p int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PortRange.Set">func (pr *PortRange) Set(value string) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PortRange.String">func (pr PortRange) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#PortRange.Type">func (*PortRange) Type() string</a></dd>
+				
+			
+				
+				<dd><a href="index.html#RoundTripperWrapper">type RoundTripperWrapper</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#Route">type Route</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#RouteFile">type RouteFile</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#TLSClientConfigHolder">type TLSClientConfigHolder</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#WarningHeader">type WarningHeader</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseWarningHeader">func ParseWarningHeader(header string) (result WarningHeader, remainder string, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ParseWarningHeaders">func ParseWarningHeaders(headers []string) ([]WarningHeader, []error)</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go">http.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go">interface.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go">port_range.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_split.go">port_split.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/util.go">util.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const (
+    <span class="comment">// LoopbackInterfaceName is the default name of the loopback interface</span>
+    <span id="LoopbackInterfaceName">LoopbackInterfaceName</span> = &#34;lo&#34;
+)</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="AppendForwardedForHeader">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=10309:10357#L341">AppendForwardedForHeader</a>
+				<a class="permalink" href="index.html#AppendForwardedForHeader">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func AppendForwardedForHeader(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>)</pre>
+			<p>
+Prepares the X-Forwarded-For header for another forwarding hop by appending the previous sender&#39;s
+IP address to the X-Forwarded-For chain.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ChooseBindAddressForInterface">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=13013:13080#L435">ChooseBindAddressForInterface</a>
+				<a class="permalink" href="index.html#ChooseBindAddressForInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ChooseBindAddressForInterface(intfName <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ChooseBindAddressForInterface choose a global IP for a specific interface, with priority given to IPv4.
+This is required in case of network setups where default routes are present, but network
+interfaces use only link-local addresses (e.g. as described in RFC5549).
+e.g when using BGP to announce a host IP over link-local ip addresses and this ip address is attached to the lo interface.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ChooseHostInterface">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=8800:8842#L325">ChooseHostInterface</a>
+				<a class="permalink" href="index.html#ChooseHostInterface">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ChooseHostInterface() (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ChooseHostInterface is a method used fetch an IP for a daemon.
+If there is no routing info file, it will choose a global IP from the system
+interfaces. Otherwise, it will use IPv4 and IPv6 route information to return the
+IP of the interface with a gateway on it (with priority given to IPv4). For a node
+with no internet connection, it returns error.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CloneHeader">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=16317:16361#L526">CloneHeader</a>
+				<a class="permalink" href="index.html#CloneHeader">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CloneHeader(in <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Header">Header</a>) <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Header">Header</a></pre>
+			<p>
+CloneHeader creates a deep copy of an http.Header.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CloneRequest">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=16083:16133#L513">CloneRequest</a>
+				<a class="permalink" href="index.html#CloneRequest">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CloneRequest(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a></pre>
+			<p>
+CloneRequest creates a shallow copy of the request along with a deep copy of the Headers.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="ConnectWithRedirects">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=12887:13078#L417">ConnectWithRedirects</a>
+				<a class="permalink" href="index.html#ConnectWithRedirects">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ConnectWithRedirects(originalMethod <a href="http://localhost:6060/pkg/builtin/#string">string</a>, originalLocation *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>, header <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Header">Header</a>, originalBody <a href="http://localhost:6060/pkg/io/">io</a>.<a href="http://localhost:6060/pkg/io/#Reader">Reader</a>, dialer <a href="index.html#Dialer">Dialer</a>, requireSameHostRedirects <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#Conn">Conn</a>, []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ConnectWithRedirects uses dialer to send req, following up to 10 redirects (relative to
+originalLocation). It returns the opened net.Conn and the raw response bytes.
+If requireSameHostRedirects is true, only redirects to the same host are permitted.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="FormatURL">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=7511:7585#L250">FormatURL</a>
+				<a class="permalink" href="index.html#FormatURL">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func FormatURL(scheme <a href="http://localhost:6060/pkg/builtin/#string">string</a>, host <a href="http://localhost:6060/pkg/builtin/#string">string</a>, port <a href="http://localhost:6060/pkg/builtin/#int">int</a>, path <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="GetClientIP">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=10042:10084#L331">GetClientIP</a>
+				<a class="permalink" href="index.html#GetClientIP">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetClientIP(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) <a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a></pre>
+			<p>
+Extracts and returns the clients IP from the given request.
+Looks at X-Forwarded-For header, X-Real-Ip header and request.RemoteAddr in that order.
+Returns nil if none of them are set or is set to an invalid value.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetHTTPClient">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=7700:7744#L258">GetHTTPClient</a>
+				<a class="permalink" href="index.html#GetHTTPClient">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetHTTPClient(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="IPNetEqual">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/util.go?s=838:885#L20">IPNetEqual</a>
+				<a class="permalink" href="index.html#IPNetEqual">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IPNetEqual(ipnet1, ipnet2 *<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IPNet">IPNet</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IPNetEqual checks if the two input IPNets are representing the same subnet.
+For example,
+</p>
+<pre>10.0.0.1/24 and 10.0.0.0/24 are the same subnet.
+10.0.0.1/24 and 10.0.0.0/25 are not the same subnet.
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsConnectionRefused">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/util.go?s=1362:1402#L40">IsConnectionRefused</a>
+				<a class="permalink" href="index.html#IsConnectionRefused">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsConnectionRefused(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+Returns if the given err is &#34;connection refused&#34; error
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsConnectionReset">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/util.go?s=1152:1190#L31">IsConnectionReset</a>
+				<a class="permalink" href="index.html#IsConnectionReset">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsConnectionReset(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+Returns if the given err is &#34;connection reset by peer&#34; error.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsNoRoutesError">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=1574:1610#L68">IsNoRoutesError</a>
+				<a class="permalink" href="index.html#IsNoRoutesError">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsNoRoutesError(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsNoRoutesError checks if an error is of type noRoutesError
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsProbableEOF">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=2032:2066#L69">IsProbableEOF</a>
+				<a class="permalink" href="index.html#IsProbableEOF">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsProbableEOF(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsProbableEOF returns true if the given error resembles a connection termination
+scenario that would justify assuming that the watch is empty.
+These errors are what the Go http stack returns back to us which are general
+connection closure errors (strongly correlated) and callers that need to
+differentiate probable errors in connection behavior between normal &#34;this is
+disconnected&#34; should use the method.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="IsTimeout">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=1459:1489#L55">IsTimeout</a>
+				<a class="permalink" href="index.html#IsTimeout">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func IsTimeout(err <a href="http://localhost:6060/pkg/builtin/#error">error</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+			<p>
+IsTimeout returns true if the given error is a network timeout error
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="JoinPreservingTrailingSlash">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=964:1019#L36">JoinPreservingTrailingSlash</a>
+				<a class="permalink" href="index.html#JoinPreservingTrailingSlash">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func JoinPreservingTrailingSlash(elem ...<a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+JoinPreservingTrailingSlash does a path.Join of the specified elements,
+preserving any trailing slash on the last non-empty segment
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="JoinSchemeNamePort">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_split.go?s=1916:1973#L56">JoinSchemeNamePort</a>
+				<a class="permalink" href="index.html#JoinSchemeNamePort">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func JoinSchemeNamePort(scheme, name, port <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+			<p>
+JoinSchemeNamePort returns a string that specifies the scheme, name, and port:
+</p>
+<pre>* &#34;&lt;name&gt;&#34;
+* &#34;&lt;name&gt;:&lt;port&gt;&#34;
+* &#34;&lt;scheme&gt;:&lt;name&gt;:&lt;port&gt;&#34;
+</pre>
+<p>
+None of the parameters may contain a &#39;:&#39; character
+Name is required
+Scheme must be &#34;&#34;, &#34;http&#34;, or &#34;https&#34;
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewProxierWithNoProxyCIDR">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=11309:11433#L364">NewProxierWithNoProxyCIDR</a>
+				<a class="permalink" href="index.html#NewProxierWithNoProxyCIDR">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewProxierWithNoProxyCIDR(delegate func(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (*<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)) func(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (*<a href="http://localhost:6060/pkg/net/url/">url</a>.<a href="http://localhost:6060/pkg/net/url/#URL">URL</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+NewProxierWithNoProxyCIDR constructs a Proxier function that respects CIDRs in NO_PROXY and delegates if
+no matching CIDRs are found
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="NewWarningHeader">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=22473:22540#L719">NewWarningHeader</a>
+				<a class="permalink" href="index.html#NewWarningHeader">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func NewWarningHeader(code <a href="http://localhost:6060/pkg/builtin/#int">int</a>, agent, text <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/builtin/#string">string</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			
+			
+			
+
+		
+			
+			
+			<h2 id="ResolveBindAddress">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=12189:12248#L415">ResolveBindAddress</a>
+				<a class="permalink" href="index.html#ResolveBindAddress">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ResolveBindAddress(bindAddress <a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+ResolveBindAddress returns the IP address of a daemon, based on the given bindAddress:
+If bindAddress is unset, it returns the host&#39;s default IP, as with ChooseHostInterface().
+If bindAddress is unspecified or loopback, it returns the default IP of the same
+address family as bindAddress.
+Otherwise, it just returns bindAddress.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetOldTransportDefaults">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=2856:2919#L99">SetOldTransportDefaults</a>
+				<a class="permalink" href="index.html#SetOldTransportDefaults">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetOldTransportDefaults(t *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Transport">Transport</a>) *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Transport">Transport</a></pre>
+			<p>
+SetOldTransportDefaults applies the defaults from http.DefaultTransport
+for the Proxy, Dial, and TLSHandshakeTimeout fields if unset
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SetTransportDefaults">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=3728:3788#L120">SetTransportDefaults</a>
+				<a class="permalink" href="index.html#SetTransportDefaults">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SetTransportDefaults(t *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Transport">Transport</a>) *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Transport">Transport</a></pre>
+			<p>
+SetTransportDefaults applies the defaults from http.DefaultTransport
+for the Proxy, Dial, and TLSHandshakeTimeout fields if unset
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SourceIPs">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=8179:8221#L270">SourceIPs</a>
+				<a class="permalink" href="index.html#SourceIPs">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SourceIPs(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) []<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a></pre>
+			<p>
+SourceIPs splits the comma separated X-Forwarded-For header and joins it with
+the X-Real-Ip header and/or req.RemoteAddr, ignoring invalid IPs.
+The X-Real-Ip is omitted if it&#39;s already present in the X-Forwarded-For chain.
+The req.RemoteAddr is always the last IP in the returned list.
+It returns nil if all of these are empty or invalid.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="SplitSchemeNamePort">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_split.go?s=1216:1291#L26">SplitSchemeNamePort</a>
+				<a class="permalink" href="index.html#SplitSchemeNamePort">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func SplitSchemeNamePort(id <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (scheme, name, port <a href="http://localhost:6060/pkg/builtin/#string">string</a>, valid <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>)</pre>
+			<p>
+SplitSchemeNamePort takes a string of the following forms:
+</p>
+<pre>* &#34;&lt;name&gt;&#34;,                 returns &#34;&#34;,        &#34;&lt;name&gt;&#34;,&#34;&#34;,      true
+* &#34;&lt;name&gt;:&lt;port&gt;&#34;,          returns &#34;&#34;,        &#34;&lt;name&gt;&#34;,&#34;&lt;port&gt;&#34;,true
+* &#34;&lt;scheme&gt;:&lt;name&gt;:&lt;port&gt;&#34;, returns &#34;&lt;scheme&gt;&#34;,&#34;&lt;name&gt;&#34;,&#34;&lt;port&gt;&#34;,true
+</pre>
+<p>
+Name must be non-empty or valid will be returned false.
+Scheme must be &#34;http&#34; or &#34;https&#34; if specified
+Port is returned as a string, and it is not required to be numeric (could be
+used for a named port, for example).
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="TLSClientConfig">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=7052:7122#L233">TLSClientConfig</a>
+				<a class="permalink" href="index.html#TLSClientConfig">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func TLSClientConfig(transport <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>) (*<a href="http://localhost:6060/pkg/crypto/tls/">tls</a>.<a href="http://localhost:6060/pkg/crypto/tls/#Config">Config</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			
+			
+			
+
+		
+		
+			
+			
+			<h2 id="AddressFamily">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=678:701#L22">AddressFamily</a>
+				<a class="permalink" href="index.html#AddressFamily">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type AddressFamily <a href="http://localhost:6060/pkg/builtin/#uint">uint</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="AddressFamilyPreference">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=774:818#L29">AddressFamilyPreference</a>
+				<a class="permalink" href="index.html#AddressFamilyPreference">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type AddressFamilyPreference []<a href="index.html#AddressFamily">AddressFamily</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DialFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=6171:6246#L201">DialFunc</a>
+				<a class="permalink" href="index.html#DialFunc">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type DialFunc func(ctx <a href="http://localhost:6060/pkg/context/">context</a>.<a href="http://localhost:6060/pkg/context/#Context">Context</a>, net, addr <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#Conn">Conn</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="DialerFor">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=6248:6309#L203">DialerFor</a>
+					<a class="permalink" href="index.html#DialerFor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func DialerFor(transport <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>) (<a href="index.html#DialFunc">DialFunc</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+			
+
+			
+		
+			
+			
+			<h2 id="Dialer">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=12429:12626#L408">Dialer</a>
+				<a class="permalink" href="index.html#Dialer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Dialer dials a host and writes a request to it.
+</p>
+
+			<pre>type Dialer interface {
+    <span class="comment">// Dial connects to the host specified by req&#39;s URL, writes the request to the connection, and</span>
+    <span class="comment">// returns the opened net.Conn.</span>
+    Dial(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#Conn">Conn</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DialerFunc">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=12235:12292#L401">DialerFunc</a>
+				<a class="permalink" href="index.html#DialerFunc">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DialerFunc implements Dialer for the provided function.
+</p>
+
+			<pre>type DialerFunc func(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#Conn">Conn</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="DialerFunc.Dial">func (DialerFunc) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=12294:12356#L403">Dial</a>
+					<a class="permalink" href="index.html#DialerFunc.Dial">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (fn <a href="index.html#DialerFunc">DialerFunc</a>) Dial(req *<a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#Request">Request</a>) (<a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#Conn">Conn</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="PortRange">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go?s=722:767#L17">PortRange</a>
+				<a class="permalink" href="index.html#PortRange">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+PortRange represents a range of TCP/UDP ports.  To represent a single port,
+set Size to 1.
+</p>
+
+			<pre>type PortRange struct {
+<span id="PortRange.Base"></span>    Base <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+<span id="PortRange.Size"></span>    Size <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ParsePortRange">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go?s=3126:3179#L124">ParsePortRange</a>
+					<a class="permalink" href="index.html#ParsePortRange">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParsePortRange(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (*<a href="index.html#PortRange">PortRange</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParsePortRange parses a string of the form &#34;min-max&#34;, inclusive at both
+ends, and initializes a new PortRange from it.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ParsePortRangeOrDie">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go?s=3281:3330#L133">ParsePortRangeOrDie</a>
+					<a class="permalink" href="index.html#ParsePortRangeOrDie">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParsePortRangeOrDie(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) *<a href="index.html#PortRange">PortRange</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="PortRange.Contains">func (*PortRange) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go?s=836:877#L23">Contains</a>
+					<a class="permalink" href="index.html#PortRange.Contains">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pr *<a href="index.html#PortRange">PortRange</a>) Contains(p <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+Contains tests whether a given port falls within the PortRange.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PortRange.Set">func (*PortRange) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go?s=1381:1425#L39">Set</a>
+					<a class="permalink" href="index.html#PortRange.Set">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pr *<a href="index.html#PortRange">PortRange</a>) Set(value <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+Set parses a string of the form &#34;value&#34;, &#34;min-max&#34;, or &#34;min+offset&#34;, inclusive at both ends, and
+sets the PortRange from it.  This is part of the flag.Value and pflag.Value
+interfaces.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PortRange.String">func (PortRange) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go?s=1055:1090#L29">String</a>
+					<a class="permalink" href="index.html#PortRange.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (pr <a href="index.html#PortRange">PortRange</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String converts the PortRange to a string representation, which can be
+parsed by PortRange.Set or ParsePortRange.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="PortRange.Type">func (*PortRange) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/port_range.go?s=2944:2975#L118">Type</a>
+					<a class="permalink" href="index.html#PortRange.Type">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#PortRange">PortRange</a>) Type() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+Type returns a descriptive string about this type.  This is part of the
+pflag.Value interface.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="RoundTripperWrapper">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=6071:6169#L196">RoundTripperWrapper</a>
+				<a class="permalink" href="index.html#RoundTripperWrapper">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type RoundTripperWrapper interface {
+    <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>
+    WrappedRoundTripper() <a href="http://localhost:6060/pkg/net/http/">http</a>.<a href="http://localhost:6060/pkg/net/http/#RoundTripper">RoundTripper</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="Route">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=1152:1260#L46">Route</a>
+				<a class="permalink" href="index.html#Route">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type Route struct {
+<span id="Route.Interface"></span>    Interface   <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+<span id="Route.Destination"></span>    Destination <a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a>
+<span id="Route.Gateway"></span>    Gateway     <a href="http://localhost:6060/pkg/net/">net</a>.<a href="http://localhost:6060/pkg/net/#IP">IP</a>
+<span id="Route.Family"></span>    Family      <a href="index.html#AddressFamily">AddressFamily</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RouteFile">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/interface.go?s=1262:1347#L53">RouteFile</a>
+				<a class="permalink" href="index.html#RouteFile">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type RouteFile struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="TLSClientConfigHolder">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=6979:7050#L229">TLSClientConfigHolder</a>
+				<a class="permalink" href="index.html#TLSClientConfigHolder">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type TLSClientConfigHolder interface {
+    TLSClientConfig() *<a href="http://localhost:6060/pkg/crypto/tls/">tls</a>.<a href="http://localhost:6060/pkg/crypto/tls/#Config">Config</a>
+}</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="WarningHeader">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=16605:16906#L537">WarningHeader</a>
+				<a class="permalink" href="index.html#WarningHeader">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+WarningHeader contains a single RFC2616 14.46 warnings header
+</p>
+
+			<pre>type WarningHeader struct {
+    <span class="comment">// Codeindicates the type of warning. 299 is a miscellaneous persistent warning</span>
+<span id="WarningHeader.Code"></span>    Code <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+<span id="WarningHeader.Agent"></span>    <span class="comment">// Agent contains the name or pseudonym of the server adding the Warning header.</span>
+    <span class="comment">// A single &#34;-&#34; is recommended when agent is unknown.</span>
+    Agent <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    <span class="comment">// Warning text</span>
+<span id="WarningHeader.Text"></span>    Text <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="ParseWarningHeader">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=17966:18056#L578">ParseWarningHeader</a>
+					<a class="permalink" href="index.html#ParseWarningHeader">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseWarningHeader(header <a href="http://localhost:6060/pkg/builtin/#string">string</a>) (result <a href="index.html#WarningHeader">WarningHeader</a>, remainder <a href="http://localhost:6060/pkg/builtin/#string">string</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParseWarningHeader extracts one RFC2616 14.46 warning from the specified header,
+returning an error if the header does not contain a correctly formatted warning.
+Any remaining content in the header is returned.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ParseWarningHeaders">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/net/http.go?s=17260:17329#L551">ParseWarningHeaders</a>
+					<a class="permalink" href="index.html#ParseWarningHeaders">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ParseWarningHeaders(headers []<a href="http://localhost:6060/pkg/builtin/#string">string</a>) ([]<a href="index.html#WarningHeader">WarningHeader</a>, []<a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+ParseWarningHeaders extract RFC2616 14.46 warnings headers from the specified set of header values.
+Multiple comma-separated warnings per header are supported.
+If errors are encountered on a header, the remainder of that header are skipped and subsequent headers are parsed.
+Returns successfully parsed warnings and any errors encountered.
+</p>
+
+				
+				
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

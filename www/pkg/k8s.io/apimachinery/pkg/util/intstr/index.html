@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>intstr - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package intstr
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "k8s.io/apimachinery/pkg/util/intstr"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+				<dd><a href="index.html#pkg-variables">Variables</a></dd>
+			
+			
+				
+				<dd><a href="index.html#GetScaledValueFromIntOrPercent">func GetScaledValueFromIntOrPercent(intOrPercent *IntOrString, total int, roundUp bool) (int, error)</a></dd>
+			
+				
+				<dd><a href="index.html#GetValueFromIntOrPercent">func GetValueFromIntOrPercent(intOrPercent *IntOrString, total int, roundUp bool) (int, error)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#IntOrString">type IntOrString</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FromInt">func FromInt(val int) IntOrString</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#FromString">func FromString(val string) IntOrString</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#Parse">func Parse(val string) IntOrString</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#ValueOrDefault">func ValueOrDefault(intOrPercent *IntOrString, defaultValue IntOrString) *IntOrString</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.Descriptor">func (*IntOrString) Descriptor() ([]byte, []int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.Fuzz">func (intstr *IntOrString) Fuzz(c fuzz.Continue)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.IntValue">func (intstr *IntOrString) IntValue() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.Marshal">func (m *IntOrString) Marshal() (dAtA []byte, err error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.MarshalJSON">func (intstr IntOrString) MarshalJSON() ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.MarshalTo">func (m *IntOrString) MarshalTo(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.MarshalToSizedBuffer">func (m *IntOrString) MarshalToSizedBuffer(dAtA []byte) (int, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.OpenAPISchemaFormat">func (IntOrString) OpenAPISchemaFormat() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.OpenAPISchemaType">func (IntOrString) OpenAPISchemaType() []string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.ProtoMessage">func (*IntOrString) ProtoMessage()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.Reset">func (m *IntOrString) Reset()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.Size">func (m *IntOrString) Size() (n int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.String">func (intstr *IntOrString) String() string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.Unmarshal">func (m *IntOrString) Unmarshal(dAtA []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.UnmarshalJSON">func (intstr *IntOrString) UnmarshalJSON(value []byte) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.XXX_DiscardUnknown">func (m *IntOrString) XXX_DiscardUnknown()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.XXX_Marshal">func (m *IntOrString) XXX_Marshal(b []byte, deterministic bool) ([]byte, error)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.XXX_Merge">func (m *IntOrString) XXX_Merge(src proto.Message)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.XXX_Size">func (m *IntOrString) XXX_Size() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#IntOrString.XXX_Unmarshal">func (m *IntOrString) XXX_Unmarshal(b []byte) error</a></dd>
+				
+			
+				
+				<dd><a href="index.html#Type">type Type</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go">generated.pb.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/instr_fuzz.go">instr_fuzz.go</a>
+			
+				<a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go">intstr.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+			<h2 id="pkg-variables">Variables</h2>
+			
+				
+				<pre>var (
+    <span id="ErrInvalidLengthGenerated">ErrInvalidLengthGenerated</span>        = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: negative length found during unmarshaling&#34;)
+    <span id="ErrIntOverflowGenerated">ErrIntOverflowGenerated</span>          = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: integer overflow&#34;)
+    <span id="ErrUnexpectedEndOfGroupGenerated">ErrUnexpectedEndOfGroupGenerated</span> = <a href="http://localhost:6060/pkg/fmt/">fmt</a>.<a href="http://localhost:6060/pkg/fmt/#Errorf">Errorf</a>(&#34;proto: unexpected end of group&#34;)
+)</pre>
+			
+		
+		
+			
+			
+			<h2 id="GetScaledValueFromIntOrPercent">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=4483:4583#L136">GetScaledValueFromIntOrPercent</a>
+				<a class="permalink" href="index.html#GetScaledValueFromIntOrPercent">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetScaledValueFromIntOrPercent(intOrPercent *<a href="index.html#IntOrString">IntOrString</a>, total <a href="http://localhost:6060/pkg/builtin/#int">int</a>, roundUp <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetScaledValueFromIntOrPercent is meant to replace GetValueFromIntOrPercent.
+This method returns a scaled value from an IntOrString type. If the IntOrString
+is a percentage string value it&#39;s treated as a percentage and scaled appropriately
+in accordance to the total, if it&#39;s an int value it&#39;s treated as a a simple value and
+if it is a string value which is either non-numeric or numeric but lacking a trailing &#39;%&#39; it returns an error.
+</p>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetValueFromIntOrPercent">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=5256:5350#L158">GetValueFromIntOrPercent</a>
+				<a class="permalink" href="index.html#GetValueFromIntOrPercent">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetValueFromIntOrPercent(intOrPercent *<a href="index.html#IntOrString">IntOrString</a>, total <a href="http://localhost:6060/pkg/builtin/#int">int</a>, roundUp <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+			<p>
+GetValueFromIntOrPercent was deprecated in favor of
+GetScaledValueFromIntOrPercent. This method was treating all int as a numeric value and all
+strings with or without a percent symbol as a percentage value.
+Deprecated
+</p>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="IntOrString">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=1088:1285#L30">IntOrString</a>
+				<a class="permalink" href="index.html#IntOrString">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+IntOrString is a type that can hold an int32 or a string.  When used in
+JSON or YAML marshalling and unmarshalling, it produces or consumes the
+inner type.  This allows you to have, for example, a JSON field that can
+accept a name or number.
+TODO: Rename to Int32OrString
+</p>
+<p>
++protobuf=true
++protobuf.options.(gogoproto.goproto_stringer)=false
++k8s:openapi-gen=true
+</p>
+
+			<pre>type IntOrString struct {
+<span id="IntOrString.Type"></span>    Type   <a href="index.html#Type">Type</a>   `protobuf:&#34;varint,1,opt,name=type,casttype=Type&#34;`
+<span id="IntOrString.IntVal"></span>    IntVal <a href="http://localhost:6060/pkg/builtin/#int32">int32</a>  `protobuf:&#34;varint,2,opt,name=intVal&#34;`
+<span id="IntOrString.StrVal"></span>    StrVal <a href="http://localhost:6060/pkg/builtin/#string">string</a> `protobuf:&#34;bytes,3,opt,name=strVal&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="FromInt">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=1657:1690#L48">FromInt</a>
+					<a class="permalink" href="index.html#FromInt">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func FromInt(val <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="index.html#IntOrString">IntOrString</a></pre>
+				<p>
+FromInt creates an IntOrString object with an int32 value. It is
+your responsibility not to call this method with a value greater
+than int32.
+TODO: convert to (val int32)
+</p>
+
+				
+				
+			
+				
+				<h3 id="FromString">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=1933:1972#L56">FromString</a>
+					<a class="permalink" href="index.html#FromString">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func FromString(val <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#IntOrString">IntOrString</a></pre>
+				<p>
+FromString creates an IntOrString object with a string value.
+</p>
+
+				
+				
+			
+				
+				<h3 id="Parse">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=2127:2161#L62">Parse</a>
+					<a class="permalink" href="index.html#Parse">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func Parse(val <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="index.html#IntOrString">IntOrString</a></pre>
+				<p>
+Parse the given string and try to convert it to an integer before
+setting it as a string value.
+</p>
+
+				
+				
+			
+				
+				<h3 id="ValueOrDefault">func <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=3867:3952#L124">ValueOrDefault</a>
+					<a class="permalink" href="index.html#ValueOrDefault">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func ValueOrDefault(intOrPercent *<a href="index.html#IntOrString">IntOrString</a>, defaultValue <a href="index.html#IntOrString">IntOrString</a>) *<a href="index.html#IntOrString">IntOrString</a></pre>
+				
+				
+				
+			
+
+			
+				
+				<h3 id="IntOrString.Descriptor">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1384:1432#L35">Descriptor</a>
+					<a class="permalink" href="index.html#IntOrString.Descriptor">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#IntOrString">IntOrString</a>) Descriptor() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, []<a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.Fuzz">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/instr_fuzz.go?s=684:732#L16">Fuzz</a>
+					<a class="permalink" href="index.html#IntOrString.Fuzz">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (intstr *<a href="index.html#IntOrString">IntOrString</a>) Fuzz(c <a href="../../../../../github.com/google/gofuzz/index.html">fuzz</a>.<a href="../../../../../github.com/google/gofuzz/index.html#Continue">Continue</a>)</pre>
+				<p>
+Fuzz satisfies fuzz.Interface
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.IntValue">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=2940:2981#L94">IntValue</a>
+					<a class="permalink" href="index.html#IntOrString.IntValue">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (intstr *<a href="index.html#IntOrString">IntOrString</a>) IntValue() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+IntValue returns the IntVal if type Int, or if
+it is a String, will attempt a conversion to int,
+returning 0 if a parsing error occurs.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.Marshal">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=4196:4252#L92">Marshal</a>
+					<a class="permalink" href="index.html#IntOrString.Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) Marshal() (dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, err <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.MarshalJSON">func (IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=3151:3206#L103">MarshalJSON</a>
+					<a class="permalink" href="index.html#IntOrString.MarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (intstr <a href="index.html#IntOrString">IntOrString</a>) MarshalJSON() ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				<p>
+MarshalJSON implements the json.Marshaller interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.MarshalTo">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=4410:4467#L102">MarshalTo</a>
+					<a class="permalink" href="index.html#IntOrString.MarshalTo">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) MarshalTo(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.MarshalToSizedBuffer">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=4535:4603#L107">MarshalToSizedBuffer</a>
+					<a class="permalink" href="index.html#IntOrString.MarshalToSizedBuffer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) MarshalToSizedBuffer(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) (<a href="http://localhost:6060/pkg/builtin/#int">int</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.OpenAPISchemaFormat">func (IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=3791:3838#L122">OpenAPISchemaFormat</a>
+					<a class="permalink" href="index.html#IntOrString.OpenAPISchemaFormat">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#IntOrString">IntOrString</a>) OpenAPISchemaFormat() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+OpenAPISchemaFormat is used by the kube-openapi generator when constructing
+the OpenAPI spec of this type.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.OpenAPISchemaType">func (IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=3599:3646#L118">OpenAPISchemaType</a>
+					<a class="permalink" href="index.html#IntOrString.OpenAPISchemaType">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (<a href="index.html#IntOrString">IntOrString</a>) OpenAPISchemaType() []<a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+OpenAPISchemaType is used by the kube-openapi generator when constructing
+the OpenAPI spec of this type.
+</p>
+<p>
+See: <a href="https://github.com/kubernetes/kube-openapi/tree/master/pkg/generators">https://github.com/kubernetes/kube-openapi/tree/master/pkg/generators</a>
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.ProtoMessage">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1346:1380#L34">ProtoMessage</a>
+					<a class="permalink" href="index.html#IntOrString.ProtoMessage">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (*<a href="index.html#IntOrString">IntOrString</a>) ProtoMessage()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.Reset">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1288:1317#L33">Reset</a>
+					<a class="permalink" href="index.html#IntOrString.Reset">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) Reset()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.Size">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=5180:5216#L137">Size</a>
+					<a class="permalink" href="index.html#IntOrString.Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) Size() (n <a href="http://localhost:6060/pkg/builtin/#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.String">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=2613:2655#L81">String</a>
+					<a class="permalink" href="index.html#IntOrString.String">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (intstr *<a href="index.html#IntOrString">IntOrString</a>) String() <a href="http://localhost:6060/pkg/builtin/#string">string</a></pre>
+				<p>
+String returns the string value, or the Itoa of the int value.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.Unmarshal">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=5601:5651#L156">Unmarshal</a>
+					<a class="permalink" href="index.html#IntOrString.Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) Unmarshal(dAtA []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.UnmarshalJSON">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=2321:2381#L71">UnmarshalJSON</a>
+					<a class="permalink" href="index.html#IntOrString.UnmarshalJSON">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (intstr *<a href="index.html#IntOrString">IntOrString</a>) UnmarshalJSON(value []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+UnmarshalJSON implements the json.Unmarshaller interface.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.XXX_DiscardUnknown">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1916:1958#L55">XXX_DiscardUnknown</a>
+					<a class="permalink" href="index.html#IntOrString.XXX_DiscardUnknown">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) XXX_DiscardUnknown()</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.XXX_Marshal">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1566:1645#L41">XXX_Marshal</a>
+					<a class="permalink" href="index.html#IntOrString.XXX_Marshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) XXX_Marshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, deterministic <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) ([]<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>, <a href="http://localhost:6060/pkg/builtin/#error">error</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.XXX_Merge">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1760:1810#L49">XXX_Merge</a>
+					<a class="permalink" href="index.html#IntOrString.XXX_Merge">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) XXX_Merge(src <a href="../../../../../github.com/gogo/protobuf/proto/index.html">proto</a>.<a href="../../../../../github.com/gogo/protobuf/proto/index.html#Message">Message</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.XXX_Size">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1858:1894#L52">XXX_Size</a>
+					<a class="permalink" href="index.html#IntOrString.XXX_Size">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) XXX_Size() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="IntOrString.XXX_Unmarshal">func (*IntOrString) <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/generated.pb.go?s=1487:1538#L38">XXX_Unmarshal</a>
+					<a class="permalink" href="index.html#IntOrString.XXX_Unmarshal">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (m *<a href="index.html#IntOrString">IntOrString</a>) XXX_Unmarshal(b []<a href="http://localhost:6060/pkg/builtin/#byte">byte</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="Type">type <a href="http://localhost:6060/src/k8s.io/apimachinery/pkg/util/intstr/intstr.go?s=1338:1353#L37">Type</a>
+				<a class="permalink" href="index.html#Type">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Type represents the stored type of IntOrString.
+</p>
+
+			<pre>type Type <a href="http://localhost:6060/pkg/builtin/#int64">int64</a></pre>
+
+			
+				
+				<pre>const (
+    <span id="Int">Int</span>    <a href="index.html#Type">Type</a> = <a href="http://localhost:6060/pkg/builtin/#iota">iota</a> <span class="comment">// The IntOrString holds an int.</span>
+    <span id="String">String</span>             <span class="comment">// The IntOrString holds a string.</span>
+)</pre>
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
