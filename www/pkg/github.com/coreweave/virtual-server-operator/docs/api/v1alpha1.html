@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>v1alpha1 - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.15.6";</script>
+<script src="../../../../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="http://localhost:6060/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="http://localhost:6060/pkg/">GoDoc</a></div>
+<a href="v1alpha1.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package v1alpha1
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/coreweave/virtual-server-operator/docs/api/v1alpha1"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="v1alpha1.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="v1alpha1.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="v1alpha1.html#Port">type Port</a></dd>
+				
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServer">type VirtualServer</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServer.DeepCopy">func (in *VirtualServer) DeepCopy() *VirtualServer</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServer.DeepCopyInto">func (in *VirtualServer) DeepCopyInto(out *VirtualServer)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServer.DeepCopyObject">func (in *VirtualServer) DeepCopyObject() runtime.Object</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServer.IsGpuServer">func (vs *VirtualServer) IsGpuServer() bool</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerFloatingIP">type VirtualServerFloatingIP</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerFloatingIP.DeepCopy">func (in *VirtualServerFloatingIP) DeepCopy() *VirtualServerFloatingIP</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerFloatingIP.DeepCopyInto">func (in *VirtualServerFloatingIP) DeepCopyInto(out *VirtualServerFloatingIP)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerList">type VirtualServerList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerList.DeepCopy">func (in *VirtualServerList) DeepCopy() *VirtualServerList</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerList.DeepCopyInto">func (in *VirtualServerList) DeepCopyInto(out *VirtualServerList)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerList.DeepCopyObject">func (in *VirtualServerList) DeepCopyObject() runtime.Object</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerNetwork">type VirtualServerNetwork</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerNetwork.DeepCopy">func (in *VirtualServerNetwork) DeepCopy() *VirtualServerNetwork</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerNetwork.DeepCopyInto">func (in *VirtualServerNetwork) DeepCopyInto(out *VirtualServerNetwork)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerOS">type VirtualServerOS</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerOS.DeepCopy">func (in *VirtualServerOS) DeepCopy() *VirtualServerOS</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerOS.DeepCopyInto">func (in *VirtualServerOS) DeepCopyInto(out *VirtualServerOS)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerPorts">type VirtualServerPorts</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerPorts.DeepCopy">func (in *VirtualServerPorts) DeepCopy() *VirtualServerPorts</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerPorts.DeepCopyInto">func (in *VirtualServerPorts) DeepCopyInto(out *VirtualServerPorts)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerResourceGPU">type VirtualServerResourceGPU</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerResourceGPU.DeepCopy">func (in *VirtualServerResourceGPU) DeepCopy() *VirtualServerResourceGPU</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerResourceGPU.DeepCopyInto">func (in *VirtualServerResourceGPU) DeepCopyInto(out *VirtualServerResourceGPU)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerResources">type VirtualServerResources</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerResources.DeepCopy">func (in *VirtualServerResources) DeepCopy() *VirtualServerResources</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerResources.DeepCopyInto">func (in *VirtualServerResources) DeepCopyInto(out *VirtualServerResources)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerSpec">type VirtualServerSpec</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerSpec.DeepCopy">func (in *VirtualServerSpec) DeepCopy() *VirtualServerSpec</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerSpec.DeepCopyInto">func (in *VirtualServerSpec) DeepCopyInto(out *VirtualServerSpec)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerState">type VirtualServerState</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerState.DeepCopy">func (in *VirtualServerState) DeepCopy() *VirtualServerState</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerState.DeepCopyInto">func (in *VirtualServerState) DeepCopyInto(out *VirtualServerState)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerStatus">type VirtualServerStatus</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStatus.DeepCopy">func (in *VirtualServerStatus) DeepCopy() *VirtualServerStatus</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStatus.DeepCopyInto">func (in *VirtualServerStatus) DeepCopyInto(out *VirtualServerStatus)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerStorage">type VirtualServerStorage</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStorage.DeepCopy">func (in *VirtualServerStorage) DeepCopy() *VirtualServerStorage</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStorage.DeepCopyInto">func (in *VirtualServerStorage) DeepCopyInto(out *VirtualServerStorage)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerStorageRoot">type VirtualServerStorageRoot</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStorageRoot.DeepCopy">func (in *VirtualServerStorageRoot) DeepCopy() *VirtualServerStorageRoot</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStorageRoot.DeepCopyInto">func (in *VirtualServerStorageRoot) DeepCopyInto(out *VirtualServerStorageRoot)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerStorageVolume">type VirtualServerStorageVolume</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStorageVolume.DeepCopy">func (in *VirtualServerStorageVolume) DeepCopy() *VirtualServerStorageVolume</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerStorageVolume.DeepCopyInto">func (in *VirtualServerStorageVolume) DeepCopyInto(out *VirtualServerStorageVolume)</a></dd>
+				
+			
+				
+				<dd><a href="v1alpha1.html#VirtualServerUser">type VirtualServerUser</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerUser.DeepCopy">func (in *VirtualServerUser) DeepCopy() *VirtualServerUser</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="v1alpha1.html#VirtualServerUser.DeepCopyInto">func (in *VirtualServerUser) DeepCopyInto(out *VirtualServerUser)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/util.go">util.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go">virtualserver_types.go</a>
+			
+				<a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go">zz_generated.deepcopy.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="Port">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=5031:5044#L139">Port</a>
+				<a class="permalink" href="v1alpha1.html#Port">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
++kubebuilder:validation:Minimum=1
++kubebuilder:validation:Maximum=65535
+</p>
+
+			<pre>type Port <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="VirtualServer">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=1713:1932#L39">VirtualServer</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServer">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServer is the Schema for the virtualservers API
+</p>
+
+			<pre>type VirtualServer struct {
+    <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/">metav1</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/#TypeMeta">TypeMeta</a>   `json:&#34;,inline&#34;`
+    <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/">metav1</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/#ObjectMeta">ObjectMeta</a> `json:&#34;metadata,omitempty&#34;`
+
+<span id="VirtualServer.Spec"></span>    Spec   <a href="v1alpha1.html#VirtualServerSpec">VirtualServerSpec</a>   `json:&#34;spec,omitempty&#34;`
+<span id="VirtualServer.Status"></span>    Status <a href="v1alpha1.html#VirtualServerStatus">VirtualServerStatus</a> `json:&#34;status,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServer.DeepCopy">func (*VirtualServer) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=1150:1200#L28">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServer.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServer">VirtualServer</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServer">VirtualServer</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServer.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServer.DeepCopyInto">func (*VirtualServer) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=842:899#L19">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServer.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServer">VirtualServer</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServer">VirtualServer</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServer.DeepCopyObject">func (*VirtualServer) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=1409:1465#L38">DeepCopyObject</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServer.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServer">VirtualServer</a>) DeepCopyObject() <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/runtime/">runtime</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/runtime/#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServer.IsGpuServer">func (*VirtualServer) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/util.go?s=18:61#L1">IsGpuServer</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServer.IsGpuServer">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vs *<a href="v1alpha1.html#VirtualServer">VirtualServer</a>) IsGpuServer() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerFloatingIP">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=5046:5125#L141">VirtualServerFloatingIP</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerFloatingIP">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type VirtualServerFloatingIP struct {
+<span id="VirtualServerFloatingIP.SericeName"></span>    SericeName <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;serviceName&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerFloatingIP.DeepCopy">func (*VirtualServerFloatingIP) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=1855:1925#L51">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerFloatingIP.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerFloatingIP">VirtualServerFloatingIP</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerFloatingIP">VirtualServerFloatingIP</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerFloatingIP.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerFloatingIP.DeepCopyInto">func (*VirtualServerFloatingIP) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=1647:1724#L46">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerFloatingIP.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerFloatingIP">VirtualServerFloatingIP</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerFloatingIP">VirtualServerFloatingIP</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerList">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=2022:2182#L50">VirtualServerList</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerList">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerList contains a list of VirtualServer
+</p>
+
+			<pre>type VirtualServerList struct {
+    <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/">metav1</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/#TypeMeta">TypeMeta</a> `json:&#34;,inline&#34;`
+    <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/">metav1</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/apis/meta/v1/#ListMeta">ListMeta</a> `json:&#34;metadata,omitempty&#34;`
+<span id="VirtualServerList.Items"></span>    Items           []<a href="v1alpha1.html#VirtualServer">VirtualServer</a> `json:&#34;items&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerList.DeepCopy">func (*VirtualServerList) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=2573:2631#L75">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerList.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerList">VirtualServerList</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerList">VirtualServerList</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerList.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerList.DeepCopyInto">func (*VirtualServerList) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=2149:2214#L61">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerList.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerList">VirtualServerList</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerList">VirtualServerList</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerList.DeepCopyObject">func (*VirtualServerList) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=2844:2904#L85">DeepCopyObject</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerList.DeepCopyObject">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerList">VirtualServerList</a>) DeepCopyObject() <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/runtime/">runtime</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/runtime/#Object">Object</a></pre>
+				<p>
+DeepCopyObject is an autogenerated deepcopy function, copying the receiver, creating a new runtime.Object.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerNetwork">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=4462:4837#L126">VirtualServerNetwork</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerNetwork">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerNetwork defines
+</p>
+
+			<pre>type VirtualServerNetwork struct {
+<span id="VirtualServerNetwork.DirectAttachLoadBalancerIP"></span>    DirectAttachLoadBalancerIP <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>                      `json:&#34;directAttachLoadBalancerIP,omitempty&#34;`
+<span id="VirtualServerNetwork.FloatingIPs"></span>    FloatingIPs                []<a href="v1alpha1.html#VirtualServerFloatingIP">VirtualServerFloatingIP</a> `json:&#34;floatingIPs,omitempty&#34;`
+<span id="VirtualServerNetwork.TCP"></span>    TCP                        *<a href="v1alpha1.html#VirtualServerPorts">VirtualServerPorts</a>       `json:&#34;tcp,omitempty&#34;`
+<span id="VirtualServerNetwork.UDP"></span>    UDP                        *<a href="v1alpha1.html#VirtualServerPorts">VirtualServerPorts</a>       `json:&#34;udp,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerNetwork.DeepCopy">func (*VirtualServerNetwork) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=3660:3724#L113">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerNetwork.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerNetwork">VirtualServerNetwork</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerNetwork">VirtualServerNetwork</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerNetwork.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerNetwork.DeepCopyInto">func (*VirtualServerNetwork) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=3086:3157#L93">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerNetwork.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerNetwork">VirtualServerNetwork</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerNetwork">VirtualServerNetwork</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerOS">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=2334:2530#L63">VirtualServerOS</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerOS">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerOS defines the OS of the VS
+</p>
+
+			<pre>type VirtualServerOS struct {
+    <span class="comment">// +kubebuilder:validation:Enum=windows;linux</span>
+<span id="VirtualServerOS.Type"></span>    Type <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;type&#34;`
+    <span class="comment">// +optional</span>
+    <span class="comment">// +kubebuilder:default:=a</span>
+<span id="VirtualServerOS.Definition"></span>    Definition <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;definition,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerOS.DeepCopy">func (*VirtualServerOS) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=4129:4183#L128">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerOS.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerOS">VirtualServerOS</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerOS">VirtualServerOS</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerOS.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerOS.DeepCopyInto">func (*VirtualServerOS) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=3945:4006#L123">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerOS.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerOS">VirtualServerOS</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerOS">VirtualServerOS</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerPorts">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=4838:4951#L132">VirtualServerPorts</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerPorts">&#xb6;</a>
+				
+				
+			</h2>
+			
+			<pre>type VirtualServerPorts struct {
+    <span class="comment">// +kubebuilder:validation:MaxItems=10</span>
+<span id="VirtualServerPorts.Ports"></span>    Ports []<a href="v1alpha1.html#Port">Port</a> `json:&#34;ports,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerPorts.DeepCopy">func (*VirtualServerPorts) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=4702:4762#L148">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerPorts.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerPorts">VirtualServerPorts</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerPorts">VirtualServerPorts</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerPorts.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerPorts.DeepCopyInto">func (*VirtualServerPorts) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=4399:4466#L138">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerPorts.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerPorts">VirtualServerPorts</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerPorts">VirtualServerPorts</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerResourceGPU">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=2990:3087#L85">VirtualServerResourceGPU</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerResourceGPU">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerResourceGPU describes the GPU request for the VS
+</p>
+
+			<pre>type VirtualServerResourceGPU struct {
+<span id="VirtualServerResourceGPU.Type"></span>    Type  <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;type&#34;`
+<span id="VirtualServerResourceGPU.Count"></span>    Count <a href="http://localhost:6060/pkg/builtin/#int">int</a>    `json:&#34;count&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerResourceGPU.DeepCopy">func (*VirtualServerResourceGPU) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=5192:5264#L163">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerResourceGPU.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerResourceGPU">VirtualServerResourceGPU</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerResourceGPU">VirtualServerResourceGPU</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerResourceGPU.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerResourceGPU.DeepCopyInto">func (*VirtualServerResourceGPU) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=4981:5060#L158">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerResourceGPU.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerResourceGPU">VirtualServerResourceGPU</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerResourceGPU">VirtualServerResourceGPU</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerResources">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=2601:2923#L72">VirtualServerResources</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerResources">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerResources defines the resources requested for the VS
+</p>
+
+			<pre>type VirtualServerResources struct {
+    <span class="comment">// +optional</span>
+    <span class="comment">// +kubebuilder:default=a</span>
+<span id="VirtualServerResources.Definition"></span>    Definition <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;definition,omitempty&#34;`
+    <span class="comment">// +optional</span>
+<span id="VirtualServerResources.GPU"></span>    GPU *<a href="v1alpha1.html#VirtualServerResourceGPU">VirtualServerResourceGPU</a> `json:&#34;gpu,omitempty&#34;`
+    <span class="comment">// +optional</span>
+<span id="VirtualServerResources.CPU"></span>    CPU <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/">resource</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/#Quantity">Quantity</a> `json:&#34;cpu,omitempty&#34;`
+    <span class="comment">// +optional</span>
+<span id="VirtualServerResources.Memory"></span>    Memory <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/">resource</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/#Quantity">Quantity</a> `json:&#34;memory,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerResources.DeepCopy">func (*VirtualServerResources) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=5866:5934#L185">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerResources.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerResources">VirtualServerResources</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerResources">VirtualServerResources</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerResources.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerResources.DeepCopyInto">func (*VirtualServerResources) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=5489:5564#L173">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerResources.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerResources">VirtualServerResources</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerResources">VirtualServerResources</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerSpec">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=880:1364#L18">VirtualServerSpec</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerSpec">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerSpec defines the desired state of VirtualServer
+</p>
+
+			<pre>type VirtualServerSpec struct {
+<span id="VirtualServerSpec.Region"></span>    Region    <a href="http://localhost:6060/pkg/builtin/#string">string</a>                 `json:&#34;region,omitempty&#34;`
+<span id="VirtualServerSpec.Affinity"></span>    Affinity  *<a href="http://localhost:6060/pkg/k8s.io/api/core/v1/">corev1</a>.<a href="http://localhost:6060/pkg/k8s.io/api/core/v1/#Affinity">Affinity</a>       `json:&#34;affinity,omitempty&#34;`
+<span id="VirtualServerSpec.OS"></span>    OS        <a href="v1alpha1.html#VirtualServerOS">VirtualServerOS</a>        `json:&#34;os&#34;`
+<span id="VirtualServerSpec.Resources"></span>    Resources <a href="v1alpha1.html#VirtualServerResources">VirtualServerResources</a> `json:&#34;resources&#34;`
+<span id="VirtualServerSpec.Storage"></span>    Storage   <a href="v1alpha1.html#VirtualServerStorage">VirtualServerStorage</a>   `json:&#34;storage&#34;`
+<span id="VirtualServerSpec.Users"></span>    Users     []<a href="v1alpha1.html#VirtualServerUser">VirtualServerUser</a>    `json:&#34;users,omitempty&#34;`
+<span id="VirtualServerSpec.State"></span>    State     <a href="v1alpha1.html#VirtualServerState">VirtualServerState</a>     `json:&#34;state,omitempty&#34;`
+<span id="VirtualServerSpec.Network"></span>    Network   <a href="v1alpha1.html#VirtualServerNetwork">VirtualServerNetwork</a>   `json:&#34;network,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerSpec.DeepCopy">func (*VirtualServerSpec) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=6751:6809#L215">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerSpec.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerSpec">VirtualServerSpec</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerSpec">VirtualServerSpec</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerSpec.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerSpec.DeepCopyInto">func (*VirtualServerSpec) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=6157:6222#L195">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerSpec.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerSpec">VirtualServerSpec</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerSpec">VirtualServerSpec</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerState">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=4308:4428#L119">VirtualServerState</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerState">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerState defines configurable state of the VS
+</p>
+
+			<pre>type VirtualServerState struct {
+    <span class="comment">// +optional</span>
+    <span class="comment">// +kubebuilder:default=false</span>
+<span id="VirtualServerState.Running"></span>    Running <a href="http://localhost:6060/pkg/builtin/#bool">bool</a> `json:&#34;running,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerState.DeepCopy">func (*VirtualServerState) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=7220:7280#L230">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerState.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerState">VirtualServerState</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerState">VirtualServerState</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerState.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerState.DeepCopyInto">func (*VirtualServerState) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=7027:7094#L225">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerState.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerState">VirtualServerState</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerState">VirtualServerState</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerStatus">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=1433:1538#L30">VirtualServerStatus</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerStatus">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerStatus defines the observed state of VirtualServer
+</p>
+
+			<pre>type VirtualServerStatus struct {
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerStatus.DeepCopy">func (*VirtualServerStatus) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=7695:7757#L245">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStatus.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStatus">VirtualServerStatus</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerStatus">VirtualServerStatus</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerStatus.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerStatus.DeepCopyInto">func (*VirtualServerStatus) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=7499:7568#L240">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStatus.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStatus">VirtualServerStatus</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerStatus">VirtualServerStatus</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerStorage">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=3154:3478#L91">VirtualServerStorage</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerStorage">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerStorage describes the Storage request for the VS
+</p>
+
+			<pre>type VirtualServerStorage struct {
+<span id="VirtualServerStorage.Root"></span>    Root            <a href="v1alpha1.html#VirtualServerStorageRoot">VirtualServerStorageRoot</a>     `json:&#34;root&#34;`
+<span id="VirtualServerStorage.AdditionalDisks"></span>    AdditionalDisks []<a href="v1alpha1.html#VirtualServerStorageVolume">VirtualServerStorageVolume</a> `json:&#34;additionalDisks,omitempty&#34;`
+<span id="VirtualServerStorage.FileSystems"></span>    FileSystems     []<a href="v1alpha1.html#VirtualServerStorageVolume">VirtualServerStorageVolume</a> `json:&#34;filesystems,omitempty&#34;`
+<span id="VirtualServerStorage.Swap"></span>    Swap            *<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/">resource</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/#Quantity">Quantity</a>           `json:&#34;swap,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerStorage.DeepCopy">func (*VirtualServerStorage) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=8706:8770#L280">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStorage.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStorage">VirtualServerStorage</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerStorage">VirtualServerStorage</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerStorage.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerStorage.DeepCopyInto">func (*VirtualServerStorage) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=7977:8048#L255">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStorage.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStorage">VirtualServerStorage</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerStorage">VirtualServerStorage</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerStorageRoot">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=3568:3892#L99">VirtualServerStorageRoot</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerStorageRoot">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerStorageRoot describes the Storage request for root filesystem of the VS
+</p>
+
+			<pre>type VirtualServerStorageRoot struct {
+<span id="VirtualServerStorageRoot.Size"></span>    Size             <a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/">resource</a>.<a href="http://localhost:6060/pkg/k8s.io/apimachinery/pkg/api/resource/#Quantity">Quantity</a>            `json:&#34;size&#34;`
+<span id="VirtualServerStorageRoot.Source"></span>    Source           <a href="http://localhost:6060/pkg/kubevirt.io/containerized-data-importer/pkg/apis/core/v1beta1/">cdiv1beta1</a>.<a href="http://localhost:6060/pkg/kubevirt.io/containerized-data-importer/pkg/apis/core/v1beta1/#DataVolumeSource">DataVolumeSource</a>  `json:&#34;source&#34;`
+<span id="VirtualServerStorageRoot.StorageClassName"></span>    StorageClassName <a href="http://localhost:6060/pkg/builtin/#string">string</a>                       `json:&#34;storageClassName,omitempty&#34;`
+<span id="VirtualServerStorageRoot.VolumeMode"></span>    VolumeMode       *<a href="http://localhost:6060/pkg/k8s.io/api/core/v1/">corev1</a>.<a href="http://localhost:6060/pkg/k8s.io/api/core/v1/#PersistentVolumeMode">PersistentVolumeMode</a> `json:&#34;volumeMode,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerStorageRoot.DeepCopy">func (*VirtualServerStorageRoot) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=9398:9470#L302">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStorageRoot.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStorageRoot">VirtualServerStorageRoot</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerStorageRoot">VirtualServerStorageRoot</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerStorageRoot.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerStorageRoot.DeepCopyInto">func (*VirtualServerStorageRoot) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=8991:9070#L290">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStorageRoot.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStorageRoot">VirtualServerStorageRoot</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerStorageRoot">VirtualServerStorageRoot</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerStorageVolume">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=3962:4080#L107">VirtualServerStorageVolume</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerStorageVolume">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerStorageVolume is a wrapper object for VolumeSources
+</p>
+
+			<pre>type VirtualServerStorageVolume struct {
+<span id="VirtualServerStorageVolume.Name"></span>    Name <a href="http://localhost:6060/pkg/builtin/#string">string</a>            `json:&#34;name&#34;`
+<span id="VirtualServerStorageVolume.Spec"></span>    Spec <a href="http://localhost:6060/pkg/kubevirt.io/client-go/api/v1/">kvv1</a>.<a href="http://localhost:6060/pkg/kubevirt.io/client-go/api/v1/#VolumeSource">VolumeSource</a> `json:&#34;spec&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerStorageVolume.DeepCopy">func (*VirtualServerStorageVolume) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=9945:10021#L318">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStorageVolume.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStorageVolume">VirtualServerStorageVolume</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerStorageVolume">VirtualServerStorageVolume</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerStorageVolume.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerStorageVolume.DeepCopyInto">func (*VirtualServerStorageVolume) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=9695:9778#L312">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerStorageVolume.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerStorageVolume">VirtualServerStorageVolume</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerStorageVolume">VirtualServerStorageVolume</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="VirtualServerUser">type <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/virtualserver_types.go?s=4134:4247#L113">VirtualServerUser</a>
+				<a class="permalink" href="v1alpha1.html#VirtualServerUser">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+VirtualServerUser defines user login information
+</p>
+
+			<pre>type VirtualServerUser struct {
+<span id="VirtualServerUser.Username"></span>    Username <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;username&#34;`
+<span id="VirtualServerUser.Password"></span>    Password <a href="http://localhost:6060/pkg/builtin/#string">string</a> `json:&#34;password,omitempty&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="VirtualServerUser.DeepCopy">func (*VirtualServerUser) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=10438:10496#L333">DeepCopy</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerUser.DeepCopy">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerUser">VirtualServerUser</a>) DeepCopy() *<a href="v1alpha1.html#VirtualServerUser">VirtualServerUser</a></pre>
+				<p>
+DeepCopy is an autogenerated deepcopy function, copying the receiver, creating a new VirtualServerUser.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="VirtualServerUser.DeepCopyInto">func (*VirtualServerUser) <a href="http://localhost:6060/src/github.com/coreweave/virtual-server-operator/docs/api/v1alpha1/zz_generated.deepcopy.go?s=10248:10313#L328">DeepCopyInto</a>
+					<a class="permalink" href="v1alpha1.html#VirtualServerUser.DeepCopyInto">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (in *<a href="v1alpha1.html#VirtualServerUser">VirtualServerUser</a>) DeepCopyInto(out *<a href="v1alpha1.html#VirtualServerUser">VirtualServerUser</a>)</pre>
+				<p>
+DeepCopyInto is an autogenerated deepcopy function, copying the receiver, writing into out. in must be non-nil.
+</p>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.15.6.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> |
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
